@@ -296,7 +296,7 @@
         <span class="text-cyber-border">·</span>
         <a href={({en: '/rss.xml', zh: '/rss-zh.xml', ja: '/rss-ja.xml'})[currentLang]} class="hover:text-cyber-amber transition-colors duration-200 no-underline" target="_blank" rel="noopener noreferrer">RSS</a>
         <span class="text-cyber-border">·</span>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQg6mNFUf7Mpzes-jTT5iTsJ1grPzgKBtkMtYNWKzEcdXnuw/viewform?usp=pp_url&entry.1797362154={encodeURIComponent(siteNames[currentLang])}" class="hover:text-cyber-green transition-colors duration-200 no-underline" target="_blank" rel="noopener noreferrer">FEEDBACK</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQg6mNFUf7Mpzes-jTT5iTsJ1grPzgKBtkMtYNWKzEcdXnuw/viewform?usp=pp_url&entry.1797362154={encodeURIComponent(siteTitle)}" class="hover:text-cyber-green transition-colors duration-200 no-underline" target="_blank" rel="noopener noreferrer">FEEDBACK</a>
       </p>
     </footer>
 
