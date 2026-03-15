@@ -1,0 +1,137 @@
+# site.yaml — Rust Daily Digest
+# ── Identity ──
+site:
+  id: rust
+  url: https://news.rust.thewang.net
+  title:
+    en: 'Rust Daily Digest'
+    zh: 'Rust 日知录'
+    ja: 'Rust 日知録'
+  subtitle:
+    en: 'Rust engineering news, daily.'
+    zh: '每天五分钟，跟上 Rust 生态动态'
+    ja: 'Rustエンジニアリングの最新動向を毎日'
+  description:
+    en: 'Daily curated Rust engineering news. Covering Rust blog, crate releases, community blogs, and Hacker News.'
+    zh: 'Rust 工程技术日报 — 每天精选 Rust 生态动态，覆盖 Rust 官方博客、crate 发布、社区博客和 Hacker News。'
+    ja: 'Rustエンジニアリングの厳選日刊ダイジェスト。Rust公式ブログ、crateリリース、コミュニティブログ、Hacker Newsから毎日配信。'
+  keywords:
+    en: 'Rust news, Rust programming, Rust lang, crates, Rust engineering, daily digest'
+    zh: 'Rust新闻, Rust编程, Rust语言, crates, Rust工程, 每日简报'
+    ja: 'Rustニュース, Rustプログラミング, Rust言語, crates, Rustエンジニアリング, デイリーダイジェスト'
+  hashtag:
+    en: '#RustDailyDigest'
+    zh: '#Rust日知录'
+    ja: '#Rust日知録'
+
+# ── Theme ──
+theme:
+  style: minimal
+  fonts:
+    display: "'Inter', system-ui, sans-serif"
+    sans: "'Inter', 'Noto Sans SC', 'Noto Sans JP', system-ui, sans-serif"
+    mono: "'JetBrains Mono', ui-monospace, monospace"
+    google: "family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700"
+  colors:
+    dark:
+      bg: '#1a1110'
+      surface: '#231917'
+      surface2: '#2d211e'
+      border: '#3d302a'
+      borderGlow: '#CE422B22'
+      text: '#d4c4bc'
+      textMuted: '#8a7568'
+      accent: '#CE422B'
+      secondary: '#EFA92F'
+      green: '#4CAF50'
+      amber: '#FF9800'
+      heading: '#f5ebe6'
+    light:
+      bg: '#faf6f4'
+      surface: '#ffffff'
+      surface2: '#f5efec'
+      border: '#e0d4ce'
+      borderGlow: '#CE422B18'
+      text: '#3a2820'
+      textMuted: '#7a6458'
+      accent: '#b5351f'
+      secondary: '#c98520'
+      green: '#2e7d32'
+      amber: '#e65100'
+      heading: '#1a0e08'
+
+# ── Data Sources ──
+sources:
+  rss:
+    - { url: 'https://blog.rust-lang.org/feed.xml', name: 'Rust Blog', weight: 10 }
+    - { url: 'https://github.com/rust-lang/rust/releases.atom', name: 'Rust Releases', weight: 10 }
+    - { url: 'https://this-week-in-rust.org/atom.xml', name: 'This Week in Rust', weight: 9 }
+    - { url: 'https://smallcultfollowing.com/babysteps/atom.xml', name: 'Baby Steps (Niko)', weight: 8 }
+    - { url: 'https://fasterthanli.me/index.xml', name: 'fasterthanlime', weight: 8 }
+    - { url: 'https://without.boats/blog/index.xml', name: 'without.boats', weight: 7 }
+    - { url: 'https://www.shuttle.rs/blog/rss.xml', name: 'Shuttle', weight: 6 }
+    - { url: 'https://rust-analyzer.github.io/feed.xml', name: 'rust-analyzer', weight: 7 }
+    - { url: 'https://github.com/tokio-rs/tokio/releases.atom', name: 'Tokio', weight: 7 }
+    - { url: 'https://github.com/bevyengine/bevy/releases.atom', name: 'Bevy', weight: 6 }
+    - { url: 'https://github.com/tauri-apps/tauri/releases.atom', name: 'Tauri', weight: 6 }
+    - { url: 'https://news.google.com/rss/search?q=Rust+programming+OR+Rustlang&hl=en-US&gl=US&ceid=US:en', name: 'Google News Rust', weight: 6 }
+    - { url: 'https://news.google.com/rss/search?q=Rust%E8%AF%AD%E8%A8%80+OR+Rust%E7%BC%96%E7%A8%8B&hl=zh-CN&gl=CN&ceid=CN:zh-Hans', name: 'Google News Rust (CN)', weight: 6 }
+    - { url: 'https://news.google.com/rss/search?q=Rust%E8%A8%80%E8%AA%9E+OR+Rustlang&hl=ja&gl=JP&ceid=JP:ja', name: 'Google News Rust (JP)', weight: 6 }
+
+  hackernews:
+    enabled: true
+    query: 'Rust lang OR Rustlang OR "Rust programming"'
+    weight: 8
+
+  huggingface:
+    enabled: false
+    weight: 0
+
+# ── Editorial ──
+editorial:
+  prompt: config/prompts/editorial.md
+  min_articles: 3
+  featured_count: [2, 3]
+  quicknews_count: [4, 6]
+
+# ── Labels ──
+labels:
+  featured: { en: 'FEATURED', zh: '深度解读', ja: '特集' }
+  signal: { en: 'SIGNAL', zh: '信号', ja: 'シグナル' }
+  archive: { en: 'ARCHIVE', zh: '往期', ja: 'アーカイブ' }
+  backToday: { en: 'BACK TO TODAY', zh: '返回今日', ja: '今日に戻る' }
+  empty: { en: 'NO SIGNAL TODAY.', zh: '// 今日无信号', ja: '// 本日シグナルなし' }
+  sources: { en: 'sources scanned', zh: '条资讯已扫描', ja: '件スキャン済み' }
+  fromSources: { en: 'SRC', zh: '来源', ja: 'SRC' }
+  subscribe: { en: 'SUBSCRIBE', zh: '订阅', ja: '購読' }
+  emailPlaceholder: { en: 'you@example.com', zh: '你的邮箱', ja: 'メールアドレス' }
+  stayUpdated: { en: 'STAY UPDATED', zh: '保持关注', ja: '最新情報を受け取る' }
+  stayUpdatedDesc:
+    en: 'Daily Rust engineering digest, straight to your inbox.'
+    zh: '每日 Rust 工程简报，直达邮箱。'
+    ja: 'Rustエンジニアリングの日刊ダイジェストをメールでお届け。'
+  cta: { en: 'READ FULL DIGEST', zh: '阅读完整日报', ja: '全文を読む' }
+
+sponsor: null
+
+newsletter:
+  provider: buttondown
+  username: thewang
+
+about:
+  title: { en: 'HOW IT WORKS', zh: '运作方式', ja: '仕組み' }
+  overview:
+    en: 'Rust Daily Digest is a fully automated Rust engineering news briefing. Every day, the system collects articles from official Rust sources, community blogs, major crate releases, and Hacker News — then scores and filters them through a multi-stage AI pipeline.'
+    zh: 'Rust 日知录是一份全自动的 Rust 工程技术日报。系统每天从 Rust 官方博客、社区博客、主要 crate 发布和 Hacker News 采集文章，经过多阶段 AI 流水线评分筛选。'
+    ja: 'Rust 日知録は完全自動化されたRustエンジニアリングニュースブリーフィングです。Rust公式ブログ、コミュニティブログ、主要crateリリース、Hacker Newsから毎日記事を収集し、多段階AIパイプラインで評価・フィルタリングします。'
+  policyAudience:
+    en: 'Target audience: Rust developers and systems engineers.'
+    zh: '目标读者：Rust 开发者和系统工程师。'
+    ja: '対象読者：Rust開発者およびシステムエンジニア。'
+  disclaimer:
+    en: 'Headlines and analysis paragraphs are generated by AI and may contain inaccuracies. All original reporting belongs to their respective sources.'
+    zh: '标题和分析段落由 AI 生成，可能存在不准确之处。所有原始报道版权归各自来源所有。'
+    ja: '見出しと分析パラグラフはAIにより生成されており、不正確な場合があります。すべてのオリジナル記事は各ソースに帰属します。'
+
+schedule:
+  cron: '0 7 * * *'
