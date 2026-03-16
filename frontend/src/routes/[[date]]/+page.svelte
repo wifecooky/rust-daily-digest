@@ -69,6 +69,7 @@
   <meta property="og:url" content={canonicalUrl} />
   <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={pageDesc} />
+  <meta name="twitter:url" content={canonicalUrl} />
   <meta name="twitter:title" content={pageTitle} />
   <meta name="twitter:description" content={pageDesc} />
   {@html jsonLdScript}
