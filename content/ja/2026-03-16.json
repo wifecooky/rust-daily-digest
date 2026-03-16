@@ -3,30 +3,97 @@
   "lang": "ja",
   "featured": [
     {
+      "id": "13c3da998d374af69800bca160a63efe892a97c951e3e6b67a7ab490df3d85d0",
+      "source": "Rust Internals",
+      "title": "`let mut`と共に`mut`を使用する",
+      "url": "https://internals.rust-lang.org/t/just-mut-alongside-let-mut/24084#post_6",
+      "summary": "参照: よくリクエストされる変更 - Rust言語デザインチーム\nよくリクエストされる変更\nこのページでは、それらのアイデアの一部と、それに反対する懸念を記録しています。\nこのページに何かが記載されているからといって、Rustが同様の変更を決して考慮しないというわけではありません。仮にそのような変更提案が成功するためには、最低限これらの既知の懸念すべてに対処する必要があります。新しいアプローチを提案することで、すべての懸念を回避する必要があります…",
+      "publishedAt": "2026-03-15T20:19:22.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        48,
+        52
+      ],
+      "reason": "Language design enhancement",
+      "suggestedTitle": "Rustにおける`mut`キーワードの拡張提案",
+      "suggestedSummary": "Rust Internalsフォーラムでは、可変変数を宣言する際に`let mut`と共に`mut`を使用することを許可する提案が議論されています。この変更は、変数宣言の冗長性を減らすことでコードの可読性を向上させ、構文を簡素化することを目的としています。採用された場合、この機能はコードをよりエレガントにし、可変変数を宣言する直感的な方法を提供することで、エラーを減らす可能性があり、Rustコードの記述と保守に影響を与えるでしょう。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
       "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
       "source": "rust-analyzer",
       "title": "変更履歴 #319",
       "url": "https://rust-analyzer.github.io//thisweek/2026/03/16/changelog-319.html",
-      "summary": "コミット: 90c8906\n2026-03-16 (v0.3.2828)\n修正\n#21793 (初めての貢献) NameGenerator::suggest_nameでマルチバイトUTF-8識別子を処理。\n#21767 EditionedFileIdからcrateを削除。\n#21785 同じ関連型を指す場合、重複した関連型の短縮解決を許可。\n#21820 TraitRefとその関連型のジェネリック引数を推論。\n#21794 ユニオン型の命名規則を検証。\n#21771 ファイルウォッチャーを再帰的にする。\n内部改善\n#21818 MirLowerCtxを使用するようにリファクタリング…",
+      "summary": "コミット: 90c8906\n2026-03-16 (v0.3.2828)\n修正\n#21793 (初貢献) NameGenerator::suggest_nameでマルチバイトUTF-8識別子を処理。\n#21767 EditionedFileIdからcrateを削除。\n#21785 同じ関連型を指す場合、重複した関連型の省略形の解決を許可。\n#21820 TraitRefとその関連型のジェネリック引数を推論。\n#21794 ユニオン型の命名規則を検証。\n#21771 ファイルウォッチャーを再帰的に。\n内部改善\n#21818 MirLowerCtxを使用するようリファクタリング…",
       "publishedAt": "2026-03-16T00:00:00.000Z",
       "score": 27,
       "relatedCount": 0,
       "candidateNumbers": [
-        1
+        6
       ],
-      "reason": "Key update for rust-analyzer users",
-      "suggestedTitle": "rust-analyzerのアップデート: マルチバイトUTF-8処理の改善",
-      "suggestedSummary": "最新のrust-analyzerのアップデート (v0.3.2828) は、マルチバイトUTF-8文字の処理における重要なバグ修正を行い、IDEの体験を向上させます。この改善は、初めての貢献によるもので、問題#21793を解決し、非ASCIIテキストのコード分析と自動補完をより良くします。rust-analyzerを使用するRust開発者は、特に国際化されたまたは複雑な文字列データを扱う際に、より信頼性が高く正確なコードインサイトを期待できます。",
+      "reason": "Tooling update for rust-analyzer",
+      "suggestedTitle": "rust-analyzer変更履歴 #319: UTF-8処理とその他",
+      "suggestedSummary": "最新のrust-analyzerアップデート、バージョン0.3.2828では、マルチバイトUTF-8文字の処理改善を含むいくつかの重要な問題に対処しています。このアップデートは、国際化されたアプリケーションを扱う開発者にとって重要な、より堅牢なテキスト処理を保証することでIDEの体験を向上させます。変更履歴には、さまざまなバグ修正と小さな改善も含まれており、Rustユーザーにとってよりスムーズで信頼性の高い開発ワークフローに貢献しています。",
       "relatedSources": [
         "rust-analyzer"
       ],
       "category": "featured"
     }
   ],
-  "quickNews": [],
+  "quickNews": [
+    {
+      "id": "734873f13b56b2f8a781d66301e9ba3e0794c475ab194e558d1ae9bab7d5cc1a",
+      "source": "Rust Users Forum",
+      "title": "純粋なRustで実装されたゼロ依存のSecp256k1ライブラリ",
+      "url": "https://users.rust-lang.org/t/zero-dependency-secp256k1-library-in-pure-rust/138937#post_1",
+      "summary": "皆さん、こんにちは。\n私はcnfyを開発しています。これは、ビットコイン暗号化のための純粋なRustライブラリ群で、サードパーティの依存関係が一切ありません。U256の算術からsecp256k1まで、すべてをゼロから実装しています。\nいくつかの重要な決定についてフィードバックをいただければと思います。\n- アンセーフなし、ヒープアロケーションなし — すべてスタックベース\n- デフォルトではなく、フィーチャーフラグの背後にあるコンスタントタイム実行\n- ファイルごとに1つのメソッドと共にテストを配置（ディレクトリごとの構造体パターン）\nコードベースはこちら: https://codeberg.org/cnfy/cnfy-lib…",
+      "publishedAt": "2026-03-15T21:04:50.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1b8a47e87e0747a7c75215139501e9b5b2925e9c27c3a69a4bc3bf81708464e8",
+      "source": "RustCC (CN)",
+      "title": "Rustで書かれたUnreal Engine 5.5のSDK",
+      "url": "https://rustcc.cn/article?id=568d5d3c-4c66-4422-ac64-1ee25d249492",
+      "summary": "https://github.com/vsylva/ue5.5sdk_rs\nしばらく使ってみたが、効果はかなり良い。ハハハハハハハハハ",
+      "publishedAt": "2026-03-15T22:55:46.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3bf69684df46c6b5105ba1c97677747a37074f3053f638a30aa852bca645f91f",
+      "source": "RustCC (CN)",
+      "title": "[オープンソース] Tirea 0.4 — Rust AIエージェントフレームワーク、CopilotKit + Vercel AI SDKを同時にサポート、マルチエージェントオーケストレーションがすぐに利用可能",
+      "url": "https://rustcc.cn/article?id=b0628330-44d6-4460-ab41-56281c0ba56f",
+      "summary": "コア機能：\n多フロントエンドエコシステム互換：1つのバイナリでCopilotKit（AG-UI）とReact（AI SDK v6）を同時にサポートし、グルーコードは不要\nマルチエージェントオーケストレーション：ローカル + リモート（A2A）、コーディネーター/パイプライン/並列ファンアウト/階層/生成-批評モードをサポート\nスキル + MCP：スキルパッケージのランタイム発見と任意のMCPツールの自動登録\nHuman-in-the-loop：ツール粒度での許可/拒否/確認、停止 → 承認 → 再開\nRustの性能：GCなし、低メモリ、千単位の同時エージェント\n技術スタック：axum + tokio + genai（DeepSeek / OpenAI / Anthropic / Ollama）\ngit clone https://github.com/tirea-ai/tirea.git && cd tirea\ncd examples/ai-sdk-starter && npm install\nDEEPSEEK_API_KEY=<your-key> npm run dev\n# 初回実行時にRustエージェントがコンパイルされます（約1-2分）、その後http://localhost:3001を開いてください…",
+      "publishedAt": "2026-03-15T21:16:43.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a519d4242b710ba7001b8526aa7101ea95a5ab9c234e1047e1631d0766265d1a",
+      "source": "Lobsters Rust",
+      "title": "HKTsをエミュレートしてrustcを苦しめ、帰納的サイクルを引き起こし、コンパイラを混乱させる",
+      "url": "https://www.harudagondi.space/blog/torturing-rustc-by-emulating-hkts/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-14T05:51:57.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
   "metadata": {
-    "totalArticles": 1,
+    "totalArticles": 6,
     "estimatedReadTime": "5 分",
-    "generatedAt": "2026-03-16T05:35:53.061Z"
+    "generatedAt": "2026-03-16T05:51:28.288Z"
   }
 }

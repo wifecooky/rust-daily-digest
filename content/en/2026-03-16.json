@@ -3,6 +3,28 @@
   "lang": "en",
   "featured": [
     {
+      "id": "13c3da998d374af69800bca160a63efe892a97c951e3e6b67a7ab490df3d85d0",
+      "source": "Rust Internals",
+      "title": "Just `mut` alongside `let mut`",
+      "url": "https://internals.rust-lang.org/t/just-mut-alongside-let-mut/24084#post_6",
+      "summary": "See also: Frequently Requested Changes - The Rust Language Design Team\nFrequently Requested Changes\nThis page documents some of those ideas, along with the concerns that argue against them.\nIf something appears on this page, that doesn’t mean Rust would never consider making any similar change. It does mean that any hypothetical successful proposal to do so would need to address at a minimum all of these known concerns, whether by proposing a new and previously unseen approach that avoids all…",
+      "publishedAt": "2026-03-15T20:19:22.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        48,
+        52
+      ],
+      "reason": "Language design enhancement",
+      "suggestedTitle": "Proposal for `mut` Keyword Enhancement in Rust",
+      "suggestedSummary": "The Rust Internals forum discusses a proposal to allow the use of `mut` alongside `let mut` for declaring mutable variables. This change aims to streamline code readability and simplify the syntax by reducing redundancy in variable declarations. If adopted, this feature could make code more elegant and potentially reduce errors by providing a more intuitive way to declare mutable variables, impacting how developers write and maintain Rust code.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
       "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
       "source": "rust-analyzer",
       "title": "Changelog #319",
@@ -12,21 +34,66 @@
       "score": 27,
       "relatedCount": 0,
       "candidateNumbers": [
-        1
+        6
       ],
-      "reason": "Key update for rust-analyzer users",
-      "suggestedTitle": "rust-analyzer Update: Improved Multi-byte UTF-8 Handling",
-      "suggestedSummary": "The latest rust-analyzer update (v0.3.2828) addresses a crucial bug fix in handling multi-byte UTF-8 characters, enhancing the IDE experience. This improvement stems from the first-time contribution that resolves issue #21793, ensuring better code analysis and autocompletion for non-ASCII text. Rust developers using rust-analyzer can expect more reliable and accurate code insights, particularly when working with internationalized or complex string data.",
+      "reason": "Tooling update for rust-analyzer",
+      "suggestedTitle": "rust-analyzer Changelog #319: UTF-8 Handling and More",
+      "suggestedSummary": "The latest rust-analyzer update, version 0.3.2828, addresses several key issues including improved handling of multi-byte UTF-8 characters. This update enhances the IDE experience by ensuring more robust text processing, which is crucial for developers working with internationalized applications. The changelog also includes various bug fixes and minor improvements, contributing to a smoother and more reliable development workflow for Rust users.",
       "relatedSources": [
         "rust-analyzer"
       ],
       "category": "featured"
     }
   ],
-  "quickNews": [],
+  "quickNews": [
+    {
+      "id": "734873f13b56b2f8a781d66301e9ba3e0794c475ab194e558d1ae9bab7d5cc1a",
+      "source": "Rust Users Forum",
+      "title": "Zero-dependency Secp256k1 library in pure Rust",
+      "url": "https://users.rust-lang.org/t/zero-dependency-secp256k1-library-in-pure-rust/138937#post_1",
+      "summary": "Hey everyone,\nI've been building cnfy — a suite of pure Rust libraries for Bitcoin cryptography with zero third-party dependencies. Everything from U256 arithmetic to secp256k1 is implemented from scratch.\nA few key decisions I'd love feedback on:\nNo unsafe, no heap allocations — everything stack-based\nConstant-time execution behind feature flags rather than on by default\nOne method per file with co-located tests (struct-per-directory pattern)\nThe codebase: https://codeberg.org/cnfy/cnfy-lib…",
+      "publishedAt": "2026-03-15T21:04:50.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1b8a47e87e0747a7c75215139501e9b5b2925e9c27c3a69a4bc3bf81708464e8",
+      "source": "RustCC (CN)",
+      "title": "rust写的虚幻引擎5.5的SDK",
+      "url": "https://rustcc.cn/article?id=568d5d3c-4c66-4422-ac64-1ee25d249492",
+      "summary": "https://github.com/vsylva/ue5.5sdk_rs\n用一段时间了，效果蛮可。哈哈哈哈哈哈哈哈",
+      "publishedAt": "2026-03-15T22:55:46.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3bf69684df46c6b5105ba1c97677747a37074f3053f638a30aa852bca645f91f",
+      "source": "RustCC (CN)",
+      "title": "[开源] Tirea 0.4 — Rust AI Agent 框架，同时服务 CopilotKit + Vercel AI SDK，多智能体编排开箱即用",
+      "url": "https://rustcc.cn/article?id=b0628330-44d6-4460-ab41-56281c0ba56f",
+      "summary": "核心能力：\n多前端生态兼容：一个二进制同时服务 CopilotKit（AG-UI）和 React（AI SDK v6），零胶水代码\n多智能体编排：本地 + 远程（A2A），支持协调者/流水线/并行扇出/层级/生成-批评模式\nSkills + MCP：技能包运行时发现激活 + 任意 MCP 工具自动注册\nHuman-in-the-loop：按工具粒度 Allow/Deny/Ask，暂停 → 审批 → 恢复\nRust 性能：无 GC、低内存、千级并发 Agent\n技术栈： axum + tokio + genai（DeepSeek / OpenAI / Anthropic / Ollama）\ngit clone https://github.com/tirea-ai/tirea.git && cd tirea\ncd examples/ai-sdk-starter && npm install\nDEEPSEEK_API_KEY=<your-key> npm run dev\n# 首次运行会编译 Rust agent（约 1-2 分钟），然后打开 http://localhost:3001…",
+      "publishedAt": "2026-03-15T21:16:43.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a519d4242b710ba7001b8526aa7101ea95a5ab9c234e1047e1631d0766265d1a",
+      "source": "Lobsters Rust",
+      "title": "Torturing rustc by Emulating HKTs, Causing an Inductive Cycle and Borking the Compiler",
+      "url": "https://www.harudagondi.space/blog/torturing-rustc-by-emulating-hkts/",
+      "summary": "Comments",
+      "publishedAt": "2026-03-14T05:51:57.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
   "metadata": {
-    "totalArticles": 1,
+    "totalArticles": 6,
     "estimatedReadTime": "5 min",
-    "generatedAt": "2026-03-16T05:35:47.261Z"
+    "generatedAt": "2026-03-16T05:51:17.171Z"
   }
 }
