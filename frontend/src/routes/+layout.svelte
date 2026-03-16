@@ -44,6 +44,7 @@
 
   const siteNames = config.site.title;
   const siteKeywords = config.site.keywords;
+  const siteUrl = config.site.url;
   const ogLocales = { en: 'en_US', zh: 'zh_CN', ja: 'ja_JP' };
   const rssUrls = { en: '/rss.xml', zh: '/rss-zh.xml', ja: '/rss-ja.xml' };
 
@@ -55,11 +56,20 @@
 
 <svelte:head>
   <meta name="keywords" content={siteKeywords[currentLang]} />
+  <meta name="robots" content="index, follow" />
   <meta property="og:site_name" content={siteNames[currentLang]} />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content={ogLocales[currentLang]} />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:image" content={`${siteUrl}/og-image.svg`} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={`${siteUrl}/og-image.svg`} />
   <link rel="alternate" type="application/rss+xml" title="{siteNames[currentLang]} RSS" href={rssUrls[currentLang]} />
+  <link rel="alternate" hreflang="en" href={`${siteUrl}/`} />
+  <link rel="alternate" hreflang="zh" href={`${siteUrl}/`} />
+  <link rel="alternate" hreflang="ja" href={`${siteUrl}/`} />
+  <link rel="alternate" hreflang="x-default" href={`${siteUrl}/`} />
 </svelte:head>
 
 <div class="min-h-screen bg-cyber-bg text-cyber-text grid-bg transition-colors duration-300">
