@@ -1,0 +1,74 @@
+{
+  "https://blog.rust-lang.org/feed.xml": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://github.com/rust-lang/rust/releases.atom": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://this-week-in-rust.org/atom.xml": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://smallcultfollowing.com/babysteps/atom.xml": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://fasterthanli.me/index.xml": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://without.boats/blog/index.xml": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://rust-analyzer.github.io/feed.xml": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://lobste.rs/t/rust.rss": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://internals.rust-lang.org/posts.rss": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://users.rust-lang.org/posts.rss": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://github.com/tokio-rs/tokio/releases.atom": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://github.com/bevyengine/bevy/releases.atom": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://github.com/tauri-apps/tauri/releases.atom": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://rustcc.cn/rss": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://zenn.dev/topics/rust/feed": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.267Z"
+  },
+  "https://news.google.com/rss/search?q=Rust+programming+OR+Rustlang&hl=en-US&gl=US&ceid=US:en": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.268Z"
+  },
+  "https://news.google.com/rss/search?q=Rust%E8%AF%AD%E8%A8%80+OR+Rust%E7%BC%96%E7%A8%8B&hl=zh-CN&gl=CN&ceid=CN:zh-Hans": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.268Z"
+  },
+  "https://news.google.com/rss/search?q=Rust%E8%A8%80%E8%AA%9E+OR+Rustlang&hl=ja&gl=JP&ceid=JP:ja": {
+    "consecutiveFailures": 0,
+    "lastChecked": "2026-03-16T06:40:46.268Z"
+  }
+}
