@@ -1,11 +1,32 @@
 {
   "date": "2026-03-16",
   "lang": "en",
-  "featured": [],
+  "featured": [
+    {
+      "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
+      "source": "rust-analyzer",
+      "title": "Changelog #319",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/16/changelog-319.html",
+      "summary": "Commit: 90c8906\n2026-03-16 (v0.3.2828)\nFixes\n#21793 (first contribution) handle multi-byte UTF-8 identifiers in NameGenerator::suggest_name.\n#21767 remove crate from EditionedFileId.\n#21785 allow duplicate associated type shorthand resolution if it points to the same associated type.\n#21820 infer generic args for TraitRef and its associated types.\n#21794 validate naming convention for union types.\n#21771 make file watcher recursive.\nInternal Improvements\n#21818 refactor MirLowerCtx to use…",
+      "publishedAt": "2026-03-16T00:00:00.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1
+      ],
+      "reason": "Key update for rust-analyzer users",
+      "suggestedTitle": "rust-analyzer Update: Improved Multi-byte UTF-8 Handling",
+      "suggestedSummary": "The latest rust-analyzer update (v0.3.2828) addresses a crucial bug fix in handling multi-byte UTF-8 characters, enhancing the IDE experience. This improvement stems from the first-time contribution that resolves issue #21793, ensuring better code analysis and autocompletion for non-ASCII text. Rust developers using rust-analyzer can expect more reliable and accurate code insights, particularly when working with internationalized or complex string data.",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
   "quickNews": [],
   "metadata": {
-    "totalArticles": 0,
+    "totalArticles": 1,
     "estimatedReadTime": "5 min",
-    "generatedAt": "2026-03-16T04:40:47.267Z"
+    "generatedAt": "2026-03-16T05:35:47.261Z"
   }
 }

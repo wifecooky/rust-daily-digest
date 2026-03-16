@@ -1,11 +1,32 @@
 {
   "date": "2026-03-16",
   "lang": "zh",
-  "featured": [],
+  "featured": [
+    {
+      "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
+      "source": "rust-analyzer",
+      "title": "变更日志 #319",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/16/changelog-319.html",
+      "summary": "提交: 90c8906\n2026-03-16 (v0.3.2828)\n修复\n#21793（首次贡献）在 NameGenerator::suggest_name 中处理多字节 UTF-8 标识符。\n#21767 从 EditionedFileId 中移除 crate。\n#21785 如果指向相同的关联类型，允许重复的关联类型简写解析。\n#21820 推断 TraitRef 及其关联类型的泛型参数。\n#21794 验证联合类型的命名约定。\n#21771 使文件监视器递归。\n内部改进\n#21818 重构 MirLowerCtx 以使用…",
+      "publishedAt": "2026-03-16T00:00:00.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1
+      ],
+      "reason": "Key update for rust-analyzer users",
+      "suggestedTitle": "rust-analyzer 更新：改进的多字节 UTF-8 处理",
+      "suggestedSummary": "最新的 rust-analyzer 更新 (v0.3.2828) 解决了处理多字节 UTF-8 字符的关键错误修复，提升了 IDE 体验。这一改进源于首次贡献，解决了问题 #21793，确保了对非 ASCII 文本的更好代码分析和自动补全。使用 rust-analyzer 的 Rust 开发者可以期待更可靠和准确的代码洞察，特别是在处理国际化或复杂字符串数据时。",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
   "quickNews": [],
   "metadata": {
-    "totalArticles": 0,
+    "totalArticles": 1,
     "estimatedReadTime": "5 分钟",
-    "generatedAt": "2026-03-16T04:40:47.268Z"
+    "generatedAt": "2026-03-16T05:35:50.375Z"
   }
 }

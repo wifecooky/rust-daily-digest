@@ -1,11 +1,32 @@
 {
   "date": "2026-03-16",
   "lang": "ja",
-  "featured": [],
+  "featured": [
+    {
+      "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #319",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/16/changelog-319.html",
+      "summary": "コミット: 90c8906\n2026-03-16 (v0.3.2828)\n修正\n#21793 (初めての貢献) NameGenerator::suggest_nameでマルチバイトUTF-8識別子を処理。\n#21767 EditionedFileIdからcrateを削除。\n#21785 同じ関連型を指す場合、重複した関連型の短縮解決を許可。\n#21820 TraitRefとその関連型のジェネリック引数を推論。\n#21794 ユニオン型の命名規則を検証。\n#21771 ファイルウォッチャーを再帰的にする。\n内部改善\n#21818 MirLowerCtxを使用するようにリファクタリング…",
+      "publishedAt": "2026-03-16T00:00:00.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1
+      ],
+      "reason": "Key update for rust-analyzer users",
+      "suggestedTitle": "rust-analyzerのアップデート: マルチバイトUTF-8処理の改善",
+      "suggestedSummary": "最新のrust-analyzerのアップデート (v0.3.2828) は、マルチバイトUTF-8文字の処理における重要なバグ修正を行い、IDEの体験を向上させます。この改善は、初めての貢献によるもので、問題#21793を解決し、非ASCIIテキストのコード分析と自動補完をより良くします。rust-analyzerを使用するRust開発者は、特に国際化されたまたは複雑な文字列データを扱う際に、より信頼性が高く正確なコードインサイトを期待できます。",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
   "quickNews": [],
   "metadata": {
-    "totalArticles": 0,
+    "totalArticles": 1,
     "estimatedReadTime": "5 分",
-    "generatedAt": "2026-03-16T04:40:47.269Z"
+    "generatedAt": "2026-03-16T05:35:53.061Z"
   }
 }
