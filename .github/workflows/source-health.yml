@@ -1,0 +1,77 @@
+name: Source Health Check
+
+on:
+  schedule:
+    - cron: '0 12 * * 1'   # UTC 12:00 every Monday
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check source health
+        run: |
+          node -e "
+          const yaml = require('js-yaml');
+          const fs = require('fs');
+          const config = yaml.load(fs.readFileSync('site.yaml', 'utf8'));
+          const sources = config.sources.rss || [];
+
+          async function check(src) {
+            const start = Date.now();
+            try {
+              const res = await fetch(src.url, {
+                headers: { 'User-Agent': 'SourceHealthCheck/1.0' },
+                signal: AbortSignal.timeout(15000)
+              });
+              const ms = Date.now() - start;
+              if (!res.ok) return { name: src.name, status: 'ERROR', code: res.status, ms };
+              const text = await res.text();
+              const itemCount = (text.match(/<item[\s>]/g) || text.match(/<entry[\s>]/g) || []).length;
+              return { name: src.name, status: 'OK', code: res.status, ms, items: itemCount };
+            } catch (e) {
+              return { name: src.name, status: 'FAIL', error: e.message, ms: Date.now() - start };
+            }
+          }
+
+          (async () => {
+            console.log('# Source Health Report — ' + new Date().toISOString().split('T')[0]);
+            console.log('');
+            const results = await Promise.all(sources.map(check));
+            let ok = 0, fail = 0;
+            for (const r of results) {
+              const icon = r.status === 'OK' ? '✅' : '❌';
+              const detail = r.status === 'OK' ? r.items + ' items, ' + r.ms + 'ms' : (r.error || 'HTTP ' + r.code);
+              console.log(icon + ' ' + r.name.padEnd(30) + ' ' + detail);
+              if (r.status === 'OK') ok++; else fail++;
+            }
+            console.log('');
+            console.log('Summary: ' + ok + '/' + results.length + ' sources healthy');
+          })();
+          "
+
+      - name: Check HN API
+        if: always()
+        run: |
+          node -e "
+          const yaml = require('js-yaml');
+          const fs = require('fs');
+          const config = yaml.load(fs.readFileSync('site.yaml', 'utf8'));
+          const hn = config.sources.hackernews;
+          if (!hn?.enabled) { console.log('HN disabled'); process.exit(0); }
+          (async () => {
+            const q = encodeURIComponent(hn.query || 'AI');
+            const res = await fetch('https://hn.algolia.com/api/v1/search?query=' + q + '&tags=story&hitsPerPage=5');
+            const data = await res.json();
+            console.log('HN API: ' + (data.hits?.length || 0) + ' hits for query \"' + hn.query + '\"');
+          })();
+          "
