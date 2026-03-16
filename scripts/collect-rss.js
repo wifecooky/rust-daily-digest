@@ -3,7 +3,7 @@ import { loadSiteConfig } from './lib/config.js';
 import { parseRSS, fetchHackerNews, fetchHuggingFacePapers } from './utils/rss-parser.js';
 
 const MS_PER_HOUR = 1000 * 60 * 60;
-const RECENT_HOURS = 24;
+const RECENT_HOURS = 48;
 
 async function fetchRSSWithRetry(source, maxRetries = 3) {
   for (let i = 0; i < maxRetries; i++) {
@@ -75,7 +75,7 @@ export async function collectAllSources() {
     return hoursSince <= RECENT_HOURS;
   });
 
-  console.log(`Filtered to ${recent.length} articles from last 24 hours`);
+  console.log(`Filtered to ${recent.length} articles from last 48 hours`);
 
   const deduplicated = deduplicateArticles(recent);
   console.log(`Deduplicated to ${deduplicated.length} unique articles`);
