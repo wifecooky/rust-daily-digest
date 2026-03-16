@@ -63,17 +63,27 @@ theme:
 # ── Data Sources ──
 sources:
   rss:
+    # ── Official (weight 9-10) ──
     - { url: 'https://blog.rust-lang.org/feed.xml', name: 'Rust Blog', weight: 10 }
     - { url: 'https://github.com/rust-lang/rust/releases.atom', name: 'Rust Releases', weight: 10 }
     - { url: 'https://this-week-in-rust.org/atom.xml', name: 'This Week in Rust', weight: 9 }
+    # ── Community blogs (weight 7-8) ──
     - { url: 'https://smallcultfollowing.com/babysteps/atom.xml', name: 'Baby Steps (Niko)', weight: 8 }
     - { url: 'https://fasterthanli.me/index.xml', name: 'fasterthanlime', weight: 8 }
     - { url: 'https://without.boats/blog/index.xml', name: 'without.boats', weight: 7 }
-    - { url: 'https://www.shuttle.rs/blog/rss.xml', name: 'Shuttle', weight: 6 }
     - { url: 'https://rust-analyzer.github.io/feed.xml', name: 'rust-analyzer', weight: 7 }
+    # ── Daily-active community sources (weight 6-7) ──
+    - { url: 'https://lobste.rs/t/rust.rss', name: 'Lobsters Rust', weight: 7 }
+    - { url: 'https://internals.rust-lang.org/posts.rss', name: 'Rust Internals', weight: 7 }
+    - { url: 'https://users.rust-lang.org/posts.rss', name: 'Rust Users Forum', weight: 5 }
+    # ── Ecosystem (weight 6-7) ──
     - { url: 'https://github.com/tokio-rs/tokio/releases.atom', name: 'Tokio', weight: 7 }
     - { url: 'https://github.com/bevyengine/bevy/releases.atom', name: 'Bevy', weight: 6 }
     - { url: 'https://github.com/tauri-apps/tauri/releases.atom', name: 'Tauri', weight: 6 }
+    # ── International (weight 5-6) ──
+    - { url: 'https://rustcc.cn/rss', name: 'RustCC (CN)', weight: 5 }
+    - { url: 'https://zenn.dev/topics/rust/feed', name: 'Zenn Rust (JP)', weight: 5 }
+    # ── Aggregators (weight 6) ──
     - { url: 'https://news.google.com/rss/search?q=Rust+programming+OR+Rustlang&hl=en-US&gl=US&ceid=US:en', name: 'Google News Rust', weight: 6 }
     - { url: 'https://news.google.com/rss/search?q=Rust%E8%AF%AD%E8%A8%80+OR+Rust%E7%BC%96%E7%A8%8B&hl=zh-CN&gl=CN&ceid=CN:zh-Hans', name: 'Google News Rust (CN)', weight: 6 }
     - { url: 'https://news.google.com/rss/search?q=Rust%E8%A8%80%E8%AA%9E+OR+Rustlang&hl=ja&gl=JP&ceid=JP:ja', name: 'Google News Rust (JP)', weight: 6 }
