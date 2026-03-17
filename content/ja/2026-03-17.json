@@ -1,0 +1,97 @@
+{
+  "date": "2026-03-17",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "96c06ee4da706a1a8c06e5eeec20ee5edd0525e5615fda484a167086121aae70",
+      "source": "Lobsters Rust",
+      "title": "LMDBの修正: Meilisearchのベクトルストアを3倍速くする方法",
+      "url": "https://blog.kerollmops.com/patching-lmdb-how-we-made-meilisearch-s-vector-store-333-faster",
+      "summary": "コメント",
+      "publishedAt": "2026-03-16T15:59:26.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        12
+      ],
+      "reason": "Performance boost for Rust developers",
+      "suggestedTitle": "MeilisearchのベクトルストアがRustで3倍の速度向上を達成",
+      "suggestedSummary": "MeilisearchはLMDBを修正することで、ベクトルストアのパフォーマンスを大幅に向上させ、速度を3倍にしました。この改善はRustの機能を活用してデータの取得と保存の効率を最適化しています。Rust開発者はより高速な検索操作の恩恵を受けられるようになり、Meilisearchは高性能な検索アプリケーションにとってより魅力的な選択肢となっています。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #319",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/16/changelog-319.html",
+      "summary": "コミット: 90c8906\n2026-03-16 (v0.3.2828)\n修正\n#21793 (初めての貢献) NameGenerator::suggest_nameでマルチバイトUTF-8識別子を処理。\n#21767 EditionedFileIdからcrateを削除。\n#21785 同じ関連型を指す場合、重複した関連型の短縮解決を許可。\n#21820 TraitRefとその関連型のジェネリック引数を推論。\n#21794 ユニオン型の命名規則を検証。\n#21771 ファイルウォッチャーを再帰的に。\n内部改善\n#21818 MirLowerCtxを使用するようにリファクタリング…",
+      "publishedAt": "2026-03-16T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Important rust-analyzer updates",
+      "suggestedTitle": "Rust-Analyzer変更履歴 #319: 新しい修正と機能",
+      "suggestedSummary": "最新のrust-analyzerアップデート、バージョン0.3.2828では、マルチバイトUTF-8識別子のサポートを含むいくつかの修正が導入されています。このアップデートは、特に国際化されたコードベースで作業するRust開発者にとってIDE体験を向上させます。これらの問題に対処することで、rust-analyzerはRust開発のためのツールとしての実用性と信頼性を向上させ続けています。",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "72309a2f935c034135a1edbd495a3f5d6967a69c018d222493da36f5d5ef2f80",
+      "source": "Lobsters Rust",
+      "title": "鳥類物理学 0.6",
+      "url": "https://joonaa.dev/blog/12/avian-0-6",
+      "summary": "コメント",
+      "publishedAt": "2026-03-16T22:49:25.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ba94f8e45dbefce590d89ddd49d4f10eceb0920c5ede2ffe20d43b40f05e0ea1",
+      "source": "Lobsters Rust",
+      "title": "pgtuiの紹介、Postgres TUIクライアント",
+      "url": "https://kdwarn.net/programming/blog/227",
+      "summary": "コメント",
+      "publishedAt": "2026-03-16T05:08:26.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6b90868e9646ef124dcfd53874fba7c76121b58283bbeb8e2f3f5b00fd53548f",
+      "source": "Rust Users Forum",
+      "title": "wgcDB: 研究論文に触発された適応型マルチ表現データベースのRustプロトタイプ",
+      "url": "https://users.rust-lang.org/t/wgcdb-a-rust-prototype-of-an-adaptive-multi-representation-database-inspired-by-a-research-paper/138943#post_1",
+      "summary": "データベース研究論文からのアイデアを実験しています（リポジトリにリンクされています）: クエリを観察し、適切なインデックスを自動的に構築することができるのか、事前に作成を強制する代わりに？このコンセプトをテストするために、Rustで最小限のプロトタイプを構築しました。 コアアイデア データはマイクロシャード（CSVデータを含む時間ベースのディレクトリ）に分割されます。 各シャードは軽量な表現（インデックス）のプールを維持します。 システムはクエリパターンを監視し、自動的に以下を構築します： ミニBツリーを…",
+      "publishedAt": "2026-03-16T09:36:35.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3bf69684df46c6b5105ba1c97677747a37074f3053f638a30aa852bca645f91f",
+      "source": "RustCC (CN)",
+      "title": "[オープンソース] Tirea 0.4 — Rust AIエージェントフレームワーク、CopilotKit + Vercel AI SDKを同時にサポート、マルチエージェントオーケストレーションがすぐに利用可能",
+      "url": "https://rustcc.cn/article?id=b0628330-44d6-4460-ab41-56281c0ba56f",
+      "summary": "コア機能：\nマルチフロントエンドエコシステム互換：1つのバイナリがCopilotKit（AG-UI）とReact（AI SDK v6）を同時にサポートし、グルーコードは不要\nマルチエージェントオーケストレーション：ローカル + リモート（A2A）、コーディネーター/パイプライン/並列ファンアウト/階層/生成-批評モードをサポート\nスキル + MCP：スキルパッケージのランタイム発見と任意のMCPツールの自動登録\nHuman-in-the-loop：ツール粒度での許可/拒否/確認、停止 → 承認 → 再開\nRust性能：GCなし、低メモリ、千単位の同時エージェント\n技術スタック：axum + tokio + genai（DeepSeek / OpenAI / Anthropic / Ollama）\ngit clone https://github.com/tirea-ai/tirea.git && cd tirea\ncd examples/ai-sdk-starter && npm install\nDEEPSEEK_API_KEY=<your-key> npm run dev\n# 初回実行時にRustエージェントがコンパイルされます（約1-2分）、その後http://localhost:3001を開いてください…",
+      "publishedAt": "2026-03-15T21:16:43.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 6,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-17T00:07:35.242Z"
+  }
+}

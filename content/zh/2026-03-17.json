@@ -1,0 +1,97 @@
+{
+  "date": "2026-03-17",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "96c06ee4da706a1a8c06e5eeec20ee5edd0525e5615fda484a167086121aae70",
+      "source": "Lobsters Rust",
+      "title": "修补LMDB：我们如何让Meilisearch的向量存储速度提高3倍",
+      "url": "https://blog.kerollmops.com/patching-lmdb-how-we-made-meilisearch-s-vector-store-333-faster",
+      "summary": "评论",
+      "publishedAt": "2026-03-16T15:59:26.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        12
+      ],
+      "reason": "Performance boost for Rust developers",
+      "suggestedTitle": "Meilisearch的向量存储通过Rust实现3倍速度提升",
+      "suggestedSummary": "Meilisearch通过修补LMDB显著提高了其向量存储的性能，实现了三倍的速度提升。这一增强利用了Rust的能力来优化数据检索和存储效率。Rust开发者现在可以从更快的搜索操作中受益，使Meilisearch成为高性能搜索应用程序的更具吸引力的选择。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
+      "source": "rust-analyzer",
+      "title": "变更日志 #319",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/16/changelog-319.html",
+      "summary": "提交: 90c8906\n2026-03-16 (v0.3.2828)\n修复\n#21793 (首次贡献) 在 NameGenerator::suggest_name 中处理多字节 UTF-8 标识符。\n#21767 从 EditionedFileId 中移除 crate。\n#21785 允许重复的关联类型简写解析，如果它指向相同的关联类型。\n#21820 推断 TraitRef 及其关联类型的泛型参数。\n#21794 验证联合类型的命名约定。\n#21771 使文件监视器递归。\n内部改进\n#21818 重构 MirLowerCtx 以使用…",
+      "publishedAt": "2026-03-16T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Important rust-analyzer updates",
+      "suggestedTitle": "Rust-Analyzer 变更日志 #319：新修复和功能",
+      "suggestedSummary": "最新的 rust-analyzer 更新版本 0.3.2828 引入了多项修复，包括对多字节 UTF-8 标识符的支持。此更新增强了 Rust 开发者的 IDE 体验，特别是那些处理国际化代码库的开发者。通过解决这些问题，rust-analyzer 继续提升其作为 Rust 开发工具的实用性和可靠性。",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "72309a2f935c034135a1edbd495a3f5d6967a69c018d222493da36f5d5ef2f80",
+      "source": "Lobsters Rust",
+      "title": "鸟类物理学 0.6",
+      "url": "https://joonaa.dev/blog/12/avian-0-6",
+      "summary": "评论",
+      "publishedAt": "2026-03-16T22:49:25.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ba94f8e45dbefce590d89ddd49d4f10eceb0920c5ede2ffe20d43b40f05e0ea1",
+      "source": "Lobsters Rust",
+      "title": "介绍 pgtui，一款 Postgres TUI 客户端",
+      "url": "https://kdwarn.net/programming/blog/227",
+      "summary": "评论",
+      "publishedAt": "2026-03-16T05:08:26.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6b90868e9646ef124dcfd53874fba7c76121b58283bbeb8e2f3f5b00fd53548f",
+      "source": "Rust Users Forum",
+      "title": "wgcDB：受研究论文启发的自适应多表示数据库的Rust原型",
+      "url": "https://users.rust-lang.org/t/wgcdb-a-rust-prototype-of-an-adaptive-multi-representation-database-inspired-by-a-research-paper/138943#post_1",
+      "summary": "我一直在尝试一个来自数据库研究论文的想法（在仓库中链接）：观察你的查询并自动构建正确的索引，而不是强迫你提前创建它们？因此，我用Rust构建了一个最小的原型来测试这个概念。 核心理念 数据被分割成微分片（基于时间的目录，包含CSV数据） 每个分片维护一个轻量级表示（索引）池 系统监控查询模式并自动构建： 小型B树用于……",
+      "publishedAt": "2026-03-16T09:36:35.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3bf69684df46c6b5105ba1c97677747a37074f3053f638a30aa852bca645f91f",
+      "source": "RustCC (CN)",
+      "title": "[开源] Tirea 0.4 — Rust AI Agent 框架，同时服务 CopilotKit + Vercel AI SDK，多智能体编排开箱即用",
+      "url": "https://rustcc.cn/article?id=b0628330-44d6-4460-ab41-56281c0ba56f",
+      "summary": "核心能力： 多前端生态兼容：一个二进制同时服务 CopilotKit（AG-UI）和 React（AI SDK v6），零胶水代码 多智能体编排：本地 + 远程（A2A），支持协调者/流水线/并行扇出/层级/生成-批评模式 技能 + MCP：技能包运行时发现激活 + 任意 MCP 工具自动注册 Human-in-the-loop：按工具粒度 Allow/Deny/Ask，暂停 → 审批 → 恢复 Rust 性能：无 GC、低内存、千级并发 Agent 技术栈： axum + tokio + genai（DeepSeek / OpenAI / Anthropic / Ollama） git clone https://github.com/tirea-ai/tirea.git && cd tirea cd examples/ai-sdk-starter && npm install DEEPSEEK_API_KEY=<your-key> npm run dev # 首次运行会编译 Rust agent（约 1-2 分钟），然后打开 http://localhost:3001…",
+      "publishedAt": "2026-03-15T21:16:43.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 6,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-17T00:07:24.479Z"
+  }
+}

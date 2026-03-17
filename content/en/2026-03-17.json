@@ -1,0 +1,97 @@
+{
+  "date": "2026-03-17",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "96c06ee4da706a1a8c06e5eeec20ee5edd0525e5615fda484a167086121aae70",
+      "source": "Lobsters Rust",
+      "title": "Patching LMDB: How We Made Meilisearch’s Vector Store 3x Faster",
+      "url": "https://blog.kerollmops.com/patching-lmdb-how-we-made-meilisearch-s-vector-store-333-faster",
+      "summary": "Comments",
+      "publishedAt": "2026-03-16T15:59:26.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        12
+      ],
+      "reason": "Performance boost for Rust developers",
+      "suggestedTitle": "Meilisearch's Vector Store Achieves 3x Speed Boost with Rust",
+      "suggestedSummary": "Meilisearch has significantly improved the performance of its vector store by patching LMDB, resulting in a threefold speed increase. This enhancement leverages Rust's capabilities to optimize data retrieval and storage efficiency. Rust developers can now benefit from faster search operations, making Meilisearch a more attractive option for high-performance search applications.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d704b7cb18a89b04a2292e5c4470443748dde7276bc69c379b80684db13087a7",
+      "source": "rust-analyzer",
+      "title": "Changelog #319",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/16/changelog-319.html",
+      "summary": "Commit: 90c8906\n2026-03-16 (v0.3.2828)\nFixes\n#21793 (first contribution) handle multi-byte UTF-8 identifiers in NameGenerator::suggest_name.\n#21767 remove crate from EditionedFileId.\n#21785 allow duplicate associated type shorthand resolution if it points to the same associated type.\n#21820 infer generic args for TraitRef and its associated types.\n#21794 validate naming convention for union types.\n#21771 make file watcher recursive.\nInternal Improvements\n#21818 refactor MirLowerCtx to use…",
+      "publishedAt": "2026-03-16T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Important rust-analyzer updates",
+      "suggestedTitle": "Rust-Analyzer Changelog #319: New Fixes and Features",
+      "suggestedSummary": "The latest rust-analyzer update, version 0.3.2828, introduces several fixes, including support for multi-byte UTF-8 identifiers. This update enhances the IDE experience for Rust developers, particularly those working with internationalized codebases. By addressing these issues, rust-analyzer continues to improve its utility and reliability as a tool for Rust development.",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "72309a2f935c034135a1edbd495a3f5d6967a69c018d222493da36f5d5ef2f80",
+      "source": "Lobsters Rust",
+      "title": "Avian Physics 0.6",
+      "url": "https://joonaa.dev/blog/12/avian-0-6",
+      "summary": "Comments",
+      "publishedAt": "2026-03-16T22:49:25.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ba94f8e45dbefce590d89ddd49d4f10eceb0920c5ede2ffe20d43b40f05e0ea1",
+      "source": "Lobsters Rust",
+      "title": "Introducing pgtui, a Postgres TUI client",
+      "url": "https://kdwarn.net/programming/blog/227",
+      "summary": "Comments",
+      "publishedAt": "2026-03-16T05:08:26.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6b90868e9646ef124dcfd53874fba7c76121b58283bbeb8e2f3f5b00fd53548f",
+      "source": "Rust Users Forum",
+      "title": "wgcDB: A Rust prototype of an adaptive multi-representation database inspired by a research paper",
+      "url": "https://users.rust-lang.org/t/wgcdb-a-rust-prototype-of-an-adaptive-multi-representation-database-inspired-by-a-research-paper/138943#post_1",
+      "summary": "I've been experimenting with an idea from a database research paper (linked in repo):\nobserve your queries and automatically build the right index\n, instead of forcing you to create them upfront?\nSo I built a minimal prototype in Rust to test the concept.\n Core idea\nData is split into micro-shards (time-based directories with CSV data)\nEach shard maintains a pool of lightweight representations (indexes)\nThe system monitors query patterns and automatically builds:\n\nMini B-trees for…",
+      "publishedAt": "2026-03-16T09:36:35.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3bf69684df46c6b5105ba1c97677747a37074f3053f638a30aa852bca645f91f",
+      "source": "RustCC (CN)",
+      "title": "[开源] Tirea 0.4 — Rust AI Agent 框架，同时服务 CopilotKit + Vercel AI SDK，多智能体编排开箱即用",
+      "url": "https://rustcc.cn/article?id=b0628330-44d6-4460-ab41-56281c0ba56f",
+      "summary": "核心能力：\n多前端生态兼容：一个二进制同时服务 CopilotKit（AG-UI）和 React（AI SDK v6），零胶水代码\n多智能体编排：本地 + 远程（A2A），支持协调者/流水线/并行扇出/层级/生成-批评模式\nSkills + MCP：技能包运行时发现激活 + 任意 MCP 工具自动注册\nHuman-in-the-loop：按工具粒度 Allow/Deny/Ask，暂停 → 审批 → 恢复\nRust 性能：无 GC、低内存、千级并发 Agent\n技术栈： axum + tokio + genai（DeepSeek / OpenAI / Anthropic / Ollama）\ngit clone https://github.com/tirea-ai/tirea.git && cd tirea\ncd examples/ai-sdk-starter && npm install\nDEEPSEEK_API_KEY=<your-key> npm run dev\n# 首次运行会编译 Rust agent（约 1-2 分钟），然后打开 http://localhost:3001…",
+      "publishedAt": "2026-03-15T21:16:43.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 6,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-17T00:07:12.971Z"
+  }
+}
