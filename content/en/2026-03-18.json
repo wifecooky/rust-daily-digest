@@ -1,0 +1,100 @@
+{
+  "date": "2026-03-18",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "a74d3e7b96016ce7388ab1088c8d832f50ad24016602b22163e1831e10a93bdd",
+      "source": "Rust Internals",
+      "title": "Stable type identifiers: a missing piece for crABI and export",
+      "url": "https://internals.rust-lang.org/t/stable-type-identifiers-a-missing-piece-for-crabi-and-export/24093#post_1",
+      "summary": "Rust Permanent/Stable Type Identifiers\nI have an idea related to #3435 and #3470 that differs from both of them.\nThe Idea\nThe idea is that Rust would add permanent identifiers for every type. These identifiers would be derived from the full path of a type, i.e., the identifier for std::vec::Vec would be derived from the path std::vec::Vec and not from the internal structure of std::vec::Vec or its memory footprint, only its path.\nThis permanent identifier would not change when you change your…",
+      "publishedAt": "2026-03-17T20:17:42.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Stable type identifiers proposal impacts ABI",
+      "suggestedTitle": "Proposal for Stable Type Identifiers in Rust",
+      "suggestedSummary": "A proposal on Rust Internals discusses the introduction of stable type identifiers, a crucial feature for achieving a stable ABI in Rust. This feature would allow the types to be uniquely identified across different Rust versions, facilitating more robust interoperability and binary compatibility. For Rust developers, this means potential improvements in how Rust libraries interact with other languages and systems, paving the way for more seamless integration and long-term stability in Rust projects.",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1820ff2b3373929ae26a81277a99a1853514531f4ae5487e3f7bf8a52dc58bef",
+      "source": "Rust Users Forum",
+      "title": "Announcing Momenta v0.3.0 — Fine-grained reactive UI framework with SSR, hydration, and a client-side router",
+      "url": "https://users.rust-lang.org/t/announcing-momenta-v0-3-0-fine-grained-reactive-ui-framework-with-ssr-hydration-and-a-client-side-router/138974#post_7",
+      "summary": "If I were to compare it, the difference is mostly in syntax and reactivity model.\nYew uses a re-imagined HTML syntax while Momenta aims to be as closely resembling rsx as possible. This is important because it's preety much why I created it in the first place. I wanted to rewrite my portfolio but didnt want to start learnning a new syntax for writing views. In momenta, there's very little difference between the JSX in react and RSX in Momenta. The differences are mostly compiler imposed.…",
+      "publishedAt": "2026-03-17T21:02:40.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        3,
+        36
+      ],
+      "reason": "New reactive UI framework release",
+      "suggestedTitle": "Momenta v0.3.0: Reactive UI Framework for Rust",
+      "suggestedSummary": "Momenta v0.3.0 has been announced, a fine-grained reactive UI framework for Rust that supports server-side rendering (SSR), hydration, and a client-side router. The framework differentiates itself with its syntax and reactivity model, aiming to provide a more intuitive development experience compared to existing frameworks like Yew. Developers can leverage Momenta to build highly interactive and efficient web applications, benefiting from its fine-grained reactivity and SSR capabilities.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e1c2105578147cb238f4db281f8c1cc851671a047fc4484355642c93ea099472",
+      "source": "Rust Users Forum",
+      "title": "I was tired of ROS2, so I rewrote it in Rust",
+      "url": "https://users.rust-lang.org/t/i-was-tired-of-ros2-so-i-rewrote-it-in-rust/135139?page=2#post_27",
+      "summary": "Guelakais:\nup with any new arguments. Seriously. Read through what you're writing. It's exactly the same content every time. And honestly, that's not enough. The world isn't as small as you describe it.\nIf your only real argument for Horus is that you like it, that\nHonestly , I'm starting to be interested in Horus because it doen't need gigabytes of dependancies",
+      "publishedAt": "2026-03-17T15:43:20.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "eac0fb751d7f47174d326211af11f942c327a31b7510b7e5a69f99b940f95b86",
+      "source": "Rust Users Forum",
+      "title": "Announcing behave 0.8.0: BDD-style Rust tests that compile to ordinary #[test] functions",
+      "url": "https://users.rust-lang.org/t/announcing-behave-0-8-0-bdd-style-rust-tests-that-compile-to-ordinary-test-functions/138970#post_1",
+      "summary": "Hi everyone  \nI’ve published behave 0.8.0, a behavior-driven testing library for Rust.\nThe main goal is simple:  \nmake tests easier to read and structure without introducing a custom test runtime\nbehave! lets you write nested scenario-style suites, and the generated tests still compile down to ordinary #[test] functions, so you can keep using normal Rust tooling and cargo test.\nA few things behave focuses on:\nnested, readable test groups\ninherited setup / teardown\nexpressive expect! assertions…",
+      "publishedAt": "2026-03-17T16:23:40.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "baf73f3cc4dedd87e329ce152ef2942431daf9b0506ce83fc898a865f557a421",
+      "source": "Lobsters Rust",
+      "title": "Oxyde ORM - Django-like Pydantic-driven Async ORM",
+      "url": "https://oxyde.fatalyst.dev/0.5/",
+      "summary": "Comments",
+      "publishedAt": "2026-03-17T00:40:32.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ba94f8e45dbefce590d89ddd49d4f10eceb0920c5ede2ffe20d43b40f05e0ea1",
+      "source": "Lobsters Rust",
+      "title": "Introducing pgtui, a Postgres TUI client",
+      "url": "https://kdwarn.net/programming/blog/227",
+      "summary": "Comments",
+      "publishedAt": "2026-03-16T05:08:26.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-18T00:08:16.825Z"
+  }
+}

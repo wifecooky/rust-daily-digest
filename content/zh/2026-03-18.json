@@ -1,0 +1,100 @@
+{
+  "date": "2026-03-18",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "a74d3e7b96016ce7388ab1088c8d832f50ad24016602b22163e1831e10a93bdd",
+      "source": "Rust Internals",
+      "title": "稳定类型标识符：crABI 和导出的缺失部分",
+      "url": "https://internals.rust-lang.org/t/stable-type-identifiers-a-missing-piece-for-crabi-and-export/24093#post_1",
+      "summary": "Rust 永久/稳定类型标识符",
+      "publishedAt": "2026-03-17T20:17:42.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Stable type identifiers proposal impacts ABI",
+      "suggestedTitle": "Rust 中稳定类型标识符的提案",
+      "suggestedSummary": "在 Rust Internals 上的一项提案讨论了引入稳定类型标识符，这对于在 Rust 中实现稳定 ABI 是一个关键特性。该特性将允许类型在不同的 Rust 版本中被唯一识别，促进更强大的互操作性和二进制兼容性。对于 Rust 开发者来说，这意味着在 Rust 库与其他语言和系统的交互方式上可能会有所改进，为 Rust 项目的无缝集成和长期稳定性铺平道路。",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1820ff2b3373929ae26a81277a99a1853514531f4ae5487e3f7bf8a52dc58bef",
+      "source": "Rust Users Forum",
+      "title": "发布 Momenta v0.3.0 — 具有 SSR、hydration 和客户端路由的细粒度响应式 UI 框架",
+      "url": "https://users.rust-lang.org/t/announcing-momenta-v0-3-0-fine-grained-reactive-ui-framework-with-ssr-hydration-and-a-client-side-router/138974#post_7",
+      "summary": "如果要比较的话，区别主要在于语法和响应性模型。Yew 使用重新设计的 HTML 语法，而 Momenta 旨在尽可能接近 rsx。这很重要，因为这几乎是我创建它的初衷。我想重写我的作品集，但不想开始学习新的视图编写语法。在 Momenta 中，React 中的 JSX 和 Momenta 中的 RSX 之间几乎没有区别。差异主要是编译器强加的。…",
+      "publishedAt": "2026-03-17T21:02:40.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        3,
+        36
+      ],
+      "reason": "New reactive UI framework release",
+      "suggestedTitle": "Momenta v0.3.0：Rust 的响应式 UI 框架",
+      "suggestedSummary": "Momenta v0.3.0 已发布，这是一个用于 Rust 的细粒度响应式 UI 框架，支持服务器端渲染（SSR）、hydration 和客户端路由。该框架通过其语法和响应性模型与众不同，旨在提供比现有框架（如 Yew）更直观的开发体验。开发人员可以利用 Momenta 构建高度交互且高效的 Web 应用程序，受益于其细粒度的响应性和 SSR 功能。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e1c2105578147cb238f4db281f8c1cc851671a047fc4484355642c93ea099472",
+      "source": "Rust Users Forum",
+      "title": "我厌倦了ROS2，所以用Rust重写了它",
+      "url": "https://users.rust-lang.org/t/i-was-tired-of-ros2-so-i-rewrote-it-in-rust/135139?page=2#post_27",
+      "summary": "Guelakais：\n没有提出任何新的论点。说真的。仔细阅读你写的内容。每次都是完全相同的内容。老实说，这还不够。世界并不像你描述的那么小。\n如果你对Horus唯一真正的论点是你喜欢它，那\n老实说，我开始对Horus感兴趣，因为它不需要大量的依赖",
+      "publishedAt": "2026-03-17T15:43:20.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "eac0fb751d7f47174d326211af11f942c327a31b7510b7e5a69f99b940f95b86",
+      "source": "Rust Users Forum",
+      "title": "发布 behave 0.8.0：编译为普通 #[test] 函数的 BDD 风格 Rust 测试",
+      "url": "https://users.rust-lang.org/t/announcing-behave-0-8-0-bdd-style-rust-tests-that-compile-to-ordinary-test-functions/138970#post_1",
+      "summary": "大家好\n我发布了 behave 0.8.0，这是一个用于 Rust 的行为驱动测试库。\n主要目标很简单：\n在不引入自定义测试运行时的情况下，使测试更易于阅读和结构化。\nbehave! 允许您编写嵌套的场景风格套件，生成的测试仍然编译为普通的 #[test] 函数，因此您可以继续使用正常的 Rust 工具和 cargo test。\nbehave 专注于以下几点：\n嵌套的、可读的测试组\n继承的设置/拆卸\n富有表现力的 expect! 断言…",
+      "publishedAt": "2026-03-17T16:23:40.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "baf73f3cc4dedd87e329ce152ef2942431daf9b0506ce83fc898a865f557a421",
+      "source": "Lobsters Rust",
+      "title": "Oxyde ORM - 类似 Django 的基于 Pydantic 的异步 ORM",
+      "url": "https://oxyde.fatalyst.dev/0.5/",
+      "summary": "评论",
+      "publishedAt": "2026-03-17T00:40:32.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ba94f8e45dbefce590d89ddd49d4f10eceb0920c5ede2ffe20d43b40f05e0ea1",
+      "source": "Lobsters Rust",
+      "title": "介绍 pgtui，一款 Postgres TUI 客户端",
+      "url": "https://kdwarn.net/programming/blog/227",
+      "summary": "评论",
+      "publishedAt": "2026-03-16T05:08:26.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-18T00:08:26.835Z"
+  }
+}

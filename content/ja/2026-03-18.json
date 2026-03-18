@@ -1,0 +1,100 @@
+{
+  "date": "2026-03-18",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "a74d3e7b96016ce7388ab1088c8d832f50ad24016602b22163e1831e10a93bdd",
+      "source": "Rust Internals",
+      "title": "安定した型識別子：crABIとエクスポートのための欠けているピース",
+      "url": "https://internals.rust-lang.org/t/stable-type-identifiers-a-missing-piece-for-crabi-and-export/24093#post_1",
+      "summary": "Rust 永続/安定型識別子\n#3435と#3470に関連するアイデアがありますが、どちらとも異なります。\nアイデア\nこのアイデアは、Rustがすべての型に対して永続的な識別子を追加するというものです。これらの識別子は型のフルパスから導出されます。つまり、std::vec::Vecの識別子はstd::vec::Vecのパスから導出され、std::vec::Vecの内部構造やメモリフットプリントからではなく、そのパスのみに基づきます。\nこの永続的な識別子は、変更を加えても変わりません…",
+      "publishedAt": "2026-03-17T20:17:42.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Stable type identifiers proposal impacts ABI",
+      "suggestedTitle": "Rustにおける安定型識別子の提案",
+      "suggestedSummary": "Rust Internalsでの提案は、安定した型識別子の導入について議論しています。これはRustにおける安定したABIを達成するための重要な機能です。この機能により、異なるRustバージョン間で型を一意に識別できるようになり、より強固な相互運用性とバイナリ互換性が促進されます。Rust開発者にとって、これはRustライブラリが他の言語やシステムとどのように相互作用するかの改善を意味し、よりシームレスな統合と長期的な安定性をRustプロジェクトにもたらす道を開きます。",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1820ff2b3373929ae26a81277a99a1853514531f4ae5487e3f7bf8a52dc58bef",
+      "source": "Rust Users Forum",
+      "title": "Momenta v0.3.0の発表 — SSR、ハイドレーション、クライアントサイドルーターを備えた細粒度のリアクティブUIフレームワーク",
+      "url": "https://users.rust-lang.org/t/announcing-momenta-v0-3-0-fine-grained-reactive-ui-framework-with-ssr-hydration-and-a-client-side-router/138974#post_7",
+      "summary": "比較すると、違いは主に構文とリアクティビティモデルにあります。Yewは再構想されたHTML構文を使用しますが、Momentaは可能な限りrsxに近づけることを目指しています。これは、私がそもそもこれを作成した理由でもあります。ポートフォリオを書き直したかったのですが、ビューを書くための新しい構文を学び始めたくありませんでした。Momentaでは、ReactのJSXとMomentaのRSXの違いはほとんどありません。違いは主にコンパイラによって課されるものです。",
+      "publishedAt": "2026-03-17T21:02:40.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        3,
+        36
+      ],
+      "reason": "New reactive UI framework release",
+      "suggestedTitle": "Momenta v0.3.0: RustのためのリアクティブUIフレームワーク",
+      "suggestedSummary": "Momenta v0.3.0が発表されました。これは、Rustのための細粒度のリアクティブUIフレームワークで、サーバーサイドレンダリング（SSR）、ハイドレーション、クライアントサイドルーターをサポートしています。このフレームワークは、その構文とリアクティビティモデルで差別化されており、Yewのような既存のフレームワークと比較して、より直感的な開発体験を提供することを目指しています。開発者はMomentaを活用して、細粒度のリアクティビティとSSR機能を活かした、高度にインタラクティブで効率的なWebアプリケーションを構築できます。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e1c2105578147cb238f4db281f8c1cc851671a047fc4484355642c93ea099472",
+      "source": "Rust Users Forum",
+      "title": "ROS2に疲れたので、Rustで書き直しました",
+      "url": "https://users.rust-lang.org/t/i-was-tired-of-ros2-so-i-rewrote-it-in-rust/135139?page=2#post_27",
+      "summary": "Guelakais: 新しい議論を持ち出すことができません。本当に。自分が書いている内容を読んでください。毎回まったく同じ内容です。そして正直、それでは不十分です。世界はあなたが描写するほど小さくはありません。 Horusに対する唯一の本当の主張が「好きだから」なら、正直なところ、Horusに興味が湧いてきました。なぜなら、Horusはギガバイトの依存関係を必要としないからです。",
+      "publishedAt": "2026-03-17T15:43:20.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "eac0fb751d7f47174d326211af11f942c327a31b7510b7e5a69f99b940f95b86",
+      "source": "Rust Users Forum",
+      "title": "behave 0.8.0の発表: 通常の#[test]関数にコンパイルされるBDDスタイルのRustテスト",
+      "url": "https://users.rust-lang.org/t/announcing-behave-0-8-0-bdd-style-rust-tests-that-compile-to-ordinary-test-functions/138970#post_1",
+      "summary": "皆さん、こんにちは\nRust用の振る舞い駆動テストライブラリであるbehave 0.8.0を公開しました。\n主な目標はシンプルです:\nカスタムテストランタイムを導入せずに、テストをより読みやすく、構造化しやすくすることです。\nbehave!を使えば、ネストされたシナリオスタイルのスイートを書くことができ、生成されたテストは通常の#[test]関数にコンパイルされるので、通常のRustツールやcargo testを引き続き使用できます。\nbehaveが注力している点はいくつかあります:\nネストされた、読みやすいテストグループ\n継承されたセットアップ/ティアダウン\n表現力豊かなexpect!アサーション…",
+      "publishedAt": "2026-03-17T16:23:40.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "baf73f3cc4dedd87e329ce152ef2942431daf9b0506ce83fc898a865f557a421",
+      "source": "Lobsters Rust",
+      "title": "Oxyde ORM - Django風のPydantic駆動非同期ORM",
+      "url": "https://oxyde.fatalyst.dev/0.5/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-17T00:40:32.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ba94f8e45dbefce590d89ddd49d4f10eceb0920c5ede2ffe20d43b40f05e0ea1",
+      "source": "Lobsters Rust",
+      "title": "pgtuiの紹介、Postgres TUIクライアント",
+      "url": "https://kdwarn.net/programming/blog/227",
+      "summary": "コメント",
+      "publishedAt": "2026-03-16T05:08:26.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-18T00:08:35.741Z"
+  }
+}
