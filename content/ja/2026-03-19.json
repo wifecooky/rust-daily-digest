@@ -1,0 +1,57 @@
+{
+  "date": "2026-03-19",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "9a91f7405b92c951712ce6e67a31ae8c29966f2bb32a0dd5cf052ac161da0619",
+      "source": "Rust Internals",
+      "title": "`MaybeInvalid<T>` - 未初期化メモリと無効な値の概念を分離",
+      "url": "https://internals.rust-lang.org/t/maybeinvalid-t-separate-concepts-of-uninitialized-memory-and-invalid-values/24087#post_6",
+      "summary": "この提案は、Rustの有効性ルールにおける未初期化メモリの扱いについての誤解に基づいているようです。Rustには、未初期化メモリが本質的に禁止されているという特別なルールはありません。それは単にメモリが取り得る状態の一つです。いくつかの型はメモリが特定の状態にあることを要求します。例えば、i32はメモリが任意の初期化された状態にあることを要求し、boolはメモリが0x00または0x01であることを要求します。これらは同じ種類の要求です。…",
+      "publishedAt": "2026-03-18T18:08:59.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        5,
+        1
+      ],
+      "reason": "Critical for Rust memory safety",
+      "suggestedTitle": "MaybeInvalid<T>の紹介: Rustのメモリ安全性を向上",
+      "suggestedSummary": "`MaybeInvalid<T>`の導入は、Rustにおける未初期化メモリと無効な値の概念を分離することを目的としています。この提案は、未初期化メモリの取り扱いにおける一般的な誤解に対処し、開発者により堅牢なフレームワークを提供します。メモリ状態を明確に区別することで、Rustは安全性の保証を強化し、潜在的なランタイムエラーを減少させます。この変更は、低レベルのメモリ操作に取り組む開発者にとって重要であり、より安全で予測可能なコードの動作を確保します。",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b6036e26ab61f615a83a081a83a4f9146320fcfafa08e6a3a8efbf539a428290",
+      "source": "Rust Users Forum",
+      "title": "cfg(target_arch) rust-analyzer の警告を静かにする方法",
+      "url": "https://users.rust-lang.org/t/how-to-get-cfg-target-arch-rust-analyzer-warnings-to-be-quiet/138987#post_1",
+      "summary": "私は rust と特に rust-analyzer に非常に不慣れなので、これが少しわかりにくい場合は事前にお詫びします。私は wgpu のチュートリアルに従おうとしており、そこでは #[cfg(target_arch = \"wasm32\")] 属性が多く使われています。そして、それぞれに対して rust-analyzer: コードは #[cfg] ディレクティブのために非アクティブです: target_arch = \"wasm32\" は無効ですというメモが表示されます。これは少なくとも言っても、迷惑です。これらを静かにするにはどうすればよいでしょうか？参考までに、私は Neovim（具体的には LazyVim）を使用しています…",
+      "publishedAt": "2026-03-18T16:49:02.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "c37f5c5dd1c6d3664715b03f8d6f6cd8a086829e4ae4fd015fcbb1b516eab924",
+      "source": "Rust Users Forum",
+      "title": "なぜRPIT関数を通じて関連型に関する情報が「漏れない」のか？",
+      "url": "https://users.rust-lang.org/t/why-doesnt-information-like-send-leak-about-associated-types-through-rpit-functions/138965#post_8",
+      "summary": "RFC @steffahnがリンクしたように、オペーク型が自動トレイトを漏らすことは意図的であり、それを変更すること（エディションゲートされた代替案なしで）は破壊的変更となるでしょう。 jacobsa: なぜこれは異なる扱いを受けるのでしょうか？なぜこの情報の漏洩は1レベルに限定されるのでしょうか？この部分については引用がないので、関数の作成者の観点から「ほとんどの実装の詳細を変更できる」という利点をオペーク型が保持するためには、どこかで漏洩を止めなければならないと言うことしかできません。",
+      "publishedAt": "2026-03-18T17:38:33.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-19T00:07:33.170Z"
+  }
+}
