@@ -1,0 +1,100 @@
+{
+  "date": "2026-03-20",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "a19898b9f7db628c10696ced203c927053cf1c064c5942595e94ef94644d0399",
+      "source": "Rust Internals",
+      "title": "想法：Borrowck 透明函数调用",
+      "url": "https://internals.rust-lang.org/t/idea-borrowck-transparent-function-calls/24103#post_5",
+      "summary": "josh：但对于私有辅助函数，自动检测它们使用的子集不一定会成为维护的障碍。我坚信，即使对于私有函数，仅从函数签名和更好的错误信息进行推理的能力也是可取的。这意味着这个提案是一个维护障碍（间接地），因为它使代码库更难以推理。对编译时间的可能影响不在乎私有与公共的区别。",
+      "publishedAt": "2026-03-19T14:01:56.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        6
+      ],
+      "reason": "Innovative borrowing proposal",
+      "suggestedTitle": "Borrowck 透明函数调用提案",
+      "suggestedSummary": "Rust Internals 中的一项新提案提出了“Borrowck 透明函数调用”的概念。这个想法旨在自动检测私有辅助函数的子集，并更有效地管理借用检查器约束。通过集成此功能，开发人员可以期待更顺畅地处理非公共方法，而无需跨越 crate 边界，这可能简化代码管理并增强编译器反馈。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "adc50212086cae09b96cf0d8a481242afc1fa4bec519553f340f2a9416184662",
+      "source": "Lobsters Rust",
+      "title": "acdc - 用Rust编写的AsciiDoc工具",
+      "url": "https://acdc.nlopes.dev/",
+      "summary": "acdc的GitHub仓库：https://github.com/nlopes/acdc",
+      "publishedAt": "2026-03-19T19:55:14.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        30
+      ],
+      "reason": "New Rust tooling and library releases",
+      "suggestedTitle": "介绍acdc：用Rust编写的AsciiDoc工具",
+      "suggestedSummary": "新工具'acdc'是用Rust编写的，为开发者提供了一个处理AsciiDoc文件的强大解决方案。通过利用Rust的性能优势，该工具强调效率和易用性。与此同时，'mtp-rs'的发布，一个异步MTP/PTP库，展示了Rust不断增长的高性能、无依赖库生态系统，相较于传统的C库如libmtp，速度提升高达4倍。",
+      "relatedSources": [
+        "Lobsters Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "901a01d25f3ca7b089abc81f1b81ffce85741ba1990e3ae9adf7a30361c5ef9f",
+      "source": "Rust Internals",
+      "title": "介绍一种从起始点和长度构建范围的方法",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=2#post_33",
+      "summary": "注意，我可能会同意关于 'a'..+25（一个 Range<char>）的观点，但什么字符串是“在‘a’之后的第25个”？如果仅限于小写 ASCII 值，那将是“aaaaaaaaaaaaaaaaaaaaaaaaaa”。但这样一来，“ab”就无法通过 ..+ 语法达到。",
+      "publishedAt": "2026-03-18T02:22:43.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "6035cf2f867b617246554657ee43cc365bfeea0b2992da4ae2f3e4f5af42f22a",
+      "source": "Lobsters Rust",
+      "title": "推出 dial9：Tokio 的飞行记录器",
+      "url": "https://tokio.rs/blog/2026-03-18-dial9",
+      "summary": "评论",
+      "publishedAt": "2026-03-19T15:14:27.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "df57c132d25f382941dfacbd4e6455ef3f033c6221b698aaaae1a102d861d4a1",
+      "source": "Rust Users Forum",
+      "title": "发布mtp-rs：纯Rust MTP库，无C依赖，速度比libmtp快4倍",
+      "url": "https://users.rust-lang.org/t/announcing-mtp-rs-pure-rust-mtp-library-no-c-deps-up-to-4x-faster-than-libmtp/139026#post_1",
+      "summary": "我开发了mtp-rs，一个纯Rust的异步MTP/PTP库。无需libmtp，无需libusb，无需FFI。基于nusb构建。（快速回顾：MTP是当你将手机插入电脑以复制文件时使用的协议。）在我测试的所有操作中，它比libmtp快1.06到4.04倍，并且一致性极高。在100 MB下载中，mtp-rs的标准差为4.7毫秒，而libmtp为4,612毫秒。（这意味着一致性提高了1000倍！）请参见下表：\n操作\n大小\nmtp-rs\nlibmtp\n加速\n\n下载\n1 MB\n33.9毫秒\n45.3毫秒\n1.34倍\n\n下载\n10 MB…",
+      "publishedAt": "2026-03-19T13:46:10.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6ae75ee8d3ea3280a2adc953fb7b75c85eed1884ac8a46192e6bcda5b3b6d41",
+      "source": "Lobsters Rust",
+      "title": "用Rust构建LSP服务器既简单又有趣",
+      "url": "https://codeinput.com/blog/lsp-server",
+      "summary": "评论",
+      "publishedAt": "2026-03-19T12:04:07.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-20T00:07:47.422Z"
+  }
+}

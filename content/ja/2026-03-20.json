@@ -1,0 +1,100 @@
+{
+  "date": "2026-03-20",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "a19898b9f7db628c10696ced203c927053cf1c064c5942595e94ef94644d0399",
+      "source": "Rust Internals",
+      "title": "アイデア: Borrowck透明な関数呼び出し",
+      "url": "https://internals.rust-lang.org/t/idea-borrowck-transparent-function-calls/24103#post_5",
+      "summary": "josh:\nしかし、プライベートなヘルパー関数に関しては、それらが使用するサブセットを自動的に検出することが必ずしもメンテナンスの危険ではないでしょう。\n関数のシグネチャからだけで推論できる能力と、より良いエラーメッセージは、プライベート関数であっても望ましいと強く信じています。つまり、この提案は（間接的に）メンテナンスの危険であり、コードベースの推論を難しくします。\nコンパイル時間への影響は、プライベート対パブリックを気にしません。",
+      "publishedAt": "2026-03-19T14:01:56.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        6
+      ],
+      "reason": "Innovative borrowing proposal",
+      "suggestedTitle": "Borrowck透明な関数呼び出し提案",
+      "suggestedSummary": "Rust Internalsの新しい提案は、「Borrowck透明な関数呼び出し」という概念を示唆しています。このアイデアは、プライベートなヘルパー関数のサブセットを自動的に検出し、借用チェッカーの制約をより効果的に管理することを目的としています。この機能を統合することで、開発者はクレートの境界を越えずに非公開メソッドをスムーズに扱うことができ、コード管理の簡素化とコンパイラのフィードバックの向上が期待されます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "adc50212086cae09b96cf0d8a481242afc1fa4bec519553f340f2a9416184662",
+      "source": "Lobsters Rust",
+      "title": "acdc - RustによるAsciiDocツール",
+      "url": "https://acdc.nlopes.dev/",
+      "summary": "acdcのGitHubリポジトリ: https://github.com/nlopes/acdc",
+      "publishedAt": "2026-03-19T19:55:14.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        30
+      ],
+      "reason": "New Rust tooling and library releases",
+      "suggestedTitle": "acdcの紹介: RustによるAsciiDocツール",
+      "suggestedSummary": "Rustで書かれた新しいツール「acdc」は、開発者にAsciiDocファイルを扱うための強力なソリューションを提供します。このツールは、Rustのパフォーマンス能力を活用することで、効率性と使いやすさを強調しています。これに加えて、非同期MTP/PTPライブラリ「mtp-rs」のリリースは、Rustの高性能で依存関係のないライブラリの成長するエコシステムを示しており、libmtpのような従来のCライブラリに比べて最大4倍の速度向上を提供します。",
+      "relatedSources": [
+        "Lobsters Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "901a01d25f3ca7b089abc81f1b81ffce85741ba1990e3ae9adf7a30361c5ef9f",
+      "source": "Rust Internals",
+      "title": "開始位置と長さから範囲を構築する方法を紹介",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=2#post_33",
+      "summary": "「a」..+25（Range<char>）については同意できるかもしれませんが、「a」の「25番目後」はどの文字列になるのでしょうか？小文字のASCII値に限定すると、「aaaaaaaaaaaaaaaaaaaaaaaaaa」になります。しかし、「ab」は..+構文では到達できません。",
+      "publishedAt": "2026-03-18T02:22:43.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "6035cf2f867b617246554657ee43cc365bfeea0b2992da4ae2f3e4f5af42f22a",
+      "source": "Lobsters Rust",
+      "title": "Tokio向けのフライトレコーダー「dial9」の紹介",
+      "url": "https://tokio.rs/blog/2026-03-18-dial9",
+      "summary": "コメント",
+      "publishedAt": "2026-03-19T15:14:27.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "df57c132d25f382941dfacbd4e6455ef3f033c6221b698aaaae1a102d861d4a1",
+      "source": "Rust Users Forum",
+      "title": "mtp-rsの発表: 純粋なRust製MTPライブラリ、C依存なし、libmtpより最大4倍速い",
+      "url": "https://users.rust-lang.org/t/announcing-mtp-rs-pure-rust-mtp-library-no-c-deps-up-to-4x-faster-than-libmtp/139026#post_1",
+      "summary": "私はmtp-rsという、純粋なRust製の非同期MTP/PTPライブラリを構築しました。libmtpもlibusbもFFIも使用していません。nusbの上に構築されています。（簡単な復習: MTPは、電話をコンピュータに接続してファイルをコピーする際に使用するプロトコルです。）テストしたすべての操作でlibmtpより1.06〜4.04倍速く、非常に一貫性があります。100 MBのダウンロードでは、mtp-rsの標準偏差は4.7 msで、libmtpの4,612 msと比較して1000倍以上一貫しています。詳細はこちらをご覧ください。",
+      "publishedAt": "2026-03-19T13:46:10.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6ae75ee8d3ea3280a2adc953fb7b75c85eed1884ac8a46192e6bcda5b3b6d41",
+      "source": "Lobsters Rust",
+      "title": "RustでLSPサーバーを構築するのは驚くほど簡単で楽しい",
+      "url": "https://codeinput.com/blog/lsp-server",
+      "summary": "コメント",
+      "publishedAt": "2026-03-19T12:04:07.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-20T00:08:11.847Z"
+  }
+}

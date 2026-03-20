@@ -1,0 +1,100 @@
+{
+  "date": "2026-03-20",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "a19898b9f7db628c10696ced203c927053cf1c064c5942595e94ef94644d0399",
+      "source": "Rust Internals",
+      "title": "Idea: Borrowck Transparent Function Calls",
+      "url": "https://internals.rust-lang.org/t/idea-borrowck-transparent-function-calls/24103#post_5",
+      "summary": "josh:\nBut for private helper functions, automatically detecting which subsets they use would not necessarily be a maintenance hazard.\nI strongly believe that the ability to reason just from the function signatures and the better error messages is desirable even for private functions. Which means that this proposal is a maintenance hazard (indirectly), since it makes the code base harder to reason about.\nThe possible impact on compile times doesn't care about private vs public.",
+      "publishedAt": "2026-03-19T14:01:56.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        6
+      ],
+      "reason": "Innovative borrowing proposal",
+      "suggestedTitle": "Borrowck Transparent Function Calls Proposal",
+      "suggestedSummary": "A new proposal in Rust Internals suggests the concept of 'Borrowck Transparent Function Calls'. This idea aims to automatically detect subsets of private helper functions and manage borrow checker constraints more effectively. By integrating this feature, developers can expect smoother handling of non-public methods without crossing crate boundaries, potentially simplifying code management and enhancing compiler feedback.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "adc50212086cae09b96cf0d8a481242afc1fa4bec519553f340f2a9416184662",
+      "source": "Lobsters Rust",
+      "title": "acdc - AsciiDoc tooling in Rust",
+      "url": "https://acdc.nlopes.dev/",
+      "summary": "The GitHub repository for acdc: https://github.com/nlopes/acdc\nComments",
+      "publishedAt": "2026-03-19T19:55:14.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        30
+      ],
+      "reason": "New Rust tooling and library releases",
+      "suggestedTitle": "Introducing acdc: AsciiDoc Tooling in Rust",
+      "suggestedSummary": "The new tool 'acdc', written in Rust, provides developers with a robust solution for handling AsciiDoc files. This tool emphasizes efficiency and ease of use by leveraging Rust's performance capabilities. Alongside this, the release of 'mtp-rs', an async MTP/PTP library, showcases Rust's growing ecosystem for high-performance, no-dependency libraries, offering up to 4x speed improvements over traditional C libraries like libmtp.",
+      "relatedSources": [
+        "Lobsters Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "901a01d25f3ca7b089abc81f1b81ffce85741ba1990e3ae9adf7a30361c5ef9f",
+      "source": "Rust Internals",
+      "title": "Introduce a way to construct Range from start + length",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=2#post_33",
+      "summary": "Note that I might be able to agree about 'a'..+25 (a Range<char>), but what string comes \"25th after\" \"a\"? If one limits themselves to lowercase ASCII values, it would be \"aaaaaaaaaaaaaaaaaaaaaaaaaa\". But then \"ab\" is unreachable via ..+ syntax.",
+      "publishedAt": "2026-03-18T02:22:43.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "6035cf2f867b617246554657ee43cc365bfeea0b2992da4ae2f3e4f5af42f22a",
+      "source": "Lobsters Rust",
+      "title": "Introducing dial9: a flight recorder for Tokio",
+      "url": "https://tokio.rs/blog/2026-03-18-dial9",
+      "summary": "Comments",
+      "publishedAt": "2026-03-19T15:14:27.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "df57c132d25f382941dfacbd4e6455ef3f033c6221b698aaaae1a102d861d4a1",
+      "source": "Rust Users Forum",
+      "title": "Announcing mtp-rs: pure-Rust MTP library, no C deps, up to 4x faster than libmtp",
+      "url": "https://users.rust-lang.org/t/announcing-mtp-rs-pure-rust-mtp-library-no-c-deps-up-to-4x-faster-than-libmtp/139026#post_1",
+      "summary": "I built mtp-rs, a pure-Rust async MTP/PTP library. No libmtp, no libusb, no FFI. Built on nusb.\n(Quick refresher: MTP is the protocol your phone uses when you plug it into a computer to copy files.)\nIt's 1.06–4.04x faster than libmtp across all operations I tested, and absurdly more consistent. At 100 MB downloads, mtp-rs std dev was 4.7 ms vs libmtp's 4,612 ms. (That's 1000x more consistent!)\nSee here:\nOperation\nSize\nmtp-rs\nlibmtp\nSpeedup\n\n\n\n\ndownload\n1 MB\n33.9ms\n45.3ms\n1.34x\n\n\ndownload\n10 MB…",
+      "publishedAt": "2026-03-19T13:46:10.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6ae75ee8d3ea3280a2adc953fb7b75c85eed1884ac8a46192e6bcda5b3b6d41",
+      "source": "Lobsters Rust",
+      "title": "Building an LSP Server with Rust is surprisingly easy and fun",
+      "url": "https://codeinput.com/blog/lsp-server",
+      "summary": "Comments",
+      "publishedAt": "2026-03-19T12:04:07.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-20T00:07:26.656Z"
+  }
+}
