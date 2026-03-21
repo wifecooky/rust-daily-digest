@@ -1,0 +1,108 @@
+{
+  "date": "2026-03-21",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "8a7c4c52e4e7f7e10a6d905bf6666066632ec7ebba9667c5e63fed287fade386",
+      "source": "Rust Blog",
+      "title": "私たちが聞いたRustの課題とその対処法",
+      "url": "https://blog.rust-lang.org/2026/03/20/rust-challenges/",
+      "summary": "Rustの課題を理解しようとしたとき、私たちは借用チェッカーの学習曲線やエコシステムのギャップについて聞くことを予想していました。もちろん、それらについて多く聞きました。しかし、もちろん、それはもっと複雑です。一般的な考え方として、Rustには急な学習曲線があるが、一度「理解」すれば順調に進むと言われています。私たちは、経験を積むことでいくつかの課題は消えるものの、他の課題に取って代わられることを発見しました。初心者は所有権の概念に苦労し、専門家はドメイン固有の課題に直面します：非同期...",
+      "publishedAt": "2026-03-20T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        26
+      ],
+      "reason": "Addresses key Rust challenges",
+      "suggestedTitle": "Rustの主要な課題と提案された解決策",
+      "suggestedSummary": "Rustのブログ記事は、言語の現在の課題に関するコミュニティのフィードバックを論じ、借用チェッカーや非同期の複雑さといった分野を強調しています。ドキュメント、ツール、言語機能の改善を含む潜在的な解決策を概説しています。この分析は、Rust開発者にとって非常に重要であり、将来の言語とエコシステムの改善に直接影響を与え、さまざまなプロジェクトに対してRustをよりアクセスしやすく効率的にする可能性があります。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "6035cf2f867b617246554657ee43cc365bfeea0b2992da4ae2f3e4f5af42f22a",
+      "source": "Lobsters Rust",
+      "title": "Tokioのためのフライトレコーダー: dial9の紹介",
+      "url": "https://tokio.rs/blog/2026-03-18-dial9",
+      "summary": "コメント",
+      "publishedAt": "2026-03-19T15:14:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        74
+      ],
+      "reason": "New tool for Tokio developers",
+      "suggestedTitle": "Dial9の紹介: Tokioのためのフライトレコーダー",
+      "suggestedSummary": "Dial9は、Rustの非同期ランタイムであるTokioを使用するアプリケーションのためのフライトレコーダーとして設計された新しいツールです。タスクの実行に関する詳細な洞察を提供し、開発者がパフォーマンスの問題を診断し、非同期ワークフローを最適化するのに役立ちます。このツールは特に高並行性システムに取り組む開発者にとって有益で、複雑な非同期インタラクションを効果的にトレースしデバッグする方法を提供します。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0ef54422f3f0523d33429a8bc18559ba081c59c0778a65401202fa8be9ff180c",
+      "source": "Rust Users Forum",
+      "title": "Serde_cursor: 中間構造体を作成せずにJSONのネストされたフィールドを抽出",
+      "url": "https://users.rust-lang.org/t/serde-cursor-extract-nested-field-of-json-without-making-intermediate-structs/139049#post_1",
+      "summary": "こんにちは！serde_cursorを使用すると、非常に軽量な構文を使用して、JSONなどのserde互換データ形式の任意の部分を取得する方法を指定できます。また、ドキュメント全体をメモリにロードする必要はありません！\n\nCargo.tomlからバージョンを抽出:\nuse serde_cursor::Cursor;\n\nlet data = r#\"\n    [workspace.package]\n    version = \"0.1\"\n\"#;\n\nlet version: String = toml::from_str::<Cursor!(workspace.package.version)>(&data)?.0;\n\nassert_eq!(version, \"0.1\");\n\nCursor!(workspace.package.version)が魔法のジュースです -…",
+      "publishedAt": "2026-03-20T22:49:32.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "166194bfa3b2eb3e2f53d0d02c77424ed012339d51ef3b8c999c8373c7dfecd7",
+      "source": "Lobsters Rust",
+      "title": "良い点、悪い点、そして漏れやすい点：meilisearchにおけるjemalloc、bumpalo、mimalloc",
+      "url": "https://blog.kerollmops.com/the-good-the-bad-and-the-leaky-jemalloc-bumpalo-and-mimalloc-in-meilisearch",
+      "summary": "コメント",
+      "publishedAt": "2026-03-20T13:47:35.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "adc50212086cae09b96cf0d8a481242afc1fa4bec519553f340f2a9416184662",
+      "source": "Lobsters Rust",
+      "title": "acdc - RustによるAsciiDocツール",
+      "url": "https://acdc.nlopes.dev/",
+      "summary": "acdcのGitHubリポジトリ: https://github.com/nlopes/acdc",
+      "publishedAt": "2026-03-19T19:55:14.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6ae75ee8d3ea3280a2adc953fb7b75c85eed1884ac8a46192e6bcda5b3b6d41",
+      "source": "Lobsters Rust",
+      "title": "RustでLSPサーバーを構築するのは驚くほど簡単で楽しい",
+      "url": "https://codeinput.com/blog/lsp-server",
+      "summary": "コメント",
+      "publishedAt": "2026-03-19T12:04:07.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0169ea5313574df24468b99ff8f8262566771d936897262a091aca96db93ce68",
+      "source": "Zenn Rust (JP)",
+      "title": "Java歴21年のエンジニアが同じAPIをJava・Go・Rust・Kotlinで実装して徹底比較した",
+      "url": "https://zenn.dev/netfishx/articles/4ee8f57d8a8ec7",
+      "summary": "はじめに\n筆者はJava歴21年のバックエンドエンジニアです。現在は日本のIT企業で働きながら、自社プロダクト（短動画プラットフォーム）のバックエンドを開発しています。\n元々Spring Bootで構築していた本番環境をGoに移行し、さらにRustで書き直しました。その過程で「ちゃんと数字で比較したい」と思い、同じAPIをKotlin（Ktor）でも実装し、4言語の実測データを取りました。\n本記事では、同一仕様のAPIを4言語で実装し、スループット・レイテンシ・メモリ・起動時間・ビルド時間・コード量を比較した結果を共有します。",
+      "publishedAt": "2026-03-19T05:44:43.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-21T00:06:25.493Z"
+  }
+}

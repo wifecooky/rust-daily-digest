@@ -1,0 +1,108 @@
+{
+  "date": "2026-03-21",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "8a7c4c52e4e7f7e10a6d905bf6666066632ec7ebba9667c5e63fed287fade386",
+      "source": "Rust Blog",
+      "title": "What we heard about Rust's challenges, and how we can address them",
+      "url": "https://blog.rust-lang.org/2026/03/20/rust-challenges/",
+      "summary": "When we set out to understand Rust's challenges, we expected to hear about the borrow checker learning curve and maybe some ecosystem gaps. Of course, we did. A lot. But, of course, it's more nuanced.\nThe conventional wisdom is that Rust has a steep learning curve, but once you \"get it,\" smooth sailing awaits. We found that while some challenges disappear with experience, they are replaced with others. Beginners struggle with ownership concepts, experts face domain-specific challenges: async…",
+      "publishedAt": "2026-03-20T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        26
+      ],
+      "reason": "Addresses key Rust challenges",
+      "suggestedTitle": "Rust's Key Challenges and Proposed Solutions",
+      "suggestedSummary": "The Rust blog post discusses the community's feedback on the language's current challenges, highlighting areas like the borrow checker and async complexity. It outlines potential solutions, including improving documentation, tooling, and language features. This analysis is crucial for Rust developers as it directly impacts future language and ecosystem improvements, potentially making Rust more accessible and efficient for various projects.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "6035cf2f867b617246554657ee43cc365bfeea0b2992da4ae2f3e4f5af42f22a",
+      "source": "Lobsters Rust",
+      "title": "Introducing dial9: a flight recorder for Tokio",
+      "url": "https://tokio.rs/blog/2026-03-18-dial9",
+      "summary": "Comments",
+      "publishedAt": "2026-03-19T15:14:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        74
+      ],
+      "reason": "New tool for Tokio developers",
+      "suggestedTitle": "Introducing Dial9: A Flight Recorder for Tokio",
+      "suggestedSummary": "Dial9 is a newly introduced tool designed to act as a flight recorder for applications using Tokio, Rust's asynchronous runtime. It provides detailed insights into task execution, helping developers diagnose performance issues and optimize their async workflows. This tool is particularly beneficial for developers working on high-concurrency systems, offering a way to trace and debug complex async interactions effectively.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0ef54422f3f0523d33429a8bc18559ba081c59c0778a65401202fa8be9ff180c",
+      "source": "Rust Users Forum",
+      "title": "Serde_cursor: Extract nested field of JSON without making intermediate structs",
+      "url": "https://users.rust-lang.org/t/serde-cursor-extract-nested-field-of-json-without-making-intermediate-structs/139049#post_1",
+      "summary": "Hi!\nserde_cursor allows you to specify how to get the desired parts of any serde-compatible data format, such as JSON - using very lightweight syntax, and without loading the entire document into memory!\nExtract version from Cargo.toml:\nuse serde_cursor::Cursor;\n\nlet data = r#\"\n    [workspace.package]\n    version = \"0.1\"\n\"#;\n\nlet version: String = toml::from_str::<Cursor!(workspace.package.version)>(&data)?.0;\n\nassert_eq!(version, \"0.1\");\n\nCursor!(workspace.package.version) is the magic juice -…",
+      "publishedAt": "2026-03-20T22:49:32.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "166194bfa3b2eb3e2f53d0d02c77424ed012339d51ef3b8c999c8373c7dfecd7",
+      "source": "Lobsters Rust",
+      "title": "The Good, the Bad, and the Leaky: jemalloc, bumpalo, and mimalloc in meilisearch",
+      "url": "https://blog.kerollmops.com/the-good-the-bad-and-the-leaky-jemalloc-bumpalo-and-mimalloc-in-meilisearch",
+      "summary": "Comments",
+      "publishedAt": "2026-03-20T13:47:35.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "adc50212086cae09b96cf0d8a481242afc1fa4bec519553f340f2a9416184662",
+      "source": "Lobsters Rust",
+      "title": "acdc - AsciiDoc tooling in Rust",
+      "url": "https://acdc.nlopes.dev/",
+      "summary": "The GitHub repository for acdc: https://github.com/nlopes/acdc\nComments",
+      "publishedAt": "2026-03-19T19:55:14.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6ae75ee8d3ea3280a2adc953fb7b75c85eed1884ac8a46192e6bcda5b3b6d41",
+      "source": "Lobsters Rust",
+      "title": "Building an LSP Server with Rust is surprisingly easy and fun",
+      "url": "https://codeinput.com/blog/lsp-server",
+      "summary": "Comments",
+      "publishedAt": "2026-03-19T12:04:07.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0169ea5313574df24468b99ff8f8262566771d936897262a091aca96db93ce68",
+      "source": "Zenn Rust (JP)",
+      "title": "Java歴21年のエンジニアが同じAPIをJava・Go・Rust・Kotlinで実装して徹底比較した",
+      "url": "https://zenn.dev/netfishx/articles/4ee8f57d8a8ec7",
+      "summary": "はじめに\n筆者はJava歴21年のバックエンドエンジニアです。現在は日本のIT企業で働きながら、自社プロダクト（短動画プラットフォーム）のバックエンドを開発しています。\n元々Spring Bootで構築していた本番環境をGoに移行し、さらにRustで書き直しました。その過程で「ちゃんと数字で比較したい」と思い、同じAPIをKotlin（Ktor）でも実装し、4言語の実測データを取りました。\n本記事では、同一仕様のAPIを4言語で実装し、スループット・レイテンシ・メモリ・起動時間・ビルド時間・コード量を比較した結果を共有します。\n\n テスト環境\n\n\n\n項目\n詳細\n\n\n\n\nマシン\nmac...",
+      "publishedAt": "2026-03-19T05:44:43.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-21T00:06:02.686Z"
+  }
+}

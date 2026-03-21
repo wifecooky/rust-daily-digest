@@ -1,0 +1,108 @@
+{
+  "date": "2026-03-21",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "8a7c4c52e4e7f7e10a6d905bf6666066632ec7ebba9667c5e63fed287fade386",
+      "source": "Rust Blog",
+      "title": "我们听到的关于Rust挑战的内容，以及我们如何应对",
+      "url": "https://blog.rust-lang.org/2026/03/20/rust-challenges/",
+      "summary": "当我们着手了解Rust的挑战时，我们预期会听到关于借用检查器学习曲线和可能的一些生态系统缺口。当然，我们确实听到了很多。但当然，情况更加复杂。传统观点认为Rust有一个陡峭的学习曲线，但一旦你“掌握”了它，前方就是一片坦途。我们发现，虽然一些挑战随着经验的增加而消失，但它们被其他挑战所取代。初学者在所有权概念上挣扎，专家则面临特定领域的挑战：异步...",
+      "publishedAt": "2026-03-20T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        26
+      ],
+      "reason": "Addresses key Rust challenges",
+      "suggestedTitle": "Rust的关键挑战和建议解决方案",
+      "suggestedSummary": "Rust博客文章讨论了社区对该语言当前挑战的反馈，重点突出了借用检查器和异步复杂性等领域。文章概述了潜在的解决方案，包括改进文档、工具和语言特性。这一分析对Rust开发者至关重要，因为它直接影响未来语言和生态系统的改进，可能使Rust对各种项目更具可访问性和效率。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "6035cf2f867b617246554657ee43cc365bfeea0b2992da4ae2f3e4f5af42f22a",
+      "source": "Lobsters Rust",
+      "title": "引入dial9：Tokio的飞行记录器",
+      "url": "https://tokio.rs/blog/2026-03-18-dial9",
+      "summary": "评论",
+      "publishedAt": "2026-03-19T15:14:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        74
+      ],
+      "reason": "New tool for Tokio developers",
+      "suggestedTitle": "引入Dial9：Tokio的飞行记录器",
+      "suggestedSummary": "Dial9是一个新推出的工具，旨在作为使用Tokio的应用程序的飞行记录器。Tokio是Rust的异步运行时。Dial9提供了关于任务执行的详细见解，帮助开发者诊断性能问题并优化他们的异步工作流程。对于从事高并发系统开发的开发者来说，这个工具特别有益，提供了一种有效跟踪和调试复杂异步交互的方法。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0ef54422f3f0523d33429a8bc18559ba081c59c0778a65401202fa8be9ff180c",
+      "source": "Rust Users Forum",
+      "title": "Serde_cursor：无需中间结构即可提取JSON的嵌套字段",
+      "url": "https://users.rust-lang.org/t/serde-cursor-extract-nested-field-of-json-without-making-intermediate-structs/139049#post_1",
+      "summary": "您好！serde_cursor允许您指定如何获取任何serde兼容数据格式（如JSON）的所需部分，使用非常轻量级的语法，并且无需将整个文档加载到内存中！\n\n从Cargo.toml中提取版本：\n\nuse serde_cursor::Cursor;\n\nlet data = r#\"\n    [workspace.package]\n    version = \"0.1\"\n\"#;\n\nlet version: String = toml::from_str::<Cursor!(workspace.package.version)>(&data)?.0;\n\nassert_eq!(version, \"0.1\");\n\nCursor!(workspace.package.version) 是关键所在 -…",
+      "publishedAt": "2026-03-20T22:49:32.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "166194bfa3b2eb3e2f53d0d02c77424ed012339d51ef3b8c999c8373c7dfecd7",
+      "source": "Lobsters Rust",
+      "title": "好的、坏的和泄露的：meilisearch中的jemalloc、bumpalo和mimalloc",
+      "url": "https://blog.kerollmops.com/the-good-the-bad-and-the-leaky-jemalloc-bumpalo-and-mimalloc-in-meilisearch",
+      "summary": "评论",
+      "publishedAt": "2026-03-20T13:47:35.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "adc50212086cae09b96cf0d8a481242afc1fa4bec519553f340f2a9416184662",
+      "source": "Lobsters Rust",
+      "title": "acdc - 用 Rust 编写的 AsciiDoc 工具",
+      "url": "https://acdc.nlopes.dev/",
+      "summary": "acdc 的 GitHub 仓库：https://github.com/nlopes/acdc",
+      "publishedAt": "2026-03-19T19:55:14.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6ae75ee8d3ea3280a2adc953fb7b75c85eed1884ac8a46192e6bcda5b3b6d41",
+      "source": "Lobsters Rust",
+      "title": "用 Rust 构建 LSP 服务器既简单又有趣",
+      "url": "https://codeinput.com/blog/lsp-server",
+      "summary": "评论",
+      "publishedAt": "2026-03-19T12:04:07.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0169ea5313574df24468b99ff8f8262566771d936897262a091aca96db93ce68",
+      "source": "Zenn Rust (JP)",
+      "title": "拥有21年Java经验的工程师用Java、Go、Rust、Kotlin实现同一API并进行彻底比较",
+      "url": "https://zenn.dev/netfishx/articles/4ee8f57d8a8ec7",
+      "summary": "简介\n笔者是一名拥有21年Java经验的后端工程师。目前在一家日本IT公司工作，负责开发公司产品（短视频平台）的后端。\n原本用Spring Boot构建的生产环境被迁移到Go，并进一步用Rust重写。在这个过程中，我想“用数据进行比较”，因此也用Kotlin（Ktor）实现了同一API，并收集了四种语言的实际测量数据。\n本文将分享在相同规格下用四种语言实现API，并比较其吞吐量、延迟、内存、启动时间、构建时间和代码量的结果。",
+      "publishedAt": "2026-03-19T05:44:43.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-21T00:06:10.355Z"
+  }
+}
