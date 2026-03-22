@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-22",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "8a867f686403511ae9770a663ad98a1d9494c76ac330e95b8e75cee066ca720b",
+      "source": "Rust Blog",
+      "title": "Security advisory for Cargo",
+      "url": "https://blog.rust-lang.org/2026/03/21/cve-2026-33056/",
+      "summary": "The Rust Security Response Team was notified of a vulnerability in the\nthird-party crate tar, used by Cargo to extract packages during a build. The\nvulnerability, tracked as CVE-2026-33056, allows a malicious crate to change\nthe permissions on arbitrary directories on the filesystem when Cargo extracts\nit during a build.\nFor users of the public crates.io registry, we deployed a change on March 13th\nto prevent uploading crates exploiting this vulnerability, and we audited all\ncrates ever…",
+      "publishedAt": "2026-03-21T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        62
+      ],
+      "reason": "Critical security advisory for Cargo",
+      "suggestedTitle": "Security Advisory for Cargo: Vulnerability in tar Crate",
+      "suggestedSummary": "The Rust Security Response Team has announced a security vulnerability in the third-party crate 'tar', which is used by Cargo. This vulnerability could potentially allow attackers to execute arbitrary code during the extraction of tar archives. Rust developers using Cargo should immediately update to the latest versions of affected packages to mitigate this risk. This advisory underscores the importance of keeping dependencies up-to-date to ensure the security of Rust projects.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "166194bfa3b2eb3e2f53d0d02c77424ed012339d51ef3b8c999c8373c7dfecd7",
+      "source": "Lobsters Rust",
+      "title": "The Good, the Bad, and the Leaky: jemalloc, bumpalo, and mimalloc in meilisearch",
+      "url": "https://blog.kerollmops.com/the-good-the-bad-and-the-leaky-jemalloc-bumpalo-and-mimalloc-in-meilisearch",
+      "summary": "Comments",
+      "publishedAt": "2026-03-20T13:47:35.000Z",
+      "score": 17,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        50
+      ],
+      "reason": "Memory management insights for Rust developers",
+      "suggestedTitle": "Memory Management in Rust: A Deep Dive into jemalloc, bumpalo, and mimalloc",
+      "suggestedSummary": "A detailed analysis of memory allocation strategies in Rust, focusing on the use of jemalloc, bumpalo, and mimalloc in the context of the Meilisearch project. This exploration reveals how different allocators affect memory fragmentation and performance. Rust developers can gain insights into choosing appropriate memory allocators for their projects, optimizing for performance and reducing memory leaks. This knowledge is crucial for systems programming and high-performance applications in Rust.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "8fff80f55e8bc6cb4a0a706f2512f897518477e7019e7cd7f40de7660f00750b",
+      "source": "Lobsters Rust",
+      "title": "console: a debugger for async rust",
+      "url": "https://github.com/tokio-rs/console",
+      "summary": "Comments",
+      "publishedAt": "2026-03-21T21:31:44.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c8fad1106cd1f3faa25b1b876ec3626ffb039f6a4ab978fbec8004f5abb579db",
+      "source": "Rust Users Forum",
+      "title": "NaiHe – Lightweight E2E encrypted chat, no accounts, no central server (Rust + Tauri)",
+      "url": "https://users.rust-lang.org/t/naihe-lightweight-e2e-encrypted-chat-no-accounts-no-central-server-rust-tauri/139063#post_1",
+      "summary": "Hey all. I wrote a small encrypted chat tool called NaiHe with Rust + Tauri. Designed for people in censored regions who need to talk without being watched.\nThe idea is simple — two people share a room name and a key, messages get encrypted client-side with ChaCha20-Poly1305 (Argon2id for KDF), and relayed through any MQTT broker. Broker sees nothing but ciphertext.\nThere's also a clipboard mode (\"Cipher Pad\") that lets you encrypt/decrypt text in your clipboard, so you can paste ciphertext…",
+      "publishedAt": "2026-03-21T17:39:47.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d64a76c95efc6ddbc5e0b087112492cf040e7901a574ca9283efa4f809dfc9aa",
+      "source": "RustCC (CN)",
+      "title": "Fungi 0.6.0: 一个纯Rust的私有设备网络工具，已支持远程运行沙盒应用",
+      "url": "https://rustcc.cn/article?id=5505e027-d444-4e03-91c1-d4f4e293b7f2",
+      "summary": "Fungi是什么？\nFungi可以轻松创建加密P2P多设备网络，安全访问并管理远程服务。\n纯Rust、基于rust-libp2p、面向私有多设备网络。\n\nFungi 0.6 发布：\n自带wasmtime、可隔离接管Docker runtime\nCapability-first声明式权限管理。\n三行命令在远程设备创建服务，自动端口映射，并在本地访问:\n# 在两台设备已经建立连接的前提下：\nfungi peer admin service pull ./filebrowser-lite-wasi.service.yaml\nfungi peer admin service start filebrowser-lite-wasi\nfungi access open filebrowser-lite-wasi\n\n\n这是一个wasi版的filebrowser的例子，远程启动，本地访问，实现了轻量快速的文件管理\n你也可以仅使用fungi的TCP端口转发功能，自带NAT穿透和本地mDNS地址发现。如果你主要需要点对点的轻量TCP转发，fungi也可以覆盖很多原本会用frp的场景。\n下一步…",
+      "publishedAt": "2026-03-21T11:44:23.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-22T00:06:02.027Z"
+  }
+}

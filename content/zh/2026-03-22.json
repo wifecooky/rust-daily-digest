@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-22",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "8a867f686403511ae9770a663ad98a1d9494c76ac330e95b8e75cee066ca720b",
+      "source": "Rust Blog",
+      "title": "Cargo安全公告",
+      "url": "https://blog.rust-lang.org/2026/03/21/cve-2026-33056/",
+      "summary": "Rust安全响应团队收到通知，Cargo在构建过程中使用的第三方crate tar存在一个漏洞。该漏洞被追踪为CVE-2026-33056，允许恶意crate在Cargo构建时更改文件系统上任意目录的权限。对于使用公共crates.io注册表的用户，我们于3月13日部署了一项更改，以防止上传利用此漏洞的crate，并审核了所有曾经的crate……",
+      "publishedAt": "2026-03-21T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        62
+      ],
+      "reason": "Critical security advisory for Cargo",
+      "suggestedTitle": "Cargo安全公告：tar Crate中的漏洞",
+      "suggestedSummary": "Rust安全响应团队宣布在Cargo使用的第三方crate 'tar'中发现了一个安全漏洞。此漏洞可能允许攻击者在提取tar档案时执行任意代码。使用Cargo的Rust开发者应立即更新到受影响包的最新版本，以减轻此风险。此公告强调了保持依赖项更新以确保Rust项目安全的重要性。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "166194bfa3b2eb3e2f53d0d02c77424ed012339d51ef3b8c999c8373c7dfecd7",
+      "source": "Lobsters Rust",
+      "title": "好、坏和泄漏：Meilisearch中的jemalloc、bumpalo和mimalloc",
+      "url": "https://blog.kerollmops.com/the-good-the-bad-and-the-leaky-jemalloc-bumpalo-and-mimalloc-in-meilisearch",
+      "summary": "评论",
+      "publishedAt": "2026-03-20T13:47:35.000Z",
+      "score": 17,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        50
+      ],
+      "reason": "Memory management insights for Rust developers",
+      "suggestedTitle": "Rust中的内存管理：深入研究jemalloc、bumpalo和mimalloc",
+      "suggestedSummary": "对Rust中内存分配策略的详细分析，重点研究在Meilisearch项目中使用的jemalloc、bumpalo和mimalloc。此探索揭示了不同分配器如何影响内存碎片化和性能。Rust开发者可以从中获得关于为其项目选择合适内存分配器的见解，以优化性能并减少内存泄漏。这些知识对于系统编程和Rust中的高性能应用至关重要。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "8fff80f55e8bc6cb4a0a706f2512f897518477e7019e7cd7f40de7660f00750b",
+      "source": "Lobsters Rust",
+      "title": "console：用于异步 Rust 的调试器",
+      "url": "https://github.com/tokio-rs/console",
+      "summary": "评论",
+      "publishedAt": "2026-03-21T21:31:44.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c8fad1106cd1f3faa25b1b876ec3626ffb039f6a4ab978fbec8004f5abb579db",
+      "source": "Rust Users Forum",
+      "title": "NaiHe – 轻量级端到端加密聊天，无需账户，无中央服务器（Rust + Tauri）",
+      "url": "https://users.rust-lang.org/t/naihe-lightweight-e2e-encrypted-chat-no-accounts-no-central-server-rust-tauri/139063#post_1",
+      "summary": "大家好。我用 Rust + Tauri 编写了一个小型加密聊天工具，名为 NaiHe。专为需要在被审查地区进行私密交流的人设计。其理念很简单——两个人共享一个房间名和一个密钥，消息在客户端使用 ChaCha20-Poly1305 加密（Argon2id 用于密钥派生函数），并通过任何 MQTT 代理中继。代理只能看到密文。此外，还有一个剪贴板模式（“加密板”），可以让你加密/解密剪贴板中的文本，以便粘贴密文…",
+      "publishedAt": "2026-03-21T17:39:47.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d64a76c95efc6ddbc5e0b087112492cf040e7901a574ca9283efa4f809dfc9aa",
+      "source": "RustCC (CN)",
+      "title": "Fungi 0.6.0: 一个纯Rust的私有设备网络工具，已支持远程运行沙盒应用",
+      "url": "https://rustcc.cn/article?id=5505e027-d444-4e03-91c1-d4f4e293b7f2",
+      "summary": "Fungi是什么？\nFungi可以轻松创建加密P2P多设备网络，安全访问并管理远程服务。\n纯Rust、基于rust-libp2p、面向私有多设备网络。\n\nFungi 0.6 发布：\n自带wasmtime、可隔离接管Docker runtime\nCapability-first声明式权限管理。\n三行命令在远程设备创建服务，自动端口映射，并在本地访问:\n# 在两台设备已经建立连接的前提下：\nfungi peer admin service pull ./filebrowser-lite-wasi.service.yaml\nfungi peer admin service start filebrowser-lite-wasi\nfungi access open filebrowser-lite-wasi\n\n这是一个wasi版的filebrowser的例子，远程启动，本地访问，实现了轻量快速的文件管理\n你也可以仅使用fungi的TCP端口转发功能，自带NAT穿透和本地mDNS地址发现。如果你主要需要点对点的轻量TCP转发，fungi也可以覆盖很多原本会用frp的场景。\n下一步…",
+      "publishedAt": "2026-03-21T11:44:23.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-22T00:06:08.208Z"
+  }
+}

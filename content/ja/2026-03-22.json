@@ -1,0 +1,86 @@
+{
+  "date": "2026-03-22",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "8a867f686403511ae9770a663ad98a1d9494c76ac330e95b8e75cee066ca720b",
+      "source": "Rust Blog",
+      "title": "Cargoに関するセキュリティアドバイザリ",
+      "url": "https://blog.rust-lang.org/2026/03/21/cve-2026-33056/",
+      "summary": "Rustセキュリティ対応チームは、Cargoがビルド中にパッケージを抽出する際に使用するサードパーティのクレートtarに脆弱性があることを通知されました。この脆弱性はCVE-2026-33056として追跡されており、悪意のあるクレートがビルド中にCargoが抽出する際にファイルシステム上の任意のディレクトリの権限を変更することを可能にします。公開クレートレジストリcrates.ioのユーザー向けに、2026年3月13日にこの脆弱性を悪用するクレートのアップロードを防ぐ変更を展開し、すべてのクレートを監査しました。",
+      "publishedAt": "2026-03-21T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        62
+      ],
+      "reason": "Critical security advisory for Cargo",
+      "suggestedTitle": "Cargoに関するセキュリティアドバイザリ: tarクレートの脆弱性",
+      "suggestedSummary": "Rustセキュリティ対応チームは、Cargoで使用されるサードパーティクレート「tar」におけるセキュリティ脆弱性を発表しました。この脆弱性により、攻撃者がtarアーカイブの抽出中に任意のコードを実行する可能性があります。Cargoを使用するRust開発者は、このリスクを軽減するために、影響を受けるパッケージの最新バージョンに直ちに更新する必要があります。このアドバイザリは、Rustプロジェクトのセキュリティを確保するために依存関係を最新に保つことの重要性を強調しています。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "166194bfa3b2eb3e2f53d0d02c77424ed012339d51ef3b8c999c8373c7dfecd7",
+      "source": "Lobsters Rust",
+      "title": "良い点、悪い点、そして漏れやすい点：Meilisearchにおけるjemalloc、bumpalo、mimalloc",
+      "url": "https://blog.kerollmops.com/the-good-the-bad-and-the-leaky-jemalloc-bumpalo-and-mimalloc-in-meilisearch",
+      "summary": "コメント",
+      "publishedAt": "2026-03-20T13:47:35.000Z",
+      "score": 17,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        50
+      ],
+      "reason": "Memory management insights for Rust developers",
+      "suggestedTitle": "Rustにおけるメモリ管理：jemalloc、bumpalo、mimallocの深掘り",
+      "suggestedSummary": "Rustにおけるメモリ割り当て戦略の詳細な分析。Meilisearchプロジェクトの文脈でのjemalloc、bumpalo、mimallocの使用に焦点を当てる。この探求は、異なるアロケータがメモリの断片化とパフォーマンスにどのように影響するかを明らかにする。Rust開発者は、プロジェクトに適したメモリアロケータを選択し、パフォーマンスを最適化し、メモリリークを減少させるための洞察を得ることができる。この知識は、システムプログラミングや高性能アプリケーションにおいて重要である。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "8fff80f55e8bc6cb4a0a706f2512f897518477e7019e7cd7f40de7660f00750b",
+      "source": "Lobsters Rust",
+      "title": "コンソール: 非同期Rustのためのデバッガ",
+      "url": "https://github.com/tokio-rs/console",
+      "summary": "コメント",
+      "publishedAt": "2026-03-21T21:31:44.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c8fad1106cd1f3faa25b1b876ec3626ffb039f6a4ab978fbec8004f5abb579db",
+      "source": "Rust Users Forum",
+      "title": "NaiHe – 軽量E2E暗号化チャット、アカウント不要、中央サーバーなし（Rust + Tauri）",
+      "url": "https://users.rust-lang.org/t/naihe-lightweight-e2e-encrypted-chat-no-accounts-no-central-server-rust-tauri/139063#post_1",
+      "summary": "皆さん、こんにちは。私はRust + Tauriを使ってNaiHeという小さな暗号化チャットツールを作成しました。監視されずに話す必要がある検閲地域の人々のために設計されています。アイデアはシンプルです — 2人がルーム名とキーを共有し、メッセージはクライアント側でChaCha20-Poly1305（KDFにはArgon2id）で暗号化され、任意のMQTTブローカーを介して中継されます。ブローカーは暗号文しか見ません。また、クリップボードモード（「Cipher Pad」）もあり、クリップボード内のテキストを暗号化/復号化できるので、暗号文を貼り付けることができます…",
+      "publishedAt": "2026-03-21T17:39:47.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d64a76c95efc6ddbc5e0b087112492cf040e7901a574ca9283efa4f809dfc9aa",
+      "source": "RustCC (CN)",
+      "title": "Fungi 0.6.0: 純粋なRustによるプライベートデバイスネットワークツール、リモートでのサンドボックスアプリケーションの実行をサポート",
+      "url": "https://rustcc.cn/article?id=5505e027-d444-4e03-91c1-d4f4e293b7f2",
+      "summary": "Fungiとは何か？\nFungiは、暗号化されたP2Pマルチデバイスネットワークを簡単に作成し、リモートサービスへの安全なアクセスと管理を可能にします。\n純粋なRustで構築され、rust-libp2pに基づいたプライベートマルチデバイスネットワーク向けのツールです。\n\nFungi 0.6リリース：\nwasmtimeを内蔵し、Dockerランタイムの隔離制御が可能。\n能力優先の宣言型権限管理。\n3行のコマンドでリモートデバイスにサービスを作成し、自動ポートマッピングを行い、ローカルでアクセス可能：\n# 2台のデバイスが既に接続されている前提で：\nfungi peer admin service pull ./filebrowser-lite-wasi.service.yaml\nfungi peer admin service start filebrowser-lite-wasi\nfungi access open filebrowser-lite-wasi\n\nこれはwasi版のfilebrowserの例で、リモートで起動し、ローカルでアクセスすることで、軽量で迅速なファイル管理を実現します。\nまた、fungiのTCPポート転送機能のみを使用することもでき、NATトラバーサルとローカルmDNSアドレスの発見を備えています。主にピアツーピアの軽量TCP転送が必要な場合、fungiはfrpを使用する多くのシナリオをカバーすることができます。\n次のステップ…",
+      "publishedAt": "2026-03-21T11:44:23.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-22T00:06:14.246Z"
+  }
+}
