@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-23",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "658a13f2f08ce7354fbf18f9c2e4c854154bdce23656c4e9b43bc576c251dc64",
+      "source": "Lobsters Rust",
+      "title": "货物安全公告",
+      "url": "https://blog.rust-lang.org/2026/03/21/cve-2026-33056/",
+      "summary": "评论",
+      "publishedAt": "2026-03-22T07:12:14.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        57
+      ],
+      "reason": "Security advisory impacts Rust projects",
+      "suggestedTitle": "货物安全公告发布",
+      "suggestedSummary": "Rust 包管理器 Cargo 发布了一项新的安全公告，指出一个可能影响许多 Rust 项目的漏洞。建议开发人员查看公告详情，并应用任何推荐的补丁或更新以降低风险。此公告强调了在 Rust 生态系统中保持对安全问题的关注，以确保项目的安全性和完整性的重要性。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "cab42e31ac3de5ba6a529528550681af0cfd43c5356fc2f237e75cf18d683384",
+      "source": "Rust Users Forum",
+      "title": "NaiHe – 轻量级端到端加密聊天，无需账户，无中央服务器（Rust + Tauri）",
+      "url": "https://users.rust-lang.org/t/naihe-lightweight-e2e-encrypted-chat-no-accounts-no-central-server-rust-tauri/139063#post_7",
+      "summary": "我目前正在进行一个类似的业余项目，但实现了Tor路由+作为p2p而不是使用代理。您可能会对它感兴趣：GitHub - NielDuysters/arti-chat：通过Tor实现合理匿名的去中心化点对点通讯工具。· GitHub",
+      "publishedAt": "2026-03-22T17:01:05.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        42,
+        43
+      ],
+      "reason": "New decentralized chat tool in Rust",
+      "suggestedTitle": "介绍NaiHe：使用Rust和Tauri构建的安全去中心化聊天工具",
+      "suggestedSummary": "NaiHe是一个新宣布的轻量级端到端加密聊天应用程序，使用Rust和Tauri构建。它无需用户账户或中央服务器，利用点对点技术进行安全通信。对于对隐私关注的应用程序感兴趣的开发人员来说，这个工具尤其相关，展示了Rust在创建安全、高效和去中心化软件解决方案方面的能力。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b421762d6a53f66a28fe9b468e48b1e0d44f5fc8e8b53410cc96ebe9cceb6ea0",
+      "source": "Lobsters Rust",
+      "title": "逆向工程一个病毒式开源发布（或：关于zerobrew的笔记！）",
+      "url": "https://substack.lucasgelfond.online/p/reverse-engineering-a-viral-open",
+      "summary": "评论",
+      "publishedAt": "2026-03-22T18:42:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "acd80b414ef4735ad58303f9a663295687d0b2777fd2a076de3e286c5a9110e7",
+      "source": "Rust Users Forum",
+      "title": "我开发了一个有趣的图像查看器",
+      "url": "https://users.rust-lang.org/t/i-developed-an-interesting-image-viewer/137406#post_15",
+      "summary": "新版本，新功能（0.9.0）。支持JPEG 2000和JXL图像。添加垂直和水平镜像。添加修改后的OpenJPEG库，具有exif和分辨率选项。支持的图像格式：jpg, png, bmp, tif, gif, webp, jp2, jpc, j2k, jxl。",
+      "publishedAt": "2026-03-22T15:48:33.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6ca0e3048659cb9a95b263cf9e9a9acc8eb23322c84598b207b00b66330a7a86",
+      "source": "Zenn Rust (JP)",
+      "title": "开始开发从HTML生成PDF的Rust库“fulgur”",
+      "url": "https://zenn.dev/mitzh/articles/911642761bf792",
+      "summary": "简介\n我们开始开发一个名为“fulgur”的Rust库，用于从HTML生成PDF。\n\nfulgur（法尔加）在拉丁语中意为“闪电”。这个名字是从布局引擎Blitz（德语中意为闪电）联想到的，寻找一个像Rust的crate的名字，最终选择了这个名字。\n在本文中，我们将总结为什么现在要自制一个HTML到PDF的库，以及我们是如何推进开发的。\n\nwkhtmltopdf的终结\n提到HTML到PDF的转换，长期以来wkhtmltopdf一直是标准工具。然而，wkhtmltopdf在2023年被归档，维护工作...",
+      "publishedAt": "2026-03-22T13:06:15.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d64a76c95efc6ddbc5e0b087112492cf040e7901a574ca9283efa4f809dfc9aa",
+      "source": "RustCC (CN)",
+      "title": "Fungi 0.6.0：一个纯Rust的私有设备网络工具，已支持远程运行沙盒应用",
+      "url": "https://rustcc.cn/article?id=5505e027-d444-4e03-91c1-d4f4e293b7f2",
+      "summary": "Fungi是什么？\nFungi可以轻松创建加密P2P多设备网络，安全访问并管理远程服务。\n纯Rust、基于rust-libp2p、面向私有多设备网络。\n\nFungi 0.6 发布：\n自带wasmtime、可隔离接管Docker runtime\nCapability-first声明式权限管理。\n三行命令在远程设备创建服务，自动端口映射，并在本地访问:\n# 在两台设备已经建立连接的前提下：\nfungi peer admin service pull ./filebrowser-lite-wasi.service.yaml\nfungi peer admin service start filebrowser-lite-wasi\nfungi access open filebrowser-lite-wasi\n\n这是一个wasi版的filebrowser的例子，远程启动，本地访问，实现了轻量快速的文件管理\n你也可以仅使用fungi的TCP端口转发功能，自带NAT穿透和本地mDNS地址发现。如果你主要需要点对点的轻量TCP转发，fungi也可以覆盖很多原本会用frp的场景。\n下一步…",
+      "publishedAt": "2026-03-21T11:44:23.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "05057ebf07aced2bc4f94e97b682789cfea9c1f177165e60564bf8d6d8091403",
+      "source": "Zenn Rust (JP)",
+      "title": "我开发了一款可以快速设置Git本地仓库用户配置的CLI工具",
+      "url": "https://zenn.dev/nazuna315/articles/helsinki-cli",
+      "summary": "动机\n根据GitHub的规定，免费账户每人只能拥有一个，但对于付费账户（如GitHub Pro或GitHub Enterprise），这一限制有所放宽。因此，在某些情况下，可能有人会在工作和个人之间切换多个账户。\n这就带来了一个问题，即需要为每个仓库切换Git的user.name和user.email设置。如果使用错误的账户信息进行推送，提交历史中可能会留下不想要的电子邮件地址。\n\n向ChatGPT询问\n当我向ChatGPT询问解决方案时...",
+      "publishedAt": "2026-03-21T12:12:40.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-23T00:07:51.130Z"
+  }
+}

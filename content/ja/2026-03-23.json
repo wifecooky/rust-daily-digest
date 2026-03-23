@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-23",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "658a13f2f08ce7354fbf18f9c2e4c854154bdce23656c4e9b43bc576c251dc64",
+      "source": "Lobsters Rust",
+      "title": "Cargoに関するセキュリティ勧告",
+      "url": "https://blog.rust-lang.org/2026/03/21/cve-2026-33056/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-22T07:12:14.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        57
+      ],
+      "reason": "Security advisory impacts Rust projects",
+      "suggestedTitle": "Cargoに対するセキュリティ勧告が発行されました",
+      "suggestedSummary": "RustのパッケージマネージャーであるCargoに対して、新たなセキュリティ勧告が発行され、多くのRustプロジェクトに影響を与える可能性のある脆弱性が指摘されています。開発者は勧告の詳細を確認し、リスクを軽減するために推奨されるパッチや更新を適用することが求められています。この勧告は、Rustエコシステムにおけるセキュリティ問題について情報を常に把握し、プロジェクトの安全性と整合性を確保する重要性を強調しています。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "cab42e31ac3de5ba6a529528550681af0cfd43c5356fc2f237e75cf18d683384",
+      "source": "Rust Users Forum",
+      "title": "NaiHe – 軽量なE2E暗号化チャット、アカウント不要、中央サーバーなし (Rust + Tauri)",
+      "url": "https://users.rust-lang.org/t/naihe-lightweight-e2e-encrypted-chat-no-accounts-no-central-server-rust-tauri/139063#post_7",
+      "summary": "私は現在、類似の趣味プロジェクトに取り組んでおり、ブローカーを使用する代わりにTorルーティングとp2pを実装しています。興味があればこちらをご覧ください: GitHub - NielDuysters/arti-chat: Torを介した合理的な匿名性を持つ分散型ピアツーピアメッセンジャー。· GitHub",
+      "publishedAt": "2026-03-22T17:01:05.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        42,
+        43
+      ],
+      "reason": "New decentralized chat tool in Rust",
+      "suggestedTitle": "NaiHeの紹介: RustとTauriで構築された安全で分散型のチャットツール",
+      "suggestedSummary": "NaiHeは、RustとTauriを使用して構築された新たに発表された軽量のエンドツーエンド暗号化チャットアプリケーションです。ユーザーアカウントや中央サーバーを必要とせず、ピアツーピア技術を活用して安全な通信を実現します。このツールは、プライバシーに焦点を当てたアプリケーションに興味のある開発者に特に関連性があり、Rustが安全で効率的、かつ分散型のソフトウェアソリューションを作成する能力を示しています。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b421762d6a53f66a28fe9b468e48b1e0d44f5fc8e8b53410cc96ebe9cceb6ea0",
+      "source": "Lobsters Rust",
+      "title": "オープンソースのバイラルローンチをリバースエンジニアリングする（または：zerobrewに関するノート！）",
+      "url": "https://substack.lucasgelfond.online/p/reverse-engineering-a-viral-open",
+      "summary": "コメント",
+      "publishedAt": "2026-03-22T18:42:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "acd80b414ef4735ad58303f9a663295687d0b2777fd2a076de3e286c5a9110e7",
+      "source": "Rust Users Forum",
+      "title": "興味深い画像ビューアを開発しました",
+      "url": "https://users.rust-lang.org/t/i-developed-an-interesting-image-viewer/137406#post_15",
+      "summary": "新バージョン、新機能（0.9.0）。JPEG 2000とJXL画像をサポート。縦横のミラーリングを追加。Exifと解像度オプションを備えたOpenJPEGクレートを修正して追加。サポートされている画像形式：jpg, png, bmp, tif, gif, webp, jp2, jpc, j2k, jxl。",
+      "publishedAt": "2026-03-22T15:48:33.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6ca0e3048659cb9a95b263cf9e9a9acc8eb23322c84598b207b00b66330a7a86",
+      "source": "Zenn Rust (JP)",
+      "title": "HTMLからPDFを生成するRustライブラリ「fulgur」を作り始めた",
+      "url": "https://zenn.dev/mitzh/articles/911642761bf792",
+      "summary": "はじめに\nHTMLからPDFを生成するRustライブラリ「fulgur」を作り始めました。\n\nfulgur（ファルガー）はラテン語で「稲妻」を意味します。レイアウトエンジンのBlitz（ドイツ語で稲妻）から連想して、Rustのクレートっぽい名前を探した結果この名前になりました。\nこの記事では、なぜ今HTML→PDFのライブラリを自作しようと思ったのか、そしてどのように開発を進めているのかをまとめます。\n\n wkhtmltopdfの終焉\nHTML→PDF変換といえば、長らく wkhtmltopdf が定番でした。\nしかしwkhtmltopdfは2023年にアーカイブされ、メンテナンスが...",
+      "publishedAt": "2026-03-22T13:06:15.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d64a76c95efc6ddbc5e0b087112492cf040e7901a574ca9283efa4f809dfc9aa",
+      "source": "RustCC (CN)",
+      "title": "Fungi 0.6.0: 純粋なRustで開発されたプライベートデバイスネットワークツール、リモートでのサンドボックスアプリケーション実行をサポート",
+      "url": "https://rustcc.cn/article?id=5505e027-d444-4e03-91c1-d4f4e293b7f2",
+      "summary": "Fungiとは何か？\nFungiは暗号化されたP2Pマルチデバイスネットワークを簡単に作成し、リモートサービスへの安全なアクセスと管理を可能にします。\n純粋なRustで開発され、rust-libp2pに基づき、プライベートなマルチデバイスネットワーク向けに設計されています。\n\nFungi 0.6のリリース:\nwasmtimeを内蔵し、Dockerランタイムの隔離と制御が可能\n能力優先の宣言型権限管理。\n3行のコマンドでリモートデバイスにサービスを作成し、自動ポートマッピングを行い、ローカルでアクセス可能:\n# 2台のデバイスが既に接続されている前提で：\nfungi peer admin service pull ./filebrowser-lite-wasi.service.yaml\nfungi peer admin service start filebrowser-lite-wasi\nfungi access open filebrowser-lite-wasi\n\nこれはwasi版のfilebrowserの例で、リモートで起動し、ローカルでアクセスすることで、軽量で迅速なファイル管理を実現します。\nまた、fungiのTCPポート転送機能を使用することもでき、NATトラバーサルとローカルmDNSアドレス検出が内蔵されています。主にP2Pの軽量TCP転送が必要な場合、fungiはfrpを使用する多くのシナリオをカバーできます。\n次のステップ…",
+      "publishedAt": "2026-03-21T11:44:23.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "05057ebf07aced2bc4f94e97b682789cfea9c1f177165e60564bf8d6d8091403",
+      "source": "Zenn Rust (JP)",
+      "title": "Gitのローカルリポジトリ毎のユーザー設定を一発でできるCLIツールを作った",
+      "url": "https://zenn.dev/nazuna315/articles/helsinki-cli",
+      "summary": "動機\nGitHubの無料アカウントは規約により1人1アカウントまでですが、有料アカウント（GitHub ProやGitHub Enterprise等）の場合、この制限が緩和されます。そのため、状況によっては仕事用・個人用など複数のアカウントを使い分けている方もいるのではないでしょうか。\nそこで困るのが、Gitのuser.nameやuser.emailの設定をリポジトリ毎に切り替える必要があるということです。間違ったアカウントの情報でpushしてしまうと、コミット履歴に意図しないメールアドレスが残ってしまいます。\n\nChatGPTに聞いてみた\nChatGPTに解決策を聞いてみたところ...",
+      "publishedAt": "2026-03-21T12:12:40.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-23T00:07:57.460Z"
+  }
+}

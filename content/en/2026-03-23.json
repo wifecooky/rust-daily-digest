@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-23",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "658a13f2f08ce7354fbf18f9c2e4c854154bdce23656c4e9b43bc576c251dc64",
+      "source": "Lobsters Rust",
+      "title": "Security advisory for Cargo",
+      "url": "https://blog.rust-lang.org/2026/03/21/cve-2026-33056/",
+      "summary": "Comments",
+      "publishedAt": "2026-03-22T07:12:14.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        57
+      ],
+      "reason": "Security advisory impacts Rust projects",
+      "suggestedTitle": "Security Advisory Issued for Cargo",
+      "suggestedSummary": "A new security advisory has been issued for Cargo, the Rust package manager, highlighting a vulnerability that could potentially affect many Rust projects. Developers are advised to review the advisory details and apply any recommended patches or updates to mitigate risks. This advisory underscores the importance of staying informed about security issues in the Rust ecosystem to ensure the safety and integrity of projects.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "cab42e31ac3de5ba6a529528550681af0cfd43c5356fc2f237e75cf18d683384",
+      "source": "Rust Users Forum",
+      "title": "NaiHe – Lightweight E2E encrypted chat, no accounts, no central server (Rust + Tauri)",
+      "url": "https://users.rust-lang.org/t/naihe-lightweight-e2e-encrypted-chat-no-accounts-no-central-server-rust-tauri/139063#post_7",
+      "summary": "I am currently working on a similar hobby-project, but implementing Tor routing + being p2p instead of using a broker. You might be interested in checking that out: GitHub - NielDuysters/arti-chat: Decentralized peer-to-peer messenger with reasonable anonymity over Tor. · GitHub",
+      "publishedAt": "2026-03-22T17:01:05.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        42,
+        43
+      ],
+      "reason": "New decentralized chat tool in Rust",
+      "suggestedTitle": "Introducing NaiHe: A Secure, Decentralized Chat Tool Built with Rust and Tauri",
+      "suggestedSummary": "NaiHe is a newly announced lightweight, end-to-end encrypted chat application built using Rust and Tauri. It operates without requiring user accounts or a central server, leveraging peer-to-peer technology for secure communications. This tool is particularly relevant for developers interested in privacy-focused applications, showcasing Rust's capabilities in creating secure, efficient, and decentralized software solutions.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b421762d6a53f66a28fe9b468e48b1e0d44f5fc8e8b53410cc96ebe9cceb6ea0",
+      "source": "Lobsters Rust",
+      "title": "Reverse engineering a viral open source launch (or: notes on zerobrew!)",
+      "url": "https://substack.lucasgelfond.online/p/reverse-engineering-a-viral-open",
+      "summary": "Comments",
+      "publishedAt": "2026-03-22T18:42:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "acd80b414ef4735ad58303f9a663295687d0b2777fd2a076de3e286c5a9110e7",
+      "source": "Rust Users Forum",
+      "title": "I developed an interesting Image Viewer",
+      "url": "https://users.rust-lang.org/t/i-developed-an-interesting-image-viewer/137406#post_15",
+      "summary": "New version, new features (0.9.0). Support JPEG 2000 and JXL images. Add vertical and horizontal mirroring. Add modified a OpenJPEG crate with exif and resolution options. The supported image formats: jpg, png, bmp, tif, gif, webp, jp2, jpc, j2k, jxl.",
+      "publishedAt": "2026-03-22T15:48:33.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6ca0e3048659cb9a95b263cf9e9a9acc8eb23322c84598b207b00b66330a7a86",
+      "source": "Zenn Rust (JP)",
+      "title": "HTMLからPDFを生成するRustライブラリ「fulgur」を作り始めた",
+      "url": "https://zenn.dev/mitzh/articles/911642761bf792",
+      "summary": "はじめに\nHTMLからPDFを生成するRustライブラリ「fulgur」を作り始めました。\n\nfulgur（ファルガー）はラテン語で「稲妻」を意味します。レイアウトエンジンのBlitz（ドイツ語で稲妻）から連想して、Rustのクレートっぽい名前を探した結果この名前になりました。\nこの記事では、なぜ今HTML→PDFのライブラリを自作しようと思ったのか、そしてどのように開発を進めているのかをまとめます。\n\n wkhtmltopdfの終焉\nHTML→PDF変換といえば、長らく wkhtmltopdf が定番でした。\nしかしwkhtmltopdfは2023年にアーカイブされ、メンテナンスが...",
+      "publishedAt": "2026-03-22T13:06:15.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d64a76c95efc6ddbc5e0b087112492cf040e7901a574ca9283efa4f809dfc9aa",
+      "source": "RustCC (CN)",
+      "title": "Fungi 0.6.0: 一个纯Rust的私有设备网络工具，已支持远程运行沙盒应用",
+      "url": "https://rustcc.cn/article?id=5505e027-d444-4e03-91c1-d4f4e293b7f2",
+      "summary": "Fungi是什么？\nFungi可以轻松创建加密P2P多设备网络，安全访问并管理远程服务。\n纯Rust、基于rust-libp2p、面向私有多设备网络。\n\nFungi 0.6 发布：\n自带wasmtime、可隔离接管Docker runtime\nCapability-first声明式权限管理。\n三行命令在远程设备创建服务，自动端口映射，并在本地访问:\n# 在两台设备已经建立连接的前提下：\nfungi peer admin service pull ./filebrowser-lite-wasi.service.yaml\nfungi peer admin service start filebrowser-lite-wasi\nfungi access open filebrowser-lite-wasi\n\n\n这是一个wasi版的filebrowser的例子，远程启动，本地访问，实现了轻量快速的文件管理\n你也可以仅使用fungi的TCP端口转发功能，自带NAT穿透和本地mDNS地址发现。如果你主要需要点对点的轻量TCP转发，fungi也可以覆盖很多原本会用frp的场景。\n下一步…",
+      "publishedAt": "2026-03-21T11:44:23.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "05057ebf07aced2bc4f94e97b682789cfea9c1f177165e60564bf8d6d8091403",
+      "source": "Zenn Rust (JP)",
+      "title": "Gitのローカルリポジトリ毎のユーザー設定を一発でできるCLIツールを作った",
+      "url": "https://zenn.dev/nazuna315/articles/helsinki-cli",
+      "summary": "動機\nGitHubの無料アカウントは規約により1人1アカウントまでですが、有料アカウント（GitHub ProやGitHub Enterprise等）の場合、この制限が緩和されます。そのため、状況によっては仕事用・個人用など複数のアカウントを使い分けている方もいるのではないでしょうか。\nそこで困るのが、Gitのuser.nameやuser.emailの設定をリポジトリ毎に切り替える必要があるということです。間違ったアカウントの情報でpushしてしまうと、コミット履歴に意図しないメールアドレスが残ってしまいます。\n\n ChatGPTに聞いてみた\nChatGPTに解決策を聞いてみたところ...",
+      "publishedAt": "2026-03-21T12:12:40.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-23T00:07:45.241Z"
+  }
+}
