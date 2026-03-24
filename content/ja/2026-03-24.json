@@ -1,0 +1,99 @@
+{
+  "date": "2026-03-24",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "c09888c4c58f894218029e7772f12aa0e9f145c5b5eeb6e585dc2c22d7868162",
+      "source": "Rust Internals",
+      "title": "Rust 1.94.1 プレリリーステスト",
+      "url": "https://internals.rust-lang.org/t/rust-1-94-1-pre-release-testing/24107#post_1",
+      "summary": "1.94.1 プレリリースのテストが準備完了しました。このリリースは3月26日に予定されています。リリースノートはこちらでご覧いただけます。ローカルで試すには、次のコマンドを実行してください：\nRUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\nインデックスは https://dev-static.rust-lang.org/dist/2026-03-23/index.html です。リリースチームはプレリリースプロセスの変更についても考えており、このGitHubの問題で皆さんのフィードバックをお待ちしています。",
+      "publishedAt": "2026-03-23T04:31:27.000Z",
+      "score": 37,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        2,
+        11,
+        30
+      ],
+      "reason": "Upcoming Rust release impacts development",
+      "suggestedTitle": "Rust 1.94.1 プレリリーステスト開始",
+      "suggestedSummary": "Rust 1.94.1 のプレリリーステストが開始され、リリースは3月26日に予定されています。開発者はこの新バージョンに対してプロジェクトをテストし、互換性を確認し、新機能や修正を活用することが推奨されています。リリースノートには「Cargo Update tar to 0.4.45」などの更新が記載されており、依存関係の確認の重要性が強調されています。このプレリリースは、開発者が本リリースに向けて準備を整え、スムーズな移行と改善の活用を確実にするために重要です。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "79d1702dbe3b71a87f528a72294926bf5ea2ede6e758c92ff2a8c5c1c21d3ddd",
+      "source": "Google News Rust",
+      "title": "Ubuntuの開発元CanonicalがRust Foundationに参加 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE02cHZHY1p1R0JEX19uZTJYYWViNHZPYjdqVl95UXhkakY1dkJuWTdtNU5zXzVaalV2UHBJSk9MMmVhYkRBc0N4dEplSHdiUnJFdk5ZTlFqSnhUOFFhZW9XYmNnWkhvek5RVjlZWElR?oc=5",
+      "summary": "Ubuntuの開発元CanonicalがRust Foundationに参加  Phoronix",
+      "publishedAt": "2026-03-23T10:27:00.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Rust Foundation expansion affects ecosystem",
+      "suggestedTitle": "CanonicalがRust Foundationに参加",
+      "suggestedSummary": "Ubuntuの背後にある企業CanonicalがRust Foundationに参加し、Rustと主要なLinuxディストリビューションの1つとの協力において重要な一歩を踏み出しました。このパートナーシップは、LinuxエコシステムにおけるRustの存在感を強化し、Ubuntuでのサポートと統合がより強固になることが期待されています。Rust開発者にとっては、Ubuntuシステム上でRustアプリケーションを展開する際のツールの改善やワークフローの円滑化が期待され、開発と展開の両方の体験が向上する可能性があります。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "a3f5173e6dea9763ffb2cfe56bf2914379fbf75443a11405e3d46966115e5190",
+      "source": "Rust Internals",
+      "title": "アイデア: Borrowckの透明な関数呼び出し",
+      "url": "https://internals.rust-lang.org/t/idea-borrowck-transparent-function-calls/24103?page=2#post_23",
+      "summary": "どうやら、Nikoが3月21日に「最大限に最小化されたビュータイプ」についてのブログ記事を書いたようです（私は今になってそれを見つけました）。そして、それは良い中間点であり、私はそれを最小限の解決策として満足しています。私がビュータイプに関して抱えていた主な問題は、それがあまりにも大きいことでした。もしかしたら、これが@Vorpalが話していたことで、私がそれを完全なビュータイプとして誤解していたのかもしれません。",
+      "publishedAt": "2026-03-23T03:26:28.000Z",
+      "score": 37,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "6a9dbee1939ab8c7dadb104fda5372f7ac22d2106d388b36208676bfb92bc822",
+      "source": "Zenn Rust (JP)",
+      "title": "RustでDevin AIのMCPサーバーを作成",
+      "url": "https://zenn.dev/mjinno/articles/devin-mcp-rust-mcp-server",
+      "summary": "作成したもの\nClaude CodeやCursorなどのAIコーディングツールから、Devin AIにタスクを委譲できるMCPサーバーをRustで作成しました。\nhttps://github.com/mjinno09/devin-mcp\nMCP（Model Context Protocol）は、AIツールに外部機能を追加するための標準プロトコルです。このサーバーを導入すると、Claude Codeの会話中に「この作業はDevinにやらせて」と言うだけで、Devinのセッションが立ち上がり、結果はGitHub PRとして返ってきます。\n\nモチベーション\n\nMCP ...",
+      "publishedAt": "2026-03-23T13:23:07.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "487c42fd92f1ab34d71a4e417d32cd0c25d54eb2f902fffb16f2ffadc710fda2",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #320",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/23/changelog-320.html",
+      "summary": "コミット: b42b63f\n2026-03-23 (v0.3.2836)\n新機能\n#21395 test_name プレースホルダーを executable_arg に変更。\n修正\n#21784 インライン型エイリアスコードアシストで全てのライフタイム引数が削除された場合に角括弧を削除。\n#21817 convert_named_struct_to_tuple_struct と convert_tuple_struct_to_named_struct での重複編集を修正。\n#21333 タプル構造体パターンの予想される型解析を修正。\n#21424 rust-project.json でより多くの実行可能な種類をサポート。\n#20407 generate_trait_from_impl でドキュメントコメントを移動。\n#21768…",
+      "publishedAt": "2026-03-23T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "48046f706ddbb73ae976aec3a3a0b659562ed260c9ad1bcc7df946fd195ef98e",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Rust向けの超高速MessagePackシリアライザー",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108#post_1",
+      "summary": "こんにちは！\n新しいRust向けのMessagePack実装であるzerompkを紹介したいと思います！これは、現在最も人気のあるrmp_serdeよりもはるかに高速で、外部クレートの依存関係（stdを含む）なしで構築されています。\nuse zerompk::{FromMessagePack, ToMessagePack};\n\n#[derive(FromMessagePack, ToMessagePack)]\npub struct Person {\n    pub name: String,\n    pub age: u32,\n}\n\nfn main() {\n    let person = Person {\n        name: \"Alice\",\n        age: 18,\n    };\n    \n    let msgpack: Vec<u8> =…",
+      "publishedAt": "2026-03-23T09:26:59.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-24T00:06:40.646Z"
+  }
+}

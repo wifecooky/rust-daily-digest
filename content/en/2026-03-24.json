@@ -1,0 +1,99 @@
+{
+  "date": "2026-03-24",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "c09888c4c58f894218029e7772f12aa0e9f145c5b5eeb6e585dc2c22d7868162",
+      "source": "Rust Internals",
+      "title": "Rust 1.94.1 pre-release testing",
+      "url": "https://internals.rust-lang.org/t/rust-1-94-1-pre-release-testing/24107#post_1",
+      "summary": "The 1.94.1 pre-release is ready for testing. The release is scheduled for\nMarch 26. Release notes can be found here.\nYou can try it out locally by running:\nRUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\nThe index is https://dev-static.rust-lang.org/dist/2026-03-23/index.html.\nThe release team is also thinking about changes to our pre-release process:\nwe'd love your feedback on this GitHub issue.",
+      "publishedAt": "2026-03-23T04:31:27.000Z",
+      "score": 37,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        2,
+        11,
+        30
+      ],
+      "reason": "Upcoming Rust release impacts development",
+      "suggestedTitle": "Rust 1.94.1 Pre-release Testing Begins",
+      "suggestedSummary": "The pre-release testing for Rust 1.94.1 is now underway, with the release scheduled for March 26. Developers are encouraged to test their projects against this new version to ensure compatibility and take advantage of any new features or fixes. The release notes mention updates such as the 'Cargo Update tar to 0.4.45', highlighting the importance of verifying dependencies. This pre-release is crucial for developers to prepare for the full release, ensuring smooth transitions and leveraging improvements.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "79d1702dbe3b71a87f528a72294926bf5ea2ede6e758c92ff2a8c5c1c21d3ddd",
+      "source": "Google News Rust",
+      "title": "Ubuntu Maker Canonical Joins The Rust Foundation - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE02cHZHY1p1R0JEX19uZTJYYWViNHZPYjdqVl95UXhkakY1dkJuWTdtNU5zXzVaalV2UHBJSk9MMmVhYkRBc0N4dEplSHdiUnJFdk5ZTlFqSnhUOFFhZW9XYmNnWkhvek5RVjlZWElR?oc=5",
+      "summary": "Ubuntu Maker Canonical Joins The Rust Foundation  Phoronix",
+      "publishedAt": "2026-03-23T10:27:00.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Rust Foundation expansion affects ecosystem",
+      "suggestedTitle": "Canonical Joins the Rust Foundation",
+      "suggestedSummary": "Canonical, the company behind Ubuntu, has joined the Rust Foundation, marking a significant step in the collaboration between Rust and one of the leading Linux distributions. This partnership is expected to bolster Rust's presence in the Linux ecosystem, potentially leading to more robust support and integration in Ubuntu. For Rust developers, this could mean improved tooling and smoother workflows when deploying Rust applications on Ubuntu systems, enhancing both development and deployment experiences.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "a3f5173e6dea9763ffb2cfe56bf2914379fbf75443a11405e3d46966115e5190",
+      "source": "Rust Internals",
+      "title": "Idea: Borrowck Transparent Function Calls",
+      "url": "https://internals.rust-lang.org/t/idea-borrowck-transparent-function-calls/24103?page=2#post_23",
+      "summary": "Apparently Niko made a blog post about Maximally minimal view types on March 21 (and I only found it just now). And I think it's a good middlepoint and I would be happy with it as a minimal sulotion. The main pain point I had with view types was it's too large .\nMaybe this was what @Vorpal talking about and I misinterpreted it as full view types?",
+      "publishedAt": "2026-03-23T03:26:28.000Z",
+      "score": 37,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "6a9dbee1939ab8c7dadb104fda5372f7ac22d2106d388b36208676bfb92bc822",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust で Devin AI の MCP サーバーを作った",
+      "url": "https://zenn.dev/mjinno/articles/devin-mcp-rust-mcp-server",
+      "summary": "作ったもの\nClaude Code や Cursor などの AI コーディングツールから、Devin AI にタスクを委譲できる MCP サーバーを Rust で作った。\nhttps://github.com/mjinno09/devin-mcp\nMCP（Model Context Protocol）は、AI ツールに外部機能を追加するための標準プロトコル。このサーバーを入れると、Claude Code の会話中に「この作業は Devin にやらせて」と言うだけで、Devin のセッションが立ち上がり、結果は GitHub PR として返ってくる。\n\n モチベーション\n\n MCP ...",
+      "publishedAt": "2026-03-23T13:23:07.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "487c42fd92f1ab34d71a4e417d32cd0c25d54eb2f902fffb16f2ffadc710fda2",
+      "source": "rust-analyzer",
+      "title": "Changelog #320",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/23/changelog-320.html",
+      "summary": "Commit: b42b63f\n2026-03-23 (v0.3.2836)\nNew Features\n#21395 change test_name placeholder to executable_arg.\nFixes\n#21784 remove angle brackets if all lifetime args removed in inline type alias code assist.\n#21817 fix overlapping edits in convert_named_struct_to_tuple_struct and convert_tuple_struct_to_named_struct.\n#21333 fix expected type analysis for tuple struct patterns.\n#21424 support more runnable kinds in rust-project.json.\n#20407 move out doc comments in generate_trait_from_impl.\n#21768…",
+      "publishedAt": "2026-03-23T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "48046f706ddbb73ae976aec3a3a0b659562ed260c9ad1bcc7df946fd195ef98e",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Extremely fast MessagePack serializer for Rust",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108#post_1",
+      "summary": "Hello!\nI'd like to introduce zerompk, a new MessagePack implementation for Rust! It's far faster than the currently most popular rmp_serde and is built without any external crate dependencies (including std).\nuse zerompk::{FromMessagePack, ToMessagePack};\n\n#[derive(FromMessagePack, ToMessagePack)]\npub struct Person {\n    pub name: String,\n    pub age: u32,\n}\n\nfn main() {\n    let person = Person {\n        name: \"Alice\",\n        age: 18,\n    };\n    \n    let msgpack: Vec<u8> =…",
+      "publishedAt": "2026-03-23T09:26:59.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-24T00:06:20.290Z"
+  }
+}
