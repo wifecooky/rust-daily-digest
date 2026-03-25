@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-25",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "f9380fcaa43cce80ed5e3f786ff20f3c8f62815ff9700ed1a7e89271cb356bb8",
+      "source": "Google News Rust",
+      "title": "Ubuntuの開発者CanonicalがRust開発を年間15万ドルで支援 - It's FOSS",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FV0JWbTRtSUJzd3V0UEJCekFiLWotd3FVZWlhOEZUXzBrOUdBdE1nTHhCYks2VmJrdWdsWlZyVklkWTNwaG51U2JUTFdkMWN6Y3lEb1NjNGtFNV9weURZOGozMlhCa19i?oc=5",
+      "summary": "Ubuntuの開発者CanonicalがRust開発を年間15万ドルで支援  It's FOSS",
+      "publishedAt": "2026-03-24T10:48:05.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56,
+        64
+      ],
+      "reason": "Canonical's significant Rust backing",
+      "suggestedTitle": "CanonicalのRust開発への15万ドルのコミットメント",
+      "suggestedSummary": "Ubuntuの開発者であるCanonicalは、Rust Foundationのメンバーシップの一環として、Rust開発を年間15万ドルで支援しています。この支援は、言語の成長への強いコミットメントを示しています。Rust開発者にとって、これはリソースの増加やツールとエコシステムのサポートの向上、特にUbuntuプラットフォームでの進展を意味します。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "41c394abb9e0b5c80234bfd0e59ef05e0db2cf36bbdb6e1b4dd9b77e61c3d596",
+      "source": "Zenn Rust (JP)",
+      "title": "AWS Lambda が Rust を正式サポートしました",
+      "url": "https://zenn.dev/kameoncloud/articles/96fa9bbda75a98",
+      "summary": "https://serverless.co.jp/blog/hpeq4z7brm9/ に投稿した記事の微修正版です。 https://aws.amazon.com/jp/blogs/compute/building-serverless-applications-with-rust-on-aws-lambda/ いままで AWS Lambda のRustはExperimentalとして提供されていましたが、2025年11月14日に一般提供開始となりました。 Custom Runtime と Cargo Lambda LambdaのRustサポートはCargo Lambdaというオープ...",
+      "publishedAt": "2026-03-24T05:22:04.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        59
+      ],
+      "reason": "AWS Lambda's Rust support",
+      "suggestedTitle": "AWS Lambda が Rust を正式にサポート",
+      "suggestedSummary": "AWS Lambda は Rust の正式サポートを発表し、開発者が Rust のパフォーマンスと安全性の特徴を活かしてサーバーレスアプリケーションを構築できるようになりました。この統合により、AWS のインフラストラクチャ上で Rust 関数をシームレスにデプロイでき、Lambda のスケーラビリティとコスト効率を活用できます。Rust 開発者は、AWS サービスをより効率的に利用できるようになり、クラウド環境での言語の適用性が拡大します。",
+      "relatedSources": [
+        "Zenn Rust (JP)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "443a61c234db1bdc251654b006741b9cba0e6f312457d756ce5470f36d268eca",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Rust用の超高速MessagePackシリアライザー",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108#post_12",
+      "summary": "kornel: reader.by_ref().take(n).read_to_end(&mut vec)? == n は安全に実行されます。良い指摘です、見逃してしまい申し訳ありません。",
+      "publishedAt": "2026-03-24T21:41:48.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "239e614a7cf2ad3f5dd6d5cf24f7f3631088e17b7f1eed9393344cfbfb7111a3",
+      "source": "Lobsters Rust",
+      "title": "アンドロメダ: Rustで構築され、Novaエンジンで駆動するJavaScriptとTypeScriptのランタイム",
+      "url": "https://tryandromeda.dev/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-24T11:04:42.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "613da79084cfc2b2db2914894e8c17284384fc0701bec100cfbf50c2f8416c15",
+      "source": "Zenn Rust (JP)",
+      "title": "【Rust】zerompk - Rust向けの最速MessagePack実装とその最適化手法",
+      "url": "https://zenn.dev/nuskey/articles/library-zerompk",
+      "summary": "zerompk、というRust向けのMessagePackシリアライザをリリースしました！\nhttps://github.com/nuskey8/zerompk\nRustでMessagePack、というと真っ先に出てくる選択肢はrmp_serdeでしょう。rmp_serdeは汎用性・性能ともに十分ではありますが、zerompkはさらに性能特化の実装になっています。\nベンチマークを見てみましょう。\n\nベンチマークには参考としてserde_jsonも追加してあります。JSONよりバイナリであるMessagePackのほうが高速なのはそれはそう、ですが、同じMessagePackシリアライザで...",
+      "publishedAt": "2026-03-24T05:43:22.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "abe1fc695c7a792ca080a9fdb304925bc614fc79feaa851a200e0aa92d3ffef9",
+      "source": "Lobsters Rust",
+      "title": "blessed.rs - 推奨クレートディレクトリ",
+      "url": "https://blessed.rs/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-23T01:41:45.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6a9dbee1939ab8c7dadb104fda5372f7ac22d2106d388b36208676bfb92bc822",
+      "source": "Zenn Rust (JP)",
+      "title": "RustでDevin AIのMCPサーバーを作成",
+      "url": "https://zenn.dev/mjinno/articles/devin-mcp-rust-mcp-server",
+      "summary": "作成したもの\nClaude CodeやCursorなどのAIコーディングツールから、Devin AIにタスクを委譲できるMCPサーバーをRustで作成しました。\nhttps://github.com/mjinno09/devin-mcp\nMCP（Model Context Protocol）は、AIツールに外部機能を追加するための標準プロトコルです。このサーバーを導入すると、Claude Codeの会話中に「この作業はDevinにやらせて」と言うだけで、Devinのセッションが立ち上がり、結果はGitHub PRとして返ってきます。\n\nモチベーション\n\nMCP ...",
+      "publishedAt": "2026-03-23T13:23:07.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-25T00:07:36.823Z"
+  }
+}

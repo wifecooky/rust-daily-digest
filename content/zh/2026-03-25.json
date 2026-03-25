@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-25",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "f9380fcaa43cce80ed5e3f786ff20f3c8f62815ff9700ed1a7e89271cb356bb8",
+      "source": "Google News Rust",
+      "title": "Ubuntu 制作者 Canonical 每年资助 15 万美元支持 Rust 开发 - It's FOSS",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1FV0JWbTRtSUJzd3V0UEJCekFiLWotd3FVZWlhOEZUXzBrOUdBdE1nTHhCYks2VmJrdWdsWlZyVklkWTNwaG51U2JUTFdkMWN6Y3lEb1NjNGtFNV9weURZOGozMlhCa19i?oc=5",
+      "summary": "Ubuntu 制作者 Canonical 每年资助 15 万美元支持 Rust 开发  It's FOSS",
+      "publishedAt": "2026-03-24T10:48:05.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56,
+        64
+      ],
+      "reason": "Canonical's significant Rust backing",
+      "suggestedTitle": "Canonical 对 Rust 开发的 15 万美元承诺",
+      "suggestedSummary": "Ubuntu 的制作者 Canonical 正通过每年 150,000 美元的捐助支持 Rust 开发。这项支持是他们作为 Rust 基金会成员的一部分，表明了对该语言发展的强烈承诺。对于 Rust 开发者来说，这意味着在工具和生态系统支持方面，尤其是在 Ubuntu 平台上的资源增加和潜在进步。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "41c394abb9e0b5c80234bfd0e59ef05e0db2cf36bbdb6e1b4dd9b77e61c3d596",
+      "source": "Zenn Rust (JP)",
+      "title": "AWS Lambda 正式支持 Rust",
+      "url": "https://zenn.dev/kameoncloud/articles/96fa9bbda75a98",
+      "summary": "https://serverless.co.jp/blog/hpeq4z7brm9/ 上发布的文章的修订版。https://aws.amazon.com/jp/blogs/compute/building-serverless-applications-with-rust-on-aws-lambda/ 以前，AWS Lambda 的 Rust 被作为实验性功能提供，但在 2025 年 11 月 14 日正式推出。自定义运行时和 Cargo Lambda Lambda 的 Rust 支持是通过 Cargo Lambda 实现的。",
+      "publishedAt": "2026-03-24T05:22:04.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        59
+      ],
+      "reason": "AWS Lambda's Rust support",
+      "suggestedTitle": "AWS Lambda 正式支持 Rust",
+      "suggestedSummary": "AWS Lambda 宣布正式支持 Rust，使开发者能够利用 Rust 的性能和安全特性构建无服务器应用程序。此集成允许在 AWS 基础设施上无缝部署 Rust 函数，利用 Lambda 的可扩展性和成本效益。Rust 开发者现在可以更高效地利用 AWS 服务，扩大该语言在云环境中的适用性。",
+      "relatedSources": [
+        "Zenn Rust (JP)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "443a61c234db1bdc251654b006741b9cba0e6f312457d756ce5470f36d268eca",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - 极快的 Rust MessagePack 序列化器",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108#post_12",
+      "summary": "kornel：reader.by_ref().take(n).read_to_end(&mut vec)? == n 安全地实现了这一点。不错的发现，对不起我错过了。",
+      "publishedAt": "2026-03-24T21:41:48.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "239e614a7cf2ad3f5dd6d5cf24f7f3631088e17b7f1eed9393344cfbfb7111a3",
+      "source": "Lobsters Rust",
+      "title": "仙女座：用 Rust 构建的 JavaScript 和 TypeScript 运行时，由 Nova 引擎驱动",
+      "url": "https://tryandromeda.dev/",
+      "summary": "评论",
+      "publishedAt": "2026-03-24T11:04:42.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "613da79084cfc2b2db2914894e8c17284384fc0701bec100cfbf50c2f8416c15",
+      "source": "Zenn Rust (JP)",
+      "title": "【Rust】zerompk - 针对Rust的最快MessagePack实现及其优化方法",
+      "url": "https://zenn.dev/nuskey/articles/library-zerompk",
+      "summary": "我们发布了一个名为zerompk的Rust专用MessagePack序列化器！https://github.com/nuskey8/zerompk\n提到在Rust中使用MessagePack，首先想到的选择是rmp_serde。虽然rmp_serde在通用性和性能上都足够优秀，但zerompk是一个更专注于性能的实现。\n让我们来看看基准测试。\n\n基准测试中还添加了serde_json作为参考。相比于JSON，二进制格式的MessagePack速度更快，这是显而易见的，但在同一个MessagePack序列化器中...",
+      "publishedAt": "2026-03-24T05:43:22.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "abe1fc695c7a792ca080a9fdb304925bc614fc79feaa851a200e0aa92d3ffef9",
+      "source": "Lobsters Rust",
+      "title": "blessed.rs - 推荐的 Crate 目录",
+      "url": "https://blessed.rs/",
+      "summary": "评论",
+      "publishedAt": "2026-03-23T01:41:45.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6a9dbee1939ab8c7dadb104fda5372f7ac22d2106d388b36208676bfb92bc822",
+      "source": "Zenn Rust (JP)",
+      "title": "用 Rust 构建 Devin AI 的 MCP 服务器",
+      "url": "https://zenn.dev/mjinno/articles/devin-mcp-rust-mcp-server",
+      "summary": "构建的内容\n使用 Rust 构建了一个 MCP 服务器，可以从 Claude Code 和 Cursor 等 AI 编码工具将任务委托给 Devin AI。\nhttps://github.com/mjinno09/devin-mcp\nMCP（模型上下文协议）是一种用于为 AI 工具添加外部功能的标准协议。安装此服务器后，只需在 Claude Code 的对话中说“让 Devin 来做这项工作”，Devin 的会话就会启动，结果将作为 GitHub PR 返回。",
+      "publishedAt": "2026-03-23T13:23:07.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-25T00:07:23.660Z"
+  }
+}
