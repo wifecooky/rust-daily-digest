@@ -1,0 +1,97 @@
+{
+  "date": "2026-03-26",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "613da79084cfc2b2db2914894e8c17284384fc0701bec100cfbf50c2f8416c15",
+      "source": "Zenn Rust (JP)",
+      "title": "【Rust】zerompk - Rust向けの最速MessagePack実装とその最適化手法",
+      "url": "https://zenn.dev/nuskey/articles/library-zerompk",
+      "summary": "zerompk、というRust向けのMessagePackシリアライザをリリースしました！\nhttps://github.com/nuskey8/zerompk\nRustでMessagePack、というと真っ先に出てくる選択肢はrmp_serdeでしょう。rmp_serdeは汎用性・性能ともに十分ではありますが、zerompkはさらに性能特化の実装になっています。\nベンチマークを見てみましょう。\n\nベンチマークには参考としてserde_jsonも追加してあります。JSONよりバイナリであるMessagePackのほうが高速なのはそれはそう、ですが、同じMessagePackシリアライザで...",
+      "publishedAt": "2026-03-24T05:43:22.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11
+      ],
+      "reason": "New high-performance serialization crate",
+      "suggestedTitle": "zerompkの紹介: Rust向け最速のMessagePackシリアライザ",
+      "suggestedSummary": "zerompkは、Rust向けに最適化された新しいMessagePackシリアライザで、最速を誇ります。この実装は、Rust特有のゼロコピー・デシリアライゼーションやその他のRust固有の機能を活用し、性能最適化技術に焦点を当てています。Rust開発者にとって、zerompkはデータシリアライゼーションの高性能な選択肢を提供し、シリアライゼーション速度が重要なアプリケーションでの大幅な改善が期待できます。",
+      "relatedSources": [
+        "Zenn Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "153852bd6c46ca0342661070d03fb94d1f86d9b0a926f54b0e05348a5a5acaf6",
+      "source": "Google News Rust (CN)",
+      "title": "Rust言語エコシステムの困難：一貫性と孤児ルールがなぜ革新を妨げるのか - OSCHINA - オープンソース × AI · 開発者エコシステムコミュニティ - OSCHINA",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5vS3Voa3pPNXVXamE4ajRJYk9GYmwzVml0cnJBdTdTVjd0YktSanhVeW85SmRLcml5am9xMktMZEI1V2d4UzZnd0xLOA?oc=5",
+      "summary": "Rust言語エコシステムの困難：一貫性と孤児ルールがなぜ革新を妨げるのか - OSCHINA - オープンソース × AI · 開発者エコシステムコミュニティ OSCHINA",
+      "publishedAt": "2026-03-24T08:11:52.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        8
+      ],
+      "reason": "Discussion on Rust's ecosystem challenges",
+      "suggestedTitle": "Rustのエコシステムの課題：一貫性と孤児ルール",
+      "suggestedSummary": "Rust言語エコシステムが直面する課題を詳細に探求し、特に一貫性の問題と孤児ルールに焦点を当てています。これらの要因は、Rustコミュニティ内での革新の大きな障害として特定されています。これらの課題を理解することは、Rustの成長に貢献しようとする開発者や、エコシステムの現在の制限を乗り越えようとする人々にとって重要です。",
+      "relatedSources": [
+        "Google News Rust (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "23e8ffeb276978e0ef1f5c09729af8c12cf77fc79863c8a764b2bd3d5aeb6d0e",
+      "source": "Zenn Rust (JP)",
+      "title": "Claude Code Auto モードの classifier を実機検証した — ローカルガード omamori との境界線",
+      "url": "https://zenn.dev/yottayoshida/articles/claude-code-auto-mode-classifier-omamori",
+      "summary": "この記事は omamori（AI CLI 経由の破壊的コマンドをブロックする macOS 向けガードツール）の開発記録です。過去記事はこちら:\n\nrm -rf を Trash に変えるだけのツールを作ったら、AIが無効化してきた\nAI CLI のガードを作ったら、次はガード自身を守る問題が出てきた — omamori v0.5〜v0.6\n\nTL;DR\n\nClaude Code の Auto モードは、各ツールコール前に classifier（Sonnet）が安全性を判定して自動許可する新しい権限モード\n実機検証では、classifier が利用不可になると...",
+      "publishedAt": "2026-03-25T11:14:13.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "992638b3e925382cc3121801268ca8d977c2ad0f9404b055e9d636bd66a97342",
+      "source": "Zenn Rust (JP)",
+      "title": "アンビエントエージェントを育てている — Slack の依頼を Claude -p が勝手にさばく仕組みを作っている話",
+      "url": "https://zenn.dev/kok1eeeee/articles/ambient-task-agent-harness-design",
+      "summary": "はじめに\n\n業務自動化Pythonエンジニア → Rust でバイブコーディングに目覚めた人。\n\n自分で RAG チャットボットをいくつか作ると「なんかイマイチだな」と思う瞬間がある。チャンク分割のせいで文脈が切れる。ベクトル検索で関係ないドキュメントが上位に来る。LLM 自体は賢いのに、自分が作ったパイプラインが足を引っ張っている。\n一方で Claude Code を毎日使っていると、こいつは Grep と Read でファイルを直接読んで、複数ファイルを統合して回答を作れる。RAG パイプラインって要る？\nhttps://zenn.dev/tazawa_masayoshi/art...",
+      "publishedAt": "2026-03-25T02:47:51.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "dbff186606ee4bda8e2ebc79d4c1719dad779adacefc4e6e2757d2c6a839a957",
+      "source": "Zenn Rust (JP)",
+      "title": "AIチャットにGoogle Colab風のコード実行UIを組み込んだら、AIが本当の「相棒」になった",
+      "url": "https://zenn.dev/zhener/articles/90b41684046628",
+      "summary": "AIチャットにGoogle Colab風のコード実行UIを組み込んだら、AIが本当の「相棒」になった",
+      "publishedAt": "2026-03-24T13:14:33.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "27b8403858b4baa23fdbf25d6f4f91f3f7eb879e29fbc648ab42b3e6de4743b1",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust, Axum, TS, NextJSでAIと「普通に話せる」音声チャットを本気で作った話",
+      "url": "https://zenn.dev/zhener/articles/7938d9bfff3e28",
+      "summary": "AIと「普通に話せる」音声チャットを本気で作った話",
+      "publishedAt": "2026-03-24T02:10:32.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-26T00:09:53.276Z"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "date": "2026-03-26",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "613da79084cfc2b2db2914894e8c17284384fc0701bec100cfbf50c2f8416c15",
+      "source": "Zenn Rust (JP)",
+      "title": "【Rust】zerompk - Rust最速MessagePack实现及其优化方法",
+      "url": "https://zenn.dev/nuskey/articles/library-zerompk",
+      "summary": "我们发布了一个名为zerompk的Rust MessagePack序列化器！https://github.com/nuskey8/zerompk 在Rust中提到MessagePack，首先想到的选择是rmp_serde。rmp_serde在通用性和性能方面都足够优秀，但zerompk则是一个更加专注于性能的实现。让我们看看基准测试。 基准测试中也添加了serde_json作为参考。相比于JSON，二进制的MessagePack更快，这一点毋庸置疑，但在同样的MessagePack序列化器中...",
+      "publishedAt": "2026-03-24T05:43:22.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11
+      ],
+      "reason": "New high-performance serialization crate",
+      "suggestedTitle": "介绍zerompk：Rust最快的MessagePack序列化器",
+      "suggestedSummary": "zerompk是一个新发布的MessagePack序列化器，针对Rust进行了优化，承诺成为最快的选择。该实现专注于Rust特有的性能优化技术，利用零拷贝反序列化和其他Rust特有的能力。对于Rust开发者来说，zerompk提供了一种高性能的数据序列化选项，可能在序列化速度至关重要的应用中带来显著的改进。",
+      "relatedSources": [
+        "Zenn Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "153852bd6c46ca0342661070d03fb94d1f86d9b0a926f54b0e05348a5a5acaf6",
+      "source": "Google News Rust (CN)",
+      "title": "Rust 语言生态困境：一致性与孤儿规则为何阻碍创新 - OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5vS3Voa3pPNXVXamE4ajRJYk9GYmwzVml0cnJBdTdTVjd0YktSanhVeW85SmRLcml5am9xMktMZEI1V2d4UzZnd0xLOA?oc=5",
+      "summary": "Rust 语言生态困境：一致性与孤儿规则为何阻碍创新 - OSCHINA - 开源 × AI · 开发者生态社区  OSCHINA",
+      "publishedAt": "2026-03-24T08:11:52.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        8
+      ],
+      "reason": "Discussion on Rust's ecosystem challenges",
+      "suggestedTitle": "Rust 生态系统的挑战：一致性与孤儿规则",
+      "suggestedSummary": "深入探讨 Rust 语言生态系统面临的挑战，特别是关于一致性问题和孤儿规则。这些因素被认为是 Rust 社区创新的重大障碍。理解这些挑战对于希望为 Rust 的发展做出贡献的开发者以及在当前生态系统限制中导航的人来说至关重要。",
+      "relatedSources": [
+        "Google News Rust (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "23e8ffeb276978e0ef1f5c09729af8c12cf77fc79863c8a764b2bd3d5aeb6d0e",
+      "source": "Zenn Rust (JP)",
+      "title": "实机验证 Claude Code Auto 模式的分类器——与本地防护 omamori 的边界",
+      "url": "https://zenn.dev/yottayoshida/articles/claude-code-auto-mode-classifier-omamori",
+      "summary": "本文是关于 omamori（一款通过 AI CLI 阻止破坏性命令的 macOS 防护工具）的开发记录。过往文章请参见：\n\n创建了一个仅将 rm -rf 转换为 Trash 的工具，结果被 AI 禁用了\n在开发 AI CLI 的防护工具后，接下来出现了保护防护工具本身的问题——omamori v0.5〜v0.6\n\nTL;DR\n\nClaude Code 的 Auto 模式是一个新的权限模式，在每次工具调用前由分类器（Sonnet）判断安全性并自动授权\n实机验证中，当分类器不可用时...",
+      "publishedAt": "2026-03-25T11:14:13.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "992638b3e925382cc3121801268ca8d977c2ad0f9404b055e9d636bd66a97342",
+      "source": "Zenn Rust (JP)",
+      "title": "培养环境代理 — 创建一个自动处理 Slack 请求的 Claude -p 系统",
+      "url": "https://zenn.dev/kok1eeeee/articles/ambient-task-agent-harness-design",
+      "summary": "简介\n\n从事业务自动化的 Python 工程师，后来在 Rust 中发现了编程的乐趣。\n\n当我自己制作了一些 RAG 聊天机器人后，总有一种“有点不对劲”的感觉。由于分块导致上下文中断。向量搜索中不相关的文档排在前面。尽管 LLM 本身很聪明，但我创建的管道却拖了后腿。\n另一方面，每天使用 Claude Code 时，它可以通过 Grep 和 Read 直接读取文件，并整合多个文件来生成回答。RAG 管道真的有必要吗？\nhttps://zenn.dev/tazawa_masayoshi/art...",
+      "publishedAt": "2026-03-25T02:47:51.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "dbff186606ee4bda8e2ebc79d4c1719dad779adacefc4e6e2757d2c6a839a957",
+      "source": "Zenn Rust (JP)",
+      "title": "将Google Colab风格的代码执行UI嵌入AI聊天后，AI真正成为了“伙伴”",
+      "url": "https://zenn.dev/zhener/articles/90b41684046628",
+      "summary": "将Google Colab风格的代码执行UI嵌入AI聊天后，AI真正成为了“伙伴”",
+      "publishedAt": "2026-03-24T13:14:33.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "27b8403858b4baa23fdbf25d6f4f91f3f7eb879e29fbc648ab42b3e6de4743b1",
+      "source": "Zenn Rust (JP)",
+      "title": "用Rust、Axum、TS、NextJS认真制作的AI语音聊天系统",
+      "url": "https://zenn.dev/zhener/articles/7938d9bfff3e28",
+      "summary": "关于认真制作可以与AI“正常对话”的语音聊天系统的故事",
+      "publishedAt": "2026-03-24T02:10:32.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-26T00:09:43.162Z"
+  }
+}
