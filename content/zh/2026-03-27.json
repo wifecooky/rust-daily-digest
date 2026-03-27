@@ -1,0 +1,99 @@
+{
+  "date": "2026-03-27",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "a483351f2adcfb5f2de4afacfa5cc28ab90ad3d2edccc4b77d09be76ef848a6f",
+      "source": "Rust Releases",
+      "title": "Rust 1.94.1",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.94.1",
+      "summary": "修复了 wasm32-wasip1-threads 上的 std::thread::spawn。移除了添加到 std::os::windows::fs::OpenOptionsExt 的新方法，这些新方法是不稳定的，但该特性本身未封闭，因此无法通过非默认方法扩展。Clippy：修复 match_same_arms 中的 ICE。Cargo：更新 tar 到 0.4.45，这解决了 CVE-2026-33055 和 CVE-2026-33056。crates.io 的用户不受影响。详情请参阅博客。",
+      "publishedAt": "2026-03-26T13:03:20.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        1,
+        3
+      ],
+      "reason": "Rust 1.94.1 release impacts developers",
+      "suggestedTitle": "Rust 1.94.1 发布：关键修复和改进",
+      "suggestedSummary": "Rust 团队发布了 1.94.1 版本，解决了关键问题，例如修复了 `wasm32-wasip1-threads` 上的 `std::thread::spawn`。此版本还移除了添加到 `std::os::windows::fs::Op` 的新方法，确保了稳定性和兼容性。Rust 开发者应更新以从这些修复中受益，从而提高针对这些平台的 Rust 应用程序的性能和可靠性。",
+      "relatedSources": [
+        "Rust Releases",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "cc85bab8120fa493c5316c1a4617d2a00785011f226d6fecd7ecca77eb9da76a",
+      "source": "Lobsters Rust",
+      "title": "Ubuntu 将采用 ntpd-rs 作为默认的时间同步客户端和服务器",
+      "url": "https://trifectatech.org/blog/announcing-ntpd-rs-as-default-on-ubuntu/",
+      "summary": "评论",
+      "publishedAt": "2026-03-26T18:16:00.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        6
+      ],
+      "reason": "Rust adoption by major OS",
+      "suggestedTitle": "Ubuntu 采用 ntpd-rs 进行时间同步",
+      "suggestedSummary": "Ubuntu 宣布决定采用 `ntpd-rs` 作为默认的时间同步客户端和服务器。这一举措强调了 Rust 在关键系统组件中的日益影响，突出了其安全性和性能优势。随着越来越多的主要平台集成基于 Rust 的解决方案，Rust 开发者可以期待在系统级项目中有更多的贡献机会。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f2deb4946ce0bf16760282d248e49b8d681194364f18011ee4a6830a877a3322",
+      "source": "Rust Users Forum",
+      "title": "Rust的动态对象系统",
+      "url": "https://users.rust-lang.org/t/a-dynamic-object-system-for-rust/139196#post_1",
+      "summary": "Github 仓库\n我在另一个帖子中提到过这个，并决定分享出来。\n时不时会有人问如何在 Rust 中实现面向对象编程，通常的回答是“从技术上讲是可能的，但你需要绕过很多障碍，所以最好不要这样做。”这让我思考：“在 Rust 中，面向对象编程会是什么样子？”最终，这引导我开发了这个小型概念验证库。\n该库的对象系统大致模仿了……",
+      "publishedAt": "2026-03-26T19:50:44.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "dc70add8bba74decdbd4f2cc47c5d80fc9d7cf3ea9e66427bda969f919239a81",
+      "source": "Rust Internals",
+      "title": "关于替换UnsafeCell",
+      "url": "https://internals.rust-lang.org/t/on-replacing-unsafecell/24113#post_4",
+      "summary": "结构体 Bar { #[twilight] value: i32 } 结构体 BarLike { value: UnsafeCell<MaybeUninit<i32>> } 我可能表达得不太好，但Bar与BarLike大致相似，除了... &mut Bar 仍然返回 NonNull<MaybeUninit<i32>> 而不是 &mut MaybeUninit<i32>；代码需要决定何时解引用指针是安全的，如果借用被发送到其他地方，可能就不安全。值得注意的是，&UnsafeCell<T> 和 *mut T 在实践中没有显著区别：在这一点上我...",
+      "publishedAt": "2026-03-26T20:44:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cad18de499ff9505bf46856459240ccbf5bc025b9b97fc172916d1a22d0f941d",
+      "source": "Rust Users Forum",
+      "title": "微软推出了一些Rust课程，它们看起来还不错？",
+      "url": "https://users.rust-lang.org/t/microsoft-made-some-rust-courses-they-dont-look-terrible/139152#post_7",
+      "summary": "获得了4.9k星，首次提交是在3月11日——发展轨迹不错。猜测它是从微软内部的某个地方转移到GitHub上的？",
+      "publishedAt": "2026-03-26T20:06:50.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7badc124dfbfbace034ea06ec834654556684b9c6b31576f32d7e20280748c06",
+      "source": "Lobsters Rust",
+      "title": "Fyrox 1.0.0",
+      "url": "https://fyrox.rs/blog/post/fyrox-game-engine-1-0-0/",
+      "summary": "评论",
+      "publishedAt": "2026-03-25T10:07:52.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-27T00:08:54.645Z"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-03-27",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "a483351f2adcfb5f2de4afacfa5cc28ab90ad3d2edccc4b77d09be76ef848a6f",
+      "source": "Rust Releases",
+      "title": "Rust 1.94.1",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.94.1",
+      "summary": "wasm32-wasip1-threadsでのstd::thread::spawnの修正\nstd::os::windows::fs::OpenOptionsExtに追加された新しいメソッドを削除しました。これらの新しいメソッドは不安定でしたが、トレイト自体はシールされていないため、非デフォルトのメソッドで拡張することはできません。\nClippy: match_same_armsでのICEを修正\nCargo: tarを0.4.45に更新しました。これにより、CVE-2026-33055およびCVE-2026-33056が解決されます。crates.ioのユーザーには影響はありません。詳細はブログをご覧ください。",
+      "publishedAt": "2026-03-26T13:03:20.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        1,
+        3
+      ],
+      "reason": "Rust 1.94.1 release impacts developers",
+      "suggestedTitle": "Rust 1.94.1リリース: 重要な修正と改善",
+      "suggestedSummary": "Rustチームはバージョン1.94.1をリリースし、`wasm32-wasip1-threads`での`std::thread::spawn`の修正などの重要な問題に対処しました。このリリースでは、`std::os::windows::fs::Op`に追加された新しいメソッドも削除され、安定性と互換性が確保されています。これらの修正により、これらのプラットフォームを対象とするRustアプリケーションのパフォーマンスと信頼性が向上するため、Rust開発者はアップデートすることをお勧めします。",
+      "relatedSources": [
+        "Rust Releases",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "cc85bab8120fa493c5316c1a4617d2a00785011f226d6fecd7ecca77eb9da76a",
+      "source": "Lobsters Rust",
+      "title": "Ubuntuがntpd-rsをデフォルトの時間同期クライアントおよびサーバーとして採用",
+      "url": "https://trifectatech.org/blog/announcing-ntpd-rs-as-default-on-ubuntu/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-26T18:16:00.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        6
+      ],
+      "reason": "Rust adoption by major OS",
+      "suggestedTitle": "Ubuntu、時間同期にntpd-rsを採用",
+      "suggestedSummary": "Ubuntuは、`ntpd-rs`をデフォルトの時間同期クライアントおよびサーバーとして採用する決定を発表しました。この動きは、重要なシステムコンポーネントにおけるRustの影響力の拡大を示しており、その安全性とパフォーマンスの利点を強調しています。Rust開発者は、より多くの主要プラットフォームがRustベースのソリューションを統合するにつれて、システムレベルのプロジェクトに貢献する機会が増えることを期待できます。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f2deb4946ce0bf16760282d248e49b8d681194364f18011ee4a6830a877a3322",
+      "source": "Rust Users Forum",
+      "title": "Rustのための動的オブジェクトシステム",
+      "url": "https://users.rust-lang.org/t/a-dynamic-object-system-for-rust/139196#post_1",
+      "summary": "Githubリポジトリ\n別のスレッドでこれについて言及し、共有することに決めました。\n定期的に「RustでOOPをどうやってやるのか」という質問が出てきますが、通常の答えは「技術的には可能だが、多くの手間をかける必要があるので、やめた方がいいかも」というものです。これにより、「RustでOOPはどのように見えるのか？」と疑問に思い、最終的にこの小さな概念実証ライブラリにたどり着きました。\nこのライブラリのオブジェクトシステムは、…",
+      "publishedAt": "2026-03-26T19:50:44.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "dc70add8bba74decdbd4f2cc47c5d80fc9d7cf3ea9e66427bda969f919239a81",
+      "source": "Rust Internals",
+      "title": "UnsafeCellの置き換えについて",
+      "url": "https://internals.rust-lang.org/t/on-replacing-unsafecell/24113#post_4",
+      "summary": "構造体Bar { #[twilight] value: i32 } 構造体BarLike { value: UnsafeCell<MaybeUninit<i32>> } 私の表現が不十分かもしれませんが、BarはBarLikeとほぼ同じです。ただし、&mut BarはNonNull<MaybeUninit<i32>>を返し、&mut MaybeUninit<i32>を返しません。コードはポインタの参照解除が安全なときを判断する必要があり、借用が他の場所に送られた場合は安全でないかもしれません。実際には、&UnsafeCell<T>と*mut Tの間に大きな違いはないことに注意する価値があります。この時点で私は…",
+      "publishedAt": "2026-03-26T20:44:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cad18de499ff9505bf46856459240ccbf5bc025b9b97fc172916d1a22d0f941d",
+      "source": "Rust Users Forum",
+      "title": "マイクロソフトがRustのコースを作成、悪くはなさそう？",
+      "url": "https://users.rust-lang.org/t/microsoft-made-some-rust-courses-they-dont-look-terrible/139152#post_7",
+      "summary": "4,900スターを獲得し、最初のコミットは3月11日 - 良い軌道です。おそらく、内部からGitHubに移されたのでしょうか？",
+      "publishedAt": "2026-03-26T20:06:50.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7badc124dfbfbace034ea06ec834654556684b9c6b31576f32d7e20280748c06",
+      "source": "Lobsters Rust",
+      "title": "Fyrox 1.0.0",
+      "url": "https://fyrox.rs/blog/post/fyrox-game-engine-1-0-0/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-25T10:07:52.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-27T00:09:02.946Z"
+  }
+}
