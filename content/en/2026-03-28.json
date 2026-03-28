@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-28",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "a483351f2adcfb5f2de4afacfa5cc28ab90ad3d2edccc4b77d09be76ef848a6f",
+      "source": "Rust Releases",
+      "title": "Rust 1.94.1",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.94.1",
+      "summary": "Fix std::thread::spawn on wasm32-wasip1-threads\nRemove new methods added to std::os::windows::fs::OpenOptionsExt The new methods were unstable, but the trait itself is not sealed and so cannot be extended with non-default methods.\nClippy: fix ICE in match_same_arms\nCargo: update tar to 0.4.45 This resolves CVE-2026-33055 and CVE-2026-33056. Users of crates.io are not affected. See blog for more details.",
+      "publishedAt": "2026-03-26T13:03:20.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        73
+      ],
+      "reason": "Rust 1.94.1 release impacts all developers",
+      "suggestedTitle": "Rust 1.94.1 Released: Key Fixes and Updates",
+      "suggestedSummary": "Rust 1.94.1 has been officially released, addressing a critical issue with std::thread::spawn on wasm32-wasip1-threads. This update also removes newly added methods in std::os::windows::fs::Op, ensuring compatibility and stability across platforms. Developers using Rust for web assembly or Windows file operations should upgrade to take advantage of these fixes, which improve reliability and cross-platform functionality.",
+      "relatedSources": [
+        "Rust Releases"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5b077fd58a7e321f2ec3093c5b666becf69f8799763a70605305a738915398e2",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Allow attributes to be applied to generic arguments",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-allow-attributes-to-be-applied-to-generic-arguments/24111#post_1",
+      "summary": "Currently, rust allows the following.\nstruct MyStruct<#[cfg(feature)] Arg>();\n\nThis is useful in certain circumstances. For instance, suppose you wanted to make a crate with a custom collection. If the allocator_api was enabled, you could automatically support it in your struct.\nstruct MyCollection<#[cfg(feature = \"allocator_api\")] A: Allocator = Global> {\n    // ..\n    alloc: A\n}\n\nYou can even use it in impl blocks:\nimpl<#[cfg(feature)] Arg> MyStruct\n\nWhat you can't do, however, which makes…",
+      "publishedAt": "2026-03-26T03:10:43.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        50
+      ],
+      "reason": "RFC impacts generic programming in Rust",
+      "suggestedTitle": "Pre-RFC Proposes Attributes for Generic Arguments",
+      "suggestedSummary": "A Pre-RFC discussion has emerged around allowing attributes to be applied to generic arguments in Rust. This proposal aims to enhance Rust's generics by enabling conditional compilation and feature gating directly on generic parameters. If accepted, this change would provide developers with more flexibility and control over generic types, potentially simplifying codebases that rely heavily on conditional logic and feature-specific implementations.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e57ef13f5afecdd2b0c895cdacf761a24d126d53150cb36368f84e56ae96ffaa",
+      "source": "RustCC (CN)",
+      "title": "Deterministic execution fabric — Nix + Firecracker microVMs + Rust",
+      "url": "https://rustcc.cn/article?id=c566c2d0-e3ac-49b0-b373-ea064f1b8ded",
+      "summary": "介紹一下我自己的項目 總之可以先看看代碼",
+      "publishedAt": "2026-03-27T20:42:08.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "aff34496d06a40b8dd456cac566250fdab01d77c46bf8ed5d2bd84c80194b130",
+      "source": "Rust Users Forum",
+      "title": "Announcing service-impact: a small Rust CLI/library for narrowing CI scope in multi-service repos",
+      "url": "https://users.rust-lang.org/t/announcing-service-impact-a-small-rust-cli-library-for-narrowing-ci-scope-in-multi-service-repos/139214#post_1",
+      "summary": "Hi all,\nI released an early open-source Rust project called service-impact.\nRepo:\n\n  \ngithub.com\n  \nGitHub - tac0de/service-impact: Manifest-driven service graph and impact analysis...\nManifest-driven service graph and impact analysis for changed files\n\n\n\nThe goal is fairly narrow:\ngiven a service manifest and a set of changed paths, compute:\nimpacted services\nverification hooks to run\na smaller verification plan\nI built it for the common situation where multi-service repos end up rerunning a…",
+      "publishedAt": "2026-03-27T15:10:40.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "384b19cb229ccf0a8acbc015aa15b3f8ad4eea7d6154064f0cfa2b56c1ebaf05",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-27 Fyrox 游戏引擎 1.0.0 发布",
+      "url": "https://rustcc.cn/article?id=fbdd97b4-2092-4fae-9754-697edee70fe4",
+      "summary": "Fyrox 游戏引擎 1.0.0 发布\nFyrox 游戏引擎经过 7 年开发后，正式发布了首个稳定版本 1.0.0。这是一个用 Rust 编写的现代游戏引擎，帮助开发者通过原生编辑器轻松创建 2D 和 3D 游戏，类似于 Unity，但使用 Rust 语言开发。\n主要特性\n项目导出 CLI 工具\n现在可以为 Fyrox 游戏配置 CI/CD（持续集成/持续交付）\n每个项目都包含一个名为 export-cli 的特殊 crate\n提供与编辑器导出功能相同的命令行界面\n对团队开发和自动化构建非常重要\nCLI 工具选项\n基础选项：\n-h, --help: 显示详细使用说明\n-V, --version: 打印 CLI 版本\n--target_platform: 目标平台（pc/wasm/android）\n--build_target: 构建目标架构\n--destination_folder: 构建输出文件夹（默认 ./build/）\n高级选项：\n--include_used_assets: 仅包含使用过的资源\n--ignored_extensions: 指定要忽略的文件扩展名\n-r,…",
+      "publishedAt": "2026-03-27T06:40:41.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "76083430a60c9be8a51be78ef819f66b1b302a1b9daab2dbda39b08a722fe963",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-23 Kreuzberg: 一个开源（MIT 许可）的文档智能框架",
+      "url": "https://rustcc.cn/article?id=64fae77b-87f8-4697-9dc3-006a630c8b2c",
+      "summary": "Kreuzberg v4.5 重大更新发布\nKreuzberg 团队发布了 v4.5 版本，这是一个重要的里程碑更新。\n项目简介：\nKreuzberg 是一个开源（MIT 许可）的文档智能框架，支持 12 种编程语言。它用 Rust 编写，为 Python、TypeScript/Node.js、PHP、Ruby、Java、C#、Go、Elixir、R、C 和 WASM 提供原生绑定。可以从 88+ 种格式中提取文本、结构和元数据，运行 OCR，生成嵌入向量，专为 AI 流程和大规模文档处理而构建。\n核心更新亮点\n文档结构理解能力：\n不仅提取文本，现在还能理解文档结构（布局/表格）\n集成了 Docling 的 RT-DETR v2（Docling Heron）模型\n将其嵌入到 Rust 原生管道中\n性能优势\n在 171 个 PDF 文档的基准测试中（包括学术论文、政府和法律文档、发票、OCR 扫描等）：\n结构 F1 分数：Kreuzberg 42.1% vs Docling 41.7%\n文本 F1 分数：Kreuzberg 88.9% vs Docling 86.7%…",
+      "publishedAt": "2026-03-27T06:36:50.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "69756deed119ea188ecc0739168e66055898dabc8c452b28f07244bb97b27ed9",
+      "source": "Zenn Rust (JP)",
+      "title": "Tauri で作る yazi like なマークダウン&ファイルビューア chilla（チラ）",
+      "url": "https://zenn.dev/tacogips/articles/c831b6928401c8",
+      "summary": "https://zenn.dev/tacogips/articles/7f4a3f3c4d2588\nでは、去年 nvim を捨てて zeditor を使い始めた話を書いた。\nエディタはシンプルなものが良いという思いで乗り換えたのだが、最近は文字を書くのも、もっぱらターミナル内で codex や claude-code の入力欄がほとんどなので、エディタとしての機能はほとんど必要なくなっている。AI が書いたコードは、yazi でディレクトリ移動しつつ lazygit で読むか、GitHub の PR で読むことがほとんどで、zeditor が必要になるのはフォーマットされたマークダウンを...",
+      "publishedAt": "2026-03-27T11:36:00.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-28T00:07:58.355Z"
+  }
+}

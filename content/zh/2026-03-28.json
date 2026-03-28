@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-28",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "a483351f2adcfb5f2de4afacfa5cc28ab90ad3d2edccc4b77d09be76ef848a6f",
+      "source": "Rust Releases",
+      "title": "Rust 1.94.1",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.94.1",
+      "summary": "修复了 wasm32-wasip1-threads 上的 std::thread::spawn。移除了新添加到 std::os::windows::fs::OpenOptionsExt 的方法。这些新方法是不稳定的，但该特性本身并未封闭，因此无法通过非默认方法进行扩展。Clippy：修复了 match_same_arms 中的 ICE。Cargo：将 tar 更新到 0.4.45，解决了 CVE-2026-33055 和 CVE-2026-33056。crates.io 的用户不受影响。更多详情请参阅博客。",
+      "publishedAt": "2026-03-26T13:03:20.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        73
+      ],
+      "reason": "Rust 1.94.1 release impacts all developers",
+      "suggestedTitle": "Rust 1.94.1 发布：关键修复和更新",
+      "suggestedSummary": "Rust 1.94.1 已正式发布，解决了 wasm32-wasip1-threads 上 std::thread::spawn 的关键问题。此更新还移除了 std::os::windows::fs::Op 中新添加的方法，确保了跨平台的兼容性和稳定性。使用 Rust 进行 WebAssembly 或 Windows 文件操作的开发者应升级以利用这些修复，从而提高可靠性和跨平台功能。",
+      "relatedSources": [
+        "Rust Releases"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5b077fd58a7e321f2ec3093c5b666becf69f8799763a70605305a738915398e2",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] 允许属性应用于泛型参数",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-allow-attributes-to-be-applied-to-generic-arguments/24111#post_1",
+      "summary": "目前，Rust 允许如下操作。\nstruct MyStruct<#[cfg(feature)] Arg>();\n\n这在某些情况下非常有用。例如，假设您想创建一个具有自定义集合的 crate。如果启用了 allocator_api，您可以在结构中自动支持它。\nstruct MyCollection<#[cfg(feature = \"allocator_api\")] A: Allocator = Global> {\n    // ..\n    alloc: A\n}\n\n您甚至可以在 impl 块中使用它：\nimpl<#[cfg(feature)] Arg> MyStruct\n\n然而，您无法做到的是，这使得……",
+      "publishedAt": "2026-03-26T03:10:43.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        50
+      ],
+      "reason": "RFC impacts generic programming in Rust",
+      "suggestedTitle": "Pre-RFC 提议为泛型参数添加属性",
+      "suggestedSummary": "关于允许在 Rust 中将属性应用于泛型参数的 Pre-RFC 讨论已经出现。该提案旨在通过直接在泛型参数上启用条件编译和功能门控来增强 Rust 的泛型。如果被接受，此更改将为开发人员提供更大的灵活性和对泛型类型的控制，可能简化严重依赖条件逻辑和特定功能实现的代码库。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e57ef13f5afecdd2b0c895cdacf761a24d126d53150cb36368f84e56ae96ffaa",
+      "source": "RustCC (CN)",
+      "title": "确定性执行结构 — Nix + Firecracker 微型虚拟机 + Rust",
+      "url": "https://rustcc.cn/article?id=c566c2d0-e3ac-49b0-b373-ea064f1b8ded",
+      "summary": "介绍一下我自己的项目 总之可以先看看代码",
+      "publishedAt": "2026-03-27T20:42:08.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "aff34496d06a40b8dd456cac566250fdab01d77c46bf8ed5d2bd84c80194b130",
+      "source": "Rust Users Forum",
+      "title": "宣布 service-impact：一个用于缩小多服务仓库中 CI 范围的小型 Rust CLI/库",
+      "url": "https://users.rust-lang.org/t/announcing-service-impact-a-small-rust-cli-library-for-narrowing-ci-scope-in-multi-service-repos/139214#post_1",
+      "summary": "大家好，\n我发布了一个早期的开源 Rust 项目，名为 service-impact。\n仓库：\n\nGitHub - tac0de/service-impact：基于清单的服务图和影响分析...\n\n该项目的目标相当明确：\n给定一个服务清单和一组更改的路径，计算：\n受影响的服务\n需要运行的验证钩子\n更小的验证计划\n我开发它是为了应对多服务仓库中常见的情况，这些仓库最终会重新运行一个…",
+      "publishedAt": "2026-03-27T15:10:40.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "384b19cb229ccf0a8acbc015aa15b3f8ad4eea7d6154064f0cfa2b56c1ebaf05",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-27 Fyrox 游戏引擎 1.0.0 发布",
+      "url": "https://rustcc.cn/article?id=fbdd97b4-2092-4fae-9754-697edee70fe4",
+      "summary": "Fyrox 游戏引擎 1.0.0 发布",
+      "publishedAt": "2026-03-27T06:40:41.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "76083430a60c9be8a51be78ef819f66b1b302a1b9daab2dbda39b08a722fe963",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-23 Kreuzberg: 一个开源（MIT 许可）的文档智能框架",
+      "url": "https://rustcc.cn/article?id=64fae77b-87f8-4697-9dc3-006a630c8b2c",
+      "summary": "Kreuzberg v4.5 重大更新发布\nKreuzberg 团队发布了 v4.5 版本，这是一个重要的里程碑更新。\n项目简介：\nKreuzberg 是一个开源（MIT 许可）的文档智能框架，支持 12 种编程语言。它用 Rust 编写，为 Python、TypeScript/Node.js、PHP、Ruby、Java、C#、Go、Elixir、R、C 和 WASM 提供原生绑定。可以从 88+ 种格式中提取文本、结构和元数据，运行 OCR，生成嵌入向量，专为 AI 流程和大规模文档处理而构建。\n核心更新亮点\n文档结构理解能力：\n不仅提取文本，现在还能理解文档结构（布局/表格）\n集成了 Docling 的 RT-DETR v2（Docling Heron）模型\n将其嵌入到 Rust 原生管道中\n性能优势\n在 171 个 PDF 文档的基准测试中（包括学术论文、政府和法律文档、发票、OCR 扫描等）：\n结构 F1 分数：Kreuzberg 42.1% vs Docling 41.7%\n文本 F1 分数：Kreuzberg 88.9% vs Docling 86.7%…",
+      "publishedAt": "2026-03-27T06:36:50.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "69756deed119ea188ecc0739168e66055898dabc8c452b28f07244bb97b27ed9",
+      "source": "Zenn Rust (JP)",
+      "title": "使用 Tauri 创建 yazi 风格的 Markdown 和文件查看器 chilla（チラ）",
+      "url": "https://zenn.dev/tacogips/articles/c831b6928401c8",
+      "summary": "https://zenn.dev/tacogips/articles/7f4a3f3c4d2588\n去年，我写了一篇关于放弃 nvim 并开始使用 zeditor 的文章。由于我认为编辑器应该简单，因此进行了更换。然而，最近我几乎都是在终端内使用 codex 或 claude-code 的输入框来写文字，因此几乎不再需要编辑器的功能。AI 编写的代码通常是在 yazi 中浏览目录时通过 lazygit 阅读，或者通过 GitHub 的 PR 阅读，zeditor 仅在需要格式化的 Markdown 时才会用到...",
+      "publishedAt": "2026-03-27T11:36:00.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-28T00:08:09.384Z"
+  }
+}

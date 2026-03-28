@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-28",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "a483351f2adcfb5f2de4afacfa5cc28ab90ad3d2edccc4b77d09be76ef848a6f",
+      "source": "Rust Releases",
+      "title": "Rust 1.94.1",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.94.1",
+      "summary": "wasm32-wasip1-threadsにおけるstd::thread::spawnの修正\nstd::os::windows::fs::OpenOptionsExtに追加された新しいメソッドを削除\n新しいメソッドは不安定でしたが、トレイト自体はシールされておらず、非デフォルトメソッドで拡張することはできません。\nClippy: match_same_armsでのICEを修正\nCargo: tarを0.4.45に更新\nこれにより、CVE-2026-33055およびCVE-2026-33056が解決されます。crates.ioのユーザーには影響はありません。詳細はブログをご覧ください。",
+      "publishedAt": "2026-03-26T13:03:20.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        73
+      ],
+      "reason": "Rust 1.94.1 release impacts all developers",
+      "suggestedTitle": "Rust 1.94.1リリース: 主要な修正と更新",
+      "suggestedSummary": "Rust 1.94.1が正式にリリースされ、wasm32-wasip1-threadsにおけるstd::thread::spawnの重大な問題が解決されました。このアップデートでは、std::os::windows::fs::Opに新たに追加されたメソッドも削除され、プラットフォーム間の互換性と安定性が確保されています。WebアセンブリやWindowsファイル操作にRustを使用している開発者は、これらの修正を利用して信頼性とクロスプラットフォーム機能を向上させるためにアップグレードすることをお勧めします。",
+      "relatedSources": [
+        "Rust Releases"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5b077fd58a7e321f2ec3093c5b666becf69f8799763a70605305a738915398e2",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] ジェネリック引数に属性を適用することを許可",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-allow-attributes-to-be-applied-to-generic-arguments/24111#post_1",
+      "summary": "現在、Rustでは以下のことが可能です。\nstruct MyStruct<#[cfg(feature)] Arg>();\n\nこれは特定の状況で有用です。例えば、カスタムコレクションを持つクレートを作成したいとします。allocator_apiが有効になっている場合、構造体内で自動的にサポートすることができます。\nstruct MyCollection<#[cfg(feature = \"allocator_api\")] A: Allocator = Global> {\n    // ..\n    alloc: A\n}\n\nimplブロックでも使用できます：\nimpl<#[cfg(feature)] Arg> MyStruct\n\nしかし、できないこともあります。これにより…",
+      "publishedAt": "2026-03-26T03:10:43.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        50
+      ],
+      "reason": "RFC impacts generic programming in Rust",
+      "suggestedTitle": "ジェネリック引数への属性適用を提案するPre-RFC",
+      "suggestedSummary": "Rustにおいてジェネリック引数に属性を適用することを許可するPre-RFCの議論が浮上しています。この提案は、ジェネリックパラメータに対して条件付きコンパイルやフィーチャーゲーティングを直接可能にすることで、Rustのジェネリクスを強化することを目的としています。もし受け入れられれば、この変更は開発者にジェネリック型に対する柔軟性と制御をより多く提供し、条件付きロジックやフィーチャー固有の実装に大きく依存するコードベースを単純化する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e57ef13f5afecdd2b0c895cdacf761a24d126d53150cb36368f84e56ae96ffaa",
+      "source": "RustCC (CN)",
+      "title": "決定論的実行ファブリック — Nix + Firecracker microVMs + Rust",
+      "url": "https://rustcc.cn/article?id=c566c2d0-e3ac-49b0-b373-ea064f1b8ded",
+      "summary": "私自身のプロジェクトを紹介します。とりあえずコードを見てください。",
+      "publishedAt": "2026-03-27T20:42:08.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "aff34496d06a40b8dd456cac566250fdab01d77c46bf8ed5d2bd84c80194b130",
+      "source": "Rust Users Forum",
+      "title": "サービスインパクト発表: マルチサービスリポジトリでCIの範囲を絞るための小さなRust CLI/ライブラリ",
+      "url": "https://users.rust-lang.org/t/announcing-service-impact-a-small-rust-cli-library-for-narrowing-ci-scope-in-multi-service-repos/139214#post_1",
+      "summary": "皆さんこんにちは、\n私はservice-impactというオープンソースのRustプロジェクトをリリースしました。\nリポジトリ:\n\nGitHub - tac0de/service-impact: 変更されたファイルのためのマニフェスト駆動型サービスグラフと影響分析...\n\n目標はかなり限定的です:\nサービスマニフェストと変更されたパスのセットが与えられたときに、以下を計算します:\n影響を受けたサービス\n実行する検証フック\nより小さな検証プラン\n私は、マルチサービスリポジトリが再実行される一般的な状況のためにこれを構築しました…",
+      "publishedAt": "2026-03-27T15:10:40.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "384b19cb229ccf0a8acbc015aa15b3f8ad4eea7d6154064f0cfa2b56c1ebaf05",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-03-27 Fyroxゲームエンジン1.0.0リリース",
+      "url": "https://rustcc.cn/article?id=fbdd97b4-2092-4fae-9754-697edee70fe4",
+      "summary": "Fyroxゲームエンジン1.0.0リリース\nFyroxゲームエンジンは7年間の開発を経て、初の安定版1.0.0を正式にリリースしました。これはRustで書かれたモダンなゲームエンジンで、Unityに似ていますが、Rust言語を使用して開発されています。ネイティブエディタを通じて、開発者が2Dおよび3Dゲームを簡単に作成できるようにします。\n主な特徴\nプロジェクトエクスポートCLIツール\nFyroxゲームのためのCI/CD（継続的インテグレーション/継続的デリバリー）を設定可能\n各プロジェクトにはexport-cliという特別なクレートが含まれています\nエディタのエクスポート機能と同じコマンドラインインターフェースを提供\nチーム開発と自動化ビルドに非常に重要\nCLIツールオプション\n基本オプション：\n-h, --help: 詳細な使用説明を表示\n-V, --version: CLIバージョンを表示\n--target_platform: 目標プラットフォーム（pc/wasm/android）\n--build_target: ビルド目標アーキテクチャ\n--destination_folder: ビルド出力フォルダ（デフォルト ./build/）\n高度なオプション：\n--include_used_assets: 使用済みのリソースのみを含む\n--ignored_extensions: 無視するファイル拡張子を指定\n-r,…",
+      "publishedAt": "2026-03-27T06:40:41.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "76083430a60c9be8a51be78ef819f66b1b302a1b9daab2dbda39b08a722fe963",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-03-23 Kreuzberg: オープンソース（MITライセンス）のドキュメントインテリジェンスフレームワーク",
+      "url": "https://rustcc.cn/article?id=64fae77b-87f8-4697-9dc3-006a630c8b2c",
+      "summary": "Kreuzberg v4.5 重大アップデートリリース\nKreuzbergチームはv4.5バージョンをリリースしました。これは重要なマイルストーンの更新です。\nプロジェクト概要：\nKreuzbergはオープンソース（MITライセンス）のドキュメントインテリジェンスフレームワークで、12のプログラミング言語をサポートしています。Rustで書かれており、Python、TypeScript/Node.js、PHP、Ruby、Java、C#、Go、Elixir、R、C、WASMにネイティブバインディングを提供します。88以上の形式からテキスト、構造、メタデータを抽出し、OCRを実行し、埋め込みベクトルを生成することができ、AIプロセスや大規模なドキュメント処理のために構築されています。\nコアアップデートのハイライト\nドキュメント構造理解能力：\nテキストを抽出するだけでなく、ドキュメントの構造（レイアウト/テーブル）を理解することが可能になりました。\nDoclingのRT-DETR v2（Docling Heron）モデルを統合しました。\nこれをRustネイティブパイプラインに組み込みました。\nパフォーマンスの利点\n171のPDFドキュメントのベンチマークテスト（学術論文、政府および法律文書、請求書、OCRスキャンなどを含む）で：\n構造F1スコア：Kreuzberg 42.1% vs Docling 41.7%\nテキストF1スコア：Kreuzberg 88.9% vs Docling 86.7%",
+      "publishedAt": "2026-03-27T06:36:50.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "69756deed119ea188ecc0739168e66055898dabc8c452b28f07244bb97b27ed9",
+      "source": "Zenn Rust (JP)",
+      "title": "Tauri で作る yazi ライクなマークダウン&ファイルビューア chilla（チラ）",
+      "url": "https://zenn.dev/tacogips/articles/c831b6928401c8",
+      "summary": "https://zenn.dev/tacogips/articles/7f4a3f3c4d2588\nでは、昨年 nvim を捨てて zeditor を使い始めた話を書いた。エディタはシンプルなものが良いという思いで乗り換えたのだが、最近は文字を書くのも、もっぱらターミナル内で codex や claude-code の入力欄がほとんどなので、エディタとしての機能はほとんど必要なくなっている。AI が書いたコードは、yazi でディレクトリ移動しつつ lazygit で読むか、GitHub の PR で読むことがほとんどで、zeditor が必要になるのはフォーマットされたマークダウンを...",
+      "publishedAt": "2026-03-27T11:36:00.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-28T00:08:20.729Z"
+  }
+}
