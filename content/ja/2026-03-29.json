@@ -1,0 +1,108 @@
+{
+  "date": "2026-03-29",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "53f6ee3b983301afdcd7a349e68913db697f4f66e826ecaeb7639b0dd0d49527",
+      "source": "Rust Users Forum",
+      "title": "HandyCafe、20年の歴史を持つシステムをRustで再構築",
+      "url": "https://users.rust-lang.org/t/we-rebuilt-handycafe-a-20-year-old-system-in-rust/139232#post_1",
+      "summary": "私たちは、20年以上前に開発されたインターネットカフェ管理システムであるHandyCafeをRustでゼロから書き直しました。元のシステムはDelphiで開発され、Windowsに強く依存し、ステートフルで、数十年にわたって進化してきたため、共有可能な可変状態、暗黙の仮定、そしてますます脆弱な並行性といった通常のレガシーの複雑さを抱えていました。ある時点で、漸進的なリファクタリングではもはや十分でないことに気づきました。私たちはクリーンな基盤が必要でした。そこで、困難な決断をしました：完全な書き直しです。Rustが選ばれた理由は…",
+      "publishedAt": "2026-03-28T13:32:04.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        41
+      ],
+      "reason": "Rust adoption in real-world projects",
+      "suggestedTitle": "HandyCafeの再構築：レガシーシステムがRustで刷新",
+      "suggestedSummary": "20年の歴史を持つインターネットカフェ管理ソフトウェアであるHandyCafeシステムがRustで完全に書き直されました。この移行は、Rustが複雑なレガシーシステムを改善されたパフォーマンスと信頼性で処理できる能力を示しています。この書き直しは、コードベースを現代化するだけでなく、Rustの安全性と並行性の機能を活用し、インターネットカフェ運営を管理するための堅牢なソリューションを提供します。このケーススタディは、効率性と保守性の向上を目指してレガシーシステムを刷新する際のRustの採用が増えていることを強調しています。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "384b19cb229ccf0a8acbc015aa15b3f8ad4eea7d6154064f0cfa2b56c1ebaf05",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-03-27 Fyroxゲームエンジン1.0.0リリース",
+      "url": "https://rustcc.cn/article?id=fbdd97b4-2092-4fae-9754-697edee70fe4",
+      "summary": "Fyroxゲームエンジン1.0.0がリリースされました。Fyroxゲームエンジンは7年の開発を経て、初の安定版1.0.0を正式にリリースしました。これはRustで書かれた最新のゲームエンジンで、Unityに似ていますが、Rust言語を使用して開発されており、ネイティブエディターを通じて2Dおよび3Dゲームを簡単に作成できます。",
+      "publishedAt": "2026-03-27T06:40:41.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        74
+      ],
+      "reason": "Major crate release",
+      "suggestedTitle": "Fyroxゲームエンジン1.0.0: Rustゲーム開発の新時代",
+      "suggestedSummary": "Fyroxゲームエンジンは7年の開発を経て、1.0.0の安定版に到達しました。Rustで書かれたFyroxは、ネイティブエディターと2Dおよび3Dゲームの作成をサポートすることで、ゲーム開発者に最新のソリューションを提供します。このリリースはRustエコシステムにおける重要なマイルストーンであり、Rustのパフォーマンスと安全性をゲーム開発に活用したい開発者にとって強力なツールを提供します。エンジンの包括的な機能と使いやすさは、趣味の開発者やプロのゲーム開発者の両方にとって魅力的な選択肢となっています。",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "192a854d1fa8a4b9e9f4d9aab00eee8b56db7c68ba5cd062bd630f1b88682529",
+      "source": "Rust Internals",
+      "title": "開始位置と長さから範囲を構築する方法を導入",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=2#post_42",
+      "summary": "開始位置 .. 開始位置 + 長さという構文は確かに面倒です。特に、開始位置に非自明な計算がある場合や、非常に長いメソッド名がある場合です。[開始位置..][..長さ]は、境界チェックがマージされて最適化されると問題ありませんが、そうでない場合は、コンパイルされたコードに2つのパニック分岐が残ります（各パニック呼び出しには固有の引数が必要です）。.get(開始位置..)?.get(..長さ)?はうまく最適化されますが、多くの句読点が必要です。これは、RangeFromにメソッドとして追加することができ、ブロックされることはありませんが…",
+      "publishedAt": "2026-03-28T18:46:33.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "25ec6c21a15d5fcf4781eeadc14c2104dc83d43ab11052d196d9d23929f6e36f",
+      "source": "Rust Users Forum",
+      "title": "20年前のシステムHandyCafeをRustで再構築しました",
+      "url": "https://users.rust-lang.org/t/we-rebuilt-handycafe-a-20-year-old-system-in-rust/139232#post_2",
+      "summary": "WebとWindowsに注力する元Delphiプログラマーとして、あなたの努力を本当に評価します。よくやった。",
+      "publishedAt": "2026-03-28T18:25:26.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ac535912611f979cfc7c1ebed736cbdfbeda17294a106c712b0995626b2624f1",
+      "source": "Rust Users Forum",
+      "title": "見えないものを照らす: RustとZigでリアルタイムWiFiレーダーを構築する",
+      "url": "https://users.rust-lang.org/t/illuminating-the-invisible-building-a-real-time-wifi-radar-with-rust-zig/139202#post_3",
+      "summary": "はい、部分的には実験的なものです。Zigを使って低レベルのアプローチを試してみたかったのですが、メインアプリにはRustを使い続けています。そして、はい、そのビルドエラーは私の責任です。ZigのAPIが0.15で変更されました。また、ビルドエラーがZig 0.15のAPI変更（addSharedLibrary → addLibrary）が原因であることに気づいたので、それを修正します。",
+      "publishedAt": "2026-03-28T16:24:45.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "568abe2837d7e9faace03afc384d6b953e047e155aedbfca70210bfcb21cc2b8",
+      "source": "Rust Users Forum",
+      "title": "Nintendo GameCube向けのRust",
+      "url": "https://users.rust-lang.org/t/rust-for-nintendo-gamecube/139077#post_4",
+      "summary": "そうですね、私は約10年間（主に個人的に）Rustを使ってきましたが、ターゲットをいじるのは何度か挫折しました。たとえそれが実際にサポートされているものであっても、バイナリがないものは特にそうです。これは確かに心の弱い人には向かない分野です！\nしかし、まだ多くのリソースが存在していますが、それらは散在していて不完全です。十分な献身があれば、きっと乗り越えられると思いますが、それはGameCubeのSDKを作成することに時間を費やしたいかどうかの問題です…",
+      "publishedAt": "2026-03-28T08:11:46.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f8f45aba369fc0522300da07d613b3ac6a46a4600461f4382011b582695d10f8",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-03-22 TideORM - Rust開発者に優しいORMフレームワーク",
+      "url": "https://rustcc.cn/article?id=0dd718ad-2b0f-4490-9313-6e6d60bd3b8d",
+      "summary": "Arnis - 現実の地理データでMinecraftの世界を生成\n\nプロジェクト概要\nArnisは、現実世界の地理、地形、建築を複雑かつ正確にMinecraftの世界に変換できる無料のオープンソースプロジェクトです（Java版1.17+とBedrock版をサポート）。このプロジェクトはOpenStreetMapの地理空間データと標高データを処理し、詳細なMinecraftの地形と建築を生成します。ユーザーは故郷、大都市、自然景観を簡単に生成できます。\n\n主な特徴\n- 現実の地理マッピング：OpenStreetMapと標高データに基づいて正確なMinecraftの世界を生成\n- 大規模データ処理：広範囲の地理データを処理可能\n- クロスプラットフォームサポート：Windows、macOS、Linuxで動作\n- ブラウザ版：MapSmithはインストール不要のブラウザ版を提供し、モバイル端末もサポート\n\n使用方法\n- 最新バージョンをダウンロードまたは自分でコンパイル\n- 地図上で矩形ツールを使用してエリアを選択\n- Minecraftの世界を選択\n- 「生成開始」をクリック\n- カスタマイズ設定可能（世界のスケール、スポーン地点、建物内部の生成など）\n\nオープンソースプロジェクトの目標\n- モジュール化：各コンポーネントを明確に分離し、メンテナンスと拡張を容易に\n- パフォーマンス最適化：良好な生成速度を維持\n- 完全なドキュメント：詳細なコードドキュメントを提供\n- ユーザーフレンドリー：使いやすさを重視\n- クロスプラットフォーム：全プラットフォームでスムーズに動作\n\n貢献方法\nバグ修正、パフォーマンス改善、新機能追加、ドキュメントの充実…",
+      "publishedAt": "2026-03-27T06:35:16.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-29T00:08:32.695Z"
+  }
+}

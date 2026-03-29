@@ -1,0 +1,108 @@
+{
+  "date": "2026-03-29",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "53f6ee3b983301afdcd7a349e68913db697f4f66e826ecaeb7639b0dd0d49527",
+      "source": "Rust Users Forum",
+      "title": "我们用Rust重建了一个20年的系统HandyCafe",
+      "url": "https://users.rust-lang.org/t/we-rebuilt-handycafe-a-20-year-old-system-in-rust/139232#post_1",
+      "summary": "我们刚刚完成了对HandyCafe的重写，这是一个已有20多年历史的网吧管理系统，用Rust从头开始重写。原始系统是用Delphi开发的，严重依赖于Windows，具有状态性，并在几十年中随着所有常见的遗留复杂性演变：共享可变状态、隐含假设和日益脆弱的并发性。在某个时候，我们意识到增量重构已不再足够。我们需要一个干净的基础。因此，我们做出了一个艰难的决定：完全重写。Rust并不是被选择的...",
+      "publishedAt": "2026-03-28T13:32:04.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        41
+      ],
+      "reason": "Rust adoption in real-world projects",
+      "suggestedTitle": "重建HandyCafe：一个遗留系统的Rust改造",
+      "suggestedSummary": "HandyCafe系统，一个已有20年历史的网吧管理软件，已完全用Rust重写。这一转变展示了Rust在处理复杂的遗留系统时的能力，提升了性能和可靠性。重写不仅使代码库现代化，还利用了Rust的安全性和并发性特征，使其成为管理网吧运营的强大解决方案。这一案例研究突显了Rust在改造遗留系统以提高效率和可维护性方面的日益普及。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "384b19cb229ccf0a8acbc015aa15b3f8ad4eea7d6154064f0cfa2b56c1ebaf05",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-27 Fyrox 游戏引擎 1.0.0 发布",
+      "url": "https://rustcc.cn/article?id=fbdd97b4-2092-4fae-9754-697edee70fe4",
+      "summary": "Fyrox 游戏引擎 1.0.0 发布",
+      "publishedAt": "2026-03-27T06:40:41.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        74
+      ],
+      "reason": "Major crate release",
+      "suggestedTitle": "Fyrox 游戏引擎 1.0.0：Rust 游戏开发的新纪元",
+      "suggestedSummary": "经过七年的开发，Fyrox 游戏引擎终于迎来了 1.0.0 稳定版本。Fyrox 使用 Rust 编写，为游戏开发者提供了一个现代化的解决方案，支持通过原生编辑器创建 2D 和 3D 游戏。这一版本的发布是 Rust 生态系统中的一个重要里程碑，为希望在游戏开发中利用 Rust 的性能和安全性的开发者提供了一个强大的工具。引擎的全面功能和易用性使其成为业余爱好者和专业游戏开发者的一个有吸引力的选择。",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "192a854d1fa8a4b9e9f4d9aab00eee8b56db7c68ba5cd062bd630f1b88682529",
+      "source": "Rust Internals",
+      "title": "引入一种从起始位置和长度构建范围的方法",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=2#post_42",
+      "summary": "起始位置..起始位置+长度的语法确实令人烦恼，尤其是在起始位置需要进行复杂计算或方法名称非常长的情况下。[起始位置..][..长度]在边界检查合并并优化掉时还可以，但否则会在编译代码中留下两个可能引发崩溃的分支（因为每个崩溃调用都需要其独特的参数）。.get(起始位置..)?.get(..长度)?优化得很好，但标点符号太多。这可以作为一个方法添加到RangeFrom中，而不会被阻止……",
+      "publishedAt": "2026-03-28T18:46:33.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "25ec6c21a15d5fcf4781eeadc14c2104dc83d43ab11052d196d9d23929f6e36f",
+      "source": "Rust Users Forum",
+      "title": "我们用Rust重建了一个有20年历史的系统HandyCafe",
+      "url": "https://users.rust-lang.org/t/we-rebuilt-handycafe-a-20-year-old-system-in-rust/139232#post_2",
+      "summary": "作为一名前Delphi程序员，专注于Web和Windows，我非常欣赏你们的努力。干得好。",
+      "publishedAt": "2026-03-28T18:25:26.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ac535912611f979cfc7c1ebed736cbdfbeda17294a106c712b0995626b2624f1",
+      "source": "Rust Users Forum",
+      "title": "照亮隐形：用 Rust 和 Zig 构建实时 WiFi 雷达",
+      "url": "https://users.rust-lang.org/t/illuminating-the-invisible-building-a-real-time-wifi-radar-with-rust-zig/139202#post_3",
+      "summary": "哈哈，是的，部分是实验。我想尝试用 Zig 走一条更底层的路线，看看有什么可能，同时仍然使用 Rust 作为主应用程序。没错——那个构建错误是我的问题，Zig API 在 0.15 中发生了变化。我还意识到构建错误是由于 Zig 0.15 API 的变化（addSharedLibrary → addLibrary），所以我会修复它。",
+      "publishedAt": "2026-03-28T16:24:45.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "568abe2837d7e9faace03afc384d6b953e047e155aedbfca70210bfcb21cc2b8",
+      "source": "Rust Users Forum",
+      "title": "适用于任天堂GameCube的Rust",
+      "url": "https://users.rust-lang.org/t/rust-for-nintendo-gamecube/139077#post_4",
+      "summary": "是的，我大约有十年的（主要是个人的）Rust经验，并且曾多次尝试处理目标，即使它们实际上是受支持但没有二进制文件的目标。这绝对不是一个适合胆小者的领域！但仍然有很多资源，只是分散且不完整。我相信只要有足够的投入，你可以克服这个挑战，只是看你是否愿意花时间创建一个GameCube SDK，而不是……",
+      "publishedAt": "2026-03-28T08:11:46.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f8f45aba369fc0522300da07d613b3ac6a46a4600461f4382011b582695d10f8",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-22 TideORM - Rust开发者友好的ORM框架",
+      "url": "https://rustcc.cn/article?id=0dd718ad-2b0f-4490-9313-6e6d60bd3b8d",
+      "summary": "项目简介\nArnis是一个免费开源项目，能够将真实世界的地理、地形和建筑转换为复杂且精确的Minecraft世界（支持Java版1.17+和基岩版）。该项目处理OpenStreetMap的地理空间数据和海拔数据，生成详细的Minecraft地形和建筑表现。用户可以轻松生成家乡、大城市和自然景观。\n主要特点\n真实地理映射：基于OpenStreetMap和海拔数据生成准确的Minecraft世界\n大规模数据处理：能够处理大范围的地理数据\n跨平台支持：可在Windows、macOS和Linux上运行\n浏览器版本：MapSmith提供无需安装的浏览器版本，支持移动端\n使用方法\n下载最新版本或自行编译\n在地图上使用矩形工具选择区域\n选择Minecraft世界\n点击\"开始生成\"\n可自定义设置（世界比例、出生点、建筑内部生成等）\n开源项目目标\n模块化：各组件清晰分离，便于维护和扩展\n性能优化：保持良好的生成速度\n完善文档：提供详细的代码文档\n用户友好：注重易用性\n跨平台：全平台流畅运行\n贡献方式\n修复bug、改进性能、添加新功能、完善文档…",
+      "publishedAt": "2026-03-27T06:35:16.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-29T00:08:25.127Z"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "date": "2026-03-29",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "53f6ee3b983301afdcd7a349e68913db697f4f66e826ecaeb7639b0dd0d49527",
+      "source": "Rust Users Forum",
+      "title": "We Rebuilt HandyCafe, a 20-Year-Old System, in Rust",
+      "url": "https://users.rust-lang.org/t/we-rebuilt-handycafe-a-20-year-old-system-in-rust/139232#post_1",
+      "summary": "We’ve just finished rewriting HandyCafe, a 20+ year old internet café management system from scratch in Rust.\nThe original system was developed in Delphi, heavily Windows-centric, stateful and evolved over decades with all the usual legacy complexity: shared mutable state, implicit assumptions, and increasingly fragile concurrency.\nAt some point, we realized incremental refactoring was no longer enough. We needed a clean foundation. So we made a hard decision: full rewrite.\nRust wasn’t chosen…",
+      "publishedAt": "2026-03-28T13:32:04.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        41
+      ],
+      "reason": "Rust adoption in real-world projects",
+      "suggestedTitle": "Rebuilding HandyCafe: A Legacy System Gets a Rust Makeover",
+      "suggestedSummary": "The HandyCafe system, a 20-year-old internet café management software, has been completely rewritten in Rust. This transition showcases Rust's capability to handle complex, legacy systems with improved performance and reliability. The rewrite not only modernizes the codebase but also leverages Rust's safety and concurrency features, making it a robust solution for managing internet café operations. This case study highlights Rust's growing adoption in revamping legacy systems for better efficiency and maintainability.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "384b19cb229ccf0a8acbc015aa15b3f8ad4eea7d6154064f0cfa2b56c1ebaf05",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-27 Fyrox 游戏引擎 1.0.0 发布",
+      "url": "https://rustcc.cn/article?id=fbdd97b4-2092-4fae-9754-697edee70fe4",
+      "summary": "Fyrox 游戏引擎 1.0.0 发布\nFyrox 游戏引擎经过 7 年开发后，正式发布了首个稳定版本 1.0.0。这是一个用 Rust 编写的现代游戏引擎，帮助开发者通过原生编辑器轻松创建 2D 和 3D 游戏，类似于 Unity，但使用 Rust 语言开发。\n主要特性\n项目导出 CLI 工具\n现在可以为 Fyrox 游戏配置 CI/CD（持续集成/持续交付）\n每个项目都包含一个名为 export-cli 的特殊 crate\n提供与编辑器导出功能相同的命令行界面\n对团队开发和自动化构建非常重要\nCLI 工具选项\n基础选项：\n-h, --help: 显示详细使用说明\n-V, --version: 打印 CLI 版本\n--target_platform: 目标平台（pc/wasm/android）\n--build_target: 构建目标架构\n--destination_folder: 构建输出文件夹（默认 ./build/）\n高级选项：\n--include_used_assets: 仅包含使用过的资源\n--ignored_extensions: 指定要忽略的文件扩展名\n-r,…",
+      "publishedAt": "2026-03-27T06:40:41.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        74
+      ],
+      "reason": "Major crate release",
+      "suggestedTitle": "Fyrox Game Engine 1.0.0: A New Era for Rust Game Development",
+      "suggestedSummary": "The Fyrox game engine has reached its 1.0.0 stable release after seven years of development. Written in Rust, Fyrox offers a modern solution for game developers with its native editor and support for creating 2D and 3D games. This release marks a significant milestone in the Rust ecosystem, providing a powerful tool for developers looking to leverage Rust's performance and safety in game development. The engine's comprehensive features and ease of use make it a compelling choice for both hobbyists and professional game developers.",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "192a854d1fa8a4b9e9f4d9aab00eee8b56db7c68ba5cd062bd630f1b88682529",
+      "source": "Rust Internals",
+      "title": "Introduce a way to construct Range from start + length",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=2#post_42",
+      "summary": "The start .. start + len syntax is annoying indeed, especially when there's a non-trivial calculation for the start, or just a very long method name.\n[start..][..len] is okay when the bounds checks get merged and optimized out, but otherwise it leaves two panicking branches in the compiled code (since each panic call has to get its unique argument). .get(start..)?.get(..len)? optimizes fine, but that's a lot of punctuation.\nThis could be added as a method to RangeFrom without being blocked by a…",
+      "publishedAt": "2026-03-28T18:46:33.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "25ec6c21a15d5fcf4781eeadc14c2104dc83d43ab11052d196d9d23929f6e36f",
+      "source": "Rust Users Forum",
+      "title": "We Rebuilt HandyCafe, a 20-Year-Old System, in Rust",
+      "url": "https://users.rust-lang.org/t/we-rebuilt-handycafe-a-20-year-old-system-in-rust/139232#post_2",
+      "summary": "As ex-Delphi programmer  with focus on Web and Windows, I really value your effort. Good job.",
+      "publishedAt": "2026-03-28T18:25:26.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ac535912611f979cfc7c1ebed736cbdfbeda17294a106c712b0995626b2624f1",
+      "source": "Rust Users Forum",
+      "title": "Illuminating the Invisible: Building a Real-Time WiFi Radar with Rust & Zig",
+      "url": "https://users.rust-lang.org/t/illuminating-the-invisible-building-a-real-time-wifi-radar-with-rust-zig/139202#post_3",
+      "summary": "Haha yeah, partly experimenting \nI wanted to try a lower-level route with Zig just to see what’s possible, while still keeping Rust for the main app.\nAnd yep — that build error is on me, Zig API changed in 0.15 \nAlso realized the build error is due to Zig 0.15 API changes (addSharedLibrary → addLibrary), so I’ll fix that.",
+      "publishedAt": "2026-03-28T16:24:45.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "568abe2837d7e9faace03afc384d6b953e047e155aedbfca70210bfcb21cc2b8",
+      "source": "Rust Users Forum",
+      "title": "Rust for Nintendo GameCube",
+      "url": "https://users.rust-lang.org/t/rust-for-nintendo-gamecube/139077#post_4",
+      "summary": "Yeah, I've had about a decade of (mostly personal) Rust experience and have bounced off messing with targets a few times, even when they're actually supported ones that are just without binaries. This is definitely not an area for the faint hearted!\nBut there are still a lot of resources out there, their just scattered and incomplete. I'm sure with enough dedication it's something you could push through, it's just a matter of if you want to spend your time creating a GameCube SDK rather than…",
+      "publishedAt": "2026-03-28T08:11:46.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f8f45aba369fc0522300da07d613b3ac6a46a4600461f4382011b582695d10f8",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-03-22 TideORM - Rust 开发者友好的 ORM 框架",
+      "url": "https://rustcc.cn/article?id=0dd718ad-2b0f-4490-9313-6e6d60bd3b8d",
+      "summary": "Arnis - 真实地理数据生成Minecraft世界\n项目简介\nArnis是一个免费开源项目，能够将真实世界的地理、地形和建筑转换为复杂且精确的Minecraft世界（支持Java版1.17+和基岩版）。该项目处理OpenStreetMap的地理空间数据和海拔数据，生成详细的Minecraft地形和建筑表现。用户可以轻松生成家乡、大城市和自然景观。\n主要特点\n真实地理映射：基于OpenStreetMap和海拔数据生成准确的Minecraft世界\n大规模数据处理：能够处理大范围的地理数据\n跨平台支持：可在Windows、macOS和Linux上运行\n浏览器版本：MapSmith提供无需安装的浏览器版本，支持移动端\n使用方法\n下载最新版本或自行编译\n在地图上使用矩形工具选择区域\n选择Minecraft世界\n点击\"开始生成\"\n可自定义设置（世界比例、出生点、建筑内部生成等）\n开源项目目标\n模块化：各组件清晰分离，便于维护和扩展\n性能优化：保持良好的生成速度\n完善文档：提供详细的代码文档\n用户友好：注重易用性\n跨平台：全平台流畅运行\n贡献方式\n修复bug、改进性能、添加新功能、完善文档…",
+      "publishedAt": "2026-03-27T06:35:16.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-29T00:08:18.664Z"
+  }
+}
