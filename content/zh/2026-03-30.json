@@ -1,0 +1,89 @@
+{
+  "date": "2026-03-30",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "06703829a87b5111a2c558f9f436a36f5dbf7a100a45f6eca3eb096f4c3fbea5",
+      "source": "Rust Internals",
+      "title": "想法：#[must_use = inherit]",
+      "url": "https://internals.rust-lang.org/t/idea-must-use-inherit/24117#post_1",
+      "summary": "一种继承#[must_use]理由的能力（而不是是否为#[must_use]）。如果没有可继承的#[must_use]，则会出错。动机 旁注：我知道还有其他情况会触发#[must_use]，而不需要在函数上放置#[must_use]，但为了简洁起见，只提及返回类型。存在一个clippy lint double_must_use，默认情况下会发出警告。该lint警告： #[must_use] // 警告！ fn f() -> Result<Thing, ()> { todo!() } 上述的重点是： Result<T, E>已经……",
+      "publishedAt": "2026-03-29T19:19:33.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Rust Internals proposal for #[must_use] enhancement",
+      "suggestedTitle": "在Rust中增强#[must_use]的继承能力",
+      "suggestedSummary": "Rust Internals上的一项新提案建议通过允许#[must_use]属性继承其使用理由来增强其功能。此更改旨在提高属性的表达能力，使开发人员能够在其API中传达更具体的使用期望。该提案概述了一种在不改变属性核心行为的情况下添加此功能的方法，可能会导致更强大的错误处理和更清晰的API合同在Rust项目中。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "8016ce70644905a3ad228b03e4ba84d631fb636a3c8555954f30194de910192a",
+      "source": "Rust Internals",
+      "title": "介绍一种从起始位置和长度构建范围的方法",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=3#post_45",
+      "summary": "zackw：显然还有一些工作要做。一旦这些使用了新的范围类型，处理这件事情就会容易得多，因为我们将能够让后者尝试成为前者。",
+      "publishedAt": "2026-03-29T22:36:31.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8a3c7f301ade3366837eb42ae0ee1a19595bae50688ad41a44989166e9e76dd6",
+      "source": "Rust Users Forum",
+      "title": "Rust + SQLite - 配置 rusqlite 使用本地 SQLite 副本",
+      "url": "https://users.rust-lang.org/t/rust-sqlite-configure-rusqlite-to-use-a-local-copy-of-sqlite/139254#post_6",
+      "summary": "eechris:\n该程序仍然运行良好，因此它一定是在 Mac 上找到 SQLite 的版本，而无需进一步配置。\n如果您想验证它是否正在使用您认为的库，可以使用 $ otool -L <program>，这将列出二进制文件的加载时依赖项。\n\neechris:\n在对程序进行修改和编译后，文件夹大小会增长到数十GB。是什么导致文件夹大小增长？\n一个因素是，如果您在目标中浏览...",
+      "publishedAt": "2026-03-29T23:52:26.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "55731a80089ee5927c463108a12413aef640b98b0def3184d8c84c833c5cc92c",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - 超快速的 Rust MessagePack 序列化器",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_26",
+      "summary": "我在 dev.to 上发布了一篇关于 zerompk 实现的博客文章。请查看！",
+      "publishedAt": "2026-03-29T16:48:18.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9f002f38bc81919a0a5bbcf0c3fe5072bbb347e37e269d2b54d3ef9a7f14d0ab",
+      "source": "Rust Users Forum",
+      "title": "发布 better_tokio_select：可以通过 rustfmt 格式化的 tokio::select!",
+      "url": "https://users.rust-lang.org/t/announcing-better-tokio-select-tokio-select-that-can-be-formatted-by-rustfmt/139243#post_1",
+      "summary": "tokio::select! 宏使用自定义 DSL，这意味着它无法通过 rustfmt 格式化，这是一个大问题！\ntokio::select! {\n    res = reader.read(&mut buf), if can_read => {\n        let n = res?;\n        if n == 0 { return Ok(()); }\n        writer.write_all(&buf[..n]).await?;\n    }\n\n    _ = shutdown.recv() => {\n        return Ok(());\n    }\n}\n\n这个宏是我刚发布的 better_tokio_select crate 中的 tokio_select，它可以完成 tokio::select! 的所有功能，但它也可以…",
+      "publishedAt": "2026-03-29T10:16:41.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "90d470417631fab9da576120be9ecc956f73b5950423d05c58c75fcba608880a",
+      "source": "Lobsters Rust",
+      "title": "使用嵌入式Rust构建吉他训练器",
+      "url": "https://blog.orhun.dev/introducing-tuitar/",
+      "summary": "评论",
+      "publishedAt": "2026-03-28T09:17:01.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-30T00:08:53.426Z"
+  }
+}

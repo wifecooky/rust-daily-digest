@@ -1,0 +1,89 @@
+{
+  "date": "2026-03-30",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "06703829a87b5111a2c558f9f436a36f5dbf7a100a45f6eca3eb096f4c3fbea5",
+      "source": "Rust Internals",
+      "title": "Idea: #[must_use = inherit]",
+      "url": "https://internals.rust-lang.org/t/idea-must-use-inherit/24117#post_1",
+      "summary": "An ability to inherit reason of #[must_use] (not whether it is #[must_use]).\nIf there is no #[must_use] to inherit, it errors.\nMotivation\nSide note: I know there are other cases that #[must_use] gets triggered without putting #[must_use] on the function, but will mention only return types for briefness.\nThere is a clippy lint double_must_use, warn by default.\nThe lint warns:\n#[must_use] // warning!\nfn f() -> Result<Thing, ()> {\n    todo!()\n}\n\nThe point of the above is:\nResult<T, E> is already…",
+      "publishedAt": "2026-03-29T19:19:33.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Rust Internals proposal for #[must_use] enhancement",
+      "suggestedTitle": "Enhancing #[must_use] with Inheritance Capability in Rust",
+      "suggestedSummary": "A new proposal on Rust Internals suggests enhancing the #[must_use] attribute by allowing it to inherit the reason for its use. This change aims to improve the attribute's expressiveness, enabling developers to convey more specific usage expectations in their APIs. The proposal outlines a method to add this functionality without altering the attribute's core behavior, potentially leading to more robust error handling and clearer API contracts in Rust projects.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "8016ce70644905a3ad228b03e4ba84d631fb636a3c8555954f30194de910192a",
+      "source": "Rust Internals",
+      "title": "Introduce a way to construct Range from start + length",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=3#post_45",
+      "summary": "zackw:\nso clearly there is still at least some work to be done\nOnce those are using the new range types it'll be way easier to do something about it, since we'll be able to have the latter attempt to be the former.",
+      "publishedAt": "2026-03-29T22:36:31.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8a3c7f301ade3366837eb42ae0ee1a19595bae50688ad41a44989166e9e76dd6",
+      "source": "Rust Users Forum",
+      "title": "Rust + SQLite - Configure rusqlite to use a local copy of SQLite",
+      "url": "https://users.rust-lang.org/t/rust-sqlite-configure-rusqlite-to-use-a-local-copy-of-sqlite/139254#post_6",
+      "summary": "eechris:\nThe program still works fine so it must be finding the version of SQLite on the Mac without any further configuration\nIf you want to verify that it's using the library you think, you can use $ otool -L <program>, which will list the binary's load-time dependencies.\n\n eechris:\nAfter working on a program, making changes and compiling the folder size will grow to 10's of gigabytes. What is happening that causes the folder size to grow?\nOne factor is that if you browse around in the target…",
+      "publishedAt": "2026-03-29T23:52:26.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "55731a80089ee5927c463108a12413aef640b98b0def3184d8c84c833c5cc92c",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Extremely fast MessagePack serializer for Rust",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_26",
+      "summary": "I've posted a blog article on dev.to about the implementation of zerompk. Please check it out!\nDEV Community\n  \n\nzerompk: The Fastest MessagePack Implementation for Rust and Its Optimization...\nI've released zerompk, a fast MessagePack serializer for...",
+      "publishedAt": "2026-03-29T16:48:18.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9f002f38bc81919a0a5bbcf0c3fe5072bbb347e37e269d2b54d3ef9a7f14d0ab",
+      "source": "Rust Users Forum",
+      "title": "Announcing better_tokio_select: tokio::select! that can be formatted by rustfmt",
+      "url": "https://users.rust-lang.org/t/announcing-better-tokio-select-tokio-select-that-can-be-formatted-by-rustfmt/139243#post_1",
+      "summary": "The tokio::select! macro uses a custom DSL, which means it can't be formatted by rustfmt, which is a huge problem!\ntokio::select! {\n    res = reader.read(&mut buf), if can_read => {\n        let n = res?;\n        if n == 0 { return Ok(()); }\n        writer.write_all(&buf[..n]).await?;\n    }\n\n    _ = shutdown.recv() => {\n        return Ok(());\n    }\n}\n\nThis macro, tokio_select from the better_tokio_select crate I just released, can do everything that tokio::select! can, but it can also be…",
+      "publishedAt": "2026-03-29T10:16:41.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "90d470417631fab9da576120be9ecc956f73b5950423d05c58c75fcba608880a",
+      "source": "Lobsters Rust",
+      "title": "Building a guitar trainer with embedded Rust",
+      "url": "https://blog.orhun.dev/introducing-tuitar/",
+      "summary": "Comments",
+      "publishedAt": "2026-03-28T09:17:01.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-30T00:08:48.461Z"
+  }
+}

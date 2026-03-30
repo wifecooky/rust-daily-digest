@@ -1,0 +1,89 @@
+{
+  "date": "2026-03-30",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "06703829a87b5111a2c558f9f436a36f5dbf7a100a45f6eca3eb096f4c3fbea5",
+      "source": "Rust Internals",
+      "title": "アイデア: #[must_use = inherit]",
+      "url": "https://internals.rust-lang.org/t/idea-must-use-inherit/24117#post_1",
+      "summary": "#[must_use] の理由を継承する能力（#[must_use] であるかどうかではなく）。継承する #[must_use] がない場合、エラーが発生します。動機付け補足: #[must_use] が関数に #[must_use] を付けずにトリガーされる他のケースがあることは知っていますが、簡潔さのために戻り値の型のみを言及します。clippy lint double_must_use があり、デフォルトで警告します。このリントは警告します: #[must_use] // 警告！fn f() -> Result<Thing, ()> { todo!() } 上記のポイントは: Result<T, E> はすでに…",
+      "publishedAt": "2026-03-29T19:19:33.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Rust Internals proposal for #[must_use] enhancement",
+      "suggestedTitle": "Rustにおける#[must_use]の継承機能の強化",
+      "suggestedSummary": "Rust Internalsでの新しい提案は、#[must_use]属性をその使用理由を継承できるように強化することを示唆しています。この変更は、属性の表現力を向上させ、開発者がAPIでより具体的な使用期待を伝えることを可能にすることを目的としています。この提案は、属性のコア動作を変更することなくこの機能を追加する方法を概説しており、Rustプロジェクトにおけるより堅牢なエラー処理と明確なAPI契約につながる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "8016ce70644905a3ad228b03e4ba84d631fb636a3c8555954f30194de910192a",
+      "source": "Rust Internals",
+      "title": "開始位置と長さから範囲を構築する方法を紹介",
+      "url": "https://internals.rust-lang.org/t/introduce-a-way-to-construct-range-from-start-length/24073?page=3#post_45",
+      "summary": "zackw: 明らかにまだ少し作業が必要です。新しい範囲タイプを使用するようになれば、それに対処するのがずっと簡単になります。後者が前者になろうとすることが可能になるからです。",
+      "publishedAt": "2026-03-29T22:36:31.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8a3c7f301ade3366837eb42ae0ee1a19595bae50688ad41a44989166e9e76dd6",
+      "source": "Rust Users Forum",
+      "title": "Rust + SQLite - ローカルコピーのSQLiteを使用するようにrusqliteを設定する",
+      "url": "https://users.rust-lang.org/t/rust-sqlite-configure-rusqlite-to-use-a-local-copy-of-sqlite/139254#post_6",
+      "summary": "eechris:\nプログラムはまだ正常に動作しているので、Mac上のSQLiteのバージョンを追加の設定なしで見つけているに違いありません。\nもし使用しているライブラリを確認したい場合は、$ otool -L <program>を使用することで、バイナリのロード時の依存関係を一覧表示できます。\n\neechris:\nプログラムを作成し、変更を加え、コンパイルすると、フォルダのサイズが数十ギガバイトに増えることがあります。フォルダサイズが増加する原因は何でしょうか？\n一つの要因は、ターゲット内をブラウズすると…",
+      "publishedAt": "2026-03-29T23:52:26.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "55731a80089ee5927c463108a12413aef640b98b0def3184d8c84c833c5cc92c",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Rust向けの超高速MessagePackシリアライザー",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_26",
+      "summary": "zerompkの実装についてdev.toにブログ記事を投稿しました。ぜひご覧ください！",
+      "publishedAt": "2026-03-29T16:48:18.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9f002f38bc81919a0a5bbcf0c3fe5072bbb347e37e269d2b54d3ef9a7f14d0ab",
+      "source": "Rust Users Forum",
+      "title": "better_tokio_selectの発表: rustfmtでフォーマット可能なtokio::select!",
+      "url": "https://users.rust-lang.org/t/announcing-better-tokio-select-tokio-select-that-can-be-formatted-by-rustfmt/139243#post_1",
+      "summary": "tokio::select!マクロはカスタムDSLを使用しているため、rustfmtでフォーマットできません。これは大きな問題です！\ntokio::select! {\n    res = reader.read(&mut buf), if can_read => {\n        let n = res?;\n        if n == 0 { return Ok(()); }\n        writer.write_all(&buf[..n]).await?;\n    }\n\n    _ = shutdown.recv() => {\n        return Ok(());\n    }\n}\n\nこのマクロ、私がリリースしたbetter_tokio_selectクレートのtokio_selectは、tokio::select!ができることをすべて行うことができますが、それに加えて…",
+      "publishedAt": "2026-03-29T10:16:41.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "90d470417631fab9da576120be9ecc956f73b5950423d05c58c75fcba608880a",
+      "source": "Lobsters Rust",
+      "title": "組み込みRustでギタートレーナーを構築する",
+      "url": "https://blog.orhun.dev/introducing-tuitar/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-28T09:17:01.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-03-30T00:08:59.390Z"
+  }
+}
