@@ -1,0 +1,90 @@
+{
+  "date": "2026-03-31",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "808f310609d55e9d6f60b3be38dc4f921a70a0252065a64f33402a21eb20b679",
+      "source": "Rust Internals",
+      "title": "The lifecycle of a feature, and where to look for updates",
+      "url": "https://internals.rust-lang.org/t/the-lifecycle-of-a-feature-and-where-to-look-for-updates/24120#post_3",
+      "summary": "blonk:\nFrom a high level, what's the process a feature goes through before it gets stabilized?\nrustc-dev-guide.rust-lang.org\n  \nStabilizing language features - Rust Compiler Development Guide\nA guide to developing the Rust compiler (rustc)\n\n\n\n\n  \nstd-dev-guide.rust-lang.org\n  \nStabilizing a feature - Standard library developers Guide\nGuide for standard library developers\n\n\n\n\n\n\n blonk:\nFrom what I gathered, features start out as RFC's. If the RFC is accepted, someone may implement the feature on…",
+      "publishedAt": "2026-03-30T19:09:55.000Z",
+      "score": 57,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Lifecycle and async ML updates",
+      "suggestedTitle": "Lifecycle of Rust Features and Async ML Inference on Apple Silicon",
+      "suggestedSummary": "Understanding the lifecycle of Rust features is crucial for developers aiming to keep up with language evolution. This process involves several stages from proposal to stabilization, affecting how developers plan for future changes. Meanwhile, the open-source release of batch_forge enables efficient ML inference on Apple Silicon using Rust, leveraging the JAX/Equinox ecosystem. This development offers significant performance improvements for machine learning tasks on Apple's hardware, making Rust a more attractive option for ML applications.",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0b01dbc4960562ad8ee5b40e152128b13e322e382405db596db322d17b06e259",
+      "source": "Rust Users Forum",
+      "title": "Rust + SQLite - Configure rusqlite to use a local copy of SQLite",
+      "url": "https://users.rust-lang.org/t/rust-sqlite-configure-rusqlite-to-use-a-local-copy-of-sqlite/139254#post_7",
+      "summary": "I attempted to install otool via cargo.  During installation there was an error \"no method named symbols found for enum mach_object::File in the current scope\". The error number is E0599.  This error occurs when a method is used on a type which does not implement it.  Any ideas how to overcome this error and get otool installed?",
+      "publishedAt": "2026-03-30T19:45:44.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "3cbce99cf8e1232af380b2c7e5cdf0eaf3a431f013528862b93f2a3ed720598c",
+      "source": "Rust Internals",
+      "title": "The lifecycle of a feature, and where to look for updates",
+      "url": "https://internals.rust-lang.org/t/the-lifecycle-of-a-feature-and-where-to-look-for-updates/24120#post_1",
+      "summary": "From a high level, what's the process a feature goes through before it gets stabilized?\nFrom what I gathered, features start out as RFC's.  If the RFC is accepted, someone may implement the feature on nightly.  At some point a tracking issue for the feature is created.  Once the feature has baked for a while it can enter a FCP (who requests this, and who determines if it is ready for FCP?).  Once it passes its FCP, it can be nominated for stabilization, where it will first reach the beta…",
+      "publishedAt": "2026-03-30T14:30:06.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "15687818bafecfc9b277b693ecf703d6cb814ddafe0ae27bbb24a2ef330f0cb1",
+      "source": "Rust Internals",
+      "title": "Yet another half-baked idea for working around the orphan rule",
+      "url": "https://internals.rust-lang.org/t/yet-another-half-baked-idea-for-working-around-the-orphan-rule/24121#post_1",
+      "summary": "Hi everyone,\nI’ve been working on a preliminary idea to address some of the friction caused by the orphan rule, which I’ve tentatively named facets. I want to be upfront: this is very much a \"half-baked\" proposal. I have not conducted an exhaustive search of all previous RFCs or alternative designs, and I am fully aware that I might be reinventing the wheel or suggesting something that has already been dismissed for good reasons. Before I invest more time into formalizing this, I would value…",
+      "publishedAt": "2026-03-30T21:34:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "957139d3d9b16aba58784f6f87259c1824185330a7252676be9f4544109ec0dc",
+      "source": "rust-analyzer",
+      "title": "Changelog #321",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/30/changelog-321.html",
+      "summary": "Commit: f1297b2\n2026-03-30 (v0.3.2845)\nFixes\n#21588 (first contribution) fix asm! sym operand parsing for parenthesized expr fragments.\n#21871 revert TyLoweringContext::store after lowering parent defaults.\n#21876 keep value when trying to produce a default call.\n#21904 fix panic on trailing | in unmerge_match_arm.\n#21838 skip usages inside macro expansions in destructure_{struct,tuple}_binding.\n#21860, #21865 wrap ascribed type in Option<> or Result<> in desugar_try_expr with let - else.…",
+      "publishedAt": "2026-03-30T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "01879454889d66e063d7d5755a31233638020e7e9acef9c6fec9fd164be34c78",
+      "source": "Lobsters Rust",
+      "title": "Fixing our own problems in the Rust compiler",
+      "url": "https://trifectatech.org/blog/fixing-our-own-problems-in-the-rust-compiler/",
+      "summary": "Comments",
+      "publishedAt": "2026-03-30T15:23:01.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-03-31T00:09:26.315Z"
+  }
+}

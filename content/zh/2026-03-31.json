@@ -1,0 +1,90 @@
+{
+  "date": "2026-03-31",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "808f310609d55e9d6f60b3be38dc4f921a70a0252065a64f33402a21eb20b679",
+      "source": "Rust Internals",
+      "title": "功能的生命周期，以及在哪里查找更新",
+      "url": "https://internals.rust-lang.org/t/the-lifecycle-of-a-feature-and-where-to-look-for-updates/24120#post_3",
+      "summary": "blonk：从高层次来看，一个功能在稳定之前会经历哪些过程？rustc-dev-guide.rust-lang.org\n\n稳定语言功能 - Rust 编译器开发指南\nRust 编译器（rustc）开发指南\n\nstd-dev-guide.rust-lang.org\n\n稳定一个功能 - 标准库开发者指南\n标准库开发者指南\n\nblonk：根据我的了解，功能从 RFC 开始。如果 RFC 被接受，可能会有人实现该功能……",
+      "publishedAt": "2026-03-30T19:09:55.000Z",
+      "score": 57,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Lifecycle and async ML updates",
+      "suggestedTitle": "Rust 功能的生命周期和 Apple Silicon 上的异步 ML 推理",
+      "suggestedSummary": "了解 Rust 功能的生命周期对于希望跟上语言演变的开发者至关重要。这个过程涉及从提案到稳定的几个阶段，影响开发者如何规划未来的变化。同时，开源的 batch_forge 使得在 Apple Silicon 上使用 Rust 进行高效的 ML 推理成为可能，利用 JAX/Equinox 生态系统。这一发展为 Apple 硬件上的机器学习任务提供了显著的性能提升，使 Rust 成为 ML 应用程序的更具吸引力的选择。",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0b01dbc4960562ad8ee5b40e152128b13e322e382405db596db322d17b06e259",
+      "source": "Rust Users Forum",
+      "title": "Rust + SQLite - 配置 rusqlite 使用本地 SQLite 副本",
+      "url": "https://users.rust-lang.org/t/rust-sqlite-configure-rusqlite-to-use-a-local-copy-of-sqlite/139254#post_7",
+      "summary": "我尝试通过 cargo 安装 otool。在安装过程中出现了一个错误：“在当前范围内未找到枚举 mach_object::File 的方法 symbols”。错误编号是 E0599。当在不实现该方法的类型上使用该方法时，会发生此错误。有任何想法如何克服此错误并安装 otool 吗？",
+      "publishedAt": "2026-03-30T19:45:44.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "3cbce99cf8e1232af380b2c7e5cdf0eaf3a431f013528862b93f2a3ed720598c",
+      "source": "Rust Internals",
+      "title": "功能的生命周期，以及在哪里寻找更新",
+      "url": "https://internals.rust-lang.org/t/the-lifecycle-of-a-feature-and-where-to-look-for-updates/24120#post_1",
+      "summary": "从高层次来看，功能在稳定之前会经历什么过程？据我所知，功能最初是作为RFC提出的。如果RFC被接受，可能会有人在夜间版本中实现该功能。在某个时候，会为该功能创建一个跟踪问题。一旦该功能经过一段时间的测试，它可以进入FCP（谁请求这个，谁决定它是否准备好进入FCP？）。一旦通过FCP，它可以被提名为稳定版本，首先会进入测试版……",
+      "publishedAt": "2026-03-30T14:30:06.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "15687818bafecfc9b277b693ecf703d6cb814ddafe0ae27bbb24a2ef330f0cb1",
+      "source": "Rust Internals",
+      "title": "又一个为解决孤儿规则而提出的半成品想法",
+      "url": "https://internals.rust-lang.org/t/yet-another-half-baked-idea-for-working-around-the-orphan-rule/24121#post_1",
+      "summary": "大家好，\n我一直在研究一个初步想法，以解决孤儿规则带来的一些摩擦，我暂时将其命名为facets。我想坦诚相待：这确实是一个“半成品”提案。我没有对所有以前的RFC或替代设计进行详尽的搜索，我也完全意识到我可能是在重新发明轮子，或者建议了一些已经因为充分理由被否决的东西。在我投入更多时间将其形式化之前，我会很珍惜……",
+      "publishedAt": "2026-03-30T21:34:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "957139d3d9b16aba58784f6f87259c1824185330a7252676be9f4544109ec0dc",
+      "source": "rust-analyzer",
+      "title": "更新日志 #321",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/03/30/changelog-321.html",
+      "summary": "提交: f1297b2\n2026-03-30 (v0.3.2845)\n修复\n#21588 (首次贡献) 修复 asm! sym 操作数解析以支持带括号的表达式片段。\n#21871 在降低参数默认值后恢复 TyLoweringContext::store。\n#21876 在尝试生成默认调用时保留值。\n#21904 修复在 unmerge_match_arm 中尾随 | 导致的崩溃。\n#21838 在 destructure_{struct,tuple}_binding 中跳过宏展开内的用法。\n#21860, #21865 在 desugar_try_expr 中使用 let - else 将指定类型包装在 Option<> 或 Result<> 中。",
+      "publishedAt": "2026-03-30T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "01879454889d66e063d7d5755a31233638020e7e9acef9c6fec9fd164be34c78",
+      "source": "Lobsters Rust",
+      "title": "修复我们在Rust编译器中的问题",
+      "url": "https://trifectatech.org/blog/fixing-our-own-problems-in-the-rust-compiler/",
+      "summary": "评论",
+      "publishedAt": "2026-03-30T15:23:01.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-03-31T00:09:33.862Z"
+  }
+}
