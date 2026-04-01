@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-01",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "22fc48cf684ce18836e0b6bc002e5e40f6a00047c15518a4d91ad6f355a28451",
+      "source": "Rust Users Forum",
+      "title": "私はRustで34,321ファイルのno_stdベアメタルカーネルを構築しました。極端な規模でのRustについて学んだこと",
+      "url": "https://users.rust-lang.org/t/i-built-a-34-321-file-no-std-bare-metal-kernel-in-rust-heres-what-i-learned-about-rust-at-extreme-scale/139273#post_16",
+      "summary": "scottmcm: 1-CGUを使用する場合は確かにそうではありません。彼らはファイルレイアウトでCGUスプリッターを示唆しようとしているようですが、それは確かに一つの選択です。あなたはまさに核心を突いています—これはRustコンパイラの「ブラックマジック」がi7-7700Kの「物理的現実」と出会うところです。ほとんどの人はコード生成ユニット（CGU）をコンパイル速度の単純な切り替えとして扱いますが、1.5M行の10kHz心拍数を管理する際には、CGUをメスのように使用します。CGUを示唆するようにファイルレイアウトを明示的に構成することによって…",
+      "publishedAt": "2026-03-31T19:35:16.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        5,
+        7
+      ],
+      "reason": "Insights on Rust at extreme scale",
+      "suggestedTitle": "Rustで34,321ファイルのNo_stdベアメタルカーネルを構築する",
+      "suggestedSummary": "開発者がRustで巨大なno_stdベアメタルカーネルを構築した際の洞察を共有し、34,321ファイルを管理する際の課題と学びを強調します。生成されたアセンブリに対するファイル配置の影響、遭遇したアーキテクチャの摩擦、予測メッシュの物理的現実についての議論が含まれています。この深い探求は、大規模システムに取り組むRust開発者にとって貴重な教訓を提供します。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ea985ff611dc50a84747a9c44fb9e24872c32d3d8ab1749f766177b51cb4e0e9",
+      "source": "Google News Rust",
+      "title": "Linuxカーネル向けの新しいRustベースのBUS1インカーネルIPCが開発中 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVzJjeUp2NVpRRmVHdTExWWhWZnNHQ2lvSEhLUHVTRjN5NTBIWVlCZ1kyYW1KUENhdDRsYVotZzRBVHJkZThsdFdjWTB4S1cxQ2tlcTlVRms?oc=5",
+      "summary": "Linuxカーネル向けの新しいRustベースのBUS1インカーネルIPCが開発中  Phoronix",
+      "publishedAt": "2026-03-31T19:47:00.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        23
+      ],
+      "reason": "Rust's role in Linux kernel development",
+      "suggestedTitle": "Linux向けRustベースのBUS1インカーネルIPC開発",
+      "suggestedSummary": "Linuxカーネル向けに、Rustを使用した新しいインカーネルIPCメカニズムであるBUS1が開発されています。この開発は、システムプログラミングにおけるRustの存在感の高まりを示しており、特に安全で効率的なカーネルレベルの操作において顕著です。Rustの能力は、複雑で高性能なタスクを安全性を保ちながら処理できることを強調しており、将来のカーネル開発における魅力的な選択肢となっています。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "ac50994a037fb43014f60b5bcd41e0598d052994577b98441f647145c0472e77",
+      "source": "Rust Internals",
+      "title": "安定した型識別子: crABIとエクスポートの欠けているピース",
+      "url": "https://internals.rust-lang.org/t/stable-type-identifiers-a-missing-piece-for-crabi-and-export/24093?page=2#post_23",
+      "summary": "v0スキームはリンカのためのシンボルマングリングを解決しますが、それはコンパイラの実装の詳細に過ぎず、言語に固有のものではありません。それはrustcのバージョン間で変更されても破壊的変更とは見なされません。私が提案するのは異なります: その情報を言語によって保証される明示的な識別子に引き上げることです。それはコンパイラに依存するのではなく、言語に依存するものです。64ビットハッシュの問題はその結果として生じます…",
+      "publishedAt": "2026-03-31T15:35:26.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "80b28bbae2d2897e344a6a883f432c8b4746345565b49ebcac787fcac7435a9e",
+      "source": "Google News Rust",
+      "title": "Linux 7.1向けの多数のRustグラフィックスドライバー変更、NVIDIA Novaドライバーの追加 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rbjhEejlFdVh2TExwOFlTQl9EMXhzb2NxMzhZUENwbWRGb1J2Nks0VHdnLVZoZU9CYld6R2xtRk1RVE9hYVNPdnZ6OU1nTFlCQjk0eUJlUy1WRjhsMktIRkVB?oc=5",
+      "summary": "Linux 7.1向けの多数のRustグラフィックスドライバー変更、NVIDIA Novaドライバーの追加 - Phoronix",
+      "publishedAt": "2026-03-31T14:22:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4142dc9208dc5dfe08f1415b52f46bd90aa4dc66872aeda50cc4a1059808efb2",
+      "source": "Lobsters Rust",
+      "title": "Rustの次世代トレイトソルバー",
+      "url": "https://lwn.net/SubscriberLink/1063124/81483612b1c8a493/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-30T20:58:23.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "01879454889d66e063d7d5755a31233638020e7e9acef9c6fec9fd164be34c78",
+      "source": "Lobsters Rust",
+      "title": "Rustコンパイラにおける自分たちの問題の修正",
+      "url": "https://trifectatech.org/blog/fixing-our-own-problems-in-the-rust-compiler/",
+      "summary": "コメント",
+      "publishedAt": "2026-03-30T15:23:01.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-01T00:10:26.354Z"
+  }
+}

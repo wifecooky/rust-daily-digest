@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-01",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "22fc48cf684ce18836e0b6bc002e5e40f6a00047c15518a4d91ad6f355a28451",
+      "source": "Rust Users Forum",
+      "title": "我用Rust构建了一个包含34,321个文件的no_std裸机内核。这是我在极端规模下对Rust的认识",
+      "url": "https://users.rust-lang.org/t/i-built-a-34-321-file-no-std-bare-metal-kernel-in-rust-heres-what-i-learned-about-rust-at-extreme-scale/139273#post_16",
+      "summary": "scottmcm：如果你使用1-CGU，那肯定不是这样。听起来他们试图通过文件布局来提示CGU分割器，这当然是一种选择。你正击中要害——这是Rust编译器的“黑魔法”与i7-7700K的“物理现实”相遇的地方。大多数人将代码生成单元（CGU）视为编译速度的简单开关，但当你管理一个150万行10kHz心率时，你会将CGU用作手术刀。通过明确地结构化文件布局来提示CGU……",
+      "publishedAt": "2026-03-31T19:35:16.000Z",
+      "score": 45,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        5,
+        7
+      ],
+      "reason": "Insights on Rust at extreme scale",
+      "suggestedTitle": "用Rust构建34,321文件的No_std裸机内核",
+      "suggestedSummary": "一位开发者分享了用Rust构建一个庞大的no_std裸机内核的见解，强调了管理34,321个文件的挑战和经验。讨论涵盖了文件放置对生成汇编的影响、遇到的架构摩擦以及预测网格的物理现实。这个深入探讨为从事大型系统的Rust开发者提供了宝贵的经验教训。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ea985ff611dc50a84747a9c44fb9e24872c32d3d8ab1749f766177b51cb4e0e9",
+      "source": "Google News Rust",
+      "title": "基于Rust的新BUS1内核IPC正在为Linux内核开发 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVzJjeUp2NVpRRmVHdTExWWhWZnNHQ2lvSEhLUHVTRjN5NTBIWVlCZ1kyYW1KUENhdDRsYVotZzRBVHJkZThsdFdjWTB4S1cxQ2tlcTlVRms?oc=5",
+      "summary": "基于Rust的新BUS1内核IPC正在为Linux内核开发 - Phoronix",
+      "publishedAt": "2026-03-31T19:47:00.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        23
+      ],
+      "reason": "Rust's role in Linux kernel development",
+      "suggestedTitle": "基于Rust的BUS1内核IPC开发用于Linux",
+      "suggestedSummary": "一种新的内核IPC机制BUS1正在使用Rust为Linux内核开发。这一开发强调了Rust在系统编程中的日益重要性，特别是在安全和高效的内核级操作中。它突出了Rust在处理复杂、高性能任务时的能力，同时保持安全保证，使其成为未来内核开发的一个引人注目的选择。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "ac50994a037fb43014f60b5bcd41e0598d052994577b98441f647145c0472e77",
+      "source": "Rust Internals",
+      "title": "稳定类型标识符：crABI 和导出的缺失部分",
+      "url": "https://internals.rust-lang.org/t/stable-type-identifiers-a-missing-piece-for-crabi-and-export/24093?page=2#post_23",
+      "summary": "v0 方案解决了链接器的符号混淆问题，但它仍然是编译器的实现细节；它并不是语言特有的。在 rustc 的不同版本之间可能会发生变化，而不被视为重大更改。我所提议的是不同的：将该信息提升为由语言保证的显式标识符，该标识符在编译器版本之间不会改变。不是依赖于编译器，而是依赖于语言。64 位哈希的问题是一个后果……",
+      "publishedAt": "2026-03-31T15:35:26.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "80b28bbae2d2897e344a6a883f432c8b4746345565b49ebcac787fcac7435a9e",
+      "source": "Google News Rust",
+      "title": "大量Rust图形驱动程序更改适用于Linux 7.1，NVIDIA Nova驱动程序新增功能 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rbjhEejlFdVh2TExwOFlTQl9EMXhzb2NxMzhZUENwbWRGb1J2Nks0VHdnLVZoZU9CYld6R2xtRk1RVE9hYVNPdnZ6OU1nTFlCQjk0eUJlUy1WRjhsMktIRkVB?oc=5",
+      "summary": "大量Rust图形驱动程序更改适用于Linux 7.1，NVIDIA Nova驱动程序新增功能 Phoronix",
+      "publishedAt": "2026-03-31T14:22:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4142dc9208dc5dfe08f1415b52f46bd90aa4dc66872aeda50cc4a1059808efb2",
+      "source": "Lobsters Rust",
+      "title": "Rust的下一代特征求解器",
+      "url": "https://lwn.net/SubscriberLink/1063124/81483612b1c8a493/",
+      "summary": "评论",
+      "publishedAt": "2026-03-30T20:58:23.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "01879454889d66e063d7d5755a31233638020e7e9acef9c6fec9fd164be34c78",
+      "source": "Lobsters Rust",
+      "title": "解决Rust编译器中的自身问题",
+      "url": "https://trifectatech.org/blog/fixing-our-own-problems-in-the-rust-compiler/",
+      "summary": "评论",
+      "publishedAt": "2026-03-30T15:23:01.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-01T00:10:16.993Z"
+  }
+}
