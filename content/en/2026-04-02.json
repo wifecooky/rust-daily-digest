@@ -1,0 +1,112 @@
+{
+  "date": "2026-04-02",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "913d546b6dffe13e3314d98e356035b33916f4ef9d1f9d0e290ced57eae116b5",
+      "source": "Rust Internals",
+      "title": "Stable type identifiers: a missing piece for crABI and export",
+      "url": "https://internals.rust-lang.org/t/stable-type-identifiers-a-missing-piece-for-crabi-and-export/24093?page=2#post_25",
+      "summary": "The main use case I have in mind is plugins and dynamic Rust-to-Rust linking. In that case, nominal typing is safer; if you load a plugin that exports a type, you want to know exactly what that type is, not just any struct with the same fields. Semantic identity matters.\nWith structural typing, you could load a structurally compatible but semantically incorrect type without detecting it until runtime.\nThat said, I understand there are cases where structural typing would be useful; moving types…",
+      "publishedAt": "2026-04-01T14:51:59.000Z",
+      "score": 52,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        12,
+        33
+      ],
+      "suggestedTitle": "Stable Type Identifiers: Enhancing Rust's crABI and Export",
+      "suggestedSummary": "The introduction of stable type identifiers addresses a crucial gap in Rust's compatibility with crABI and dynamic linking. This proposal aims to resolve symbol mangling issues, providing a consistent way to identify types across different compiler versions. This change enhances Rust's ability to support plugins and dynamic linking, offering a more robust foundation for building modular and extensible systems in Rust.",
+      "reason": "Key proposal for Rust's ABI stability.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d3e8930e094bcabfff9e1d3ce7347768fb5a0178ca1a1d7af8b469fa87d1cdfd",
+      "source": "Rust Internals",
+      "title": "Why is `RUSTC_BOOTSTRAP` so actively discouraged?",
+      "url": "https://internals.rust-lang.org/t/why-is-rustc-bootstrap-so-actively-discouraged/24123#post_14",
+      "summary": "MusicalNinjaDad:\nthe wonderful nightly-beta-stable release process that's in place\nArgument from second-order effects:\nPersonally speaking, whenever I try to use a QoL feature in my app and see it is unstable, I just switch to nightly to never come back to stable.",
+      "publishedAt": "2026-04-01T19:53:34.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11,
+        30,
+        47
+      ],
+      "suggestedTitle": "RUSTC_BOOTSTRAP: Understanding the Discouragement",
+      "suggestedSummary": "The ongoing discussions around RUSTC_BOOTSTRAP highlight the risks associated with bypassing Rust's stable release process. While it allows access to nightly features on stable compilers, it undermines the stability guarantees that Rust offers. This debate underscores the importance of adhering to the stable release process to ensure reliability and avoid potential breakages in Rust projects.",
+      "reason": "Critical for understanding Rust's stability model.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b1f9e30e318c6a301370817f898ff1346769410c6d9026425c06d134017d1d7a",
+      "source": "Rust Users Forum",
+      "title": "Thinking to reactivate wee_alloc",
+      "url": "https://users.rust-lang.org/t/thinking-to-reactivate-wee-alloc/139331#post_1",
+      "summary": "I am thinking to reactivate wee_alloc.\nwee_alloc is a Rust #[global_allocator], and its whole pitch is tiny Wasm binaries. The README advertises under 1 KiB of uncompressed Wasm. Under the hood it is a simple first-fit free-list allocator: allocation is O(n), deallocation O(1). It also ships Unix, Windows, and static-array backends in addition to the Wasm backend.\nAs of April 2026, upstream is not just quiet, it is over. The latest published version is 0.4.5 from August 22, 2019. RustSec marked…",
+      "publishedAt": "2026-04-01T15:56:40.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "f9d10ce14348d4fea1efd23869ecd22e4007510bb79c56ea0125acca0915c8d6",
+      "source": "Rust Users Forum",
+      "title": "Axum boilerplate fatigue — I built a thin opinionated layer (Oxide) with benchmarks",
+      "url": "https://users.rust-lang.org/t/axum-boilerplate-fatigue-i-built-a-thin-opinionated-layer-oxide-with-benchmarks/139313#post_5",
+      "summary": "Good catch, and you’re thinking about it the right way.\nThe ~5.9 µs figure comes from the throughput (wrk/load test) numbers:\nThe 13–19 µs comes from the Criterion microbenchmarks, where we measure isolated per-request latency:\nSo they’re measuring slightly different things:\nLoad tests (wrk/k6) → end-to-end throughput under concurrency\nCriterion → per-request latency in a controlled environment\nIn real-world scenarios, the throughput numbers are usually the more representative ones, since…",
+      "publishedAt": "2026-04-01T08:09:52.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "becad2a86d04b5840da281e80daff990cfac237f85d0d1f71624f51b73988c31",
+      "source": "Rust Users Forum",
+      "title": "Discussion on Synchronous Crate Concurrency Refactor using Stackful Coroutines Model in Rust",
+      "url": "https://users.rust-lang.org/t/discussion-on-synchronous-crate-concurrency-refactor-using-stackful-coroutines-model-in-rust/139246#post_2",
+      "summary": "Project Updates: v3.0.0-rc.10 Release\nbincode-next v3.0.0-rc.10 is released today, and contains many minor fixes for the async fiber moduel.",
+      "publishedAt": "2026-04-01T12:16:07.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "80b28bbae2d2897e344a6a883f432c8b4746345565b49ebcac787fcac7435a9e",
+      "source": "Google News Rust",
+      "title": "A Lot Of Rust Graphics Driver Changes For Linux 7.1, NVIDIA Nova Driver Additions - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rbjhEejlFdVh2TExwOFlTQl9EMXhzb2NxMzhZUENwbWRGb1J2Nks0VHdnLVZoZU9CYld6R2xtRk1RVE9hYVNPdnZ6OU1nTFlCQjk0eUJlUy1WRjhsMktIRkVB?oc=5",
+      "summary": "A Lot Of Rust Graphics Driver Changes For Linux 7.1, NVIDIA Nova Driver Additions  Phoronix",
+      "publishedAt": "2026-03-31T14:22:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ea985ff611dc50a84747a9c44fb9e24872c32d3d8ab1749f766177b51cb4e0e9",
+      "source": "Google News Rust",
+      "title": "New Rust-Based BUS1 In-Kernel IPC In Development For The Linux Kernel - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVzJjeUp2NVpRRmVHdTExWWhWZnNHQ2lvSEhLUHVTRjN5NTBIWVlCZ1kyYW1KUENhdDRsYVotZzRBVHJkZThsdFdjWTB4S1cxQ2tlcTlVRms?oc=5",
+      "summary": "New Rust-Based BUS1 In-Kernel IPC In Development For The Linux Kernel  Phoronix",
+      "publishedAt": "2026-03-31T19:47:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-02T00:08:31.433Z"
+  }
+}

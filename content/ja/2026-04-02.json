@@ -1,0 +1,112 @@
+{
+  "date": "2026-04-02",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "913d546b6dffe13e3314d98e356035b33916f4ef9d1f9d0e290ced57eae116b5",
+      "source": "Rust Internals",
+      "title": "安定した型識別子: crABIとエクスポートの欠けているピース",
+      "url": "https://internals.rust-lang.org/t/stable-type-identifiers-a-missing-piece-for-crabi-and-export/24093?page=2#post_25",
+      "summary": "私が考えている主なユースケースは、プラグインと動的なRust-to-Rustリンクです。その場合、名義型はより安全です。プラグインをロードして型をエクスポートする場合、その型が正確に何であるかを知りたいのであり、同じフィールドを持つ任意の構造体ではありません。意味的なアイデンティティが重要です。構造型を使用すると、構造的には互換性があるが意味的には誤った型を、実行時まで検出せずにロードする可能性があります。とはいえ、構造型が有用であるケースがあることは理解しています。型の移動...",
+      "publishedAt": "2026-04-01T14:51:59.000Z",
+      "score": 52,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        12,
+        33
+      ],
+      "suggestedTitle": "安定した型識別子: RustのcrABIとエクスポートを強化",
+      "suggestedSummary": "安定した型識別子の導入は、RustのcrABIおよび動的リンクとの互換性における重要なギャップを埋めます。この提案は、シンボルマングリングの問題を解決し、異なるコンパイラバージョン間で型を一貫して識別する方法を提供します。この変更により、Rustはプラグインと動的リンクをサポートする能力が向上し、Rustでモジュラーかつ拡張可能なシステムを構築するためのより堅牢な基盤を提供します。",
+      "reason": "Key proposal for Rust's ABI stability.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d3e8930e094bcabfff9e1d3ce7347768fb5a0178ca1a1d7af8b469fa87d1cdfd",
+      "source": "Rust Internals",
+      "title": "`RUSTC_BOOTSTRAP`が積極的に非推奨とされる理由",
+      "url": "https://internals.rust-lang.org/t/why-is-rustc-bootstrap-so-actively-discouraged/24123#post_14",
+      "summary": "MusicalNinjaDad: 素晴らしいナイトリー-ベータ-安定版のリリースプロセスが存在する中で、第二の効果からの議論：個人的には、アプリでQoL機能を使おうとして不安定だとわかったとき、ナイトリーに切り替えて安定版には戻らない。",
+      "publishedAt": "2026-04-01T19:53:34.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11,
+        30,
+        47
+      ],
+      "suggestedTitle": "RUSTC_BOOTSTRAP: 非推奨の理由を理解する",
+      "suggestedSummary": "RUSTC_BOOTSTRAPに関する継続的な議論は、Rustの安定したリリースプロセスを迂回することに伴うリスクを浮き彫りにしています。これは、安定したコンパイラでナイトリーの機能にアクセスできるようにするものの、Rustが提供する安定性の保証を損ないます。この議論は、信頼性を確保し、Rustプロジェクトでの潜在的な破損を避けるために、安定したリリースプロセスに従うことの重要性を強調しています。",
+      "reason": "Critical for understanding Rust's stability model.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b1f9e30e318c6a301370817f898ff1346769410c6d9026425c06d134017d1d7a",
+      "source": "Rust Users Forum",
+      "title": "wee_allocの再活性化を検討中",
+      "url": "https://users.rust-lang.org/t/thinking-to-reactivate-wee-alloc/139331#post_1",
+      "summary": "wee_allocの再活性化を検討しています。wee_allocはRustの#[global_allocator]であり、その主な特徴は小さなWasmバイナリです。READMEでは、非圧縮のWasmが1 KiB未満であることを宣伝しています。内部的には、シンプルなファーストフィットのフリーリストアロケータであり、割り当てはO(n)、解放はO(1)です。また、Wasmバックエンドに加えて、Unix、Windows、および静的配列バックエンドも提供しています。2026年4月現在、アップストリームは静かどころか終了しています。最新の公開バージョンは2019年8月22日の0.4.5です。RustSecは…",
+      "publishedAt": "2026-04-01T15:56:40.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "f9d10ce14348d4fea1efd23869ecd22e4007510bb79c56ea0125acca0915c8d6",
+      "source": "Rust Users Forum",
+      "title": "Axumのボイラープレート疲れ — ベンチマーク付きで薄い意見層（Oxide）を構築",
+      "url": "https://users.rust-lang.org/t/axum-boilerplate-fatigue-i-built-a-thin-opinionated-layer-oxide-with-benchmarks/139313#post_5",
+      "summary": "良い指摘ですし、正しい方向で考えています。約5.9 µsの数値はスループット（wrk/負荷テスト）の数値から来ています。13–19 µsは、Criterionのマイクロベンチマークから得られたもので、ここでは個々のリクエストのレイテンシを測定しています。したがって、彼らはわずかに異なるものを測定しています。負荷テスト（wrk/k6）→ 同時実行時のエンドツーエンドのスループット、Criterion → 制御された環境でのリクエストごとのレイテンシ。実際のシナリオでは、通常スループットの数値の方がより代表的です。",
+      "publishedAt": "2026-04-01T08:09:52.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "becad2a86d04b5840da281e80daff990cfac237f85d0d1f71624f51b73988c31",
+      "source": "Rust Users Forum",
+      "title": "Rustにおけるスタックフルコルーチンモデルを用いた同期クレートの並行性リファクタリングに関する議論",
+      "url": "https://users.rust-lang.org/t/discussion-on-synchronous-crate-concurrency-refactor-using-stackful-coroutines-model-in-rust/139246#post_2",
+      "summary": "プロジェクトアップデート: v3.0.0-rc.10 リリース\nbincode-next v3.0.0-rc.10が本日リリースされ、非同期ファイバーモジュールに対する多くの小さな修正が含まれています。",
+      "publishedAt": "2026-04-01T12:16:07.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "80b28bbae2d2897e344a6a883f432c8b4746345565b49ebcac787fcac7435a9e",
+      "source": "Google News Rust",
+      "title": "Linux 7.1における多くのRustグラフィックスドライバの変更、NVIDIA Novaドライバの追加 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1rbjhEejlFdVh2TExwOFlTQl9EMXhzb2NxMzhZUENwbWRGb1J2Nks0VHdnLVZoZU9CYld6R2xtRk1RVE9hYVNPdnZ6OU1nTFlCQjk0eUJlUy1WRjhsMktIRkVB?oc=5",
+      "summary": "Linux 7.1における多くのRustグラフィックスドライバの変更、NVIDIA Novaドライバの追加 - Phoronix",
+      "publishedAt": "2026-03-31T14:22:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ea985ff611dc50a84747a9c44fb9e24872c32d3d8ab1749f766177b51cb4e0e9",
+      "source": "Google News Rust",
+      "title": "Linuxカーネル向けの新しいRustベースのBUS1カーネル内IPCが開発中 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UVzJjeUp2NVpRRmVHdTExWWhWZnNHQ2lvSEhLUHVTRjN5NTBIWVlCZ1kyYW1KUENhdDRsYVotZzRBVHJkZThsdFdjWTB4S1cxQ2tlcTlVRms?oc=5",
+      "summary": "Linuxカーネル向けの新しいRustベースのBUS1カーネル内IPCが開発中 - Phoronix",
+      "publishedAt": "2026-03-31T19:47:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-02T00:08:46.133Z"
+  }
+}
