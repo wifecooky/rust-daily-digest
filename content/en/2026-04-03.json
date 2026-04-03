@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-03",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "29cc3af6ef8fbb505d99b514cb47d6b0511083bf88e02a9ab887b68688bb52fe",
+      "source": "Rust Blog",
+      "title": "docs.rs: building fewer targets by default",
+      "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "summary": "Building fewer targets by default\nOn 2026-05-01, docs.rs will make a breaking change to its build\nbehavior.\nToday, if a crate does not define a targets list in its\ndocs.rs metadata, docs.rs builds documentation for a default\nlist of five targets.\nStarting on 2026-05-01, docs.rs will instead build documentation for only\nthe default target unless additional targets are requested explicitly.\nThis is the next step in a change we first introduced in 2020, when docs.rs\nadded support for opting into…",
+      "publishedAt": "2026-04-04T00:00:00.000Z",
+      "score": 30,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4
+      ],
+      "reason": "Impact on Rust documentation generation",
+      "suggestedTitle": "docs.rs to Build Fewer Targets by Default",
+      "suggestedSummary": "On May 1, 2026, docs.rs will implement a breaking change by defaulting to build fewer targets. This change aims to optimize resource usage and reduce build times. Developers need to be aware of this adjustment, as it may impact the availability of documentation for certain target-specific features. Ensuring compatibility with the new default settings will be crucial for maintaining comprehensive documentation access across diverse platforms.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9e1964beb58aae83bcb1913f00e2cfbed90b0d0b02397edd87233137d09f9593",
+      "source": "Tokio",
+      "title": "Tokio v1.47.4",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.47.4",
+      "summary": "1.47.4 (April 2nd, 2026)\nFixed\nsync: fix panic in Chan::recv_many when called with non-empty vector on closed channel (#7991)",
+      "publishedAt": "2026-04-02T12:41:18.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        41
+      ],
+      "reason": "Fixes critical panic in async operations",
+      "suggestedTitle": "Tokio v1.47.4 Fixes Panic in Chan::recv_many",
+      "suggestedSummary": "Tokio version 1.47.4 addresses a critical issue where a panic could occur in Chan::recv_many when called with a non-empty vector. This fix enhances the stability of asynchronous operations using Tokio channels, ensuring more reliable concurrent processing. Developers using Tokio for async Rust applications should update to this version to avoid potential runtime panics and improve the robustness of their systems.",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "10a2a48c3b02291f9e5b8c7963dbaa7f98b294eb98e0b01ef9d6fec7fcd7eca6",
+      "source": "Rust Users Forum",
+      "title": "Lifetime GATs for oldschool async closures",
+      "url": "https://users.rust-lang.org/t/lifetime-gats-for-oldschool-async-closures/139297#post_3",
+      "summary": "Oh, I never realized the Fn*-traits had this interaction with wrapper traits during type inference; that's a good pointer, thanks! \nI dont actually need the DelimitedFnOnce trait; I just introduced it to have a place to put the 'limit : 'bound constraint, so the whole thing simplifies to: Rust Playground\nIt's a shame the extra argument is necessary, but on the other hand, no extra traits are required, so that's great.\nI had hoped to build upon this by moving the argument type into the generic…",
+      "publishedAt": "2026-04-03T00:07:09.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "1b7e0cfdb472458052663901c42871503420e87e6142c458190c040487dfedaf",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Extremely fast MessagePack serializer for Rust",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_27",
+      "summary": "zerompk v0.3.0 has been released!\nGitHub\n  \n\nRelease v0.3.0 · nuskey8/zerompk\nWhat's Changed\n\nchore: add repo/docs url to Cargo.toml by @nuskey8 in #11\nUpdate bench image by @nuskey8 in #12\nfix: no_std compilation error by @nuskey8 in #14\nfeat: add c_enum option by @nuskey8 ...\n\n\n\nThis version fixes an issue where the build would fail when using no_std. Additionally, the c_enum option has been added, allowing you to serialize c-style enums as integer types!\n#[derive(FromMessagePack,…",
+      "publishedAt": "2026-04-02T11:04:44.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "d3ec7d19919ed279f3bb2a149282bb6fa2f3396d6823de446919ca41c173304d",
+      "source": "Google News Rust",
+      "title": "The Linux Kernel's Minimum Rust Version Supported Prepares For Rust 1.85 Baseline - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xZUJEak44T01VNW0wSllxYktFZ2poN09IRHZtTjROcENVZjNvY21PMTJfbko4TUpjWHdZYmt1Y09YdDlGUHhWVVloTmU4MW9ac0wtYlQxRzFVWms3aWJZZmd0RjZ6S3B3VjZkZg?oc=5",
+      "summary": "The Linux Kernel's Minimum Rust Version Supported Prepares For Rust 1.85 Baseline  Phoronix",
+      "publishedAt": "2026-04-01T13:25:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-03T00:09:25.776Z"
+  }
+}
