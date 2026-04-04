@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-04",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "29cc3af6ef8fbb505d99b514cb47d6b0511083bf88e02a9ab887b68688bb52fe",
+      "source": "Rust Blog",
+      "title": "docs.rs: building fewer targets by default",
+      "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "summary": "Building fewer targets by default\nOn 2026-05-01, docs.rs will make a breaking change to its build\nbehavior.\nToday, if a crate does not define a targets list in its\ndocs.rs metadata, docs.rs builds documentation for a default\nlist of five targets.\nStarting on 2026-05-01, docs.rs will instead build documentation for only\nthe default target unless additional targets are requested explicitly.\nThis is the next step in a change we first introduced in 2020, when docs.rs\nadded support for opting into…",
+      "publishedAt": "2026-04-04T00:00:00.000Z",
+      "score": 30,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        2
+      ],
+      "reason": "Breaking change in docs.rs build process",
+      "suggestedTitle": "docs.rs to Build Fewer Targets by Default",
+      "suggestedSummary": "Starting May 1, 2026, docs.rs will implement a breaking change by building fewer targets by default. This change aims to optimize resource usage and improve build times by focusing on the most relevant targets. Rust developers should prepare for this shift by ensuring their crates are compatible with the new default target set, potentially leading to faster documentation builds and reduced maintenance overhead.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "74678ba1e54e1735693c000d1f64542982d7b65567dca3fb14d397145c3a150c",
+      "source": "Tokio",
+      "title": "tokio-macros-2.7.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-macros-2.7.0",
+      "summary": "chore: prepare tokio-macros v2.7.0 (#8004)",
+      "publishedAt": "2026-04-03T07:37:58.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56,
+        57
+      ],
+      "reason": "Major updates in Tokio ecosystem",
+      "suggestedTitle": "Tokio v1.51.0 and tokio-macros v2.7.0 Released",
+      "suggestedSummary": "The Tokio ecosystem sees significant updates with the release of Tokio v1.51.0 and tokio-macros v2.7.0. New features include `get_peer_cred` on Hurd and enhancements to the runtime module. These updates aim to improve network programming capabilities and runtime performance for asynchronous Rust applications. Developers leveraging Tokio for concurrency will benefit from these optimizations and new functionalities, ensuring more robust and efficient applications.",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0102c9a699f59d36e5119bb0dd9fd59b6278ed3f2260c422ab929a60258bca4d",
+      "source": "Rust Users Forum",
+      "title": "Gnat - a typenum alternative equivalent to generic_const_exprs",
+      "url": "https://users.rust-lang.org/t/gnat-a-typenum-alternative-equivalent-to-generic-const-exprs/139397#post_1",
+      "summary": "Hey,\nI've been writing this on the side for over a year now and am happy to finally release my crate gnat. It is to generic_const_exprs what typenum was to min_const_generics: It allows using types instead of const generics, but unlike typenum, does not require any extra bounds to use operations on type numbers (powered by generic associated types). Here is an example of the elusive generic array concat function:\n// Ideal function, using #![feature(generic_const_expr)]\nconst fn…",
+      "publishedAt": "2026-04-03T19:26:19.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ced7420a3e9dd82a32c4195a8794904696d908249db4571f98aaad7faf6f0f53",
+      "source": "Zenn Rust (JP)",
+      "title": "[Rust]Tokioのwasm32-wasip2でHTTPリクエストクライアントとWebサーバーを作る(Wasmtime)",
+      "url": "https://zenn.dev/tkithrta/articles/af846e2018a920",
+      "summary": "Rust Version 1.82.0 (2024-10-17)にPromote wasm32-wasip2 to Tier 2がきてからaxumをWasmで動かすために様々な情報を集めていました。\n約1年半の時を経て、axumのトランスポート層のTCP/UDPを支えるTokioがwasm32-wasip2に対応したので試してみたいと思います。\nhttps://github.com/tokio-rs/tokio/discussions/8006\nRustのDevcontainerにWasmtimeとwasm32-wasip2ターゲットを追加します。\n{\n  \"name\": \"Rust\",...",
+      "publishedAt": "2026-04-03T20:11:44.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "691c82fcc7126ff377b053023eec83ac42169c3eb9adac4b5a646db4e71f86de",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-03 BoltFFI v0.22.1: 支持 Java 了",
+      "url": "https://rustcc.cn/article?id=18ee7171-a4a1-42d5-ad3b-1e91986c0372",
+      "summary": "Flow-Like: 工作流引擎\n\nflow-like是一个基于 Rust 开发的本地优先型可视化工作流自动化引擎仓库，核心特点是脱离云端依赖、高性能、全类型化且可全链路追踪，可运行在笔记本、服务器、手机等各类硬件设备上，彻底解决传统工作流工具的云锁定、黑盒化、性能低等问题。\n核心功能与生态\n可视化工作流开发\n提供 无代码 IDE（Visual Workflow Studio）：拖拽式积木化搭建工作流，支持类型感知引脚的智能连线、内联执行反馈、实时验证、快照调试；\n内置 900 + 节点：覆盖 API / 网 hooks、数据库、文件处理（Excel/CSV/PDF）、AI 模型 / 计算机视觉、消息通知（Slack/Discord/ 邮件）、IoT、逻辑控制、安全认证等场景，且节点库持续扩充。\n应用与模板生态\n支持将工作流打包为可共享的应用，内置存储功能，可离线 / 云端运行；同时提供模板商店，用户可浏览、分享自定义工作流模板，降低开发成本。\n白标与定制化能力\n主题定制：内置 Catppuccin、Cosmic Night 等多款主题，也可自定义；…",
+      "publishedAt": "2026-04-03T02:26:46.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0a40c1827d4aecfddfe27a98dac8ad1698e9d2f686f5b0d2d57c1d9c0cf9f92b",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-02 serde_cursor v0.4 发布：支持范围选取",
+      "url": "https://rustcc.cn/article?id=1fb8b0d2-884d-4888-8568-95246ad5cd13",
+      "summary": "serde_cursor v0.4 发布：支持范围选取\nserde_cursor 是一个从 serde 兼容的序列化数据（例如 JSON 格式）内容中读取部分内容的库，他不需要将整个序列化后的数据加载到内存，即可支持使用类似 jq 的语法读取内容。v0.4 新增了范围选取的能力，来读取 JSON 中数组内容的切片，类似下面的语法：\nCursor!(package[4..].dependencies);\nCursor!(package[..8].dependencies);\nCursor!(package[4..8].dependencies);\nCursor!(package[4..=8].dependencies);\n\nGithub: https://github.com/nik-rev/serde-cursor\nUbuntu 将采用 ntpd-rs 作为默认时间同步组件\n2026 年 3 月 26 日 Ubuntu 官方宣布，将在后续版本中采用Rust 语言编写的 ntpd-rs 作为默认时间同步客户端和服务端，最终替代 chrony、linuxptp，甚至有望取代 gpsd…",
+      "publishedAt": "2026-04-02T02:33:03.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-04T00:08:19.159Z"
+  }
+}

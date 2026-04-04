@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-04",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "29cc3af6ef8fbb505d99b514cb47d6b0511083bf88e02a9ab887b68688bb52fe",
+      "source": "Rust Blog",
+      "title": "docs.rs: デフォルトでビルドするターゲットを減らす",
+      "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "summary": "デフォルトでビルドするターゲットを減らす",
+      "publishedAt": "2026-04-04T00:00:00.000Z",
+      "score": 30,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        2
+      ],
+      "reason": "Breaking change in docs.rs build process",
+      "suggestedTitle": "docs.rs、デフォルトでビルドするターゲットを減少",
+      "suggestedSummary": "2026年5月1日から、docs.rsはデフォルトでビルドするターゲットを減らすという破壊的変更を実施します。この変更は、リソースの使用を最適化し、最も関連性の高いターゲットに集中することでビルド時間を改善することを目的としています。Rust開発者は、このシフトに備えて、自分のクレートが新しいデフォルトターゲットセットに対応していることを確認する必要があります。これにより、ドキュメントビルドの高速化やメンテナンスの負担軽減が期待されます。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "74678ba1e54e1735693c000d1f64542982d7b65567dca3fb14d397145c3a150c",
+      "source": "Tokio",
+      "title": "tokio-macros-2.7.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-macros-2.7.0",
+      "summary": "chore: tokio-macros v2.7.0 の準備 (#8004)",
+      "publishedAt": "2026-04-03T07:37:58.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56,
+        57
+      ],
+      "reason": "Major updates in Tokio ecosystem",
+      "suggestedTitle": "Tokio v1.51.0 と tokio-macros v2.7.0 がリリースされました",
+      "suggestedSummary": "Tokio エコシステムは、Tokio v1.51.0 と tokio-macros v2.7.0 のリリースにより大幅なアップデートを迎えました。新機能には、Hurd 上の `get_peer_cred` やランタイムモジュールの強化が含まれています。これらのアップデートは、非同期 Rust アプリケーションのネットワークプログラミング機能とランタイムパフォーマンスを向上させることを目的としています。Tokio を利用して並行処理を行う開発者は、これらの最適化と新機能から恩恵を受け、より堅牢で効率的なアプリケーションを実現できます。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0102c9a699f59d36e5119bb0dd9fd59b6278ed3f2260c422ab929a60258bca4d",
+      "source": "Rust Users Forum",
+      "title": "Gnat - generic_const_exprsに相当するtypenumの代替",
+      "url": "https://users.rust-lang.org/t/gnat-a-typenum-alternative-equivalent-to-generic-const-exprs/139397#post_1",
+      "summary": "こんにちは、\n私はこれを1年以上かけて書いてきましたが、ついに私のクレートgnatをリリースできることを嬉しく思います。これはgeneric_const_exprsに対するものであり、typenumがmin_const_genericsに対するものであったように、型をconst genericsの代わりに使用することを可能にします。しかし、typenumとは異なり、型数に対して操作を行うための追加の制約は必要ありません（generic associated typesによって強化されています）。以下は、難解なジェネリック配列結合関数の例です：\n// 理想的な関数、using #![feature(generic_const_expr)]\nconst fn…",
+      "publishedAt": "2026-04-03T19:26:19.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ced7420a3e9dd82a32c4195a8794904696d908249db4571f98aaad7faf6f0f53",
+      "source": "Zenn Rust (JP)",
+      "title": "[Rust]Tokioのwasm32-wasip2でHTTPリクエストクライアントとWebサーバーを作る(Wasmtime)",
+      "url": "https://zenn.dev/tkithrta/articles/af846e2018a920",
+      "summary": "Rust Version 1.82.0 (2024-10-17)において、wasm32-wasip2がTier 2に昇格してから、axumをWasmで動かすために様々な情報を集めていました。約1年半の時を経て、axumのトランスポート層のTCP/UDPを支えるTokioがwasm32-wasip2に対応したので試してみたいと思います。https://github.com/tokio-rs/tokio/discussions/8006 RustのDevcontainerにWasmtimeとwasm32-wasip2ターゲットを追加します。",
+      "publishedAt": "2026-04-03T20:11:44.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "691c82fcc7126ff377b053023eec83ac42169c3eb9adac4b5a646db4e71f86de",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-03 BoltFFI v0.22.1: Javaをサポート",
+      "url": "https://rustcc.cn/article?id=18ee7171-a4a1-42d5-ad3b-1e91986c0372",
+      "summary": "Flow-Like: ワークフローエンジン\n\nflow-likeはRustを基に開発された、ローカル優先型のビジュアルワークフロー自動化エンジンのリポジトリで、クラウド依存からの脱却、高性能、完全型付け、全リンクトレース可能といった特徴を持ち、ノートパソコン、サーバー、スマートフォンなどの様々なハードウェアで動作可能です。これにより、従来のワークフローツールが抱えるクラウドロックイン、ブラックボックス化、低パフォーマンスといった問題を完全に解決します。\n\nコア機能とエコシステム\nビジュアルワークフロー開発\nノーコードIDE（Visual Workflow Studio）を提供：ドラッグ＆ドロップ式でブロックを組み立てるワークフロー開発をサポートし、タイプ認識ピンのインテリジェント接続、インライン実行フィードバック、リアルタイム検証、スナップショットデバッグを可能にします。\n\n900以上のノードを内蔵：API/ウェブフック、データベース、ファイル処理（Excel/CSV/PDF）、AIモデル/コンピュータビジョン、メッセージ通知（Slack/Discord/メール）、IoT、ロジック制御、セキュリティ認証などのシナリオをカバーし、ノードライブラリは継続的に拡充されています。\n\nアプリケーションとテンプレートエコシステム\nワークフローを共有可能なアプリケーションとしてパッケージ化することをサポートし、内蔵ストレージ機能によりオフライン/クラウドでの実行が可能です。また、テンプレートストアを提供し、ユーザーはカスタムワークフローテンプレートを閲覧、共有することで開発コストを削減できます。\n\nホワイトラベルとカスタマイズ能力\nテーマカスタマイズ：Catppuccin、Cosmic Nightなどの複数のテーマを内蔵しており、カスタマイズも可能です。…",
+      "publishedAt": "2026-04-03T02:26:46.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0a40c1827d4aecfddfe27a98dac8ad1698e9d2f686f5b0d2d57c1d9c0cf9f92b",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-02 serde_cursor v0.4 リリース：範囲選択をサポート",
+      "url": "https://rustcc.cn/article?id=1fb8b0d2-884d-4888-8568-95246ad5cd13",
+      "summary": "serde_cursor v0.4 リリース：範囲選択をサポート",
+      "publishedAt": "2026-04-02T02:33:03.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-04T00:08:41.490Z"
+  }
+}

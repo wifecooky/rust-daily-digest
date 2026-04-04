@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-04",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "29cc3af6ef8fbb505d99b514cb47d6b0511083bf88e02a9ab887b68688bb52fe",
+      "source": "Rust Blog",
+      "title": "docs.rs：默认构建更少的目标",
+      "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "summary": "默认构建更少的目标",
+      "publishedAt": "2026-04-04T00:00:00.000Z",
+      "score": 30,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        2
+      ],
+      "reason": "Breaking change in docs.rs build process",
+      "suggestedTitle": "docs.rs 将默认构建更少的目标",
+      "suggestedSummary": "从2026年5月1日起，docs.rs将实施一个重大变更，默认构建更少的目标。此更改旨在通过专注于最相关的目标来优化资源使用并改善构建时间。Rust开发者应准备好迎接这一变化，确保他们的crate与新的默认目标集兼容，这可能会导致更快的文档构建和减少的维护开销。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "74678ba1e54e1735693c000d1f64542982d7b65567dca3fb14d397145c3a150c",
+      "source": "Tokio",
+      "title": "tokio-macros-2.7.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-macros-2.7.0",
+      "summary": "杂项：准备 tokio-macros v2.7.0 (#8004)",
+      "publishedAt": "2026-04-03T07:37:58.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56,
+        57
+      ],
+      "reason": "Major updates in Tokio ecosystem",
+      "suggestedTitle": "Tokio v1.51.0 和 tokio-macros v2.7.0 发布",
+      "suggestedSummary": "随着 Tokio v1.51.0 和 tokio-macros v2.7.0 的发布，Tokio 生态系统迎来了重大更新。新功能包括 Hurd 上的 `get_peer_cred` 和对运行时模块的增强。这些更新旨在提高异步 Rust 应用程序的网络编程能力和运行时性能。利用 Tokio 进行并发的开发人员将从这些优化和新功能中受益，确保应用程序更加健壮和高效。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0102c9a699f59d36e5119bb0dd9fd59b6278ed3f2260c422ab929a60258bca4d",
+      "source": "Rust Users Forum",
+      "title": "Gnat - 一个等同于 generic_const_exprs 的 typenum 替代品",
+      "url": "https://users.rust-lang.org/t/gnat-a-typenum-alternative-equivalent-to-generic-const-exprs/139397#post_1",
+      "summary": "嗨，\n我已经在业余时间写了这个项目一年多，现在很高兴终于发布了我的 crate gnat。它对于 generic_const_exprs 的作用就像 typenum 之于 min_const_generics：允许使用类型而不是常量泛型，但与 typenum 不同的是，它不需要任何额外的限制来对类型数字进行操作（由泛型关联类型提供支持）。以下是一个难以捉摸的泛型数组连接函数的示例：\n// 理想函数，使用 #![feature(generic_const_expr)]\nconst fn…",
+      "publishedAt": "2026-04-03T19:26:19.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ced7420a3e9dd82a32c4195a8794904696d908249db4571f98aaad7faf6f0f53",
+      "source": "Zenn Rust (JP)",
+      "title": "[Rust] 使用Tokio在wasm32-wasip2上创建HTTP请求客户端和Web服务器（Wasmtime）",
+      "url": "https://zenn.dev/tkithrta/articles/af846e2018a920",
+      "summary": "自从Rust版本1.82.0（2024-10-17）将wasm32-wasip2提升为Tier 2后，我一直在收集各种信息以便在Wasm上运行axum。经过大约一年半的时间，支持axum传输层TCP/UDP的Tokio已经适配了wasm32-wasip2，所以我想尝试一下。https://github.com/tokio-rs/tokio/discussions/8006 在Rust的Devcontainer中添加Wasmtime和wasm32-wasip2目标。",
+      "publishedAt": "2026-04-03T20:11:44.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "691c82fcc7126ff377b053023eec83ac42169c3eb9adac4b5a646db4e71f86de",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-03 BoltFFI v0.22.1: 支持 Java 了",
+      "url": "https://rustcc.cn/article?id=18ee7171-a4a1-42d5-ad3b-1e91986c0372",
+      "summary": "Flow-Like: 工作流引擎\n\nflow-like是一个基于 Rust 开发的本地优先型可视化工作流自动化引擎仓库，核心特点是脱离云端依赖、高性能、全类型化且可全链路追踪，可运行在笔记本、服务器、手机等各类硬件设备上，彻底解决传统工作流工具的云锁定、黑盒化、性能低等问题。\n核心功能与生态\n可视化工作流开发\n提供 无代码 IDE（Visual Workflow Studio）：拖拽式积木化搭建工作流，支持类型感知引脚的智能连线、内联执行反馈、实时验证、快照调试；\n内置 900 + 节点：覆盖 API / 网 hooks、数据库、文件处理（Excel/CSV/PDF）、AI 模型 / 计算机视觉、消息通知（Slack/Discord/ 邮件）、IoT、逻辑控制、安全认证等场景，且节点库持续扩充。\n应用与模板生态\n支持将工作流打包为可共享的应用，内置存储功能，可离线 / 云端运行；同时提供模板商店，用户可浏览、分享自定义工作流模板，降低开发成本。\n白标与定制化能力\n主题定制：内置 Catppuccin、Cosmic Night 等多款主题，也可自定义；…",
+      "publishedAt": "2026-04-03T02:26:46.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0a40c1827d4aecfddfe27a98dac8ad1698e9d2f686f5b0d2d57c1d9c0cf9f92b",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-02 serde_cursor v0.4 发布：支持范围选取",
+      "url": "https://rustcc.cn/article?id=1fb8b0d2-884d-4888-8568-95246ad5cd13",
+      "summary": "serde_cursor v0.4 发布：支持范围选取\nserde_cursor 是一个从 serde 兼容的序列化数据（例如 JSON 格式）内容中读取部分内容的库，他不需要将整个序列化后的数据加载到内存，即可支持使用类似 jq 的语法读取内容。v0.4 新增了范围选取的能力，来读取 JSON 中数组内容的切片，类似下面的语法：\nCursor!(package[4..].dependencies);\nCursor!(package[..8].dependencies);\nCursor!(package[4..8].dependencies);\nCursor!(package[4..=8].dependencies);\n\nGithub: https://github.com/nik-rev/serde-cursor\nUbuntu 将采用 ntpd-rs 作为默认时间同步组件\n2026 年 3 月 26 日 Ubuntu 官方宣布，将在后续版本中采用Rust 语言编写的 ntpd-rs 作为默认时间同步客户端和服务端，最终替代 chrony、linuxptp，甚至有望取代 gpsd…",
+      "publishedAt": "2026-04-02T02:33:03.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-04T00:08:27.563Z"
+  }
+}
