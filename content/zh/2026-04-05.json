@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-05",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "00bae12495b8d09234830c0ba6c14399b978541ee80c5e296b06b5ab12e02fb2",
+      "source": "Google News Rust",
+      "title": "Rust 1.76.0：带来了哪些变化？ - HackerNoon",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0aDdzVmhHZy0td1JGMDdqenJUUGZ6TWdFWmxSWWNVYXgxX3VQWjVMUWp6ZFBSTzBza2kzUUJxQlIwY0FmYW85M0hiOExOa0ZPWTV5Vk1HMm1aWTdOajU0ZU5NcUtoQVBEeDZ5VnRB?oc=5",
+      "summary": "Rust 1.76.0：带来了哪些变化？  HackerNoon",
+      "publishedAt": "2026-04-04T19:18:07.000Z",
+      "score": 36,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        2,
+        3
+      ],
+      "reason": "Major language release and WebAssembly impact",
+      "suggestedTitle": "Rust 1.76.0发布，更新了WebAssembly目标",
+      "suggestedSummary": "Rust 1.76.0引入了几个关键更新，包括对WebAssembly目标的更改和未定义符号的处理。本次发布优化了WebAssembly的编译过程，可能会影响依赖于特定符号处理的现有项目。开发者应审查这些变化，以确保与当前基于WebAssembly的应用程序兼容。此次发布继续体现了Rust在跨平台性能和稳定性方面的改进承诺。",
+      "relatedSources": [
+        "Google News Rust",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "29cc3af6ef8fbb505d99b514cb47d6b0511083bf88e02a9ab887b68688bb52fe",
+      "source": "Rust Blog",
+      "title": "docs.rs：默认构建更少的目标",
+      "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "summary": "默认构建更少的目标",
+      "publishedAt": "2026-04-04T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        68
+      ],
+      "reason": "Affects documentation generation for Rust projects",
+      "suggestedTitle": "即将到来的docs.rs构建过程重大变更",
+      "suggestedSummary": "2026年5月1日，docs.rs将通过默认构建更少的目标来实施重大变更。此调整旨在优化资源使用并改善文档构建时间。Rust开发者应注意此更改，因为它可能会影响某些文档目标的可用性。建议审查受影响的目标，并相应调整您的项目以保持文档的可访问性。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "74678ba1e54e1735693c000d1f64542982d7b65567dca3fb14d397145c3a150c",
+      "source": "Tokio",
+      "title": "tokio-macros-2.7.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-macros-2.7.0",
+      "summary": "任务：准备 tokio-macros v2.7.0 (#8004)",
+      "publishedAt": "2026-04-03T07:37:58.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c12fb1f08b400dd5efa2a4f1c49d260b4a705a84f83166a0a3bce022a424efa7",
+      "source": "Tokio",
+      "title": "Tokio v1.51.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.51.0",
+      "summary": "1.51.0（2026年4月3日）\n新增\n网络：在Hurd上实现get_peer_cred（#7989）\n运行时：添加tokio::runtime::worker_index()（#7921）\n运行时：添加运行时名称（#7924）\n运行时：稳定LocalRuntime（#7557）\nwasm：添加wasm32-wasip2网络支持（#7933）\n更改\n运行时：从LIFO槽中窃取任务（#7431）\n修复\n文档：不显示“仅在非loom上可用。”文档标签（#7977）\n宏：改善整体宏卫生（#7997）\n同步：修复Notify中notify_waiters的优先级（#7996）\n同步：修复在…中的panic",
+      "publishedAt": "2026-04-03T08:43:22.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "95baffb08c251b951a8dad6207413470e53af26694e26075ace226008667a5d8",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - 极快的Rust语言MessagePack序列化器",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_28",
+      "summary": "zerompk 已被添加到 rust_serialization_benchmark！\n\nGitHub - djkoloski/rust_serialization_benchmark: Rust序列化框架的基准测试\nRust序列化框架的基准测试\n\n在几乎所有类型的messagepack序列化器中，它实现了最快的执行时间。太棒了！",
+      "publishedAt": "2026-04-04T04:44:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0db2e20cdeee6da4bed702b960e745cb8e9a4e9da34bea8c0f2a12bb99946410",
+      "source": "Rust Users Forum",
+      "title": "Burn语音训练：用于Burn的语音模型训练流水线",
+      "url": "https://users.rust-lang.org/t/burn-speech-training-speech-model-training-pipeline-for-burn/139400#post_1",
+      "summary": "我正在开源一个基于Burn构建的语音模型训练流水线。它使用CTC损失从原始音频中训练一个发音评分模型，包含MFCC特征提取、LibriSpeech数据加载，并与人工标注数据（SpeechOcean762）进行评估。当我需要时，找不到任何用于Burn的语音训练示例，所以我将其作为参考发布。138个测试，可在CPU或CUDA上运行，MIT/Apache-2.0许可证。快速开始：\ngit clone <https://github.com/dnvt/burn-speech-training>\ncd…",
+      "publishedAt": "2026-04-04T02:02:09.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-05T00:08:23.548Z"
+  }
+}

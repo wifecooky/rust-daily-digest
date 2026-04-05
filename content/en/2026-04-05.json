@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-05",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "00bae12495b8d09234830c0ba6c14399b978541ee80c5e296b06b5ab12e02fb2",
+      "source": "Google News Rust",
+      "title": "Rust 1.76.0: What Changes Did It Bring In? - HackerNoon",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0aDdzVmhHZy0td1JGMDdqenJUUGZ6TWdFWmxSWWNVYXgxX3VQWjVMUWp6ZFBSTzBza2kzUUJxQlIwY0FmYW85M0hiOExOa0ZPWTV5Vk1HMm1aWTdOajU0ZU5NcUtoQVBEeDZ5VnRB?oc=5",
+      "summary": "Rust 1.76.0: What Changes Did It Bring In?  HackerNoon",
+      "publishedAt": "2026-04-04T19:18:07.000Z",
+      "score": 36,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        2,
+        3
+      ],
+      "reason": "Major language release and WebAssembly impact",
+      "suggestedTitle": "Rust 1.76.0 Released with WebAssembly Target Updates",
+      "suggestedSummary": "Rust 1.76.0 introduces several key updates, including changes to WebAssembly targets and handling of undefined symbols. This release refines the WebAssembly compilation process, potentially affecting existing projects that rely on specific symbol handling. Developers should review the changes to ensure compatibility with their current WebAssembly-based applications. The release continues Rust's commitment to improving performance and stability across platforms.",
+      "relatedSources": [
+        "Google News Rust",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "29cc3af6ef8fbb505d99b514cb47d6b0511083bf88e02a9ab887b68688bb52fe",
+      "source": "Rust Blog",
+      "title": "docs.rs: building fewer targets by default",
+      "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "summary": "Building fewer targets by default\nOn 2026-05-01, docs.rs will make a breaking change to its build\nbehavior.\nToday, if a crate does not define a targets list in its\ndocs.rs metadata, docs.rs builds documentation for a default\nlist of five targets.\nStarting on 2026-05-01, docs.rs will instead build documentation for only\nthe default target unless additional targets are requested explicitly.\nThis is the next step in a change we first introduced in 2020, when docs.rs\nadded support for opting into…",
+      "publishedAt": "2026-04-04T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        68
+      ],
+      "reason": "Affects documentation generation for Rust projects",
+      "suggestedTitle": "Upcoming Breaking Change in docs.rs Build Process",
+      "suggestedSummary": "On May 1, 2026, docs.rs will implement a breaking change by building fewer targets by default. This adjustment aims to optimize resource usage and improve documentation build times. Rust developers should be aware of this change, as it may impact the availability of certain documentation targets. It is recommended to review the affected targets and adjust your projects accordingly to maintain documentation accessibility.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "74678ba1e54e1735693c000d1f64542982d7b65567dca3fb14d397145c3a150c",
+      "source": "Tokio",
+      "title": "tokio-macros-2.7.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-macros-2.7.0",
+      "summary": "chore: prepare tokio-macros v2.7.0 (#8004)",
+      "publishedAt": "2026-04-03T07:37:58.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c12fb1f08b400dd5efa2a4f1c49d260b4a705a84f83166a0a3bce022a424efa7",
+      "source": "Tokio",
+      "title": "Tokio v1.51.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.51.0",
+      "summary": "1.51.0 (April 3rd, 2026)\nAdded\nnet: implement get_peer_cred on Hurd (#7989)\nruntime: add tokio::runtime::worker_index() (#7921)\nruntime: add runtime name (#7924)\nruntime: stabilize LocalRuntime (#7557)\nwasm: add wasm32-wasip2 networking support (#7933)\nChanged\nruntime: steal tasks from the LIFO slot (#7431)\nFixed\ndocs: do not show \"Available on non-loom only.\" doc label (#7977)\nmacros: improve overall macro hygiene (#7997)\nsync: fix notify_waiters priority in Notify (#7996)\nsync: fix panic in…",
+      "publishedAt": "2026-04-03T08:43:22.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "95baffb08c251b951a8dad6207413470e53af26694e26075ace226008667a5d8",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Extremely fast MessagePack serializer for Rust",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_28",
+      "summary": "zerompk has been added to rust_serialization_benchmark!\ngithub.com\n  \nGitHub - djkoloski/rust_serialization_benchmark: Benchmarks for rust serialization frameworks\nBenchmarks for rust serialization frameworks\n\n\n\nIt achieves the fastest execution time in almost all genres among messagepack serializers. Wow!",
+      "publishedAt": "2026-04-04T04:44:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0db2e20cdeee6da4bed702b960e745cb8e9a4e9da34bea8c0f2a12bb99946410",
+      "source": "Rust Users Forum",
+      "title": "Burn-speech-training: speech model training pipeline for Burn",
+      "url": "https://users.rust-lang.org/t/burn-speech-training-speech-model-training-pipeline-for-burn/139400#post_1",
+      "summary": "I’m open-sourcing a speech model training pipeline built on Burn. It trains a pronunciation scoring model from raw audio using CTC loss, with MFCC feature extraction, LibriSpeech data loading, and evaluation against human-labeled data (SpeechOcean762).\nI couldn’t find any speech training examples for Burn when I needed one, so I’m putting this out as a reference. 138 tests, runs on CPU or CUDA, MIT/Apache-2.0.\nQuick start:\ngit clone <https://github.com/dnvt/burn-speech-training>\ncd…",
+      "publishedAt": "2026-04-04T02:02:09.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-05T00:08:16.977Z"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-05",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "00bae12495b8d09234830c0ba6c14399b978541ee80c5e296b06b5ab12e02fb2",
+      "source": "Google News Rust",
+      "title": "Rust 1.76.0: どのような変更がもたらされたのか？ - HackerNoon",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB0aDdzVmhHZy0td1JGMDdqenJUUGZ6TWdFWmxSWWNVYXgxX3VQWjVMUWp6ZFBSTzBza2kzUUJxQlIwY0FmYW85M0hiOExOa0ZPWTV5Vk1HMm1aWTdOajU0ZU5NcUtoQVBEeDZ5VnRB?oc=5",
+      "summary": "Rust 1.76.0: どのような変更がもたらされたのか？  HackerNoon",
+      "publishedAt": "2026-04-04T19:18:07.000Z",
+      "score": 36,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        2,
+        3
+      ],
+      "reason": "Major language release and WebAssembly impact",
+      "suggestedTitle": "Rust 1.76.0がWebAssemblyターゲットの更新と共にリリース",
+      "suggestedSummary": "Rust 1.76.0は、WebAssemblyターゲットの変更や未定義シンボルの処理を含むいくつかの重要な更新を導入しました。このリリースはWebAssemblyのコンパイルプロセスを改善し、特定のシンボル処理に依存する既存のプロジェクトに影響を与える可能性があります。開発者は、現在のWebAssemblyベースのアプリケーションとの互換性を確保するために変更点を確認する必要があります。このリリースは、プラットフォーム全体でのパフォーマンスと安定性の向上に対するRustの取り組みを継続しています。",
+      "relatedSources": [
+        "Google News Rust",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "29cc3af6ef8fbb505d99b514cb47d6b0511083bf88e02a9ab887b68688bb52fe",
+      "source": "Rust Blog",
+      "title": "docs.rs: デフォルトでビルドするターゲットを減らす",
+      "url": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "summary": "デフォルトでビルドするターゲットを減らす",
+      "publishedAt": "2026-04-04T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        68
+      ],
+      "reason": "Affects documentation generation for Rust projects",
+      "suggestedTitle": "docs.rsのビルドプロセスにおける今後の破壊的変更",
+      "suggestedSummary": "2026年5月1日、docs.rsはデフォルトでビルドするターゲットを減らすことで破壊的変更を実施します。この調整は、リソースの使用を最適化し、ドキュメントのビルド時間を改善することを目的としています。Rust開発者は、この変更が特定のドキュメントターゲットの利用可能性に影響を与える可能性があるため、注意が必要です。影響を受けるターゲットを確認し、ドキュメントのアクセス性を維持するためにプロジェクトを適切に調整することをお勧めします。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "74678ba1e54e1735693c000d1f64542982d7b65567dca3fb14d397145c3a150c",
+      "source": "Tokio",
+      "title": "tokio-macros-2.7.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-macros-2.7.0",
+      "summary": "雑務: tokio-macros v2.7.0 の準備 (#8004)",
+      "publishedAt": "2026-04-03T07:37:58.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c12fb1f08b400dd5efa2a4f1c49d260b4a705a84f83166a0a3bce022a424efa7",
+      "source": "Tokio",
+      "title": "Tokio v1.51.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.51.0",
+      "summary": "1.51.0 (2026年4月3日)\n追加\nnet: Hurdでget_peer_credを実装 (#7989)\nruntime: tokio::runtime::worker_index()を追加 (#7921)\nruntime: ランタイム名を追加 (#7924)\nruntime: LocalRuntimeを安定化 (#7557)\nwasm: wasm32-wasip2ネットワーキングサポートを追加 (#7933)\n変更\nruntime: LIFOスロットからタスクを盗む (#7431)\n修正\nドキュメント: \"Available on non-loom only.\"のドキュメントラベルを表示しない (#7977)\nマクロ: 全体的なマクロの衛生を改善 (#7997)\n同期: Notifyでnotify_waitersの優先順位を修正 (#7996)\n同期: パニックを修正中…",
+      "publishedAt": "2026-04-03T08:43:22.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "95baffb08c251b951a8dad6207413470e53af26694e26075ace226008667a5d8",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Rust向けの超高速MessagePackシリアライザー",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_28",
+      "summary": "zerompkがrust_serialization_benchmarkに追加されました！\n\nGitHub - djkoloski/rust_serialization_benchmark: Rustシリアライゼーションフレームワークのベンチマーク\nRustシリアライゼーションフレームワークのベンチマーク\n\nほぼすべてのジャンルで、MessagePackシリアライザーの中で最速の実行時間を達成しています。すごい！",
+      "publishedAt": "2026-04-04T04:44:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "0db2e20cdeee6da4bed702b960e745cb8e9a4e9da34bea8c0f2a12bb99946410",
+      "source": "Rust Users Forum",
+      "title": "Burn-speech-training: Burn用の音声モデルトレーニングパイプライン",
+      "url": "https://users.rust-lang.org/t/burn-speech-training-speech-model-training-pipeline-for-burn/139400#post_1",
+      "summary": "私は、Burn上に構築された音声モデルトレーニングパイプラインをオープンソース化しています。これは、生の音声からCTC損失を使用して発音スコアリングモデルをトレーニングし、MFCC特徴抽出、LibriSpeechデータの読み込み、人間がラベル付けしたデータ（SpeechOcean762）に対する評価を行います。Burn用の音声トレーニング例が見つからなかったため、参考としてこれを公開します。138のテストがあり、CPUまたはCUDAで実行可能、MIT/Apache-2.0ライセンスです。クイックスタート: git clone <https://github.com/dnvt/burn-speech-training> cd...",
+      "publishedAt": "2026-04-04T02:02:09.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-05T00:08:28.411Z"
+  }
+}
