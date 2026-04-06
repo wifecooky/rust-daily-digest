@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-06",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "0e134359f95b8a106d65e3007c29803f089071888ba3151651412c2a305cc398",
+      "source": "Rust Internals",
+      "title": "【事前事前RFC】動的ライブラリ提案",
+      "url": "https://internals.rust-lang.org/t/pre-pre-rfc-dynamic-library-proposal/24135#post_2",
+      "summary": "LouChiSoft: では、Rustはどのように適合するのでしょうか？動的ライブラリをコンパイルする際に、同じパターンをRustにも適用できると思います。ただし、プラットフォーム固有の.libファイルを取得する代わりに、.rimportファイルのようなものを取得します。目標は、ライブラリのコンパイル中に、公開されているすべてのシンボルが、そのコンパイル時のABIと共に.rimportファイルにエクスポートされることです。ここでは固定ABIはなく、ツールチェーンが使用したものだけです…",
+      "publishedAt": "2026-04-05T18:32:07.000Z",
+      "score": 57,
+      "relatedCount": 8,
+      "candidateNumbers": [
+        1,
+        13,
+        36
+      ],
+      "reason": "Potential Rust language feature",
+      "suggestedTitle": "Rustの動的ライブラリ提案が注目を集める",
+      "suggestedSummary": "Rustの動的ライブラリに関する新しい事前事前RFC提案が導入され、Rust Internalsで議論を呼んでいます。この提案は、動的リンクのために既存のメタデータファイル（.rmeta）を利用することを提案しており、固定ABIなしでRustプログラムがライブラリを動的にロードできる可能性があります。これは、特に動的リンクが必要な環境でのモジュラーアプリケーションの構築において、Rustの能力を大幅に向上させる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "83141726c0f8086187b0139782c4640ff38643b158068b8eb1548575c492c7ec",
+      "source": "Rust Users Forum",
+      "title": "Rustにおけるコンパイル時依存性注入（dynなし、Arcなし、ランタイムコンテナなし）",
+      "url": "https://users.rust-lang.org/t/compile-time-dependency-injection-in-rust-no-dyn-no-arc-no-runtime-container/139426#post_1",
+      "summary": "ある規模になると、Rustアプリケーションではメモリ安全性やパフォーマンスよりも構成が難しい問題になります。Javaのようなエコシステムでは、通常、依存性注入フレームワークでこれに対処しますが、それらはランタイムメカニズム（リフレクション、コンテナ、動的解決）に大きく依存しており、Rustにはうまく適合しません。私は異なる方向性を探求してきました：依存性注入を完全にコンパイル時に行うことは可能でしょうか？私が最終的に採用したアプローチは、能力契約としてのトレイトに基づいています…",
+      "publishedAt": "2026-04-05T21:31:16.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        9
+      ],
+      "reason": "Innovative Rust design pattern",
+      "suggestedTitle": "Rustにおけるコンパイル時依存性注入",
+      "suggestedSummary": "Rustにおける依存性注入の新しいアプローチが議論されています。これはランタイムコンテナではなく、コンパイル時の解決に焦点を当てています。この方法は、ランタイムポリモーフィズムに伝統的に使用される'dyn'や'Arc'を避け、Rustの型システムを活用してコンパイル時に依存関係を解決します。これにより、ランタイムのオーバーヘッドと動的ディスパッチに関連する潜在的なエラーを減らし、より効率的で安全なRustアプリケーションを実現できます。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "8f4f0653bcc266e51096ecebb5adb4c0e48a5b76b8371417f1e67f247329c390",
+      "source": "Rust Users Forum",
+      "title": "Testx: 11言語に対応するユニバーサルテストランナー、Rustで作成",
+      "url": "https://users.rust-lang.org/t/testx-universal-test-runner-for-11-languages-written-in-rust/139420#post_1",
+      "summary": "皆さん、こんにちは！私はtestxを開発しました。これはCLIツールで、プロジェクトの言語とテストフレームワークを自動検出し、統一された美しい出力でテストを実行します。設定は不要で、Rust、Go、Python、JS/TS、Java、C/C++、Ruby、Elixir、PHP、.NET、またはZigプロジェクトでtestxを実行するだけです。異なるコードベースでcargo testやgo test -v ./...、npx vitest run、uv run pytestを覚える必要がなくなります。基本的なテスト実行を超えて、CI向けの機能も備えています：シャーディング（--partition...",
+      "publishedAt": "2026-04-05T12:38:07.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "eab76ea22be8a6a736dcab149cec74348f1c092226d6fa7d9a4e7280631dc310",
+      "source": "Rust Users Forum",
+      "title": "スピーチ準備：音声オーディオ前処理のための特化したRustクレート",
+      "url": "https://users.rust-lang.org/t/speech-prep-a-focused-rust-crate-for-speech-audio-preprocessing/139417#post_1",
+      "summary": "私は、スピーチパイプラインのフロントエンド用の小さなRustクレートであるspeech-prepをオープンソース化しました。これには、オーディオフォーマットの検出、WAVデコード、前処理、チャンク化、VADが含まれます。https://crates.io/crates/speech-prep これはプライベートなコードベースから抽出され、スタンドアロンのクレートとしてクリーンアップされ、より厳密な公開APIと狭い範囲を持つようにしました。目標は一般的なオーディオツールボックスを作ることではなく、一般的なスピーチ準備のプロセスをシンプルで予測可能、かつRustシステムに統合しやすくすることです。",
+      "publishedAt": "2026-04-05T11:12:26.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "ab4c2605853e5d66e2753deaa9905f79412fc9d4e1fdf2c7113a477d5753ffe7",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust向けのECS駆動型双方向通信サーバーフレームワークをリリースしました",
+      "url": "https://zenn.dev/hino_rs/articles/73f711641e34df",
+      "summary": "Ecson\nRust向けのECS駆動型双方向通信サーバーフレームワーク、Ecson（エクソン）を開発しています。先日v0.1.0をリリースしました。\n\n作り始めた理由\nもともとは大人数に耐えられるメタバースをいつか作りたいと思ったからです。双方向通信に最適化されており、低レイテンシよりも「高負荷対応」「多クライアント対応」を求めるフレームワークが必要でした。\n\nECSによる恩恵\nとにかくSoAにしたかったです。もともとBevyでの開発をしたことがあるのもあって、ECSを採用してみました。SoAによる恩恵は当然ですが、ECSによる副産物も多かったです。\n\nArc<...",
+      "publishedAt": "2026-04-05T02:56:52.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "12e9e9e3aed14a79e46223e19b6fff245846f79799a7a96fe410e84950f6b6d9",
+      "source": "Lobsters Rust",
+      "title": "Roogle: Rust API検索エンジン",
+      "url": "https://github.com/roogle-rs/roogle",
+      "summary": "コメント",
+      "publishedAt": "2026-04-05T09:42:46.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-06T00:09:44.955Z"
+  }
+}
