@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-07",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "f21db6edb61c079cc2a8e51e4c2a4df4b70a46c83cf1310d84b5c69d5f7a0c68",
+      "source": "Google News Rust",
+      "title": "Rust Coreutils 0.8 带来显著性能提升 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZLWRVSzFSWHZ4c2JlQzZTYXh4MWtvYVlwME9qRU5FRjFhUE9peW5pbWVuSHdrQTdlc3FqbUo2WXBtWTRhT0ZjTmRxWTg4RlVkaFVRTVNZRUpjLWN0cEpFWXllaW9OWDRl?oc=5",
+      "summary": "Rust Coreutils 0.8 带来显著性能提升  Phoronix",
+      "publishedAt": "2026-04-06T22:01:00.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        13
+      ],
+      "suggestedTitle": "Rust Coreutils 0.8 提升性能",
+      "suggestedSummary": "Rust Coreutils 0.8 已发布，带来了显著的性能改进。此次更新优化了 Rust Coreutils 套件中的多个工具，使其更快更高效。使用 Rust 进行系统级应用开发的开发者可以期待更快的执行速度，这对于性能关键任务至关重要。",
+      "reason": "Performance boost for Rust system tools",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "7784724c275dfc59b2803df532f29c31cb1960cdc881e7f1ffa8f30f75e3773d",
+      "source": "rust-analyzer",
+      "title": "更新日志 #322",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/06/changelog-322.html",
+      "summary": "提交: 38fb8f9\n2026-04-06 (v0.3.2854)\n通用 VSIX\n此版本增加了一个平台无关的 VSIX，VS Code 将在 rust-analyzer 不提供二进制文件的平台上安装它。\n在支持的平台上，扩展应该像以前一样工作，但一个代码错误可能导致它无法激活。\n如果发生这种情况，您应该卸载并重新安装 rust-analyzer 扩展。\n新功能\n#21928（首次贡献）支持在 #[doc = …​] 属性中展开宏。\n#19956 实现…",
+      "publishedAt": "2026-04-06T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        69
+      ],
+      "suggestedTitle": "Rust-analyzer 更新日志 #322 发布",
+      "suggestedSummary": "最新的 rust-analyzer 更新版本 0.3.2854 包含一个通用的 VSIX，使其平台无关。此版本通过简化跨不同环境的安装过程来增强开发者体验。Rust 开发者现在可以享受更无缝的设置过程，提高生产力和易用性。",
+      "reason": "Improves Rust IDE tooling setup",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3e9b68f750214cb82f3cb90283f099b7471b94d67ca15412462bf3151453503b",
+      "source": "Rust Internals",
+      "title": "[预RFC] 批量可见性语法",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_5",
+      "summary": "我认为这通常属于常见请求更改中的“替代语法”部分 - Rust语言设计团队。我会反驳说，这条规则并没有明确定义在超出个人审美不满的情况下“替代语法”意味着什么。它也不清楚预期效用应该在多大程度上凌驾于此。语言中也有“矛盾”的例子，最显著的是extern和use同时具有单一和批量语法。我不明白如何……",
+      "publishedAt": "2026-04-06T19:01:45.000Z",
+      "score": 57,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "44407224e6ada00bc89a9ef59bb57f7f9f2db4f8fdb1346636c62fdfcefb173f",
+      "source": "Rust Internals",
+      "title": "仅使用 `alloc` 的 `HashMap`？",
+      "url": "https://internals.rust-lang.org/t/alloc-only-hashmap/24071#post_7",
+      "summary": "一些替代方案：\n您是否考虑过使用 hashbrown crate？这是 std 用于其 hashmap/hashset 实现的 crate。这个 crate 是 no_std 兼容的。\n如果您不想添加新的依赖项，那么您可以使用 BTreeMap 和 BTreeSet，它们位于 alloc crate 中。\n如果您确实需要特定的 HashMap，那么您可能会有点不走运。",
+      "publishedAt": "2026-04-06T23:23:29.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ab4c2605853e5d66e2753deaa9905f79412fc9d4e1fdf2c7113a477d5753ffe7",
+      "source": "Zenn Rust (JP)",
+      "title": "发布面向Rust的ECS驱动双向通信服务器框架（Ecson）",
+      "url": "https://zenn.dev/hino_rs/articles/73f711641e34df",
+      "summary": "Ecson\n我们正在开发面向Rust的ECS驱动双向通信服务器框架，Ecson（埃克森）。近日发布了v0.1.0版本。\n\n 开始开发的原因\n最初的动机是希望有一天能创建一个支持大量用户的元宇宙。我们需要一个优化双向通信的框架，该框架更注重“高负载支持”和“多客户端支持”而非低延迟。\n\n ECS的好处\n我非常想采用SoA架构。由于之前在Bevy上有开发经验，因此决定采用ECS。SoA的好处显而易见，而ECS也带来了许多附加收益。",
+      "publishedAt": "2026-04-05T02:56:52.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-07T00:10:16.003Z"
+  }
+}

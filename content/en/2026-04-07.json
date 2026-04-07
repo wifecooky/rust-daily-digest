@@ -1,0 +1,86 @@
+{
+  "date": "2026-04-07",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "f21db6edb61c079cc2a8e51e4c2a4df4b70a46c83cf1310d84b5c69d5f7a0c68",
+      "source": "Google News Rust",
+      "title": "Rust Coreutils 0.8 Brings Significant Performance Gains - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZLWRVSzFSWHZ4c2JlQzZTYXh4MWtvYVlwME9qRU5FRjFhUE9peW5pbWVuSHdrQTdlc3FqbUo2WXBtWTRhT0ZjTmRxWTg4RlVkaFVRTVNZRUpjLWN0cEpFWXllaW9OWDRl?oc=5",
+      "summary": "Rust Coreutils 0.8 Brings Significant Performance Gains  Phoronix",
+      "publishedAt": "2026-04-06T22:01:00.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        13
+      ],
+      "suggestedTitle": "Rust Coreutils 0.8 Boosts Performance",
+      "suggestedSummary": "Rust Coreutils 0.8 has been released, delivering significant performance improvements. This update optimizes several utilities within the Rust Coreutils suite, making them faster and more efficient. Developers using Rust for system-level applications can expect enhanced execution speed, which is crucial for performance-critical tasks.",
+      "reason": "Performance boost for Rust system tools",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "7784724c275dfc59b2803df532f29c31cb1960cdc881e7f1ffa8f30f75e3773d",
+      "source": "rust-analyzer",
+      "title": "Changelog #322",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/06/changelog-322.html",
+      "summary": "Commit: 38fb8f9\n2026-04-06 (v0.3.2854)\nUniversal VSIX\nThis release adds a platform-independent VSIX that VS Code will install on platforms where rust-analyzer doesn’t offer binaries.\nOn supported platforms, the extension should keep working as before, but a Code bug might cause it to fail to activate.\nIf that happens, you should uninstall and reintall the rust-analyzer extension.\nNew Features\n#21928 (first contribution) support macro expansion in #[doc = …​] attributes.\n#19956 implement…",
+      "publishedAt": "2026-04-06T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        69
+      ],
+      "suggestedTitle": "Rust-analyzer Changelog #322 Released",
+      "suggestedSummary": "The latest update to rust-analyzer, version 0.3.2854, includes a universal VSIX, making it platform-independent. This release enhances the developer experience by simplifying installation across different environments. Rust developers can now enjoy a more seamless setup process, improving productivity and ease of use.",
+      "reason": "Improves Rust IDE tooling setup",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3e9b68f750214cb82f3cb90283f099b7471b94d67ca15412462bf3151453503b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Bulk visibility syntax",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_5",
+      "summary": "I think this generally falls under the \"alternative syntaxes\" part of Frequently Requested Changes - The Rust Language Design Team.\nI'd argue back considering this rule doesn't quite define what \"alternative syntax\" means in cases beyond personal aesthetic dissatisfaction. It also isn't clear on how much expected utility should overrule it.\nThere are also \"contradictory\" examples that are already in the language, most notably how extern & use have both singular and bulk syntax. I don't see how,…",
+      "publishedAt": "2026-04-06T19:01:45.000Z",
+      "score": 57,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "44407224e6ada00bc89a9ef59bb57f7f9f2db4f8fdb1346636c62fdfcefb173f",
+      "source": "Rust Internals",
+      "title": "`alloc`-only `HashMap`?",
+      "url": "https://internals.rust-lang.org/t/alloc-only-hashmap/24071#post_7",
+      "summary": "A few alternatives:\nHave you considered using the hashbrown crate? It is the crate std uses for its hashmap/hashset implementation. This crate is no_std compatible.\nIf you don't want to add a new dependency, then you could use BTreeMap and BTreeSet, which do live in the alloc crate.\nIf you do need HashMap specifically, then you are a bit out of luck.",
+      "publishedAt": "2026-04-06T23:23:29.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ab4c2605853e5d66e2753deaa9905f79412fc9d4e1fdf2c7113a477d5753ffe7",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust向けのECS駆動な双方向通信サーバーフレームワークをリリースしました(Ecson)",
+      "url": "https://zenn.dev/hino_rs/articles/73f711641e34df",
+      "summary": "Ecson\nRust向けのECS駆動な双方向通信サーバーフレームワーク、Ecson（エクソン） を開発しています。先日v0.1.0をリリースしました。\n\n\n 作り始めた理由\nもともとは大人数に耐えられるメタバースをいつか作りたいと思ったからです。\n双方向通信に最適化されており、低レイテンシよりも「高負荷対応」「多クライアント対応」を求めるフレームワークが必要でした。\n\n ECSによる恩恵\nとにかくSoAにしたかったです。\nもともとBevyでの開発をしたことがあるのもあって、ECSを採用してみました。\nSoAによる恩恵は当然ですが、ECSによる副産物も多かったです。\n\n\nArc<...",
+      "publishedAt": "2026-04-05T02:56:52.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-07T00:10:04.394Z"
+  }
+}
