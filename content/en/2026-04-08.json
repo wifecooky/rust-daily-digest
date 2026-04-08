@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-08",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "3e9b68f750214cb82f3cb90283f099b7471b94d67ca15412462bf3151453503b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Bulk visibility syntax",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_5",
+      "summary": "I think this generally falls under the \"alternative syntaxes\" part of Frequently Requested Changes - The Rust Language Design Team.\nI'd argue back considering this rule doesn't quite define what \"alternative syntax\" means in cases beyond personal aesthetic dissatisfaction. It also isn't clear on how much expected utility should overrule it.\nThere are also \"contradictory\" examples that are already in the language, most notably how extern & use have both singular and bulk syntax. I don't see how,…",
+      "publishedAt": "2026-04-06T19:01:45.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        1,
+        2
+      ],
+      "reason": "Potential language syntax change",
+      "suggestedTitle": "Pre-RFC Proposes Bulk Visibility Syntax for Rust",
+      "suggestedSummary": "A Pre-RFC has been proposed on Rust Internals for introducing a bulk visibility syntax. This syntax aims to streamline the process of setting visibility for multiple items in a module, potentially reducing boilerplate and improving code readability. The proposal is currently in discussion, and if accepted, it could lead to more concise and maintainable codebases for Rust developers.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "05d26f76a7d23c1978f0dfb48174506c990c88842dc42ce42657e5ed960468f0",
+      "source": "Rust Users Forum",
+      "title": "`serde_test2` has been released, reviving the unmaintained `serde_test` crate",
+      "url": "https://users.rust-lang.org/t/serde-test2-has-been-released-reviving-the-unmaintained-serde-test-crate/139445#post_1",
+      "summary": "The serde_test crate has been unmaintained for over a year now, with the repo being archived at the end of 2024. There were some outstanding issues, so I decided to take it over and release a new version with some much-needed changes. This is a breaking change, so it's version 2.0.0. Most cases should be able to simple replace serde_test = \"1.x.y\" with serde_test2 = \"2.0.0\" in Cargo.toml and have everything \"just work\"™. So what changed, and what's the breakage?\nToken now has support for U128…",
+      "publishedAt": "2026-04-07T00:40:15.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        20
+      ],
+      "reason": "Major crate revival",
+      "suggestedTitle": "Revival of Serde Test with serde_test2 Release",
+      "suggestedSummary": "The serde_test crate, which had been unmaintained for over a year, has been revived with the release of serde_test2. This new version aims to provide continued support and improvements for testing Serde implementations. Developers who rely on Serde for serialization can now benefit from updated testing capabilities, ensuring more robust and reliable data handling in their applications.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "7d29c70f7cffea2f15c7efea47aa59e0c7fd8e7f49caa5df7d8571e47306d840",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: Post-quantum (ML-DSA-65) remote attestation with built-in SLSA provenance for no_std embedded Rust",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_1",
+      "summary": "Hello, I would really appreciate your feedback on this project i have been working on.\nSupply-chain attacks are accelerating. SolarWinds, XZ Utils, and dozens of lesser-known incidents show that firmware can be compromised at build time. Existing attestation stacks (TPM 2.0, DICE, TDX) prove what is running — but carry no cryptographic proof of how it was built or who signed it off.\nPost-quantum migration is overdue. RSA and ECDSA underpin today's attestation chains and are broken by Shor's…",
+      "publishedAt": "2026-04-07T19:29:19.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d48c9ffa34f931b4a2fcbcd1b86cb605d810390b252ce9cdbc6dad39189cfca7",
+      "source": "Google News Rust",
+      "title": "Rust team warns of WebAssembly change - InfoWorld",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQ1YydWJ5QW1PR050YlpaalZhcGFQS2FHUzlaeVRMa1lLUURBeFREdnptTWVmd05pVVROd0g5SjhFQldsVzVDd3pkd0xLNDl2N01PajMyVWs4S2t1OW5mZkFibnIzb21sRlNBQWRXdDJNRnJKWkc2MmlaQXFUeTAtQ2t0X2dZRWcyaVpxRQ?oc=5",
+      "summary": "Rust team warns of WebAssembly change  InfoWorld",
+      "publishedAt": "2026-04-07T04:53:32.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f21db6edb61c079cc2a8e51e4c2a4df4b70a46c83cf1310d84b5c69d5f7a0c68",
+      "source": "Google News Rust",
+      "title": "Rust Coreutils 0.8 Brings Significant Performance Gains - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZLWRVSzFSWHZ4c2JlQzZTYXh4MWtvYVlwME9qRU5FRjFhUE9peW5pbWVuSHdrQTdlc3FqbUo2WXBtWTRhT0ZjTmRxWTg4RlVkaFVRTVNZRUpjLWN0cEpFWXllaW9OWDRl?oc=5",
+      "summary": "Rust Coreutils 0.8 Brings Significant Performance Gains  Phoronix",
+      "publishedAt": "2026-04-06T22:01:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ade7a729690867e9e62791cc558ec7167da579606acb8d76ac3e3b3ec4151ea5",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust向け双方向通信サーバーフレームワークEcsonのv0.2.0をリリースしました",
+      "url": "https://zenn.dev/hino_rs/articles/661d694d781497",
+      "summary": "初リリースの記事に❤を付けてくれた方、ありがとうございます。モチベが上がります。\nそのモチベのおかげでEcsonをガンガン進化させていけます。\nEcson v0.2.0をリリースしたので、記事にさせてください。\n\n\n\n 更新内容\nv0.2.0の前に、v0.1.1もリリースしていました。\n(Cargoエコシステムのバージョニングがよくわからないので、結構適当にやっています。)\n\n v0.1.1\n\n 1. EcsonAppにテスト用のメソッドを3つ追加しました。\n\n\nstartup\nStartupで登録されているシステムを1回実行します。\n\ntick_once\nUpdateとFixedUpd...",
+      "publishedAt": "2026-04-07T02:54:53.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-08T00:11:13.679Z"
+  }
+}

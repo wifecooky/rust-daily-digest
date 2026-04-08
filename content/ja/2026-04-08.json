@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-08",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "3e9b68f750214cb82f3cb90283f099b7471b94d67ca15412462bf3151453503b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] 一括可視性構文",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_5",
+      "summary": "これは一般的に「代替構文」の一部として、よく要求される変更事項に該当すると思います - Rust言語デザインチーム。個人的な美的な不満を超えたケースで「代替構文」が何を意味するのか、このルールが明確に定義していないことを考慮すべきだと主張します。また、期待される有用性がどれほどこのルールを覆すべきかも明確ではありません。言語内には「矛盾する」例もあり、特にexternとuseが単数および一括構文の両方を持っていることが挙げられます。私はどのようにして、…",
+      "publishedAt": "2026-04-06T19:01:45.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        1,
+        2
+      ],
+      "reason": "Potential language syntax change",
+      "suggestedTitle": "Rustにおける一括可視性構文の提案",
+      "suggestedSummary": "Rust Internalsにおいて、一括可視性構文を導入するためのPre-RFCが提案されました。この構文は、モジュール内の複数の項目に対する可視性の設定プロセスを簡素化し、ボイラープレートを削減し、コードの可読性を向上させることを目的としています。この提案は現在議論中であり、受け入れられれば、Rust開発者にとってより簡潔で保守しやすいコードベースにつながる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "05d26f76a7d23c1978f0dfb48174506c990c88842dc42ce42657e5ed960468f0",
+      "source": "Rust Users Forum",
+      "title": "`serde_test2`がリリースされ、メンテナンスされていなかった`serde_test`クレートが復活",
+      "url": "https://users.rust-lang.org/t/serde-test2-has-been-released-reviving-the-unmaintained-serde-test-crate/139445#post_1",
+      "summary": "serde_testクレートは1年以上メンテナンスされておらず、リポジトリは2024年末にアーカイブされました。いくつかの未解決の問題があったため、私はそれを引き継ぎ、いくつかの必要な変更を加えた新しいバージョンをリリースすることにしました。これは破壊的な変更であるため、バージョン2.0.0です。ほとんどの場合、Cargo.tomlでserde_test = \"1.x.y\"をserde_test2 = \"2.0.0\"に単純に置き換えることで、すべてが「そのまま動作する」™はずです。では、何が変わり、どのような破壊があるのでしょうか？トークンはU128のサポートを得ました…",
+      "publishedAt": "2026-04-07T00:40:15.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        20
+      ],
+      "reason": "Major crate revival",
+      "suggestedTitle": "serde_test2のリリースでSerdeテストが復活",
+      "suggestedSummary": "1年以上メンテナンスされていなかったserde_testクレートが、serde_test2のリリースによって復活しました。この新しいバージョンは、Serde実装のテストに対する継続的なサポートと改善を提供することを目的としています。シリアル化にSerdeを依存する開発者は、更新されたテスト機能を活用することで、アプリケーションでのデータ処理をより堅牢で信頼性の高いものにすることができます。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "7d29c70f7cffea2f15c7efea47aa59e0c7fd8e7f49caa5df7d8571e47306d840",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: 組み込みRust向けのno_stdに対応したポスト量子（ML-DSA-65）リモート認証とSLSAプロベナンスの組み込み",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_1",
+      "summary": "サプライチェーン攻撃が加速しています。SolarWinds、XZ Utils、そして数多くのあまり知られていない事件は、ファームウェアがビルド時に侵害される可能性を示しています。既存の認証スタック（TPM 2.0、DICE、TDX）は実行中のものを証明しますが、それがどのようにビルドされたか、誰が承認したかについての暗号学的証明はありません。ポスト量子移行は遅れています。RSAとECDSAは今日の認証チェーンを支えていますが、Shorのアルゴリズムによって破られています。",
+      "publishedAt": "2026-04-07T19:29:19.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d48c9ffa34f931b4a2fcbcd1b86cb605d810390b252ce9cdbc6dad39189cfca7",
+      "source": "Google News Rust",
+      "title": "RustチームがWebAssemblyの変更について警告 - InfoWorld",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQ1YydWJ5QW1PR050YlpaalZhcGFQS2FHUzlaeVRMa1lLUURBeFREdnptTWVmd05pVVROd0g5SjhFQldsVzVDd3pkd0xLNDl2N01PajMyVWs4S2t1OW5mZkFibnIzb21sRlNBQWRXdDJNRnJKWkc2MmlaQXFUeTAtQ2t0X2dZRWcyaVpxRQ?oc=5",
+      "summary": "RustチームがWebAssemblyの変更について警告  InfoWorld",
+      "publishedAt": "2026-04-07T04:53:32.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f21db6edb61c079cc2a8e51e4c2a4df4b70a46c83cf1310d84b5c69d5f7a0c68",
+      "source": "Google News Rust",
+      "title": "Rust Coreutils 0.8が大幅なパフォーマンス向上を実現 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBZLWRVSzFSWHZ4c2JlQzZTYXh4MWtvYVlwME9qRU5FRjFhUE9peW5pbWVuSHdrQTdlc3FqbUo2WXBtWTRhT0ZjTmRxWTg4RlVkaFVRTVNZRUpjLWN0cEpFWXllaW9OWDRl?oc=5",
+      "summary": "Rust Coreutils 0.8が大幅なパフォーマンス向上を実現  Phoronix",
+      "publishedAt": "2026-04-06T22:01:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ade7a729690867e9e62791cc558ec7167da579606acb8d76ac3e3b3ec4151ea5",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust向け双方向通信サーバーフレームワークEcsonのv0.2.0をリリースしました",
+      "url": "https://zenn.dev/hino_rs/articles/661d694d781497",
+      "summary": "初リリースの記事に❤を付けてくれた方、ありがとうございます。モチベが上がります。そのモチベのおかげでEcsonをガンガン進化させていけます。Ecson v0.2.0をリリースしたので、記事にさせてください。",
+      "publishedAt": "2026-04-07T02:54:53.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-08T00:11:29.776Z"
+  }
+}
