@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-09",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "6ab151af22d0fb9fdd7b79873280441d2ec7e21ac4806a34f6471fc109f5e273",
+      "source": "Rust Internals",
+      "title": "[Pre-Pre RFC] Ability to specify a trait as marker trait",
+      "url": "https://internals.rust-lang.org/t/pre-pre-rfc-ability-to-specify-a-trait-as-marker-trait/24159#post_2",
+      "summary": "RFC'd and accepted over a decade ago.\ngithub.com/rust-lang/rust\n  \n\n\n  \nTracking issue for allowing overlapping implementations for marker trait\n    \n05:09PM - 16 Nov 15 UTC\n      \nTracking issue for rust-lang/rfcs#1268.\n\n## Status\n\n- [x] Initial implementa…tion: #41309 \n- [ ] Documentation\n- [ ] Move to stabilize\n- [ ] Stabilization PR\n\n## Known bugs\n\n- [ ] [cross-crate support lacking?](https://github.com/rust-lang/rust/issues/29864#issuecomment-295907958)\n- [x] #102360\n\n## History \n\n-…",
+      "publishedAt": "2026-04-08T23:04:37.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        2,
+        6
+      ],
+      "reason": "Potential language feature affecting trait design",
+      "suggestedTitle": "Pre-Pre RFC: Defining Marker Traits in Rust",
+      "suggestedSummary": "A new pre-pre RFC has been proposed to allow developers to specify traits as marker traits in Rust. This proposal aims to simplify the process of defining traits that serve purely as markers, without associated functions or types. By introducing this capability, the RFC seeks to enhance the language's expressiveness and reduce boilerplate code required for certain design patterns. This change could impact how Rust developers define and use traits, offering more flexibility in trait design.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "4c515b96d8d236c58a73d15fa8f0b9949da50a58dffcc214abe6c0745772ba65",
+      "source": "Tokio",
+      "title": "Tokio v1.51.1",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.51.1",
+      "summary": "1.51.1 (April 8th, 2026)\nFixed\nsync: fix semaphore reopens after forget (#8021)\nnet: surface errors from SO_ERROR on recv for UDP sockets on Linux (#8001)\nFixed (unstable)\nmetrics: fix worker_local_schedule_count test (#8008)\nrt: do not leak fd when cancelling io_uring open operation (#7983)",
+      "publishedAt": "2026-04-08T10:39:07.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        41
+      ],
+      "reason": "Important patch for a major async library",
+      "suggestedTitle": "Tokio v1.51.1 Released with Critical Fixes",
+      "suggestedSummary": "The Tokio team has released version 1.51.1, addressing critical issues in the sync and net modules. This patch resolves a semaphore reopening bug and improves error visibility in network operations. These fixes are crucial for developers relying on Tokio for asynchronous programming, as they enhance stability and reliability in concurrent applications. Upgrading to this version is recommended for projects using Tokio to ensure smoother operation and prevent potential runtime errors.",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04cf79bf30d29a9fd19e1567c87b18ebdb540a35052f5eab8e63ee42b68723fe",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Extremely fast MessagePack serializer for Rust",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_29",
+      "summary": "zerompk v0.4.0 has been released!\n\n  \nGitHub\n  \n\nRelease v0.4.0 · nuskey8/zerompk\nWhat's Changed\n\nchore: add keywords/categories by @nuskey8 in #22\nfeat: add [T] impl, as_bytes attr by @nuskey8 in #25\nCI: Add an actions workflow by @paq in #21\nfix: ext8/ext16/ext32 write_ext omi...\n\n\n\nThis version adds the as_bytes option. This is similar to serde_bytes and allows you to specify whether types like Vec<u8> should be serialized as binary. (It defaults to true for performance reasons and to…",
+      "publishedAt": "2026-04-08T07:02:05.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "641ca8be84289ebbe49c0d47eb51002971852e4fbda98d50cb79b69965ce31ba",
+      "source": "Rust Users Forum",
+      "title": "RFC: libgraphql-parser with error recovery and diagnostics",
+      "url": "https://users.rust-lang.org/t/rfc-libgraphql-parser-with-error-recovery-and-diagnostics/139460#post_1",
+      "summary": "Hey all,\nSo I recently published libgraphql-parser which is a GraphQL parser that aims for 2025 GraphQL spec conformance and supports error recovery, Rust-style error messages/diagnostics, and an optionally-lossless AST (comments, whitespace, and commas can optionally be preserved) intended to support a few GraphQL tools I work on.\nAs a fun side effect of spending a lot of time optimizing and generating tests, it also ended up beating the parsing performance of both graphql-parser and…",
+      "publishedAt": "2026-04-08T05:50:01.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7d29c70f7cffea2f15c7efea47aa59e0c7fd8e7f49caa5df7d8571e47306d840",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: Post-quantum (ML-DSA-65) remote attestation with built-in SLSA provenance for no_std embedded Rust",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_1",
+      "summary": "Hello, I would really appreciate your feedback on this project i have been working on.\nSupply-chain attacks are accelerating. SolarWinds, XZ Utils, and dozens of lesser-known incidents show that firmware can be compromised at build time. Existing attestation stacks (TPM 2.0, DICE, TDX) prove what is running — but carry no cryptographic proof of how it was built or who signed it off.\nPost-quantum migration is overdue. RSA and ECDSA underpin today's attestation chains and are broken by Shor's…",
+      "publishedAt": "2026-04-07T19:29:19.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ade7a729690867e9e62791cc558ec7167da579606acb8d76ac3e3b3ec4151ea5",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust向け双方向通信サーバーフレームワークEcsonのv0.2.0をリリースしました",
+      "url": "https://zenn.dev/hino_rs/articles/661d694d781497",
+      "summary": "初リリースの記事に❤を付けてくれた方、ありがとうございます。モチベが上がります。\nそのモチベのおかげでEcsonをガンガン進化させていけます。\nEcson v0.2.0をリリースしたので、記事にさせてください。\n\n\n\n 更新内容\nv0.2.0の前に、v0.1.1もリリースしていました。\n(Cargoエコシステムのバージョニングがよくわからないので、結構適当にやっています。)\n\n v0.1.1\n\n 1. EcsonAppにテスト用のメソッドを3つ追加しました。\n\n\nstartup\nStartupで登録されているシステムを1回実行します。\n\ntick_once\nUpdateとFixedUpd...",
+      "publishedAt": "2026-04-07T02:54:53.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-09T00:08:10.198Z"
+  }
+}

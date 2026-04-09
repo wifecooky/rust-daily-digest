@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-09",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "6ab151af22d0fb9fdd7b79873280441d2ec7e21ac4806a34f6471fc109f5e273",
+      "source": "Rust Internals",
+      "title": "[预备RFC] 指定特征为标记特征的能力",
+      "url": "https://internals.rust-lang.org/t/pre-pre-rfc-ability-to-specify-a-trait-as-marker-trait/24159#post_2",
+      "summary": "RFC在十多年前已被接受。",
+      "publishedAt": "2026-04-08T23:04:37.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        2,
+        6
+      ],
+      "reason": "Potential language feature affecting trait design",
+      "suggestedTitle": "预备RFC：在Rust中定义标记特征",
+      "suggestedSummary": "一个新的预备RFC被提议，允许开发者在Rust中将特征指定为标记特征。该提案旨在简化定义纯粹作为标记的特征的过程，这些特征不包含关联的函数或类型。通过引入这一功能，RFC希望增强语言的表达能力，并减少某些设计模式所需的样板代码。这一变化可能会影响Rust开发者定义和使用特征的方式，提供更大的特征设计灵活性。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "4c515b96d8d236c58a73d15fa8f0b9949da50a58dffcc214abe6c0745772ba65",
+      "source": "Tokio",
+      "title": "Tokio v1.51.1",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.51.1",
+      "summary": "1.51.1（2026年4月8日）\n修复\nsync：修复在忘记后信号量重新打开的问题（#8021）\nnet：在Linux上为UDP套接字接收操作显示来自SO_ERROR的错误（#8001）\n修复（不稳定）\nmetrics：修复worker_local_schedule_count测试（#8008）\nrt：在取消io_uring打开操作时不泄漏文件描述符（#7983）",
+      "publishedAt": "2026-04-08T10:39:07.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        41
+      ],
+      "reason": "Important patch for a major async library",
+      "suggestedTitle": "Tokio v1.51.1发布，包含关键修复",
+      "suggestedSummary": "Tokio团队发布了1.51.1版本，解决了sync和net模块中的关键问题。此补丁修复了信号量重新打开的错误，并提高了网络操作中的错误可见性。这些修复对于依赖Tokio进行异步编程的开发人员至关重要，因为它们增强了并发应用程序的稳定性和可靠性。建议使用Tokio的项目升级到此版本，以确保更顺畅的操作并防止潜在的运行时错误。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04cf79bf30d29a9fd19e1567c87b18ebdb540a35052f5eab8e63ee42b68723fe",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - 超快速的Rust语言MessagePack序列化器",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_29",
+      "summary": "zerompk v0.4.0 已发布！",
+      "publishedAt": "2026-04-08T07:02:05.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "641ca8be84289ebbe49c0d47eb51002971852e4fbda98d50cb79b69965ce31ba",
+      "source": "Rust Users Forum",
+      "title": "征求意见：具有错误恢复和诊断功能的 libgraphql-parser",
+      "url": "https://users.rust-lang.org/t/rfc-libgraphql-parser-with-error-recovery-and-diagnostics/139460#post_1",
+      "summary": "大家好，\n我最近发布了 libgraphql-parser，这是一个 GraphQL 解析器，旨在符合 2025 年的 GraphQL 规范，并支持错误恢复、Rust 风格的错误消息/诊断，以及可选的无损 AST（可以选择保留注释、空白和逗号），旨在支持我正在开发的一些 GraphQL 工具。\n由于花了大量时间进行优化和生成测试，作为一个有趣的副作用，它的解析性能也超过了 graphql-parser 和...",
+      "publishedAt": "2026-04-08T05:50:01.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7d29c70f7cffea2f15c7efea47aa59e0c7fd8e7f49caa5df7d8571e47306d840",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core：后量子（ML-DSA-65）远程认证，内置SLSA来源用于no_std嵌入式Rust",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_1",
+      "summary": "您好，我非常感谢您对我正在进行的这个项目的反馈。供应链攻击正在加速。SolarWinds、XZ Utils以及数十起鲜为人知的事件表明，固件在构建时可能被破坏。现有的认证栈（TPM 2.0、DICE、TDX）证明了运行的内容，但没有提供关于其构建方式或签署者的加密证明。后量子迁移已经迫在眉睫。RSA和ECDSA是当今认证链的基础，但它们被Shor's算法攻破了……",
+      "publishedAt": "2026-04-07T19:29:19.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ade7a729690867e9e62791cc558ec7167da579606acb8d76ac3e3b3ec4151ea5",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust双向通信服务器框架Ecson发布v0.2.0版本",
+      "url": "https://zenn.dev/hino_rs/articles/661d694d781497",
+      "summary": "感谢那些在首次发布文章中点赞的人。你们的支持提升了我的动力。正是因为这种动力，我才能不断推动Ecson的发展。由于我们刚刚发布了Ecson v0.2.0，所以请允许我写一篇文章来介绍一下。\n\n更新内容\n在v0.2.0之前，我们还发布了v0.1.1版本。（由于对Cargo生态系统的版本管理不是很了解，所以我们在这方面做得比较随意。）\n\nv0.1.1\n\n1. 在EcsonApp中增加了三个用于测试的方法。\n\nstartup\n在Startup中执行一次已注册的系统。\n\ntick_once\nUpdate和FixedUpd...",
+      "publishedAt": "2026-04-07T02:54:53.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-09T00:08:16.366Z"
+  }
+}

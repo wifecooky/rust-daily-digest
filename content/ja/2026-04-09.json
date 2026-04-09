@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-09",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "6ab151af22d0fb9fdd7b79873280441d2ec7e21ac4806a34f6471fc109f5e273",
+      "source": "Rust Internals",
+      "title": "【事前RFC】マーカートレイトとしてトレイトを指定する能力",
+      "url": "https://internals.rust-lang.org/t/pre-pre-rfc-ability-to-specify-a-trait-as-marker-trait/24159#post_2",
+      "summary": "10年以上前にRFCされ、受け入れられた。",
+      "publishedAt": "2026-04-08T23:04:37.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        2,
+        6
+      ],
+      "reason": "Potential language feature affecting trait design",
+      "suggestedTitle": "事前RFC: Rustにおけるマーカートレイトの定義",
+      "suggestedSummary": "Rustでトレイトをマーカートレイトとして指定することを可能にする新しい事前RFCが提案されました。この提案は、関連する関数や型なしで純粋にマーカーとして機能するトレイトを定義するプロセスを簡素化することを目的としています。この機能を導入することで、RFCは言語の表現力を高め、特定のデザインパターンに必要なボイラープレートコードを削減しようとしています。この変更は、Rust開発者がトレイトを定義および使用する方法に影響を与え、トレイト設計における柔軟性を提供する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "4c515b96d8d236c58a73d15fa8f0b9949da50a58dffcc214abe6c0745772ba65",
+      "source": "Tokio",
+      "title": "Tokio v1.51.1",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.51.1",
+      "summary": "1.51.1 (2026年4月8日)\n修正\nsync: forget後のセマフォ再開を修正 (#8021)\nnet: Linux上のUDPソケットでrecvのSO_ERRORからのエラーを表示 (#8001)\n不安定版の修正\nmetrics: worker_local_schedule_countテストを修正 (#8008)\nrt: io_uringのオープン操作をキャンセルする際にfdがリークしないようにする (#7983)",
+      "publishedAt": "2026-04-08T10:39:07.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        41
+      ],
+      "reason": "Important patch for a major async library",
+      "suggestedTitle": "重要な修正を含むTokio v1.51.1がリリース",
+      "suggestedSummary": "Tokioチームは、syncおよびnetモジュールの重要な問題に対処したバージョン1.51.1をリリースしました。このパッチは、セマフォの再開バグを解決し、ネットワーク操作におけるエラーの可視性を向上させます。これらの修正は、Tokioを使用した非同期プログラミングに依存する開発者にとって重要であり、並行アプリケーションの安定性と信頼性を向上させます。Tokioを使用するプロジェクトでは、このバージョンへのアップグレードを推奨し、スムーズな動作と潜在的なランタイムエラーの防止を確保してください。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04cf79bf30d29a9fd19e1567c87b18ebdb540a35052f5eab8e63ee42b68723fe",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Rust用の超高速MessagePackシリアライザー",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_29",
+      "summary": "zerompk v0.4.0がリリースされました！",
+      "publishedAt": "2026-04-08T07:02:05.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "641ca8be84289ebbe49c0d47eb51002971852e4fbda98d50cb79b69965ce31ba",
+      "source": "Rust Users Forum",
+      "title": "RFC: エラー回復と診断機能を備えたlibgraphql-parser",
+      "url": "https://users.rust-lang.org/t/rfc-libgraphql-parser-with-error-recovery-and-diagnostics/139460#post_1",
+      "summary": "皆さん、こんにちは。\n最近、libgraphql-parserを公開しました。これは、2025年のGraphQL仕様の準拠を目指し、エラー回復、Rustスタイルのエラーメッセージ/診断、およびオプションで損失のないAST（コメント、空白、カンマをオプションで保持可能）をサポートするGraphQLパーサーです。これは、私が取り組んでいるいくつかのGraphQLツールをサポートすることを目的としています。\n多くの時間を最適化とテスト生成に費やした楽しい副産物として、graphql-parserの解析性能を上回る結果となりました。",
+      "publishedAt": "2026-04-08T05:50:01.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7d29c70f7cffea2f15c7efea47aa59e0c7fd8e7f49caa5df7d8571e47306d840",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: no_std組み込みRust向けのSLSAプロビナンスを備えたポスト量子（ML-DSA-65）リモート認証",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_1",
+      "summary": "こんにちは、私が取り組んでいるこのプロジェクトに対するフィードバックをいただけると幸いです。サプライチェーン攻撃が加速しています。SolarWinds、XZ Utils、そして数多くのあまり知られていない事件が、ファームウェアがビルド時に危険にさらされる可能性があることを示しています。既存の認証スタック（TPM 2.0、DICE、TDX）は実行中のものを証明しますが、それがどのようにビルドされたか、誰が承認したかについての暗号学的証拠はありません。ポスト量子移行は遅れています。RSAとECDSAは今日の認証チェーンを支えており、Shorのアルゴリズムにより破られます。",
+      "publishedAt": "2026-04-07T19:29:19.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ade7a729690867e9e62791cc558ec7167da579606acb8d76ac3e3b3ec4151ea5",
+      "source": "Zenn Rust (JP)",
+      "title": "双方向通信サーバーフレームワークEcsonのv0.2.0をリリースしました",
+      "url": "https://zenn.dev/hino_rs/articles/661d694d781497",
+      "summary": "初リリースの記事に❤を付けてくれた方、ありがとうございます。モチベが上がります。そのモチベのおかげでEcsonをガンガン進化させていけます。Ecson v0.2.0をリリースしたので、記事にさせてください。更新内容v0.2.0の前に、v0.1.1もリリースしていました。(Cargoエコシステムのバージョニングがよくわからないので、結構適当にやっています。) v0.1.1 1. EcsonAppにテスト用のメソッドを3つ追加しました。startupStartupで登録されているシステムを1回実行します。tick_onceUpdateとFixedUpd...",
+      "publishedAt": "2026-04-07T02:54:53.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-09T00:08:22.215Z"
+  }
+}
