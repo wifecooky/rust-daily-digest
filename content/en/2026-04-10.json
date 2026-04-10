@@ -1,0 +1,88 @@
+{
+  "date": "2026-04-10",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "136d1fb457b876d8fb17302d894640744b91e4337d576ecd91529ea2feacef3b",
+      "source": "Rust Internals",
+      "title": "[Pre-pre RFC] Allow exclusion of trait methods for (certain) unsatisfiable where bounds",
+      "url": "https://internals.rust-lang.org/t/pre-pre-rfc-allow-exclusion-of-trait-methods-for-certain-unsatisfiable-where-bounds/24160#post_6",
+      "summary": "steffahn:\nYou might be interested to learn that actually one can add the bound: For some reason, rustc doesn’t care so much anymore about “impossible” bounds if you add some higher-ranked lifetime to it.\nThis is, I believe, an accidental stabilisation; the feature to allow trivial bounds is unstable (see the tracking issue linked earlier) but you can opt-in to it on stable Rust by adding a pointless higher-ranked lifetime, and lots of people seem to have figured that out (and even the people…",
+      "publishedAt": "2026-04-09T21:50:39.000Z",
+      "score": 57,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        9,
+        11
+      ],
+      "reason": "Influences future Rust language features.",
+      "suggestedTitle": "Exploring New Rust Pre-RFCs: Trait Method Exclusion and BTF Relocations",
+      "suggestedSummary": "Two new pre-RFCs are under discussion in the Rust community. The first proposes allowing exclusion of trait methods for unsatisfiable where bounds, which could simplify trait implementations. The second introduces BTF relocations, adding a #[btf_preserve_access] attribute for aggregate types, aimed at improving compatibility with BPF targets. These discussions could lead to significant changes in how Rust handles trait bounds and type layouts, affecting future Rust projects targeting specific platforms.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "08dc4d4232847dcb183be8d31c2f4297c393f1eb684652bd7c78181ba08393f9",
+      "source": "Rust Users Forum",
+      "title": "30K lines of no_std Rust: a bare-metal ARM64 hypervisor that replaces Google's Hafnium SPMC",
+      "url": "https://users.rust-lang.org/t/30k-lines-of-no-std-rust-a-bare-metal-arm64-hypervisor-that-replaces-googles-hafnium-spmc/139497#post_1",
+      "summary": "I built a bare-metal Type-1 hypervisor at ARM's S-EL2 (Secure EL2) in no_std Rust. It replaces Hafnium — Google's 200K+ line C reference implementation — as the Secure Partition Manager Core, and runs alongside Android pKVM on the same chip.\nWhat it does\nBoots Linux 6.12 to a BusyBox shell (4 vCPUs, virtio-blk)\nManages 3 Secure Partitions at S-EL1\nFull FF-A v1.1: messaging, memory sharing, ownership transfer, notifications\nCoexists with pKVM (NS-EL2) on 4 physical CPUs\n35/35 E2E tests through…",
+      "publishedAt": "2026-04-09T20:56:51.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        23
+      ],
+      "reason": "Showcases Rust's low-level programming power.",
+      "suggestedTitle": "Building a Bare-Metal ARM64 Hypervisor in No-Std Rust",
+      "suggestedSummary": "A Rust developer has successfully built a bare-metal Type-1 hypervisor for ARM's S-EL2 using no_std Rust, replacing Google's Hafnium SPMC. This 30K lines project demonstrates Rust's capability to handle low-level, performance-critical tasks without relying on the standard library. It highlights Rust's potential in systems programming, particularly in secure environments, and serves as an inspiration for projects requiring high performance and security.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "796ae6bfaa7b55f79d9c6f775b55636a80e2fe62a304d45d5a2a3b9d211ac3b6",
+      "source": "Rust Users Forum",
+      "title": "Crate of the Week",
+      "url": "https://users.rust-lang.org/t/crate-of-the-week/2704?page=78#post_1590",
+      "summary": "I'd like to self-nominate Myth Engine, a high-performance, cross-platform rendering engine built from the ground up in Rust.\nIt features a declarative render graph, PBR pipeline with HDR, glTF 2.0 support with animation, and Python bindings for integration with AI and scripting workflows.\nDemo: Myth Engine — Showcase\nGitHub - panxinmiao/myth: A High-Performance Rendering Engine for Rust · GitHub",
+      "publishedAt": "2026-04-09T18:57:28.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "ee1bf1c54cfd6b769de4ae939a92824d2c140c19a94e375f8b4ee4e067ce2753",
+      "source": "Rust Users Forum",
+      "title": "Announcing cachekit 0.7 — pluggable cache policies and arena-backed primitives",
+      "url": "https://users.rust-lang.org/t/announcing-cachekit-0-7-pluggable-cache-policies-and-arena-backed-primitives/139486#post_1",
+      "summary": "Hi everyone,\nI’d like to share cachekit, a Rust library for high-performance in-memory caches with many eviction policies, a unified builder API, and low-allocation hot paths aimed at predictable behavior under skewed and scan-heavy workloads.\nWhat you get\n18 eviction policies behind policy-* feature flags (e.g. LRU, Fast-LRU, LRU-K, LFU, 2Q, S3-FIFO, ARC, CAR, SLRU, Clock, Clock-PRO, and more). Defaults are a small subset; use policy-all or cherry-pick with default-features = false for smaller…",
+      "publishedAt": "2026-04-09T13:29:43.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "924c0d243a0a758ff4efbb3367f3e3b37b4a2db275439512c5d9d216befd4ac1",
+      "source": "Zenn Rust (JP)",
+      "title": "AndroidのスクショをMacに爆速転送するアプリを Rust + Tauri で作った",
+      "url": "https://zenn.dev/hiyokoko/articles/431ab7cd0ca6c5",
+      "summary": "AndroidのスクショをMacに爆速転送するアプリを Rust + Tauri で作った\n\n はじめに\n「Androidでスクショ撮ったのに、Macに持ってくるのが面倒くさい」\nGoogleフォトの同期を待つ、自分宛にDMで送る、ケーブル繋いでMTPでコピー……どれも微妙にダルい。\nそのストレスを解消するために、Hiyoko Shot を作りました。\nUSB または Wi-Fi で繋いでおくだけで、スクショを撮った瞬間に自動でMacへ転送されます。\nこの記事では、技術的な実装の面白いところをピックアップして紹介します。\n\n\n アプリの概要\nHiyoko Shot はメニューバー常駐...",
+      "publishedAt": "2026-04-09T05:05:59.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-10T00:11:04.840Z"
+  }
+}

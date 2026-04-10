@@ -1,0 +1,88 @@
+{
+  "date": "2026-04-10",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "136d1fb457b876d8fb17302d894640744b91e4337d576ecd91529ea2feacef3b",
+      "source": "Rust Internals",
+      "title": "[Pre-pre RFC] 特定の満たされないwhere句の境界に対するトレイトメソッドの除外を許可",
+      "url": "https://internals.rust-lang.org/t/pre-pre-rfc-allow-exclusion-of-trait-methods-for-certain-unsatisfiable-where-bounds/24160#post_6",
+      "summary": "steffahn:\n実際に境界を追加できることを知っておくと興味深いかもしれません。なぜか、rustcは「不可能な」境界についてあまり気にしなくなります。もしそれに高ランクのライフタイムを追加するならば。\nこれは偶然の安定化だと思います。些細な境界を許可する機能は不安定ですが（前述のトラッキングイシューを参照）、無意味な高ランクのライフタイムを追加することで、安定版のRustでオプトインできます。そして、多くの人がそれに気づいたようです（そして人々も…",
+      "publishedAt": "2026-04-09T21:50:39.000Z",
+      "score": 57,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        9,
+        11
+      ],
+      "reason": "Influences future Rust language features.",
+      "suggestedTitle": "新しいRustのPre-RFCを探る: トレイトメソッドの除外とBTFリロケーション",
+      "suggestedSummary": "Rustコミュニティで2つの新しいPre-RFCが議論されています。1つ目は、満たされないwhere句の境界に対するトレイトメソッドの除外を許可する提案で、トレイトの実装を簡素化する可能性があります。2つ目は、BTFリロケーションを導入し、集約型に対する#[btf_preserve_access]属性を追加するもので、BPFターゲットとの互換性を向上させることを目的としています。これらの議論は、Rustがトレイト境界や型レイアウトを扱う方法に大きな変化をもたらす可能性があり、特定のプラットフォームをターゲットとする将来のRustプロジェクトに影響を与える可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "08dc4d4232847dcb183be8d31c2f4297c393f1eb684652bd7c78181ba08393f9",
+      "source": "Rust Users Forum",
+      "title": "30K行のno_std RustによるベアメタルARM64ハイパーバイザー: GoogleのHafnium SPMCを置き換える",
+      "url": "https://users.rust-lang.org/t/30k-lines-of-no-std-rust-a-bare-metal-arm64-hypervisor-that-replaces-googles-hafnium-spmc/139497#post_1",
+      "summary": "私は、no_std RustでARMのS-EL2（Secure EL2）においてベアメタルのType-1ハイパーバイザーを構築しました。これは、Googleの200K行以上のC言語によるリファレンス実装であるHafniumを、Secure Partition Manager Coreとして置き換え、同じチップ上でAndroid pKVMと共存します。",
+      "publishedAt": "2026-04-09T20:56:51.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        23
+      ],
+      "reason": "Showcases Rust's low-level programming power.",
+      "suggestedTitle": "No-Std RustでベアメタルARM64ハイパーバイザーを構築",
+      "suggestedSummary": "あるRust開発者が、no_std Rustを使用してARMのS-EL2用のベアメタルType-1ハイパーバイザーを成功裏に構築し、GoogleのHafnium SPMCを置き換えました。この30K行のプロジェクトは、標準ライブラリに依存せずに低レベルでパフォーマンスが重要なタスクを処理するRustの能力を示しています。これは、特にセキュアな環境でのシステムプログラミングにおけるRustの可能性を強調し、高性能とセキュリティを必要とするプロジェクトへのインスピレーションとなります。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "796ae6bfaa7b55f79d9c6f775b55636a80e2fe62a304d45d5a2a3b9d211ac3b6",
+      "source": "Rust Users Forum",
+      "title": "今週のクレート",
+      "url": "https://users.rust-lang.org/t/crate-of-the-week/2704?page=78#post_1590",
+      "summary": "自己推薦したいのは、Rustでゼロから構築された高性能でクロスプラットフォームのレンダリングエンジンであるMyth Engineです。このエンジンは、宣言型のレンダーグラフ、HDR対応のPBRパイプライン、アニメーション対応のglTF 2.0サポート、AIやスクリプトワークフローとの統合のためのPythonバインディングを特徴としています。デモ: Myth Engine — ショーケース GitHub - panxinmiao/myth: Rust向けの高性能レンダリングエンジン · GitHub",
+      "publishedAt": "2026-04-09T18:57:28.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "ee1bf1c54cfd6b769de4ae939a92824d2c140c19a94e375f8b4ee4e067ce2753",
+      "source": "Rust Users Forum",
+      "title": "cachekit 0.7の発表 — プラグイン可能なキャッシュポリシーとアリーナバックのプリミティブ",
+      "url": "https://users.rust-lang.org/t/announcing-cachekit-0-7-pluggable-cache-policies-and-arena-backed-primitives/139486#post_1",
+      "summary": "皆さん、こんにちは。\ncachekitを紹介したいと思います。これは、Rustで書かれた高性能なインメモリキャッシュライブラリで、多くのエビクションポリシー、統一されたビルダーAPI、そして偏ったスキャンヘビーなワークロード下で予測可能な動作を目指した低アロケーションのホットパスを備えています。\nあなたが得られるもの\n18のエビクションポリシーがpolicy-*フィーチャーフラグの背後にあります（例：LRU、Fast-LRU、LRU-K、LFU、2Q、S3-FIFO、ARC、CAR、SLRU、Clock、Clock-PROなど）。デフォルトは小さなサブセットです。policy-allを使用するか、default-features = falseで選択して小さくすることができます…",
+      "publishedAt": "2026-04-09T13:29:43.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "924c0d243a0a758ff4efbb3367f3e3b37b4a2db275439512c5d9d216befd4ac1",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust + TauriでAndroidのスクリーンショットをMacに高速転送するアプリを作成",
+      "url": "https://zenn.dev/hiyokoko/articles/431ab7cd0ca6c5",
+      "summary": "Rust + TauriでAndroidのスクリーンショットをMacに高速転送するアプリを作成",
+      "publishedAt": "2026-04-09T05:05:59.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-10T00:11:23.103Z"
+  }
+}
