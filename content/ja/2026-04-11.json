@@ -1,0 +1,126 @@
+{
+  "date": "2026-04-11",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "0dea5b6612daecef6890f32c0bf7b3a9ca02fe1600e9f2a4c9a63cca0cc8def9",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF リロケーション",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_10",
+      "summary": "いくつかの質問:\nリロケーションが2つのフィールドが重なるかどうかに影響を与えることはありますか（例: 構造体が共用体に変わる場合）？\nリロケーションが配列のインデックスを変更することはありますか？\nリロケーションがフィールドにアクセスするために必要なポインタのデリファレンスの数に影響を与えることはありますか？\nこれらの構造体の1つを構築することは可能ですか？それとも、Rustが知らない追加フィールドの可能性があるため、構築は禁止されるべきですか？\n構造体やフィールド名に対して #[link_name] のアナログが必要ですか？\n失敗モードはどのようなものですか？もしあなたが…",
+      "publishedAt": "2026-04-10T13:59:55.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        5,
+        6,
+        20,
+        21,
+        44,
+        45,
+        46,
+        70,
+        71,
+        72,
+        90,
+        91,
+        92
+      ],
+      "reason": "Potential impact on Rust's type system",
+      "suggestedTitle": "Pre-RFC: RustのためのBTFリロケーション",
+      "suggestedSummary": "Rust Internalsフォーラムでの一連の議論により、BTF（BPFタイプフォーマット）リロケーションのためのPre-RFCが導入され、新しい #[btf_preserve_access] 属性が提案されています。この変更は、コンパイル中に集約型へのアクセスを保持することで、RustとBPF（Berkeley Packet Filter）ターゲットの互換性を向上させることを目的としています。この提案は、特にBPFが多用されるシステムプログラミングの文脈で、Rustが型レイアウトを扱う方法に大きな影響を与える可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "90dfee403e6eb946470ace8384820ba467d970cc7cd5cb439007cddd1d5ea443",
+      "source": "Rust Internals",
+      "title": "ビルドセキュリティ",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_7",
+      "summary": "Cargo（ビルドスクリプト用）やrustc（proc-macros用）にサンドボックスを導入する際の主な障害は、それを実装すること（または少なくともプロトタイプを作成すること）であり、それを行うべきだと人々を説得することではありません。サンドボックスはすでに受け入れられた主要な変更提案です。host.runnerを使用して、Cargoビルドスクリプトの実行にサンドボックスを実験的にプラグインすることができます。この問題に必要なのは、解決策を実装し、それが実際にどれだけうまく機能するかを確認する人々です。",
+      "publishedAt": "2026-04-10T23:25:49.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        8,
+        10,
+        22,
+        23,
+        24,
+        25,
+        27
+      ],
+      "reason": "Enhancing Rust build security",
+      "suggestedTitle": "Rustにおけるビルドセキュリティの向上",
+      "suggestedSummary": "Rustコミュニティは、ビルドスクリプトとproc-macrosのサンドボックス化に焦点を当て、ビルドセキュリティを強化する方法を積極的に議論しています。アイデアには、サンドボックス化にWasmを使用することや、標準ライブラリに設定オプションを追加して安全でない操作を防ぐことが含まれます。これらの変更は、ビルドプロセス中に導入される可能性のある脆弱性からRustプロジェクトを保護し、より安全で信頼性の高いソフトウェア開発を実現することを目的としています。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04460f46e12b9e1eb06658e555165b494c0de9ad11494f468884ae6da3a85b67",
+      "source": "Rust Internals",
+      "title": "`alloc` のみの `HashMap`?",
+      "url": "https://internals.rust-lang.org/t/alloc-only-hashmap/24071#post_18",
+      "summary": "私の投稿ではランダムな入力を必要としないのに、なぜそんなにランダム性にこだわるのか分かりません。現在の std の HashMap では、RandomState のデフォルト実装がランダム性を要求しますが、私はランダム性を含むかどうかに関わらず、好きなように振る舞う独自の引数を提供できます。私の提案は、alloc のみを使用するコードでも HashMap を使用できるようにし、明示的な BuildHasher を提供する必要があるというものでした。これにより、何らかのソースからランダム性を引き込むことができるか、コードによっては…",
+      "publishedAt": "2026-04-10T21:15:41.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "85951013ff6427b2fe4e7847c8ae78b788335ab076d813598a956e58643e3462",
+      "source": "Rust Internals",
+      "title": "`alloc`専用の`HashMap`？",
+      "url": "https://internals.rust-lang.org/t/alloc-only-hashmap/24071#post_17",
+      "summary": "それは興味深い提案です。ただし、多くの新しいAPIの表面を検討する必要があります（しゃれを意図しています）。しかし、もしこれが存在したら、例えば、直接的なhashbrownの代わりにindexmapを使用するように移行するかもしれません。",
+      "publishedAt": "2026-04-10T20:48:00.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "9f92006b11be980e40c7be3a86f82ca5879fb13566562aa7e3c7fe2d1ed5d6f9",
+      "source": "Rust Users Forum",
+      "title": "Egui_tracing 0.3 — eguiアプリ用のライブトレース/ログビューアウィジェット",
+      "url": "https://users.rust-lang.org/t/egui-tracing-0-3-a-live-tracing-log-viewer-widget-for-egui-apps/139508#post_1",
+      "summary": "皆さん、こんにちは。\n私はegui_tracingを共有したいと思います。これは、任意のegui/eframeアプリに埋め込みログビューアを提供する小さなクレートです。起動時に一度tracing_subscriberレイヤーとして登録し、UIの任意の場所にLogsウィジェットを配置するだけで、レベル別フィルタリング、ターゲット別フィルタリング（グロブパターンを使用）、検索、スクロール可能なイベントリストを利用できます。これはネイティブとwasm32の両方で動作します。\nまた、logクレートともブリッジしているため、tracingに移行していないクレートも表示されます。\n最小限の使用法:\nlet collector =…",
+      "publishedAt": "2026-04-10T23:45:10.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3e68a5caba9277eaee666d511b7167af86ea4ecdc008ca06667ab2a8ee0e0077",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-10 miro v0.8.0: プレゼンテーションモードと全画面モードの追加",
+      "url": "https://rustcc.cn/article?id=ae8d8bb0-5d58-4b2b-aadf-fff41c72fcee",
+      "summary": "miro v0.8.0: プレゼンテーションモードと全画面モードの追加",
+      "publishedAt": "2026-04-10T02:32:29.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "924c0d243a0a758ff4efbb3367f3e3b37b4a2db275439512c5d9d216befd4ac1",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust + TauriでAndroidのスクリーンショットをMacに高速転送するアプリを作成",
+      "url": "https://zenn.dev/hiyokoko/articles/431ab7cd0ca6c5",
+      "summary": "Rust + TauriでAndroidのスクリーンショットをMacに高速転送するアプリを作成",
+      "publishedAt": "2026-04-09T05:05:59.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-11T00:09:46.267Z"
+  }
+}

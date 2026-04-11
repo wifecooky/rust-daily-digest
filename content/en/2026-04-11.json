@@ -1,0 +1,126 @@
+{
+  "date": "2026-04-11",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "0dea5b6612daecef6890f32c0bf7b3a9ca02fe1600e9f2a4c9a63cca0cc8def9",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF relocations",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_10",
+      "summary": "A few questions:\nCan a relocation affect whether two fields overlap (e.g. if a struct changes to a union)?\nCan a relocation change an array index?\nCan a relocation affect the number of pointer dereferences necessary to access a field?\nIs it ever possible to construct one of these structs? Or does the potential for additional fields Rust doesn't know about mean construction must be forbidden?\nDo we need an analogue of #[link_name] for struct and field names?\nWhat is the failure mode like? If you…",
+      "publishedAt": "2026-04-10T13:59:55.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        5,
+        6,
+        20,
+        21,
+        44,
+        45,
+        46,
+        70,
+        71,
+        72,
+        90,
+        91,
+        92
+      ],
+      "reason": "Potential impact on Rust's type system",
+      "suggestedTitle": "Pre-RFC: BTF Relocations for Rust",
+      "suggestedSummary": "A series of discussions on the Rust Internals forum introduces a pre-RFC for BTF (BPF Type Format) relocations, proposing a new #[btf_preserve_access] attribute. This change aims to improve the compatibility of Rust with BPF (Berkeley Packet Filter) targets by preserving access to aggregate types during compilation. The proposal could significantly impact how Rust handles type layouts, especially in systems programming contexts where BPF is heavily utilized.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "90dfee403e6eb946470ace8384820ba467d970cc7cd5cb439007cddd1d5ea443",
+      "source": "Rust Internals",
+      "title": "Build Security",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_7",
+      "summary": "The primary obstacle to getting sandboxing into Cargo (for build scripts) and rustc (for proc-macros) is implementing it (or at least prototyping it), not convincing people that it should be done.\nSandboxing is already an accepted Major Change Proposal. You can use host.runner to experimentally plug in your choice of sandbox to Cargo build script execution. What this problem needs is people working on implementing solutions and seeing how well they work in practice.",
+      "publishedAt": "2026-04-10T23:25:49.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        8,
+        10,
+        22,
+        23,
+        24,
+        25,
+        27
+      ],
+      "reason": "Enhancing Rust build security",
+      "suggestedTitle": "Improving Build Security in Rust",
+      "suggestedSummary": "The Rust community is actively discussing methods to enhance build security, focusing on sandboxing build scripts and proc-macros. Ideas include using Wasm for sandboxing and adding configuration options to standard libraries to prevent unsafe operations. These changes aim to protect Rust projects from potential vulnerabilities introduced during the build process, ensuring safer and more reliable software development.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04460f46e12b9e1eb06658e555165b494c0de9ad11494f468884ae6da3a85b67",
+      "source": "Rust Internals",
+      "title": "`alloc`-only `HashMap`?",
+      "url": "https://internals.rust-lang.org/t/alloc-only-hashmap/24071#post_18",
+      "summary": "I don't know why you're focusing so much on randomness when nothing in my post requires any random input.\nIn std's current HashMap, the RandomState default implementation requires randomness, but I can provide my own argument that does whatever I want, which may or may not involve randomness.\nMy proposal was that code with only alloc would be able to use HashMaps but would have to provide an explicit BuildHasher. This could pull in randomness from some source, or depending on the code it might…",
+      "publishedAt": "2026-04-10T21:15:41.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "85951013ff6427b2fe4e7847c8ae78b788335ab076d813598a956e58643e3462",
+      "source": "Rust Internals",
+      "title": "`alloc`-only `HashMap`?",
+      "url": "https://internals.rust-lang.org/t/alloc-only-hashmap/24071#post_17",
+      "summary": "That is an interesting suggestion, although that's a lot of new API surface to hash out (pun intended).\nBut if this existed, I would probably transition indexmap to use it instead of direct hashbrown, for example.",
+      "publishedAt": "2026-04-10T20:48:00.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "9f92006b11be980e40c7be3a86f82ca5879fb13566562aa7e3c7fe2d1ed5d6f9",
+      "source": "Rust Users Forum",
+      "title": "Egui_tracing 0.3 — a live tracing/log viewer widget for egui apps",
+      "url": "https://users.rust-lang.org/t/egui-tracing-0-3-a-live-tracing-log-viewer-widget-for-egui-apps/139508#post_1",
+      "summary": "Hi all,\nI wanted to share egui_tracing, a small crate that gives any egui/eframe app an embedded log viewer. You register it as a tracing_subscriber layer once at startup, then drop a Logs widget anywhere in your UI and get filtering by level, filtering by target (with glob patterns), search, and a scrollable event list — both on native and wasm32.\nIt also bridges the log crate, so crates that haven't migrated to tracing still show up.\nMinimal usage:\nlet collector =…",
+      "publishedAt": "2026-04-10T23:45:10.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3e68a5caba9277eaee666d511b7167af86ea4ecdc008ca06667ab2a8ee0e0077",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-10 miro v0.8.0: 增加演示和全屏模式",
+      "url": "https://rustcc.cn/article?id=ae8d8bb0-5d58-4b2b-aadf-fff41c72fcee",
+      "summary": "miro v0.8.0: 增加演示和全屏模式\n\nmiro 是一个使用 Rust 开发的 PDF 阅读器，它基于 iced 和 mupdf-rs 构建。此次 v0.8.0 增加了演示模式和全屏模式。\n功能特性\n深色模式（界面与 PDF 同步生效）\n类 Vim 快捷键绑定（默认启用）\n独立配置文件，可自定义快捷键（不喜欢 Vim 风格时使用）\n鼠标操作支持\n多标签页打开多个 PDF\n支持命令行参数，可从终端直接打开 PDF\n已打开 PDF 自动热重载（尤其适合编写 LaTeX、Typst 等可编译为 PDF 的文档时使用）\n文档文本复制功能\n内部链接跳转（如目录跳转）\n外部链接支持（点击即可复制邮箱、网址等）\n书签功能\n跳转历史记录\n可选 RPC 服务端，支持通过其他程序控制阅读器\n调用系统默认浏览器打印\n键盘快捷键打开链接\n全屏模式\n演示模式：隐藏全部界面元素\nGithub: https://github.com/vincent-uden/miro\nminikv v1.0.0 发布\n\nminikv 是一个基于 Rust 开发的分布式、多租户键值与对象存储系统，内置 Raft…",
+      "publishedAt": "2026-04-10T02:32:29.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "924c0d243a0a758ff4efbb3367f3e3b37b4a2db275439512c5d9d216befd4ac1",
+      "source": "Zenn Rust (JP)",
+      "title": "AndroidのスクショをMacに爆速転送するアプリを Rust + Tauri で作った",
+      "url": "https://zenn.dev/hiyokoko/articles/431ab7cd0ca6c5",
+      "summary": "AndroidのスクショをMacに爆速転送するアプリを Rust + Tauri で作った\n\n はじめに\n「Androidでスクショ撮ったのに、Macに持ってくるのが面倒くさい」\nGoogleフォトの同期を待つ、自分宛にDMで送る、ケーブル繋いでMTPでコピー……どれも微妙にダルい。\nそのストレスを解消するために、Hiyoko Shot を作りました。\nUSB または Wi-Fi で繋いでおくだけで、スクショを撮った瞬間に自動でMacへ転送されます。\nこの記事では、技術的な実装の面白いところをピックアップして紹介します。\n\n\n アプリの概要\nHiyoko Shot はメニューバー常駐...",
+      "publishedAt": "2026-04-09T05:05:59.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-11T00:09:33.454Z"
+  }
+}
