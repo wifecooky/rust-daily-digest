@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-12",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "52ca794c209c8c87fb564905d568c5c23f6db383b113868059bd028e05f446cb",
+      "source": "Rust Internals",
+      "title": "AsyncWriteからAsyncReadへの移行",
+      "url": "https://internals.rust-lang.org/t/going-from-asyncwrite-to-asyncread/24130#post_4",
+      "summary": "確かに興味深い抽象化です。tokio-utilに追加できると言おうと思っていましたし、futures-utilのメンテナにそれについて尋ねることもできるでしょう。しかし、もう少し考えてみると、1つの課題に直面します。それは、読み取りを停止すると、内部のFutureが実行を停止してしまうことです。内部のFutureがmutexやセマフォなどを保持している場合、デッドロックが発生する可能性があります。それはクラシックなFutureLockバグの別のインスタンスになります。これ以上追加したいかどうかはわかりません…",
+      "publishedAt": "2026-04-11T10:39:30.000Z",
+      "score": 47,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        13,
+        37
+      ],
+      "suggestedTitle": "RustにおけるAsyncReadとAsyncWriteの探求",
+      "suggestedSummary": "Rust Internalsフォーラムでは、AsyncWriteからAsyncReadへの移行について議論が行われており、課題と潜在的な解決策が強調されています。この会話は、Tokioに依存しているにもかかわらず、Axumと組み合わせたReaderStreamの有用性に焦点を当てています。この探求は、非同期I/Oを扱うRust開発者にとって重要であり、ストリーム処理の複雑さとRustアプリケーションにおける効率的なデータ処理の影響を掘り下げています。",
+      "reason": "Async I/O is crucial for Rust applications.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "155d32a2d323dd951f63bfed35257070cf8dd61317dd75af61667258377df166",
+      "source": "Lobsters Rust",
+      "title": "PixelベースバンドへのRustの導入",
+      "url": "https://security.googleblog.com/2026/04/bringing-rust-to-pixel-baseband.html",
+      "summary": "コメント",
+      "publishedAt": "2026-04-11T19:00:34.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11
+      ],
+      "suggestedTitle": "RustのGoogle Pixelベースバンドへの拡大",
+      "suggestedSummary": "GoogleはPixelベースバンドにRustを統合し、モバイルハードウェア開発におけるRustの採用において重要なマイルストーンを築いています。Rustの安全性とパフォーマンス機能を活用することで、Googleはベースバンドソフトウェアのセキュリティと効率を向上させることを目指しています。この開発は、重要なシステムコンポーネントにおけるRustの影響力の拡大を証明し、高リスク環境でのレガシー言語の置き換えの可能性を示しています。",
+      "reason": "Rust adoption in major tech products.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9f92006b11be980e40c7be3a86f82ca5879fb13566562aa7e3c7fe2d1ed5d6f9",
+      "source": "Rust Users Forum",
+      "title": "Egui_tracing 0.3 — eguiアプリ向けのライブトレース/ログビューアウィジェット",
+      "url": "https://users.rust-lang.org/t/egui-tracing-0-3-a-live-tracing-log-viewer-widget-for-egui-apps/139508#post_1",
+      "summary": "皆さん、こんにちは。\n私はegui_tracingを共有したいと思います。これは、任意のegui/eframeアプリに埋め込まれたログビューアを提供する小さなクレートです。起動時に一度tracing_subscriberレイヤーとして登録し、UIの任意の場所にLogsウィジェットを配置することで、レベルによるフィルタリング、ターゲットによるフィルタリング（グロブパターンを使用）、検索、スクロール可能なイベントリストを取得できます。これはネイティブとwasm32の両方で動作します。\nまた、logクレートとのブリッジも提供しているため、tracingに移行していないクレートも表示されます。\n最小限の使用法:\nlet collector =…",
+      "publishedAt": "2026-04-10T23:45:10.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        93
+      ],
+      "suggestedTitle": "ログビューを強化するためのEgui_tracing 0.3の紹介",
+      "suggestedSummary": "Egui_tracing 0.3がリリースされ、Eguiアプリケーション向けのライブトレースおよびログビューアウィジェットを提供します。この新しいクレートバージョンにより、開発者はリアルタイムのログ機能をEgui/eframeアプリに統合でき、デバッグとモニタリングが向上します。このウィジェットを埋め込むことで、Rust開発者はアプリケーションの実行時の動作をより深く理解でき、より効率的なトラブルシューティングとパフォーマンスチューニングが可能になります。",
+      "reason": "New tool for real-time logging in Rust apps.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "1cca228cdc5790c5a8ca577b3bc1121a3dcdd382335bd70e708c67655b52a70f",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] 一括可視性構文",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_9",
+      "summary": "scottmcm:\nextern \"C\" fn foo() { ... } と extern \"C\" { fn foo(); } は完全に異なることを覚えておいてください。\n話がそれますが、これらが統一されるべきだったのかどうか、つまり unsafe extern \"C\" { fn foo(); } が #[unsafe(no_mangle)] extern \"C\" fn foo(); と表記されるべきだったのかどうかを考えたことがあります。",
+      "publishedAt": "2026-04-11T18:50:10.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "225ea6325b7355e0ad410f02e88590d4d5732bee1e0a8bc573538cfe7a487a19",
+      "source": "Rust Users Forum",
+      "title": "今週のクレート",
+      "url": "https://users.rust-lang.org/t/crate-of-the-week/2704?page=78#post_1591",
+      "summary": "自己推薦のbincheck (GitHub - kazu11max17/bincheck: ELFおよびPE用のバイナリ強化チェッカー — RELRO、NX、PIE、CFGなど · GitHub)。ELF、PE、Mach-Oファイルのバイナリ強化プロパティをチェックするCLIツール。組み込み/ファームウェアのセキュリティ監査で、確認したい場合に便利です。",
+      "publishedAt": "2026-04-11T20:27:06.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1f5f80d182cabc7192011593b71f0a98b12e16c9dceabba3e56bd22e7a88b6e5",
+      "source": "Lobsters Rust",
+      "title": "fakecloud – 無料でオープンソースのAWSエミュレーター（LocalStackの代替）",
+      "url": "https://github.com/faiscadev/fakecloud",
+      "summary": "コメント",
+      "publishedAt": "2026-04-11T15:44:05.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c61239d662cce4eb1cf9564e4184e062a7ff61023fec4dbe728847a7c7e791d6",
+      "source": "Lobsters Rust",
+      "title": "Rustがサプライチェーン攻撃にどのように脆弱であり、不可避な事態を軽減するためにできること",
+      "url": "https://kerkour.com/rust-supply-chain-nightmare",
+      "summary": "コメント",
+      "publishedAt": "2026-04-11T07:09:41.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5bdd6703e3e66a0d760e739d665c4ebe93f8d94645f4f8fe55c65ae1e5f225db",
+      "source": "Rust Users Forum",
+      "title": "OllamaのローカルLLMをサポートするRustベースのCLIツールを実装",
+      "url": "https://users.rust-lang.org/t/implemented-a-rust-based-cli-tool-that-supports-ollamas-local-llms/139510#post_1",
+      "summary": "ローカルモデルを利用したCLIツールのRustベースの実装。現在バージョンS002に達し、基本的な会話、モデルの切り替え、ファイルI/O操作を含むコア機能が完全に実装されています。",
+      "publishedAt": "2026-04-11T03:12:49.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-12T00:09:55.835Z"
+  }
+}

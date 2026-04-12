@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-12",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "52ca794c209c8c87fb564905d568c5c23f6db383b113868059bd028e05f446cb",
+      "source": "Rust Internals",
+      "title": "Going from AsyncWrite to AsyncRead",
+      "url": "https://internals.rust-lang.org/t/going-from-asyncwrite-to-asyncread/24130#post_4",
+      "summary": "It's certainly an interesting abstraction. I was going to say that we could add one to tokio-util, and that you could ask the futures-util maintainers about that too. But:\nThinking a bit more about it, it does suffer one challenge, which is that when you stop reading, the internal future just stops running. If the internal future holds a mutex or semaphore or similar, then you could get a deadlock. That would be another instance of the classic FutureLock bug. I'm not sure I want to add any more…",
+      "publishedAt": "2026-04-11T10:39:30.000Z",
+      "score": 47,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        13,
+        37
+      ],
+      "suggestedTitle": "Exploring AsyncRead and AsyncWrite in Rust",
+      "suggestedSummary": "The Rust Internals forum is discussing the transition from AsyncWrite to AsyncRead, highlighting the challenges and potential solutions. The conversation centers on the utility of ReaderStream in conjunction with Axum, despite its dependency on Tokio. This exploration is crucial for Rust developers working with asynchronous I/O, as it delves into the intricacies of stream handling and the implications for efficient data processing in Rust applications.",
+      "reason": "Async I/O is crucial for Rust applications.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "155d32a2d323dd951f63bfed35257070cf8dd61317dd75af61667258377df166",
+      "source": "Lobsters Rust",
+      "title": "Bringing Rust to the Pixel Baseband",
+      "url": "https://security.googleblog.com/2026/04/bringing-rust-to-pixel-baseband.html",
+      "summary": "Comments",
+      "publishedAt": "2026-04-11T19:00:34.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11
+      ],
+      "suggestedTitle": "Rust's Expansion into Google's Pixel Baseband",
+      "suggestedSummary": "Google is integrating Rust into its Pixel baseband, marking a significant milestone in Rust's adoption for mobile hardware development. By leveraging Rust's safety and performance features, Google aims to enhance the security and efficiency of its baseband software. This development is a testament to Rust's growing influence in critical system components, showcasing its potential to replace legacy languages in high-stakes environments.",
+      "reason": "Rust adoption in major tech products.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9f92006b11be980e40c7be3a86f82ca5879fb13566562aa7e3c7fe2d1ed5d6f9",
+      "source": "Rust Users Forum",
+      "title": "Egui_tracing 0.3 — a live tracing/log viewer widget for egui apps",
+      "url": "https://users.rust-lang.org/t/egui-tracing-0-3-a-live-tracing-log-viewer-widget-for-egui-apps/139508#post_1",
+      "summary": "Hi all,\nI wanted to share egui_tracing, a small crate that gives any egui/eframe app an embedded log viewer. You register it as a tracing_subscriber layer once at startup, then drop a Logs widget anywhere in your UI and get filtering by level, filtering by target (with glob patterns), search, and a scrollable event list — both on native and wasm32.\nIt also bridges the log crate, so crates that haven't migrated to tracing still show up.\nMinimal usage:\nlet collector =…",
+      "publishedAt": "2026-04-10T23:45:10.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        93
+      ],
+      "suggestedTitle": "Introducing Egui_tracing 0.3 for Enhanced Log Viewing",
+      "suggestedSummary": "Egui_tracing 0.3 has been released, offering a live tracing and log viewer widget for Egui applications. This new crate version allows developers to integrate real-time logging capabilities into their Egui/eframe apps, improving debugging and monitoring. By embedding this widget, Rust developers can gain deeper insights into their application's runtime behavior, facilitating more efficient troubleshooting and performance tuning.",
+      "reason": "New tool for real-time logging in Rust apps.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "1cca228cdc5790c5a8ca577b3bc1121a3dcdd382335bd70e708c67655b52a70f",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Bulk visibility syntax",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_9",
+      "summary": "scottmcm:\nRemember that extern \"C\" fn foo() { ... } and extern \"C\" { fn foo(); } are completely different.\nOff topic, but I've wondered whether these could/should have been unified—whether unsafe extern \"C\" { fn foo(); } should have been spelled #[unsafe(no_mangle)] extern \"C\" fn foo();.",
+      "publishedAt": "2026-04-11T18:50:10.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "225ea6325b7355e0ad410f02e88590d4d5732bee1e0a8bc573538cfe7a487a19",
+      "source": "Rust Users Forum",
+      "title": "Crate of the Week",
+      "url": "https://users.rust-lang.org/t/crate-of-the-week/2704?page=78#post_1591",
+      "summary": "Self-nominating bincheck (GitHub - kazu11max17/bincheck: Binary hardening checker for ELF and PE — RELRO, NX, PIE, CFG, and more · GitHub).\nA CLI tool for checking binary hardening properties on ELF, PE, and Mach-O files.\nUseful for embedded/firmware security audits where you want to verify",
+      "publishedAt": "2026-04-11T20:27:06.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1f5f80d182cabc7192011593b71f0a98b12e16c9dceabba3e56bd22e7a88b6e5",
+      "source": "Lobsters Rust",
+      "title": "fakecloud – Free, open-source AWS emulator (LocalStack alternative)",
+      "url": "https://github.com/faiscadev/fakecloud",
+      "summary": "Comments",
+      "publishedAt": "2026-04-11T15:44:05.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c61239d662cce4eb1cf9564e4184e062a7ff61023fec4dbe728847a7c7e791d6",
+      "source": "Lobsters Rust",
+      "title": "How Rust is susceptible to supply chain attacks and what we can do to mitigate the inevitable",
+      "url": "https://kerkour.com/rust-supply-chain-nightmare",
+      "summary": "Comments",
+      "publishedAt": "2026-04-11T07:09:41.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5bdd6703e3e66a0d760e739d665c4ebe93f8d94645f4f8fe55c65ae1e5f225db",
+      "source": "Rust Users Forum",
+      "title": "Implemented a Rust-based CLI tool that supports Ollama's local LLMs",
+      "url": "https://users.rust-lang.org/t/implemented-a-rust-based-cli-tool-that-supports-ollamas-local-llms/139510#post_1",
+      "summary": "A Rust-based implementation of the CLI tool, utilizing local models. It has now reached version S002, with core functionalities—including basic conversation, model switching, and file I/O operations—fully implemented.\n\n\n\ngithub",
+      "publishedAt": "2026-04-11T03:12:49.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-12T00:09:46.190Z"
+  }
+}

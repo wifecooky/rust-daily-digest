@@ -1,0 +1,130 @@
+{
+  "date": "2026-04-12",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "52ca794c209c8c87fb564905d568c5c23f6db383b113868059bd028e05f446cb",
+      "source": "Rust Internals",
+      "title": "从 AsyncWrite 到 AsyncRead 的转变",
+      "url": "https://internals.rust-lang.org/t/going-from-asyncwrite-to-asyncread/24130#post_4",
+      "summary": "这确实是一个有趣的抽象。我本来想说我们可以在 tokio-util 中添加一个，你也可以询问 futures-util 的维护者。但：再仔细想想，它确实面临一个挑战，那就是当你停止读取时，内部的 future 就会停止运行。如果内部的 future 持有一个互斥锁或信号量等，那么可能会导致死锁。这将是经典的 FutureLock 错误的另一个实例。我不确定我是否想再添加更多……",
+      "publishedAt": "2026-04-11T10:39:30.000Z",
+      "score": 47,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        13,
+        37
+      ],
+      "suggestedTitle": "在 Rust 中探索 AsyncRead 和 AsyncWrite",
+      "suggestedSummary": "Rust Internals 论坛正在讨论从 AsyncWrite 到 AsyncRead 的过渡，重点介绍了挑战和潜在解决方案。讨论围绕 ReaderStream 与 Axum 的结合使用展开，尽管它依赖于 Tokio。对于从事异步 I/O 的 Rust 开发者来说，这一探索至关重要，因为它深入探讨了流处理的复杂性及其对 Rust 应用程序中高效数据处理的影响。",
+      "reason": "Async I/O is crucial for Rust applications.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "155d32a2d323dd951f63bfed35257070cf8dd61317dd75af61667258377df166",
+      "source": "Lobsters Rust",
+      "title": "将 Rust 引入 Pixel 基带",
+      "url": "https://security.googleblog.com/2026/04/bringing-rust-to-pixel-baseband.html",
+      "summary": "评论",
+      "publishedAt": "2026-04-11T19:00:34.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11
+      ],
+      "suggestedTitle": "Rust 扩展至谷歌 Pixel 基带",
+      "suggestedSummary": "谷歌正在将 Rust 集成到其 Pixel 基带中，这标志着 Rust 在移动硬件开发中的采用迈出了重要的一步。通过利用 Rust 的安全性和性能特性，谷歌旨在提高其基带软件的安全性和效率。这一发展证明了 Rust 在关键系统组件中的影响力日益增强，展示了其在高风险环境中取代传统语言的潜力。",
+      "reason": "Rust adoption in major tech products.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9f92006b11be980e40c7be3a86f82ca5879fb13566562aa7e3c7fe2d1ed5d6f9",
+      "source": "Rust Users Forum",
+      "title": "Egui_tracing 0.3 — 一个用于 egui 应用的实时追踪/日志查看器小部件",
+      "url": "https://users.rust-lang.org/t/egui-tracing-0-3-a-live-tracing-log-viewer-widget-for-egui-apps/139508#post_1",
+      "summary": "大家好，\n我想分享一下 egui_tracing，这是一个小型 crate，可以为任何 egui/eframe 应用提供嵌入式日志查看器。您只需在启动时将其注册为 tracing_subscriber 层，然后在 UI 中任意位置放置一个 Logs 小部件，即可实现按级别过滤、按目标过滤（使用 glob 模式）、搜索和可滚动的事件列表——无论是在本地还是 wasm32 上。\n它还桥接了 log crate，因此尚未迁移到 tracing 的 crate 也会显示。\n最小用法：\nlet collector =…",
+      "publishedAt": "2026-04-10T23:45:10.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        93
+      ],
+      "suggestedTitle": "介绍 Egui_tracing 0.3 以增强日志查看",
+      "suggestedSummary": "Egui_tracing 0.3 已发布，提供了一个用于 Egui 应用的实时追踪和日志查看器小部件。这个新版本的 crate 允许开发者将实时日志功能集成到他们的 Egui/eframe 应用中，从而改善调试和监控。通过嵌入这个小部件，Rust 开发者可以更深入地了解应用程序的运行时行为，从而更有效地进行故障排除和性能调优。",
+      "reason": "New tool for real-time logging in Rust apps.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "1cca228cdc5790c5a8ca577b3bc1121a3dcdd382335bd70e708c67655b52a70f",
+      "source": "Rust Internals",
+      "title": "[预RFC] 批量可见性语法",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_9",
+      "summary": "scottmcm: 请记住，extern \"C\" fn foo() { ... } 和 extern \"C\" { fn foo(); } 是完全不同的。题外话，我一直在想这些是否可以/应该被统一——是否不安全的 extern \"C\" { fn foo(); } 应该被写作 #[unsafe(no_mangle)] extern \"C\" fn foo();。",
+      "publishedAt": "2026-04-11T18:50:10.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "225ea6325b7355e0ad410f02e88590d4d5732bee1e0a8bc573538cfe7a487a19",
+      "source": "Rust Users Forum",
+      "title": "本周推荐工具",
+      "url": "https://users.rust-lang.org/t/crate-of-the-week/2704?page=78#post_1591",
+      "summary": "自荐的 bincheck（GitHub - kazu11max17/bincheck: 用于检查 ELF 和 PE 二进制加固的工具 — RELRO, NX, PIE, CFG 等 · GitHub）。一个用于检查 ELF、PE 和 Mach-O 文件二进制加固属性的命令行工具。适用于需要验证的嵌入式/固件安全审计。",
+      "publishedAt": "2026-04-11T20:27:06.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1f5f80d182cabc7192011593b71f0a98b12e16c9dceabba3e56bd22e7a88b6e5",
+      "source": "Lobsters Rust",
+      "title": "fakecloud – 免费的开源AWS模拟器（LocalStack替代品）",
+      "url": "https://github.com/faiscadev/fakecloud",
+      "summary": "评论",
+      "publishedAt": "2026-04-11T15:44:05.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c61239d662cce4eb1cf9564e4184e062a7ff61023fec4dbe728847a7c7e791d6",
+      "source": "Lobsters Rust",
+      "title": "Rust 如何易受供应链攻击以及我们可以采取哪些措施来缓解不可避免的风险",
+      "url": "https://kerkour.com/rust-supply-chain-nightmare",
+      "summary": "评论",
+      "publishedAt": "2026-04-11T07:09:41.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5bdd6703e3e66a0d760e739d665c4ebe93f8d94645f4f8fe55c65ae1e5f225db",
+      "source": "Rust Users Forum",
+      "title": "实现了一个支持Ollama本地LLM的Rust CLI工具",
+      "url": "https://users.rust-lang.org/t/implemented-a-rust-based-cli-tool-that-supports-ollamas-local-llms/139510#post_1",
+      "summary": "一个基于Rust实现的CLI工具，利用本地模型。该工具现已达到版本S002，核心功能——包括基本对话、模型切换和文件I/O操作——已全部实现。",
+      "publishedAt": "2026-04-11T03:12:49.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-12T00:09:51.140Z"
+  }
+}
