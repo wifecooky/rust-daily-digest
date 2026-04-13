@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-13",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "8f70f4545fc37d630d822441fe609af99a165ef548027bc433ba6c70a7e8c435",
+      "source": "Rust Internals",
+      "title": "ビルドセキュリティ",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_10",
+      "summary": "kpreid:\nCargo（ビルドスクリプト用）とrustc（プロシージャルマクロ用）にサンドボックス化を導入する上での主な障害は、それを実装すること（少なくともプロトタイプを作成すること）であり、それを行うべきだと人々を納得させることではありません。\n実際、私は納得が必要です。\nこれは多くの設計作業を伴う大きな取り組みであり、未完成です。それはビルド時の動作のみをカバーし、実行時の動作はカバーしていません。ビルド時と実行時の両方で利益を得る方法（例：cackle）があります。それははるかに高い見返りのように思えます…",
+      "publishedAt": "2026-04-11T13:13:54.000Z",
+      "score": 17,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        40,
+        42
+      ],
+      "reason": "Sandboxing in Cargo and rustc impacts security.",
+      "suggestedTitle": "サンドボックス化によるRustビルドセキュリティの強化",
+      "suggestedSummary": "Rustコミュニティは、ビルドプロセス中のセキュリティを強化するために、Cargoとrustcにサンドボックス化メカニズムを統合することを議論しています。この提案は、ビルドスクリプトとプロシージャルマクロに関連するリスクを、その実行環境を制限することで軽減することを目指しています。Rust開発者にとって、これは依存関係管理の安全性向上とサプライチェーン攻撃への露出の削減を意味し、より安全なRustプロジェクトを保証します。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c61239d662cce4eb1cf9564e4184e062a7ff61023fec4dbe728847a7c7e791d6",
+      "source": "Lobsters Rust",
+      "title": "Rustがサプライチェーン攻撃に対して脆弱である理由とその不可避を軽減するためにできること",
+      "url": "https://kerkour.com/rust-supply-chain-nightmare",
+      "summary": "コメント",
+      "publishedAt": "2026-04-11T07:09:41.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        64,
+        3
+      ],
+      "reason": "Supply chain security is crucial for Rust.",
+      "suggestedTitle": "Rustにおけるサプライチェーン攻撃の軽減",
+      "suggestedSummary": "最近の議論では、Rustがサプライチェーン攻撃に対して脆弱であることが強調され、軽減策が提案されています。記事では、依存関係のより堅牢な検証プロセスを実施し、cargo-crevのようなツールを活用してピアレビューを行うことを提案しています。Rust開発者にとって、これらの実践を採用することは、サードパーティのクレートを通じて導入される脆弱性を減らし、より安全なアプリケーションを作成することにつながります。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "5a20e223f1d3421369664bbfff7be789fcc7f2e5eb56b06646e1524af81112f5",
+      "source": "Zenn Rust (JP)",
+      "title": "Lutum: 高度なハーネスエンジニアリングのためのRust製LLM SDK",
+      "url": "https://zenn.dev/ryo33/articles/lutum-introduction",
+      "summary": "LLMアプリケーションの開発において、ループや分岐、ツール呼び出しの制御をフレームワークに任せず、自分で書きたいと感じたことはありませんか。LutumはそのためのRust製LLM SDKです。Lutumでは、フレームワークがループや状態管理をユーザー自身が書きます。Rustの型システムとマクロを活用しながら、メンテナンス性を犠牲にせずに高度な制御を行えるように設計されています。",
+      "publishedAt": "2026-04-12T23:00:08.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1f5f80d182cabc7192011593b71f0a98b12e16c9dceabba3e56bd22e7a88b6e5",
+      "source": "Lobsters Rust",
+      "title": "fakecloud – 無料のオープンソースAWSエミュレーター（LocalStackの代替）",
+      "url": "https://github.com/faiscadev/fakecloud",
+      "summary": "コメント",
+      "publishedAt": "2026-04-11T15:44:05.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1cca228cdc5790c5a8ca577b3bc1121a3dcdd382335bd70e708c67655b52a70f",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] 一括可視性構文",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_9",
+      "summary": "scottmcm:\nextern \"C\" fn foo() { ... } と extern \"C\" { fn foo(); } は完全に異なることを覚えておいてください。\n話題がそれますが、これらが統一されるべきだったかどうか、つまり unsafe extern \"C\" { fn foo(); } が #[unsafe(no_mangle)] extern \"C\" fn foo(); と表記されるべきだったかどうかを考えたことがあります。",
+      "publishedAt": "2026-04-11T18:50:10.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "29fbe6ce70c0049a1e668be272dc9bb4561c246e9ee2f8f932f22baa209a06f4",
+      "source": "Rust Internals",
+      "title": "静的および定数に対する`impl Trait`",
+      "url": "https://internals.rust-lang.org/t/impl-trait-for-statics-and-consts/24165#post_5",
+      "summary": "これはすでにナイトリービルドでコンパイルされます：\n#![feature(type_alias_impl_trait)]\n\ntype MyFn = impl Fn();\n\n#[define_opaque(MyFn)]\nconst THING: MyFn = || {};",
+      "publishedAt": "2026-04-11T06:36:22.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-13T00:10:58.564Z"
+  }
+}

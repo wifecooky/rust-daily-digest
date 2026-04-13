@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-13",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "8f70f4545fc37d630d822441fe609af99a165ef548027bc433ba6c70a7e8c435",
+      "source": "Rust Internals",
+      "title": "构建安全性",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_10",
+      "summary": "kpreid：\n将沙箱技术引入Cargo（用于构建脚本）和rustc（用于过程宏）的主要障碍是实施它（或至少是原型设计），而不是说服人们它应该被完成。\n实际上，我需要被说服。\n这是一项巨大的努力，涉及大量的设计工作，而且尚未完成。它仅涵盖构建时行为，而不包括运行时行为。我们有一些方法（例如cackle），可以在构建时和运行时都获得收益。这似乎是一个更高的回报……",
+      "publishedAt": "2026-04-11T13:13:54.000Z",
+      "score": 17,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        40,
+        42
+      ],
+      "reason": "Sandboxing in Cargo and rustc impacts security.",
+      "suggestedTitle": "通过沙箱技术增强Rust构建安全性",
+      "suggestedSummary": "Rust社区正在讨论将沙箱机制集成到Cargo和rustc中，旨在增强构建过程中的安全性。该提案旨在通过限制构建脚本和过程宏的执行环境来降低相关风险。对于Rust开发者来说，这可能意味着更安全的依赖管理和减少供应链攻击的风险，从而确保更安全的Rust项目。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c61239d662cce4eb1cf9564e4184e062a7ff61023fec4dbe728847a7c7e791d6",
+      "source": "Lobsters Rust",
+      "title": "Rust 如何易受供应链攻击及我们可以采取哪些措施来缓解不可避免的情况",
+      "url": "https://kerkour.com/rust-supply-chain-nightmare",
+      "summary": "评论",
+      "publishedAt": "2026-04-11T07:09:41.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        64,
+        3
+      ],
+      "reason": "Supply chain security is crucial for Rust.",
+      "suggestedTitle": "缓解 Rust 中的供应链攻击",
+      "suggestedSummary": "最近的一次讨论强调了 Rust 易受供应链攻击的情况，并提出了缓解策略。文章建议为依赖项实施更强大的验证流程，并利用 cargo-crev 等工具进行同行评审。对于 Rust 开发者来说，采用这些做法可以通过减少第三方 crate 引入的漏洞来开发更安全的应用程序。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "5a20e223f1d3421369664bbfff7be789fcc7f2e5eb56b06646e1524af81112f5",
+      "source": "Zenn Rust (JP)",
+      "title": "Lutum：用于高级控制工程的 Rust 制 LLM SDK",
+      "url": "https://zenn.dev/ryo33/articles/lutum-introduction",
+      "summary": "在开发 LLM 应用程序时，您是否曾希望能够自己编写循环、分支和工具调用的控制，而不是将其委托给框架？Lutum 是为此设计的 Rust 制 LLM SDK。在 Lutum 中，框架允许用户自己编写循环和状态管理。它利用 Rust 的类型系统和宏，在不牺牲可维护性的情况下实现高级控制。https://github.com/Hihaheho/lutum\n关于标题中的“控制工程”：我将控制工程视为“将上下文工程与 LLM 外部程序结合起来的过程”...",
+      "publishedAt": "2026-04-12T23:00:08.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1f5f80d182cabc7192011593b71f0a98b12e16c9dceabba3e56bd22e7a88b6e5",
+      "source": "Lobsters Rust",
+      "title": "fakecloud – 免费开源的AWS模拟器（LocalStack替代品）",
+      "url": "https://github.com/faiscadev/fakecloud",
+      "summary": "评论",
+      "publishedAt": "2026-04-11T15:44:05.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1cca228cdc5790c5a8ca577b3bc1121a3dcdd382335bd70e708c67655b52a70f",
+      "source": "Rust Internals",
+      "title": "[预RFC] 批量可见性语法",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_9",
+      "summary": "scottmcm：\n请记住，extern \"C\" fn foo() { ... } 和 extern \"C\" { fn foo(); } 是完全不同的。\n题外话，我一直在想它们是否可以/应该被统一——是否不安全的 extern \"C\" { fn foo(); } 应该被拼写为 #[unsafe(no_mangle)] extern \"C\" fn foo();。",
+      "publishedAt": "2026-04-11T18:50:10.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "29fbe6ce70c0049a1e668be272dc9bb4561c246e9ee2f8f932f22baa209a06f4",
+      "source": "Rust Internals",
+      "title": "`impl Trait` 用于静态和常量",
+      "url": "https://internals.rust-lang.org/t/impl-trait-for-statics-and-consts/24165#post_5",
+      "summary": "这已经可以在 nightly 版本中编译：\n#![feature(type_alias_impl_trait)]\n\ntype MyFn = impl Fn();\n\n#[define_opaque(MyFn)]\nconst THING: MyFn = || {};",
+      "publishedAt": "2026-04-11T06:36:22.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-13T00:10:54.256Z"
+  }
+}

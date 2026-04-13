@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-13",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "8f70f4545fc37d630d822441fe609af99a165ef548027bc433ba6c70a7e8c435",
+      "source": "Rust Internals",
+      "title": "Build Security",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_10",
+      "summary": "kpreid:\nThe primary obstacle to getting sandboxing into Cargo (for build scripts) and rustc (for proc-macros) is implementing it (or at least prototyping it), not convincing people that it should be done.\nActually, I need convincing.\nIt is a huge effort with a lot of design work and it is incomplete.  It only covers build time behavior and not runtime behavior.  There are ways (e.g. cackle) where we can get the benefit for both build time and runtime.  That seems like a much higher pay off…",
+      "publishedAt": "2026-04-11T13:13:54.000Z",
+      "score": 17,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        40,
+        42
+      ],
+      "reason": "Sandboxing in Cargo and rustc impacts security.",
+      "suggestedTitle": "Enhancing Rust Build Security with Sandboxing",
+      "suggestedSummary": "The Rust community is discussing the integration of sandboxing mechanisms into Cargo and rustc, aiming to enhance security during build processes. This proposal seeks to mitigate risks associated with build scripts and procedural macros by restricting their execution environment. For Rust developers, this could mean safer dependency management and reduced exposure to supply chain attacks, ensuring more secure Rust projects.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c61239d662cce4eb1cf9564e4184e062a7ff61023fec4dbe728847a7c7e791d6",
+      "source": "Lobsters Rust",
+      "title": "How Rust is susceptible to supply chain attacks and what we can do to mitigate the inevitable",
+      "url": "https://kerkour.com/rust-supply-chain-nightmare",
+      "summary": "Comments",
+      "publishedAt": "2026-04-11T07:09:41.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        64,
+        3
+      ],
+      "reason": "Supply chain security is crucial for Rust.",
+      "suggestedTitle": "Mitigating Supply Chain Attacks in Rust",
+      "suggestedSummary": "A recent discussion highlights Rust's susceptibility to supply chain attacks and proposes strategies for mitigation. The article suggests implementing more robust verification processes for dependencies and leveraging tools like cargo-crev for peer reviews. For Rust developers, adopting these practices can lead to more secure applications by reducing vulnerabilities introduced through third-party crates.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "5a20e223f1d3421369664bbfff7be789fcc7f2e5eb56b06646e1524af81112f5",
+      "source": "Zenn Rust (JP)",
+      "title": "Lutum: 高度なハーネスエンジニアリングのための Rust製 LLM SDK",
+      "url": "https://zenn.dev/ryo33/articles/lutum-introduction",
+      "summary": "LLMアプリケーションの開発で、ループや分岐・ツール呼び出しの制御をフレームワークに委ねずに自分で書きたいと感じたことはないでしょうか。Lutum はそのためのRust製LLM SDKです。Lutumではフレームワークがループや状態管理をユーザー自身が書きます。Rustの型システムとマクロを活かしつつ、メンテナンス性を犠牲にせず高度な制御を行えるようにデザインしました。\nhttps://github.com/Hihaheho/lutum\nタイトル中の「ハーネスエンジニアリング」について:\n私はハーネスエンジニアリングを「コンテキストエンジニアリングとLLM外部のプログラムを組み合わせるこ...",
+      "publishedAt": "2026-04-12T23:00:08.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1f5f80d182cabc7192011593b71f0a98b12e16c9dceabba3e56bd22e7a88b6e5",
+      "source": "Lobsters Rust",
+      "title": "fakecloud – Free, open-source AWS emulator (LocalStack alternative)",
+      "url": "https://github.com/faiscadev/fakecloud",
+      "summary": "Comments",
+      "publishedAt": "2026-04-11T15:44:05.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1cca228cdc5790c5a8ca577b3bc1121a3dcdd382335bd70e708c67655b52a70f",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Bulk visibility syntax",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-bulk-visibility-syntax/24136#post_9",
+      "summary": "scottmcm:\nRemember that extern \"C\" fn foo() { ... } and extern \"C\" { fn foo(); } are completely different.\nOff topic, but I've wondered whether these could/should have been unified—whether unsafe extern \"C\" { fn foo(); } should have been spelled #[unsafe(no_mangle)] extern \"C\" fn foo();.",
+      "publishedAt": "2026-04-11T18:50:10.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "29fbe6ce70c0049a1e668be272dc9bb4561c246e9ee2f8f932f22baa209a06f4",
+      "source": "Rust Internals",
+      "title": "`impl Trait` for statics and consts",
+      "url": "https://internals.rust-lang.org/t/impl-trait-for-statics-and-consts/24165#post_5",
+      "summary": "This already compiles on nightly:\n#![feature(type_alias_impl_trait)]\n\ntype MyFn = impl Fn();\n\n#[define_opaque(MyFn)]\nconst THING: MyFn = || {};",
+      "publishedAt": "2026-04-11T06:36:22.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-13T00:10:49.574Z"
+  }
+}
