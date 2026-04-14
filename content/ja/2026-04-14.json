@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-14",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "64aa4277949c4adafa66e65d1a6d9b6df396e53f3893183ed38a641593c2cb0c",
+      "source": "Google News Rust",
+      "title": "Linuxカーネル7.0が公式にRust言語サポートを搭載してリリース - thelec.net",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XMDRCVXhvaURQOFA1RUVFV0txc1YtbTVxUXFiLVViOGJzbnM3NjNWMHlFNy0wZ0VnQXE5SmQzZnpnTTY1Qng1Sk9oVTAyUXFRT3RqUlQxaEc5Rl94SGpNWkF3LTRXQQ?oc=5",
+      "summary": "Linuxカーネル7.0が公式にRust言語サポートを搭載してリリース  thelec.net",
+      "publishedAt": "2026-04-13T23:20:14.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        6
+      ],
+      "suggestedTitle": "Linux 7.0が公式にRust言語サポートを統合",
+      "suggestedSummary": "Linuxカーネル7.0のリリースは、Rust言語サポートの公式統合により重要な節目を迎えました。この統合により、開発者はRustでカーネルモジュールを記述でき、メモリ安全性と並行性の機能を活用できます。Rustの導入により、カーネルはセキュリティと安定性の向上を目指し、システムレベルのプログラミングにおけるCの現代的な代替手段を提供します。この変更により、Rust開発者がカーネル開発に貢献する新たな機会が開かれ、より安全で堅牢なシステムの実現が期待されます。",
+      "reason": "Rust now officially supported in Linux kernel.",
+      "relatedSources": [
+        "Google News Rust",
+        "Google News Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "324d1f23372b5f5e350c64c19e0998d783acb04e9aca8623aea2199049513b78",
+      "source": "Rust Internals",
+      "title": "Rust 1.95.0 プレリリーステスト",
+      "url": "https://internals.rust-lang.org/t/rust-1-95-0-pre-release-testing/24171#post_1",
+      "summary": "1.95.0のプレリリースがテストの準備が整いました。リリースは4月16日に予定されています。リリースノートはこちらで確認できます。ローカルで試すには、次を実行してください：\nRUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\nインデックスはhttps://dev-static.rust-lang.org/dist/2026-04-13/index.htmlです。リリースチームはプレリリースプロセスの変更についても考えています。このGitHubの問題でフィードバックをいただけると幸いです。",
+      "publishedAt": "2026-04-13T13:18:49.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        18
+      ],
+      "suggestedTitle": "Rust 1.95.0 プレリリーステスト開始",
+      "suggestedSummary": "Rust 1.95.0のプレリリースがテスト用に利用可能になりました。最終リリースは4月16日に予定されています。このプレリリースには、言語の機能を強化するためのいくつかの新機能と改善が含まれています。開発者はこのバージョンでプロジェクトをテストし、公式リリース前に潜在的な問題を特定することが奨励されています。このテストフェーズは、スムーズな移行を確保し、Rustプロジェクトの安定性と信頼性を維持するために重要です。",
+      "reason": "Upcoming Rust release testing phase.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3d2c026246d6a83fc3c38dd307ae05fcec7692a790577a64573c74351c0acc2c",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF リロケーション",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_15",
+      "summary": "comex:\nこの革新は、型が !Sized でありながら、構造体フィールドへのアクセスを可能にすることです。そのための適切な操作セマンティクスを考え出す必要がありますが、それは Sized 階層とは合理的に直交しているように思われます。\nここでの操作セマンティクスは、特定のフィールドのオフセットを格納するグローバル変数（const のように使用される static）を持ち、フィールド投影をグローバル変数からのオフセットを使用したポインタ演算によって実装し、他のフィールド...",
+      "publishedAt": "2026-04-13T21:31:45.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c9621c97dd16587a852172a6a7426ed7af3bf82250123214b8c3b2d035e1a87e",
+      "source": "Rust Users Forum",
+      "title": "KAIO v0.2.0: RustでGPUカーネルを記述、テンソルコアの行列積がcuBLAS sgemmの92.5%に達成",
+      "url": "https://users.rust-lang.org/t/kaio-v0-2-0-write-gpu-kernels-in-rust-tensor-core-matmul-at-92-5-of-cublas-sgemm/139555#post_3",
+      "summary": "今日はまだ。KAIOの型システムはf32/f16/bf16で、サブバイト型はまだ対応していません。特に6ビットはバイト境界に揃わないため（4つの値が3バイトにパックされる）、バイトを跨ぐシフトとマスク操作が必要です。サブバイト量子化はロードマップにあります。INT8はフェーズ7の優先事項で、その次に4ビットが続きます。これは現在、ほとんどの量子化されたLLM推論が行われているところです。6ビット（Q6_Kスタイル）はその後に来る予定で、これらすべてのアーキテクチャは同じです：デクオンタイズステージが…",
+      "publishedAt": "2026-04-13T18:57:55.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7d88293c1be44dd9838bfdc62d3c5eb7653ef436103faca0b2638918ccb5bbb1",
+      "source": "Rust Users Forum",
+      "title": "Numa - ゼロから作るDNSリゾルバ",
+      "url": "https://users.rust-lang.org/t/numa-a-dns-resolver-from-scratch/139559#post_1",
+      "summary": "私はRustでDNSリゾルバを構築しており、日常的にシステムDNSとして使用しています。バージョン0.13.0がリリースされ、注目の機能はリクエストヘッジングです。DNSのテールレイテンシーを5行の設定と50行の関数で修正します — Numa。単一のバイナリ、MITライセンス、macOS + Linux + Windowsに対応。macOSとiPhoneでDoTを介して唯一のリゾルバとして使用しています。github.com",
+      "publishedAt": "2026-04-13T14:34:22.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "15f87797668b3e24c9370060fec2a9f022c6cc359a3f678280ca7939ebdebfd2",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #323",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/13/changelog-323.html",
+      "summary": "コミット: 7b6e124\n2026-04-13 (v0.3.2862)\n新機能\n#21978 (初めての貢献) 実行可能なコマンドのプレースホルダーを強化。\n#21964 (初めての貢献) cargo metadata に追加の引数を渡せるようにする。\n#21012, #21982 関数の戻り位置で → を補完。\n修正\n#21995 (初めての貢献) Cargo の [env] 変数がプロセスのものを上書きしないようにする。\n#21970, #21968 (初めての貢献) Markdown ファイルを VFS にロードし、変更を監視。\n#21704 (初めての貢献) rust-analyzer.toml を仮想環境でロード…",
+      "publishedAt": "2026-04-13T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-14T00:14:38.491Z"
+  }
+}

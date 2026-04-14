@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-14",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "64aa4277949c4adafa66e65d1a6d9b6df396e53f3893183ed38a641593c2cb0c",
+      "source": "Google News Rust",
+      "title": "Linux Kernel 7.0 Released With Official Rust Language Support - thelec.net",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XMDRCVXhvaURQOFA1RUVFV0txc1YtbTVxUXFiLVViOGJzbnM3NjNWMHlFNy0wZ0VnQXE5SmQzZnpnTTY1Qng1Sk9oVTAyUXFRT3RqUlQxaEc5Rl94SGpNWkF3LTRXQQ?oc=5",
+      "summary": "Linux Kernel 7.0 Released With Official Rust Language Support  thelec.net",
+      "publishedAt": "2026-04-13T23:20:14.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        6
+      ],
+      "suggestedTitle": "Linux 7.0 Officially Integrates Rust Language Support",
+      "suggestedSummary": "The release of Linux Kernel 7.0 marks a significant milestone with the official integration of Rust language support. This integration allows developers to write kernel modules in Rust, leveraging its memory safety and concurrency features. With Rust's inclusion, the kernel aims to improve security and stability, offering a modern alternative to C for system-level programming. This change opens new opportunities for Rust developers to contribute to kernel development, potentially leading to safer and more robust systems.",
+      "reason": "Rust now officially supported in Linux kernel.",
+      "relatedSources": [
+        "Google News Rust",
+        "Google News Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "324d1f23372b5f5e350c64c19e0998d783acb04e9aca8623aea2199049513b78",
+      "source": "Rust Internals",
+      "title": "Rust 1.95.0 pre-release testing",
+      "url": "https://internals.rust-lang.org/t/rust-1-95-0-pre-release-testing/24171#post_1",
+      "summary": "The 1.95.0 pre-release is ready for testing. The release is scheduled for\nApril 16. Release notes can be found here.\nYou can try it out locally by running:\nRUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\nThe index is https://dev-static.rust-lang.org/dist/2026-04-13/index.html.\nThe release team is also thinking about changes to our pre-release process:\nwe'd love your feedback on this GitHub issue.",
+      "publishedAt": "2026-04-13T13:18:49.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        18
+      ],
+      "suggestedTitle": "Rust 1.95.0 Pre-Release Testing Begins",
+      "suggestedSummary": "The Rust 1.95.0 pre-release is now available for testing, with the final release scheduled for April 16. This pre-release includes several new features and improvements aimed at enhancing the language's capabilities. Developers are encouraged to test their projects with this version to identify any potential issues before the official release. This testing phase is crucial for ensuring a smooth transition and maintaining the stability and reliability of Rust projects.",
+      "reason": "Upcoming Rust release testing phase.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3d2c026246d6a83fc3c38dd307ae05fcec7692a790577a64573c74351c0acc2c",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF relocations",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_15",
+      "summary": "comex:\nThe innovation would be having a type be !Sized but still allowing struct field access on it. You still need to work out the proper operational semantics for that, but that seems reasonably orthogonal to the Sized hierarchy.\nI think the opsem here is to have what is in effect a global variable (static used like a const) that stores the offset of a particular field, for field projection to be implemented by pointer arithmetic using the offset from the global variable, and for other field…",
+      "publishedAt": "2026-04-13T21:31:45.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c9621c97dd16587a852172a6a7426ed7af3bf82250123214b8c3b2d035e1a87e",
+      "source": "Rust Users Forum",
+      "title": "KAIO v0.2.0: Write GPU kernels in Rust, tensor-core matmul at 92.5% of cuBLAS sgemm",
+      "url": "https://users.rust-lang.org/t/kaio-v0-2-0-write-gpu-kernels-in-rust-tensor-core-matmul-at-92-5-of-cublas-sgemm/139555#post_3",
+      "summary": "Not today. KAIO's type system is f32/f16/bf16, no sub-byte types yet. 6-bit specifically is tricky because it doesn't align to byte boundaries (4 values pack into 3 bytes), so the unpack logic needs shift-and-mask operations that straddle bytes.\nSub-byte quantization is on the roadmap. INT8 is the Phase 7 priority, then 4-bit since that's where most quantized LLM inference lives right now. 6-bit (Q6_K-style) would come after, the architecture for all of these is the same: a dequant stage that…",
+      "publishedAt": "2026-04-13T18:57:55.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7d88293c1be44dd9838bfdc62d3c5eb7653ef436103faca0b2638918ccb5bbb1",
+      "source": "Rust Users Forum",
+      "title": "Numa - a DNS resolver from scratch",
+      "url": "https://users.rust-lang.org/t/numa-a-dns-resolver-from-scratch/139559#post_1",
+      "summary": "I've been building a DNS resolver in Rust as my daily system DNS.\nv0.13.0 just shipped - the headline feature is request hedging.\nFixing DNS tail latency with a 5-line config and a 50-line function — Numa\nSingle binary, MIT, macOS + Linux + Windows. Been dogfooding it as my only resolver on macOS + iPhone over DoT.\ngithub.com\n  \nGitHub - razvandimescu/numa: Portable DNS resolver in Rust — .numa local...\nPortable DNS resolver in Rust — .numa local domains, ad blocking, developer overrides",
+      "publishedAt": "2026-04-13T14:34:22.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "15f87797668b3e24c9370060fec2a9f022c6cc359a3f678280ca7939ebdebfd2",
+      "source": "rust-analyzer",
+      "title": "Changelog #323",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/13/changelog-323.html",
+      "summary": "Commit: 7b6e124\n2026-04-13 (v0.3.2862)\nNew Features\n#21978 (first contribution) enhance runnable command placeholders.\n#21964 (first contribution) allow passing extra arguments to cargo metadata.\n#21012, #21982 complete → in function return position.\nFixes\n#21995 (first contribution) don’t let Cargo [env] variables override the process ones.\n#21970, #21968 (first contribution) load Markdown files into the VFS and watch for changes.\n#21704 (first contribution) load rust-analyzer.toml in virtual…",
+      "publishedAt": "2026-04-13T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-14T00:14:27.433Z"
+  }
+}

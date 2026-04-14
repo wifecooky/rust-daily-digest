@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-14",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "64aa4277949c4adafa66e65d1a6d9b6df396e53f3893183ed38a641593c2cb0c",
+      "source": "Google News Rust",
+      "title": "Linux内核7.0发布，正式支持Rust语言 - thelec.net",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XMDRCVXhvaURQOFA1RUVFV0txc1YtbTVxUXFiLVViOGJzbnM3NjNWMHlFNy0wZ0VnQXE5SmQzZnpnTTY1Qng1Sk9oVTAyUXFRT3RqUlQxaEc5Rl94SGpNWkF3LTRXQQ?oc=5",
+      "summary": "Linux内核7.0发布，正式支持Rust语言 thelec.net",
+      "publishedAt": "2026-04-13T23:20:14.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        6
+      ],
+      "suggestedTitle": "Linux 7.0正式集成Rust语言支持",
+      "suggestedSummary": "Linux内核7.0的发布标志着一个重要的里程碑，正式集成了Rust语言支持。这一集成允许开发者使用Rust编写内核模块，利用其内存安全性和并发特性。随着Rust的加入，内核旨在提高安全性和稳定性，为系统级编程提供了一种现代化的替代方案。这一变化为Rust开发者参与内核开发开辟了新的机会，可能会导致更安全和更稳健的系统。",
+      "reason": "Rust now officially supported in Linux kernel.",
+      "relatedSources": [
+        "Google News Rust",
+        "Google News Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "324d1f23372b5f5e350c64c19e0998d783acb04e9aca8623aea2199049513b78",
+      "source": "Rust Internals",
+      "title": "Rust 1.95.0 预发布测试",
+      "url": "https://internals.rust-lang.org/t/rust-1-95-0-pre-release-testing/24171#post_1",
+      "summary": "1.95.0 预发布版已准备好进行测试。该版本计划于4月16日发布。发布说明可以在此处找到。您可以通过运行以下命令在本地试用：RUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\n索引为 https://dev-static.rust-lang.org/dist/2026-04-13/index.html。发布团队也在考虑对我们的预发布流程进行更改：我们希望您能在这个 GitHub 问题上提供反馈。",
+      "publishedAt": "2026-04-13T13:18:49.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        18
+      ],
+      "suggestedTitle": "Rust 1.95.0 预发布测试开始",
+      "suggestedSummary": "Rust 1.95.0 预发布版现已可供测试，最终版本计划于4月16日发布。此预发布版包含若干新功能和改进，旨在增强语言的能力。鼓励开发人员使用此版本测试他们的项目，以在正式发布前识别任何潜在问题。此测试阶段对于确保顺利过渡以及维护 Rust 项目的稳定性和可靠性至关重要。",
+      "reason": "Upcoming Rust release testing phase.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3d2c026246d6a83fc3c38dd307ae05fcec7692a790577a64573c74351c0acc2c",
+      "source": "Rust Internals",
+      "title": "[预RFC] BTF重定位",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_15",
+      "summary": "comex: 这一创新在于允许一个类型为!Sized，但仍然可以访问其结构体字段。你仍然需要为此制定适当的操作语义，但这似乎与Sized层次结构合理地正交。我认为这里的操作语义是拥有一个实际上是全局变量（像常量一样使用的静态变量），它存储特定字段的偏移量，通过使用全局变量中的偏移量进行指针运算来实现字段投影，以及其他字段...",
+      "publishedAt": "2026-04-13T21:31:45.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c9621c97dd16587a852172a6a7426ed7af3bf82250123214b8c3b2d035e1a87e",
+      "source": "Rust Users Forum",
+      "title": "KAIO v0.2.0：用Rust编写GPU内核，张量核心矩阵乘法达到cuBLAS sgemm的92.5%",
+      "url": "https://users.rust-lang.org/t/kaio-v0-2-0-write-gpu-kernels-in-rust-tensor-core-matmul-at-92-5-of-cublas-sgemm/139555#post_3",
+      "summary": "不是今天。KAIO的类型系统是f32/f16/bf16，目前还没有子字节类型。6位特别棘手，因为它不与字节边界对齐（4个值打包成3个字节），因此解包逻辑需要跨字节的移位和掩码操作。子字节量化在路线图上。INT8是第7阶段的优先事项，然后是4位，因为这是大多数量化LLM推理目前所在的位置。6位（Q6_K风格）将在之后，所有这些的架构都是相同的：一个去量化阶段...",
+      "publishedAt": "2026-04-13T18:57:55.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7d88293c1be44dd9838bfdc62d3c5eb7653ef436103faca0b2638918ccb5bbb1",
+      "source": "Rust Users Forum",
+      "title": "Numa - 从零开始构建的DNS解析器",
+      "url": "https://users.rust-lang.org/t/numa-a-dns-resolver-from-scratch/139559#post_1",
+      "summary": "我一直在用Rust构建一个DNS解析器作为我日常系统的DNS。v0.13.0刚刚发布——主要功能是请求对冲。通过一个5行配置和一个50行函数修复DNS尾部延迟——Numa。单一二进制文件，MIT许可，支持macOS、Linux和Windows。我一直在macOS和iPhone上通过DoT自用它作为唯一的解析器。github.com",
+      "publishedAt": "2026-04-13T14:34:22.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "15f87797668b3e24c9370060fec2a9f022c6cc359a3f678280ca7939ebdebfd2",
+      "source": "rust-analyzer",
+      "title": "变更日志 #323",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/13/changelog-323.html",
+      "summary": "提交：7b6e124\n2026-04-13 (v0.3.2862)\n新功能\n#21978（首次贡献）增强可运行命令的占位符。\n#21964（首次贡献）允许传递额外参数给 cargo metadata。\n#21012, #21982 在函数返回位置完成 →。\n修复\n#21995（首次贡献）不允许 Cargo [env] 变量覆盖进程变量。\n#21970, #21968（首次贡献）将 Markdown 文件加载到 VFS 并监视更改。\n#21704（首次贡献）在虚拟环境中加载 rust-analyzer.toml...",
+      "publishedAt": "2026-04-13T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-14T00:14:33.253Z"
+  }
+}
