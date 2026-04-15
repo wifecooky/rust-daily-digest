@@ -1,0 +1,68 @@
+{
+  "date": "2026-04-15",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "f08be1a885684a21836df2d1734e08805c87a3a15156375b346e4856d49fe3c9",
+      "source": "Rust Internals",
+      "title": "Rust 1.95.0 预发布测试",
+      "url": "https://internals.rust-lang.org/t/rust-1-95-0-pre-release-testing/24171#post_3",
+      "summary": "是的，更多新的范围类型将在 1.96 中推出。",
+      "publishedAt": "2026-04-14T23:57:13.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Tokio update impacts async Rust projects",
+      "suggestedTitle": "Tokio v1.52.0 发布：I/O 安全性的增强",
+      "suggestedSummary": "Tokio v1.52.0 引入了 AioSource::register_borrowed，以提高 I/O 安全性。此功能允许开发者更安全地处理借用的资源，减少异步 I/O 操作中数据竞争的风险。此外，此更新还包括各种错误修复和性能改进。使用 Tokio 进行异步编程的 Rust 开发者现在可以利用这些增强功能来开发更健壮和高效的应用程序。",
+      "relatedSources": [
+        "Rust Internals",
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "da699a42a3cd73239af5aa6c4f7533cd82133672a66ab20560f9305f864dcf85",
+      "source": "Rust Internals",
+      "title": "<[T]>::sort_by_index 和 <[T]>::sort_by_key_and_index",
+      "url": "https://internals.rust-lang.org/t/t-sort-by-index-and-t-sort-by-key-and-index/24172#post_8",
+      "summary": "也许可以组成一些 API，以便通过一个主导者对多个切片进行排序？基本上是数组的结构。首先想到的是类似这样的：\nlet slice_a;\nlet slice_b;\n\nslice_a.manual_sort_unstable(|slice, i, j| {\n    mem::swap(&mut slice[i], &mut slice[j]);\n    mem::swap(&mut slice_b[i], &mut slice_b[j]);\n});",
+      "publishedAt": "2026-04-14T18:42:44.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7db48df7e97f68848150c47093bdb6ddd99d2f30024c67dfc31a98532d1918e3",
+      "source": "Rust Internals",
+      "title": "`<[T]>::sort_by_index` 和 `<[T]>::sort_by_key_and_index`",
+      "url": "https://internals.rust-lang.org/t/t-sort-by-index-and-t-sort-by-key-and-index/24172#post_5",
+      "summary": "哦，那么不稳定的情况确实是不可能的。",
+      "publishedAt": "2026-04-14T15:30:44.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7589447807ea27d8561534815a25a870b0be13c890728f089f1b5dc84408a521",
+      "source": "Rust Internals",
+      "title": "`<[T]>::sort_by_index` 和 `<[T]>::sort_by_key_and_index`",
+      "url": "https://internals.rust-lang.org/t/t-sort-by-index-and-t-sort-by-key-and-index/24172#post_3",
+      "summary": "为什么？你可以直接减去指针并将索引传递给调用者，不是吗？",
+      "publishedAt": "2026-04-14T15:21:51.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-15T00:14:57.959Z"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "date": "2026-04-15",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "f08be1a885684a21836df2d1734e08805c87a3a15156375b346e4856d49fe3c9",
+      "source": "Rust Internals",
+      "title": "Rust 1.95.0 プレリリーステスト",
+      "url": "https://internals.rust-lang.org/t/rust-1-95-0-pre-release-testing/24171#post_3",
+      "summary": "はい、1.96ではさらに新しいレンジタイプが登場します。",
+      "publishedAt": "2026-04-14T23:57:13.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Tokio update impacts async Rust projects",
+      "suggestedTitle": "Tokio v1.52.0 リリース: I/O セーフティの強化",
+      "suggestedSummary": "Tokio v1.52.0は、I/Oセーフティを向上させるためにAioSource::register_borrowedを導入しました。この機能により、開発者は借用されたソースをより安全に扱うことができ、非同期I/O操作におけるデータ競合のリスクを軽減します。さらに、このアップデートにはさまざまなバグ修正とパフォーマンスの向上が含まれています。非同期プログラミングにTokioを使用しているRust開発者は、これらの強化を活用して、より堅牢で効率的なアプリケーションを作成できます。",
+      "relatedSources": [
+        "Rust Internals",
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "da699a42a3cd73239af5aa6c4f7533cd82133672a66ab20560f9305f864dcf85",
+      "source": "Rust Internals",
+      "title": "<[T]>::sort_by_index と <[T]>::sort_by_key_and_index",
+      "url": "https://internals.rust-lang.org/t/t-sort-by-index-and-t-sort-by-key-and-index/24172#post_8",
+      "summary": "複数のスライスを一つのリーダーでソートするために、いくつかのAPIが構成されるかもしれません。基本的には配列の構造です。最初に思い浮かぶのは以下のようなものです。\nlet slice_a;\nlet slice_b;\n\nslice_a.manual_sort_unstable(|slice, i, j| {\n    mem::swap(&mut slice[i], &mut slice[j]);\n    mem::swap(&mut slice_b[i], &mut slice_b[j]);\n});",
+      "publishedAt": "2026-04-14T18:42:44.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7db48df7e97f68848150c47093bdb6ddd99d2f30024c67dfc31a98532d1918e3",
+      "source": "Rust Internals",
+      "title": "<[T]>::sort_by_index と <[T]>::sort_by_key_and_index",
+      "url": "https://internals.rust-lang.org/t/t-sort-by-index-and-t-sort-by-key-and-index/24172#post_5",
+      "summary": "ああ、そうですね。不安定なケースは確かに不可能です。",
+      "publishedAt": "2026-04-14T15:30:44.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7589447807ea27d8561534815a25a870b0be13c890728f089f1b5dc84408a521",
+      "source": "Rust Internals",
+      "title": "`<[T]>::sort_by_index` と `<[T]>::sort_by_key_and_index`",
+      "url": "https://internals.rust-lang.org/t/t-sort-by-index-and-t-sort-by-key-and-index/24172#post_3",
+      "summary": "なぜ？ ポインタを引いてインデックスを呼び出し元に渡せばいいのではありませんか？",
+      "publishedAt": "2026-04-14T15:21:51.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-15T00:15:02.367Z"
+  }
+}
