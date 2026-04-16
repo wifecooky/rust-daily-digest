@@ -1,0 +1,97 @@
+{
+  "date": "2026-04-16",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "2ad6b7512abee8897306ad971a4c06da5c8e5688302648b9e7919446750c3124",
+      "source": "Tokio",
+      "title": "Tokio v1.52.0",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.0",
+      "summary": "1.52.0 (2026年4月14日)\n追加\nio: I/Oの安全性をサポートするためのAioSource::register_borrowedを追加 (#7992)\nnet: unix::pipeの送信者と受信者タイプにtry_io関数を追加 (#8030)\n追加（不安定）\nruntime: Builder::enable_eager_driver_handoff設定により、タスクをポーリングする前にI/Oとタイムドライバーの積極的な引き渡しを有効化 (#8010)\ntaskdump: カスタマイズされたタスクダンプのためのtrace_with()を追加 (#8025)\ntaskdump: trace_withでfn()だけでなくimpl FnMut()を許可 (#8040)\nfs: ファイルのAsyncReadでio_uringをサポート…",
+      "publishedAt": "2026-04-14T19:14:20.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        96
+      ],
+      "reason": "Tokio is a key async runtime",
+      "suggestedTitle": "Tokio v1.52.0が重要なアップデートと共にリリース",
+      "suggestedSummary": "Tokio v1.52.0は、I/Oの安全性を向上させるための`AioSource::register_borrowed`の追加を含む、いくつかの重要なアップデートを導入しています。このリリースには、さまざまなバグ修正とパフォーマンスの改善も含まれています。特に非同期アプリケーションに取り組むRust開発者にとって、これらのアップデートはより安全で効率的なI/O操作を可能にします。新機能と改善により、開発プロセスの効率化とアプリケーションのパフォーマンス向上が期待できます。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9f66a5166d45bf44754304b0770f1f2e78e54ca1c4c0e28a8a78a9dcbaf8fd0b",
+      "source": "Rust Internals",
+      "title": "`Box::new_uninit_array` と `Box::new_zeroed_array` の導入",
+      "url": "https://internals.rust-lang.org/t/introduce-box-new-uninit-array-and-box-new-zeroed-array/24179#post_3",
+      "summary": "ボックス化されたスライスとボックス化された配列の間で変換するための TryFrom 実装が存在し、unsafe を使用する必要はありません: doc.rust-lang.org",
+      "publishedAt": "2026-04-15T23:36:32.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        7
+      ],
+      "reason": "New Box API methods proposed",
+      "suggestedTitle": "`Box::new_uninit_array` と `Box::new_zeroed_array` の提案",
+      "suggestedSummary": "Rust Internals での提案では、`Box::new_uninit_array` と `Box::new_zeroed_array` メソッドの導入が示唆されています。これらのメソッドは、ヒープ上に未初期化またはゼロ化された配列をより効率的に割り当てる方法を提供することを目的としています。Rust の安全性保証を活用することで、これらの追加はメモリ管理を簡素化し、大規模な配列の割り当てが必要なシナリオでパフォーマンスを向上させる可能性があります。この提案は、Rust における低レベルのメモリ管理に取り組む開発者にとって特に関連性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "bf3147adb6df8e918bad15a2eb4d08df46e919201952ff398e0fa2dd284eec96",
+      "source": "Rust Internals",
+      "title": "リクエスト: クレートを非推奨にする公式な方法を提供してください。ヤンクではありません。ヤンクは愚かです",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174#post_4",
+      "summary": "これは、既にメンテナンスされていないアドバイザリを持つRustSecデータベースとのより深い統合によって解決できるかもしれません。crates.ioはすでにRustSecのセキュリティアドバイザリを（GitHubを通じて間接的にですが）取得しているので、さらに改善できると思います。言い換えれば、このメタデータはcrates.ioレジストリの一部である必要はありません。",
+      "publishedAt": "2026-04-15T13:52:32.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "a0b67b92a29f52894093659a0401b256df83d708abc4cb955fb7ffdd30844b47",
+      "source": "Rust Internals",
+      "title": "drop_in_placeにnounwind属性がないことによるコードの膨張",
+      "url": "https://internals.rust-lang.org/t/code-bloat-caused-by-lack-of-nounwind-attr-on-drop-in-place/24173#post_1",
+      "summary": "私の知る限り、rustcはpanic=abortやextern \"not *-unwind\"のような広範な一般化を除いて、関数をNoUnwind/NEVER_UNWINDとしてマークしていません。コルーチンのための関数本体のスキャンを見たことはありますが、通常の関数については見たことがありません。問題は、Drop::dropがインライン化できない場合、それが潜在的にアンワインドする呼び出しになり、アンワインドする呼び出しがより多くのドロップを引き起こす可能性があるため、アンワインド中のパニックが許されないことから、すべてのドロップがアンワインドランディングを生成することです。",
+      "publishedAt": "2026-04-15T01:55:14.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "59ea521f170da63034b4295ff90bc3157cc0d7de146b6b231fe6cbec581827e8",
+      "source": "Google News Rust",
+      "title": "Google、Pixel 10モデムファームウェアにRustを使用してメモリ安全性のバグを排除",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB1c1lVaHVFTUIyMk9jY1hYQlZFSlNnd0FGN3NCUEpnbi02RHl6RzNUdldUbnBoU0xvV2x6Ukg1NmFxMlEwSWlSZTZfc0tJNE0zZWg1UVRCVFNPSW5vcks4eDlB?oc=5",
+      "summary": "Google、Pixel 10モデムファームウェアにRustを使用してメモリ安全性のバグを排除しました  cyberpress.org",
+      "publishedAt": "2026-04-15T12:27:19.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "911c945b1105e5f39181ec867efe651ef3ddca0926174be84b5f243a65c2fd7b",
+      "source": "Google News Rust",
+      "title": "Google、Pixel 10モデムにRustベースのDNSパーサーを追加してセキュリティを強化 - The Hacker News",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOaWE0ZXIwQUxhQmNpbU1LTWxYU085cVZ4SXNmNnVMWk40OVRaV3E2NFZ4R0ticmVKc281VXdJdmMyOWp3Q0xfeTBJSWkwazNyRTRIMzRSZENlSWh3UDY1S1BVMmNJNUZwX2U2QjZvaDFRQVFaTW95cUxVRjF6YUVManJmQQ?oc=5",
+      "summary": "Google、Pixel 10モデムにRustベースのDNSパーサーを追加してセキュリティを強化 - The Hacker News",
+      "publishedAt": "2026-04-14T13:58:07.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-16T00:15:04.415Z"
+  }
+}
