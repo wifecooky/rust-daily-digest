@@ -1,0 +1,112 @@
+{
+  "date": "2026-04-17",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "d0fb3287149f4618c8aa0dbd8f9089dbde7aae510e6640090ca3822bd1d6b440",
+      "source": "Rust Releases",
+      "title": "Rust 1.95.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.95.0",
+      "summary": "言語\nマッチアームでのif letガードの安定化\nirrefutable_let_patternsリントがletチェーンでリントしなくなった\nリネームによるパスセグメントキーワードのインポートをサポート\nPowerPCおよびPowerPC64用のインラインアセンブリを安定化\nconst-eval: 型付きコピー中のパディングの動作をより一貫性のあるものに\nConstブロックは、失敗可能な操作を含む式が暗黙的に定数昇格されるかどうかを判断するために評価されなくなりました。暗黙的に昇格される能力が依存する式は…",
+      "publishedAt": "2026-04-16T21:37:55.000Z",
+      "score": 40,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        4,
+        47
+      ],
+      "reason": "Rust 1.95.0 release impacts developers.",
+      "suggestedTitle": "Rust 1.95.0リリース: 新機能と改善",
+      "suggestedSummary": "Rust 1.95.0は、マッチアームでの'if let'ガードの安定化やirrefutable_let_patternsリントの変更を含む重要な言語アップデートを導入します。これらの改善により、より簡潔で表現力豊かなパターンマッチングが可能となり、コードの可読性と安全性が向上します。開発者はこれらの新機能を活用して、よりクリーンで効率的なRustコードを書くことができ、Rustプロジェクトのパフォーマンスと保守性を向上させます。",
+      "relatedSources": [
+        "Rust Releases",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ae60ddd10932e7ab9f941c8da42b5862c6a6cf32a732ae96bd1541334fb6d3a7",
+      "source": "Rust Internals",
+      "title": "要望: クレートを公式に非推奨にする方法を提供してください。Yankではなく。Yankは愚かです",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174#post_7",
+      "summary": "同意します。現在の状況はあまり良くありません。メンテナーとして、ライブラリのユーザーが私がすでに修正した古いバグに遭遇することを望んでいません。それは彼らの時間を無駄にし、彼らが私にそれについて不満を言うなら私の時間も無駄にします。古いバージョンが技術的に問題なく動作していても、複数のsemverメジャーバージョンが同時に使用されることによるコードの肥大化というエコシステム全体のコストがあります。したがって、ユーザーにもっとアップグレードを促したいと思っています。少なくとも非常に古いバージョンから移行するように。現在、これにはyankを使用していますが、それはあまりにも…",
+      "publishedAt": "2026-04-16T21:28:21.000Z",
+      "score": 57,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        20,
+        92
+      ],
+      "reason": "Deprecation mechanism for Rust crates.",
+      "suggestedTitle": "公式なクレート非推奨方法の提案",
+      "suggestedSummary": "Rustコミュニティは、現在の「yank」メソッドに代わる公式なクレート非推奨方法を導入する提案を議論しています。この変更は、時代遅れまたはメンテナンスされていないクレートを管理するためのより明確で混乱の少ない道を提供することを目的としています。RustSecデータベースと統合することで、このアプローチはエコシステムの健康を改善し、開発者にクレート使用に関するより良い指針を提供し、最終的にはプロジェクトの安定性とセキュリティを向上させることができます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "a4133595cef9b2a18562200d8e2a064e470e0f2b7ec48721587a77fff8803171",
+      "source": "Rust Internals",
+      "title": "「drop_in_place」におけるnounwind属性の欠如によるコード膨張",
+      "url": "https://internals.rust-lang.org/t/code-bloat-caused-by-lack-of-nounwind-attr-on-drop-in-place/24173#post_7",
+      "summary": "ちょっと待って、Dropでのパニックは実際にアンワインドしないことが保証されているのか？アンワインド中のパニックはアボートを引き起こすため、Dropでのパニックは推奨されないが、言語がそれを実際に禁止しているかどうかはわからない。「Panic - The Rust Reference」「Drop in std::ops - Rust」「Destructors - The Rust Reference」「panic in std - Rust」のどれにも、既にアンワインド中にパニックがアボートを引き起こすことが言及されていないし、ましてやDropでのパニックが常に禁止されているとは書かれていない。したがって、私の知る限りでは、Dropでのパニックは…",
+      "publishedAt": "2026-04-16T13:41:52.000Z",
+      "score": 52,
+      "relatedCount": 4,
+      "category": "quickNews"
+    },
+    {
+      "id": "7179d99907461bd61a3afab9f463ec92f3c008a4e56cf66b31f950730ea583aa",
+      "source": "Lobsters Rust",
+      "title": "Slint 1.16がリリースされました",
+      "url": "https://slint.dev/blog/slint-1.16-released",
+      "summary": "コメント",
+      "publishedAt": "2026-04-16T18:29:10.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6f785379ea6c6e3d1bcbf2cff42ace172adaa88bdd4c2f2a8f742932698214e7",
+      "source": "Lobsters Rust",
+      "title": "WebAssemblyのためのタイムトラベルデバッガー",
+      "url": "https://github.com/friendlymatthew/gabagool/tree/main/gabagool-debug-adapter#gabagool-debug-adapter",
+      "summary": "コメント",
+      "publishedAt": "2026-04-16T14:10:16.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "be64ba3de10cec757b4d067b2877560c7480425fcf30ee4ea42036ab45562146",
+      "source": "Google News Rust",
+      "title": "Rust 1.95がいくつかの改善とともにリリース - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ZU1M5N29MZzN3MGhMb3p5YU1PVkRKLUVaZ3BIcjRwSFQ1VXZ1VGR0cjZmQ3pseEl0TFdlSHplUWg4S0NLSHBOZkxvMmFyWmw0UWd5QjVrc3BrVmNp?oc=5",
+      "summary": "Rust 1.95がいくつかの改善とともにリリースされました - Phoronix",
+      "publishedAt": "2026-04-16T13:19:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4f06b72ccd2f458eabfad645194a2aafd1feb2d4ee6ef06980aff7531507fa24",
+      "source": "Google News Rust",
+      "title": "Google、Pixel 10モデムファームウェアにRustを使用してメモリ安全性のバグを排除",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB1c1lVaHVFTUIyMk9jY1hYQlZFSlNnd0FGN3NCUEpnbi02RHl6RzNUdldUbnBoU0xvV2x6Ukg1NmFxMlEwSWlSZTZfc0tJNE0zZWg1UVRCVFNPSW5vcks4eDlB?oc=5",
+      "summary": "Google、Pixel 10モデムファームウェアにRustを使用してメモリ安全性のバグを排除 cyberpress.org",
+      "publishedAt": "2026-04-15T12:31:36.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-17T00:13:53.542Z"
+  }
+}

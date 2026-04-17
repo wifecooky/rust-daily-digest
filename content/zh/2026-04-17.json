@@ -1,0 +1,112 @@
+{
+  "date": "2026-04-17",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "d0fb3287149f4618c8aa0dbd8f9089dbde7aae510e6640090ca3822bd1d6b440",
+      "source": "Rust Releases",
+      "title": "Rust 1.95.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.95.0",
+      "summary": "语言\n在匹配分支上稳定'if let'守卫\nirrefutable_let_patterns lint不再对let链进行lint\n支持通过重命名导入路径段关键字\n为PowerPC和PowerPC64稳定内联汇编\nconst-eval：在类型化复制期间对填充行为更加一致\nConst块不再被评估以确定涉及可能失败操作的表达式是否可以隐式地被常量提升。表达式是否能够隐式提升将取决于…",
+      "publishedAt": "2026-04-16T21:37:55.000Z",
+      "score": 40,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        4,
+        47
+      ],
+      "reason": "Rust 1.95.0 release impacts developers.",
+      "suggestedTitle": "Rust 1.95.0发布：新功能和改进",
+      "suggestedSummary": "Rust 1.95.0引入了重要的语言更新，包括在匹配分支上稳定'if let'守卫和对irrefutable_let_patterns lint的更改。这些增强通过允许更简洁和更具表现力的模式匹配来提高代码的可读性和安全性。开发者可以利用这些新功能编写更简洁和更高效的Rust代码，从而提高Rust项目的性能和可维护性。",
+      "relatedSources": [
+        "Rust Releases",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ae60ddd10932e7ab9f941c8da42b5862c6a6cf32a732ae96bd1541334fb6d3a7",
+      "source": "Rust Internals",
+      "title": "请求：提供一种官方方式来*弃用* crate。不要使用 yank。Yank 很愚蠢",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174#post_7",
+      "summary": "同意。目前的情况不太理想。作为维护者，我不希望我的库的用户遇到我已经修复的旧错误。如果他们向我抱怨，这不仅浪费了他们的时间，也浪费了我的时间。即使旧版本在技术上运行良好，由于同时使用多个 semver 主版本，导致代码膨胀的生态系统成本仍然存在。因此，我希望更多地推动用户升级，至少不再使用非常旧的版本。目前我正在使用 yank 来实现这一点，但这太……",
+      "publishedAt": "2026-04-16T21:28:21.000Z",
+      "score": 57,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        20,
+        92
+      ],
+      "reason": "Deprecation mechanism for Rust crates.",
+      "suggestedTitle": "官方 Crate 弃用方法提案",
+      "suggestedSummary": "Rust 社区正在讨论一项提案，旨在引入一种官方方式来弃用 crate，而不是当前的 'yank' 方法。此更改旨在为管理过时或未维护的 crate 提供更清晰且不那么破坏性的路径。通过与 RustSec 数据库集成，这种方法可以改善生态系统健康状况，并为开发人员提供更好的 crate 使用指导，从而最终增强项目的稳定性和安全性。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "a4133595cef9b2a18562200d8e2a064e470e0f2b7ec48721587a77fff8803171",
+      "source": "Rust Internals",
+      "title": "由于 `drop_in_place` 缺少 nounwind 属性导致的代码膨胀",
+      "url": "https://internals.rust-lang.org/t/code-bloat-caused-by-lack-of-nounwind-attr-on-drop-in-place/24173#post_7",
+      "summary": "等等，Drop 中的恐慌真的保证不会展开吗？在展开过程中恐慌会导致中止，这意味着在 Drop 中恐慌是不明智的，但我不确定语言实际上是否排除了这种可能性。在以下文档中：\nPanic - The Rust Reference\nDrop in std::ops - Rust\nDestructors - The Rust Reference\npanic in std - Rust\n甚至没有提到在已经展开时恐慌会导致中止，更不用说在 Drop 中恐慌总是被禁止的。因此，据我所知，在 Drop 中恐慌...",
+      "publishedAt": "2026-04-16T13:41:52.000Z",
+      "score": 52,
+      "relatedCount": 4,
+      "category": "quickNews"
+    },
+    {
+      "id": "7179d99907461bd61a3afab9f463ec92f3c008a4e56cf66b31f950730ea583aa",
+      "source": "Lobsters Rust",
+      "title": "Slint 1.16 发布",
+      "url": "https://slint.dev/blog/slint-1.16-released",
+      "summary": "评论",
+      "publishedAt": "2026-04-16T18:29:10.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6f785379ea6c6e3d1bcbf2cff42ace172adaa88bdd4c2f2a8f742932698214e7",
+      "source": "Lobsters Rust",
+      "title": "用于WebAssembly的时间旅行调试器",
+      "url": "https://github.com/friendlymatthew/gabagool/tree/main/gabagool-debug-adapter#gabagool-debug-adapter",
+      "summary": "评论",
+      "publishedAt": "2026-04-16T14:10:16.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "be64ba3de10cec757b4d067b2877560c7480425fcf30ee4ea42036ab45562146",
+      "source": "Google News Rust",
+      "title": "Rust 1.95 发布，带来多项改进 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ZU1M5N29MZzN3MGhMb3p5YU1PVkRKLUVaZ3BIcjRwSFQ1VXZ1VGR0cjZmQ3pseEl0TFdlSHplUWg4S0NLSHBOZkxvMmFyWmw0UWd5QjVrc3BrVmNp?oc=5",
+      "summary": "Rust 1.95 发布，带来多项改进 Phoronix",
+      "publishedAt": "2026-04-16T13:19:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4f06b72ccd2f458eabfad645194a2aafd1feb2d4ee6ef06980aff7531507fa24",
+      "source": "Google News Rust",
+      "title": "谷歌在Pixel 10调制解调器固件中使用Rust以消除内存安全漏洞",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB1c1lVaHVFTUIyMk9jY1hYQlZFSlNnd0FGN3NCUEpnbi02RHl6RzNUdldUbnBoU0xvV2x6Ukg1NmFxMlEwSWlSZTZfc0tJNE0zZWg1UVRCVFNPSW5vcks4eDlB?oc=5",
+      "summary": "谷歌在Pixel 10调制解调器固件中使用Rust以消除内存安全漏洞 cyberpress.org",
+      "publishedAt": "2026-04-15T12:31:36.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-17T00:13:45.758Z"
+  }
+}

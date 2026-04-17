@@ -1,0 +1,112 @@
+{
+  "date": "2026-04-17",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "d0fb3287149f4618c8aa0dbd8f9089dbde7aae510e6640090ca3822bd1d6b440",
+      "source": "Rust Releases",
+      "title": "Rust 1.95.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.95.0",
+      "summary": "Language\nStabilize if let guards on match arms\nirrefutable_let_patterns lint no longer lints on let chains\nSupport importing path-segment keywords with renaming\nStabilize inline assembly for PowerPC and PowerPC64\nconst-eval: be more consistent in the behavior of padding during typed copies\nConst blocks are no longer evaluated to determine if expressions involving fallible operations can implicitly be constant-promoted.. Expressions whose ability to implicitly be promoted would depend on the…",
+      "publishedAt": "2026-04-16T21:37:55.000Z",
+      "score": 40,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        4,
+        47
+      ],
+      "reason": "Rust 1.95.0 release impacts developers.",
+      "suggestedTitle": "Rust 1.95.0 Released: New Features and Improvements",
+      "suggestedSummary": "Rust 1.95.0 introduces significant language updates, including the stabilization of 'if let' guards on match arms and changes to the irrefutable_let_patterns lint. These enhancements improve code readability and safety by allowing more concise and expressive pattern matching. Developers can leverage these new features to write cleaner and more efficient Rust code, enhancing both performance and maintainability of Rust projects.",
+      "relatedSources": [
+        "Rust Releases",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ae60ddd10932e7ab9f941c8da42b5862c6a6cf32a732ae96bd1541334fb6d3a7",
+      "source": "Rust Internals",
+      "title": "Request: Provide an official way to *deprecate* a crate. NOT yank. Yank is stupid",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174#post_7",
+      "summary": "Agreed. The current situation is not great.\nAs a maintainer, I don't want users of my libraries to run into old bugs I've already fixed. It wastes their time, and mine too if they complain about it to me.\nEven if old versions technically work fine, there's an ecosystem-wide cost of code bloat caused by multiple semver major versions being used at the same time.\nSo I'd like to nudge users more to upgrade, at least move off super old versions. I'm currently using yank for this, but it's too…",
+      "publishedAt": "2026-04-16T21:28:21.000Z",
+      "score": 57,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        20,
+        92
+      ],
+      "reason": "Deprecation mechanism for Rust crates.",
+      "suggestedTitle": "Proposal for Official Crate Deprecation Method",
+      "suggestedSummary": "The Rust community is discussing a proposal to introduce an official way to deprecate crates, as opposed to the current 'yank' method. This change aims to provide a clearer and less disruptive path for managing outdated or unmaintained crates. By integrating with the RustSec database, this approach could improve ecosystem health and provide developers with better guidance on crate usage, ultimately enhancing project stability and security.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "a4133595cef9b2a18562200d8e2a064e470e0f2b7ec48721587a77fff8803171",
+      "source": "Rust Internals",
+      "title": "Code bloat caused by lack of nounwind attr on `drop_in_place`",
+      "url": "https://internals.rust-lang.org/t/code-bloat-caused-by-lack-of-nounwind-attr-on-drop-in-place/24173#post_7",
+      "summary": "Hang on, is panicking in Drop actually guaranteed not to unwind? Panicking during unwinding results in an abort, which means panic-in-Drop is ill-advised, but I'm not sure the language has actually ruled it out.\nNothing in\nPanic - The Rust Reference\nDrop in std::ops - Rust\nDestructors - The Rust Reference\npanic in std - Rust\neven mentions that panicking while already unwinding results in an abort, let alone that panicking in Drop is always forbidden. Thus, as far as I can tell, panicking in…",
+      "publishedAt": "2026-04-16T13:41:52.000Z",
+      "score": 52,
+      "relatedCount": 4,
+      "category": "quickNews"
+    },
+    {
+      "id": "7179d99907461bd61a3afab9f463ec92f3c008a4e56cf66b31f950730ea583aa",
+      "source": "Lobsters Rust",
+      "title": "Slint 1.16 Released",
+      "url": "https://slint.dev/blog/slint-1.16-released",
+      "summary": "Comments",
+      "publishedAt": "2026-04-16T18:29:10.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6f785379ea6c6e3d1bcbf2cff42ace172adaa88bdd4c2f2a8f742932698214e7",
+      "source": "Lobsters Rust",
+      "title": "A time travel debugger for WebAssembly",
+      "url": "https://github.com/friendlymatthew/gabagool/tree/main/gabagool-debug-adapter#gabagool-debug-adapter",
+      "summary": "Comments",
+      "publishedAt": "2026-04-16T14:10:16.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "be64ba3de10cec757b4d067b2877560c7480425fcf30ee4ea42036ab45562146",
+      "source": "Google News Rust",
+      "title": "Rust 1.95 Released With Several Improvements - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9ZU1M5N29MZzN3MGhMb3p5YU1PVkRKLUVaZ3BIcjRwSFQ1VXZ1VGR0cjZmQ3pseEl0TFdlSHplUWg4S0NLSHBOZkxvMmFyWmw0UWd5QjVrc3BrVmNp?oc=5",
+      "summary": "Rust 1.95 Released With Several Improvements  Phoronix",
+      "publishedAt": "2026-04-16T13:19:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4f06b72ccd2f458eabfad645194a2aafd1feb2d4ee6ef06980aff7531507fa24",
+      "source": "Google News Rust",
+      "title": "Google Uses Rust in Pixel 10 Modem Firmware to Eliminate Memory-Safety Bugs - cyberpress.org",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB1c1lVaHVFTUIyMk9jY1hYQlZFSlNnd0FGN3NCUEpnbi02RHl6RzNUdldUbnBoU0xvV2x6Ukg1NmFxMlEwSWlSZTZfc0tJNE0zZWg1UVRCVFNPSW5vcks4eDlB?oc=5",
+      "summary": "Google Uses Rust in Pixel 10 Modem Firmware to Eliminate Memory-Safety Bugs  cyberpress.org",
+      "publishedAt": "2026-04-15T12:31:36.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-17T00:13:39.308Z"
+  }
+}
