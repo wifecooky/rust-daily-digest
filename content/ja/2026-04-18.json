@@ -1,0 +1,102 @@
+{
+  "date": "2026-04-18",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "d0fb3287149f4618c8aa0dbd8f9089dbde7aae510e6640090ca3822bd1d6b440",
+      "source": "Rust Releases",
+      "title": "Rust 1.95.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.95.0",
+      "summary": "言語\nマッチアームのif letガードを安定化\nletチェーンでirrefutable_let_patternsリントが発生しなくなる\nリネームによるパスセグメントキーワードのインポートをサポート\nPowerPCおよびPowerPC64向けのインラインアセンブリを安定化\nconst-eval: 型付きコピー中のパディングの挙動をより一貫性のあるものに\nConstブロックは、失敗する可能性のある操作を含む式が暗黙的に定数昇格できるかどうかを判断するために評価されなくなりました。暗黙的に昇格できる能力が依存する式は…",
+      "publishedAt": "2026-04-16T21:37:55.000Z",
+      "score": 30,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        25,
+        38
+      ],
+      "reason": "New Rust release with notable features",
+      "suggestedTitle": "Rust 1.95.0リリース: 新機能と改善点",
+      "suggestedSummary": "Rust 1.95.0が利用可能になり、言語にいくつかの重要なアップデートがもたらされました。このリリースでは、マッチアームの'if let'ガードが安定化され、パターンマッチングの機能が強化されています。さらに、'irrefutable_let_patterns'リントがlet文で発生しなくなり、コード開発が効率化されます。これらの変更は、コードの可読性と保守性を向上させ、開発者により柔軟で簡潔な構文オプションを提供することを目的としています。",
+      "relatedSources": [
+        "Rust Releases",
+        "RustCC (CN)",
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "2fb77d6b2fcaf3ff3d0cbd6a411da33fd6bf596a1d9c23077b2178663de9eba7",
+      "source": "Google News Rust",
+      "title": "Canonical、Waylandフロントエンドの初期Rust実装を含むMir 2.26をリリース - 9to5Linux",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbEQ0OEpiNWZlTHdvbUdLaXhSV053a0lRckw4Ri0tVTdSUkxLdFh3WU5EV2otN2Y0MGpMVzJTMzExcl9YVmlDNkRDRDN0QVRLWnhxRi02a1VhdE93ZExIb19SbzZyUm5nUWFvNTJVSHBQdmIzR1lCUXlWbEFUUjMxa0FMcTM5aVR1LXhRUWkyODNnYUhWbWNJNVRNRXZZenVaOVp0Qw?oc=5",
+      "summary": "Canonical、Waylandフロントエンドの初期Rust実装を含むMir 2.26をリリース  9to5Linux",
+      "publishedAt": "2026-04-16T11:24:11.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        95,
+        96
+      ],
+      "reason": "Rust adoption in major projects",
+      "suggestedTitle": "CanonicalのMir 2.26、WaylandフロントエンドにRustを統合",
+      "suggestedSummary": "CanonicalのMir 2.26のリリースは、Waylandフロントエンドの初期Rust実装を伴う重要なマイルストーンです。この統合は、Rustの安全性とパフォーマンスの利点を活用し、Mirディスプレイサーバーの全体的な安定性と効率を向上させることを目的としています。Rustを採用することで、Canonicalは技術スタックの近代化へのコミットメントを示し、他のプロジェクトにも同様のユースケースでRustを検討するよう影響を与える可能性があります。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "84e31d8706d3274c85825afdbb13f2d95c3db7a47618f4ac4afa18f0a5577b50",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF リロケーション",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_18",
+      "summary": "ジュール・ベルトレ: \n\nvad:\nリロケーションが機能するためには、コンテナの型、名前、フィールド名が一致することが十分であり、必ずしも必要ではありません。\nリンクされた投稿の一つで、名前にバージョン接尾辞が言及されており、リロケーションでは無視されるとあります。このメカニズムはRustでも機能すべきでしょうか？（もしそうでない場合は、例えば属性などの代替メカニズムが必要になるでしょう。）\n良い指摘です、見逃していて申し訳ありません。バージョン接尾辞をサポートすることは、我々がすべきことのように思えます…",
+      "publishedAt": "2026-04-17T14:25:09.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "5783e3da80b2ff332ac3452c525c380cb296947ff6c29a4bbdba84d14fe45ee7",
+      "source": "Lobsters Rust",
+      "title": "Rustでのtsnetライブラリ、tailscale-rsの早期プレビュー",
+      "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
+      "summary": "コメント",
+      "publishedAt": "2026-04-17T07:54:45.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7179d99907461bd61a3afab9f463ec92f3c008a4e56cf66b31f950730ea583aa",
+      "source": "Lobsters Rust",
+      "title": "Slint 1.16がリリースされました",
+      "url": "https://slint.dev/blog/slint-1.16-released",
+      "summary": "コメント",
+      "publishedAt": "2026-04-16T18:29:10.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ddcbf0994e37f842899cf047c8d1fafc59786a9ad992e466b2f29e385e5cb20a",
+      "source": "Lobsters Rust",
+      "title": "Rustにおけるゼロコピーのページ: または、いかにして私は心配するのをやめてライフタイムを愛するようになったか",
+      "url": "https://redixhumayun.github.io/databases/2026/04/14/zero-copy-pages-in-rust.html",
+      "summary": "コメント",
+      "publishedAt": "2026-04-16T04:01:47.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-18T00:11:48.056Z"
+  }
+}

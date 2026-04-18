@@ -1,0 +1,102 @@
+{
+  "date": "2026-04-18",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "d0fb3287149f4618c8aa0dbd8f9089dbde7aae510e6640090ca3822bd1d6b440",
+      "source": "Rust Releases",
+      "title": "Rust 1.95.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.95.0",
+      "summary": "Language\nStabilize if let guards on match arms\nirrefutable_let_patterns lint no longer lints on let chains\nSupport importing path-segment keywords with renaming\nStabilize inline assembly for PowerPC and PowerPC64\nconst-eval: be more consistent in the behavior of padding during typed copies\nConst blocks are no longer evaluated to determine if expressions involving fallible operations can implicitly be constant-promoted.. Expressions whose ability to implicitly be promoted would depend on the…",
+      "publishedAt": "2026-04-16T21:37:55.000Z",
+      "score": 30,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        25,
+        38
+      ],
+      "reason": "New Rust release with notable features",
+      "suggestedTitle": "Rust 1.95.0 Released: New Features and Improvements",
+      "suggestedSummary": "Rust 1.95.0 is now available, bringing several significant updates to the language. This release stabilizes the 'if let' guards on match arms, enhancing pattern matching capabilities. Additionally, the 'irrefutable_let_patterns' lint no longer triggers on let statements, streamlining code development. These changes aim to improve code readability and maintainability, offering developers more flexible and concise syntax options.",
+      "relatedSources": [
+        "Rust Releases",
+        "RustCC (CN)",
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "2fb77d6b2fcaf3ff3d0cbd6a411da33fd6bf596a1d9c23077b2178663de9eba7",
+      "source": "Google News Rust",
+      "title": "Canonical Releases Mir 2.26 with Initial Rust Implementation of Wayland Frontend - 9to5Linux",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbEQ0OEpiNWZlTHdvbUdLaXhSV053a0lRckw4Ri0tVTdSUkxLdFh3WU5EV2otN2Y0MGpMVzJTMzExcl9YVmlDNkRDRDN0QVRLWnhxRi02a1VhdE93ZExIb19SbzZyUm5nUWFvNTJVSHBQdmIzR1lCUXlWbEFUUjMxa0FMcTM5aVR1LXhRUWkyODNnYUhWbWNJNVRNRXZZenVaOVp0Qw?oc=5",
+      "summary": "Canonical Releases Mir 2.26 with Initial Rust Implementation of Wayland Frontend  9to5Linux",
+      "publishedAt": "2026-04-16T11:24:11.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        95,
+        96
+      ],
+      "reason": "Rust adoption in major projects",
+      "suggestedTitle": "Canonical's Mir 2.26 Integrates Rust for Wayland Frontend",
+      "suggestedSummary": "Canonical's Mir 2.26 release marks a significant milestone with the initial Rust implementation of the Wayland frontend. This integration aims to leverage Rust's safety and performance benefits, enhancing the overall stability and efficiency of the Mir display server. By adopting Rust, Canonical demonstrates a commitment to modernizing its technology stack, potentially influencing other projects to consider Rust for similar use cases.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "84e31d8706d3274c85825afdbb13f2d95c3db7a47618f4ac4afa18f0a5577b50",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF relocations",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_18",
+      "summary": "Jules-Bertholet:\n\n vad:\nIt's not strictly necessary, because matching container type, its name and matching field name are sufficient for the relocation to work.\nIn one of the posts you linked, I see mention of version suffixes in the names, which are ignored for relocations. Should that mechanism work in Rust as well? (If not, then an alternative mechanism, e.g. attribute, is presumably necessary.)\nGood point, sorry for missing it. Supporting version suffixes sounds like something we should do…",
+      "publishedAt": "2026-04-17T14:25:09.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "5783e3da80b2ff332ac3452c525c380cb296947ff6c29a4bbdba84d14fe45ee7",
+      "source": "Lobsters Rust",
+      "title": "An early look at tailscale-rs, a tsnet library in Rust",
+      "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
+      "summary": "Comments",
+      "publishedAt": "2026-04-17T07:54:45.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7179d99907461bd61a3afab9f463ec92f3c008a4e56cf66b31f950730ea583aa",
+      "source": "Lobsters Rust",
+      "title": "Slint 1.16 Released",
+      "url": "https://slint.dev/blog/slint-1.16-released",
+      "summary": "Comments",
+      "publishedAt": "2026-04-16T18:29:10.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ddcbf0994e37f842899cf047c8d1fafc59786a9ad992e466b2f29e385e5cb20a",
+      "source": "Lobsters Rust",
+      "title": "Zero-Copy Pages in Rust: Or How I Learned To Stop Worrying And Love Lifetimes",
+      "url": "https://redixhumayun.github.io/databases/2026/04/14/zero-copy-pages-in-rust.html",
+      "summary": "Comments",
+      "publishedAt": "2026-04-16T04:01:47.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-18T00:11:34.276Z"
+  }
+}

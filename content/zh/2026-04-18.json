@@ -1,0 +1,102 @@
+{
+  "date": "2026-04-18",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "d0fb3287149f4618c8aa0dbd8f9089dbde7aae510e6640090ca3822bd1d6b440",
+      "source": "Rust Releases",
+      "title": "Rust 1.95.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.95.0",
+      "summary": "语言\n稳定化匹配分支上的 if let 守卫\nirrefutable_let_patterns lint 不再对 let 链进行警告\n支持通过重命名导入路径段关键字\n稳定化 PowerPC 和 PowerPC64 的内联汇编\n常量求值：在类型化复制期间填充行为上更一致\n常量块不再被评估以确定涉及可能失败操作的表达式是否可以隐式地被常量提升。表达式的隐式提升能力将取决于……",
+      "publishedAt": "2026-04-16T21:37:55.000Z",
+      "score": 30,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4,
+        25,
+        38
+      ],
+      "reason": "New Rust release with notable features",
+      "suggestedTitle": "Rust 1.95.0 发布：新功能和改进",
+      "suggestedSummary": "Rust 1.95.0 现已发布，为该语言带来了多个重要更新。此次发布稳定了匹配分支上的 'if let' 守卫，增强了模式匹配能力。此外，'irrefutable_let_patterns' lint 不再对 let 语句触发警告，简化了代码开发。这些更改旨在提高代码的可读性和可维护性，为开发者提供更灵活和简洁的语法选项。",
+      "relatedSources": [
+        "Rust Releases",
+        "RustCC (CN)",
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "2fb77d6b2fcaf3ff3d0cbd6a411da33fd6bf596a1d9c23077b2178663de9eba7",
+      "source": "Google News Rust",
+      "title": "Canonical发布Mir 2.26，初步实现Wayland前端的Rust实现 - 9to5Linux",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbEQ0OEpiNWZlTHdvbUdLaXhSV053a0lRckw4Ri0tVTdSUkxLdFh3WU5EV2otN2Y0MGpMVzJTMzExcl9YVmlDNkRDRDN0QVRLWnhxRi02a1VhdE93ZExIb19SbzZyUm5nUWFvNTJVSHBQdmIzR1lCUXlWbEFUUjMxa0FMcTM5aVR1LXhRUWkyODNnYUhWbWNJNVRNRXZZenVaOVp0Qw?oc=5",
+      "summary": "Canonical发布Mir 2.26，初步实现Wayland前端的Rust实现  9to5Linux",
+      "publishedAt": "2026-04-16T11:24:11.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        95,
+        96
+      ],
+      "reason": "Rust adoption in major projects",
+      "suggestedTitle": "Canonical的Mir 2.26集成Rust用于Wayland前端",
+      "suggestedSummary": "Canonical发布的Mir 2.26标志着一个重要的里程碑，首次在Wayland前端实现了Rust。这一集成旨在利用Rust的安全性和性能优势，提升Mir显示服务器的整体稳定性和效率。通过采用Rust，Canonical展示了其对现代化技术栈的承诺，可能会影响其他项目考虑在类似用例中使用Rust。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "84e31d8706d3274c85825afdbb13f2d95c3db7a47618f4ac4afa18f0a5577b50",
+      "source": "Rust Internals",
+      "title": "[预RFC] BTF重定位",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_18",
+      "summary": "Jules-Bertholet:\n\n vad:\n这不是绝对必要的，因为匹配容器类型、其名称和匹配字段名称足以使重定位生效。在你链接的其中一篇帖子中，我看到提到了名称中的版本后缀，这些在重定位中被忽略。这个机制在Rust中也应该有效吗？（如果不是，那么可能需要一种替代机制，例如属性。）\n好问题，抱歉忽略了这一点。支持版本后缀似乎是我们应该做的事情……",
+      "publishedAt": "2026-04-17T14:25:09.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "5783e3da80b2ff332ac3452c525c380cb296947ff6c29a4bbdba84d14fe45ee7",
+      "source": "Lobsters Rust",
+      "title": "初探 tailscale-rs：用 Rust 编写的 tsnet 库",
+      "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
+      "summary": "评论",
+      "publishedAt": "2026-04-17T07:54:45.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7179d99907461bd61a3afab9f463ec92f3c008a4e56cf66b31f950730ea583aa",
+      "source": "Lobsters Rust",
+      "title": "Slint 1.16 发布",
+      "url": "https://slint.dev/blog/slint-1.16-released",
+      "summary": "评论",
+      "publishedAt": "2026-04-16T18:29:10.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ddcbf0994e37f842899cf047c8d1fafc59786a9ad992e466b2f29e385e5cb20a",
+      "source": "Lobsters Rust",
+      "title": "Rust中的零拷贝页面：或者说我如何学会不再担心并爱上生命周期",
+      "url": "https://redixhumayun.github.io/databases/2026/04/14/zero-copy-pages-in-rust.html",
+      "summary": "评论",
+      "publishedAt": "2026-04-16T04:01:47.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-18T00:11:39.310Z"
+  }
+}
