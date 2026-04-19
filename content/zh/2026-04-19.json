@@ -1,0 +1,97 @@
+{
+  "date": "2026-04-19",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "1d435c49d75af23beb4842ec90174a584a95613648fa142ba826a45f577e338f",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-17 Rust 1.95.0 发布",
+      "url": "https://rustcc.cn/article?id=c68dc39a-5d54-4caf-a89a-0c760c245048",
+      "summary": "Rust 1.95.0 发布",
+      "publishedAt": "2026-04-17T02:38:09.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        80
+      ],
+      "reason": "Important for developers to update.",
+      "suggestedTitle": "Rust 1.95.0 发布：新特性与稳定API",
+      "suggestedSummary": "Rust 1.95.0 引入了多个新特性并稳定了一批 API，提升了开发者的生产力。此次发布的重点包括稳定 `cfg_select!` 宏，该宏简化了条件编译。此版本延续了 Rust 提供安全高效系统编程语言的传统，使开发者更容易编写健壮的代码。用户可以通过 rustup 更新他们的工具链以利用这些改进。",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "399fcc9bf125b6af17f3620d5b38c26f44f999fc74d5e5075a38bad34c3ac4f5",
+      "source": "Tokio",
+      "title": "Tokio v1.52.1",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.1",
+      "summary": "1.52.1（2026年4月16日）\n修复\n运行时：回退 #7757 以修复导致 spawn_blocking 挂起的回归问题 (#8057)",
+      "publishedAt": "2026-04-17T06:55:47.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        79
+      ],
+      "reason": "Fixes critical async regression.",
+      "suggestedTitle": "Tokio v1.52.1 修复了 spawn_blocking 的回归问题",
+      "suggestedSummary": "Tokio v1.52.1 解决了在先前版本中引入的 `spawn_blocking` 函数的关键回归问题。此修复确保依赖于阻塞操作的异步任务能够正常运行而不会出现意外行为。使用 Tokio 进行异步 I/O 的开发者应升级到此版本，以保持应用程序的稳定性和性能。更新可通过 Cargo 获得，确保依赖 Tokio 的项目能够顺利过渡。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d7a4a6cf1d4f5c9e0c7fa19c5a712a1a98f33ca9e6c2238409668631447f1fd4",
+      "source": "Lobsters Rust",
+      "title": "我们如何（以及为什么）用Rust重写了我们的生产C++前端基础设施",
+      "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
+      "summary": "评论",
+      "publishedAt": "2026-04-18T12:30:57.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2a2cb0340cba2c28bd026033e0f28ae65cd57dad731f07d3cce2b0d56066a660",
+      "source": "Lobsters Rust",
+      "title": "用Rust构建ezli.me，一个链接缩短器",
+      "url": "https://rustunit.com/blog/2026/04-17-ezlime-link-shortener-in-rust/",
+      "summary": "评论",
+      "publishedAt": "2026-04-17T21:33:13.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5783e3da80b2ff332ac3452c525c380cb296947ff6c29a4bbdba84d14fe45ee7",
+      "source": "Lobsters Rust",
+      "title": "初探 tailscale-rs：用 Rust 编写的 tsnet 库",
+      "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
+      "summary": "评论",
+      "publishedAt": "2026-04-17T07:54:45.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "68ede1d8cb28743f9359d553ff7d1a58ef910bf61e1cbdcd390c4eb2d9c06fa9",
+      "source": "Lobsters Rust",
+      "title": "Rust中的透镜及我的解决方案",
+      "url": "https://lambdalemon.gay/posts/grist-lens",
+      "summary": "评论",
+      "publishedAt": "2026-04-18T02:42:46.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-19T00:10:24.270Z"
+  }
+}

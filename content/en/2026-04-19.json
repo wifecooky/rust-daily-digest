@@ -1,0 +1,97 @@
+{
+  "date": "2026-04-19",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "1d435c49d75af23beb4842ec90174a584a95613648fa142ba826a45f577e338f",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-17 Rust 1.95.0 发布",
+      "url": "https://rustcc.cn/article?id=c68dc39a-5d54-4caf-a89a-0c760c245048",
+      "summary": "Rust 1.95.0 发布\nRust 团队宣布推出全新版本 Rust 1.95.0。此次版本稳定了一批 API，以及新增 2 个非常使用的功能。\n稳定新特性\ncfg_select! 宏\nRust 1.95 引入了 cfg_select! 宏，其作用近似于编译期针对 cfg 配置的 match 匹配，功能与广受欢迎的 cfg-if 库一致，但语法不同。cfg_select! 会展开执行第一个条件为真的分支右侧代码。\n示例代码：\ncfg_select! {\n    unix => {\n        fn foo() { /* 类Unix系统专属功能 */ }\n    }\n    target_pointer_width = \"32\" => {\n        fn foo() { /* 非类Unix、32位系统功能 */ }\n    }\n    _ => {\n        fn foo() { /* 兜底实现 */ }\n    }\n}\n\nlet is_windows_str = cfg_select! {\n    windows => \"windows\",\n    _ =>…",
+      "publishedAt": "2026-04-17T02:38:09.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        80
+      ],
+      "reason": "Important for developers to update.",
+      "suggestedTitle": "Rust 1.95.0 Released: New Features and Stable APIs",
+      "suggestedSummary": "Rust 1.95.0 introduces several new features and stabilizes a number of APIs, enhancing developer productivity. Key highlights include the stabilization of the `cfg_select!` macro, which simplifies conditional compilation. This release continues Rust's tradition of providing a safe and efficient system programming language, making it easier for developers to write robust code. Users can update their toolchain via rustup to take advantage of these improvements.",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "399fcc9bf125b6af17f3620d5b38c26f44f999fc74d5e5075a38bad34c3ac4f5",
+      "source": "Tokio",
+      "title": "Tokio v1.52.1",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.1",
+      "summary": "1.52.1 (April 16th, 2026)\nFixed\nruntime: revert #7757 to fix a regression that causes spawn_blocking to hang (#8057)",
+      "publishedAt": "2026-04-17T06:55:47.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        79
+      ],
+      "reason": "Fixes critical async regression.",
+      "suggestedTitle": "Tokio v1.52.1 Fixes Regression in spawn_blocking",
+      "suggestedSummary": "Tokio v1.52.1 addresses a critical regression in the `spawn_blocking` function introduced in the previous release. This fix ensures that asynchronous tasks relying on blocking operations function correctly without unexpected behavior. Developers using Tokio for async I/O should upgrade to this version to maintain stability and performance in their applications. The update is available via Cargo, ensuring a seamless transition for projects dependent on Tokio.",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d7a4a6cf1d4f5c9e0c7fa19c5a712a1a98f33ca9e6c2238409668631447f1fd4",
+      "source": "Lobsters Rust",
+      "title": "How (and why) we rewrote our production C++ frontend infrastructure in Rust",
+      "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
+      "summary": "Comments",
+      "publishedAt": "2026-04-18T12:30:57.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2a2cb0340cba2c28bd026033e0f28ae65cd57dad731f07d3cce2b0d56066a660",
+      "source": "Lobsters Rust",
+      "title": "Building ezli.me, a link shortener in Rust",
+      "url": "https://rustunit.com/blog/2026/04-17-ezlime-link-shortener-in-rust/",
+      "summary": "Comments",
+      "publishedAt": "2026-04-17T21:33:13.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5783e3da80b2ff332ac3452c525c380cb296947ff6c29a4bbdba84d14fe45ee7",
+      "source": "Lobsters Rust",
+      "title": "An early look at tailscale-rs, a tsnet library in Rust",
+      "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
+      "summary": "Comments",
+      "publishedAt": "2026-04-17T07:54:45.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "68ede1d8cb28743f9359d553ff7d1a58ef910bf61e1cbdcd390c4eb2d9c06fa9",
+      "source": "Lobsters Rust",
+      "title": "Lenses in Rust and My Solution",
+      "url": "https://lambdalemon.gay/posts/grist-lens",
+      "summary": "Comments",
+      "publishedAt": "2026-04-18T02:42:46.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-19T00:10:20.012Z"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "date": "2026-04-19",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "1d435c49d75af23beb4842ec90174a584a95613648fa142ba826a45f577e338f",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-17 Rust 1.95.0 発表",
+      "url": "https://rustcc.cn/article?id=c68dc39a-5d54-4caf-a89a-0c760c245048",
+      "summary": "Rust 1.95.0 発表",
+      "publishedAt": "2026-04-17T02:38:09.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        80
+      ],
+      "reason": "Important for developers to update.",
+      "suggestedTitle": "Rust 1.95.0 発表：新機能と安定化されたAPI",
+      "suggestedSummary": "Rust 1.95.0は、いくつかの新機能を導入し、多くのAPIを安定化させ、開発者の生産性を向上させます。主なハイライトには、条件付きコンパイルを簡素化する`cfg_select!`マクロの安定化が含まれます。このリリースは、安全で効率的なシステムプログラミング言語を提供するというRustの伝統を継続し、開発者が堅牢なコードを書くのを容易にします。ユーザーはrustupを通じてツールチェーンを更新し、これらの改善を活用することができます。",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "399fcc9bf125b6af17f3620d5b38c26f44f999fc74d5e5075a38bad34c3ac4f5",
+      "source": "Tokio",
+      "title": "Tokio v1.52.1",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.1",
+      "summary": "1.52.1 (2026年4月16日) 修正: ランタイム: #7757を元に戻し、spawn_blockingがハングするリグレッションを修正 (#8057)",
+      "publishedAt": "2026-04-17T06:55:47.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        79
+      ],
+      "reason": "Fixes critical async regression.",
+      "suggestedTitle": "Tokio v1.52.1でspawn_blockingのリグレッションを修正",
+      "suggestedSummary": "Tokio v1.52.1は、前回のリリースで導入された`spawn_blocking`関数の重大なリグレッションに対処しています。この修正により、ブロッキング操作に依存する非同期タスクが予期しない動作をせずに正しく機能することが保証されます。非同期I/OのためにTokioを使用している開発者は、このバージョンにアップグレードして、アプリケーションの安定性とパフォーマンスを維持するべきです。このアップデートはCargoを通じて利用可能であり、Tokioに依存するプロジェクトにとってシームレスな移行を保証します。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d7a4a6cf1d4f5c9e0c7fa19c5a712a1a98f33ca9e6c2238409668631447f1fd4",
+      "source": "Lobsters Rust",
+      "title": "どのようにして（そしてなぜ）私たちは生産用C++フロントエンドインフラストラクチャをRustで書き直したのか",
+      "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
+      "summary": "コメント",
+      "publishedAt": "2026-04-18T12:30:57.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2a2cb0340cba2c28bd026033e0f28ae65cd57dad731f07d3cce2b0d56066a660",
+      "source": "Lobsters Rust",
+      "title": "Rustでリンク短縮サービスezli.meを構築する",
+      "url": "https://rustunit.com/blog/2026/04-17-ezlime-link-shortener-in-rust/",
+      "summary": "コメント",
+      "publishedAt": "2026-04-17T21:33:13.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5783e3da80b2ff332ac3452c525c380cb296947ff6c29a4bbdba84d14fe45ee7",
+      "source": "Lobsters Rust",
+      "title": "Rustでのtsnetライブラリ、tailscale-rsの早期レビュー",
+      "url": "https://tailscale.com/blog/tailscale-rs-rust-tsnet-library-preview",
+      "summary": "コメント",
+      "publishedAt": "2026-04-17T07:54:45.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "68ede1d8cb28743f9359d553ff7d1a58ef910bf61e1cbdcd390c4eb2d9c06fa9",
+      "source": "Lobsters Rust",
+      "title": "Rustにおけるレンズと私の解決策",
+      "url": "https://lambdalemon.gay/posts/grist-lens",
+      "summary": "コメント",
+      "publishedAt": "2026-04-18T02:42:46.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-19T00:10:28.431Z"
+  }
+}
