@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-20",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "44f22308911faa60e83d22bfcde472f3062c2cea59b102487b40b54d26bde21e",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: &[T: Trait] -> &dyn [Trait]",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-t-trait-dyn-trait/21911#post_12",
+      "summary": "mversic:\nthere is no way for the author of a function kita to constrain the fn signature to allow only arguments of the same type, although the exact type is unknown\nHow would you actually ever call such a function?  Seems like you'd never be able to pass normal &dyns to it.",
+      "publishedAt": "2026-04-19T19:12:29.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4,
+        37
+      ],
+      "reason": "New RFC for trait object conversion",
+      "suggestedTitle": "Pre-RFC Proposes Conversion from Trait Slices to Dynamic Trait Objects",
+      "suggestedSummary": "A new pre-RFC suggests enabling conversion from slices of trait objects to dynamic trait objects in Rust. This proposal aims to allow functions to accept slices of trait objects and convert them into dynamic trait objects, thereby offering more flexibility in function signatures. If accepted, this change could simplify code that deals with collections of trait objects by reducing the need for intermediate conversions. This could lead to cleaner APIs and potentially better performance in scenarios involving trait object manipulations.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d7a4a6cf1d4f5c9e0c7fa19c5a712a1a98f33ca9e6c2238409668631447f1fd4",
+      "source": "Lobsters Rust",
+      "title": "How (and why) we rewrote our production C++ frontend infrastructure in Rust",
+      "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
+      "summary": "Comments",
+      "publishedAt": "2026-04-18T12:30:57.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        75
+      ],
+      "reason": "Rust adoption in production systems",
+      "suggestedTitle": "Rewriting C++ Frontend Infrastructure in Rust: A Case Study",
+      "suggestedSummary": "A detailed case study explores the transition from a C++ frontend infrastructure to Rust, highlighting the motivations, challenges, and outcomes. The rewrite was driven by Rust's safety guarantees and modern concurrency features, which resulted in reduced runtime errors and improved maintainability. This transition showcases Rust's growing adoption in production systems, particularly for performance-critical components, and provides insights into the practical benefits and considerations for similar projects.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2ba4b07cdff9f6df958bb7839326f6e6c3e0eb144b05d8cabe9adbece57869de",
+      "source": "Rust Users Forum",
+      "title": "Ported collection framework from Java",
+      "url": "https://users.rust-lang.org/t/ported-collection-framework-from-java/139522#post_8",
+      "summary": "(quote from the Readme)\nEach primitive collection type is specialized per primitive type (i8 , i16 , i32 , i64 , f32 , f64 , bool , char ) — no boxing, no trait objects, contiguous memory layout. Generic object collections (ArrayList<T> , HashSet<T> , etc.) complement the primitive types for general-purpose use.\nThis indicates very very strong Java-isms to me. Rust does not share the property of Java of having 8 specific “primitive datatypes” and “objects” beyond that. AFAIK not even even…",
+      "publishedAt": "2026-04-19T22:32:34.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5d3f4fb8e5556feb00d0dcf4b3f13532c79d4805b8d0c169730628296a70c4b9",
+      "source": "Rust Internals",
+      "title": "Add something like `num_traits` to STD, or move it into std entirely",
+      "url": "https://internals.rust-lang.org/t/add-something-like-num-traits-to-std-or-move-it-into-std-entirely/24181#post_10",
+      "summary": "I generally prefer to try to use standard library traits than num_traits; in particular, for \"numbers that support values 0 and 1\" I have taken to using From<bool> which is standard and works for most types you'd want it to work for.\nUnfortunately, this doesn't work so well with float types (but you might not want to be generic over those anyway, because float calculations generally need to be rounded and the details of the rounding frequently matter, but you can't take them into account when…",
+      "publishedAt": "2026-04-19T13:41:44.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "72b73eb850c54ddfc32d0fb5f23d8a92fd63caae1366000d59811500b401e511",
+      "source": "Rust Internals",
+      "title": "Add something like `num_traits` to STD, or move it into std entirely",
+      "url": "https://internals.rust-lang.org/t/add-something-like-num-traits-to-std-or-move-it-into-std-entirely/24181#post_2",
+      "summary": "The thing you need to address if you want it in core is how to to handle upgrades.  In a separate crate you can always rev the major version to add new things to the trait.  core can't ever.",
+      "publishedAt": "2026-04-18T20:39:05.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "23fcf1da15cc4913d0b0e819c07141c16f8448e5b4fa22fccc140557fd8c73b1",
+      "source": "Rust Internals",
+      "title": "Request: Provide an official way to *deprecate* a crate. NOT yank. Yank is stupid",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174#post_19",
+      "summary": "The problem of \"done\" crates vs outdated ones is somewhat separate from marking old releases as deprecated or even intentionally marking whole crates as deprecated.\nAnyway, it's a common sentiment that projects can be done and never updated, but from my analysis of crates.io data this is a small minority of crates in practice.\nFirst of all, most of the crates that theoretically don't have to be changed, still get updates from time to time. A small tweak, a dependency update, bump of Rust…",
+      "publishedAt": "2026-04-18T03:31:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-20T00:11:45.787Z"
+  }
+}

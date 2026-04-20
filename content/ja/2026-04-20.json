@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-20",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "44f22308911faa60e83d22bfcde472f3062c2cea59b102487b40b54d26bde21e",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: &[T: Trait] -> &dyn [Trait]",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-t-trait-dyn-trait/21911#post_12",
+      "summary": "mversic: 関数 kita の著者が fn シグネチャを制約して、同じ型の引数のみを許可する方法はありませんが、正確な型は不明です。 そのような関数を実際にどのように呼び出しますか？ 通常の &dyn を渡すことはできないようです。",
+      "publishedAt": "2026-04-19T19:12:29.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4,
+        37
+      ],
+      "reason": "New RFC for trait object conversion",
+      "suggestedTitle": "Pre-RFCがトレイトスライスから動的トレイトオブジェクトへの変換を提案",
+      "suggestedSummary": "新しいPre-RFCは、Rustにおいてトレイトオブジェクトのスライスを動的トレイトオブジェクトに変換する機能を有効にすることを提案しています。この提案は、関数がトレイトオブジェクトのスライスを受け取り、それを動的トレイトオブジェクトに変換できるようにすることを目的としています。これにより、関数シグネチャにより多くの柔軟性を提供します。もし受け入れられれば、この変更はトレイトオブジェクトのコレクションを扱うコードを簡素化し、中間変換の必要性を減らす可能性があります。これにより、よりクリーンなAPIが実現し、トレイトオブジェクト操作を含むシナリオでのパフォーマンス向上が期待されます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d7a4a6cf1d4f5c9e0c7fa19c5a712a1a98f33ca9e6c2238409668631447f1fd4",
+      "source": "Lobsters Rust",
+      "title": "どのようにして（そしてなぜ）私たちのプロダクションC++フロントエンドインフラストラクチャをRustで書き直したのか",
+      "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
+      "summary": "コメント",
+      "publishedAt": "2026-04-18T12:30:57.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        75
+      ],
+      "reason": "Rust adoption in production systems",
+      "suggestedTitle": "RustでC++フロントエンドインフラストラクチャを書き直す: ケーススタディ",
+      "suggestedSummary": "詳細なケーススタディが、C++フロントエンドインフラストラクチャからRustへの移行を探ります。動機、課題、結果を強調し、Rustの安全性保証と最新の並行性機能が、実行時エラーの削減と保守性の向上をもたらしたことを示しています。この移行は、特にパフォーマンスが重要なコンポーネントにおけるRustの生産システムでの採用の増加を示し、同様のプロジェクトに対する実践的な利点と考慮事項についての洞察を提供します。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2ba4b07cdff9f6df958bb7839326f6e6c3e0eb144b05d8cabe9adbece57869de",
+      "source": "Rust Users Forum",
+      "title": "Javaから移植されたコレクションフレームワーク",
+      "url": "https://users.rust-lang.org/t/ported-collection-framework-from-java/139522#post_8",
+      "summary": "（Readmeからの引用）各プリミティブコレクションタイプは、プリミティブタイプごとに特殊化されています（i8、i16、i32、i64、f32、f64、bool、char）— ボクシングなし、トレイトオブジェクトなし、連続したメモリレイアウト。汎用オブジェクトコレクション（ArrayList<T>、HashSet<T>など）は、一般的な用途のためにプリミティブタイプを補完します。これは非常に強いJava的な特徴を示しています。Rustは、Javaのように8つの特定の「プリミティブデータ型」とそれを超えた「オブジェクト」を持つ特性を共有していません。私の知る限りでは、そうではありません…",
+      "publishedAt": "2026-04-19T22:32:34.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5d3f4fb8e5556feb00d0dcf4b3f13532c79d4805b8d0c169730628296a70c4b9",
+      "source": "Rust Internals",
+      "title": "STDに`num_traits`のようなものを追加するか、完全にstdに移行する",
+      "url": "https://internals.rust-lang.org/t/add-something-like-num-traits-to-std-or-move-it-into-std-entirely/24181#post_10",
+      "summary": "私は一般的に、num_traitsよりも標準ライブラリのトレイトを使用することを好みます。特に、「0と1の値をサポートする数値」に関しては、標準であり、ほとんどのタイプで機能するFrom<bool>を使用するようにしています。しかし、これは浮動小数点型ではあまりうまく機能しません（ただし、浮動小数点計算は一般的に丸めが必要であり、その丸めの詳細が重要であるため、これらを一般化しない方が良いかもしれませんが、考慮に入れることができません…",
+      "publishedAt": "2026-04-19T13:41:44.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "72b73eb850c54ddfc32d0fb5f23d8a92fd63caae1366000d59811500b401e511",
+      "source": "Rust Internals",
+      "title": "STDに`num_traits`のようなものを追加するか、完全にstdに移行する",
+      "url": "https://internals.rust-lang.org/t/add-something-like-num-traits-to-std-or-move-it-into-std-entirely/24181#post_2",
+      "summary": "コアに追加したい場合に対処すべきことは、アップグレードの扱い方です。別のクレートでは、トレイトに新しいものを追加するためにメジャーバージョンを常に上げることができますが、コアではそれができません。",
+      "publishedAt": "2026-04-18T20:39:05.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "23fcf1da15cc4913d0b0e819c07141c16f8448e5b4fa22fccc140557fd8c73b1",
+      "source": "Rust Internals",
+      "title": "リクエスト：クレートを公式に非推奨にする方法を提供してください。ヤンクではなく。ヤンクは愚かです",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174#post_19",
+      "summary": "「完了した」クレートと古くなったクレートの問題は、古いリリースを非推奨としてマークすることや、意図的にクレート全体を非推奨としてマークすることとは多少別の問題です。いずれにせよ、プロジェクトが完了し、更新されないことがあるというのは一般的な感情ですが、crates.ioのデータを分析したところ、実際にはこれは少数派のクレートであることがわかりました。まず、理論的には変更する必要がないクレートのほとんどは、時々更新されます。小さな調整、依存関係の更新、Rustのバージョンアップなど…",
+      "publishedAt": "2026-04-18T03:31:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-20T00:11:57.244Z"
+  }
+}

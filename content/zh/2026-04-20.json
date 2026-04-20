@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-20",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "44f22308911faa60e83d22bfcde472f3062c2cea59b102487b40b54d26bde21e",
+      "source": "Rust Internals",
+      "title": "预RFC: &[T: Trait] -> &dyn [Trait]",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-t-trait-dyn-trait/21911#post_12",
+      "summary": "mversic: 函数kita的作者无法限制函数签名以仅允许相同类型的参数，尽管确切的类型未知。你如何实际调用这样的函数？似乎你永远无法将普通的&dyn传递给它。",
+      "publishedAt": "2026-04-19T19:12:29.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4,
+        37
+      ],
+      "reason": "New RFC for trait object conversion",
+      "suggestedTitle": "预RFC建议从特征切片转换为动态特征对象",
+      "suggestedSummary": "一项新的预RFC建议在Rust中启用从特征对象切片到动态特征对象的转换。该提案旨在允许函数接受特征对象的切片并将其转换为动态特征对象，从而在函数签名中提供更多的灵活性。如果被接受，这一变化可以通过减少中间转换的需要来简化处理特征对象集合的代码。这可能会导致更简洁的API，并在涉及特征对象操作的场景中潜在地提高性能。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d7a4a6cf1d4f5c9e0c7fa19c5a712a1a98f33ca9e6c2238409668631447f1fd4",
+      "source": "Lobsters Rust",
+      "title": "我们如何（以及为什么）用 Rust 重写了我们的生产 C++ 前端基础设施",
+      "url": "https://blog.nearlyfreespeech.net/2026/04/17/how-and-why-we-rewrote-our-production-c-frontend-infrastructure-in-rust/",
+      "summary": "评论",
+      "publishedAt": "2026-04-18T12:30:57.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        75
+      ],
+      "reason": "Rust adoption in production systems",
+      "suggestedTitle": "用 Rust 重写 C++ 前端基础设施：一个案例研究",
+      "suggestedSummary": "一项详细的案例研究探讨了从 C++ 前端基础设施向 Rust 过渡的过程，重点介绍了动机、挑战和结果。重写的驱动力是 Rust 的安全保证和现代并发特性，这导致了运行时错误的减少和可维护性的提高。这一转变展示了 Rust 在生产系统中，特别是对性能关键组件的日益采用，并为类似项目提供了实际的好处和考虑因素的见解。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2ba4b07cdff9f6df958bb7839326f6e6c3e0eb144b05d8cabe9adbece57869de",
+      "source": "Rust Users Forum",
+      "title": "从Java移植的集合框架",
+      "url": "https://users.rust-lang.org/t/ported-collection-framework-from-java/139522#post_8",
+      "summary": "（引自Readme）每种原始集合类型都针对原始类型进行了专门化（i8、i16、i32、i64、f32、f64、bool、char）——无装箱，无特征对象，连续内存布局。通用对象集合（如ArrayList<T>、HashSet<T>等）补充了原始类型以用于通用目的。这对我来说表明了非常强烈的Java特性。Rust并不具备Java拥有的8种特定“原始数据类型”和“对象”的属性。据我所知，甚至没有……",
+      "publishedAt": "2026-04-19T22:32:34.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5d3f4fb8e5556feb00d0dcf4b3f13532c79d4805b8d0c169730628296a70c4b9",
+      "source": "Rust Internals",
+      "title": "将类似 `num_traits` 的功能添加到 STD，或将其完全移入 std",
+      "url": "https://internals.rust-lang.org/t/add-something-like-num-traits-to-std-or-move-it-into-std-entirely/24181#post_10",
+      "summary": "我通常更倾向于使用标准库的 traits 而不是 num_traits；特别是对于“支持值 0 和 1 的数字”，我习惯使用 From<bool>，这是标准的，并且适用于大多数你希望它适用的类型。不幸的是，这在浮点类型上效果不佳（但你可能也不想对这些类型进行泛化，因为浮点计算通常需要进行舍入，舍入的细节往往很重要，但在……时你无法考虑这些细节）",
+      "publishedAt": "2026-04-19T13:41:44.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "72b73eb850c54ddfc32d0fb5f23d8a92fd63caae1366000d59811500b401e511",
+      "source": "Rust Internals",
+      "title": "将类似 `num_traits` 的东西添加到 STD，或完全移入 std",
+      "url": "https://internals.rust-lang.org/t/add-something-like-num-traits-to-std-or-move-it-into-std-entirely/24181#post_2",
+      "summary": "如果你想将其添加到核心中，需要解决的问题是如何处理升级。在一个单独的 crate 中，你总是可以通过增加主版本号来为 trait 添加新内容。而核心库则不能。",
+      "publishedAt": "2026-04-18T20:39:05.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "23fcf1da15cc4913d0b0e819c07141c16f8448e5b4fa22fccc140557fd8c73b1",
+      "source": "Rust Internals",
+      "title": "请求：提供一种正式的方法来*弃用*一个 crate。不要使用 yank。Yank 很愚蠢",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174#post_19",
+      "summary": "“完成”的 crate 与过时的 crate 的问题与将旧版本标记为弃用甚至故意将整个 crate 标记为弃用的问题有些不同。无论如何，项目可以完成且从未更新的观点很常见，但根据我对 crates.io 数据的分析，这在实际中是少数。首先，大多数理论上不需要更改的 crate 仍然会不时更新。一个小的调整，依赖项更新，Rust 的版本提升……",
+      "publishedAt": "2026-04-18T03:31:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-20T00:11:51.549Z"
+  }
+}
