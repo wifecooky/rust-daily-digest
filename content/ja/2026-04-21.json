@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-21",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "fe44893331178313b666588d5246ae9161849b51518f639d107ba81bfd2b9d67",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `pub(api)` の可視性とクレート内部API境界の静的強制",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_5",
+      "summary": "それがpub(api)をブロックすべきではないのは、述べたように、それが弱いキーワードになるからです。pub(E)コンテキストでの可能な最初のトークンのセットは、self、super、そしてinだと思います。もしそうであれば、apiを別のものとして導入することは曖昧ではないはずです。pubはモジュール内で使用できますが、rustcのリントドキュメントは、これがデフォルトの警告ではない唯一の理由は、現時点であまりにも多くのコードを壊すからであり、変更される可能性があることを示唆しています。@robofinchへの私の返信を参照してください…",
+      "publishedAt": "2026-04-20T02:48:06.000Z",
+      "score": 37,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        3,
+        8,
+        9
+      ],
+      "reason": "Enhance API boundary control in Rust.",
+      "suggestedTitle": "Pre-RFC: クレート内部APIのための`pub(api)`の可視性",
+      "suggestedSummary": "新しいPre-RFCは、Rustにおける`pub(api)`の可視性の導入を提案しており、クレート内部API境界の静的強制を目指しています。この機能は、Rustクレート内でのAPI公開に対するより詳細な制御を提案し、開発者がコードベースのどの部分が内部使用向けで、どの部分が公開消費向けであるかを指定できるようにします。もし受け入れられれば、この変更はよりメンテナブルでカプセル化されたクレート設計につながり、偶発的なAPI公開を減らし、コードの安全性を向上させる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "798b130445d58371a93eed1ca2f7a5660d24f35594ce7cd031fc91b3787763ca",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #324",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/20/changelog-324.html",
+      "summary": "コミット: adef948\n2026-04-20 (v0.3.2870)\n新機能\n#21906 参照検索から依存関係と標準ライブラリの結果を除外。\n#21740 #[rust_analyzer::prefer_underscore_import] をサポートし、トレイトを _ としてインポート。\n修正\n#22031 (初貢献) 固有のimplブロックが既に存在する場合にimpl補完を降格。\n#22083 (初貢献) モジュール定義の補完が非推奨かどうかを決定する際に #[deprecated] を考慮。\n#22046 (初貢献) 不安定な型定数項目のためのパーサーサポートを追加。",
+      "publishedAt": "2026-04-20T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        77
+      ],
+      "reason": "Key update for Rust development tooling.",
+      "suggestedTitle": "Rust-Analyzer変更履歴: v0.3.2870の新機能",
+      "suggestedSummary": "最新のrust-analyzerアップデート、バージョンv0.3.2870は、依存関係と標準ライブラリの参照を除外する機能を含むいくつかの新機能を導入します。このアップデートは、特に依存関係の管理が困難な複雑なプロジェクトに取り組む開発者にとって、ツールの柔軟性と効率性を向上させます。分析プロセスを合理化することで、rust-analyzerはRust開発者がコードの品質と保守性を向上させるための重要なツールであり続けます。",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3abfdda4d445718bc9309f8150c3587287b630e773f6ceab6e572b635062d475",
+      "source": "Lobsters Rust",
+      "title": "Creusot 0.11.0: VerifyThis 優勝者",
+      "url": "https://devlog.creusot.rs/2026-04-20/",
+      "summary": "コメント",
+      "publishedAt": "2026-04-20T12:30:39.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2a7c3a236ace9f85319060eefc812d2f1f034b68ddcbb1aedba45db206b87aef",
+      "source": "Google News Rust",
+      "title": "ClickHouse、コア分析スタックで段階的なRustの採用を追求 - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVkVyLXp4OUxJTmY4ZHhjYmpsdVBLNGZnUk1YT1l4aEtmQnVzRlY3TS1ZTFJsLXNLM3NOMmV0VGg2TDVNYUZHdWV5YTdCRHE2ZWZnX3Nhc1FJeGRkNkd3MnJtUktWSm00b2MzbV9abldNNV9IeDZzR09xM2t0dFh4bE1mdzVVVXBTX09VMDBTQlRaTUt0eEFJYWowTjQzbXMxYmtlQkUwUTlJSjV3S1FCaTZ4cEZ3M2c?oc=5",
+      "summary": "ClickHouse、コア分析スタックで段階的なRustの採用を追求  TipRanks",
+      "publishedAt": "2026-04-20T18:10:24.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cc01b1891b7031629d8d4de96751304d0fc86480cea1c635e47bea519bcff018",
+      "source": "Rust Users Forum",
+      "title": "Cbor-core: 決定論的なCBOR::Coreエンコーダ/デコーダ",
+      "url": "https://users.rust-lang.org/t/cbor-core-a-deterministic-cbor-core-encoder-decoder/139565#post_2",
+      "summary": "バージョン0.7.0がリリースされました: crates.io / docs.rs 変更履歴 設計ノート 変更点の概要 CBORシーケンスが両方の側面でサポートされるようになり、バイトスライスやリーダーからのイテレータスタイルのデコードと、バイト、16進数、診断出力のためのストリーミングライターが追加されました。 デコーダの設定は、入力形式、再帰制限、コレクションの長さ制限、OOM緩和予算をまとめた専用のオプションタイプに移動しました。 診断表記がバイナリと16進数形式に加え、主要なデコーダ入力として追加されました。",
+      "publishedAt": "2026-04-20T15:45:13.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b1a1e5eeb1e4b5ae9a5c6d55dfa23d9f30c0b0360acc87c308b6e2bcf6c84c6b",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-18 Ironpress - 純粋なRustによるHTML/CSS/MarkdownからPDFへの変換ツール",
+      "url": "https://rustcc.cn/article?id=a5c6eaa9-3dd2-4b8b-a31d-0d7a49a123d6",
+      "summary": "Rust 1.95.0 リリースのお知らせ\nRustチームは2026年4月16日にRust 1.95.0のリリースを発表しました。\n主な新機能\ncfg_select! マクロ\n新しいcfg_select! マクロが導入され、コンパイル時のmatch構成文に似ています\n人気のあるcfg-ifクレートと機能は似ていますが、構文が異なります\n最初の条件が真である分岐内容に展開されます\n異なるプラットフォームや設定に基づいて異なるコード実装を選択するために使用できます\nmatch式内のif-letガード\nRust 1.88でletチェーン構文が安定しました\nRust 1.95ではこの機能がmatch式に導入されました\nパターンマッチングに基づく条件判断を許可します\n注意：コンパイラは現在、if letガード内のパターンを全体のmatch網羅性評価の一部として扱いません\n安定化されたAPI\nMaybeUninit関連の複数の変換と参照メソッド\nCell型の参照変換メソッド\n整数型からbool型へのTryFrom変換\nアトミック型のupdateとtry_updateメソッド\nポインタ型のas_ref_uncheckedとas_mut_uncheckedメソッド\nコレクション型のpush_mutと…",
+      "publishedAt": "2026-04-19T00:36:12.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-21T00:14:19.376Z"
+  }
+}
