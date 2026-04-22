@@ -1,0 +1,90 @@
+{
+  "date": "2026-04-22",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "fe44893331178313b666588d5246ae9161849b51518f639d107ba81bfd2b9d67",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `pub(api)` の可視性とクレート内部API境界の静的強制",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_5",
+      "summary": "それが pub(api) をブロックすべきではない理由は、述べたように、それが弱いキーワードになるからです。pub(E) コンテキストでの可能な最初のトークンのセットは、self、super、そして他には in だと思います。もしそれが事実であれば、api を別のものとして導入しても曖昧にはならないはずです。pub はモジュール内で使用できますが、rustc のリンツドキュメントは、これがデフォルトの警告ではない唯一の理由は、現時点であまりにも多くのコードを壊すことになるからであり、変更される可能性があることを示唆しています。@robofinch への私の返信を参照してください...",
+      "publishedAt": "2026-04-20T02:48:06.000Z",
+      "score": 37,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        5,
+        6,
+        7
+      ],
+      "reason": "New visibility RFC impacts Rust API design",
+      "suggestedTitle": "Pre-RFC: Rustにおける`pub(api)`可視性提案",
+      "suggestedSummary": "新しいPre-RFCは、Rustにおける`pub(api)`可視性の導入について議論しており、クレート内部のAPI境界を静的に強制することを目的としています。この提案は、可視性を管理するために`pub(api)`を弱いキーワードとして使用し、開発者がクレート内で公開されるが外部には公開されないAPIを定義できるようにすることを提案しています。これにより、大規模なRustプロジェクトにおいてカプセル化とモジュール性が大幅に向上し、`pub(in path)`のような既存のメカニズムと比較して、より柔軟で強力なAPI境界管理が可能になります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ce19fe74e1deb5ff8ac230be2d2b13fa7a93ba063b1528a7ff453f85fafeecb2",
+      "source": "Lobsters Rust",
+      "title": "ナーワル v0.6.0 – エッジアプリ向けメッセージブローカー、チャネル永続化を実現",
+      "url": "https://github.com/lonewolf-io/narwhal/releases/tag/narwhal-0.6.0",
+      "summary": "こんにちは！以前に紹介したエッジアプリ向けの軽量メッセージブローカー、ナーワルの新しいリリースをお届けします。v0.6.0の目玉はチャネルの永続化です。チャネルとそのメッセージ履歴がディスクに耐久的に保存されるようになり、再接続後に購読者が見逃したメッセージを再生できるようになりました。また、非同期ランタイムをmonoioからcompioに変更し（Linuxでは依然としてio_uringを使用）、Prometheusメトリクスを一級サポートとして追加しました。",
+      "publishedAt": "2026-04-21T10:18:50.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        11,
+        27
+      ],
+      "reason": "New version of Narwhal enhances Rust edge apps",
+      "suggestedTitle": "ナーワル v0.6.0: Rust向け強化メッセージブローカー",
+      "suggestedSummary": "ナーワル v0.6.0がリリースされ、エッジアプリケーション向けの軽量メッセージブローカーにチャネル永続化が追加されました。このアップデートにより、開発者は再起動を跨いでメッセージの状態を維持でき、分散システムにおける信頼性と堅牢性が向上します。Rustで構築されたナーワルは、高性能で低オーバーヘッドなソリューションを提供し、IoTやその他のエッジコンピューティングシナリオに適しており、エッジ環境でRustのパフォーマンスと安全性を活用したい開発者にとって魅力的な選択肢となっています。",
+      "relatedSources": [
+        "Lobsters Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "389acf967d73d16bcc5b4671554294eefe4c2cb429a0f76992f5d23cd70770ef",
+      "source": "Rust Users Forum",
+      "title": "nestrs: AxumとTowerを基盤としたRust用NestJSスタイルのフレームワーク",
+      "url": "https://users.rust-lang.org/t/nestrs-a-nestjs-style-framework-for-rust-built-on-axum-and-tower/139700#post_5",
+      "summary": "ソースコードを一行ずつレビューしてほしいと頼んだわけではありません。求めていたのは、コードスニペットやドキュメントを見て得られるAPIデザインと使いやすさに関するフィードバックです。それは別の要望です。",
+      "publishedAt": "2026-04-21T23:35:22.000Z",
+      "score": 55,
+      "relatedCount": 4,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6c935c0af696a72ac950079910f39ffd0dbc2fedac0e4ddcdee9f3c5d78dbd2",
+      "source": "Google News Rust",
+      "title": "Linuxがますます高速かつ安定している理由はこのプログラミング言語にある - MakeUseOf",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZTJ5V1VFTld6YTRYQWxQVTVNellnUEs3Q1Ntb1VFZ1ZaRUZRNXZITXhEWFdSSEJjaGVUT3ZaYUNLb3RSb0lMWFp2RWRhY2UwUTQ4TWEtUG1wNGJsbGRtMVd3MXFxV21DUmtuUGVyTm9SeUZaR2R1VWs4bjNEakFSRE5tN1hTRU5wRmpQY3JhWXczSGdT?oc=5",
+      "summary": "Linuxがますます高速かつ安定している理由はこのプログラミング言語にある - MakeUseOf",
+      "publishedAt": "2026-04-21T13:01:18.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2a7c3a236ace9f85319060eefc812d2f1f034b68ddcbb1aedba45db206b87aef",
+      "source": "Google News Rust",
+      "title": "ClickHouse、コア分析スタックで段階的なRust採用を追求 - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVkVyLXp4OUxJTmY4ZHhjYmpsdVBLNGZnUk1YT1l4aEtmQnVzRlY3TS1ZTFJsLXNLM3NOMmV0VGg2TDVNYUZHdWV5YTdCRHE2ZWZnX3Nhc1FJeGRkNkd3MnJtUktWSm00b2MzbV9abldNNV9IeDZzR09xM2t0dFh4bE1mdzVVVXBTX09VMDBTQlRaTUt0eEFJYWowTjQzbXMxYmtlQkUwUTlJSjV3S1FCaTZ4cEZ3M2c?oc=5",
+      "summary": "ClickHouse、コア分析スタックで段階的なRust採用を追求  TipRanks",
+      "publishedAt": "2026-04-20T18:10:24.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-22T00:11:20.215Z"
+  }
+}

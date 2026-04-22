@@ -1,0 +1,90 @@
+{
+  "date": "2026-04-22",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "fe44893331178313b666588d5246ae9161849b51518f639d107ba81bfd2b9d67",
+      "source": "Rust Internals",
+      "title": "预RFC：`pub(api)`可见性和crate内部API边界的静态强制",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_5",
+      "summary": "这不应该阻止pub(api)，因为正如所提到的，它将成为一个弱关键字。我认为在pub(E)上下文中可能的第一个标记集是self、super和in。如果是这种情况，那么引入api作为另一个不应该是模棱两可的。虽然pub可以在模块内使用，但rustc的lint文档表明，目前这不是默认警告的唯一原因是它现在会破坏太多代码，并且可能会改变。请参阅我对@robofinch的回复关于...",
+      "publishedAt": "2026-04-20T02:48:06.000Z",
+      "score": 37,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        5,
+        6,
+        7
+      ],
+      "reason": "New visibility RFC impacts Rust API design",
+      "suggestedTitle": "编辑建议标题：预RFC：Rust的`pub(api)`可见性提案",
+      "suggestedSummary": "编辑建议摘要：一个新的预RFC讨论了在Rust中引入`pub(api)`可见性，旨在静态强制crate内部API边界。该提案建议使用`pub(api)`作为一个弱关键字来管理可见性，允许开发者定义在crate内公开但不对外部暴露的API。这可以显著改善大型Rust项目中的封装性和模块化性，提供比现有机制如`pub(in path)`更灵活和强大的API边界管理方式。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ce19fe74e1deb5ff8ac230be2d2b13fa7a93ba063b1528a7ff453f85fafeecb2",
+      "source": "Lobsters Rust",
+      "title": "Narwhal v0.6.0——用于边缘应用的消息代理，现在支持通道持久化",
+      "url": "https://github.com/lonewolf-io/narwhal/releases/tag/narwhal-0.6.0",
+      "summary": "大家好！我又回来了，带来了Narwhal的新版本，这是我之前分享过的轻量级边缘应用消息代理。v0.6.0的主要变化是通道持久化：通道及其消息历史现在可以持久存储在磁盘上，因此订阅者在重新连接后可以重播错过的消息。此外，将异步运行时从monoio更换为compio（在Linux上仍然是io_uring），并添加了一流的Prometheus指标。",
+      "publishedAt": "2026-04-21T10:18:50.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        11,
+        27
+      ],
+      "reason": "New version of Narwhal enhances Rust edge apps",
+      "suggestedTitle": "Narwhal v0.6.0：增强的Rust消息代理",
+      "suggestedSummary": "Narwhal v0.6.0已经发布，为这个专为边缘应用设计的轻量级消息代理带来了通道持久化功能。此更新允许开发人员在重启后保持消息状态，提高了分布式系统的可靠性和稳健性。Narwhal由Rust构建，提供高性能、低开销的解决方案，适用于物联网和其他边缘计算场景，使其成为希望在边缘环境中利用Rust性能和安全性的开发人员的有吸引力的选择。",
+      "relatedSources": [
+        "Lobsters Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "389acf967d73d16bcc5b4671554294eefe4c2cb429a0f76992f5d23cd70770ef",
+      "source": "Rust Users Forum",
+      "title": "nestrs：一个基于Axum和Tower的Rust NestJS风格框架",
+      "url": "https://users.rust-lang.org/t/nestrs-a-nestjs-style-framework-for-rust-built-on-axum-and-tower/139700#post_5",
+      "summary": "我并没有要求任何人逐行审查源代码。我的要求是对API设计和易用性提供反馈，这种反馈可以通过查看代码片段和文档获得。这是一个不同的要求。",
+      "publishedAt": "2026-04-21T23:35:22.000Z",
+      "score": 55,
+      "relatedCount": 4,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6c935c0af696a72ac950079910f39ffd0dbc2fedac0e4ddcdee9f3c5d78dbd2",
+      "source": "Google News Rust",
+      "title": "Linux 变得越来越快和稳定，这门编程语言是原因 - MakeUseOf",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZTJ5V1VFTld6YTRYQWxQVTVNellnUEs3Q1Ntb1VFZ1ZaRUZRNXZITXhEWFdSSEJjaGVUT3ZaYUNLb3RSb0lMWFp2RWRhY2UwUTQ4TWEtUG1wNGJsbGRtMVd3MXFxV21DUmtuUGVyTm9SeUZaR2R1VWs4bjNEakFSRE5tN1hTRU5wRmpQY3JhWXczSGdT?oc=5",
+      "summary": "Linux 变得越来越快和稳定，这门编程语言是原因 - MakeUseOf",
+      "publishedAt": "2026-04-21T13:01:18.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2a7c3a236ace9f85319060eefc812d2f1f034b68ddcbb1aedba45db206b87aef",
+      "source": "Google News Rust",
+      "title": "ClickHouse 在核心分析堆栈中逐步采用 Rust - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVkVyLXp4OUxJTmY4ZHhjYmpsdVBLNGZnUk1YT1l4aEtmQnVzRlY3TS1ZTFJsLXNLM3NOMmV0VGg2TDVNYUZHdWV5YTdCRHE2ZWZnX3Nhc1FJeGRkNkd3MnJtUktWSm00b2MzbV9abldNNV9IeDZzR09xM2t0dFh4bE1mdzVVVXBTX09VMDBTQlRaTUt0eEFJYWowTjQzbXMxYmtlQkUwUTlJSjV3S1FCaTZ4cEZ3M2c?oc=5",
+      "summary": "ClickHouse 在核心分析堆栈中逐步采用 Rust  TipRanks",
+      "publishedAt": "2026-04-20T18:10:24.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-22T00:11:14.579Z"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "date": "2026-04-22",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "fe44893331178313b666588d5246ae9161849b51518f639d107ba81bfd2b9d67",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `pub(api)` visibility, and static enforcement of crate-internal API boundaries",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_5",
+      "summary": "It shouldn't block pub(api) because, as mentioned, it would become a weak keyword. The set of possible first tokens in a pub(E) context I believe are self, super, and in otherwise. If that is the case, then introducing api as another should not be ambiguous.\nWhile pub can be used within a module, the rustc lints documentation suggests that the only reason this isn't a default warning is that it would break too much code right now, and may change. See my reply to @robofinch about…",
+      "publishedAt": "2026-04-20T02:48:06.000Z",
+      "score": 37,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        5,
+        6,
+        7
+      ],
+      "reason": "New visibility RFC impacts Rust API design",
+      "suggestedTitle": "Pre-RFC: `pub(api)` Visibility Proposal for Rust",
+      "suggestedSummary": "A new pre-RFC discusses the introduction of `pub(api)` visibility in Rust, aimed at statically enforcing crate-internal API boundaries. This proposal suggests using `pub(api)` as a weak keyword to manage visibility, allowing developers to define APIs that are public within a crate but not exposed externally. This can significantly improve encapsulation and modularity in large Rust projects, providing a more flexible and powerful way to manage API boundaries compared to existing mechanisms like `pub(in path)`.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ce19fe74e1deb5ff8ac230be2d2b13fa7a93ba063b1528a7ff453f85fafeecb2",
+      "source": "Lobsters Rust",
+      "title": "Narwhal v0.6.0 – message broker for edge apps, now with channel persistence",
+      "url": "https://github.com/lonewolf-io/narwhal/releases/tag/narwhal-0.6.0",
+      "summary": "hi again! i'm back with a new release of Narwhal, the lightweight message broker for edge apps i shared a while ago. the headline change in v0.6.0 is channel persistence: channels and their message history can now be durably stored on disk, so subscribers can replay missed messages after reconnecting. also swapped the async runtime from monoio to compio (still io_uring on Linux), and added first-class Prometheus metrics.\nComments",
+      "publishedAt": "2026-04-21T10:18:50.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        11,
+        27
+      ],
+      "reason": "New version of Narwhal enhances Rust edge apps",
+      "suggestedTitle": "Narwhal v0.6.0: Enhanced Message Broker for Rust",
+      "suggestedSummary": "Narwhal v0.6.0 has been released, bringing channel persistence to this lightweight message broker designed for edge applications. This update allows developers to maintain message state across restarts, enhancing reliability and robustness in distributed systems. Built with Rust, Narwhal offers a high-performance, low-overhead solution suitable for IoT and other edge computing scenarios, making it an attractive option for developers looking to leverage Rust's performance and safety in edge environments.",
+      "relatedSources": [
+        "Lobsters Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "389acf967d73d16bcc5b4671554294eefe4c2cb429a0f76992f5d23cd70770ef",
+      "source": "Rust Users Forum",
+      "title": "nestrs: a NestJS-style framework for Rust built on Axum and Tower",
+      "url": "https://users.rust-lang.org/t/nestrs-a-nestjs-style-framework-for-rust-built-on-axum-and-tower/139700#post_5",
+      "summary": "I wasn't actually asking anyone to review the source code line by line. The ask was for feedback on the API design and ergonomics, the kind of thing you can get from looking at a code snippet and the docs. That's a different ask.",
+      "publishedAt": "2026-04-21T23:35:22.000Z",
+      "score": 55,
+      "relatedCount": 4,
+      "category": "quickNews"
+    },
+    {
+      "id": "a6c935c0af696a72ac950079910f39ffd0dbc2fedac0e4ddcdee9f3c5d78dbd2",
+      "source": "Google News Rust",
+      "title": "Linux keeps getting faster and more stable, and this programming language is why - MakeUseOf",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZTJ5V1VFTld6YTRYQWxQVTVNellnUEs3Q1Ntb1VFZ1ZaRUZRNXZITXhEWFdSSEJjaGVUT3ZaYUNLb3RSb0lMWFp2RWRhY2UwUTQ4TWEtUG1wNGJsbGRtMVd3MXFxV21DUmtuUGVyTm9SeUZaR2R1VWs4bjNEakFSRE5tN1hTRU5wRmpQY3JhWXczSGdT?oc=5",
+      "summary": "Linux keeps getting faster and more stable, and this programming language is why  MakeUseOf",
+      "publishedAt": "2026-04-21T13:01:18.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2a7c3a236ace9f85319060eefc812d2f1f034b68ddcbb1aedba45db206b87aef",
+      "source": "Google News Rust",
+      "title": "ClickHouse Pursues Incremental Rust Adoption in Core Analytics Stack - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVkVyLXp4OUxJTmY4ZHhjYmpsdVBLNGZnUk1YT1l4aEtmQnVzRlY3TS1ZTFJsLXNLM3NOMmV0VGg2TDVNYUZHdWV5YTdCRHE2ZWZnX3Nhc1FJeGRkNkd3MnJtUktWSm00b2MzbV9abldNNV9IeDZzR09xM2t0dFh4bE1mdzVVVXBTX09VMDBTQlRaTUt0eEFJYWowTjQzbXMxYmtlQkUwUTlJSjV3S1FCaTZ4cEZ3M2c?oc=5",
+      "summary": "ClickHouse Pursues Incremental Rust Adoption in Core Analytics Stack  TipRanks",
+      "publishedAt": "2026-04-20T18:10:24.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-22T00:11:08.561Z"
+  }
+}
