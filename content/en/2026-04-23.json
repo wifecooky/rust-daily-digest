@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-23",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "a175bdb80af80cb18dbd26462eae40afb4e4c40a890e61515d2a647afffa83a9",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` should include fewer files by default",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188#post_4",
+      "summary": "kpreid:\nMost packages’ tests do not take up significant amounts of disk space (or have any non-code files at all). Keeping tests, when they are cheap, is valuable for “wait, did this published package ever work as intended? If so, on which Rust versions?” kinds of investigations. I also think that it would be valuable if cargo publish verification ran tests to reduce the chances of publishing a broken-as-published package — all the more so if the default file exclusion rules were stricter.…",
+      "publishedAt": "2026-04-22T18:29:16.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        8,
+        74
+      ],
+      "reason": "Cargo packaging optimizations",
+      "suggestedTitle": "Pre-RFC: Streamlining `cargo package` to Exclude Unnecessary Files",
+      "suggestedSummary": "The Rust community is considering a Pre-RFC proposal to optimize the `cargo package` command by excluding non-essential files by default. This proposal aims to reduce package sizes by omitting files like extensive test datasets that do not impact the functionality of the crate. By refining the packaging process, developers can expect faster build times and reduced bandwidth usage, making Rust projects more efficient to distribute and manage.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ad6b1783ac92a5b0f21de16f0b8c9def3fa2df55a6da409d01ff43ba2ec55e20",
+      "source": "Rust Internals",
+      "title": "Request: Provide an official way to *deprecate* a crate. NOT yank. Yank is stupid",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174?page=2#post_24",
+      "summary": "KSXGitHub:\nA serious security vulnerability suddenly found in the old version.\nIn this case that version really should be yanked: I do not want that version to end up in my dependencies without wizardry-level commands. If the vulnerability can be qualified as “serious” then yanking is not “way too alarmist”. (It could be a bit too much if the vulnerability relates to a mostly-unused feature of the crate, but this was not implied in your previous message.)",
+      "publishedAt": "2026-04-22T07:37:47.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        21,
+        54
+      ],
+      "reason": "Improving crate deprecation process",
+      "suggestedTitle": "Proposal for Official Crate Deprecation Mechanism",
+      "suggestedSummary": "A new proposal is being discussed to provide an official way to deprecate Rust crates without yanking them. The current yanking process can be too drastic, removing the crate from the index entirely. The proposed method would allow maintainers to mark a crate as deprecated, providing users with a clear status without affecting existing builds. This change could improve the ecosystem's stability by offering a more nuanced approach to managing crate lifecycle and dependencies.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "5bfec585bbaed4d62d77f3f0e3ca500fdabec76b21cc3f8d7bb7472ab0eda9e3",
+      "source": "Rust Internals",
+      "title": "Add an implementation for the Default trait for std::ops::ControlFlow",
+      "url": "https://internals.rust-lang.org/t/add-an-implementation-for-the-default-trait-for-std-controlflow/24191#post_5",
+      "summary": "scottmcm:\nThis is also why while Result has map and map_err but ControlFlow has map_break and map_continue\nHow fitting that I had also written a note about precisely the naming choice for these map methods but then didn't include it for brevity.",
+      "publishedAt": "2026-04-22T20:41:03.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "d07ce067c871e97c77f29ee6f2572ace913182de8c5e983d09109102c853f54e",
+      "source": "Rust Internals",
+      "title": "Build Security",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_13",
+      "summary": "epage:\nIt is a huge effort with a lot of design work and it is incomplete. It only covers build time behavior and not runtime behavior.\nIt is much easier for compile time, because for compile time the rules are simple: no network at all, no access to hidden files at all, everything except the target directory is read-only. The reason for these rules isn't even security, though it obviously addresses it, but rather reproducible builds. I've been burnt by dependencies becoming unavailable enough…",
+      "publishedAt": "2026-04-22T21:26:48.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ce19fe74e1deb5ff8ac230be2d2b13fa7a93ba063b1528a7ff453f85fafeecb2",
+      "source": "Lobsters Rust",
+      "title": "Narwhal v0.6.0 – message broker for edge apps, now with channel persistence",
+      "url": "https://github.com/lonewolf-io/narwhal/releases/tag/narwhal-0.6.0",
+      "summary": "hi again! i'm back with a new release of Narwhal, the lightweight message broker for edge apps i shared a while ago. the headline change in v0.6.0 is channel persistence: channels and their message history can now be durably stored on disk, so subscribers can replay missed messages after reconnecting. also swapped the async runtime from monoio to compio (still io_uring on Linux), and added first-class Prometheus metrics.\nComments",
+      "publishedAt": "2026-04-21T10:18:50.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "10a3f2bbf88eba4384b174d32fe3884432b3e00e94e5151b83d66c2a7b6ceb5b",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-20 cargo-aprz 1.0.0 发布 - Rust 依赖质量评估工具",
+      "url": "https://rustcc.cn/article?id=9ba157c1-2890-4a15-a1a1-12fffb06ef99",
+      "summary": "cargo-aprz 1.0.0 发布 - Rust 依赖质量评估工具\n主要特点\ncargo-aprz 是一个 Cargo 插件，用于评估 Rust 依赖项的质量。该工具通过收集大量指标来帮助开发者了解所使用的 crate 的质量状况。\n核心功能\n多维度指标收集：为每个 crate 收集多种质量指标，包括：\n未解决问题（open issues）的数量\n发布频率\n安全公告（security advisories）\n示例代码数量\n代码覆盖率百分比\n以及更多其他指标\n可视化报告：生成易于阅读的报告，以友好的形式展示所有收集的指标\n版本信息\n当前版本：1.0.0（正式版本）\nqusql：Rust 的编译时 SQL 检查工具发布\n主要特点\n无需数据库连接的类型检查：作为 sqlx::query! 宏的替代方案，可以在 cargo check 时直接检查 SQL 类型，无需运行数据库\n简化的工作流程：\n\n从 Cargo.toml 旁的普通 SQL 文件读取数据库架构\n无需运行 cargo sqlx prepare 命令\n无需提交 sqlx-data.json 文件\n支持完全离线的 CI 环境…",
+      "publishedAt": "2026-04-21T01:15:15.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-23T00:16:05.749Z"
+  }
+}

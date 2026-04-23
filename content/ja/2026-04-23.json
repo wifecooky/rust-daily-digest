@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-23",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "a175bdb80af80cb18dbd26462eae40afb4e4c40a890e61515d2a647afffa83a9",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` はデフォルトでより少ないファイルを含むべき",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188#post_4",
+      "summary": "kpreid:\nほとんどのパッケージのテストは、ディスクスペースを大幅に消費することはなく（または非コードファイルをまったく持たない）、安価な場合にはテストを保持することは、「この公開されたパッケージは意図した通りに動作したことがあるのか？もしそうなら、どのRustバージョンで？」といった調査において価値があります。また、デフォルトのファイル除外ルールが厳格であればあるほど、cargo publishの検証がテストを実行して、公開されたパッケージが壊れている可能性を減らすことができると考えています。…",
+      "publishedAt": "2026-04-22T18:29:16.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        8,
+        74
+      ],
+      "reason": "Cargo packaging optimizations",
+      "suggestedTitle": "Pre-RFC: 不要なファイルを除外するための `cargo package` の効率化",
+      "suggestedSummary": "Rustコミュニティは、`cargo package` コマンドを最適化し、デフォルトで非必須ファイルを除外するPre-RFC提案を検討しています。この提案は、クレートの機能に影響を与えない広範なテストデータセットのようなファイルを省略することで、パッケージサイズを削減することを目的としています。パッケージングプロセスを洗練することで、開発者はビルド時間の短縮と帯域幅使用量の削減を期待でき、Rustプロジェクトの配布と管理がより効率的になります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ad6b1783ac92a5b0f21de16f0b8c9def3fa2df55a6da409d01ff43ba2ec55e20",
+      "source": "Rust Internals",
+      "title": "リクエスト: クレートを公式に非推奨にする方法を提供してください。ヤンクではありません。ヤンクは愚かです",
+      "url": "https://internals.rust-lang.org/t/request-provide-an-official-way-to-deprecate-a-crate-not-yank-yank-is-stupid/24174?page=2#post_24",
+      "summary": "KSXGitHub: 古いバージョンで深刻なセキュリティ脆弱性が突然発見されました。この場合、そのバージョンは本当にヤンクされるべきです。ウィザードレベルのコマンドなしで依存関係にそのバージョンが含まれることを望みません。脆弱性が「深刻」と認定される場合、ヤンクは「過度に警戒しすぎ」ではありません。（脆弱性がクレートのほとんど使用されていない機能に関連している場合は少し過剰かもしれませんが、これは前のメッセージでは示唆されていませんでした。）",
+      "publishedAt": "2026-04-22T07:37:47.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        21,
+        54
+      ],
+      "reason": "Improving crate deprecation process",
+      "suggestedTitle": "公式なクレート非推奨メカニズムの提案",
+      "suggestedSummary": "クレートをヤンクせずに公式に非推奨にする方法を提供する新しい提案が議論されています。現在のヤンクプロセスは過激すぎることがあり、クレートをインデックスから完全に削除します。提案された方法では、メンテナーがクレートを非推奨としてマークし、ユーザーに明確なステータスを提供しつつ、既存のビルドに影響を与えないようにします。この変更により、クレートのライフサイクルと依存関係の管理において、より微妙なアプローチを提供することで、エコシステムの安定性が向上する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "5bfec585bbaed4d62d77f3f0e3ca500fdabec76b21cc3f8d7bb7472ab0eda9e3",
+      "source": "Rust Internals",
+      "title": "std::ops::ControlFlowに対するDefaultトレイトの実装を追加",
+      "url": "https://internals.rust-lang.org/t/add-an-implementation-for-the-default-trait-for-std-controlflow/24191#post_5",
+      "summary": "scottmcm:\nこれが、Resultにはmapとmap_errがある一方で、ControlFlowにはmap_breakとmap_continueがある理由です。\nこれらのmapメソッドの命名選択について正確にメモを書いたのに、簡潔さのためにそれを含めなかったのはなんとも適切です。",
+      "publishedAt": "2026-04-22T20:41:03.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "d07ce067c871e97c77f29ee6f2572ace913182de8c5e983d09109102c853f54e",
+      "source": "Rust Internals",
+      "title": "ビルドセキュリティ",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_13",
+      "summary": "概要: これは多くのデザイン作業を伴う大規模な取り組みであり、まだ完成していません。ビルド時の動作のみをカバーしており、実行時の動作は含まれていません。コンパイル時の方がはるかに簡単です。なぜなら、コンパイル時のルールはシンプルだからです: ネットワークは一切使用しない、隠しファイルには一切アクセスしない、ターゲットディレクトリ以外はすべて読み取り専用です。これらのルールの理由はセキュリティですらなく、むしろ再現可能なビルドのためです。依存関係が利用できなくなることで痛い目に遭った経験が何度もあるので…",
+      "publishedAt": "2026-04-22T21:26:48.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ce19fe74e1deb5ff8ac230be2d2b13fa7a93ba063b1528a7ff453f85fafeecb2",
+      "source": "Lobsters Rust",
+      "title": "ナーワル v0.6.0 – エッジアプリ向けメッセージブローカー、チャネル永続化を実装",
+      "url": "https://github.com/lonewolf-io/narwhal/releases/tag/narwhal-0.6.0",
+      "summary": "こんにちは！以前ご紹介したエッジアプリ向けの軽量メッセージブローカー、ナーワルの新しいリリースをお届けします。v0.6.0の主な変更点はチャネル永続化です。チャネルとそのメッセージ履歴をディスクに永続的に保存できるようになり、再接続後にサブスクライバーが見逃したメッセージを再生できるようになりました。また、非同期ランタイムをmonoioからcompioに変更しました（Linuxでは依然としてio_uringを使用）。さらに、Prometheusメトリクスを一級サポートとして追加しました。",
+      "publishedAt": "2026-04-21T10:18:50.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "10a3f2bbf88eba4384b174d32fe3884432b3e00e94e5151b83d66c2a7b6ceb5b",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-20 cargo-aprz 1.0.0 リリース - Rust 依存関係品質評価ツール",
+      "url": "https://rustcc.cn/article?id=9ba157c1-2890-4a15-a1a1-12fffb06ef99",
+      "summary": "cargo-aprz 1.0.0 リリース - Rust 依存関係品質評価ツール",
+      "publishedAt": "2026-04-21T01:15:15.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-23T00:16:23.674Z"
+  }
+}
