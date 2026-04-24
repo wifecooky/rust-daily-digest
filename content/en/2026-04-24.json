@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-24",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "9b92172c89f03091693fa65abd4067ff368184f0eeb4a2cff12bfc7ac882033c",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF relocations",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_20",
+      "summary": "Oh, and I don't know if this is in scope or not, but it would be great to be able to express all of the libbpf/src/bpf_core_read.h at master · libbpf/libbpf · GitHub in Rust through whatever is the most natural way. Checks for type/field existence and enum value retrieval is critical for some real-world applications, not just relocatable field accesses.",
+      "publishedAt": "2026-04-23T21:31:43.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        13,
+        14
+      ],
+      "reason": "Enhances Rust's BPF capabilities.",
+      "suggestedTitle": "Pre-RFC: BTF Relocations for Rust",
+      "suggestedSummary": "A new pre-RFC discussion is underway to introduce BTF (BPF Type Format) relocations in Rust. This proposal aims to enhance Rust's capability to interact with BPF programs, which are commonly used in tracing and networking applications. The discussion highlights the need to support task->se.vruntime accesses, which are prevalent in C BPF programs. If implemented, this could make Rust a more viable choice for developing performance-critical BPF applications, expanding its applicability in systems programming.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "22530e8b4a0625074c5b7ba2e24b883f46072e34a205172d595b7f1271d52cc1",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] A tiny internal change to `reverse`, `copy_from_slice`, `swap_with_slice`",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-a-tiny-internal-change-to-reverse-copy-from-slice-swap-with-slice/24189#post_3",
+      "summary": "What's your plan to have a test for it to keep it from regressing?\nI think a comment explaining why those functions would be written that way should be enough to dissuade Rust maintainers from rewriting it without a stronger reason.\nBut at a broader level, note that .len() is special. (...)\nAs far as I understand, these special cases are motivated by performance, or are there any that affect the functional behavior of .len()?\nI can recognize that what I'm proposing is a hard sell. Even if my…",
+      "publishedAt": "2026-04-22T23:27:23.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        16,
+        32
+      ],
+      "reason": "Improves core library maintainability.",
+      "suggestedTitle": "Pre-RFC: Internal Changes to Core Slice Methods",
+      "suggestedSummary": "A pre-RFC proposes minor internal changes to Rust's core slice methods such as `reverse`, `copy_from_slice`, and `swap_with_slice`. These changes aim to improve code maintainability and prevent potential regressions by adding tests. Although the changes are internal, they reflect ongoing efforts to ensure the robustness of Rust's standard library. Developers relying on these methods can expect no functional changes but can be assured of continued improvements in code quality.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3b403b5c873d7c987504b8b5003d2e88c5439e17e6a2e172dbf035a2e41d2b79",
+      "source": "Rust Users Forum",
+      "title": "High-performance `fast-powi` crate",
+      "url": "https://users.rust-lang.org/t/high-performance-fast-powi-crate/139575#post_5",
+      "summary": "Your right. I forgot about Phong–Blinn style specular highlights.  I wrote one a few year ago while playing with WebGL, WebGL Demo 7: Normal Map.  In my example I use a power of 256!  The power is just beyond what my fast-powi crate can handle.  The highlight intensity usually get written into the shader, so I am not sure it is applicable to for use with Rust (unless you can compile Rust into shaders, ¯_(ツ)_/¯ ).\ngithub.com/mikem8891/WebGL\n  \nDemo_7/fshader.glsl\n2fc5fe01a…",
+      "publishedAt": "2026-04-23T23:19:50.000Z",
+      "score": 55,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "850c4840a85cba12f1059bfa901f6511a2bd30e20f38b39c7cc5a9ac1c483048",
+      "source": "Lobsters Rust",
+      "title": "Running Bare-Metal Rust Alongside ESP-IDF on the ESP32-S3's Second Core",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core",
+      "summary": "Comments",
+      "publishedAt": "2026-04-23T20:19:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50d3ad01d4843e776470da807327066e3fccda00e97c97f50eff290be692c4bd",
+      "source": "Lobsters Rust",
+      "title": "Security issues found within rust-coreutils",
+      "url": "https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773",
+      "summary": "Comments",
+      "publishedAt": "2026-04-23T17:20:42.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bf139f4b0e68594c0cc9d634654b7efd353097c28090a1ed3e97a4b84e5bb99a",
+      "source": "Lobsters Rust",
+      "title": "The Edge of Safe Rust",
+      "url": "https://kyju.org/blog/tokioconf-2026/",
+      "summary": "Comments",
+      "publishedAt": "2026-04-22T14:02:30.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-24T00:15:31.294Z"
+  }
+}

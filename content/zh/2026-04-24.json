@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-24",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "9b92172c89f03091693fa65abd4067ff368184f0eeb4a2cff12bfc7ac882033c",
+      "source": "Rust Internals",
+      "title": "[预RFC] BTF重定位",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_20",
+      "summary": "哦，我不知道这是否在范围内，但如果能够通过最自然的方式在Rust中表达libbpf/src/bpf_core_read.h at master · libbpf/libbpf · GitHub的所有内容，那就太好了。类型/字段存在性检查和枚举值检索对于一些实际应用至关重要，而不仅仅是可重定位字段访问。",
+      "publishedAt": "2026-04-23T21:31:43.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        13,
+        14
+      ],
+      "reason": "Enhances Rust's BPF capabilities.",
+      "suggestedTitle": "预RFC：Rust的BTF重定位",
+      "suggestedSummary": "一项新的预RFC讨论正在进行中，旨在在Rust中引入BTF（BPF类型格式）重定位。该提案旨在增强Rust与BPF程序的交互能力，BPF程序通常用于跟踪和网络应用。讨论强调了支持task->se.vruntime访问的必要性，这在C BPF程序中很常见。如果实施，这可能使Rust成为开发性能关键BPF应用的更可行选择，扩大其在系统编程中的适用性。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "22530e8b4a0625074c5b7ba2e24b883f46072e34a205172d595b7f1271d52cc1",
+      "source": "Rust Internals",
+      "title": "[预RFC] 对 `reverse`、`copy_from_slice`、`swap_with_slice` 的微小内部更改",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-a-tiny-internal-change-to-reverse-copy-from-slice-swap-with-slice/24189#post_3",
+      "summary": "你有什么计划来测试它以防止退化？我认为一条解释为什么这些函数会以这种方式编写的注释应该足以劝阻 Rust 维护者在没有更强理由的情况下重写它。但从更广泛的层面来看，注意 .len() 是特殊的。(...) 据我所知，这些特殊情况是出于性能考虑，还是有任何影响 .len() 功能行为的情况？我承认我所提议的是一个难以接受的提议。即使我的...",
+      "publishedAt": "2026-04-22T23:27:23.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        16,
+        32
+      ],
+      "reason": "Improves core library maintainability.",
+      "suggestedTitle": "预RFC：核心切片方法的内部更改",
+      "suggestedSummary": "一项预RFC提议对Rust核心切片方法如 `reverse`、`copy_from_slice` 和 `swap_with_slice` 进行轻微的内部更改。这些更改旨在通过添加测试来提高代码的可维护性并防止潜在的退化。尽管更改是内部的，但它们反映了确保Rust标准库稳健性的持续努力。依赖这些方法的开发人员可以预期不会有功能上的变化，但可以放心代码质量的持续改进。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3b403b5c873d7c987504b8b5003d2e88c5439e17e6a2e172dbf035a2e41d2b79",
+      "source": "Rust Users Forum",
+      "title": "高性能 `fast-powi` 库",
+      "url": "https://users.rust-lang.org/t/high-performance-fast-powi-crate/139575#post_5",
+      "summary": "你说得对。我忘记了Phong–Blinn风格的高光。我几年前在玩WebGL时写过一个，WebGL Demo 7: Normal Map。在我的例子中，我使用了256的幂！这个幂已经超出了我的fast-powi库所能处理的范围。高光强度通常会被写入着色器中，所以我不确定它是否适用于Rust（除非你能将Rust编译成着色器，¯\\_(ツ)_/¯）。\ngithub.com/mikem8891/WebGL\n\nDemo_7/fshader.glsl\n2fc5fe01a…",
+      "publishedAt": "2026-04-23T23:19:50.000Z",
+      "score": 55,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "850c4840a85cba12f1059bfa901f6511a2bd30e20f38b39c7cc5a9ac1c483048",
+      "source": "Lobsters Rust",
+      "title": "在ESP32-S3的第二核心上运行裸机Rust与ESP-IDF并行",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core",
+      "summary": "评论",
+      "publishedAt": "2026-04-23T20:19:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50d3ad01d4843e776470da807327066e3fccda00e97c97f50eff290be692c4bd",
+      "source": "Lobsters Rust",
+      "title": "在rust-coreutils中发现安全问题",
+      "url": "https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773",
+      "summary": "评论",
+      "publishedAt": "2026-04-23T17:20:42.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bf139f4b0e68594c0cc9d634654b7efd353097c28090a1ed3e97a4b84e5bb99a",
+      "source": "Lobsters Rust",
+      "title": "安全Rust的边缘",
+      "url": "https://kyju.org/blog/tokioconf-2026/",
+      "summary": "评论",
+      "publishedAt": "2026-04-22T14:02:30.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-24T00:15:37.828Z"
+  }
+}

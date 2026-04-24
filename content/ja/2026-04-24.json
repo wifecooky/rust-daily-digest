@@ -1,0 +1,99 @@
+{
+  "date": "2026-04-24",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "9b92172c89f03091693fa65abd4067ff368184f0eeb4a2cff12bfc7ac882033c",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF リロケーション",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161#post_20",
+      "summary": "ああ、これが範囲内かどうかわからないけれど、libbpf/src/bpf_core_read.h at master · libbpf/libbpf · GitHub のすべてを、最も自然な方法でRustで表現できると素晴らしいでしょう。型/フィールドの存在チェックと列挙値の取得は、リロケータブルフィールドアクセスだけでなく、いくつかの実世界のアプリケーションにとって重要です。",
+      "publishedAt": "2026-04-23T21:31:43.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        13,
+        14
+      ],
+      "reason": "Enhances Rust's BPF capabilities.",
+      "suggestedTitle": "Pre-RFC: RustのためのBTFリロケーション",
+      "suggestedSummary": "新しいPre-RFCの議論が、RustにおけるBTF（BPFタイプフォーマット）リロケーションの導入を目指して進行中です。この提案は、トレースやネットワークアプリケーションで一般的に使用されるBPFプログラムとの相互作用を強化することを目的としています。議論は、CのBPFプログラムで一般的なtask->se.vruntimeアクセスのサポートの必要性を強調しています。これが実装されれば、RustがパフォーマンスクリティカルなBPFアプリケーションの開発においてより実行可能な選択肢となり、システムプログラミングにおける適用性を拡大する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "22530e8b4a0625074c5b7ba2e24b883f46072e34a205172d595b7f1271d52cc1",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `reverse`、`copy_from_slice`、`swap_with_slice`への小さな内部変更",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-a-tiny-internal-change-to-reverse-copy-from-slice-swap-with-slice/24189#post_3",
+      "summary": "それが退行しないようにテストを行う計画は何ですか？これらの関数がそのように書かれる理由を説明するコメントがあれば、Rustのメンテナが強い理由なしに書き換えるのを思いとどまらせるのに十分だと思います。しかし、より広いレベルで、.len()が特別であることに注意してください。(...) 私の理解する限り、これらの特殊ケースはパフォーマンスによって動機付けられているのか、それとも.len()の機能的な動作に影響を与えるものがあるのか？私の提案が難しいものであることは認識しています。たとえ私が…",
+      "publishedAt": "2026-04-22T23:27:23.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        16,
+        32
+      ],
+      "reason": "Improves core library maintainability.",
+      "suggestedTitle": "Pre-RFC: コアスライスメソッドへの内部変更",
+      "suggestedSummary": "Pre-RFCは、Rustのコアスライスメソッドである`reverse`、`copy_from_slice`、`swap_with_slice`に対する軽微な内部変更を提案しています。これらの変更は、コードの保守性を向上させ、テストを追加することで潜在的な退行を防ぐことを目的としています。変更は内部的なものですが、Rustの標準ライブラリの堅牢性を確保するための継続的な努力を反映しています。これらのメソッドに依存している開発者は、機能的な変更は期待できませんが、コード品質の継続的な改善が保証されていることを確認できます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3b403b5c873d7c987504b8b5003d2e88c5439e17e6a2e172dbf035a2e41d2b79",
+      "source": "Rust Users Forum",
+      "title": "高性能な`fast-powi`クレート",
+      "url": "https://users.rust-lang.org/t/high-performance-fast-powi-crate/139575#post_5",
+      "summary": "あなたが正しいです。Phong–Blinnスタイルのスペキュラーハイライトを忘れていました。数年前にWebGLで遊んでいるときに書いたものがあります。WebGLデモ7: ノーマルマップ。私の例では、256のべき乗を使用しています！このべき乗は、私のfast-powiクレートが処理できる範囲を超えています。ハイライトの強度は通常シェーダーに書き込まれるので、Rustでの使用に適用できるかどうかはわかりません（Rustをシェーダーにコンパイルできる場合を除いて、¯\\_(ツ)_/¯）。",
+      "publishedAt": "2026-04-23T23:19:50.000Z",
+      "score": 55,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "850c4840a85cba12f1059bfa901f6511a2bd30e20f38b39c7cc5a9ac1c483048",
+      "source": "Lobsters Rust",
+      "title": "ESP32-S3のセカンドコアでESP-IDFと並行してベアメタルRustを実行",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core",
+      "summary": "コメント",
+      "publishedAt": "2026-04-23T20:19:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50d3ad01d4843e776470da807327066e3fccda00e97c97f50eff290be692c4bd",
+      "source": "Lobsters Rust",
+      "title": "rust-coreutilsにおけるセキュリティ問題が発見される",
+      "url": "https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773",
+      "summary": "コメント",
+      "publishedAt": "2026-04-23T17:20:42.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bf139f4b0e68594c0cc9d634654b7efd353097c28090a1ed3e97a4b84e5bb99a",
+      "source": "Lobsters Rust",
+      "title": "安全なRustの最前線",
+      "url": "https://kyju.org/blog/tokioconf-2026/",
+      "summary": "コメント",
+      "publishedAt": "2026-04-22T14:02:30.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-24T00:15:44.546Z"
+  }
+}
