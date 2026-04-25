@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-25",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "1cb898c83f21a01a17289d33f2b59f416f037b1d8682268a8654416343362833",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` はデフォルトでより少ないファイルを含むべき",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_22",
+      "summary": "SwishSwushPow:\n少し背景を説明すると、私の会社では、コードベースで更新されるすべてのRust依存関係をレビューすることが日常業務の一部となっています。これにより、何百ものプロジェクト構造や差分を数ヶ月にわたって確認し、時折、本当に必要ではないファイルを含むクレートを見つけることがあります。例えば、gifやpng、pdf、あるいはバイナリテストデータなどです。それらの中には、実際にクレートと一緒に出荷すべきかどうか議論する価値のあるものもあります。例えば、ローカルで確認するために…",
+      "publishedAt": "2026-04-24T22:23:07.000Z",
+      "score": 57,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        1,
+        13
+      ],
+      "reason": "Changes in cargo package behavior",
+      "suggestedTitle": "Pre-RFC: `cargo package` がデフォルトでより少ないファイルを含むように",
+      "suggestedSummary": "新しいPre-RFC提案では、Rustプロジェクトをパッケージ化する際に、`cargo package` コマンドがデフォルトでより少ないファイルを含むべきだとしています。この変更は、テストやドキュメントなどの不要なファイルを除外することで、サプライチェーンのセキュリティを向上させることを目的としています。開発者はパッケージングの手法を調整し、必要なファイルのみを含めるようにする必要があり、これによりパッケージのサイズが減少し、セキュリティが向上する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c5d7d65b475cc35805c9f3ee6dea2cbe6c119c9c6a83ae12463b33fac2011e15",
+      "source": "Rust Internals",
+      "title": "ビルドセキュリティ",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_15",
+      "summary": "不完全なサンドボックスがユーザーに誤った安全感を与えることを心配していますが、メリットも見えます。ユーザーは信頼できないコードを実行することが危険であることを理解していますが、Rustコードを単に閲覧することが危険であることには驚きます。それは、IDEがcargo checkを実行したり、LSPがprocマクロを実行したりする可能性があるためです（これはマクロだけでなく、その依存関係のbuild.rsも実行します）。一部のエディタは新しいプロジェクトを開くときに確認を求めたり、ファイルを保存するまで何も実行しないことがありますが、それでもクリックひとつで…",
+      "publishedAt": "2026-04-24T01:59:34.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        77,
+        113
+      ],
+      "reason": "Discussion on Rust build security",
+      "suggestedTitle": "Rustプロジェクトにおけるビルドセキュリティの強化",
+      "suggestedSummary": "Rust Internalsでの最近の議論は、Rustプロジェクトにおけるビルドスクリプトとprocマクロのセキュリティに関する懸念を浮き彫りにしています。コミュニティは、これらのツールの柔軟性と不完全なサンドボックスが誤った安全感を与えるといった潜在的なセキュリティリスクとのバランスをどのように取るかを検討しています。開発者は、将来のRustのセキュリティプラクティスを形作るためにこれらの議論に参加し、安全なビルド環境を確保し、Rustの開発エコシステムにおける脆弱性を減少させることが奨励されています。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "88724e0b30491f9050c78a7b7b8a0d8c6faf36e4bb23379009a9142272ba8494",
+      "source": "Lobsters Rust",
+      "title": "ピュアボロー: 線形ハスケルがRustスタイルの借用に出会う",
+      "url": "https://discourse.haskell.org/t/pure-borrow-linear-haskell-meets-rust-style-borrowing/13975",
+      "summary": "コメント",
+      "publishedAt": "2026-04-24T07:01:08.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ff483a2ec1fdfcca75240ccc6d1e4d03c835950e3ca1a0e9974a785296aae001",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-24 Vizia 0.4.0 バージョンリリース",
+      "url": "https://rustcc.cn/article?id=70b704c3-9fbf-4a68-9bae-4b981215b946",
+      "summary": "Vizia 0.4.0 バージョンリリース\nVizia GUI フレームワークが0.4.0バージョンの更新を発表し、多くの重要な改良と機能強化をもたらしました。\n主な変更点\nレスポンシブシステムの再構築：従来のlensesを置き換え、シグナル（signals）ベースの新しいレスポンシブシステムを採用\nCSS変数サポート：CSS変数のサポートを追加\nローカリゼーションの改善：RTL（右から左）レイアウトやfluent datetime関数を含むローカリゼーションサポートを強化\n組み込みビューの最適化：組み込みビューのローカリゼーション、アクセシビリティ、テーマ機能を改善\nパフォーマンス向上：全体的なパフォーマンス改善、特にレイアウトパフォーマンスの最適化\n重要な機能更新\nスライダー（Slider）、プログレスバー（ProgressBar）、ノブ（Knob）などのコントロールを改良\nサイズ変更可能なスタックビュー（ResizableStack）を新たに追加\nリストと仮想リストビューを強化し、ビューへのスクロールをサポート\nテキストボックス、ドロップダウンセレクションボックスなどのコンポーネントのアクセシビリティを改善\nシステムテーマ処理と有効なテーマ解析を実装\nマルチウィンドウとポップアップウィンドウの可視性処理を最適化\nVizia 0.4 リリース——純粋なRustによる宣言的レスポンシブGUIフレームワーク\nViziaはデスクトップGUIアプリケーションを作成するためのフレームワークで、純粋なRustで記述され、宣言的な開発方式をサポートしています（DSLやマクロ不要）。そのAPI設計は...",
+      "publishedAt": "2026-04-24T01:22:26.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "850c4840a85cba12f1059bfa901f6511a2bd30e20f38b39c7cc5a9ac1c483048",
+      "source": "Lobsters Rust",
+      "title": "ESP32-S3のセカンドコアでESP-IDFと並行してベアメタルRustを実行",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core",
+      "summary": "コメント",
+      "publishedAt": "2026-04-23T20:19:21.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50d3ad01d4843e776470da807327066e3fccda00e97c97f50eff290be692c4bd",
+      "source": "Lobsters Rust",
+      "title": "rust-coreutilsにおけるセキュリティ問題が発見される",
+      "url": "https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773",
+      "summary": "コメント",
+      "publishedAt": "2026-04-23T17:20:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b0371c73ff616d9ee365246b95986b71112c524fa100153f4ec3efb33120bc3a",
+      "source": "Lobsters Rust",
+      "title": "2026年にjemallocを使う人なんているの？（多くの主要プロジェクト）",
+      "url": "https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html",
+      "summary": "コメント",
+      "publishedAt": "2026-04-23T10:46:49.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-25T00:13:05.339Z"
+  }
+}

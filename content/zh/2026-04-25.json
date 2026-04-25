@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-25",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "1cb898c83f21a01a17289d33f2b59f416f037b1d8682268a8654416343362833",
+      "source": "Rust Internals",
+      "title": "[预RFC] `cargo package` 默认应包含更少的文件",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_22",
+      "summary": "SwishSwushPow:\n一点背景：在我公司，审查我们代码库中更新的每个 Rust 依赖项已成为我们的例行工作。这意味着我们在几个月内查看了数百个项目结构和差异，并且不时发现包含不必要文件的 crate。无论是 gifs 或 pngs，pdfs，还是二进制测试数据。对于其中一些，值得讨论它们是否真的应该与 crate 一起发布，例如用于本地验证……",
+      "publishedAt": "2026-04-24T22:23:07.000Z",
+      "score": 57,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        1,
+        13
+      ],
+      "reason": "Changes in cargo package behavior",
+      "suggestedTitle": "预RFC: `cargo package` 默认包含更少文件",
+      "suggestedSummary": "一项新的预RFC提议建议，`cargo package` 命令在打包 Rust 项目时默认应包含更少的文件。此更改旨在通过排除不必要的文件（如测试和文档）来提高供应链安全性，这些文件可能成为攻击的潜在载体。开发人员需要调整他们的打包实践，确保仅包含必要的文件，这可能会减少包的大小并增强安全性。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c5d7d65b475cc35805c9f3ee6dea2cbe6c119c9c6a83ae12463b33fac2011e15",
+      "source": "Rust Internals",
+      "title": "构建安全性",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_15",
+      "summary": "我担心不完整的沙盒会给用户带来虚假的安全感，但我也看到了好处。用户明白运行不受信任的代码可能是危险的，但令人惊讶的是，仅仅查看 Rust 代码也可能是危险的！这是因为 IDE 可能会运行 cargo check，或者 LSP 可能会运行 proc macros（这不仅运行宏，还运行其依赖项的 build.rs）。一些编辑器在打开新项目时会询问，或者在您保存文件之前不会运行任何东西，但这仍然只是一步之遥……",
+      "publishedAt": "2026-04-24T01:59:34.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        77,
+        113
+      ],
+      "reason": "Discussion on Rust build security",
+      "suggestedTitle": "增强 Rust 项目中的构建安全性",
+      "suggestedSummary": "最近在 Rust Internals 上的讨论突出了对 Rust 项目中构建脚本和 proc macros 安全性的担忧。社区正在考虑如何在这些工具的灵活性与潜在的安全风险之间取得平衡，例如不完整的沙盒可能带来的虚假安全感。鼓励开发人员参与这些讨论，以帮助塑造未来的 Rust 安全实践，确保更安全的构建环境，并减少 Rust 开发生态系统中的漏洞。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "88724e0b30491f9050c78a7b7b8a0d8c6faf36e4bb23379009a9142272ba8494",
+      "source": "Lobsters Rust",
+      "title": "纯借用：线性 Haskell 遇上 Rust 风格的借用",
+      "url": "https://discourse.haskell.org/t/pure-borrow-linear-haskell-meets-rust-style-borrowing/13975",
+      "summary": "评论",
+      "publishedAt": "2026-04-24T07:01:08.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ff483a2ec1fdfcca75240ccc6d1e4d03c835950e3ca1a0e9974a785296aae001",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-24 Vizia 0.4.0 版本发布",
+      "url": "https://rustcc.cn/article?id=70b704c3-9fbf-4a68-9bae-4b981215b946",
+      "summary": "Vizia 0.4.0 版本发布",
+      "publishedAt": "2026-04-24T01:22:26.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "850c4840a85cba12f1059bfa901f6511a2bd30e20f38b39c7cc5a9ac1c483048",
+      "source": "Lobsters Rust",
+      "title": "在ESP32-S3的第二核心上运行裸机Rust与ESP-IDF并行",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core",
+      "summary": "评论",
+      "publishedAt": "2026-04-23T20:19:21.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50d3ad01d4843e776470da807327066e3fccda00e97c97f50eff290be692c4bd",
+      "source": "Lobsters Rust",
+      "title": "在rust-coreutils中发现安全问题",
+      "url": "https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773",
+      "summary": "评论",
+      "publishedAt": "2026-04-23T17:20:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b0371c73ff616d9ee365246b95986b71112c524fa100153f4ec3efb33120bc3a",
+      "source": "Lobsters Rust",
+      "title": "谁在2026年还在使用jemalloc？（许多大型项目）",
+      "url": "https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html",
+      "summary": "评论",
+      "publishedAt": "2026-04-23T10:46:49.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-25T00:12:55.458Z"
+  }
+}

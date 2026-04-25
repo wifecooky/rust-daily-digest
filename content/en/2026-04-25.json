@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-25",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "1cb898c83f21a01a17289d33f2b59f416f037b1d8682268a8654416343362833",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` should include fewer files by default",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_22",
+      "summary": "SwishSwushPow:\nA bit of context: At my company, it has become part of our routine to review every Rust dependency that is updated in our code base. This means that we have looked at hundreds of project structures and diffs over the months and from time to time we find crates that include files that aren’t really required. Be it gifs or pngs, pdfs, or maybe binary test data. For some of them, it is worth discussing if they should actually be shipped with the crate, e.g. to locally verify that…",
+      "publishedAt": "2026-04-24T22:23:07.000Z",
+      "score": 57,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        1,
+        13
+      ],
+      "reason": "Changes in cargo package behavior",
+      "suggestedTitle": "Pre-RFC: `cargo package` to Include Fewer Files by Default",
+      "suggestedSummary": "A new pre-RFC proposal suggests that the `cargo package` command should include fewer files by default when packaging Rust projects. This change aims to improve supply chain security by excluding unnecessary files, such as tests and documentation, which could be potential vectors for attacks. Developers will need to adjust their packaging practices, ensuring that only essential files are included, potentially reducing the size of packages and enhancing security.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c5d7d65b475cc35805c9f3ee6dea2cbe6c119c9c6a83ae12463b33fac2011e15",
+      "source": "Rust Internals",
+      "title": "Build Security",
+      "url": "https://internals.rust-lang.org/t/build-security/24166#post_15",
+      "summary": "I am worried about an incomplete sandbox giving users false sense of security, but I also see upsides.\nUsers understand that running untrusted code can be dangerous, but it's surprising that merely viewing Rust code can be dangerous too! That's because an IDE may run cargo check or an LSP may run proc macros (which runs build.rs of its deps too, not only the macro). Some editors ask when opening a new project, or don't run anything until you save a file, but that's still a click away from…",
+      "publishedAt": "2026-04-24T01:59:34.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        77,
+        113
+      ],
+      "reason": "Discussion on Rust build security",
+      "suggestedTitle": "Enhancing Build Security in Rust Projects",
+      "suggestedSummary": "Recent discussions on Rust Internals highlight concerns about the security of build scripts and proc macros in Rust projects. The community is considering how to balance the flexibility of these tools with potential security risks, such as incomplete sandboxes giving a false sense of security. Developers are encouraged to engage in these discussions to help shape future Rust security practices, ensuring safer build environments and reducing vulnerabilities in Rust's development ecosystem.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "88724e0b30491f9050c78a7b7b8a0d8c6faf36e4bb23379009a9142272ba8494",
+      "source": "Lobsters Rust",
+      "title": "Pure Borrow: Linear Haskell Meets Rust-Style Borrowing",
+      "url": "https://discourse.haskell.org/t/pure-borrow-linear-haskell-meets-rust-style-borrowing/13975",
+      "summary": "Comments",
+      "publishedAt": "2026-04-24T07:01:08.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ff483a2ec1fdfcca75240ccc6d1e4d03c835950e3ca1a0e9974a785296aae001",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-24 Vizia 0.4.0 版本发布",
+      "url": "https://rustcc.cn/article?id=70b704c3-9fbf-4a68-9bae-4b981215b946",
+      "summary": "Vizia 0.4.0 版本发布\nVizia GUI 框架发布了 0.4.0 版本更新，带来了多项重大改进和功能增强。\n主要变更\n响应式系统重构：使用基于信号（signals）的新响应式系统替代了原有的 lenses\nCSS 变量支持：新增对 CSS 变量的支持\n本地化改进：增强了本地化支持，包括 RTL（从右到左）布局和 fluent datetime 函数\n内置视图优化：改进了内置视图的本地化、无障碍访问和主题功能\n性能提升：整体性能改进，特别是布局性能的优化\n重要功能更新\n改进了滑块（Slider）、进度条（ProgressBar）、旋钮（Knob）等控件\n新增可调整大小的堆栈视图（ResizableStack）\n增强了列表和虚拟列表视图，支持滚动到视图\n改进了文本框、下拉选择框等组件的无障碍访问\n实现了系统主题处理和有效主题解析\n优化了多窗口和弹出窗口的可见性处理\nVizia 0.4 发布——纯 Rust 声明式响应式 GUI 框架\nVizia 是一个用于创建桌面 GUI 应用程序的框架，采用纯 Rust 编写，支持声明式开发方式（无需 DSL 或宏）。其 API 设计受…",
+      "publishedAt": "2026-04-24T01:22:26.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "850c4840a85cba12f1059bfa901f6511a2bd30e20f38b39c7cc5a9ac1c483048",
+      "source": "Lobsters Rust",
+      "title": "Running Bare-Metal Rust Alongside ESP-IDF on the ESP32-S3's Second Core",
+      "url": "https://tingouw.com/blog/embedded/esp32/run_rust_on_app_core",
+      "summary": "Comments",
+      "publishedAt": "2026-04-23T20:19:21.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50d3ad01d4843e776470da807327066e3fccda00e97c97f50eff290be692c4bd",
+      "source": "Lobsters Rust",
+      "title": "Security issues found within rust-coreutils",
+      "url": "https://discourse.ubuntu.com/t/an-update-on-rust-coreutils/80773",
+      "summary": "Comments",
+      "publishedAt": "2026-04-23T17:20:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b0371c73ff616d9ee365246b95986b71112c524fa100153f4ec3efb33120bc3a",
+      "source": "Lobsters Rust",
+      "title": "Who even uses jemalloc in 2026 anyway? (many major projects)",
+      "url": "https://theconsensus.dev/p/2026/04/16/who-even-uses-jemalloc-anyway.html",
+      "summary": "Comments",
+      "publishedAt": "2026-04-23T10:46:49.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-25T00:12:49.955Z"
+  }
+}
