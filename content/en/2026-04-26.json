@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-26",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "8621833ef1f57e700c71af66e84b629a0c43f7d7851dcce2a90f4f7ebeb0fc05",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] DNS domains as package namespaces",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202#post_4",
+      "summary": "If so, it would be good to acknowledge the prior discussions and highlight what is different. Besides how the namespaces are verified, this looked like someone just retreading existing ground, including vague references to requirements when they are clearly written out.",
+      "publishedAt": "2026-04-25T23:45:47.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1,
+        24
+      ],
+      "reason": "Namespace proposal impacts package management",
+      "suggestedTitle": "Pre-RFC: DNS Domains as Package Namespaces in Rust",
+      "suggestedSummary": "A new pre-RFC proposes using DNS domains as package namespaces in Rust, aiming to improve package management by aligning with organizational ownership and registry namespace designs. This approach could streamline package identification and reduce conflicts, offering a more structured way to manage dependencies. Rust developers should consider the implications for their projects, particularly in terms of package naming conventions and potential integration with existing systems.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "310b1b2f9e702ca40372d47540d5947a1f9fff21ee0c23feea5c73c22b3f2e67",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` should include fewer files by default",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_35",
+      "summary": "Only during verification, for that (and IIRC other reasons, though it's been a while), I commonly have to publish with --no-verify and just pray.",
+      "publishedAt": "2026-04-25T18:01:05.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        53
+      ],
+      "reason": "Streamlining cargo packaging process",
+      "suggestedTitle": "Pre-RFC: Streamlining `cargo package` Defaults",
+      "suggestedSummary": "A pre-RFC suggests changes to `cargo package` to include fewer files by default, focusing on essential components and reducing unnecessary bloat. This proposal aims to optimize the packaging process by excluding dev-dependencies and other non-essential files unless explicitly required. Rust developers could benefit from more efficient package builds, potentially reducing the size and complexity of crate distributions.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04ed396242f559ea7fa68aad6e3f39ca94839205a06e8b8116b15e5d484570db",
+      "source": "Rust Internals",
+      "title": "`BitSlice` or a sound way to implement one",
+      "url": "https://internals.rust-lang.org/t/bitslice-or-a-sound-way-to-implement-one/24194#post_8",
+      "summary": "The problem is, it isn't done, so we have nothing in the end",
+      "publishedAt": "2026-04-25T16:37:00.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "242f247a22d09daf11bc25c5ea0610b808c26a0aac766f1b62e6808c9fae664f",
+      "source": "RustCC (CN)",
+      "title": "[开源]bluespec-lsp：一个100%用AI开发的LanguageServer项目，欢迎携带各自的Agent加入开发",
+      "url": "https://rustcc.cn/article?id=0ef3de28-46c1-41b3-b2ca-cbc7e2d6ae5e",
+      "summary": "bluespec-lsp是一个完全由 AI自主实现、以 Rust 作为开发语言、为 Bluespec SystemVerilog硬件描述语言提供更好 IDE 支持的 Language Server项目。它不仅是技术工具，更是一次AI独立开发的实验成果：从需求分析到代码实现，从架构设计到功能测试，全部由AI自主完成。项目目前提供常量自动展开、代码导航等现代IDE功能。我们诚邀Rust社区开发者、硬件工程师和对AI自主开发感兴趣的朋友，一起来探索、完善这个AI原生项目，共同见证AI在软件开发领域的新突破。\n我们将举办一次线上Talk来价绍该项目的详细情况，并给出一些Good First Issue的说明。我们非常欢迎各种技术背景的Rust爱好者来体验在一个全新、陌生的领域，使用AI + Rust来参与项目开发，Talk时间：\n2026年4月30日周四晚上20：00\n腾讯会议 会议号：291-108-253\n此外，本项目也是open-rdma开源生态的子项目，open-rdma使用Rust作为其用户态驱动程序的开发语言，对RDMA软件栈感兴趣的同学可以关注项目发展。\n相关项目地址：…",
+      "publishedAt": "2026-04-25T05:51:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "de7f93066f6aa87f28ee572ae932999f50648522fd5e1557b1188357358d3400",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-25 Pyscan：用 Rust 重写的 Python 安全扫描工具",
+      "url": "https://rustcc.cn/article?id=5d9ed73d-2988-4c2a-9c7d-b8d345976e9e",
+      "summary": "Pyscan：用 Rust 重写的 Python 安全扫描工具\n一位开发者分享了他耗时 3 年开发的项目 Pyscan，这是一个用 Rust 编写的 Python 安全工具。\n开发背景\n项目持续时间：断断续续开发了 3 年\n核心目标：解决传统 Python 安全工具在生产 CI/CD 流程中的性能和内存瓶颈问题\n解决的痛点\n开发者为了加快 CI/CD 速度会放弃较慢的安全工具，间接导致安全隐患\n内存限制使得额外添加安全工具变得不合理\n主要功能\n自动遍历 Python 项目\n支持多种包管理格式（uv、poetry、flit、pdm、requirements.txt、SBOM，甚至源代码）\n将依赖项与开源漏洞（OSV）数据库进行交叉对比\n性能对比\n与基于 Rust 的 uv audit 性能相当，有时甚至更快\n开发者坦言：如果已使用 uv，实际上不需要 pyscan\n最新版本新特性\nSBOM 原生支持：可解析 CycloneDX（bom.json）和 SPDX（spdx.json）文件…",
+      "publishedAt": "2026-04-25T01:09:57.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ff483a2ec1fdfcca75240ccc6d1e4d03c835950e3ca1a0e9974a785296aae001",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-24 Jujutsu——新一代版本控制系统",
+      "url": "https://rustcc.cn/article?id=70b704c3-9fbf-4a68-9bae-4b981215b946",
+      "summary": "Resonators 0.1：用于实时频谱分析的 Rust 库发布\n一位开发者在 r/rust 社区发布了他们的首个 Rust crate——Resonators 0.1，这是一个实现实时频谱分析的库。\n主要特点\n核心功能：实现了 Alexandre François 的 Resonate 算法，可以在无需窗口或缓冲区的情况下实时计算 STFT 和 CQT 类型的频谱图\n跨平台支持：提供 Python 和 WASM 绑定，解决了原 C++ 参考实现依赖 Apple Accelerate 框架、无法在 Ubuntu 上运行的问题\n应用场景\n用于计算实时音乐转录模型训练的特征\nPython 绑定便于集成到 PyTorch 训练环境\nWASM 绑定支持浏览器端推理\n演示项目\n创建了浏览器演示，可实时可视化麦克风输入，使用对数刻度（音乐性）频率分段\n同时支持桌面和移动设备\n性能优异：在 iPhone 上的运行速度甚至快于 M2 MacBook Pro\n技术栈\n开发过程中学习和使用了多项技术：cargo…",
+      "publishedAt": "2026-04-24T01:22:26.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "68da1087fddf39cdaef4076e8986955bff2e8107ee9b2517faf54c53c1ff2538",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust Cargo: crates.io のサプライチェーン攻撃対策: クールダウン期間付きミラーを公開しました",
+      "url": "https://zenn.dev/menhera/articles/45cbc2ce6792c3",
+      "summary": "Menhera.org(一般社団法人生活情報基盤研究機構)では、Rust の crates.io のスパースインデックスに対して「公開直後のバージョンを一定期間隠す」フィルタを行うパブリックプロキシを公開しました。\n.cargo/config.toml に数ブロックを追加するだけで利用でき、アカウント登録や認証は不要です。\n!\n\nサービス: https://index.crates.menhera.org/\n\nソースコード: https://github.com/menhera-org/index-crates-menhera (Apache-2.0 OR MPL-2.0)\n英語版の告知...",
+      "publishedAt": "2026-04-24T02:54:03.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-26T00:12:28.655Z"
+  }
+}

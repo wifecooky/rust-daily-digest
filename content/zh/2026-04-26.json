@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-26",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "8621833ef1f57e700c71af66e84b629a0c43f7d7851dcce2a90f4f7ebeb0fc05",
+      "source": "Rust Internals",
+      "title": "[预RFC] 将DNS域名作为包命名空间",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202#post_4",
+      "summary": "如果是这样，最好承认之前的讨论并强调有什么不同。除了命名空间的验证方式外，这看起来像是有人只是在重踏现有的基础，包括对要求的模糊引用，而这些要求已经清楚地写出来了。",
+      "publishedAt": "2026-04-25T23:45:47.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1,
+        24
+      ],
+      "reason": "Namespace proposal impacts package management",
+      "suggestedTitle": "预RFC：在Rust中将DNS域名作为包命名空间",
+      "suggestedSummary": "一项新的预RFC提议在Rust中使用DNS域名作为包命名空间，旨在通过与组织所有权和注册表命名空间设计对齐来改善包管理。这种方法可以简化包识别并减少冲突，提供一种更结构化的方式来管理依赖关系。Rust开发者应考虑其对项目的影响，特别是在包命名约定和与现有系统的潜在集成方面。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "310b1b2f9e702ca40372d47540d5947a1f9fff21ee0c23feea5c73c22b3f2e67",
+      "source": "Rust Internals",
+      "title": "[预RFC] `cargo package` 默认应包含更少的文件",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_35",
+      "summary": "仅在验证期间，为此（以及我记得的其他原因，尽管已经有一段时间了），我通常不得不使用 --no-verify 发布，然后只能祈祷。",
+      "publishedAt": "2026-04-25T18:01:05.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        53
+      ],
+      "reason": "Streamlining cargo packaging process",
+      "suggestedTitle": "预RFC：简化 `cargo package` 的默认设置",
+      "suggestedSummary": "一项预RFC建议对 `cargo package` 进行更改，以默认包含更少的文件，重点关注基本组件并减少不必要的膨胀。该提案旨在通过排除开发依赖项和其他非必要文件来优化打包过程，除非明确需要。Rust开发者可能会从更高效的包构建中受益，潜在地减少crate分发的大小和复杂性。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04ed396242f559ea7fa68aad6e3f39ca94839205a06e8b8116b15e5d484570db",
+      "source": "Rust Internals",
+      "title": "BitSlice：一种实现方法或合理的方式",
+      "url": "https://internals.rust-lang.org/t/bitslice-or-a-sound-way-to-implement-one/24194#post_8",
+      "summary": "问题在于，它尚未完成，因此最终我们一无所获",
+      "publishedAt": "2026-04-25T16:37:00.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "242f247a22d09daf11bc25c5ea0610b808c26a0aac766f1b62e6808c9fae664f",
+      "source": "RustCC (CN)",
+      "title": "[开源]bluespec-lsp：一个100%用AI开发的LanguageServer项目，欢迎携带各自的Agent加入开发",
+      "url": "https://rustcc.cn/article?id=0ef3de28-46c1-41b3-b2ca-cbc7e2d6ae5e",
+      "summary": "bluespec-lsp是一个完全由 AI自主实现、以 Rust 作为开发语言、为 Bluespec SystemVerilog硬件描述语言提供更好 IDE 支持的 Language Server项目。它不仅是技术工具，更是一次AI独立开发的实验成果：从需求分析到代码实现，从架构设计到功能测试，全部由AI自主完成。项目目前提供常量自动展开、代码导航等现代IDE功能。我们诚邀Rust社区开发者、硬件工程师和对AI自主开发感兴趣的朋友，一起来探索、完善这个AI原生项目，共同见证AI在软件开发领域的新突破。我们将举办一次线上Talk来价绍该项目的详细情况，并给出一些Good First Issue的说明。我们非常欢迎各种技术背景的Rust爱好者来体验在一个全新、陌生的领域，使用AI + Rust来参与项目开发，Talk时间：2026年4月30日周四晚上20：00 腾讯会议 会议号：291-108-253 此外，本项目也是open-rdma开源生态的子项目，open-rdma使用Rust作为其用户态驱动程序的开发语言，对RDMA软件栈感兴趣的同学可以关注项目发展。相关项目地址：…",
+      "publishedAt": "2026-04-25T05:51:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "de7f93066f6aa87f28ee572ae932999f50648522fd5e1557b1188357358d3400",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-25 Pyscan：用 Rust 重写的 Python 安全扫描工具",
+      "url": "https://rustcc.cn/article?id=5d9ed73d-2988-4c2a-9c7d-b8d345976e9e",
+      "summary": "Pyscan：用 Rust 重写的 Python 安全扫描工具",
+      "publishedAt": "2026-04-25T01:09:57.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ff483a2ec1fdfcca75240ccc6d1e4d03c835950e3ca1a0e9974a785296aae001",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-04-24 Jujutsu——新一代版本控制系统",
+      "url": "https://rustcc.cn/article?id=70b704c3-9fbf-4a68-9bae-4b981215b946",
+      "summary": "Resonators 0.1：用于实时频谱分析的 Rust 库发布\n一位开发者在 r/rust 社区发布了他们的首个 Rust crate——Resonators 0.1，这是一个实现实时频谱分析的库。\n主要特点\n核心功能：实现了 Alexandre François 的 Resonate 算法，可以在无需窗口或缓冲区的情况下实时计算 STFT 和 CQT 类型的频谱图\n跨平台支持：提供 Python 和 WASM 绑定，解决了原 C++ 参考实现依赖 Apple Accelerate 框架、无法在 Ubuntu 上运行的问题\n应用场景\n用于计算实时音乐转录模型训练的特征\nPython 绑定便于集成到 PyTorch 训练环境\nWASM 绑定支持浏览器端推理\n演示项目\n创建了浏览器演示，可实时可视化麦克风输入，使用对数刻度（音乐性）频率分段\n同时支持桌面和移动设备\n性能优异：在 iPhone 上的运行速度甚至快于 M2 MacBook Pro\n技术栈\n开发过程中学习和使用了多项技术：cargo…",
+      "publishedAt": "2026-04-24T01:22:26.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "68da1087fddf39cdaef4076e8986955bff2e8107ee9b2517faf54c53c1ff2538",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust Cargo：crates.io 的供应链攻击对策：发布带有冷却期的镜像",
+      "url": "https://zenn.dev/menhera/articles/45cbc2ce6792c3",
+      "summary": "Menhera.org（一般社团法人生活信息基础研究机构）发布了一个公共代理，对 Rust 的 crates.io 稀疏索引进行“在版本刚发布后隐藏一段时间”的过滤。只需在 .cargo/config.toml 中添加几个块即可使用，无需账户注册或认证。服务地址：https://index.crates.menhera.org/ 源代码：https://github.com/menhera-org/index-crates-menhera (Apache-2.0 OR MPL-2.0) 英文版公告...",
+      "publishedAt": "2026-04-24T02:54:03.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-26T00:12:34.657Z"
+  }
+}

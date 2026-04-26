@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-26",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "8621833ef1f57e700c71af66e84b629a0c43f7d7851dcce2a90f4f7ebeb0fc05",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] パッケージ名前空間としてのDNSドメイン",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202#post_4",
+      "summary": "そうであれば、以前の議論を認識し、何が異なるのかを強調することが良いでしょう。名前空間がどのように検証されるかを除けば、これは単に既存の地盤を再踏査しているように見え、要件が明確に書かれているにもかかわらず曖昧な参照を含んでいます。",
+      "publishedAt": "2026-04-25T23:45:47.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1,
+        24
+      ],
+      "reason": "Namespace proposal impacts package management",
+      "suggestedTitle": "Pre-RFC: Rustにおけるパッケージ名前空間としてのDNSドメイン",
+      "suggestedSummary": "新しいPre-RFCは、RustにおいてDNSドメインをパッケージ名前空間として使用することを提案しており、組織の所有権およびレジストリ名前空間の設計と整合させることでパッケージ管理を改善することを目指しています。このアプローチは、パッケージの識別を合理化し、競合を減らし、依存関係を管理するためのより構造化された方法を提供する可能性があります。Rust開発者は、特にパッケージの命名規則や既存システムとの統合の可能性に関して、自分たちのプロジェクトへの影響を考慮するべきです。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "310b1b2f9e702ca40372d47540d5947a1f9fff21ee0c23feea5c73c22b3f2e67",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` はデフォルトでより少ないファイルを含むべき",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_35",
+      "summary": "検証時のみ、そのため（そして他の理由もあったと思いますが、しばらく経ちました）、私は通常 --no-verify オプションを使って公開し、ただ祈るだけです。",
+      "publishedAt": "2026-04-25T18:01:05.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        53
+      ],
+      "reason": "Streamlining cargo packaging process",
+      "suggestedTitle": "Pre-RFC: `cargo package` のデフォルトを簡素化",
+      "suggestedSummary": "Pre-RFC は、`cargo package` がデフォルトで必要最低限のコンポーネントに焦点を当て、不要な膨張を減らすためにより少ないファイルを含むように変更することを提案しています。この提案は、dev-dependencies やその他の不要なファイルを明示的に要求されない限り除外することで、パッケージングプロセスを最適化することを目指しています。Rust 開発者は、より効率的なパッケージビルドから利益を得る可能性があり、クレート配布のサイズと複雑さを減少させることができます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "04ed396242f559ea7fa68aad6e3f39ca94839205a06e8b8116b15e5d484570db",
+      "source": "Rust Internals",
+      "title": "BitSlice、またはその実装方法",
+      "url": "https://internals.rust-lang.org/t/bitslice-or-a-sound-way-to-implement-one/24194#post_8",
+      "summary": "問題は、それが完了していないことであり、結局何も得られないということです",
+      "publishedAt": "2026-04-25T16:37:00.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "242f247a22d09daf11bc25c5ea0610b808c26a0aac766f1b62e6808c9fae664f",
+      "source": "RustCC (CN)",
+      "title": "[オープンソース]bluespec-lsp：100% AIで開発されたLanguageServerプロジェクト、各自のエージェントを持ち込んで開発に参加しよう",
+      "url": "https://rustcc.cn/article?id=0ef3de28-46c1-41b3-b2ca-cbc7e2d6ae5e",
+      "summary": "bluespec-lspは、AIが完全に自主的に実現し、Rustを開発言語として使用し、Bluespec SystemVerilogハードウェア記述言語に対するより良いIDEサポートを提供するLanguage Serverプロジェクトです。これは技術ツールであるだけでなく、AIによる独立した開発の実験成果でもあります：要求分析からコード実装、アーキテクチャ設計から機能テストまで、すべてAIが自主的に完了しました。プロジェクトは現在、定数の自動展開やコードナビゲーションなどの現代的なIDE機能を提供しています。Rustコミュニティの開発者、ハードウェアエンジニア、AIによる自主開発に興味のある方々を、AIネイティブプロジェクトを探索し、改善し、AIがソフトウェア開発分野での新たな突破口を目撃するために招待します。プロジェクトの詳細を紹介し、いくつかのGood First Issueの説明を行うオンライントークを開催します。さまざまな技術的背景を持つRust愛好者が、新しい未知の分野でAI + Rustを使用してプロジェクト開発に参加することを歓迎します。トークの時間は以下の通りです：2026年4月30日木曜日の夜20:00、Tencent会議 会議番号：291-108-253。また、このプロジェクトはopen-rdmaオープンソースエコシステムのサブプロジェクトでもあり、open-rdmaはRustをユーザーモードドライバの開発言語として使用しています。RDMAソフトウェアスタックに興味のある方はプロジェクトの進展に注目してください。関連プロジェクトのアドレス：…",
+      "publishedAt": "2026-04-25T05:51:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "de7f93066f6aa87f28ee572ae932999f50648522fd5e1557b1188357358d3400",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-25 Pyscan：Rustで再実装されたPythonセキュリティスキャンツール",
+      "url": "https://rustcc.cn/article?id=5d9ed73d-2988-4c2a-9c7d-b8d345976e9e",
+      "summary": "Pyscan：Rustで再実装されたPythonセキュリティスキャンツール\nある開発者が3年かけて開発したプロジェクトPyscanを共有しました。これはRustで書かれたPythonセキュリティツールです。\n開発背景\nプロジェクト期間：断続的に3年間開発\n核心目標：従来のPythonセキュリティツールが生産CI/CDプロセスで直面するパフォーマンスとメモリのボトルネック問題を解決\n解決する痛点\n開発者はCI/CDの速度を上げるために、遅いセキュリティツールを放棄し、間接的にセキュリティリスクを引き起こす\nメモリ制限により、追加のセキュリティツールを導入することが不合理\n主要機能\nPythonプロジェクトを自動でトラバース\n複数のパッケージ管理形式に対応（uv、poetry、flit、pdm、requirements.txt、SBOM、さらにはソースコード）\n依存関係をオープンソース脆弱性（OSV）データベースとクロスチェック\n性能比較\nRustベースのuv auditと同等の性能、時にはそれ以上の速度\n開発者のコメント：すでにuvを使用している場合、実際にはpyscanは不要\n最新バージョンの新機能\nSBOMネイティブサポート：CycloneDX（bom.json）とSPDX（spdx.json）ファイルを解析可能…",
+      "publishedAt": "2026-04-25T01:09:57.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ff483a2ec1fdfcca75240ccc6d1e4d03c835950e3ca1a0e9974a785296aae001",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-04-24 Jujutsu——新世代のバージョン管理システム",
+      "url": "https://rustcc.cn/article?id=70b704c3-9fbf-4a68-9bae-4b981215b946",
+      "summary": "Resonators 0.1：リアルタイムスペクトル解析用のRustライブラリがリリース\nr/rustコミュニティの開発者が、彼らの最初のRustクレートであるResonators 0.1を発表しました。これはリアルタイムスペクトル解析を実現するライブラリです。\n主な特徴\nコア機能：Alexandre FrançoisのResonateアルゴリズムを実装し、ウィンドウやバッファを必要とせずにSTFTとCQTタイプのスペクトログラムをリアルタイムで計算可能\nクロスプラットフォームサポート：PythonとWASMバインディングを提供し、元のC++リファレンス実装がApple Accelerateフレームワークに依存し、Ubuntuで動作しない問題を解決\n応用シーン\nリアルタイム音楽転写モデル訓練の特徴計算に使用\nPythonバインディングはPyTorchトレーニング環境への統合を容易に\nWASMバインディングはブラウザ側での推論をサポート\nデモプロジェクト\nブラウザデモを作成し、マイク入力をリアルタイムで可視化、対数スケール（音楽的）周波数分割を使用\nデスクトップとモバイルデバイスの両方をサポート\n優れたパフォーマンス：iPhoneでの動作速度がM2 MacBook Proよりも速い\n技術スタック\n開発過程で多くの技術を学び、使用しました：cargo…",
+      "publishedAt": "2026-04-24T01:22:26.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "68da1087fddf39cdaef4076e8986955bff2e8107ee9b2517faf54c53c1ff2538",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust Cargo: crates.ioのサプライチェーン攻撃対策: クールダウン期間付きミラーを公開しました",
+      "url": "https://zenn.dev/menhera/articles/45cbc2ce6792c3",
+      "summary": "Menhera.org（一般社団法人生活情報基盤研究機構）では、Rustのcrates.ioのスパースインデックスに対して「公開直後のバージョンを一定期間隠す」フィルタを行うパブリックプロキシを公開しました。.cargo/config.tomlに数ブロックを追加するだけで利用でき、アカウント登録や認証は不要です。",
+      "publishedAt": "2026-04-24T02:54:03.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-26T00:12:41.509Z"
+  }
+}
