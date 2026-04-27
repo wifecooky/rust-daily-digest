@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-27",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "a4d57be560a6820611d36045d2ce937a3baafa3f31f05e0c4eb1fdacbf2da2bd",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `pub(api)` visibility, and static enforcement of crate-internal API boundaries",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_9",
+      "summary": "This could be an interesting idea on its own, but the goal of this RFC is a little different. Your problem your approach is solving is one part that I'm addressing, but I find the boundary enforcement at least as important. My argument is that it simplifies reasoning about internal dependencies, where you know that the only symbols that can be exported from a boundary module are those marked with pub(api), and the possible lint tooling can use the intended semantics to help out. The goal here…",
+      "publishedAt": "2026-04-26T22:20:11.000Z",
+      "score": 57,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        1,
+        8
+      ],
+      "reason": "Impacts crate visibility and allocators",
+      "suggestedTitle": "Exploring `pub(api)` Visibility and Custom Allocators in Rust",
+      "suggestedSummary": "A new pre-RFC proposes the `pub(api)` visibility modifier, which aims to enforce crate-internal API boundaries more strictly. This feature would allow developers to declare items that are public within a specific API context but not externally, offering more granular control over API exposure. Additionally, ongoing discussions on the use of custom allocators could lead to enhanced memory management capabilities in Rust, particularly for collections like `Vec`. These changes could provide developers with more robust tools for modular design and performance optimization in their Rust applications.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "bb2b9a0f7447a03740c75e86e2000293b3fe216a77fbdd220218a8717cf4616b",
+      "source": "Rust Users Forum",
+      "title": "[Announcements] ZettaTransport: A custom UDP transport layer for hostile networks (FEC, X25519, Lock-less I/O)",
+      "url": "https://users.rust-lang.org/t/announcements-zettatransport-a-custom-udp-transport-layer-for-hostile-networks-fec-x25519-lock-less-i-o/139796#post_2",
+      "summary": "My first look went to the spec, to which I have the following feedback:\nThe spec lacks nearly all details. It defines the packet headers, which is what I would expect. But the rest reads more like the abstract of a spec or a leaflet. In my eyes, a spec should rigorously define all aspects of a protocol. Things that I feel like are missing, in no particular order:\nHeader field descriptions\nThere seem to be different packet types. What are they? Currently, they are scattered through the document.…",
+      "publishedAt": "2026-04-26T06:48:13.000Z",
+      "score": 45,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        6,
+        7
+      ],
+      "reason": "New UDP transport layer in Rust",
+      "suggestedTitle": "Introducing ZettaTransport: A UDP Transport Layer for Hostile Networks",
+      "suggestedSummary": "ZettaTransport is an open-source Rust project designed to provide a custom UDP transport layer optimized for hostile network environments. It incorporates features like Forward Error Correction (FEC), X25519 encryption, and lock-less I/O operations to enhance reliability and security. This transport layer is particularly useful for developers working on applications that require robust communication channels in challenging network conditions, such as gaming or real-time data streaming applications. ZettaTransport's design focuses on minimizing overhead while maximizing throughput and security.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "046d122cfa6882614f1092866ac73e8e361e0d43f5ae3860c166e3ab4f22713e",
+      "source": "Rust Internals",
+      "title": "[Discussion] A perspective on super let: could a related “lift” capability ever belong in Rust’s macro system?",
+      "url": "https://internals.rust-lang.org/t/discussion-a-perspective-on-super-let-could-a-related-lift-capability-ever-belong-in-rust-s-macro-system/24193#post_5",
+      "summary": "naganohara-yoshino:\nIt asks the expander to evaluate an expression in an enclosing context\nWhile this is more powerful than super let it begs the question of whether we want something this powerful, to the point that it allows breaking the syntactic order of execution of a program. For example in your Racket snippet:\nthe first statement that is executed is (local-function)\nthe first statement of local-function is (displayln \"Local function started.\")\nI would thus assume that the first string…",
+      "publishedAt": "2026-04-26T12:15:49.000Z",
+      "score": 52,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "964c5c989575a1e04929a2eb58efa66b9374bc735689b64a7a754a8b7e650cae",
+      "source": "Rust Internals",
+      "title": "Easily inspect dependencies",
+      "url": "https://internals.rust-lang.org/t/easily-inspect-dependencies/24200#post_4",
+      "summary": "I would recommend focusing on what use cases you are concerned about. The most you do is say it is an ergonomic issue and a security issue. You never say how to either. A generic link to some site is provided requiring us to guess your intent.\nUse cases are important because there can be multiple ways of meeting the need and they can uncover additional requirements.\n\n Rudxain:\nThe current UX discourages cding or opening deps:\nThere are invariants with the cache, like that it is never edited.…",
+      "publishedAt": "2026-04-25T12:10:09.000Z",
+      "score": 37,
+      "relatedCount": 6,
+      "category": "quickNews"
+    },
+    {
+      "id": "e8664a6ed43727d5d294a0c77291b3853ff96d15335d8eb7d4684ae9f827310b",
+      "source": "Rust Users Forum",
+      "title": "Tokio OnceCell + Sqlx Pool seems to be stuck",
+      "url": "https://users.rust-lang.org/t/tokio-oncecell-sqlx-pool-seems-to-be-stuck/139806#post_1",
+      "summary": "I'm trying to create a static database pool in a Dioxus project using tokio OnceCell, in the example bellow as I try to create de database pool it seems to get locked forever. I'm suspecting this is not really a Dioxus problem but something about the lock I'm not understanding:\n#[cfg(feature = \"server\")]\npub(crate) static POOL: tokio::sync::OnceCell<sqlx::MySqlPool> = tokio::sync::OnceCell::const_new();\n\n// The prinln! on this funtion output in this order:\n//\n// TRYING TO GET POOL\n// POOL INIT…",
+      "publishedAt": "2026-04-26T14:56:18.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "8cc6d8d59c4d079e748cb5bc984581f5fa1cadc8292180958bd292a467f84502",
+      "source": "Rust Users Forum",
+      "title": "Iced + Tokio Spawn: Is there a better way to handle errors",
+      "url": "https://users.rust-lang.org/t/iced-tokio-spawn-is-there-a-better-way-to-handle-errors/139810#post_1",
+      "summary": "I am trying to learn how to better perform error handling.  In an iced project in the new function I create a task that runs 2 async functions.  They have to run in series which I think eliminates the ability to use of the join macro.  The code works but I seem to be stuck error handling with match ok/err statements.  Is there a better way to deal with the error handling?  I should note that both async functions return a result.  Any assistance will be appreciated.\nfn new() -> (Self,…",
+      "publishedAt": "2026-04-26T23:51:45.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e08ecdf90ae48157725c8ef5c18559f33ce29a0bfb7b55fc16db547626bc3ee4",
+      "source": "Rust Users Forum",
+      "title": "Async UdpStream: request for API feedback & code review",
+      "url": "https://users.rust-lang.org/t/async-udpstream-request-for-api-feedback-code-review/139801#post_1",
+      "summary": "As part of a larger personal project, I needed (wanted?) a run-time agnostic, ergonomic wrapper around a non-blocking, non-exclusive, async UdpSocket.\nI'd love your feedback to both the API and the code itself for UdpStream as defined here ssdp-rs/src/udp.rs · MusicalNinjaDad/splurt\nThe main API is\n// construct by binding to a socket & specifying max expected\n//length for incoming datagrams\nlet mut stream = UdpStream::<32>::bind(addr).expect(\"bound to socket\");\n\n// push to send\nlet msg: &[u8;…",
+      "publishedAt": "2026-04-26T08:46:54.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-27T00:13:38.302Z"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-27",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "a4d57be560a6820611d36045d2ce937a3baafa3f31f05e0c4eb1fdacbf2da2bd",
+      "source": "Rust Internals",
+      "title": "事前RFC: `pub(api)`の可視性とクレート内部API境界の静的強制",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_9",
+      "summary": "これはそれ自体で興味深いアイデアかもしれませんが、このRFCの目標は少し異なります。あなたのアプローチが解決している問題は私が取り組んでいる部分の一部ですが、境界の強制を少なくとも同じくらい重要だと考えています。私の主張は、境界モジュールからエクスポートできるシンボルが`pub(api)`でマークされたものだけであることを知っている場合、内部依存関係についての推論が簡単になるということです。そして、意図されたセマンティクスを使用して可能なlintツールが支援できるかもしれません。ここでの目標は…",
+      "publishedAt": "2026-04-26T22:20:11.000Z",
+      "score": 57,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        1,
+        8
+      ],
+      "reason": "Impacts crate visibility and allocators",
+      "suggestedTitle": "Rustにおける`pub(api)`の可視性とカスタムアロケータの探求",
+      "suggestedSummary": "新しい事前RFCは、クレート内部のAPI境界をより厳密に強制することを目的とした`pub(api)`可視性修飾子を提案しています。この機能により、特定のAPIコンテキスト内で公開されるが外部には公開されない項目を宣言でき、APIの公開をより細かく制御することが可能になります。さらに、カスタムアロケータの使用に関する継続的な議論は、特に`Vec`のようなコレクションにおけるメモリ管理機能の向上につながる可能性があります。これらの変更は、Rustアプリケーションにおけるモジュール設計とパフォーマンス最適化のためのより堅牢なツールを開発者に提供するかもしれません。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "bb2b9a0f7447a03740c75e86e2000293b3fe216a77fbdd220218a8717cf4616b",
+      "source": "Rust Users Forum",
+      "title": "【お知らせ】ZettaTransport：敵対的ネットワーク向けのカスタムUDPトランスポート層（FEC、X25519、ロックレスI/O）",
+      "url": "https://users.rust-lang.org/t/announcements-zettatransport-a-custom-udp-transport-layer-for-hostile-networks-fec-x25519-lock-less-i-o/139796#post_2",
+      "summary": "私の最初の注目は仕様書に向けられ、以下のフィードバックを持っています：仕様書にはほとんどすべての詳細が欠けています。パケットヘッダーが定義されているのは期待通りですが、残りは仕様書の要約やパンフレットのように読めます。私の考えでは、仕様書はプロトコルのすべての側面を厳密に定義すべきです。特に順序はありませんが、欠けていると感じるものは次のとおりです：ヘッダーフィールドの説明、異なるパケットタイプがあるようですが、それらは何ですか？現在、それらは文書全体に散在しています。…",
+      "publishedAt": "2026-04-26T06:48:13.000Z",
+      "score": 45,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        6,
+        7
+      ],
+      "reason": "New UDP transport layer in Rust",
+      "suggestedTitle": "ZettaTransportの紹介：敵対的ネットワーク向けのUDPトランスポート層",
+      "suggestedSummary": "ZettaTransportは、敵対的なネットワーク環境に最適化されたカスタムUDPトランスポート層を提供するために設計されたオープンソースのRustプロジェクトです。信頼性とセキュリティを向上させるために、前方誤り訂正（FEC）、X25519暗号化、ロックレスI/O操作などの機能を組み込んでいます。このトランスポート層は、ゲームやリアルタイムデータストリーミングアプリケーションなど、困難なネットワーク条件で堅牢な通信チャネルを必要とするアプリケーションを開発する開発者に特に有用です。ZettaTransportの設計は、オーバーヘッドを最小限に抑えつつ、スループットとセキュリティを最大化することに焦点を当てています。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "046d122cfa6882614f1092866ac73e8e361e0d43f5ae3860c166e3ab4f22713e",
+      "source": "Rust Internals",
+      "title": "【議論】スーパーletに関する視点：関連する「リフト」機能がRustのマクロシステムに含まれる可能性はあるか？",
+      "url": "https://internals.rust-lang.org/t/discussion-a-perspective-on-super-let-could-a-related-lift-capability-ever-belong-in-rust-s-macro-system/24193#post_5",
+      "summary": "naganohara-yoshino: 拡張機能に囲まれたコンテキストで式を評価するよう求めています。これはスーパーletよりも強力ですが、プログラムの実行の構文順序を破ることを許すほど強力なものが必要かどうかという疑問を投げかけます。例えば、Racketのスニペットでは、最初に実行される文は(local-function)であり、local-functionの最初の文は(displayln \"Local function started.\")です。したがって、最初の文字列が...",
+      "publishedAt": "2026-04-26T12:15:49.000Z",
+      "score": 52,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "964c5c989575a1e04929a2eb58efa66b9374bc735689b64a7a754a8b7e650cae",
+      "source": "Rust Internals",
+      "title": "依存関係を簡単に検査する",
+      "url": "https://internals.rust-lang.org/t/easily-inspect-dependencies/24200#post_4",
+      "summary": "どのユースケースに関心があるのかに焦点を当てることをお勧めします。最も多く言われるのは、それが使い勝手の問題であり、セキュリティの問題であるということです。しかし、どのように対処するかは決して言及されていません。意図を推測させるような一般的なサイトへのリンクが提供されています。ユースケースは重要です。なぜなら、ニーズを満たす方法が複数存在する可能性があり、追加の要件を明らかにすることができるからです。\n\nRudxain:\n現在のUXは、depsをcdしたり開いたりすることを妨げています。\nキャッシュには不変条件があります。例えば、それが決して編集されないということです。",
+      "publishedAt": "2026-04-25T12:10:09.000Z",
+      "score": 37,
+      "relatedCount": 6,
+      "category": "quickNews"
+    },
+    {
+      "id": "e8664a6ed43727d5d294a0c77291b3853ff96d15335d8eb7d4684ae9f827310b",
+      "source": "Rust Users Forum",
+      "title": "Tokio OnceCell + Sqlxプールが停止しているようです",
+      "url": "https://users.rust-lang.org/t/tokio-oncecell-sqlx-pool-seems-to-be-stuck/139806#post_1",
+      "summary": "Dioxusプロジェクトでtokio OnceCellを使用して静的なデータベースプールを作成しようとしていますが、以下の例ではデータベースプールを作成しようとすると永久にロックされているようです。これはDioxusの問題ではなく、ロックに関する理解不足が原因ではないかと疑っています。\n#[cfg(feature = \"server\")]\npub(crate) static POOL: tokio::sync::OnceCell<sqlx::MySqlPool> = tokio::sync::OnceCell::const_new();\n\n// この関数の出力順序でのprintln!は以下の通りです：\n//\n// POOLを取得しようとしています\n// POOL初期化中…",
+      "publishedAt": "2026-04-26T14:56:18.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "8cc6d8d59c4d079e748cb5bc984581f5fa1cadc8292180958bd292a467f84502",
+      "source": "Rust Users Forum",
+      "title": "Iced + Tokio Spawn: エラー処理を改善する方法はあるか",
+      "url": "https://users.rust-lang.org/t/iced-tokio-spawn-is-there-a-better-way-to-handle-errors/139810#post_1",
+      "summary": "エラー処理をより良く行う方法を学ぼうとしています。Icedプロジェクトの新しい関数で、2つの非同期関数を実行するタスクを作成します。それらは直列で実行する必要があり、これによりjoinマクロの使用ができないと考えています。コードは動作しますが、match ok/errステートメントを使ったエラー処理に行き詰まっているようです。エラー処理を扱うより良い方法はあるのでしょうか？なお、両方の非同期関数は結果を返します。どんな助言でも感謝します。",
+      "publishedAt": "2026-04-26T23:51:45.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e08ecdf90ae48157725c8ef5c18559f33ce29a0bfb7b55fc16db547626bc3ee4",
+      "source": "Rust Users Forum",
+      "title": "Async UdpStream: APIフィードバックとコードレビューのリクエスト",
+      "url": "https://users.rust-lang.org/t/async-udpstream-request-for-api-feedback-code-review/139801#post_1",
+      "summary": "個人的なプロジェクトの一環として、ランタイムに依存しない、非ブロッキング、非排他的な非同期UdpSocketの使いやすいラッパーが必要（欲しい？）でした。 UdpStreamのAPIとコードそのものに対するフィードバックをいただけると嬉しいです。定義はここにあります: ssdp-rs/src/udp.rs · MusicalNinjaDad/splurt\n主なAPIは次のとおりです。\n// ソケットにバインドし、受信するデータグラムの最大予想長を指定して構築\nlet mut stream = UdpStream::<32>::bind(addr).expect(\"ソケットにバインドされました\");\n\n// 送信するためにプッシュ\nlet msg: &[u8;…",
+      "publishedAt": "2026-04-26T08:46:54.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-27T00:13:54.631Z"
+  }
+}
