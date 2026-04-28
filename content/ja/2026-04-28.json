@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-28",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "842aa15f2d53e536d9665afc3e5d99cecc0876184bf44ab151c15356a9a796bf",
+      "source": "Rust Internals",
+      "title": "事前RFC: `pub(api)`の可視性とクレート内部API境界の静的強制",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_10",
+      "summary": "あなたの最後の段落は、多くの興味深い質問を提起していますが、私の中では明確な答えが導き出せます。しかし、まだ混乱しています。「Vis Assignments」が再び解決しない問題は何ですか？「境界の強制」側面は、単に可視性とドキュメントの問題ではありませんか？私は「Vis Assignments」がすべての可視性要件を強制すると主張します。もし「pub(api)」としてマークした場合、「vis(in crate::resources)」の可視性を超えてエクスポートすることはできず、通常の可視性ルールが適用されます…",
+      "publishedAt": "2026-04-27T23:13:45.000Z",
+      "score": 57,
+      "relatedCount": 9,
+      "candidateNumbers": [
+        1,
+        16
+      ],
+      "reason": "New RFCs impacting Rust language",
+      "suggestedTitle": "新しいRFCを探る: `pub(api)`の可視性とAPI境界",
+      "suggestedSummary": "新しい事前RFCは、クレート内部のAPI境界を強制するための`pub(api)`の可視性を提案しています。これは、開発者がクレートのAPIのどの部分を他のクレートに公開するかを定義できるようにすることで、カプセル化を強化することを目的としています。この提案は、これらの境界が遵守されることを保証する静的強制メカニズムについても議論しており、より堅牢でメンテナブルなコードベースにつながる可能性があります。これは、Rust開発者がライブラリを構築し共有する方法に大きな影響を与える可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1320ad166caa83761e6429b131550c46f166efabd5b7dd202425ed995e60c043",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #325",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/27/changelog-325.html",
+      "summary": "コミット: 8954b66\n2026-04-27 (v0.3.2878)\n新機能\n#21979 フィールドの名前を変更する際にコンストラクタ内の変数名を変更。\n修正\n#22116 (初めての貢献) 親の列挙型が非推奨の場合、列挙型のバリアントも非推奨としてマーク。\n#22101 rustcから呼び出し式の型チェックとクロージャーのupvar推論を移植。\n#22107 比較演算子の「定義に移動」を改善。\n#22085 非推奨アイテムの関連性を低下。\n内部改善\n#22054 (初めての貢献) リントの重複を排除。\n#22104 ソルバーのチェックをしない…",
+      "publishedAt": "2026-04-27T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        99
+      ],
+      "reason": "Tooling updates with rust-analyzer",
+      "suggestedTitle": "rust-analyzer 変更履歴 #325: 新機能と改善",
+      "suggestedSummary": "最新のrust-analyzerアップデート(v0.3.2878)では、コンストラクタ内の変数名の変更を含む新機能が導入され、開発者の体験が向上します。このアップデートは、IDE内でのコードナビゲーションとリファクタリング機能を改善し、開発者がRustプロジェクトを維持し進化させるのを容易にします。このようなアップデートはツールチェーンをさらに洗練し、Rustプログラマーにとってより直感的で効率的な開発ワークフローを提供し続けます。",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f5f0d730f25b798305171f90b4d7521bb4d7d5948839e1a790ae27f662ccd45b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF リロケーション",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161?page=2#post_21",
+      "summary": "anakryiko: C BPF プログラムでは task->se.vruntime へのアクセスが実際によくあるので、これを最初からサポートすることは、実際のアプリケーションで役立つために不可欠です。そうです。値によってネストされた構造体へのアクセスが珍しいとは言っていません。私が言っているのは、const Sized / sized 階層が完全に実装されるのを待たずに、機能ゲートの背後で BTF リロケーションの実験的な夜間のみのサポートを展開できるということです。とはいえ、私は sized に同意します…",
+      "publishedAt": "2026-04-27T19:13:34.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "f17ab87ebb3934c8138d18c263e51ed1364022cab9df76ba67be2510606c9692",
+      "source": "Rust Users Forum",
+      "title": "Rust_flatbuffer_macros v1.1.0がcrates.ioで利用可能",
+      "url": "https://users.rust-lang.org/t/rust-flatbuffer-macros-v1-1-0-available-on-crates-io/139829#post_1",
+      "summary": "概要\n他のRustマクロを定義する便利なRustマクロ。\nハイライト\n約12行以上のコードを1行に凝縮。\nRustの可変長マクロ構文を使用する例を提供。\nメタコーディング（つまり、コードを生成するコード）の例。\nインストール\ncargo.tomlにて\n[dependencies]\nrust_flatbuffer_macros = \"1.1.0\"\n\nFlatBuffers\nFlatBuffersは、パフォーマンスとno_std環境を提供するクロスプラットフォームのシリアライゼーションライブラリです。\n例:\nFlatBufferのユニオンを使用する一般的なユースケースを考えると…",
+      "publishedAt": "2026-04-27T22:48:46.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ea1939bcc2571b16cc53857fb5c8c6f098027b454f7bfcb44a7da9413709b1e2",
+      "source": "Rust Internals",
+      "title": "事前RFC: RustdocのLaTeXスタイル数式",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-rustdoc-latex-style-math/24208#post_1",
+      "summary": "実装\nhttps://github.com/rust-lang/rust/compare/main...notriddle:rust:rustdoc-texmath?expand=1\nこれは非常に不完全で多くの作業が必要ですが、実現可能であることを証明しています。\n概要\nRustdocに事実上の標準であるTeXの数式をMarkdown構文でサポートを追加します。現在、math-coreライブラリを使用して実装されており、MathML Coreを生成し、その方法で実装可能なLaTeXのサブセットに制限されています。サポートされていない構文を使用すると、コンパイラ警告が表示されます…",
+      "publishedAt": "2026-04-27T05:49:33.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c79a965ec4066bcc25337cdd865e2948c29e84aa4b30182d8c58438a7473e60d",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: Rustdoc LaTeXスタイルの数学表記",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-rustdoc-latex-style-math/24208#post_4",
+      "summary": "私はkatexを基にしているのではありません。コンパイル時にmathmlを生成するRustライブラリであるmath-coreを基にしています。RFCを編集して、これを早めに指摘します。",
+      "publishedAt": "2026-04-27T15:02:36.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-28T00:17:18.692Z"
+  }
+}

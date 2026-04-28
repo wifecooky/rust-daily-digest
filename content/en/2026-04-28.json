@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-28",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "842aa15f2d53e536d9665afc3e5d99cecc0876184bf44ab151c15356a9a796bf",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `pub(api)` visibility, and static enforcement of crate-internal API boundaries",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_10",
+      "summary": "Your last paragraph brings up many cool questions, for which in my mind there are clear derivable answers.\nBut I'm still confused. What problem does 'Vis Assignments' not solve again? The \"boundary enforcement\" aspect is simply a question of visibility and documentation, no? I claim that 'Vis Assignments' enforces all visibility requirements. If you mark as 'pub(api)', you will not be able to export beyond the visibility of the 'vis(in crate::resources)', and normal visibility rules apply as if…",
+      "publishedAt": "2026-04-27T23:13:45.000Z",
+      "score": 57,
+      "relatedCount": 9,
+      "candidateNumbers": [
+        1,
+        16
+      ],
+      "reason": "New RFCs impacting Rust language",
+      "suggestedTitle": "Exploring New RFCs: `pub(api)` Visibility and API Boundaries",
+      "suggestedSummary": "A new pre-RFC proposes `pub(api)` visibility to enforce crate-internal API boundaries. This aims to enhance encapsulation by allowing developers to define which parts of their crate's API are exposed to other crates. The proposal also discusses static enforcement mechanisms to ensure these boundaries are adhered to, potentially leading to more robust and maintainable codebases. This could significantly impact how Rust developers structure and share their libraries.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1320ad166caa83761e6429b131550c46f166efabd5b7dd202425ed995e60c043",
+      "source": "rust-analyzer",
+      "title": "Changelog #325",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/04/27/changelog-325.html",
+      "summary": "Commit: 8954b66\n2026-04-27 (v0.3.2878)\nNew Features\n#21979 rename variables in constructors when renaming a field.\nFixes\n#22116 (first contribution) mark enum variants as deprecated when parent enum is deprecated.\n#22101 port call expression type checking and closure upvar inference from rustc.\n#22107 improve \"Go to definition\" on comparison operators.\n#22085 reduce relevance of deprecated items.\nInternal Improvements\n#22054 (first contribution) de-duplicate lints.\n#22104 don’t check solver’s…",
+      "publishedAt": "2026-04-27T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        99
+      ],
+      "reason": "Tooling updates with rust-analyzer",
+      "suggestedTitle": "rust-analyzer Changelog #325: New Features and Improvements",
+      "suggestedSummary": "The latest rust-analyzer update (v0.3.2878) introduces new features, including variable renaming in constructors, enhancing the developer experience. This update aims to improve code navigation and refactoring capabilities within IDEs, making it easier for developers to maintain and evolve their Rust projects. Such updates continue to refine the toolchain, providing more intuitive and efficient development workflows for Rust programmers.",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f5f0d730f25b798305171f90b4d7521bb4d7d5948839e1a790ae27f662ccd45b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF relocations",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161?page=2#post_21",
+      "summary": "anakryiko:\nIt's actually quite common to have task->se.vruntime accesses in C BPF programs, so supporting this from the get go would be essential to make this useful for real-world applications.\nRight. I'm not saying that accesses to structures nested by value are uncommon. What I'm saying is that we could roll out experimental nightly-only support for BTF relocations, behind a feature gate, without waiting for const Sized / sized hierarchy to be fully implemented.\nThat said, I agree that sized…",
+      "publishedAt": "2026-04-27T19:13:34.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "f17ab87ebb3934c8138d18c263e51ed1364022cab9df76ba67be2510606c9692",
+      "source": "Rust Users Forum",
+      "title": "Rust_flatbuffer_macros v1.1.0 Available on crates.io",
+      "url": "https://users.rust-lang.org/t/rust-flatbuffer-macros-v1-1-0-available-on-crates-io/139829#post_1",
+      "summary": "Overview\nA useful Rust macro that defines other Rust macros.\nHighlights\nCondenses appoximately 12+ lines of code into 1.\nProvides an example of using Rust's variadic macro syntax.\nAn example of meta-coding (i.e., code that generates code)\nInstallation\nIn cargo.toml\n[dependencies]\nrust_flatbuffer_macros = \"1.1.0\"\n\nFlatBuffers\nFlatBuffers is a cross platform serialization library that provides performance and\nno_std environments.\nExample:\nGiven the common use-case of using a FlatBuffer union to…",
+      "publishedAt": "2026-04-27T22:48:46.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ea1939bcc2571b16cc53857fb5c8c6f098027b454f7bfcb44a7da9413709b1e2",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: Rustdoc LaTeX-style math",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-rustdoc-latex-style-math/24208#post_1",
+      "summary": "Implementation\nhttps://github.com/rust-lang/rust/compare/main...notriddle:rust:rustdoc-texmath?expand=1\nThis is horribly incomplete and needs a bunch of work, but proves that it can be done.\nSummary\nAdd support for the de facto standard TeX-math-in-markdown syntax to Rustdoc. It’s currently implemented using the math-core library, which generates MathML Core and is restricted to the subset of LaTeX that can be implemented that way. If you use unsupported syntax, you get a compiler warning from…",
+      "publishedAt": "2026-04-27T05:49:33.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c79a965ec4066bcc25337cdd865e2948c29e84aa4b30182d8c58438a7473e60d",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: Rustdoc LaTeX-style math",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-rustdoc-latex-style-math/24208#post_4",
+      "summary": "I’m not building on katex. I’m building on math-core, a Rust library that generates mathml at compile time.\nI’ll edit the RFC to point this out earlier.",
+      "publishedAt": "2026-04-27T15:02:36.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-28T00:17:00.377Z"
+  }
+}
