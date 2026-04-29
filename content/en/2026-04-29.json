@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-29",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "842aa15f2d53e536d9665afc3e5d99cecc0876184bf44ab151c15356a9a796bf",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `pub(api)` visibility, and static enforcement of crate-internal API boundaries",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_10",
+      "summary": "Your last paragraph brings up many cool questions, for which in my mind there are clear derivable answers.\nBut I'm still confused. What problem does 'Vis Assignments' not solve again? The \"boundary enforcement\" aspect is simply a question of visibility and documentation, no? I claim that 'Vis Assignments' enforces all visibility requirements. If you mark as 'pub(api)', you will not be able to export beyond the visibility of the 'vis(in crate::resources)', and normal visibility rules apply as if…",
+      "publishedAt": "2026-04-27T23:13:45.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        5,
+        99
+      ],
+      "reason": "New RFCs impacting Rust development",
+      "suggestedTitle": "Pre-RFCs Propose Enhancements for Rust Package Management and Documentation",
+      "suggestedSummary": "Two Pre-RFCs have been proposed, potentially impacting Rust's package management and documentation. The 'DNS domains as package namespaces' RFC suggests a new way to manage package namespaces by using DNS domains, aiming to expand the set of names available for crates. Meanwhile, the 'Rustdoc LaTeX-style math' RFC proposes adding LaTeX-style math support to Rustdoc, allowing developers to include mathematical expressions directly in documentation. These changes could streamline package management and enhance documentation capabilities in Rust projects.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d1dd64ac112351bbb41c764db7206154f6b2a62d1f23423829a0fa86ece0fb82",
+      "source": "Rust Users Forum",
+      "title": "Frostmirror - (lightweight airgap alternative inspired from panamax and romt) - an offline cargo repository for airgap system that can be deployed through a docker image",
+      "url": "https://users.rust-lang.org/t/frostmirror-lightweight-airgap-alternative-inspired-from-panamax-and-romt-an-offline-cargo-repository-for-airgap-system-that-can-be-deployed-through-a-docker-image/139649#post_2",
+      "summary": "Hi, I just released a new version of frost mirror\nHere is the new client setup page with airgap rustup-init that works (tested on windows only)\nImprovements\n[FEATURE] Improved installation page from webapp, supports windows,macos,linux\n[FEATURE] now we can add multiple version of the same dependencies in a depend.toml like this\n[BUGFIX] now rustup-init and tar.xz are downloaded in packages\n[FEATURE] Add a button to export package from webui\n- [dependencies]\ntokio = { version = \"1\", features =…",
+      "publishedAt": "2026-04-28T22:43:35.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        22
+      ],
+      "reason": "Offline cargo repository tool release",
+      "suggestedTitle": "Frostmirror: Offline Cargo Repository for Airgap Systems",
+      "suggestedSummary": "Frostmirror, a new offline cargo repository tool inspired by Panamax and Romt, has been released. Designed for airgap systems, Frostmirror allows developers to set up an offline Rust package repository using a Docker image. This tool provides a secure and isolated environment for managing dependencies without internet access, making it ideal for high-security or offline development scenarios. Frostmirror's release could be a significant asset for developers working in environments where internet access is restricted or controlled.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d576ff3545b38c319d82cf2e6b7c8eba5de2d9986078d752618bd2392518848b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] DNS domains as package namespaces",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_41",
+      "summary": "I'm aware of [lib.name], and as you note it's confusing to users. For example, this is permitted in the current implementation:\n[package]\nname = \"fa47a84c-a7a9-4cc2-bdd4-e8aedf4f96b0\"\n\n[lib]\nname = \"xml\"\n\nAnd such a package could be depended on like this:\n[dependencies]\nxml = { package = \"fa47a84c-a7a9-4cc2-bdd4-e8aedf4f96b0\", version = \"1.0.15\" }\n\nI've considered doing that, but it feels kinda slightly hostile, so I wanted to see if there was some other way to be able to publish my packages…",
+      "publishedAt": "2026-04-28T23:05:33.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "f5f0d730f25b798305171f90b4d7521bb4d7d5948839e1a790ae27f662ccd45b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF relocations",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161?page=2#post_21",
+      "summary": "anakryiko:\nIt's actually quite common to have task->se.vruntime accesses in C BPF programs, so supporting this from the get go would be essential to make this useful for real-world applications.\nRight. I'm not saying that accesses to structures nested by value are uncommon. What I'm saying is that we could roll out experimental nightly-only support for BTF relocations, behind a feature gate, without waiting for const Sized / sized hierarchy to be fully implemented.\nThat said, I agree that sized…",
+      "publishedAt": "2026-04-27T19:13:34.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "1ad21d85a6f7da21258b052126d7ba97c4965ce533a0d2a0b3e95100d8ed513b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` should include fewer files by default",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_39",
+      "summary": "I can assure you that I never use LLMs when writing my posts. But I gotta say it is quite disheartening to get such a presumptuous reply.",
+      "publishedAt": "2026-04-28T07:13:39.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f3b135218dc8b8f706b255dd9067c4a07c6651a3de75954c89a2f20138553615",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] A tiny internal change to `reverse`, `copy_from_slice`, `swap_with_slice`",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-a-tiny-internal-change-to-reverse-copy-from-slice-swap-with-slice/24189#post_5",
+      "summary": "Lysxia:\nIndeed, even outside of formal verification, one could argue that self.as_mut_ptr() \"morally borrows\" from self, so calling self.len() while the raw pointer self.as_mut_ptr() is still in use is kinda smelly.\nI realised a while ago that raw pointers conceptually have a lifetime (which is the lifetime of their provenance, not the lifetime of the thing they point to). Under that model, you would indeed have to copy the length out of a slice reference before convering it to a pointer, if…",
+      "publishedAt": "2026-04-27T22:47:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-29T00:18:25.537Z"
+  }
+}

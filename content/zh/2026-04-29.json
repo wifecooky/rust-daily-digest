@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-29",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "842aa15f2d53e536d9665afc3e5d99cecc0876184bf44ab151c15356a9a796bf",
+      "source": "Rust Internals",
+      "title": "预RFC：`pub(api)`可见性和crate内部API边界的静态强制",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_10",
+      "summary": "你的最后一段提出了许多有趣的问题，在我看来，这些问题都有明确的可推导答案。但我仍然感到困惑。'Vis Assignments'没有解决哪个问题？“边界强制”方面不就是一个可见性和文档的问题吗？我声称'Vis Assignments'强制执行了所有可见性要求。如果你标记为'pub(api)'，你将无法超出'vis(in crate::resources)'的可见性进行导出，并且正常的可见性规则适用，就像……",
+      "publishedAt": "2026-04-27T23:13:45.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        5,
+        99
+      ],
+      "reason": "New RFCs impacting Rust development",
+      "suggestedTitle": "预RFC提议增强Rust包管理和文档功能",
+      "suggestedSummary": "提出了两个预RFC，可能会影响Rust的包管理和文档。'DNS域名作为包命名空间'的RFC建议通过使用DNS域名来管理包命名空间，旨在扩展crate可用的名称集合。同时，'Rustdoc LaTeX风格数学'的RFC建议为Rustdoc添加LaTeX风格的数学支持，使开发者能够在文档中直接包含数学表达式。这些变化可能会简化包管理并增强Rust项目中的文档功能。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d1dd64ac112351bbb41c764db7206154f6b2a62d1f23423829a0fa86ece0fb82",
+      "source": "Rust Users Forum",
+      "title": "Frostmirror - 受Panamax和Romt启发的轻量级隔离替代方案 - 可通过Docker镜像部署的离线Cargo仓库",
+      "url": "https://users.rust-lang.org/t/frostmirror-lightweight-airgap-alternative-inspired-from-panamax-and-romt-an-offline-cargo-repository-for-airgap-system-that-can-be-deployed-through-a-docker-image/139649#post_2",
+      "summary": "你好，我刚刚发布了Frostmirror的新版本\n这是新的客户端设置页面，带有airgap rustup-init（仅在Windows上测试过）\n改进\n[功能] 改进了来自Web应用的安装页面，支持Windows、macOS、Linux\n[功能] 现在我们可以在depend.toml中添加同一依赖项的多个版本，如下所示\n[错误修复] 现在rustup-init和tar.xz被下载到包中\n[功能] 添加一个按钮以从WebUI导出包\n- [dependencies]\ntokio = { version = \"1\", features =…",
+      "publishedAt": "2026-04-28T22:43:35.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        22
+      ],
+      "reason": "Offline cargo repository tool release",
+      "suggestedTitle": "Frostmirror：用于隔离系统的离线Cargo仓库",
+      "suggestedSummary": "Frostmirror是一个受Panamax和Romt启发的新离线Cargo仓库工具，现已发布。Frostmirror专为隔离系统设计，允许开发人员使用Docker镜像设置离线Rust包仓库。该工具提供了一个安全且隔离的环境，用于在没有互联网访问的情况下管理依赖项，非常适合高安全性或离线开发场景。Frostmirror的发布可能成为在互联网访问受限或受控环境中工作的开发人员的重要资产。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d576ff3545b38c319d82cf2e6b7c8eba5de2d9986078d752618bd2392518848b",
+      "source": "Rust Internals",
+      "title": "[预RFC] 使用DNS域名作为包命名空间",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_41",
+      "summary": "我知道[lib.name]，正如您所指出的，它对用户来说是令人困惑的。例如，当前实现中允许这样做：\n[package]\nname = \"fa47a84c-a7a9-4cc2-bdd4-e8aedf4f96b0\"\n\n[lib]\nname = \"xml\"\n\n这样的包可以这样依赖：\n[dependencies]\nxml = { package = \"fa47a84c-a7a9-4cc2-bdd4-e8aedf4f96b0\", version = \"1.0.15\" }\n\n我考虑过这样做，但感觉有点不太友好，所以我想看看是否有其他方法可以发布我的包……",
+      "publishedAt": "2026-04-28T23:05:33.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "f5f0d730f25b798305171f90b4d7521bb4d7d5948839e1a790ae27f662ccd45b",
+      "source": "Rust Internals",
+      "title": "[预RFC] BTF重定位",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161?page=2#post_21",
+      "summary": "anakryiko：在C BPF程序中访问task->se.vruntime实际上是很常见的，因此从一开始就支持这一点对于使其在实际应用中有用是至关重要的。没错。我并不是说按值嵌套的结构访问是不常见的。我想说的是，我们可以在功能门后面推出仅限夜间实验性支持的BTF重定位，而不必等待const Sized / sized层次结构完全实现。话虽如此，我同意sized...",
+      "publishedAt": "2026-04-27T19:13:34.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "1ad21d85a6f7da21258b052126d7ba97c4965ce533a0d2a0b3e95100d8ed513b",
+      "source": "Rust Internals",
+      "title": "[预RFC] `cargo package` 默认应包含更少的文件",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_39",
+      "summary": "我可以向你保证，我在写帖子时从不使用LLM。但我得说，收到这样一个自以为是的回复确实让人感到沮丧。",
+      "publishedAt": "2026-04-28T07:13:39.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f3b135218dc8b8f706b255dd9067c4a07c6651a3de75954c89a2f20138553615",
+      "source": "Rust Internals",
+      "title": "[预RFC] 对 `reverse`、`copy_from_slice`、`swap_with_slice` 的微小内部更改",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-a-tiny-internal-change-to-reverse-copy-from-slice-swap-with-slice/24189#post_5",
+      "summary": "Lysxia：确实，即使在形式验证之外，也可以说 self.as_mut_ptr() 从道德上“借用”了 self，因此在原始指针 self.as_mut_ptr() 仍在使用时调用 self.len() 有点不妥。我意识到，原始指针在概念上是有生命周期的（这是它们来源的生命周期，而不是它们指向的对象的生命周期）。在这种模型下，确实需要在将切片引用转换为指针之前从中复制长度，如果……",
+      "publishedAt": "2026-04-27T22:47:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-29T00:18:33.687Z"
+  }
+}

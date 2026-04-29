@@ -1,0 +1,98 @@
+{
+  "date": "2026-04-29",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "842aa15f2d53e536d9665afc3e5d99cecc0876184bf44ab151c15356a9a796bf",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `pub(api)` の可視性とクレート内部API境界の静的強制",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-pub-api-visibility-and-static-enforcement-of-crate-internal-api-boundaries/24184#post_10",
+      "summary": "あなたの最後の段落は、多くの興味深い質問を提起していますが、それに対する明確な答えがあると私は考えています。しかし、まだ混乱しています。「Vis Assignments」が解決しない問題は何でしたっけ？「境界の強制」という側面は、単に可視性とドキュメントの問題ではないでしょうか？私は「Vis Assignments」がすべての可視性要件を強制すると主張します。もし 'pub(api)' としてマークすれば、'vis(in crate::resources)' の可視性を超えてエクスポートすることはできず、通常の可視性ルールが適用されますが…",
+      "publishedAt": "2026-04-27T23:13:45.000Z",
+      "score": 37,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        5,
+        99
+      ],
+      "reason": "New RFCs impacting Rust development",
+      "suggestedTitle": "Pre-RFCがRustのパッケージ管理とドキュメント化を強化する提案",
+      "suggestedSummary": "2つのPre-RFCが提案され、Rustのパッケージ管理とドキュメント化に影響を与える可能性があります。「DNSドメインをパッケージネームスペースとして使用する」RFCは、クレートの名前のセットを拡張することを目的として、DNSドメインを使用してパッケージネームスペースを管理する新しい方法を提案しています。一方、「Rustdoc LaTeXスタイルの数学」RFCは、RustdocにLaTeXスタイルの数学サポートを追加し、開発者がドキュメント内に直接数式を含めることができるようにすることを提案しています。これらの変更は、パッケージ管理を合理化し、Rustプロジェクトにおけるドキュメント化の能力を向上させる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d1dd64ac112351bbb41c764db7206154f6b2a62d1f23423829a0fa86ece0fb82",
+      "source": "Rust Users Forum",
+      "title": "Frostmirror - (panamaxとromtに触発された軽量エアギャップ代替) - Dockerイメージを通じて展開可能なエアギャップシステム用のオフラインCargoリポジトリ",
+      "url": "https://users.rust-lang.org/t/frostmirror-lightweight-airgap-alternative-inspired-from-panamax-and-romt-an-offline-cargo-repository-for-airgap-system-that-can-be-deployed-through-a-docker-image/139649#post_2",
+      "summary": "こんにちは、新しいバージョンのFrostmirrorをリリースしました。こちらがWindowsでのみテストされたエアギャップrustup-initを含む新しいクライアントセットアップページです。改善点：[機能] Webアプリからのインストールページが改善され、Windows、macOS、Linuxをサポートします。[機能] depend.tomlに同じ依存関係の複数バージョンを追加できるようになりました。[バグ修正] rustup-initとtar.xzがパッケージ内でダウンロードされるようになりました。[機能] WebUIからパッケージをエクスポートするボタンを追加しました。- [dependencies] tokio = { version = \"1\", features =…",
+      "publishedAt": "2026-04-28T22:43:35.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        22
+      ],
+      "reason": "Offline cargo repository tool release",
+      "suggestedTitle": "Frostmirror: エアギャップシステム用オフラインCargoリポジトリ",
+      "suggestedSummary": "PanamaxとRomtに触発された新しいオフラインCargoリポジトリツール、Frostmirrorがリリースされました。エアギャップシステム向けに設計されたFrostmirrorは、Dockerイメージを使用してオフラインのRustパッケージリポジトリをセットアップすることを可能にします。このツールは、インターネットアクセスなしで依存関係を管理するための安全で隔離された環境を提供し、高セキュリティまたはオフライン開発シナリオに最適です。Frostmirrorのリリースは、インターネットアクセスが制限または管理されている環境で作業する開発者にとって重要な資産となる可能性があります。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d576ff3545b38c319d82cf2e6b7c8eba5de2d9986078d752618bd2392518848b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] パッケージ名前空間としてのDNSドメイン",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_41",
+      "summary": "私は[lib.name]について知っていますが、あなたが指摘するように、それはユーザーにとって混乱を招きます。例えば、現在の実装では以下のようなことが許可されています。\n\n[package]\nname = \"fa47a84c-a7a9-4cc2-bdd4-e8aedf4f96b0\"\n\n[lib]\nname = \"xml\"\n\nそして、このようなパッケージは以下のように依存関係として指定できます。\n\n[dependencies]\nxml = { package = \"fa47a84c-a7a9-4cc2-bdd4-e8aedf4f96b0\", version = \"1.0.15\" }\n\nそのようにすることも考えましたが、少し敵対的な感じがするので、他の方法で自分のパッケージを公開できるかどうかを確認したいと思いました…",
+      "publishedAt": "2026-04-28T23:05:33.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "f5f0d730f25b798305171f90b4d7521bb4d7d5948839e1a790ae27f662ccd45b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] BTF リロケーション",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161?page=2#post_21",
+      "summary": "anakryiko: C BPF プログラムでは task->se.vruntime へのアクセスが実際に非常に一般的であるため、これを最初からサポートすることは、実際のアプリケーションで役立つために不可欠です。そうです。値によってネストされた構造体へのアクセスが珍しいとは言っていません。私が言っているのは、const Sized / sized 階層が完全に実装されるのを待たずに、機能ゲートの背後で BTF リロケーションの実験的なナイトリー専用サポートを展開できるということです。それを言った上で、私は sized に同意します…",
+      "publishedAt": "2026-04-27T19:13:34.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "1ad21d85a6f7da21258b052126d7ba97c4965ce533a0d2a0b3e95100d8ed513b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `cargo package` はデフォルトで含まれるファイルを減らすべき",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-cargo-package-should-include-fewer-files-by-default/24188?page=2#post_39",
+      "summary": "投稿を書く際にLLMを使用したことは一度もありません。しかし、このような思い込みの激しい返信を受け取るのは非常にがっかりします。",
+      "publishedAt": "2026-04-28T07:13:39.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f3b135218dc8b8f706b255dd9067c4a07c6651a3de75954c89a2f20138553615",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] `reverse`、`copy_from_slice`、`swap_with_slice`への小さな内部変更",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-a-tiny-internal-change-to-reverse-copy-from-slice-swap-with-slice/24189#post_5",
+      "summary": "Lysxia: 実際、形式的な検証を行わなくても、self.as_mut_ptr()がselfから「道徳的に借用」していると主張することができます。そのため、生のポインタself.as_mut_ptr()がまだ使用されている間にself.len()を呼び出すのは、少し気持ち悪いです。 生のポインタには概念的に寿命があることに気づきました（それは指し示すものの寿命ではなく、その出所の寿命です）。そのモデルの下では、ポインタに変換する前にスライス参照から長さをコピーする必要があります。",
+      "publishedAt": "2026-04-27T22:47:27.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-29T00:18:39.161Z"
+  }
+}
