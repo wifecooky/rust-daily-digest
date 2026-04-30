@@ -1,0 +1,57 @@
+{
+  "date": "2026-04-30",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "e89ecd826f7091c0df0e0f026ea718483b9b42e2a7f5842fa72cb86010800eec",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] DNS domains as package namespaces",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_42",
+      "summary": "jmillikin:\nbut I've never been able to figure out which HTTP library is the standard so I've just used Go whenever I need to do a project that involves HTTP.\nThat's the thing.. there is no standard package for anything (except for what's in the standard library itself of course). Certain packages may have nicer names, but that doesn't mean that they're the best package implementing that thing for your given use case. json gets to use the name json simply because it was the first crate that…",
+      "publishedAt": "2026-04-29T19:40:18.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Improves package management",
+      "suggestedTitle": "Pre-RFC: DNS Domains as Package Namespaces Proposal",
+      "suggestedSummary": "A new pre-RFC proposes using DNS domains as namespaces for Rust packages, aiming to improve package management by providing a more structured and recognizable naming convention. This change would allow package names to be more descriptive and less likely to conflict, leveraging existing DNS infrastructure for uniqueness. For Rust developers, this could mean easier navigation of the ecosystem and better organization of dependencies, potentially affecting how Cargo handles package discovery and versioning.",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0ea744f4d847d15e3d07cb9355b6bfd3cab165f5e67fbcf75024bd0b59f14bc6",
+      "source": "Rust Users Forum",
+      "title": "Han v0.2.1: an experimental Korean-syntax programming language written in Rust",
+      "url": "https://users.rust-lang.org/t/han-v0-2-1-an-experimental-korean-syntax-programming-language-written-in-rust/139852#post_4",
+      "summary": "How has it felt using\nn < 5 동안 {\n    출력(n)\n    n += 1\n}\n\nwhen writing and reading code?\nTo me the point of while cond is that it gives that \"up front warning\" that's important to know before reading the condition, less that it's trying to be any particular word order.\nThat's why I like async { ... } and loop { ... } despite being a huge advocate of .await.  I think { ... }.loop would be bad.\nBut I haven't tried it out, so would be curious to hear experience reports of different orders for…",
+      "publishedAt": "2026-04-29T18:56:10.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "4b1cc6664012645f17be7eae3d7be37c4a4a3928b567371b6dc2765746e14153",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Proposal: bound Cargo's implicit upward discovery for config.toml files",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-proposal-bound-cargos-implicit-upward-discovery-for-config-toml-files/24210#post_3",
+      "summary": "Perhaps a chain = <bool> parameter in the configuration file about whether to support chaining. Then a workspace config can say \"no\", but the constituent crates say \"yes\".",
+      "publishedAt": "2026-04-29T20:20:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-04-30T00:17:56.034Z"
+  }
+}

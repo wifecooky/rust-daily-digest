@@ -1,0 +1,57 @@
+{
+  "date": "2026-04-30",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "e89ecd826f7091c0df0e0f026ea718483b9b42e2a7f5842fa72cb86010800eec",
+      "source": "Rust Internals",
+      "title": "[预RFC] 将DNS域名作为包命名空间",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_42",
+      "summary": "jmillikin: 但我一直无法确定哪个HTTP库是标准的，所以每当我需要做一个涉及HTTP的项目时，我就使用Go。这就是问题所在……没有任何东西的标准包（当然除了标准库本身）。某些包可能有更好听的名字，但这并不意味着它们是针对你的特定用例实现该功能的最佳包。json之所以能使用json这个名字，仅仅是因为它是第一个crate……",
+      "publishedAt": "2026-04-29T19:40:18.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Improves package management",
+      "suggestedTitle": "预RFC：将DNS域名作为包命名空间的提案",
+      "suggestedSummary": "一项新的预RFC提案建议使用DNS域名作为Rust包的命名空间，旨在通过提供更结构化和可识别的命名约定来改善包管理。这一变化将使包名更具描述性且不易冲突，利用现有的DNS基础设施来确保唯一性。对于Rust开发者来说，这可能意味着更容易地浏览生态系统和更好地组织依赖项，可能会影响Cargo如何处理包的发现和版本管理。",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0ea744f4d847d15e3d07cb9355b6bfd3cab165f5e67fbcf75024bd0b59f14bc6",
+      "source": "Rust Users Forum",
+      "title": "Han v0.2.1：一种用Rust编写的实验性韩语语法编程语言",
+      "url": "https://users.rust-lang.org/t/han-v0-2-1-an-experimental-korean-syntax-programming-language-written-in-rust/139852#post_4",
+      "summary": "在编写和阅读代码时，使用\nn < 5 동안 {\n    출력(n)\n    n += 1\n}\n的感觉如何？\n对我来说，while cond 的意义在于它提供了一个“提前警告”，这是在阅读条件之前需要知道的重要信息，而不是试图成为任何特定的词序。\n这就是为什么我喜欢 async { ... } 和 loop { ... }，尽管我是 .await 的坚定支持者。我认为 { ... }.loop 会很糟糕。\n但我还没有尝试过，所以很想听听不同顺序的使用体验报告……",
+      "publishedAt": "2026-04-29T18:56:10.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "4b1cc6664012645f17be7eae3d7be37c4a4a3928b567371b6dc2765746e14153",
+      "source": "Rust Internals",
+      "title": "[预RFC] 提案：限制Cargo对config.toml文件的隐式向上发现",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-proposal-bound-cargos-implicit-upward-discovery-for-config-toml-files/24210#post_3",
+      "summary": "也许可以在配置文件中加入一个chain = <bool>参数，用于指示是否支持链式调用。这样，一个工作区配置可以设置为“不支持”，而其组成的crate可以设置为“支持”。",
+      "publishedAt": "2026-04-29T20:20:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-04-30T00:18:06.320Z"
+  }
+}

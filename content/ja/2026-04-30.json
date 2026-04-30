@@ -1,0 +1,57 @@
+{
+  "date": "2026-04-30",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "e89ecd826f7091c0df0e0f026ea718483b9b42e2a7f5842fa72cb86010800eec",
+      "source": "Rust Internals",
+      "title": "【事前RFC】パッケージ名前空間としてのDNSドメイン",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_42",
+      "summary": "jmillikin: しかし、どのHTTPライブラリが標準なのかを見つけることができず、HTTPを含むプロジェクトを行う必要があるときはいつもGoを使ってきました。 それが問題です。標準ライブラリ自体に含まれているものを除いて、何かの標準パッケージは存在しません。特定のパッケージはより良い名前を持っているかもしれませんが、それがあなたの特定の使用ケースに対してその機能を実装する最良のパッケージであることを意味するわけではありません。jsonは単に最初のクレートだったためにjsonという名前を使用していますが…",
+      "publishedAt": "2026-04-29T19:40:18.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Improves package management",
+      "suggestedTitle": "事前RFC: パッケージ名前空間としてのDNSドメイン提案",
+      "suggestedSummary": "新しい事前RFCは、Rustパッケージの名前空間としてDNSドメインを使用することを提案し、より構造化され認識しやすい命名規則を提供することでパッケージ管理を改善することを目指しています。この変更により、パッケージ名がより説明的になり、既存のDNSインフラストラクチャを活用して一意性を確保することで競合の可能性が低くなります。Rust開発者にとって、これはエコシステムのナビゲーションが容易になり、依存関係の整理が改善される可能性があり、Cargoがパッケージの発見とバージョン管理をどのように扱うかに影響を与える可能性があります。",
+      "relatedSources": [
+        "Rust Internals",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0ea744f4d847d15e3d07cb9355b6bfd3cab165f5e67fbcf75024bd0b59f14bc6",
+      "source": "Rust Users Forum",
+      "title": "Han v0.2.1: Rustで書かれた実験的な韓国語構文プログラミング言語",
+      "url": "https://users.rust-lang.org/t/han-v0-2-1-an-experimental-korean-syntax-programming-language-written-in-rust/139852#post_4",
+      "summary": "コードを書くときや読むときに、次のような構文を使うのはどのように感じましたか？\nn < 5 동안 {\n    출력(n)\n    n += 1\n}\n\n私にとってwhile条件のポイントは、条件を読む前に知っておくべき「事前の警告」を与えることにあります。それが特定の語順を目指しているというよりも重要です。だからこそ、私は.asyncの大きな支持者でありながらも、async { ... }やloop { ... }が好きです。{ ... }.loopは悪いと思います。しかし、まだ試していないので、異なる順序の経験報告を聞いてみたいです。",
+      "publishedAt": "2026-04-29T18:56:10.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "4b1cc6664012645f17be7eae3d7be37c4a4a3928b567371b6dc2765746e14153",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] 提案: config.tomlファイルのためのCargoの暗黙的な上位探索を制限する",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-proposal-bound-cargos-implicit-upward-discovery-for-config-toml-files/24210#post_3",
+      "summary": "おそらく、連鎖をサポートするかどうかについて設定ファイルにchain = <bool>パラメータを追加する。これにより、ワークスペースの設定は「いいえ」と言うことができるが、構成要素のクレートは「はい」と言うことができる。",
+      "publishedAt": "2026-04-29T20:20:21.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-04-30T00:18:14.107Z"
+  }
+}
