@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-01",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "1ff5fa30930695a9e24ef5a854139ba7b65d19b353451f97095a13166e1ac265",
+      "source": "Tauri",
+      "title": "tauri v2.11.0",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.11.0",
+      "summary": "Cargo Audit\n\n\nFetching advisory database from `https://github.com/RustSec/advisory-db.git`\n      Loaded 1060 security advisories (from /home/runner/.cargo/advisory-db)\n    Updating crates.io index\n    Scanning Cargo.lock for vulnerabilities (1086 crate dependencies)\nCrate:     atk\nVersion:   0.18.2\nWarning:   unmaintained\nTitle:     gtk-rs GTK3 bindings - no longer maintained\nDate:      2024-03-04\nID:        RUSTSEC-2024-0413\nURL:       https://rustsec.org/advisories/RUSTSEC-2024-0413…",
+      "publishedAt": "2026-04-30T15:57:53.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        49,
+        59
+      ],
+      "reason": "Major release of a Rust-based tool",
+      "suggestedTitle": "Zed 1.0 Released: Rust-Powered Code Editor Hits Milestone",
+      "suggestedSummary": "Zed, a code editor built with Rust, has reached its 1.0 release, marking a significant milestone for the tool. This release emphasizes performance and a native user experience, leveraging Rust's capabilities to provide a fast and efficient coding environment. With version 1.0, Zed aims to transition from an experimental tool to a reliable daily driver for developers. This update will be of interest to Rust developers looking for a robust editor that integrates seamlessly with their workflow.",
+      "relatedSources": [
+        "Tauri",
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ee3f0fcf19c467689dd00b4c9b405723fc03b1bfdd67a02b0829f57b906d179b",
+      "source": "Rust Blog",
+      "title": "Announcing Google Summer of Code 2026 selected projects",
+      "url": "https://blog.rust-lang.org/2026/04/30/gsoc-2026-selected-projects/",
+      "summary": "As previously announced, the Rust Project is participating in Google Summer of Code (GSoC) 2026. GSoC is a global program organized by Google that is designed to bring new contributors to the world of open source.\nA few months ago, we published a list of GSoC project ideas, and started discussing these projects with potential GSoC applicants on our Zulip. We had many interesting discussions with the potential contributors, and even saw some of them making non-trivial contributions to various…",
+      "publishedAt": "2026-04-30T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        102
+      ],
+      "reason": "Important community and project update",
+      "suggestedTitle": "Rust Project Participates in Google Summer of Code 2026",
+      "suggestedSummary": "The Rust Project is actively participating in Google Summer of Code (GSoC) 2026, providing opportunities for new contributors to engage with Rust's development. This initiative allows students to work on real-world projects under the guidance of experienced mentors, fostering growth and innovation within the Rust community. Participation in GSoC highlights Rust's commitment to education and community involvement, encouraging new talent to contribute to the language's ecosystem and development.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "229bfbfde586df2e23fb7a08e9ee3178375e5c9d954efc1273fef275bccbbfc5",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] DNS domains as package namespaces",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_53",
+      "summary": "jmillikin:\nI'm not sure I follow, sorry, though that might be because I'm used to the left-to-right order used by other package managers, Rust mod hierarchy, XML namespaces, and so on. Every sort of scoping/namespacing system I know of is big-endian.\nIf you were looking at a group of dependencies, wouldn't you normally want them ordered as (namespace, name) instead of (name, namespace)?\nI agree that this is the way namespaces are typically handled; however, in the case where the semantic name…",
+      "publishedAt": "2026-04-30T17:32:12.000Z",
+      "score": 52,
+      "relatedCount": 4,
+      "category": "quickNews"
+    },
+    {
+      "id": "f1461352783a2cbaa1a6624aa5480d74e2a6bac54e74e1bd98f580d917dea0e9",
+      "source": "Rust Users Forum",
+      "title": "Oxidroid: A cross-platform TUI system monitor for Termux, Linux, and Windows",
+      "url": "https://users.rust-lang.org/t/oxidroid-a-cross-platform-tui-system-monitor-for-termux-linux-and-windows/139872#post_1",
+      "summary": "Hi everyone!\nI wanted to share a project I’ve been working on called Oxidroid. It’s a modern Terminal User Interface (TUI) system monitor built entirely in Rust.\n\nThe project originally started as a challenge to bring a high-performance, aesthetically pleasing monitoring experience to Android via Termux, but it has since evolved to fully support Linux and Windows as well.\nWhy check it out?\nRuns Everywhere: I set up a custom CI/CD pipeline so it works natively on Android (Termux), Linux, and…",
+      "publishedAt": "2026-04-30T15:24:23.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "ca5042d4902a1d66e035eace79ed708b492f3e3d0f85358e6414abc1e0af37d2",
+      "source": "Rust Users Forum",
+      "title": "Futures-udp simple, runtime agnostic, non-blocking, non-exclusive async UDP networking",
+      "url": "https://users.rust-lang.org/t/futures-udp-simple-runtime-agnostic-non-blocking-non-exclusive-async-udp-networking/139868#post_1",
+      "summary": "For reasons explained in the readme (copied below) I've just published futures-udp which provides Stream & Sink.\ngithub.com\n  \nGitHub - MusicalNinjaDad/futures-udp: Runtime agnostic, non-blocking, non-exclusive...\nRuntime agnostic, non-blocking, non-exclusive async UDP networking.\n\n\n\nRight now, it is nightly-only as it uses never_type (already finished the FCP) and bool_to_result (just started FCP). This should hopefully change in the next few weeks  given they are both in the final stages of…",
+      "publishedAt": "2026-04-30T14:00:38.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "06ac6b2b98a3dac7a75e8bbd16af7154e3fc52aee3a74d88e5290dbd1f2125c7",
+      "source": "Lobsters Rust",
+      "title": "A Grounded Conceptual Model for Ownership Types in Rust",
+      "url": "https://dl.acm.org/doi/10.1145/3796537",
+      "summary": "direct link to pdf\nComments",
+      "publishedAt": "2026-04-30T05:21:23.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-01T00:18:04.247Z"
+  }
+}
