@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-02",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "8185ac5081aa596175b687f36ecd99fc835a9f5be66b10a46fbbfada37708d6b",
+      "source": "Rust Blog",
+      "title": "「nvptx64-nvidia-cuda」ターゲットのベースラインを引き上げる",
+      "url": "https://blog.rust-lang.org/2026/05/01/nvptx-baseline-update/",
+      "summary": "nvptx64-nvidia-cudaターゲットは、NVIDIA GPU用のコンパイルターゲットです。このターゲットを使用する場合、最終出力はPTXとなります。この出力を形作る2つのバージョン選択があります：\nGPUアーキテクチャ（例：sm_70、sm_80など）、これはどのGPUがPTXを実行できるかを決定し、\nPTX ISAバージョン、これはどのCUDAドライバーバージョンがPTXをロード（およびJITコンパイル）できるかを決定します。\nRust 1.97（2026年7月9日リリース予定）では、nvptx64-nvidia-cudaのベースラインPTX ISAバージョンとGPUアーキテクチャが…",
+      "publishedAt": "2026-05-01T00:00:00.000Z",
+      "score": 40,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        12
+      ],
+      "reason": "Improves GPU support for Rust projects",
+      "suggestedTitle": "Rust、「nvptx64-nvidia-cuda」ターゲットのベースラインを引き上げ",
+      "suggestedSummary": "Rustチームは、NVIDIA GPU上で動作するRustコードをコンパイルするために使用される「nvptx64-nvidia-cuda」ターゲットの更新を発表しました。この変更により、このターゲットのベースラインが引き上げられ、より効率的なコード生成と新しいGPUアーキテクチャとの互換性が確保されます。この更新は、GPU加速されたRustプロジェクトに取り組む開発者にとって重要であり、より良いパフォーマンスと最新のハードウェア機能のサポートを可能にします。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "e54d212aca58f4d6765144048edd558572f3e72a58c7d815eb5f9489377a1167",
+      "source": "Google News Rust",
+      "title": "Zed、Rust製のコーディングエディタ、バージョン1.0に到達 - Thurrott.com",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYkc2X1kwazBxc3lKV2RpbmRSYUQ5ZUdIRVA1SHpYcFVGNlBNVFJRODI4c29mYktMT2pkSUpSSFE3b1ZJZVpBVzBmcmx3dDhTX2ltMXBZYVVpTTNjX3oyLUdFeV93V1FhZnBJOFk1Wk5EZXRsSVBIMW4tZFFpYlZCdFBn?oc=5",
+      "summary": "Zed、Rust製のコーディングエディタ、バージョン1.0に到達  Thurrott.com",
+      "publishedAt": "2026-04-30T18:14:38.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        121,
+        122
+      ],
+      "reason": "New stable Rust-based editor available",
+      "suggestedTitle": "Zed 1.0: Rust製コーディングエディタが安定版に到達",
+      "suggestedSummary": "Rustで構築されたコーディングエディタZedが、バージョン1.0の安定版に到達しました。高性能なローカル体験で知られるZedは、Rustの機能を活用して堅牢で効率的なコーディング環境を提供します。このリリースは、Zedが実験的プロジェクトから日常使用の信頼できるツールへと移行する重要な節目を示しています。Rust開発者は、Zedの最適化されたパフォーマンスとネイティブ統合を活用して、コーディングワークフローを強化することができます。",
+      "relatedSources": [
+        "Google News Rust",
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "818bda8dba5e7002a4c46c1c5adfa8cb06be91047f523eec90dce8304f6a273a",
+      "source": "Rust Users Forum",
+      "title": "私が書いたニューラルネットワークフレームワークを見てください。Rust + CUDAで実装されています",
+      "url": "https://users.rust-lang.org/t/take-a-look-at-the-neural-network-framework-i-wrote-which-is-implemented-in-rust-cuda/139883#post_1",
+      "summary": "GitHub - chen-197/Lumen: Lumenは軽量で高性能な深層学習のトレーニングと推論のフレームワークで、Rust + CUDAで書かれています。",
+      "publishedAt": "2026-05-01T05:53:46.000Z",
+      "score": 35,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "d59d82611400ff3f8e7a7393e1553c89593ac6c18cb025e6a7bccaad7f6381e8",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-01 Rust ネイティブデータテーブルコンポーネント uiGrid 発表",
+      "url": "https://rustcc.cn/article?id=4c6f0c7c-dd58-429f-ae14-7a658ba54078",
+      "summary": "Rust ネイティブデータテーブルコンポーネント uiGrid 発表",
+      "publishedAt": "2026-05-01T01:07:10.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "07672276278aef0d90f94ec2e462311a2b77ac416f443eb30d9a93e024bad7d1",
+      "source": "Lobsters Rust",
+      "title": "あなたのClippy設定はより厳格にすべき",
+      "url": "https://emschwartz.me/your-clippy-config-should-be-stricter/",
+      "summary": "コメント",
+      "publishedAt": "2026-04-30T00:41:09.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "09585fd1c85fc9f69e7b528beba7654e7dec4361e808e6300891b30090f9b1d5",
+      "source": "Lobsters Rust",
+      "title": "pgrust（PostgresSQL Rust 書き換え）アップデート：Postgres 互換性67％に到達、加速中",
+      "url": "https://malisper.me/pgrust-update-at-67-postgres-compatibility-and-accelerating/",
+      "summary": "コメント",
+      "publishedAt": "2026-04-30T01:29:52.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-02T00:17:46.786Z"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-02",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "8185ac5081aa596175b687f36ecd99fc835a9f5be66b10a46fbbfada37708d6b",
+      "source": "Rust Blog",
+      "title": "Raising the baseline for the `nvptx64-nvidia-cuda` target",
+      "url": "https://blog.rust-lang.org/2026/05/01/nvptx-baseline-update/",
+      "summary": "The nvptx64-nvidia-cuda target is a compilation target for NVIDIA GPUs. When using this target, the final output is PTX. Two version choices shape that output:\na GPU architecture (for example, sm_70, sm_80, …), which determines which GPUs can run the PTX, and\na PTX ISA version, which determines which CUDA driver versions can load (and JIT-compile) the PTX.\nIn Rust 1.97 (scheduled for release on July 9, 2026), the baseline PTX ISA version and GPU architecture for nvptx64-nvidia-cuda will be…",
+      "publishedAt": "2026-05-01T00:00:00.000Z",
+      "score": 40,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        12
+      ],
+      "reason": "Improves GPU support for Rust projects",
+      "suggestedTitle": "Rust Raises Baseline for `nvptx64-nvidia-cuda` Target",
+      "suggestedSummary": "The Rust team has announced an update to the `nvptx64-nvidia-cuda` target, which is used for compiling Rust code to run on NVIDIA GPUs. This change raises the baseline for this target, ensuring more efficient code generation and compatibility with newer GPU architectures. This update is crucial for developers working on GPU-accelerated Rust projects, as it allows for better performance and supports more recent hardware features.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "e54d212aca58f4d6765144048edd558572f3e72a58c7d815eb5f9489377a1167",
+      "source": "Google News Rust",
+      "title": "Zed, the Rust-Made Coding Editor, Hits 1.0 - Thurrott.com",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYkc2X1kwazBxc3lKV2RpbmRSYUQ5ZUdIRVA1SHpYcFVGNlBNVFJRODI4c29mYktMT2pkSUpSSFE3b1ZJZVpBVzBmcmx3dDhTX2ltMXBZYVVpTTNjX3oyLUdFeV93V1FhZnBJOFk1Wk5EZXRsSVBIMW4tZFFpYlZCdFBn?oc=5",
+      "summary": "Zed, the Rust-Made Coding Editor, Hits 1.0  Thurrott.com",
+      "publishedAt": "2026-04-30T18:14:38.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        121,
+        122
+      ],
+      "reason": "New stable Rust-based editor available",
+      "suggestedTitle": "Zed 1.0: A Rust-Made Coding Editor Reaches Stable Release",
+      "suggestedSummary": "Zed, the coding editor built with Rust, has reached its 1.0 stable release. Known for its high-performance local experience, Zed leverages Rust's capabilities to provide a robust and efficient coding environment. This release marks a significant milestone, transitioning Zed from an experimental project to a reliable tool for daily use. Rust developers can now benefit from Zed's optimized performance and native integration, enhancing their coding workflows.",
+      "relatedSources": [
+        "Google News Rust",
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "818bda8dba5e7002a4c46c1c5adfa8cb06be91047f523eec90dce8304f6a273a",
+      "source": "Rust Users Forum",
+      "title": "Take a look at the neural network framework I wrote, which is implemented in Rust + CUDA",
+      "url": "https://users.rust-lang.org/t/take-a-look-at-the-neural-network-framework-i-wrote-which-is-implemented-in-rust-cuda/139883#post_1",
+      "summary": "github.com\n  \nGitHub - chen-197/Lumen: Lumen 是一个轻量级、高性能的深度学习训练与推理框架，使用 Rust + CUDA编写。\nLumen 是一个轻量级、高性能的深度学习训练与推理框架，使用 Rust + CUDA编写。\n\n\n\nHighlights\nRust-first, not Rust-only implementation\n\nRust owns the framework structure and most high-level logic.\nCUDA C++ is used for optional GPU acceleration.\nCPU-only builds remain available without the cuda feature.\nDynamic autograd built around tensor graph construction\nModule-style abstraction for model components\nSeparated layers / ops / models for…",
+      "publishedAt": "2026-05-01T05:53:46.000Z",
+      "score": 35,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "d59d82611400ff3f8e7a7393e1553c89593ac6c18cb025e6a7bccaad7f6381e8",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-01 Rust 原生数据表格组件 uiGrid 发布",
+      "url": "https://rustcc.cn/article?id=4c6f0c7c-dd58-429f-ae14-7a658ba54078",
+      "summary": "Rust 原生数据表格组件 uiGrid 发布\n一个为 egui 开发的功能丰富的数据表格组件已在 GitHub 开源，采用 MIT 许可证。\n主要特性\n数据操作：分组、过滤、排序功能\n视图模式：树形视图、可展开视图\n单元格编辑：支持格式化函数、自定义编辑和渲染视图\nExcel 风格导航：双击编辑单元格，Tab/方向键提交并移动到下一个单元格\n界面定制：可自定义主题、列宽调整、分页功能\n性能优化：虚拟滚动技术，可处理 10 万+行数据，仅渲染可见部分\n使用方式\n可克隆仓库运行演示应用，或直接使用 crate 中的表格组件\n运行命令：cargo run -p ui-grid-egui --example demo --release\n项目背景\n该项目是从之前流行的 AngularJS 数据表格移植而来。开发者已更新至 0.1.1 版本（修复了可展开行的逻辑），并提供了 WASM 文档和主题截图。\n相关链接：\nGitHub: https://github.com/orneryd/uiGrid\n文档:…",
+      "publishedAt": "2026-05-01T01:07:10.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "07672276278aef0d90f94ec2e462311a2b77ac416f443eb30d9a93e024bad7d1",
+      "source": "Lobsters Rust",
+      "title": "Your Clippy Config Should Be Stricter",
+      "url": "https://emschwartz.me/your-clippy-config-should-be-stricter/",
+      "summary": "Comments",
+      "publishedAt": "2026-04-30T00:41:09.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "09585fd1c85fc9f69e7b528beba7654e7dec4361e808e6300891b30090f9b1d5",
+      "source": "Lobsters Rust",
+      "title": "pgrust (PostgresSQL Rust rewrite) update: at 67% Postgres compatibility, and accelerating",
+      "url": "https://malisper.me/pgrust-update-at-67-postgres-compatibility-and-accelerating/",
+      "summary": "Comments",
+      "publishedAt": "2026-04-30T01:29:52.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-02T00:17:37.359Z"
+  }
+}

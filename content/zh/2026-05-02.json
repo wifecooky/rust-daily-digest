@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-02",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "8185ac5081aa596175b687f36ecd99fc835a9f5be66b10a46fbbfada37708d6b",
+      "source": "Rust Blog",
+      "title": "提升 `nvptx64-nvidia-cuda` 目标的基线",
+      "url": "https://blog.rust-lang.org/2026/05/01/nvptx-baseline-update/",
+      "summary": "nvptx64-nvidia-cuda 目标是用于 NVIDIA GPU 的编译目标。使用此目标时，最终输出为 PTX。两个版本选择决定了该输出：一个 GPU 架构（例如，sm_70、sm_80 等），它决定了哪些 GPU 可以运行 PTX，以及一个 PTX ISA 版本，它决定了哪些 CUDA 驱动程序版本可以加载（和 JIT 编译）PTX。在 Rust 1.97（计划于 2026 年 7 月 9 日发布）中，nvptx64-nvidia-cuda 的基线 PTX ISA 版本和 GPU 架构将是...",
+      "publishedAt": "2026-05-01T00:00:00.000Z",
+      "score": 40,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        12
+      ],
+      "reason": "Improves GPU support for Rust projects",
+      "suggestedTitle": "Rust 提升 `nvptx64-nvidia-cuda` 目标的基线",
+      "suggestedSummary": "Rust 团队宣布对 `nvptx64-nvidia-cuda` 目标进行更新，该目标用于将 Rust 代码编译以在 NVIDIA GPU 上运行。此更改提高了该目标的基线，确保了更高效的代码生成和与更新的 GPU 架构的兼容性。此更新对于从事 GPU 加速 Rust 项目的开发人员至关重要，因为它允许更好的性能并支持更新的硬件功能。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "e54d212aca58f4d6765144048edd558572f3e72a58c7d815eb5f9489377a1167",
+      "source": "Google News Rust",
+      "title": "Zed，使用Rust构建的代码编辑器，发布1.0版本 - Thurrott.com",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNYkc2X1kwazBxc3lKV2RpbmRSYUQ5ZUdIRVA1SHpYcFVGNlBNVFJRODI4c29mYktMT2pkSUpSSFE3b1ZJZVpBVzBmcmx3dDhTX2ltMXBZYVVpTTNjX3oyLUdFeV93V1FhZnBJOFk1Wk5EZXRsSVBIMW4tZFFpYlZCdFBn?oc=5",
+      "summary": "Zed，使用Rust构建的代码编辑器，发布1.0版本  Thurrott.com",
+      "publishedAt": "2026-04-30T18:14:38.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        121,
+        122
+      ],
+      "reason": "New stable Rust-based editor available",
+      "suggestedTitle": "Zed 1.0：Rust构建的代码编辑器达到稳定版本",
+      "suggestedSummary": "使用Rust构建的代码编辑器Zed已达到1.0稳定版本。Zed以其高性能的本地体验而闻名，利用Rust的能力提供一个强大且高效的编码环境。此版本标志着一个重要的里程碑，将Zed从实验性项目转变为日常使用的可靠工具。Rust开发者现在可以从Zed的优化性能和本地集成中受益，提升他们的编码工作流程。",
+      "relatedSources": [
+        "Google News Rust",
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "818bda8dba5e7002a4c46c1c5adfa8cb06be91047f523eec90dce8304f6a273a",
+      "source": "Rust Users Forum",
+      "title": "看看我编写的神经网络框架，它是用 Rust + CUDA 实现的",
+      "url": "https://users.rust-lang.org/t/take-a-look-at-the-neural-network-framework-i-wrote-which-is-implemented-in-rust-cuda/139883#post_1",
+      "summary": "GitHub - chen-197/Lumen: Lumen 是一个轻量级、高性能的深度学习训练与推理框架，使用 Rust + CUDA 编写。Lumen 是一个轻量级、高性能的深度学习训练与推理框架，使用 Rust + CUDA 编写。",
+      "publishedAt": "2026-05-01T05:53:46.000Z",
+      "score": 35,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "d59d82611400ff3f8e7a7393e1553c89593ac6c18cb025e6a7bccaad7f6381e8",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-01 Rust 原生数据表格组件 uiGrid 发布",
+      "url": "https://rustcc.cn/article?id=4c6f0c7c-dd58-429f-ae14-7a658ba54078",
+      "summary": "Rust 原生数据表格组件 uiGrid 发布",
+      "publishedAt": "2026-05-01T01:07:10.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "07672276278aef0d90f94ec2e462311a2b77ac416f443eb30d9a93e024bad7d1",
+      "source": "Lobsters Rust",
+      "title": "您的Clippy配置应该更严格",
+      "url": "https://emschwartz.me/your-clippy-config-should-be-stricter/",
+      "summary": "评论",
+      "publishedAt": "2026-04-30T00:41:09.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "09585fd1c85fc9f69e7b528beba7654e7dec4361e808e6300891b30090f9b1d5",
+      "source": "Lobsters Rust",
+      "title": "pgrust（PostgresSQL Rust 重写）更新：达到67%的Postgres兼容性，并在加速中",
+      "url": "https://malisper.me/pgrust-update-at-67-postgres-compatibility-and-accelerating/",
+      "summary": "评论",
+      "publishedAt": "2026-04-30T01:29:52.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-02T00:17:42.019Z"
+  }
+}
