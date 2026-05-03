@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-03",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "3c6dc29b0b1ec0339713cea00435aab4c357298aec85a140a5feba8a1d8c0fdb",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] パッケージ名前空間としてのDNSドメイン",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_55",
+      "summary": "mathstuf: クレートの所有権はどのように機能しますか？（これはおそらくepageのこのトピックに関する以前のコレクションで取り上げられているかもしれません。）パッケージのメンテナー（アップローダー）として別の開発者を追加する場合、ドメインへのアクセスを何らかの形で与える必要がありますか？後でメンテナーを辞めたい場合はどうなりますか？ドメインの所有権も移転しなければならないのですか？まだ維持し続けているクレートがある場合はどうしますか？それとも、新しいドメインについてすべての消費プロジェクトと何らかの形でコミュニケーションを取らなければならないのですか？私はあなたの…",
+      "publishedAt": "2026-05-01T01:26:57.000Z",
+      "score": 37,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        6,
+        19
+      ],
+      "reason": "Potentially changes crate management",
+      "suggestedTitle": "Pre-RFCがパッケージ名前空間としてのDNSドメインを提案",
+      "suggestedSummary": "新しいPre-RFCは、RustにおいてDNSドメインをパッケージ名前空間として使用することを提案しています。このアプローチは、クレートの所有権と配布をより構造化され、競合のない方法で管理することができるかもしれません。この提案は、クレートの所有権や名前空間の競合といった潜在的な問題に対処し、Rustエコシステムにおけるパッケージの識別と管理を合理化することを目指しています。これにより、より堅牢なパッケージ管理とコミュニティ内の競合の削減が期待されます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "a0cbc2b52a3d00c637911723a9d5e2e14d400a60b6110de9edd5bdc61a56c519",
+      "source": "Rust Internals",
+      "title": "[議論] 非同期イテレーションの代替構文: `for async i in stream`?",
+      "url": "https://internals.rust-lang.org/t/discussion-alternative-syntax-for-async-iteration-for-async-i-in-stream/24218#post_6",
+      "summary": "soplwang:\n非同期関数が将来の値を生成する関数を表すように、for asyncは非同期プロデューサーを消費するループを表します。\nここで矛盾を感じるかもしれませんが、前者は生成し、後者は消費します（ちょうど.awaitのように）\n\nsoplwang:\n私の提案は、アイテムレベルでの非同期パターンマッチング/バインディングに焦点を当てています。\nここでの問題は、ストリームがIterator<Item = impl Future>ではないため、各アイテムを単にawaitすることができないことです。代わりに、アイテム自体を取得するためにawaitする必要があります。この理由から、彼らは…",
+      "publishedAt": "2026-05-02T19:21:32.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        3,
+        39
+      ],
+      "reason": "Could simplify async code syntax",
+      "suggestedTitle": "非同期イテレーションの代替構文に関する議論",
+      "suggestedSummary": "Rust Internalsでの議論は、'for async i in stream'を使用した非同期イテレーションの代替構文を探ります。この構文は、現在の非同期イテレーションモデルを簡素化し、C#のような他の言語により近づけることを目的としています。この変更により、非同期コードがより直感的でアクセスしやすくなり、Rustで非同期データストリームを扱う際の開発者の体験が向上する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "df1f996d56a627f77583f70bcce7b282da5668eda8ebf3ca092b07e18f6ac2c9",
+      "source": "Rust Users Forum",
+      "title": "スマートウォッチ ESP32-S3-Touch-AMOLED-2.06 のための Rust スタック",
+      "url": "https://users.rust-lang.org/t/rust-stack-for-the-smartwatch-esp32-s3-touch-amoled-2-06/139904#post_1",
+      "summary": "これは私にとって驚くべきことです: スマートウォッチ ESP32-S3-Touch-AMOLED-2.06 のための Rust スタック。私は Bangood でこの時計を約40ドルで注文しましたが、どんな種類の時計でも面白い価格です。バッテリーとアームバンドが付属していましたが、バッテリーを取り付けて自分でアームバンドを時計に付ける必要がありました。バッテリーは非常に薄く、もっと太いものもケースに収まるように見えます。まだバッテリー寿命を測定していません。私の Ubuntu ワークステーションで、ソフトウェアのビルドに成功しました…",
+      "publishedAt": "2026-05-02T17:51:11.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "737153cc02ccaf40eb04ed1b5b7b2f2a9b6fee12d4941ba430bf1ec94c231f0d",
+      "source": "Rust Users Forum",
+      "title": "スマートウォッチESP32-S3-Touch-AMOLED-2.06のためのRustスタック",
+      "url": "https://users.rust-lang.org/t/rust-stack-for-the-smartwatch-esp32-s3-touch-amoled-2-06/139904#post_3",
+      "summary": "Espressifは、ESP32-C3やESP32-S3のようなMCUにおいて、Rustを第一級の言語にするための投資を行っています。昨年、彼らのesp_halはバージョン1.0に達し、最近1.1に更新されました。他のメーカー（特にST！）も彼らのリードに従ってほしいものです。おそらく、他のメーカーも追いつくのは時間の問題でしょう。",
+      "publishedAt": "2026-05-02T19:23:55.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6273b4bf5547c824d8f1bf724aab5462dc59edf9263d912cae240ab1946454f5",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-02 Temper - Rustで書かれたMinecraftサーバープロジェクトがバージョン0.1.0をリリース",
+      "url": "https://rustcc.cn/article?id=92dc98df-9b2a-4338-90e2-5ccf9d7b90c4",
+      "summary": "Temper - Rustで書かれたMinecraftサーバープロジェクトがバージョン0.1.0をリリース",
+      "publishedAt": "2026-05-02T01:08:47.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "443da548960949ef5de7e8775be9cda0ef764542ea980f8e04549013b049aa7d",
+      "source": "Rust Users Forum",
+      "title": "Hylic: 機能的再帰クレートを公開しました。ご意見をお聞かせください。",
+      "url": "https://users.rust-lang.org/t/hylic-functional-recursion-crate-i-just-published-thoughts/139902#post_1",
+      "summary": "皆さん、こんにちは。\nこのライブラリの名前は「hylic」で、ヒュロモルフィズムを形成するのに役立つためです。ヒュロモルフィズムとは、原子価から再帰的な構造を展開し、それを結果に収束させる関数です（展開 + 折りたたみ）。しかし、このライブラリの範囲は、理論的というよりも実用的です。\nHaskellの再帰スキームや既存の再帰クレートのようには全く書かれていません。再帰構造Treeish<Node>は、Nodeデータ構造の外部で定義されています…",
+      "publishedAt": "2026-05-02T09:54:38.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-03T00:16:03.252Z"
+  }
+}

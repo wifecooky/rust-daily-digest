@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-03",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "3c6dc29b0b1ec0339713cea00435aab4c357298aec85a140a5feba8a1d8c0fdb",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] DNS domains as package namespaces",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=3#post_55",
+      "summary": "mathstuf:\nHow would this work with crate ownership? (This may very well be addressed in epage's prior collection of this topic.) If I add another developer as a maintainer (uploader) of the package, do I need to somehow give access to my domain?What if I later want to no longer maintainer? Do I have to transfer domain ownership too? What if I still have crates I'm continuing to maintain? Or do I have to somehow communicate with all consuming projects about the new domain?\nI believe your…",
+      "publishedAt": "2026-05-01T01:26:57.000Z",
+      "score": 37,
+      "relatedCount": 5,
+      "candidateNumbers": [
+        6,
+        19
+      ],
+      "reason": "Potentially changes crate management",
+      "suggestedTitle": "Pre-RFC Proposes DNS Domains as Package Namespaces",
+      "suggestedSummary": "A new pre-RFC proposes using DNS domains as package namespaces in Rust. This approach could provide a more structured and conflict-free way to manage crate ownership and distribution. The proposal addresses potential issues such as crate ownership and namespace conflicts, aiming to streamline how packages are identified and managed in the Rust ecosystem. This could lead to more robust package management and reduced conflicts in the community.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "a0cbc2b52a3d00c637911723a9d5e2e14d400a60b6110de9edd5bdc61a56c519",
+      "source": "Rust Internals",
+      "title": "[Discussion] Alternative syntax for async iteration: `for async i in stream`?",
+      "url": "https://internals.rust-lang.org/t/discussion-alternative-syntax-for-async-iteration-for-async-i-in-stream/24218#post_6",
+      "summary": "soplwang:\nJust as async fn describes a function that yields a future, for async describes a loop that consumes an asynchronous producer.\nI hope you see the contraddiction here: the former yields while the other consumes (just like .await)\n\n soplwang:\nmy proposal focuses on async pattern matching/binding at the item level\nThe issue here is that streams are not Iterator<Item = impl Future> where you can just await each item. You have to instead await getting the item itself. For this reason they…",
+      "publishedAt": "2026-05-02T19:21:32.000Z",
+      "score": 47,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        3,
+        39
+      ],
+      "reason": "Could simplify async code syntax",
+      "suggestedTitle": "Discussion on Alternative Syntax for Async Iteration",
+      "suggestedSummary": "A discussion on Rust Internals explores an alternative syntax for async iteration using 'for async i in stream'. This syntax aims to simplify the current async iteration model, aligning more closely with other languages like C#. The change could make async code more intuitive and accessible, improving developer experience when working with asynchronous data streams in Rust.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "df1f996d56a627f77583f70bcce7b282da5668eda8ebf3ca092b07e18f6ac2c9",
+      "source": "Rust Users Forum",
+      "title": "Rust stack for the smartwatch ESP32-S3-Touch-AMOLED-2.06",
+      "url": "https://users.rust-lang.org/t/rust-stack-for-the-smartwatch-esp32-s3-touch-amoled-2-06/139904#post_1",
+      "summary": "This looks amazing to me: Rust stack for the smartwatch ESP32-S3-Touch-AMOLED-2.06.\nI ordered the watch from Bangood here for about $40, which is a funny price for a watch of any kind. It came with a battery and an armband, even though I needed to install the battery and put the armband myself on a watch. The battery is very flat - looks like a fatter one would also fit into enclosure. I have not measured the battery life yet.\nOn my Ubuntu workstation, I succeeded in building the software…",
+      "publishedAt": "2026-05-02T17:51:11.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "737153cc02ccaf40eb04ed1b5b7b2f2a9b6fee12d4941ba430bf1ec94c231f0d",
+      "source": "Rust Users Forum",
+      "title": "Rust stack for the smartwatch ESP32-S3-Touch-AMOLED-2.06",
+      "url": "https://users.rust-lang.org/t/rust-stack-for-the-smartwatch-esp32-s3-touch-amoled-2-06/139904#post_3",
+      "summary": "Espressif has been investing in making Rust a first-class language for their MCUs, like the ESP32-C3 and ESP32-S3. Last year, their esp_hal hit version 1.0 (and was recently updated to 1.1). I wish other manufacturers (looking at you, ST!) would follow their lead. It’s probably only a matter of time before the rest catch up.",
+      "publishedAt": "2026-05-02T19:23:55.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "6273b4bf5547c824d8f1bf724aab5462dc59edf9263d912cae240ab1946454f5",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-02 Temper - 用 Rust 编写的 Minecraft 服务器项目发布 0.1.0 版本",
+      "url": "https://rustcc.cn/article?id=92dc98df-9b2a-4338-90e2-5ccf9d7b90c4",
+      "summary": "Temper - 用 Rust 编写的 Minecraft 服务器项目发布 0.1.0 版本\n项目概况\nTemper 是一个用 Rust 编写的 Minecraft 服务器项目，刚刚发布了初始 0.1.0 版本\n这是 FerrumC 的维护分支，由于管理分歧而分叉出来\n项目在 Hyperion 之前就已开始，不是简单的跟风之作\n当前功能\n✅ 基础功能已实现：\n\n世界生成\n自定义地形生成\n多人游戏\n基础生物（mobs）\n简单方块建造\n✅ 额外特性：\n\n内置 Web 仪表板\n自动屏蔽已知扫描器\n开发状态与计划\n⚠️ 仍处于早期开发阶段，尚不能完全替代原版服务器\n原文链接：https://temper-mc.com\n假面试陷阱：我如何阻止黑客部署零点击漏洞攻击\n简介\n一名开发者在求职面试过程中遭遇精密的网络攻击。攻击者伪装成招聘方，通过技术面试题目投放恶意软件，试图窃取开发者的敏感信息。\n社会工程学与危险信号\n攻击过程：\n自称\"Trust-AI\"公司的招聘人员发起联系\n要求完成\"领导力工作流\"测试——解决 Git 分支合并冲突\n提供私有 GitHub 仓库访问权限和一份 PDF 评估文档…",
+      "publishedAt": "2026-05-02T01:08:47.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "443da548960949ef5de7e8775be9cda0ef764542ea980f8e04549013b049aa7d",
+      "source": "Rust Users Forum",
+      "title": "Hylic: Functional recursion crate I just published. Thoughts?",
+      "url": "https://users.rust-lang.org/t/hylic-functional-recursion-crate-i-just-published-thoughts/139902#post_1",
+      "summary": "Hi all,\nThe name's \"hylic\", because the library helps you formulate hylomorphisms. These are functions that unfold a recursive structure from an atomic value, and collapse that into a result (unfold + fold). The scope of the library is however, more practical and less theoretical in nature \nIt's not at all written like the recursion-schemes in Haskell, or the existing recursion crate that already exists: the recursive structure Treeish<Node> is defined external to the Node data structure,…",
+      "publishedAt": "2026-05-02T09:54:38.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-03T00:15:51.851Z"
+  }
+}
