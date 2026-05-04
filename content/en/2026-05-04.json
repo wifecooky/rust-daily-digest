@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-04",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "38d3ca05317642fde2288afefa350fdacf9e1333eab05bb0784cc927454f18d8",
+      "source": "Google News Rust",
+      "title": "Brush v0.4 Released As \"Significant\" Release For This Rust-Based Shell - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pRUtsZVZDSlJ1TEExTHdpUXg4RWlGbVpvazNnSkROaXV6WHQ5R01IbjVhUFBSb0lFNlozVzBBbXVBWmJyeFBpNDRGU3dTLXRXY2R3VlJFRUR6LWZyYUliWF9vemQ?oc=5",
+      "summary": "Brush v0.4 Released As \"Significant\" Release For This Rust-Based Shell  Phoronix",
+      "publishedAt": "2026-05-03T16:02:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        32
+      ],
+      "reason": "Significant Rust shell update",
+      "suggestedTitle": "Brush v0.4 Released: Major Update for Rust-Based Shell",
+      "suggestedSummary": "Brush, a Rust-based shell, has released version 0.4, marking a significant update. This release brings new features and optimizations that enhance the shell's performance and usability. Rust developers using Brush can expect improved scripting capabilities and a more efficient command execution environment. The update is crucial for those relying on Rust for shell scripting and command-line tool development, providing a more robust and faster toolset.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "6a5e70fb591d549e56ea376615f5da33a0711379d06f98538255e9c743be5b06",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-03 sse-rs 发布：一个强大的服务器推送事件(SSE)库",
+      "url": "https://rustcc.cn/article?id=df56f7e5-aede-4267-b490-c28ed5d5d7c2",
+      "summary": "sse-rs 发布：一个强大的服务器推送事件(SSE)库\n项目概述\n作者发布了 sse-rs，这是一个用于解析和消费服务器推送事件(Server-Sent Events)的 Rust crate 集合。该库提供了严格遵循 WHATWG 标准的实现，并具有良好的 API 易用性。\n项目结构\n项目分为两个 crate：\nsse-core：支持 no_std 环境的零 I/O 状态机，严格消费字节缓冲区并生成解析后的事件\nsse-reqwest-client：为 reqwest 提供的高级 EventSource 实现（类似 JavaScript API），只需在标准 RequestBuilder 上调用 .into_event_source() 即可使用\n性能优势\n相比现有的 eventsource-stream crate，sse-core 性能显著提升：\n手写状态机（使用 bytes::Buf）\n避免急切的字符串分配和行缓冲\n微基准测试显示处理速度至少快 3 倍\n在严重网络分片情况下性能差距更大（怀疑 eventsource-stream 具有 O(n²) 时间复杂度）\n使用示例…",
+      "publishedAt": "2026-05-03T01:07:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        60
+      ],
+      "reason": "New SSE library for Rust",
+      "suggestedTitle": "sse-rs: A Powerful Rust Library for Server-Sent Events",
+      "suggestedSummary": "The newly released sse-rs library offers a comprehensive solution for handling Server-Sent Events (SSE) in Rust applications. This crate collection simplifies the parsing and consumption of SSE, allowing developers to integrate real-time event streaming into their Rust projects efficiently. With its robust API, sse-rs enhances the ability to build responsive, event-driven applications, making it a vital addition for Rust developers focusing on real-time data processing.",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "9abf2f8f9a67c9bfac4371f12c364886542422a9b6e7bbff00b309b16d47a230",
+      "source": "Rust Internals",
+      "title": "`BitSlice` or a sound way to implement one",
+      "url": "https://internals.rust-lang.org/t/bitslice-or-a-sound-way-to-implement-one/24194#post_14",
+      "summary": "Yeah, it's an interesting idea for a greenfield language (and maybe greenfield CPU). Treating bits as non-independent parts of a byte doesn't really feel different to me from treating bytes as non-independent parts of a word, and that was definitely a thing for a long time. And 64-bit address spaces are BIG, dividing the maximum size by 8 isn't really a problem. I guess that might be a downside for smaller address spaces, that you either need two kinds of pointers or a relatively low max memory…",
+      "publishedAt": "2026-05-03T08:05:44.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "196767c52bfaacae48c7214318531a572c57890ebcceac2cade9a432108ed796",
+      "source": "Rust Users Forum",
+      "title": "Use secret key in code but do not want to have it readable on a repo, best practice?",
+      "url": "https://users.rust-lang.org/t/use-secret-key-in-code-but-do-not-want-to-have-it-readable-on-a-repo-best-practice/139840#post_12",
+      "summary": "conqp:\nSecrets should never be part of the code nor the binary.\nThere are always exceptions in real life. When prototyping on ESP32, I needed to embed my WiFi password in the binary, using include_str! and a gitignored file. But I agree this is special to embedded and should not be done on computers in general.\nIf you use this pattern, however, ensure it is documented somewhere, including the expected format. There may be a file password included in the git tree with a dummy password and a…",
+      "publishedAt": "2026-05-03T21:27:43.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "aeebfaef8e4237665891ff62dd2bd7fdf2bd1ed4889441d20a9090d745474101",
+      "source": "Rust Users Forum",
+      "title": "Inverted index from HashMap<String, usize>",
+      "url": "https://users.rust-lang.org/t/inverted-index-from-hashmap-string-usize/139920#post_4",
+      "summary": "(both functions should be unsafe because they rely on input precondition, that all indices are distinct; on the other hand, unchecked indexing should then be used too)",
+      "publishedAt": "2026-05-03T17:46:06.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "52b1c85ede4b84fa41dcb8e2c54cb559ae4c283ed958a0a3744e77d8daf55ba7",
+      "source": "Zenn Rust (JP)",
+      "title": "ssh-obi を公開しました ― SSH の切断やスリープを越えてリモートシェルを生き続けさせる軽量ツール",
+      "url": "https://zenn.dev/menhera/articles/8b19b5d9c4b7e7",
+      "summary": "!\n本記事は menhera.org の英語版告知記事のクロスポストです。\n\n\n\n TL;DR\nssh-obi v0.1.0 を公開しました。SSH 接続が切れても、ノート PC をスリープしても、Wi-Fi と LTE を行き来しても、リモートシェルを生かし続ける小さな Rust 製ツールです。\n普段の SSH 設定 (鍵、ProxyJump、~/.ssh/config など) をそのまま使えます。専用のポートも、UDP も、setuid バイナリも、システム全体のデーモンも必要ありません。\nWindows (クライアントのみ):\npowershell -NoProfile -Exec...",
+      "publishedAt": "2026-05-03T13:17:01.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-04T00:17:03.090Z"
+  }
+}

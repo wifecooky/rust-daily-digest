@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-04",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "38d3ca05317642fde2288afefa350fdacf9e1333eab05bb0784cc927454f18d8",
+      "source": "Google News Rust",
+      "title": "Rustベースのシェル「Brush v0.4」が「重要な」リリースとして公開 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9pRUtsZVZDSlJ1TEExTHdpUXg4RWlGbVpvazNnSkROaXV6WHQ5R01IbjVhUFBSb0lFNlozVzBBbXVBWmJyeFBpNDRGU3dTLXRXY2R3VlJFRUR6LWZyYUliWF9vemQ?oc=5",
+      "summary": "Rustベースのシェル「Brush v0.4」が「重要な」リリースとして公開 - Phoronix",
+      "publishedAt": "2026-05-03T16:02:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        32
+      ],
+      "reason": "Significant Rust shell update",
+      "suggestedTitle": "Brush v0.4リリース: Rustベースのシェルの大規模アップデート",
+      "suggestedSummary": "RustベースのシェルであるBrushがバージョン0.4をリリースし、重要なアップデートを果たしました。このリリースでは、新機能と最適化が導入され、シェルのパフォーマンスと使いやすさが向上しています。Brushを使用するRust開発者は、スクリプト機能の改善とより効率的なコマンド実行環境を期待できます。このアップデートは、シェルスクリプトやコマンドラインツール開発にRustを利用する人々にとって、より堅牢で高速なツールセットを提供する重要なものです。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "6a5e70fb591d549e56ea376615f5da33a0711379d06f98538255e9c743be5b06",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-03 sse-rs 発表：強力なサーバー送信イベント(SSE)ライブラリ",
+      "url": "https://rustcc.cn/article?id=df56f7e5-aede-4267-b490-c28ed5d5d7c2",
+      "summary": "sse-rs 発表：強力なサーバー送信イベント(SSE)ライブラリ",
+      "publishedAt": "2026-05-03T01:07:39.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        60
+      ],
+      "reason": "New SSE library for Rust",
+      "suggestedTitle": "sse-rs: サーバー送信イベントのための強力なRustライブラリ",
+      "suggestedSummary": "新たにリリースされたsse-rsライブラリは、Rustアプリケーションにおけるサーバー送信イベント(SSE)の処理に包括的なソリューションを提供します。このcrateコレクションは、SSEの解析と消費を簡素化し、開発者がリアルタイムイベントストリーミングを効率的にRustプロジェクトに統合できるようにします。その堅牢なAPIにより、sse-rsは応答性の高いイベント駆動型アプリケーションの構築能力を向上させ、リアルタイムデータ処理に注力するRust開発者にとって重要な追加となります。",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "9abf2f8f9a67c9bfac4371f12c364886542422a9b6e7bbff00b309b16d47a230",
+      "source": "Rust Internals",
+      "title": "BitSlice、またはその実装方法",
+      "url": "https://internals.rust-lang.org/t/bitslice-or-a-sound-way-to-implement-one/24194#post_14",
+      "summary": "そうですね、新しいプログラミング言語（そしておそらく新しいCPU）にとって興味深いアイデアです。ビットをバイトの非独立部分として扱うことは、バイトをワードの非独立部分として扱うことと私にはあまり違いがないように感じます。そして、それは長い間確かに存在していました。64ビットのアドレス空間は非常に大きく、最大サイズを8で割ることは本当に問題ではありません。小さなアドレス空間にとっては、2種類のポインタが必要か、比較的低い最大メモリを受け入れなければならないという欠点かもしれませんが…",
+      "publishedAt": "2026-05-03T08:05:44.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "196767c52bfaacae48c7214318531a572c57890ebcceac2cade9a432108ed796",
+      "source": "Rust Users Forum",
+      "title": "コード内で秘密鍵を使用したいが、リポジトリで読み取れないようにするには、ベストプラクティスは？",
+      "url": "https://users.rust-lang.org/t/use-secret-key-in-code-but-do-not-want-to-have-it-readable-on-a-repo-best-practice/139840#post_12",
+      "summary": "conqp: 秘密情報はコードやバイナリの一部であってはなりません。現実には常に例外があります。ESP32でプロトタイプを作成する際、WiFiパスワードをバイナリに埋め込む必要があり、include_str! とgitignoreされたファイルを使用しました。しかし、これは組み込みに特有であり、一般的なコンピュータでは行うべきではないと同意します。このパターンを使用する場合は、予想される形式を含め、どこかに文書化されていることを確認してください。ダミーパスワードを含むファイルがgitツリーに含まれている可能性があります。",
+      "publishedAt": "2026-05-03T21:27:43.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "aeebfaef8e4237665891ff62dd2bd7fdf2bd1ed4889441d20a9090d745474101",
+      "source": "Rust Users Forum",
+      "title": "HashMap<String, usize>からの転置インデックス",
+      "url": "https://users.rust-lang.org/t/inverted-index-from-hashmap-string-usize/139920#post_4",
+      "summary": "（両方の関数は、すべてのインデックスが異なるという入力前提条件に依存しているため、unsafeであるべきです。一方で、チェックされていないインデックス付けも使用されるべきです。）",
+      "publishedAt": "2026-05-03T17:46:06.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "52b1c85ede4b84fa41dcb8e2c54cb559ae4c283ed958a0a3744e77d8daf55ba7",
+      "source": "Zenn Rust (JP)",
+      "title": "ssh-obi を公開しました ― SSH の切断やスリープを越えてリモートシェルを生き続けさせる軽量ツール",
+      "url": "https://zenn.dev/menhera/articles/8b19b5d9c4b7e7",
+      "summary": "本記事は menhera.org の英語版告知記事のクロスポストです。\n\n TL;DR\nssh-obi v0.1.0 を公開しました。SSH 接続が切れても、ノート PC をスリープしても、Wi-Fi と LTE を行き来しても、リモートシェルを生かし続ける小さな Rust 製ツールです。\n普段の SSH 設定 (鍵、ProxyJump、~/.ssh/config など) をそのまま使えます。専用のポートも、UDP も、setuid バイナリも、システム全体のデーモンも必要ありません。\nWindows (クライアントのみ):\npowershell -NoProfile -Exec...",
+      "publishedAt": "2026-05-03T13:17:01.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-04T00:17:12.205Z"
+  }
+}
