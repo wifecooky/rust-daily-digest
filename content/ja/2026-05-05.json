@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-05",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "85b4f79f28131ebba1900f2e5a4c659674a72812d6b797df696355fa2fcc7e2c",
+      "source": "Rust Users Forum",
+      "title": "OMQ.rs: 純粋なRustによるØMQ",
+      "url": "https://users.rust-lang.org/t/omq-rs-pure-rust-omq/139940#post_1",
+      "summary": "私は純粋なRustによるZeroMQの実装を構築しており、最初の公開リリースを行いました。libzmqとワイヤ互換性があり、2つの非同期バックエンド（compioとtokio）を同一のソケットAPIで提供し、コアにはsans-I/OのZMTPコーデックを備えています。すべてのメッセージサイズでlibzmqよりも高速です。フィードバック歓迎: GitHub - paddor/omq.rs: 純粋なRustによるØMQ。機能が完全で、libzmqとワイヤ互換性があり、非常に高速です。 · GitHub",
+      "publishedAt": "2026-05-05T00:07:59.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        8
+      ],
+      "reason": "Pure Rust ZeroMQ implementation released",
+      "suggestedTitle": "OMQ.rs: 純粋なRustによるZeroMQ実装がリリース",
+      "suggestedSummary": "OMQ.rsは、ZeroMQメッセージングライブラリの純粋なRust実装であり、リリースされました。この新しいライブラリにより、Rust開発者はCバインディングに依存せずにZeroMQのメッセージングパターンを活用でき、Rustプロジェクト内での統合と安全性が向上します。このリリースは、パフォーマンスの向上と使いやすさを約束し、分散システムの開発やRustアプリケーションで効率的なメッセージパッシングを必要とする開発者にとって魅力的な選択肢となります。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "78c1614bf1088415840da5e63d8e40fa8f3ccf364779c98c13c9d761ac9819d9",
+      "source": "Rust Blog",
+      "title": "RustがOutreachyに参加",
+      "url": "https://blog.rust-lang.org/2026/05/04/outreachy-2026-may/",
+      "summary": "Rustプロジェクトは、Google Summer of Codeを含む様々なオープンソースメンターシッププログラムに3年間（今年を含む）参加し、以前はOSPPにも参加してきた良好な歴史を築いてきました。今年、私たちは2026年5月のコホートからOutreachyにも参加することを発表できることを嬉しく思います。これらのメンターシッププログラムは、それぞれが対象とする人々やプログラムの動機に応じて異なる資格基準を持っています。Outreachyはオープン...",
+      "publishedAt": "2026-05-04T00:00:00.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        83
+      ],
+      "reason": "Rust joins Outreachy for open-source mentorship",
+      "suggestedTitle": "RustプロジェクトがOutreachyメンターシッププログラムに参加",
+      "suggestedSummary": "Rustプロジェクトは、技術業界で過小評価されているグループに有給インターンシップを提供するOutreachyプログラムへの参加を発表しました。このイニシアチブは、メンターシップの機会を提供し、Rustエコシステムへの貢献を促進することで、Rustコミュニティにおける多様性と包括性を育むことを目的としています。参加者はオープンソースプロジェクトに貢献しながら貴重な経験を得ることができ、関与する個人と広範なRustコミュニティの両方に利益をもたらします。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "38350bbadd5cc96a4d5a9f1e8bc569e4e9041aec7ce6fc3584b8bc142c7383f2",
+      "source": "Lobsters Rust",
+      "title": "uutils coreutils のCVE",
+      "url": "https://seclists.org/oss-sec/2026/q2/332",
+      "summary": "コメント",
+      "publishedAt": "2026-05-04T19:41:43.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5a77c38eeb14aa7671b1fda634b11ed8267895b354d9e1cf181d1d742be501d2",
+      "source": "Rust Users Forum",
+      "title": "Cbor-core: 決定論的なCBOR::Coreエンコーダー/デコーダー",
+      "url": "https://users.rust-lang.org/t/cbor-core-a-deterministic-cbor-core-encoder-decoder/139565#post_3",
+      "summary": "バージョン0.9.0がリリースされました。注目の機能は、テキスト文字列とバイト文字列に対するゼロコピーのバイナリデコードです。",
+      "publishedAt": "2026-05-04T22:29:35.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "aa6ebd0651404ce1592fa96b3ec6b40b237c1c4a5b63272e4fb7ca4e26e03c11",
+      "source": "Tokio",
+      "title": "Tokio v1.52.2",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.2",
+      "summary": "1.52.2 (2026年5月4日)\nこのリリースでは、パフォーマンスへの影響により、1.51.0 (#7431) で導入されたLIFOスロットの盗用変更を元に戻しました。 (#8100)",
+      "publishedAt": "2026-05-04T12:49:23.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4f26a5cd1c94c0edc092acd038bf978e2658cf80e829f0bbd3d23739028d7298",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #326",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/05/04/changelog-326.html",
+      "summary": "コミット: f04c372\n2026-05-04 (v0.3.2887)\n新機能\n#22238, #22239, #22253（初めての貢献）で、mismatched-array-pat-len と unused-must-use の診断を追加。\n#22186 トレイトエラーを診断 🎉。\n#22144, #22168, #22145, #22156, #22197, #22193, #22202 で、type-must-be-known, generic-default-refers-to-self, invalid-lhs-of-assignment, pattern-arg-in-extern-fn, non-exhaustive-record-expr, union-expr-must-have-exactly-one-field の診断を追加。\n#21987 gen ブロックの初期サポートを追加。\n#22178 許可…",
+      "publishedAt": "2026-05-04T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-05T00:18:40.427Z"
+  }
+}
