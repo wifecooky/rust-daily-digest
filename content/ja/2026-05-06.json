@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-06",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "32a64af04ed29c46bc945010a89cfbeb81d82425ef0010fc0b0ddfb6b87c961e",
+      "source": "Rust Internals",
+      "title": "`std::marker::PhantomUnsized` マーカー型",
+      "url": "https://internals.rust-lang.org/t/std-phantomunsized-marker-type/24219#post_5",
+      "summary": "拡張として、PhantomUnsized はポインタメタデータを指定する型パラメータを持つことができます。この型は Copy であり、usize と同じレイアウトを持たなければなりません（現時点では、コンパイラが usize より大きい/小さい型を取れないと仮定しています）。例えば、独自の2D平面型を定義することができます：\n// 注意：これは現在の `usize` 制限と互換性がありません。\n// しかし、コンパイラがポインタメタデータがポインタと同じレイアウトを持つと仮定しているため、\n// この制限が存在すると仮定しています。…",
+      "publishedAt": "2026-05-05T21:26:00.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        8
+      ],
+      "reason": "Enhances handling of unsized types in Rust.",
+      "suggestedTitle": "Rust における `std::marker::PhantomUnsized` の紹介",
+      "suggestedSummary": "Rust に新しく導入された `std::marker::PhantomUnsized` マーカー型は、コンパイル時または実行時にサイズが定義されていない型を扱うことを可能にします。このマーカー型は、外部メタデータを持つ型を扱うシナリオで特に有用であり、そのような操作に対してより「Rust らしい」構文を提供します。この新しい型を活用することで、Rust 開発者はプロジェクト内でサイズのない型をより効果的に管理できるようになり、コードの単純化や型安全性の向上が期待できます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "aa6ebd0651404ce1592fa96b3ec6b40b237c1c4a5b63272e4fb7ca4e26e03c11",
+      "source": "Tokio",
+      "title": "Tokio v1.52.2",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.2",
+      "summary": "1.52.2（2026年5月4日）このリリースでは、パフォーマンスへの影響のため、1.51.0で導入されたLIFOスロット盗みの変更を元に戻します。（#8100）",
+      "publishedAt": "2026-05-04T12:49:23.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        92,
+        93
+      ],
+      "reason": "Critical updates for Tokio users.",
+      "suggestedTitle": "Tokio v1.52.2とv1.51.1：LIFOスロット盗みの変更を元に戻す",
+      "suggestedSummary": "Tokioの最新のパッチリリースであるv1.52.2とv1.51.1では、v1.51.0で導入されたLIFOスロット盗みの変更が元に戻されました。この変更は当初、タスクスケジューリングの最適化を目的としていましたが、特定のアプリケーションで意図しない副作用を引き起こしました。この動作を元に戻すことで、非同期Rustアプリケーションにおけるタスク実行の期待されるパフォーマンスと信頼性を回復することを目指しています。Tokioを使用している開発者は、これらのバージョンに更新して、回復された動作の恩恵を受けることを検討するべきです。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "963f2e7980579525065b83b8c65b8d498c17190999685ae8cc52e09dc17a86d9",
+      "source": "Lobsters Rust",
+      "title": "krabby: 高速なRustコンパイラの作成",
+      "url": "https://bal-e.org/speed/krabby/",
+      "summary": "コメント",
+      "publishedAt": "2026-05-05T22:22:30.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9a16c039193e456953fd5d5be85245da3ec3e34f08781b15e0fde47b773dda4b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] パッケージ名前空間としてのDNSドメイン",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=4#post_64",
+      "summary": "jmillikin: もし私がパッケージ https://crates.io/crates/jmillikin-serde-json を公開するとしたら、rustc に公開される名前として明白な選択肢は jmillikin_serde_json です。lib.name を serde_json に設定すると混乱を招きます。ユーザーが期待するものとは異なり、予測する方法がありません。「jmillikin-serde-json」という文字列に機械的な変換を適用して「serde_json」を生成することはできず、類似の名前に対して誤った結果を生み出します。",
+      "publishedAt": "2026-05-05T23:21:54.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b49f7e3c9054d1c993662c2bbc46f2b0d30019d631c486c6d2e43397a890bda",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.1: 修正: ディープリンクに引数の追加が含まれる可能性",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.1",
+      "summary": "例: \"enable-devtools-experiment\" が .command_line_args に渡されるときに引数リストに追加されます",
+      "publishedAt": "2026-05-05T14:33:09.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "976f2e8143102d0dc6488788acc009910ada72da11c15c4b2d7b2a666cd128fc",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-04 Rust Arcリファクタリング：18倍の性能向上の事例",
+      "url": "https://rustcc.cn/article?id=b2c2bc98-7d94-483c-8a37-5966515dcfa6",
+      "summary": "Rust Arcリファクタリング：18倍の性能向上の事例",
+      "publishedAt": "2026-05-04T01:09:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-06T00:18:05.126Z"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-06",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "32a64af04ed29c46bc945010a89cfbeb81d82425ef0010fc0b0ddfb6b87c961e",
+      "source": "Rust Internals",
+      "title": "`std::marker::PhantomUnsized` marker type",
+      "url": "https://internals.rust-lang.org/t/std-phantomunsized-marker-type/24219#post_5",
+      "summary": "As an extension, PhantomUnsized could gain a type parameter specifying the pointer metadata. The type must be Copy and have the same layout as usize (for now, assuming the compiler can't take types larger/smaller than usize).\nFor example you could define your own 2D plane type:\n// NOTE: This would not be compatible with the current `usize` restriction.\n// However, I'm assuming this restriction would exist because the compiler\n// assumes pointer metadata has the same layout as a pointer.…",
+      "publishedAt": "2026-05-05T21:26:00.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        8
+      ],
+      "reason": "Enhances handling of unsized types in Rust.",
+      "suggestedTitle": "Introducing `std::marker::PhantomUnsized` in Rust",
+      "suggestedSummary": "The new `std::marker::PhantomUnsized` marker type has been introduced in Rust, allowing developers to work with types that have no compile-time or runtime defined size. This marker type is particularly useful in scenarios where you need to handle types with external metadata, providing a more 'Rust-like' syntax for such operations. By leveraging this new type, Rust developers can now more effectively manage unsized types in their projects, potentially simplifying code and improving type safety.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "aa6ebd0651404ce1592fa96b3ec6b40b237c1c4a5b63272e4fb7ca4e26e03c11",
+      "source": "Tokio",
+      "title": "Tokio v1.52.2",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.2",
+      "summary": "1.52.2 (May 4th, 2026)\nThis release reverts the LIFO slot stealing change introduced in 1.51.0 (#7431), due to its performance impact. (#8100)",
+      "publishedAt": "2026-05-04T12:49:23.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        92,
+        93
+      ],
+      "reason": "Critical updates for Tokio users.",
+      "suggestedTitle": "Tokio v1.52.2 and v1.51.1: Reverting LIFO Slot Stealing",
+      "suggestedSummary": "The latest patch releases of Tokio, v1.52.2 and v1.51.1, have reverted the LIFO slot stealing change introduced in v1.51.0. This change was initially aimed at optimizing task scheduling but led to unintended side effects in certain applications. By reverting this behavior, the updates aim to restore the expected performance and reliability of task execution in asynchronous Rust applications. Developers using Tokio should consider updating to these versions to benefit from the restored behavior.",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "963f2e7980579525065b83b8c65b8d498c17190999685ae8cc52e09dc17a86d9",
+      "source": "Lobsters Rust",
+      "title": "krabby: making a fast Rust compiler",
+      "url": "https://bal-e.org/speed/krabby/",
+      "summary": "Comments",
+      "publishedAt": "2026-05-05T22:22:30.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9a16c039193e456953fd5d5be85245da3ec3e34f08781b15e0fde47b773dda4b",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] DNS domains as package namespaces",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=4#post_64",
+      "summary": "jmillikin:\nIf I were to publish a package https://crates,io/crates/jmillikin-serde-json then the only obvious choice for the name that's exposed to rustc is jmillikin_serde_json. If I were to set lib.name to serde_json then that would be confusing -- it's different from what users expect, and there's no way to predict it. There's no mechanical transformation that can be applied to the string \"jmillikin-serde-json\" to produce \"serde_json\" without generating incorrect results for similar names.…",
+      "publishedAt": "2026-05-05T23:21:54.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b49f7e3c9054d1c993662c2bbc46f2b0d30019d631c486c6d2e43397a890bda",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.1: fix: deep link might contain arg additions",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.1",
+      "summary": "e.g. \"enable-devtools-experiment\"  is added to the arg list when it is passed to .command_line_args",
+      "publishedAt": "2026-05-05T14:33:09.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "976f2e8143102d0dc6488788acc009910ada72da11c15c4b2d7b2a666cd128fc",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-04 Rust Arc重构：一个18倍性能提升的案例",
+      "url": "https://rustcc.cn/article?id=b2c2bc98-7d94-483c-8a37-5966515dcfa6",
+      "summary": "Rust Arc重构：一个18倍性能提升的案例\n核心问题\nRateKeeper 速率限制服务在处理大型选择器池（25,000 个候选键）时，无法达到 5k RPS 的目标性能，只能跑到约 3.3k-3.5k RPS，p99 延迟高达 18.5-18.7 毫秒。\n问题根源\n代码在语义上看起来简单、安全、易理解，但热路径里埋着明显的性能陷阱：\n每次请求都深度克隆大型不可变状态\n即使最终只需要返回一个键，每个请求也会：\n\n克隆完整的 quota 配置\n复制多达 25,000 个键\n重新计算整个键集的 generation 哈希\n这些键值并不会发送给 Dragonfly，只是在应用层用来把序号映射回配置键\n性能数据\n优化前基准：实际 RPS 约 3.3k-3.5k，应用层平均延迟约 9.0 毫秒\nCriterion 基准（25k 键池）：当前 resolve 操作约 2.17 毫秒，配置 quota 克隆约 0.79 毫秒，仅元数据处理约 1.30 毫秒\n关键教训\n在 Rust…",
+      "publishedAt": "2026-05-04T01:09:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-06T00:17:38.539Z"
+  }
+}

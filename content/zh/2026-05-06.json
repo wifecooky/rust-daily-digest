@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-06",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "32a64af04ed29c46bc945010a89cfbeb81d82425ef0010fc0b0ddfb6b87c961e",
+      "source": "Rust Internals",
+      "title": "`std::marker::PhantomUnsized` 标记类型",
+      "url": "https://internals.rust-lang.org/t/std-phantomunsized-marker-type/24219#post_5",
+      "summary": "作为扩展，PhantomUnsized 可以获得一个类型参数来指定指针元数据。该类型必须是 Copy，并且布局与 usize 相同（目前假设编译器不能接受比 usize 大/小的类型）。例如，您可以定义自己的二维平面类型：// 注意：这与当前的 `usize` 限制不兼容。然而，我假设这种限制存在是因为编译器假设指针元数据的布局与指针相同。…",
+      "publishedAt": "2026-05-05T21:26:00.000Z",
+      "score": 37,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        8
+      ],
+      "reason": "Enhances handling of unsized types in Rust.",
+      "suggestedTitle": "在 Rust 中引入 `std::marker::PhantomUnsized`",
+      "suggestedSummary": "Rust 中引入了新的 `std::marker::PhantomUnsized` 标记类型，允许开发者处理没有编译时或运行时定义大小的类型。这种标记类型在需要处理具有外部元数据的类型时特别有用，为此类操作提供了更“Rust 风格”的语法。通过利用这一新类型，Rust 开发者现在可以更有效地管理项目中的不定大小类型，可能简化代码并提高类型安全性。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "aa6ebd0651404ce1592fa96b3ec6b40b237c1c4a5b63272e4fb7ca4e26e03c11",
+      "source": "Tokio",
+      "title": "Tokio v1.52.2",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.2",
+      "summary": "1.52.2（2026年5月4日）此版本回退了1.51.0（#7431）中引入的LIFO槽位窃取更改，因为其对性能的影响。（#8100）",
+      "publishedAt": "2026-05-04T12:49:23.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        92,
+        93
+      ],
+      "reason": "Critical updates for Tokio users.",
+      "suggestedTitle": "Tokio v1.52.2 和 v1.51.1：回退LIFO槽位窃取",
+      "suggestedSummary": "Tokio的最新补丁版本v1.52.2和v1.51.1回退了在v1.51.0中引入的LIFO槽位窃取更改。该更改最初旨在优化任务调度，但在某些应用中导致了意想不到的副作用。通过回退此行为，这些更新旨在恢复异步Rust应用中任务执行的预期性能和可靠性。使用Tokio的开发者应考虑更新到这些版本，以受益于恢复的行为。",
+      "relatedSources": [
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "963f2e7980579525065b83b8c65b8d498c17190999685ae8cc52e09dc17a86d9",
+      "source": "Lobsters Rust",
+      "title": "krabby：打造快速的Rust编译器",
+      "url": "https://bal-e.org/speed/krabby/",
+      "summary": "评论",
+      "publishedAt": "2026-05-05T22:22:30.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9a16c039193e456953fd5d5be85245da3ec3e34f08781b15e0fde47b773dda4b",
+      "source": "Rust Internals",
+      "title": "[预RFC] 将DNS域名作为包命名空间",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=4#post_64",
+      "summary": "jmillikin: 如果我发布一个包 https://crates.io/crates/jmillikin-serde-json，那么唯一显而易见的选择是将其名称暴露给 rustc 为 jmillikin_serde_json。如果我将 lib.name 设置为 serde_json，那将会令人困惑——这与用户的期望不同，并且无法预测。没有任何机械转换可以将字符串“jmillikin-serde-json”转换为“serde_json”而不对类似名称产生错误结果。",
+      "publishedAt": "2026-05-05T23:21:54.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b49f7e3c9054d1c993662c2bbc46f2b0d30019d631c486c6d2e43397a890bda",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.1：修复：深度链接可能包含参数添加",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.1",
+      "summary": "例如，当 \"enable-devtools-experiment\" 被传递到 .command_line_args 时，它会被添加到参数列表中",
+      "publishedAt": "2026-05-05T14:33:09.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "976f2e8143102d0dc6488788acc009910ada72da11c15c4b2d7b2a666cd128fc",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-04 Rust Arc重构：一个18倍性能提升的案例",
+      "url": "https://rustcc.cn/article?id=b2c2bc98-7d94-483c-8a37-5966515dcfa6",
+      "summary": "Rust Arc重构：一个18倍性能提升的案例",
+      "publishedAt": "2026-05-04T01:09:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-06T00:17:50.427Z"
+  }
+}
