@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-07",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "1f7abcbc8aaaa00fa4db91eba434cf1820a45ddd120252d207ae3e4439fedc49",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] target-glibc: Proposal to add native support for GLIBC versions for the -gnu targets",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-target-glibc-proposal-to-add-native-support-for-glibc-versions-for-the-gnu-targets/24225#post_9",
+      "summary": "nikkon-dev:\nThis is quite a trivial task. A standalone binary may either automatically download the required glibc version sources or use whatever sources the user provides (not from the linked libc.so.6 on your system).\nOh, I was thinking of something that would take my existing libc.so.6 and make the stub directly from it. Building from sources seems complicated for cross-compilations, but I understand this is not a trivial problem that is guaranteed to be amenable to such \"shortcuts\".…",
+      "publishedAt": "2026-05-06T14:43:07.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        2,
+        3,
+        5
+      ],
+      "reason": "Potential compiler and tooling changes",
+      "suggestedTitle": "Pre-RFC: Native GLIBC Version Support in Rust Toolchain",
+      "suggestedSummary": "A new pre-RFC proposes adding native support for specifying GLIBC versions in Rust's rustc and cargo for -gnu targets. This change would allow developers to declare a binary's GLIBC deployment target, potentially improving compatibility and deployment flexibility. The discussion highlights the complexity of such an implementation, emphasizing the need for a standalone tool to manage local GLIBC to stub library conversions. This proposal could significantly impact Rust developers targeting Linux environments, offering more precise control over binary compatibility.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c16360d0fe43197b89a3dfdce8997e5af76b9bd2b56ecc6024556e6bbdb1e1b6",
+      "source": "Tauri",
+      "title": "tauri v2.11.1",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.11.1",
+      "summary": "Cargo Audit\n\n\nFetching advisory database from `https://github.com/RustSec/advisory-db.git`\n      Loaded 1067 security advisories (from /home/runner/.cargo/advisory-db)\n    Updating crates.io index\n    Scanning Cargo.lock for vulnerabilities (1088 crate dependencies)\nCrate:     atk\nVersion:   0.18.2\nWarning:   unmaintained\nTitle:     gtk-rs GTK3 bindings - no longer maintained\nDate:      2024-03-04\nID:        RUSTSEC-2024-0413\nURL:       https://rustsec.org/advisories/RUSTSEC-2024-0413…",
+      "publishedAt": "2026-05-06T10:17:49.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        43
+      ],
+      "reason": "Major crate release",
+      "suggestedTitle": "Tauri v2.11.1: Enhancements and Security Updates",
+      "suggestedSummary": "Tauri, a popular toolkit for building desktop applications with web technologies, has released version 2.11.1. This update includes several security enhancements and bug fixes, as detailed in the Cargo audit logs. Tauri's ongoing improvements continue to make it a strong choice for Rust developers looking to create cross-platform apps with a focus on security and performance. This release underscores Tauri's commitment to maintaining a robust and secure framework for desktop application development.",
+      "relatedSources": [
+        "Tauri"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "76c7d846cc5ffc6ac9582b5707d5a6719ef7955692dab30ed4b793a9a11916b8",
+      "source": "Rust Users Forum",
+      "title": "Building a Production Multilingual PII Detection System in Rust with GLiNER2",
+      "url": "https://users.rust-lang.org/t/building-a-production-multilingual-pii-detection-system-in-rust-with-gliner2/139964#post_1",
+      "summary": "Building a Production Multilingual PII Detection System in Rust with GLiNER2\n\n\n\nI want to share how we built PII Engineer, an open-source, multilingual PII detection system written entirely in Rust. It detects names, phone numbers, government IDs, addresses, and more across 50+ languages with no GPU required \nThis is a deep dive into the architecture, the key crates involved, and lessons learned running ONNX transformer models in Rust at production latency (~180ms p50).\nArchitecture Overview…",
+      "publishedAt": "2026-05-05T23:35:48.000Z",
+      "score": 25,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "29fb6aca0ef6b958f647c2f7859dd5c3ea65d08b4ba59be1a5a450173e481be4",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust + axumでTodo CRUD APIを実装してHTTPを理解する",
+      "url": "https://zenn.dev/ibukinagase/articles/30db055eae4266",
+      "summary": "Rust + axumでTodo CRUD APIを作ってバックエンドを理解する\n\n この記事でできること\n\nRust + axumでCRUD APIを作れる\nHTTP / RESTの流れが理解できる\nhandler / State / Vecの役割が分かる\n\n\n このシリーズでできること\n1ヶ月目: Rustバックエンド\n2ヶ月目: Reactフロントエンド\n最終成果物: Rust + React + PostgreSQL のTodo/学習管理アプリ\n\n バックエンド(Rust)\n\n Todo / 学習管理API\n機能:\n- ユーザー登録\n- ログイン\n- JWT認証\n- Todo...",
+      "publishedAt": "2026-05-06T13:08:33.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "96b6664c68c4ba3fdd219e895e6c8022c5b1fa9b655c13e6762f95c561421aef",
+      "source": "Google News Rust",
+      "title": "Study compares Rust and C languages for embedded firmware development - CNX Software",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdnQxQmdPUlk2dDdEN2tuZUduVXYxU21fN3NJZUZXOGlEYTlTRzVZN2o2akpXUDBKUmFyVV94SktUR1hTcktxZXYySERCV3JoSkRlOHFaU0U5a095d3l2d2syZkp5VXdjTjJ1aF9EUjB5WjlIS2Z6Z0RuLVBmNXVpLUVLOV9XeGt5WXU3djQxT0dVSXdxcFJ0a1Q5bzk0QkRHQ25adTFxYmxvWDlIMmxn0gG3AUFVX3lxTE5vRzZKOWhmcXNpZVZLWGFyMzVpNld3b25jOVd3UW93ZmtyOUZ6dHFLZzhhc19aQ1hUMjAwRXVfZzJIUWdqTVN5UGQ1NnlDX3k0QktYQWtGS2FUeDVLeXVxZnZVcWRtRXRlNWlaSmkyTE9hM1ltSVFsRHB5cnJIR1hIQWJLUk4wX3JVQ05VNldSQmJFVkQwZnQycHI5dm9zRUlZaENCZUt5ZGlIcmRzNzRPS05kQTk3QQ?oc=5",
+      "summary": "Study compares Rust and C languages for embedded firmware development  CNX Software",
+      "publishedAt": "2026-05-06T04:52:07.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5a5eb2bfc73e8ac8ce7f2120ad35a4cc5a411245bdb49c8faec6d186c0c545f1",
+      "source": "Google News Rust",
+      "title": "Embedded Rust or C Firmware? Lessons from an Industrial Microcontroller Use Case with Ariel OS - Adafruit",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNN210NFVOTGUtRVFyOXZtRmJhbUpDMlEtWGFpNGlLZkdlUExlR252Xy13Z3lxankxeXNMWmx1QUJfVnVCQnZTaXVfQy13OGtGS1Y5WHl2bDBIbEc5T3JRTWJQbHBNQmNPMjBldk5zS3JCVWVQXzJYMVQ5d0NrUkgtSmoxZmJNVzI0N2xsbnhpZUJmMWIxZHlIUm9CMGNObDF1U01GQ1QxRjdvMG9Rb2o2d2RqV04yVGhxdE4zTUszN1kyNjE4a0ROVGlkSQ?oc=5",
+      "summary": "Embedded Rust or C Firmware? Lessons from an Industrial Microcontroller Use Case with Ariel OS  Adafruit",
+      "publishedAt": "2026-05-05T18:40:29.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cdd1353aa02515ab8a7c5831c685fef3aa313df416e70250f6c1d8966b420af8",
+      "source": "Rust Users Forum",
+      "title": "Is there exists a Config Management crate?",
+      "url": "https://users.rust-lang.org/t/is-there-exists-a-config-management-crate/139952#post_4",
+      "summary": "I'd take a look at figment. Started using it recently, liking it so far. Out of the box it handles layered reading (defaults + file + env) and gives proper errors like key window.width in config.toml instead of raw serde output, which really helps when fields are missing or malformed. I'm only using the basics myself, but the crate is extensible - there are third-party Provider`s out there (like this one), and you can write your own if nothing fits.\nIt doesn't handle writing to disk (that's…",
+      "publishedAt": "2026-05-05T20:56:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-07T00:17:34.014Z"
+  }
+}

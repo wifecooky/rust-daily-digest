@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-07",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "1f7abcbc8aaaa00fa4db91eba434cf1820a45ddd120252d207ae3e4439fedc49",
+      "source": "Rust Internals",
+      "title": "[预RFC] target-glibc: 提议为-gnu目标添加对GLIBC版本的本地支持",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-target-glibc-proposal-to-add-native-support-for-glibc-versions-for-the-gnu-targets/24225#post_9",
+      "summary": "nikkon-dev:\n这是一项相当简单的任务。一个独立的二进制文件可以自动下载所需的glibc版本源代码，或者使用用户提供的任何源代码（而不是来自系统上链接的libc.so.6）。\n哦，我在想是否可以直接从现有的libc.so.6中生成存根。从源代码构建似乎对于交叉编译来说很复杂，但我理解这不是一个可以通过这种“捷径”解决的简单问题。…",
+      "publishedAt": "2026-05-06T14:43:07.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        2,
+        3,
+        5
+      ],
+      "reason": "Potential compiler and tooling changes",
+      "suggestedTitle": "预RFC: Rust工具链中的本地GLIBC版本支持",
+      "suggestedSummary": "一个新的预RFC提议在Rust的rustc和cargo中为-gnu目标添加指定GLIBC版本的本地支持。此更改将允许开发人员声明二进制文件的GLIBC部署目标，可能会提高兼容性和部署灵活性。讨论强调了此类实现的复杂性，强调需要一个独立工具来管理本地GLIBC到存根库的转换。该提议可能会对面向Linux环境的Rust开发人员产生重大影响，提供对二进制兼容性更精确的控制。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c16360d0fe43197b89a3dfdce8997e5af76b9bd2b56ecc6024556e6bbdb1e1b6",
+      "source": "Tauri",
+      "title": "tauri v2.11.1",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.11.1",
+      "summary": "Cargo 审计",
+      "publishedAt": "2026-05-06T10:17:49.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        43
+      ],
+      "reason": "Major crate release",
+      "suggestedTitle": "Tauri v2.11.1：增强和安全更新",
+      "suggestedSummary": "Tauri 是一个流行的工具包，用于使用 Web 技术构建桌面应用程序，现已发布版本 2.11.1。此更新包括多个安全增强和错误修复，详细信息可在 Cargo 审计日志中找到。Tauri 的持续改进使其成为 Rust 开发者创建跨平台应用程序的强大选择，重点关注安全性和性能。此版本强调了 Tauri 在维护一个健壮且安全的桌面应用程序开发框架方面的承诺。",
+      "relatedSources": [
+        "Tauri"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "76c7d846cc5ffc6ac9582b5707d5a6719ef7955692dab30ed4b793a9a11916b8",
+      "source": "Rust Users Forum",
+      "title": "使用GLiNER2在Rust中构建生产级多语言PII检测系统",
+      "url": "https://users.rust-lang.org/t/building-a-production-multilingual-pii-detection-system-in-rust-with-gliner2/139964#post_1",
+      "summary": "使用GLiNER2在Rust中构建生产级多语言PII检测系统",
+      "publishedAt": "2026-05-05T23:35:48.000Z",
+      "score": 25,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "29fb6aca0ef6b958f647c2f7859dd5c3ea65d08b4ba59be1a5a450173e481be4",
+      "source": "Zenn Rust (JP)",
+      "title": "使用Rust + axum实现Todo CRUD API并理解HTTP",
+      "url": "https://zenn.dev/ibukinagase/articles/30db055eae4266",
+      "summary": "通过使用Rust + axum创建Todo CRUD API来理解后端",
+      "publishedAt": "2026-05-06T13:08:33.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "96b6664c68c4ba3fdd219e895e6c8022c5b1fa9b655c13e6762f95c561421aef",
+      "source": "Google News Rust",
+      "title": "研究比较 Rust 和 C 语言在嵌入式固件开发中的应用 - CNX Software",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNdnQxQmdPUlk2dDdEN2tuZUduVXYxU21fN3NJZUZXOGlEYTlTRzVZN2o2akpXUDBKUmFyVV94SktUR1hTcktxZXYySERCV3JoSkRlOHFaU0U5a095d3l2d2syZkp5VXdjTjJ1aF9EUjB5WjlIS2Z6Z0RuLVBmNXVpLUVLOV9XeGt5WXU3djQxT0dVSXdxcFJ0a1Q5bzk0QkRHQ25adTFxYmxvWDlIMmxn0gG3AUFVX3lxTE5vRzZKOWhmcXNpZVZLWGFyMzVpNld3b25jOVd3UW93ZmtyOUZ6dHFLZzhhc19aQ1hUMjAwRXVfZzJIUWdqTVN5UGQ1NnlDX3k0QktYQWtGS2FUeDVLeXVxZnZVcWRtRXRlNWlaSmkyTE9hM1ltSVFsRHB5cnJIR1hIQWJLUk4wX3JVQ05VNldSQmJFVkQwZnQycHI5dm9zRUlZaENCZUt5ZGlIcmRzNzRPS05kQTk3QQ?oc=5",
+      "summary": "研究比较 Rust 和 C 语言在嵌入式固件开发中的应用 - CNX Software",
+      "publishedAt": "2026-05-06T04:52:07.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5a5eb2bfc73e8ac8ce7f2120ad35a4cc5a411245bdb49c8faec6d186c0c545f1",
+      "source": "Google News Rust",
+      "title": "嵌入式Rust或C固件？来自工业微控制器使用案例与Ariel OS的经验 - Adafruit",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNN210NFVOTGUtRVFyOXZtRmJhbUpDMlEtWGFpNGlLZkdlUExlR252Xy13Z3lxankxeXNMWmx1QUJfVnVCQnZTaXVfQy13OGtGS1Y5WHl2bDBIbEc5T3JRTWJQbHBNQmNPMjBldk5zS3JCVWVQXzJYMVQ5d0NrUkgtSmoxZmJNVzI0N2xsbnhpZUJmMWIxZHlIUm9CMGNObDF1U01GQ1QxRjdvMG9Rb2o2d2RqV04yVGhxdE4zTUszN1kyNjE4a0ROVGlkSQ?oc=5",
+      "summary": "嵌入式Rust或C固件？来自工业微控制器使用案例与Ariel OS的经验 - Adafruit",
+      "publishedAt": "2026-05-05T18:40:29.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cdd1353aa02515ab8a7c5831c685fef3aa313df416e70250f6c1d8966b420af8",
+      "source": "Rust Users Forum",
+      "title": "是否存在一个配置管理库？",
+      "url": "https://users.rust-lang.org/t/is-there-exists-a-config-management-crate/139952#post_4",
+      "summary": "我建议看看 figment。我最近开始使用它，目前很喜欢。开箱即用，它可以处理分层读取（默认值 + 文件 + 环境变量），并提供正确的错误信息，比如在 config.toml 中的键 window.width，而不是原始的 serde 输出，这在字段缺失或格式错误时非常有帮助。我自己只使用了基本功能，但这个库是可扩展的——有一些第三方的 Provider（比如这个），如果没有合适的，你也可以自己编写。它不处理写入磁盘（这...",
+      "publishedAt": "2026-05-05T20:56:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-07T00:17:38.782Z"
+  }
+}
