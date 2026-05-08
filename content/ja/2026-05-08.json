@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-08",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "28fbb0b0139c9bf44896b076207bb5da12df8f9ac5d9bd64de1950d98149096b",
+      "source": "Rust Users Forum",
+      "title": "音の特殊化",
+      "url": "https://users.rust-lang.org/t/sound-specialization/139988#post_3",
+      "summary": "私の知る限り、そのリポジトリの問題は、新しいソルバーで不安定な機能を動作させることに関するものであり、機能自体を完成させることについてではありません（ただし、新しいソルバーが導入される前に、これや他の主要な型システム機能が導入されることはないと思います）。これが特殊化の追跡問題です。ラベルや最近のコメントから判断すると、min_specializationは何らかの形式化や再実施（新しいRFCなど）なしには安定化しないでしょう。とはいえ、私はどのチームにも所属していません。それにはいくつかの…",
+      "publishedAt": "2026-05-07T21:31:30.000Z",
+      "score": 55,
+      "relatedCount": 4,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Sound specialization impacts Rust development",
+      "suggestedTitle": "音の特殊化：Rustの新時代",
+      "suggestedSummary": "Rustにおける音の特殊化に関する議論が勢いを増しており、この機能を新しいソルバーと統合することに焦点を当てています。この進展は、Rustにおける特殊化を安定化させ、開発者が安全性を犠牲にすることなく、トレイトの特殊な実装を定義できるようにすることを目的としています。その影響は大きく、パフォーマンスの向上や、安全でない回避策を使わないより表現力豊かなコードが期待されます。この変更により、複雑なRustプロジェクトがより効率的で保守しやすくなる可能性があります。",
+      "relatedSources": [
+        "Rust Users Forum",
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "6421f2e2306e338909ae2bb898775e88c3955405dbd8a2f6dfa150a76425f10c",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] target-glibc: -gnuターゲット用のGLIBCバージョンのネイティブサポート追加提案",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-target-glibc-proposal-to-add-native-support-for-glibc-versions-for-the-gnu-targets/24225#post_14",
+      "summary": "nikkon-dev: あなたはポイントを見逃していると思います。このRFCは、そのような回避策を行うことを妨げるものではありません。私は、アプリケーション開発者がそのような「回避策」を書く必要をなくすコンパイラ機能を提案しているのかと思いました。私の理解が間違っているのでしょうか？もしそうなら、あなたの機能が何を意図しているのか明確にしてください。",
+      "publishedAt": "2026-05-07T14:07:38.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "c58a3160924926c3ca3c6a9e4438411e96f5ae1791a97a56d189de5b8130a88b",
+      "source": "Rust Users Forum",
+      "title": "Rust+Qt+シェーダー、どのように統合するか？",
+      "url": "https://users.rust-lang.org/t/rust-qt-shaders-how-to-integrate/139984#post_7",
+      "summary": "しかし、待ってください。私は最近、WaylandやX11を使用せずにRaspberry PiとJetson NanoでRustとWGPUを使った実験を行っており、成功を収めました。残念ながら、私のAIの友人がコードを書いて動作させたため、詳細に説明することはできません。Linux KMSに依存しており、プラットフォームに応じてGLまたはVulkanを使用していることは知っています。もしかしたら、あなたのAIの友人が助けてくれるかもしれません...",
+      "publishedAt": "2026-05-07T21:33:02.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "ea6c8fe9cfdb74e0fc1ec624ab22a80afcc374edaa2144437255321d00076982",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] パッケージ名前空間としてのDNSドメイン",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-dns-domains-as-package-namespaces/24202?page=4#post_69",
+      "summary": "lib.nameの使用は慣例として避けられています。Rustには多くの混乱を招く要素がありますが、人々の善意のおかげで、すべての.rsファイルがRustクイズというわけではありません。投稿者は皆にlib.nameを使用することを奨励していますが、それはすでに一般的なケースではありません。現在、人々は.rsファイルを読むだけで、どのクレートが使用されているかをある程度の自信を持って判断できますが、そのクレートのバージョンまではわかりません。提案された名前空間スキームでは、それを期待することはできず、代わりにCargo.tomlも読む必要があります。",
+      "publishedAt": "2026-05-07T01:14:41.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-08T00:18:28.415Z"
+  }
+}
