@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-09",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "82a6da631f77f09fc5a045c2e92535c03e27f8480a4cdca679c225c80d96ab66",
+      "source": "Google News Rust",
+      "title": "NVIDIA Releases CUDA-Oxide 0.1 For Experimental Rust-To-CUDA Compiler - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01WHZ2VEUwY1RRZTNvT1RzME5mWGU4bEJ4Y0NOLXFzbFliNTZ5Y2NRRk9LRGlqQ2pMLXAyVDRxRWxvQm9kTjVkdGhEOGY4YVN1OGE3T0ducmtyUWxiVy0zWQ?oc=5",
+      "summary": "NVIDIA Releases CUDA-Oxide 0.1 For Experimental Rust-To-CUDA Compiler  Phoronix",
+      "publishedAt": "2026-05-08T14:17:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        36
+      ],
+      "reason": "New Rust-to-CUDA Compiler",
+      "suggestedTitle": "NVIDIA Releases CUDA-Oxide 0.1 for Rust-to-CUDA Compilation",
+      "suggestedSummary": "NVIDIA has launched CUDA-Oxide 0.1, an experimental compiler that enables Rust code to be compiled into CUDA for GPU execution. This release marks a significant step in allowing Rust developers to leverage NVIDIA's CUDA platform for high-performance computing. By translating Rust code into CUDA, developers can now utilize Rust's safety and concurrency features while tapping into the computational power of NVIDIA GPUs. This development opens new possibilities for Rust in the field of parallel and GPU computing.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d3168aa2e3edf446223f808232cf0332f24f5f5746c746a9aa34b2b39ed0ea22",
+      "source": "Rust Users Forum",
+      "title": "Rustime : Compile Time Code Evaluation And Generation Library",
+      "url": "https://users.rust-lang.org/t/rustime-compile-time-code-evaluation-and-generation-library/140005#post_1",
+      "summary": "Hey everyone! I just finished working on Rustime, a library for code evaluation and generation at compile time. I'd really appreciate it if you guys could check it out and give me some feedback or suggestions on how to improve it!\nThe Github repository : GitHub - fuji-184/Rustime · GitHub\nCheck out this quick example of how Rustime works :\n[dependencies]\nrustime = { git = \"https://github.com/fuji-184/Rustime\" }\n\n[features]\ndefault = []\nrustime = []    # important\n\nuse rustime::*;…",
+      "publishedAt": "2026-05-08T23:05:47.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        22
+      ],
+      "reason": "New Compile Time Library",
+      "suggestedTitle": "Rustime: Compile Time Code Evaluation and Generation",
+      "suggestedSummary": "Rustime is a newly released library for the Rust programming language that focuses on compile-time code evaluation and generation. This library allows developers to execute code and generate new code during the compilation process, which can lead to more efficient and optimized Rust applications. By leveraging Rustime, developers can perform complex computations and code transformations at compile time, reducing runtime overhead and improving performance. This tool is particularly useful for developers looking to optimize their Rust codebases without sacrificing safety and maintainability.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "ebac1a2543644af276967fb1c5cf048b74a4538cb48b3d0170facfd5f0bed3cf",
+      "source": "Lobsters Rust",
+      "title": "hpke-ng: Faster, Smaller, Harder HPKE for Rust",
+      "url": "https://symbolic.software/blog/2026-05-08-hpke-ng/",
+      "summary": "Comments",
+      "publishedAt": "2026-05-08T08:45:13.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bb324709273d5056260934b52252949afa5929c98bae94374f6341ab3def8cdf",
+      "source": "Lobsters Rust",
+      "title": "cuda-oxide: cuda-oxide is an experimental Rust-to-CUDA compiler",
+      "url": "https://github.com/NVlabs/cuda-oxide",
+      "summary": "Comments",
+      "publishedAt": "2026-05-08T01:41:53.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4c88f8ec5dd938e107766c9c36b6655d20c1f9382211cac65a79665b98ff6b95",
+      "source": "RustCC (CN)",
+      "title": "Warp-parse 0.22 版本发布",
+      "url": "https://rustcc.cn/article?id=5f215bb4-c76f-4fb6-aa8c-96eaae97de38",
+      "summary": "WarpParse 0.22\n亲爱的用户们，\n我们很高兴地宣布 WarpParse 0.22 版本发布！本次更新主要聚焦于 运行时可运维性、远端工程同步、知识库能力补强，以及监控与规则体验增强。\n本次更新亮点\n运行时管理面能力补齐，支持标准化状态查询与重载。\n远端工程初始化、更新、热重载路径进一步统一。\n知识库、WPL 与监控链路文档更加完整，正式使用路径更清晰。\nAdded\n运行时管理面\n新增围绕在线实例的标准化运维入口：\nPOST /admin/v1/reloads/model\nwproj engine reload\n远端同步与热更新\n围绕远端规则仓库，当前已经形成较完整的运维路径：\nwproj init --repo <REPO> [--version <VERSION>]\nwproj conf update\nwproj engine reload\n自更新能力\n新增 CLI 自更新使用路径：\nwproj self check\nwproj self update --yes\n\n支持远程数据库\n知识库当前已支持通过 [provider] 接入远程 PostgreSQL /…",
+      "publishedAt": "2026-05-08T06:29:32.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-09T00:19:23.573Z"
+  }
+}

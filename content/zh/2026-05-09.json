@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-09",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "82a6da631f77f09fc5a045c2e92535c03e27f8480a4cdca679c225c80d96ab66",
+      "source": "Google News Rust",
+      "title": "NVIDIA发布CUDA-Oxide 0.1用于实验性Rust到CUDA编译器 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01WHZ2VEUwY1RRZTNvT1RzME5mWGU4bEJ4Y0NOLXFzbFliNTZ5Y2NRRk9LRGlqQ2pMLXAyVDRxRWxvQm9kTjVkdGhEOGY4YVN1OGE3T0ducmtyUWxiVy0zWQ?oc=5",
+      "summary": "NVIDIA发布CUDA-Oxide 0.1用于实验性Rust到CUDA编译器  Phoronix",
+      "publishedAt": "2026-05-08T14:17:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        36
+      ],
+      "reason": "New Rust-to-CUDA Compiler",
+      "suggestedTitle": "NVIDIA发布CUDA-Oxide 0.1用于Rust到CUDA编译",
+      "suggestedSummary": "NVIDIA推出了CUDA-Oxide 0.1，这是一款实验性编译器，可以将Rust代码编译为CUDA以在GPU上执行。此次发布标志着允许Rust开发者利用NVIDIA的CUDA平台进行高性能计算的重要一步。通过将Rust代码转换为CUDA，开发者现在可以在利用NVIDIA GPU计算能力的同时，使用Rust的安全性和并发特性。这一发展为Rust在并行和GPU计算领域开辟了新的可能性。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d3168aa2e3edf446223f808232cf0332f24f5f5746c746a9aa34b2b39ed0ea22",
+      "source": "Rust Users Forum",
+      "title": "Rustime：编译时代码评估和生成库",
+      "url": "https://users.rust-lang.org/t/rustime-compile-time-code-evaluation-and-generation-library/140005#post_1",
+      "summary": "大家好！我刚刚完成了Rustime的开发，这是一个用于编译时代码评估和生成的库。如果你们能查看一下并给我一些反馈或改进建议，我将非常感激！GitHub 仓库：GitHub - fuji-184/Rustime · GitHub。看看这个关于Rustime如何工作的简单示例：[dependencies] rustime = { git = \"https://github.com/fuji-184/Rustime\" } [features] default = [] rustime = [] # 重要 use rustime::*;…",
+      "publishedAt": "2026-05-08T23:05:47.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        22
+      ],
+      "reason": "New Compile Time Library",
+      "suggestedTitle": "Rustime：编译时代码评估和生成",
+      "suggestedSummary": "Rustime是一个新发布的Rust编程语言库，专注于编译时代码评估和生成。该库允许开发者在编译过程中执行代码并生成新代码，从而可以创建更高效和优化的Rust应用程序。通过利用Rustime，开发者可以在编译时执行复杂的计算和代码转换，减少运行时开销并提高性能。对于希望在不牺牲安全性和可维护性的情况下优化其Rust代码库的开发者来说，这个工具特别有用。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "ebac1a2543644af276967fb1c5cf048b74a4538cb48b3d0170facfd5f0bed3cf",
+      "source": "Lobsters Rust",
+      "title": "hpke-ng：更快、更小、更强的Rust版HPKE",
+      "url": "https://symbolic.software/blog/2026-05-08-hpke-ng/",
+      "summary": "评论",
+      "publishedAt": "2026-05-08T08:45:13.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bb324709273d5056260934b52252949afa5929c98bae94374f6341ab3def8cdf",
+      "source": "Lobsters Rust",
+      "title": "cuda-oxide：cuda-oxide 是一个实验性的 Rust 到 CUDA 编译器",
+      "url": "https://github.com/NVlabs/cuda-oxide",
+      "summary": "评论",
+      "publishedAt": "2026-05-08T01:41:53.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4c88f8ec5dd938e107766c9c36b6655d20c1f9382211cac65a79665b98ff6b95",
+      "source": "RustCC (CN)",
+      "title": "Warp-parse 0.22 版本发布",
+      "url": "https://rustcc.cn/article?id=5f215bb4-c76f-4fb6-aa8c-96eaae97de38",
+      "summary": "WarpParse 0.22\n亲爱的用户们，\n我们很高兴地宣布 WarpParse 0.22 版本发布！本次更新主要聚焦于运行时可运维性、远端工程同步、知识库能力补强，以及监控与规则体验增强。\n本次更新亮点\n运行时管理面能力补齐，支持标准化状态查询与重载。\n远端工程初始化、更新、热重载路径进一步统一。\n知识库、WPL 与监控链路文档更加完整，正式使用路径更清晰。\n新增\n运行时管理面\n新增围绕在线实例的标准化运维入口：\nPOST /admin/v1/reloads/model\nwproj engine reload\n远端同步与热更新\n围绕远端规则仓库，当前已经形成较完整的运维路径：\nwproj init --repo <REPO> [--version <VERSION>]\nwproj conf update\nwproj engine reload\n自更新能力\n新增 CLI 自更新使用路径：\nwproj self check\nwproj self update --yes\n\n支持远程数据库\n知识库当前已支持通过 [provider] 接入远程 PostgreSQL /…",
+      "publishedAt": "2026-05-08T06:29:32.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-09T00:19:29.777Z"
+  }
+}

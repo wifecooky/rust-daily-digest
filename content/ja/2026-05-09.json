@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-09",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "82a6da631f77f09fc5a045c2e92535c03e27f8480a4cdca679c225c80d96ab66",
+      "source": "Google News Rust",
+      "title": "NVIDIA、実験的なRust-To-CUDAコンパイラ用のCUDA-Oxide 0.1をリリース - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01WHZ2VEUwY1RRZTNvT1RzME5mWGU4bEJ4Y0NOLXFzbFliNTZ5Y2NRRk9LRGlqQ2pMLXAyVDRxRWxvQm9kTjVkdGhEOGY4YVN1OGE3T0ducmtyUWxiVy0zWQ?oc=5",
+      "summary": "NVIDIA、実験的なRust-To-CUDAコンパイラ用のCUDA-Oxide 0.1をリリース  Phoronix",
+      "publishedAt": "2026-05-08T14:17:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        36
+      ],
+      "reason": "New Rust-to-CUDA Compiler",
+      "suggestedTitle": "NVIDIA、Rust-to-CUDAコンパイル用のCUDA-Oxide 0.1をリリース",
+      "suggestedSummary": "NVIDIAは、RustコードをCUDAにコンパイルしてGPU上で実行可能にする実験的なコンパイラ、CUDA-Oxide 0.1を発表しました。このリリースは、Rust開発者がNVIDIAのCUDAプラットフォームを利用して高性能コンピューティングを行うための重要なステップを示しています。RustコードをCUDAに変換することで、開発者はRustの安全性と並行性の機能を活用しながら、NVIDIA GPUの計算能力を引き出すことができます。この開発により、並列およびGPUコンピューティングの分野でRustの新たな可能性が開かれます。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "d3168aa2e3edf446223f808232cf0332f24f5f5746c746a9aa34b2b39ed0ea22",
+      "source": "Rust Users Forum",
+      "title": "Rustime: コンパイル時コード評価と生成ライブラリ",
+      "url": "https://users.rust-lang.org/t/rustime-compile-time-code-evaluation-and-generation-library/140005#post_1",
+      "summary": "皆さん、こんにちは！Rustimeという、コンパイル時にコードを評価し生成するライブラリを完成させました。ぜひチェックしていただき、フィードバックや改善点の提案をいただけると嬉しいです！GitHubリポジトリ: GitHub - fuji-184/Rustime · GitHubRustimeの動作例を以下に示します：[dependencies]rustime = { git = \"https://github.com/fuji-184/Rustime\" }[features]default = []rustime = []    # 重要use rustime::*;…",
+      "publishedAt": "2026-05-08T23:05:47.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        22
+      ],
+      "reason": "New Compile Time Library",
+      "suggestedTitle": "Rustime: コンパイル時コード評価と生成",
+      "suggestedSummary": "Rustimeは、コンパイル時のコード評価と生成に特化したRustプログラミング言語用の新しいライブラリです。このライブラリを使用することで、開発者はコンパイルプロセス中にコードを実行し、新しいコードを生成することができ、より効率的で最適化されたRustアプリケーションを作成できます。Rustimeを活用することで、開発者はコンパイル時に複雑な計算やコード変換を行うことができ、実行時のオーバーヘッドを削減し、パフォーマンスを向上させることができます。このツールは、安全性と保守性を犠牲にすることなく、Rustコードベースを最適化したいと考えている開発者にとって特に有用です。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "ebac1a2543644af276967fb1c5cf048b74a4538cb48b3d0170facfd5f0bed3cf",
+      "source": "Lobsters Rust",
+      "title": "hpke-ng: Rust向けのより速く、小さく、強力なHPKE",
+      "url": "https://symbolic.software/blog/2026-05-08-hpke-ng/",
+      "summary": "コメント",
+      "publishedAt": "2026-05-08T08:45:13.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bb324709273d5056260934b52252949afa5929c98bae94374f6341ab3def8cdf",
+      "source": "Lobsters Rust",
+      "title": "cuda-oxide: cuda-oxideは実験的なRust-to-CUDAコンパイラです",
+      "url": "https://github.com/NVlabs/cuda-oxide",
+      "summary": "コメント",
+      "publishedAt": "2026-05-08T01:41:53.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4c88f8ec5dd938e107766c9c36b6655d20c1f9382211cac65a79665b98ff6b95",
+      "source": "RustCC (CN)",
+      "title": "Warp-parse 0.22 バージョンリリース",
+      "url": "https://rustcc.cn/article?id=5f215bb4-c76f-4fb6-aa8c-96eaae97de38",
+      "summary": "WarpParse 0.22\n親愛なるユーザーの皆様、\nWarpParse 0.22 バージョンのリリースをお知らせできることを嬉しく思います！今回のアップデートは、ランタイムの運用性、リモートエンジニアリングの同期、ナレッジベースの能力強化、および監視とルールの体験向上に焦点を当てています。\n今回のアップデートのハイライト\nランタイム管理面の能力を補完し、標準化された状態クエリとリロードをサポート。\nリモートエンジニアリングの初期化、更新、ホットリロードのパスをさらに統一。\nナレッジベース、WPL、および監視リンクのドキュメントがより完全になり、正式な使用パスがより明確に。\n追加された機能\nランタイム管理面\nオンラインインスタンスを中心とした標準化された運用エントリを追加：\nPOST /admin/v1/reloads/model\nwproj engine reload\nリモート同期とホット更新\nリモートルールリポジトリを中心に、現在はかなり完全な運用パスが形成されています：\nwproj init --repo <REPO> [--version <VERSION>]\nwproj conf update\nwproj engine reload\n自己更新能力\nCLI 自己更新使用パスを追加：\nwproj self check\nwproj self update --yes\n\nリモートデータベースのサポート\nナレッジベースは現在、[provider] を通じてリモート PostgreSQL /… に接続をサポートしています。",
+      "publishedAt": "2026-05-08T06:29:32.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-09T00:19:38.677Z"
+  }
+}
