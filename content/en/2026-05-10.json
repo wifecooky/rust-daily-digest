@@ -1,0 +1,122 @@
+{
+  "date": "2026-05-10",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "da9426e83f40f2dd40b055c2c3a733afe7b1471a823ba0c5c5f9bd90d14c49ac",
+      "source": "Rust Internals",
+      "title": "Include racy reads in Rust memory model with `MaybeInvalid<T>`",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289#post_1",
+      "summary": "Disclaimer: This post has nothing to do with previous post mentioning MaybeInvalid.\nUnsafe code guidelines contains a deliberate UB section mentioning the SeqLock issue, i.e. SeqLock algorithm isn’t compatible with Rust memory model. In fact, SeqLock relies on a racy read, which is known to be valid only after a subsequent check.\nThe document mentions two possible solutions:\n(a) adopt LLVM's handling of memory races (then the problematic read would merely return undef instead of UB due to a…",
+      "publishedAt": "2026-05-09T21:25:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        7
+      ],
+      "reason": "Rust memory model changes",
+      "suggestedTitle": "Racy Reads and Signal Semantics in Rust Memory Model",
+      "suggestedSummary": "The Rust Internals discussion highlights a proposal to include racy reads in the Rust memory model using `MaybeInvalid<T>`. This concept aims to refine how potentially invalid memory states are handled, which could impact the safety guarantees of unsafe code. Additionally, the discussion on signal semantics suggests adopting asynchronous signals in Rust, aligning with certain operating system features. These changes could enhance Rust's concurrency model, offering more robust and predictable behavior for systems programming.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "b3b1b52407d700f77fac039561316662d7ceee9247d96133941ef47ea4247625",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.3",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.3",
+      "summary": "chore: bump CEF to 148.0.0+147.0.10",
+      "publishedAt": "2026-05-09T11:26:29.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        62,
+        65
+      ],
+      "reason": "Major crate releases",
+      "suggestedTitle": "Tauri and Xiaomi Embrace Rust for Enhanced Performance",
+      "suggestedSummary": "The Tauri project has released `tauri-cef-v3.0.0-alpha.3`, which updates the Chromium Embedded Framework (CEF) to version 148.0.0+147.0.10. This update aims to improve the performance and stability of Tauri applications. Meanwhile, Xiaomi's HyperOS 4 leaks reveal the integration of Rust apps, highlighting Rust's growing adoption in consumer electronics for its safety and performance benefits. These developments underscore Rust's expanding role in building efficient and secure applications across various domains.",
+      "relatedSources": [
+        "Tauri",
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1965111b2674f0afca7edc60d00d50bbeef45c15ff8d3786bfd324b177553f4f",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Extremely fast MessagePack serializer for Rust",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_30",
+      "summary": "zerompk v0.5.0 has been released!\nGitHub\n  \n\nRelease v0.5.0 · nuskey8/zerompk\nWhat's Changed\n\nOpt-in schema evolution: #[msgpack(default)] and #[msgpack(allow_unknown_fields)] by @farhan-syah in #37\n\nNew Contributors\n\n@farhan-syah made their first contribution in #37\n\nFull C...\n\n\n\nThis version adds the default / allow_unknown_fields option, allowing for more flexible schema changes while maintaining compatibility!\n#[derive(FromMessagePack, ToMessagePack)]\n#[msgpack(map, allow_unknown_fields)]…",
+      "publishedAt": "2026-05-09T06:38:02.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        66,
+        90
+      ],
+      "reason": "Crate and toolchain updates",
+      "suggestedTitle": "Zerompk and Tokio Updates Boost Rust Ecosystem",
+      "suggestedSummary": "The release of `zerompk v0.5.0` introduces enhancements to this high-performance MessagePack serializer for Rust, offering opt-in features that improve serialization speed and efficiency. Concurrently, `Tokio v1.52.3` addresses issues in the mpsc channel length calculation, ensuring more reliable asynchronous operations. These updates provide Rust developers with improved tools for building high-performance and scalable applications, reinforcing Rust's position as a leading language for systems programming.",
+      "relatedSources": [
+        "Rust Users Forum",
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0eda5e1a166b2f35093d851803d7f6be057af84b2b90780cf73bb7d692516667",
+      "source": "Tokio",
+      "title": "Tokio v1.52.3",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.3",
+      "summary": "1.52.3 (May 8th, 2026)\nFixed\nsync: fix underflow in mpsc channel len() (#8062)\nsync: notify receivers in mpsc OwnedPermit::release() method (#8075)\nsync: require that an RwLock has max_readers != 0 (#8076)\nsync: return Empty from try_recv() when mpsc is closed with outstanding permits (#8074)",
+      "publishedAt": "2026-05-08T12:53:37.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "82a6da631f77f09fc5a045c2e92535c03e27f8480a4cdca679c225c80d96ab66",
+      "source": "Google News Rust",
+      "title": "NVIDIA Releases CUDA-Oxide 0.1 For Experimental Rust-To-CUDA Compiler - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01WHZ2VEUwY1RRZTNvT1RzME5mWGU4bEJ4Y0NOLXFzbFliNTZ5Y2NRRk9LRGlqQ2pMLXAyVDRxRWxvQm9kTjVkdGhEOGY4YVN1OGE3T0ducmtyUWxiVy0zWQ?oc=5",
+      "summary": "NVIDIA Releases CUDA-Oxide 0.1 For Experimental Rust-To-CUDA Compiler  Phoronix",
+      "publishedAt": "2026-05-08T14:17:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b0f29a8e287854e2db6076a78292241fb856d1269e250705daea2f6ca43198e9",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-08 Burn 0.21.0 发布：框架开销降低最高达8倍",
+      "url": "https://rustcc.cn/article?id=38d8c972-78a1-4e80-8dab-d48d62ede8f7",
+      "summary": "Burn 0.21.0 发布：框架开销降低最高达8倍\nBurn 0.21.0 带来了一轮比较扎实的性能与可靠性更新，覆盖分布式训练、后端调度、CPU 后端和内核调优等多个方向。对关注 Rust AI / ML 框架的人来说，这次更新信息量不小。\n分布式训练提速明显：基于可微分集合操作重做分布式计算架构，在 4 张 CUDA GPU 上，设备传输速度提升 16-21 倍，all_reduce 速度提升约 6 倍\n框架开销继续下压：重构设备句柄，官方给出的结论是部分场景下框架开销最高可下降 8 倍\n内核可靠性增强：改进自动调优和微基准测试策略，并加入 CubeCL 内核验证层，用于识别越界内存访问等问题\n工程化能力更完整：新增 burn.toml 项目级配置文件，引入 burn-dispatch crate，同时推出面向 WebAssembly / 嵌入式目标的轻量 CPU 后端 Burn Flex\n原文链接：https://burn.dev/blog/release-0.21.0/\nCUDA-Oxide：用纯 Rust 编写 GPU 内核的编译器后端\nCUDA-Oxide 是…",
+      "publishedAt": "2026-05-08T01:09:13.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b0969fec10e8f5f64b6f9710f407a49744613bc32904099140b425926aefeb6",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-09 NVIDIA 发布 CUDA-Oxide 0.1：实验性 Rust 到 CUDA 编译器",
+      "url": "https://rustcc.cn/article?id=180cce85-9c69-4722-82e6-260796b0b330",
+      "summary": "NVIDIA 发布 CUDA-Oxide 0.1：实验性 Rust 到 CUDA 编译器\nCUDA-Oxide 是 NVIDIA Labs 新放出的实验性项目，目标不是再包一层 DSL，而是把“用原生 Rust 写 CUDA 内核”这条链路直接打通。\nRust 直出 PTX：走自定义 rustc codegen 后端，把标准 Rust 代码编译到 NVIDIA PTX\n单源代码工作流：主机端与设备端代码可以放在同一份 Rust 源码中构建\n保留 Rust 语言表达力：支持更贴近 Rust 的类型系统、抽象方式与设备端编程体验\n仍处 Alpha 早期：目前还在积极开发期，API、稳定性和工具链都还有继续变化的空间\n如果这个方向后续跑顺，Rust 在 GPU 编程上的想象空间会比现在大很多。\n原文链接：https://nvlabs.github.io/cuda-oxide/\nBurn 0.21.0 发布：框架开销最高降低 8 倍\nBurn 0.21.0 这次更新很扎实，覆盖分布式训练、内核调优、后端调度和嵌入式 / WebAssembly…",
+      "publishedAt": "2026-05-09T01:08:14.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-10T00:17:51.150Z"
+  }
+}

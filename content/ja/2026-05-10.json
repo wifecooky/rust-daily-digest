@@ -1,0 +1,122 @@
+{
+  "date": "2026-05-10",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "da9426e83f40f2dd40b055c2c3a733afe7b1471a823ba0c5c5f9bd90d14c49ac",
+      "source": "Rust Internals",
+      "title": "Rustメモリモデルにおける`MaybeInvalid<T>`を用いた競合状態の読み込みを含める",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289#post_1",
+      "summary": "免責事項: この投稿は、以前の投稿で言及されたMaybeInvalidとは関係ありません。アンセーフコードガイドラインには、SeqLockの問題を指摘する意図的な未定義動作（UB）のセクションが含まれています。つまり、SeqLockアルゴリズムはRustのメモリモデルと互換性がありません。実際、SeqLockは競合状態の読み込みに依存しており、これは後続のチェックの後にのみ有効であることが知られています。文書には2つの解決策が記載されています: (a) LLVMのメモリ競合の取り扱いを採用する（その場合、問題のある読み込みはUBではなく未定義を返すだけになる）...",
+      "publishedAt": "2026-05-09T21:25:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        7
+      ],
+      "reason": "Rust memory model changes",
+      "suggestedTitle": "Rustメモリモデルにおける競合状態の読み込みとシグナルセマンティクス",
+      "suggestedSummary": "Rust Internalsの議論では、`MaybeInvalid<T>`を用いてRustメモリモデルに競合状態の読み込みを含める提案が強調されています。この概念は、潜在的に無効なメモリ状態の取り扱いを洗練することを目的としており、アンセーフコードの安全性保証に影響を与える可能性があります。さらに、シグナルセマンティクスに関する議論では、非同期シグナルをRustに採用することが提案されており、特定のオペレーティングシステム機能と一致します。これらの変更は、Rustの並行性モデルを強化し、システムプログラミングにおいてより堅牢で予測可能な動作を提供する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "b3b1b52407d700f77fac039561316662d7ceee9247d96133941ef47ea4247625",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.3",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.3",
+      "summary": "作業: CEFを148.0.0+147.0.10にバンプ",
+      "publishedAt": "2026-05-09T11:26:29.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        62,
+        65
+      ],
+      "reason": "Major crate releases",
+      "suggestedTitle": "TauriとXiaomi、Rustを採用してパフォーマンスを強化",
+      "suggestedSummary": "Tauriプロジェクトは、Chromium Embedded Framework (CEF) をバージョン148.0.0+147.0.10に更新した `tauri-cef-v3.0.0-alpha.3` をリリースしました。この更新は、Tauriアプリケーションのパフォーマンスと安定性を向上させることを目的としています。一方、XiaomiのHyperOS 4のリーク情報によると、Rustアプリの統合が明らかになり、安全性とパフォーマンスの利点からRustの消費者向け電子機器への採用が進んでいることが示されています。これらの開発は、さまざまな分野で効率的かつ安全なアプリケーションを構築する上でのRustの役割の拡大を強調しています。",
+      "relatedSources": [
+        "Tauri",
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1965111b2674f0afca7edc60d00d50bbeef45c15ff8d3786bfd324b177553f4f",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Rust向けの超高速MessagePackシリアライザー",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_30",
+      "summary": "zerompk v0.5.0がリリースされました！",
+      "publishedAt": "2026-05-09T06:38:02.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        66,
+        90
+      ],
+      "reason": "Crate and toolchain updates",
+      "suggestedTitle": "ZerompkとTokioのアップデートがRustエコシステムを強化",
+      "suggestedSummary": "`zerompk v0.5.0`のリリースにより、Rust向けの高性能MessagePackシリアライザーにオプトイン機能が追加され、シリアライゼーションの速度と効率が向上しました。同時に、`Tokio v1.52.3`ではmpscチャネルの長さ計算に関する問題が解決され、より信頼性の高い非同期操作が可能になっています。これらのアップデートにより、Rust開発者は高性能でスケーラブルなアプリケーションを構築するための改善されたツールを手に入れ、Rustがシステムプログラミングの主要言語としての地位を強化しています。",
+      "relatedSources": [
+        "Rust Users Forum",
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0eda5e1a166b2f35093d851803d7f6be057af84b2b90780cf73bb7d692516667",
+      "source": "Tokio",
+      "title": "Tokio v1.52.3",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.3",
+      "summary": "1.52.3 (2026年5月8日)\n修正\nsync: mpscチャネルのlen()でのアンダーフローを修正 (#8062)\nsync: mpscのOwnedPermit::release()メソッドで受信者に通知 (#8075)\nsync: RwLockがmax_readers != 0であることを要求 (#8076)\nsync: mpscが未処理の許可で閉じられた場合にtry_recv()からEmptyを返す (#8074)",
+      "publishedAt": "2026-05-08T12:53:37.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "82a6da631f77f09fc5a045c2e92535c03e27f8480a4cdca679c225c80d96ab66",
+      "source": "Google News Rust",
+      "title": "NVIDIA、実験的なRust-To-CUDAコンパイラのためのCUDA-Oxide 0.1をリリース - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01WHZ2VEUwY1RRZTNvT1RzME5mWGU4bEJ4Y0NOLXFzbFliNTZ5Y2NRRk9LRGlqQ2pMLXAyVDRxRWxvQm9kTjVkdGhEOGY4YVN1OGE3T0ducmtyUWxiVy0zWQ?oc=5",
+      "summary": "NVIDIA、実験的なRust-To-CUDAコンパイラのためのCUDA-Oxide 0.1をリリース - Phoronix",
+      "publishedAt": "2026-05-08T14:17:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b0f29a8e287854e2db6076a78292241fb856d1269e250705daea2f6ca43198e9",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-08 Burn 0.21.0 発表：フレームワークのオーバーヘッドが最大8倍削減",
+      "url": "https://rustcc.cn/article?id=38d8c972-78a1-4e80-8dab-d48d62ede8f7",
+      "summary": "Burn 0.21.0 発表：フレームワークのオーバーヘッドが最大8倍削減",
+      "publishedAt": "2026-05-08T01:09:13.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b0969fec10e8f5f64b6f9710f407a49744613bc32904099140b425926aefeb6",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-09 NVIDIA、CUDA-Oxide 0.1を発表：実験的なRustからCUDAへのコンパイラ",
+      "url": "https://rustcc.cn/article?id=180cce85-9c69-4722-82e6-260796b0b330",
+      "summary": "NVIDIA、CUDA-Oxide 0.1を発表：実験的なRustからCUDAへのコンパイラ\nCUDA-OxideはNVIDIA Labsが新たにリリースした実験的プロジェクトで、DSLをさらにラップするのではなく、「ネイティブRustでCUDAカーネルを書く」ための経路を直接開通することを目指しています。\nRustから直接PTXへ：カスタムrustc codegenバックエンドを通じて、標準のRustコードをNVIDIA PTXにコンパイル\n単一ソースコードワークフロー：ホスト側とデバイス側のコードを同じRustソース内で構築可能\nRustの言語表現力を保持：Rustに近い型システム、抽象化方法、デバイス側プログラミング体験をサポート\nまだAlpha初期段階：現在も積極的に開発中で、API、安定性、ツールチェーンにはまだ変化の余地があります\nこの方向性が今後うまく進めば、RustのGPUプログラミングにおける想像の余地は現在よりも大きくなるでしょう。\n原文リンク：https://nvlabs.github.io/cuda-oxide/\nBurn 0.21.0リリース：フレームワークのオーバーヘッドが最大8倍削減\nBurn 0.21.0の今回の更新は非常に充実しており、分散トレーニング、カーネル最適化、バックエンドスケジューリング、組み込み/ WebAssemblyをカバーしています…",
+      "publishedAt": "2026-05-09T01:08:14.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-10T00:18:09.054Z"
+  }
+}

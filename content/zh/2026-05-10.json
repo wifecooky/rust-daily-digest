@@ -1,0 +1,122 @@
+{
+  "date": "2026-05-10",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "da9426e83f40f2dd40b055c2c3a733afe7b1471a823ba0c5c5f9bd90d14c49ac",
+      "source": "Rust Internals",
+      "title": "在Rust内存模型中包含竞争性读取与`MaybeInvalid<T>`",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289#post_1",
+      "summary": "免责声明：本文与之前提到MaybeInvalid的文章无关。 不安全代码指南包含一个故意的未定义行为部分，提到SeqLock问题，即SeqLock算法与Rust内存模型不兼容。实际上，SeqLock依赖于竞争性读取，这只有在后续检查后才被认为是有效的。 文档提到两种可能的解决方案： (a) 采用LLVM对内存竞争的处理（那么有问题的读取仅会返回未定义而不是由于…",
+      "publishedAt": "2026-05-09T21:25:22.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        5,
+        7
+      ],
+      "reason": "Rust memory model changes",
+      "suggestedTitle": "Rust内存模型中的竞争性读取和信号语义",
+      "suggestedSummary": "Rust Internals讨论中提出了一个建议，即在Rust内存模型中使用`MaybeInvalid<T>`来包含竞争性读取。这个概念旨在改进对潜在无效内存状态的处理，这可能会影响不安全代码的安全保证。此外，关于信号语义的讨论建议在Rust中采用异步信号，与某些操作系统功能保持一致。这些变化可能会增强Rust的并发模型，为系统编程提供更强大和可预测的行为。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "b3b1b52407d700f77fac039561316662d7ceee9247d96133941ef47ea4247625",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.3",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.3",
+      "summary": "任务：将 CEF 更新至 148.0.0+147.0.10",
+      "publishedAt": "2026-05-09T11:26:29.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        62,
+        65
+      ],
+      "reason": "Major crate releases",
+      "suggestedTitle": "Tauri 和小米采用 Rust 提升性能",
+      "suggestedSummary": "Tauri 项目发布了 `tauri-cef-v3.0.0-alpha.3`，将 Chromium Embedded Framework (CEF) 更新至版本 148.0.0+147.0.10。此次更新旨在提高 Tauri 应用的性能和稳定性。同时，小米的 HyperOS 4 泄露信息显示了 Rust 应用的集成，突显了 Rust 在消费电子领域因其安全性和性能优势而日益受到欢迎。这些发展表明 Rust 在构建高效且安全的应用程序方面的角色正在各个领域扩展。",
+      "relatedSources": [
+        "Tauri",
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1965111b2674f0afca7edc60d00d50bbeef45c15ff8d3786bfd324b177553f4f",
+      "source": "Rust Users Forum",
+      "title": "Zerompk - Rust 的超快速 MessagePack 序列化器",
+      "url": "https://users.rust-lang.org/t/zerompk-extremely-fast-messagepack-serializer-for-rust/139108?page=2#post_30",
+      "summary": "zerompk v0.5.0 已发布！",
+      "publishedAt": "2026-05-09T06:38:02.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        66,
+        90
+      ],
+      "reason": "Crate and toolchain updates",
+      "suggestedTitle": "Zerompk 和 Tokio 更新提升了 Rust 生态系统",
+      "suggestedSummary": "`zerompk v0.5.0` 的发布为这个高性能的 Rust MessagePack 序列化器引入了增强功能，提供了可选功能以提高序列化速度和效率。同时，`Tokio v1.52.3` 解决了 mpsc 通道长度计算中的问题，确保了更可靠的异步操作。这些更新为 Rust 开发者提供了改进的工具，用于构建高性能和可扩展的应用程序，巩固了 Rust 作为系统编程领先语言的地位。",
+      "relatedSources": [
+        "Rust Users Forum",
+        "Tokio"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "0eda5e1a166b2f35093d851803d7f6be057af84b2b90780cf73bb7d692516667",
+      "source": "Tokio",
+      "title": "Tokio v1.52.3",
+      "url": "https://github.com/tokio-rs/tokio/releases/tag/tokio-1.52.3",
+      "summary": "1.52.3 (2026年5月8日)\n修复\n同步：修复mpsc通道len()中的下溢(#8062)\n同步：在mpsc OwnedPermit::release()方法中通知接收者(#8075)\n同步：要求RwLock的max_readers != 0(#8076)\n同步：当mpsc在有未完成许可的情况下关闭时，try_recv()返回Empty(#8074)",
+      "publishedAt": "2026-05-08T12:53:37.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "82a6da631f77f09fc5a045c2e92535c03e27f8480a4cdca679c225c80d96ab66",
+      "source": "Google News Rust",
+      "title": "NVIDIA发布CUDA-Oxide 0.1用于实验性Rust-To-CUDA编译器 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01WHZ2VEUwY1RRZTNvT1RzME5mWGU4bEJ4Y0NOLXFzbFliNTZ5Y2NRRk9LRGlqQ2pMLXAyVDRxRWxvQm9kTjVkdGhEOGY4YVN1OGE3T0ducmtyUWxiVy0zWQ?oc=5",
+      "summary": "NVIDIA发布CUDA-Oxide 0.1用于实验性Rust-To-CUDA编译器  Phoronix",
+      "publishedAt": "2026-05-08T14:17:00.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b0f29a8e287854e2db6076a78292241fb856d1269e250705daea2f6ca43198e9",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-08 Burn 0.21.0 发布：框架开销降低最高达8倍",
+      "url": "https://rustcc.cn/article?id=38d8c972-78a1-4e80-8dab-d48d62ede8f7",
+      "summary": "Burn 0.21.0 发布：框架开销降低最高达8倍",
+      "publishedAt": "2026-05-08T01:09:13.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b0969fec10e8f5f64b6f9710f407a49744613bc32904099140b425926aefeb6",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-09 NVIDIA 发布 CUDA-Oxide 0.1：实验性 Rust 到 CUDA 编译器",
+      "url": "https://rustcc.cn/article?id=180cce85-9c69-4722-82e6-260796b0b330",
+      "summary": "NVIDIA 发布 CUDA-Oxide 0.1：实验性 Rust 到 CUDA 编译器\nCUDA-Oxide 是 NVIDIA Labs 新放出的实验性项目，目标不是再包一层 DSL，而是把“用原生 Rust 写 CUDA 内核”这条链路直接打通。\nRust 直出 PTX：走自定义 rustc codegen 后端，把标准 Rust 代码编译到 NVIDIA PTX\n单源代码工作流：主机端与设备端代码可以放在同一份 Rust 源码中构建\n保留 Rust 语言表达力：支持更贴近 Rust 的类型系统、抽象方式与设备端编程体验\n仍处 Alpha 早期：目前还在积极开发期，API、稳定性和工具链都还有继续变化的空间\n如果这个方向后续跑顺，Rust 在 GPU 编程上的想象空间会比现在大很多。\n原文链接：https://nvlabs.github.io/cuda-oxide/\nBurn 0.21.0 发布：框架开销最高降低 8 倍\nBurn 0.21.0 这次更新很扎实，覆盖分布式训练、内核调优、后端调度和嵌入式 / WebAssembly…",
+      "publishedAt": "2026-05-09T01:08:14.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-10T00:17:59.488Z"
+  }
+}
