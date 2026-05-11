@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-11",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "7a730588feea9d2f06f6de92fb93e0c4986703c604ed20a22dd1afceb8ba17f6",
+      "source": "Google News Rust",
+      "title": "NVIDIA AI Just Released cuda-oxide: An Experimental Rust-to-CUDA Compiler Backend that Compiles SIMT GPU Kernels Directly to PTX - MarkTechPost",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOazJFQW1UczVJMEFRNHpBYkx2b1RKY19JRzZhWndjYnZfczZFUlkydXdBdkU4Y3ZwWi1RQ1lqODdTSnExd05sQlp6Qll6YjBzYWMxSllGa1hFN1ZxUVRYR09odzVJYm9yRXFoczA1c0xoS0o4U3oxQXJkRDA1UERnMTFZNnJiTEJuSFVoMGpfSVhqNkdudFFtNGowcktvaWh2LTQ3cUNObFpsR3l6S25NVHRELW5PcjY1YnlDUzcxN3pNSFA0NGU0SmhTVmtNR1pqOFNrVWZoNnpBbTFVN0xSVEo0V0hEbklNeDVtSGFkZjN0aG1IWUlDcWkyZUw?oc=5",
+      "summary": "NVIDIA AI Just Released cuda-oxide: An Experimental Rust-to-CUDA Compiler Backend that Compiles SIMT GPU Kernels Directly to PTX  MarkTechPost",
+      "publishedAt": "2026-05-10T06:01:13.000Z",
+      "score": 26,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        19
+      ],
+      "reason": "Enables Rust for GPU programming",
+      "suggestedTitle": "NVIDIA Unveils cuda-oxide: Experimental Rust-to-CUDA Compiler",
+      "suggestedSummary": "NVIDIA AI has released cuda-oxide, an experimental Rust-to-CUDA compiler backend that compiles SIMT GPU kernels directly to PTX. This development allows Rust developers to leverage CUDA's parallel processing capabilities, enabling more efficient GPU computations. The project is still in its early stages, but it promises to integrate Rust's safety and concurrency features with CUDA's powerful GPU processing, potentially transforming how Rust developers approach high-performance computing.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "70d52f2f554895798b06964045bd7c439e5463098f3680fd0d1c09c34951fdab",
+      "source": "Rust Users Forum",
+      "title": "Undoredo - crate for Undo/Redo using deltas, snapshots, or commands",
+      "url": "https://users.rust-lang.org/t/undoredo-crate-for-undo-redo-using-deltas-snapshots-or-commands/140030#post_1",
+      "summary": "Hello! I would like to share with you a library that I created for my own needs.\nundoredo is a Rust crate for implementing Undo/Redo pattern using deltas, snapshots, or commands on arbitrary data structures.\nThe library has derive macros for custom data structures, and there is a large number of convenience implementations for standard library and third-party types, such as HashMap, HashSet, BTreeMap, BTreeSet, Vec, StableVec, thunderdome::Arena, rstar::RTree, rstared::RTreed. There is also…",
+      "publishedAt": "2026-05-10T15:47:30.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4
+      ],
+      "reason": "Enhances application state management",
+      "suggestedTitle": "Introducing Undoredo: A Rust Crate for Undo/Redo Operations",
+      "suggestedSummary": "The new crate 'undoredo' provides a flexible framework for implementing undo/redo functionality in Rust applications. It supports operations using deltas, snapshots, or commands, allowing developers to choose the most suitable method for their applications. This crate is particularly useful for applications that require robust state management and user interaction, such as text editors or graphic design tools, enhancing the user experience by providing reliable state rollback capabilities.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "c1e4d95c288d7a5e6b37a77b58bb1335bde908d7013bd8581f7eaeae624cfaec",
+      "source": "Rust Users Forum",
+      "title": "My first crate :D, floop: A more convenient and less error prone replacement for loop `{ select! { .. }}`",
+      "url": "https://users.rust-lang.org/t/my-first-crate-d-floop-a-more-convenient-and-less-error-prone-replacement-for-loop-select/140020#post_2",
+      "summary": "@tguichaoua\nIs tokio's `select!` cancel safe? anymore as its closed, but i just released a crate (floop), which doesn't entirely solve your issue, but could help, but it would require the functions to be combined (floop always loops, so it couldn't be used in foo)\n// floop doesn't require cancel-safety, so `hoo` and `goo` are also allowed to be none-cancel-safe.\nfloop! {\n    _ = sleep(Duration::from_secs(1)) => { /* ... */ }\n    _ = goo() => { /* ... */ }\n    _ = hoo() => { /* ... */ }\n}\n\nyou…",
+      "publishedAt": "2026-05-10T18:32:25.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a94d16836890ee007b9d1d66ed05c0a0d3ec364ab8dfa87fad5f97e55dcc47e4",
+      "source": "Rust Users Forum",
+      "title": "Rbatis + Turso: Building AI Agents & RAG Applications in Rust",
+      "url": "https://users.rust-lang.org/t/rbatis-turso-building-ai-agents-rag-applications-in-rust/140026#post_1",
+      "summary": "Rbatis + Turso: Building AI Agents & RAG Applications in Rust\nIntroduction\nWith the explosion of Large Language Models (LLMs), AI Agent and RAG (Retrieval-Augmented Generation) architectures have become the mainstream paradigm for building intelligent applications. At the heart of RAG is vector search — transforming documents into vector embeddings, then retrieving the most relevant content via similarity search to help LLMs generate more accurate answers.\nIn the Rust ecosystem, Rbatis (a…",
+      "publishedAt": "2026-05-10T06:57:40.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "c48b2ec71121535e368c364e19b7685e383c214c5f4034863ebf9ef95088009d",
+      "source": "Rust Users Forum",
+      "title": "Fixtura – declarative test data injection for Rust. Pin only what your test depends on, fake the rest",
+      "url": "https://users.rust-lang.org/t/fixtura-declarative-test-data-injection-for-rust-pin-only-what-your-test-depends-on-fake-the-rest/140024#post_1",
+      "summary": "fixtura lets you declare exactly what each test parameter depends on and fakes\nfake-rs.\nHow it works\nAdd #[cfg_attr(test, derive(fake::Dummy))] to your struct, then declare test\n#[fixtura::test]\nfn inactive_users_cannot_checkout(\n    #[fixtura(active = false)] user: User,\n    order: Order,\n) {\n    assert!(checkout(&user, &order).is_err());\n}\n\nOnly active is pinned because only active drives the logic. Everything\nCross-argument references work too:\n#[fixtura::test]\nfn order_belongs_to_user(…",
+      "publishedAt": "2026-05-10T03:20:00.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "35fcd10b591f5dc6784072d91c6b9b562788174480d494bf8f3ab9946b71d595",
+      "source": "Rust Users Forum",
+      "title": "Podman UI - Tauri + React(Tanstack)",
+      "url": "https://users.rust-lang.org/t/podman-ui-tauri-react-tanstack/140025#post_1",
+      "summary": "Giving back to the community is something I've always been passionate about, so I finally put that into action.\ngithub.com\n  \nGitHub - harbr-hq/harbr-app: A native Podman desktop app for developers. No...\nA native Podman desktop app for developers. No Electron, no forced sign-ins, no bloat.",
+      "publishedAt": "2026-05-10T05:35:28.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-11T00:18:23.581Z"
+  }
+}

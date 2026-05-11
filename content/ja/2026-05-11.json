@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-11",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "7a730588feea9d2f06f6de92fb93e0c4986703c604ed20a22dd1afceb8ba17f6",
+      "source": "Google News Rust",
+      "title": "NVIDIA AIがcuda-oxideをリリース: SIMT GPUカーネルをPTXに直接コンパイルする実験的なRust-to-CUDAコンパイラバックエンド",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOazJFQW1UczVJMEFRNHpBYkx2b1RKY19JRzZhWndjYnZfczZFUlkydXdBdkU4Y3ZwWi1RQ1lqODdTSnExd05sQlp6Qll6YjBzYWMxSllGa1hFN1ZxUVRYR09odzVJYm9yRXFoczA1c0xoS0o4U3oxQXJkRDA1UERnMTFZNnJiTEJuSFVoMGpfSVhqNkdudFFtNGowcktvaWh2LTQ3cUNObFpsR3l6S25NVHRELW5PcjY1YnlDUzcxN3pNSFA0NGU0SmhTVmtNR1pqOFNrVWZoNnpBbTFVN0xSVEo0V0hEbklNeDVtSGFkZjN0aG1IWUlDcWkyZUw?oc=5",
+      "summary": "NVIDIA AIがcuda-oxideをリリース: SIMT GPUカーネルをPTXに直接コンパイルする実験的なRust-to-CUDAコンパイラバックエンド",
+      "publishedAt": "2026-05-10T06:01:13.000Z",
+      "score": 26,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        19
+      ],
+      "reason": "Enables Rust for GPU programming",
+      "suggestedTitle": "NVIDIA、cuda-oxideを発表: 実験的なRust-to-CUDAコンパイラ",
+      "suggestedSummary": "NVIDIA AIは、SIMT GPUカーネルをPTXに直接コンパイルする実験的なRust-to-CUDAコンパイラバックエンドであるcuda-oxideをリリースしました。この開発により、Rust開発者はCUDAの並列処理能力を活用し、より効率的なGPU計算を可能にします。プロジェクトはまだ初期段階にありますが、Rustの安全性と並行性の機能をCUDAの強力なGPU処理と統合することを約束しており、Rust開発者が高性能コンピューティングにアプローチする方法を変革する可能性があります。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "70d52f2f554895798b06964045bd7c439e5463098f3680fd0d1c09c34951fdab",
+      "source": "Rust Users Forum",
+      "title": "Undoredo - 差分、スナップショット、またはコマンドを使用したUndo/Redo用クレート",
+      "url": "https://users.rust-lang.org/t/undoredo-crate-for-undo-redo-using-deltas-snapshots-or-commands/140030#post_1",
+      "summary": "こんにちは！私自身のニーズのために作成したライブラリを共有したいと思います。undoredoは、任意のデータ構造に対して差分、スナップショット、またはコマンドを使用してUndo/Redoパターンを実装するためのRustクレートです。このライブラリにはカスタムデータ構造用の派生マクロがあり、HashMap、HashSet、BTreeMap、BTreeSet、Vec、StableVec、thunderdome::Arena、rstar::RTree、rstared::RTreedなどの標準ライブラリおよびサードパーティタイプのための便利な実装が多数あります。また…",
+      "publishedAt": "2026-05-10T15:47:30.000Z",
+      "score": 40,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        4
+      ],
+      "reason": "Enhances application state management",
+      "suggestedTitle": "Undoredoの紹介: RustでのUndo/Redo操作用クレート",
+      "suggestedSummary": "新しいクレート「undoredo」は、RustアプリケーションでのUndo/Redo機能を実装するための柔軟なフレームワークを提供します。差分、スナップショット、またはコマンドを使用した操作をサポートし、開発者がアプリケーションに最適な方法を選択できるようにします。このクレートは、テキストエディタやグラフィックデザインツールなど、堅牢な状態管理とユーザーインタラクションを必要とするアプリケーションに特に有用で、信頼性のある状態ロールバック機能を提供することでユーザーエクスペリエンスを向上させます。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "c1e4d95c288d7a5e6b37a77b58bb1335bde908d7013bd8581f7eaeae624cfaec",
+      "source": "Rust Users Forum",
+      "title": "私の最初のクレート :D、floop: より便利でエラーが発生しにくい`{ select! { .. }}`の代替",
+      "url": "https://users.rust-lang.org/t/my-first-crate-d-floop-a-more-convenient-and-less-error-prone-replacement-for-loop-select/140020#post_2",
+      "summary": "tokioの`select!`はキャンセルセーフですか？すでに閉じられていますが、私はクレート（floop）をリリースしました。これが完全にあなたの問題を解決するわけではありませんが、役立つかもしれません。ただし、関数を組み合わせる必要があります（floopは常にループするため、fooでは使用できません）。// floopはキャンセルセーフを要求しないため、`hoo`や`goo`もキャンセルセーフでなくても許可されます。floop! { _ = sleep(Duration::from_secs(1)) => { /* ... */ } _ = goo() => { /* ... */ } _ = hoo() => { /* ... */ } }",
+      "publishedAt": "2026-05-10T18:32:25.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a94d16836890ee007b9d1d66ed05c0a0d3ec364ab8dfa87fad5f97e55dcc47e4",
+      "source": "Rust Users Forum",
+      "title": "Rbatis + Turso: RustでAIエージェントとRAGアプリケーションを構築",
+      "url": "https://users.rust-lang.org/t/rbatis-turso-building-ai-agents-rag-applications-in-rust/140026#post_1",
+      "summary": "Rbatis + Turso: RustでAIエージェントとRAGアプリケーションを構築",
+      "publishedAt": "2026-05-10T06:57:40.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "c48b2ec71121535e368c364e19b7685e383c214c5f4034863ebf9ef95088009d",
+      "source": "Rust Users Forum",
+      "title": "Fixtura – Rustのための宣言的テストデータインジェクション。テストが依存するものだけを固定し、残りを偽装",
+      "url": "https://users.rust-lang.org/t/fixtura-declarative-test-data-injection-for-rust-pin-only-what-your-test-depends-on-fake-the-rest/140024#post_1",
+      "summary": "fixturaを使用すると、各テストパラメータが何に依存しているかを正確に宣言し、fake-rsを偽装できます。どのように機能するか: 構造体に#[cfg_attr(test, derive(fake::Dummy))]を追加し、次にテストを宣言します。 #[fixtura::test] fn inactive_users_cannot_checkout( #[fixtura(active = false)] user: User, order: Order, ) { assert!(checkout(&user, &order).is_err()); } activeだけが固定されているのは、activeだけがロジックを駆動するためです。クロス引数参照も機能します: #[fixtura::test] fn order_belongs_to_user(…",
+      "publishedAt": "2026-05-10T03:20:00.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "35fcd10b591f5dc6784072d91c6b9b562788174480d494bf8f3ab9946b71d595",
+      "source": "Rust Users Forum",
+      "title": "Podman UI - Tauri + React(Tanstack)",
+      "url": "https://users.rust-lang.org/t/podman-ui-tauri-react-tanstack/140025#post_1",
+      "summary": "コミュニティに貢献することは常に情熱を持って取り組んできたことなので、ついにそれを実行に移しました。",
+      "publishedAt": "2026-05-10T05:35:28.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-11T00:18:34.649Z"
+  }
+}
