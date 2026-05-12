@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-12",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "acafc6ea4c361bd92097e416aef59a0bd18c3ebf0dabe73e874af13ccc4add0a",
+      "source": "rust-analyzer",
+      "title": "Changelog #327",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/05/11/changelog-327.html",
+      "summary": "Commit: e266f5c\n2026-05-11 (v0.3.2896)\nNew Features\n#22309, #22334 (first contributions) add functional-record-update-on-non-struct and expected-array-or-slice-pat diagnostics.\n#22235, #22326 add duplicate-field diagnostic.\n#22292 add support for deref patterns.\n#22259 complete :: in module paths.\nPerformance Improvements\n#22267 improve performance of integer-based symbols.\n#22280 cache more things related to lang items.\nFixes\n#22303 (first contribution) keep ref and mut when renaming bindings…",
+      "publishedAt": "2026-05-11T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        80
+      ],
+      "reason": "rust-analyzer update with new features",
+      "suggestedTitle": "rust-analyzer Changelog #327: New Features and Fixes",
+      "suggestedSummary": "The latest rust-analyzer update (v0.3.2896) introduces several new features and fixes, including two first-time contributions. Notable additions include new functionality for improved code analysis and bug fixes that enhance stability and performance. This update is crucial for developers relying on rust-analyzer for efficient coding in Rust, as it continues to improve the developer experience with more precise code insights and tooling support.",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "7e659786c03c33f093ab27102c7220865ee5f2fc8155f7fa292bb9efce0801fa",
+      "source": "RustCC (CN)",
+      "title": "A high-performance async Rust implementation of KCP - A Fast and Reliable ARQ Protocol built on top of Tokio.",
+      "url": "https://rustcc.cn/article?id=29969d7b-6ba8-4f9e-908c-4004a893fee0",
+      "summary": "https://github.com/leihuxi/rust-kcp\nA high-performance async Rust implementation of KCP - A Fast and Reliable ARQ Protocol built on top of Tokio.\nFeatures\nAsync-First Design: Built from ground up for async/await with Tokio integration\nZero-Copy: Efficient buffer management using the bytes crate\nLock-Free Buffer Pool: High-performance memory management with crossbeam\nConnection-Oriented: High-level connection abstractions (KcpStream, KcpListener)\nProtocol Compatible: Compatible with original C…",
+      "publishedAt": "2026-05-11T07:11:35.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        75
+      ],
+      "reason": "new async Rust crate release",
+      "suggestedTitle": "High-Performance Async Rust Implementation of KCP Released",
+      "suggestedSummary": "A new high-performance async Rust implementation of the KCP protocol, built on top of Tokio, has been released. This implementation aims to provide a fast and reliable ARQ protocol, enhancing asynchronous communication in Rust applications. By leveraging Tokio's asynchronous runtime, this crate promises improved performance and reliability, making it a valuable addition for developers looking to implement efficient network protocols in their Rust projects.",
+      "relatedSources": [
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "56b416ee360ee6acefc2b4ab4033c24d83d434f03ec4d82eab705d3ebdaf5749",
+      "source": "Rust Users Forum",
+      "title": "Velotype — a native Rust Markdown editor built for WYSIWYG writing",
+      "url": "https://users.rust-lang.org/t/velotype-a-native-rust-markdown-editor-built-for-wysiwyg-writing/140046#post_3",
+      "summary": "Nice work - I had to manually download the MetalToolchain (new macbook),\nIt’s quite a substantial codebase for a markdown editor. Curious how long it took you to build?\nloc src\n--------------------------------------------------------------------------------\n Language             Files        Lines        Blank      Comment         Code\n--------------------------------------------------------------------------------\n Rust                    53        42548         3709         1440        37399…",
+      "publishedAt": "2026-05-11T19:20:45.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "461c9bf247c37c220d744dbae044e9606af53e9b4afaeb1875410d98b318b511",
+      "source": "Rust Users Forum",
+      "title": "Introducing \"The Land of Rust\" — A Children's Book to Teach Rust",
+      "url": "https://users.rust-lang.org/t/introducing-the-land-of-rust-a-childrens-book-to-teach-rust/139908?page=3#post_52",
+      "summary": "I’m happy to announce:\n 20 chapters fully written in Persian (complete beginner to advanced)\n English chapters 1–12 rewritten based on your feedback (parent\n Bilingual interactive web demo (MVP) – all 20 chapters, live at\n Redirecting to The Land of Rust Interactive Edition...\n Illustration prompts for ~100 images – ready for an artist",
+      "publishedAt": "2026-05-11T23:54:12.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "5d69831c1d8515047d78e7318a56f88e22be95c9a964eea8e3c9967bdbd31c4c",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-11 Miro PDF 0.9.0 发布：多页面支持",
+      "url": "https://rustcc.cn/article?id=448087fe-1af6-41ba-a4af-a3cabd84ef0c",
+      "summary": "Miro PDF 0.9.0 发布：多页面支持\n项目介绍\nMiro 是一款使用 iced 和 mupdf-rs 构建的原生 PDF 阅读器，支持 Windows、Linux 和 macOS 系统。\n主要更新内容\n多页面显示功能：之前版本每次只能显示一页，导致浏览文件时体验不佳。新版本现在支持同时在屏幕上显示多个页面\n多种布局选项：\n\n单页模式\n双页并排模式\n带独立标题页的双页模式\n演示文稿布局\n技术意义\n这次更新虽然看似简单，但为程序架构带来了诸多改进\n为后续开发 PDF 注释/评论功能奠定了基础（这是开发者接下来的首要任务）\n开发建议\n开发者借此机会鼓励社区成员：\n推荐使用 iced 框架开发 GUI 程序，开发体验优秀\n鼓励开发者尝试构建原生图形界面程序\n原文链接：https://github.com/vincent-uden/miro\nFindates - Rust 金融日期计算库发布\n作者发布了名为 findates 的 crate，这是一个处理金融应用核心功能的轻量级库。\n核心功能\n营业日日历管理\n日期调整惯例\n日计数分数计算\n日程生成\n设计特点\n轻量级、可组合…",
+      "publishedAt": "2026-05-11T01:06:06.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "64aa25f6596b344533b405322f77ebf8e52952b33c7834a163dfde45a50ed779",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-10 nom-exif 3.0.0 发布：纯 Rust 元数据解析库",
+      "url": "https://rustcc.cn/article?id=569808de-81f7-47c1-a9de-93cd2af48782",
+      "summary": "nom-exif 3.0.0 发布：纯 Rust 元数据解析库\n经过数月的 API 重新设计，nom-exif 3.0.0 正式发布。这是一个纯 Rust 编写的元数据库，可以通过统一的 MediaParser 读取图像 EXIF（JPEG/HEIC/TIFF/CR3/RAF/IIQ）和视频/音频容器元数据（MP4/MOV/WebM/MKV/3GP/MKA）。\n版本 3 的主要变化\n统一解析器 — 使用 MediaParser::parse_exif / parse_track 处理所有格式，根据检测到的 MIME 类型自动分发，无需针对每种格式使用不同的包装器\n三种输入模式 — 支持文件路径、任意 Read / Read+Seek（网络流、管道），或通过 MediaSource::from_bytes 零拷贝内存字节（适用于 WASM、移动端、HTTP 代理体）\nMotion Photo 支持（3.1.0 新增）— 自动检测 Pixel 和三星 Motion Photos（内嵌 MP4 的 JPEG），parse_track 可提取内嵌视频的轨道元数据\n同步和异步统一 —…",
+      "publishedAt": "2026-05-10T01:06:57.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-12T00:20:14.088Z"
+  }
+}
