@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-13",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "3f9b52faea92dded0405ffa31b7a3e5118e27d08602adb50c8d812ec4c8d1082",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] target-glibc: -gnuターゲット用のGLIBCバージョンのネイティブサポート追加の提案",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-target-glibc-proposal-to-add-native-support-for-glibc-versions-for-the-gnu-targets/24225#post_17",
+      "summary": "nikkon-dev: リンクプロセス中に、最終的な実行ファイルはcfsetspeed@GLIBC_2.33またはcfsetspeed@GLIBC_2.19のいずれかを組み込みます。選択されるバージョンはビルド環境に依存します。前述のPRを正しく読めば、それは起こりません。Rustプロジェクトは常にcfsetspeed@GLIBC_2.2.5（x86-64上）を使用します。このバージョンはハードコードされており、ビルドマシンのglibcバージョンに依存しません。 nikkon-dev: 彼らに連絡することすらしません。GLIBCの立場は明確です…",
+      "publishedAt": "2026-05-11T07:19:37.000Z",
+      "score": 37,
+      "relatedCount": 6,
+      "candidateNumbers": [
+        2
+      ],
+      "reason": "Impacts Rust's support for GLIBC.",
+      "suggestedTitle": "RustにおけるGLIBCバージョンサポートの提案",
+      "suggestedSummary": "新しいpre-RFCは、Rustの-gnuターゲットでGLIBCバージョンを指定するネイティブサポートの追加を提案しています。この変更により、開発者はリンクプロセス中に特定のGLIBCバージョンをターゲットにすることができ、Linuxシステム上のRustアプリケーションの互換性とパフォーマンスを向上させる可能性があります。この提案は、特定のシステムライブラリと統合する必要があるRustアプリケーションの構築を合理化し、多様なLinux環境でのRustの使いやすさを向上させる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "fbacbe8f869d26c375f9802150e6b525cebe79087cf617f1d0550d630c996ad4",
+      "source": "Google News Rust",
+      "title": "IBM s390はRust Linuxカーネルサポートを受ける最新のアーキテクチャ - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xcld2bjFNSkptZDQ4czZNYVpGSEQ1dm5YTWF0RGcyV1U3OWxURndwSFhPYW1pMG1oS256bklHNDlVRkUyYlR2aXg4MHlzUHRsZ0JhLUNhWFJKOEVtNW52bm1qYWJNaEE?oc=5",
+      "summary": "IBM s390はRust Linuxカーネルサポートを受ける最新のアーキテクチャ - Phoronix",
+      "publishedAt": "2026-05-12T16:55:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        40
+      ],
+      "reason": "Rust Linux kernel support expands.",
+      "suggestedTitle": "RustがLinuxカーネルでIBM s390アーキテクチャのサポートを獲得",
+      "suggestedSummary": "RustのLinuxカーネルへの統合は、IBM s390アーキテクチャのサポート追加により拡大を続けています。この開発は、Rustをカーネル開発に統合するための広範な取り組みの一環であり、Rustの安全性と並行性の機能をより多くのハードウェアプラットフォームに提供します。s390のサポートにより、Rust開発者はこのアーキテクチャ向けにカーネルモジュールや他の低レベルコードを書くことが可能になり、システムの信頼性とパフォーマンスの向上が期待されます。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "4aeee46794e39caed403fc3c24a37142d61f60c9ea3966100ad6cfceb2655c36",
+      "source": "Rust Users Forum",
+      "title": "Velotype — WYSIWYGライティングのために構築されたネイティブRust Markdownエディタ",
+      "url": "https://users.rust-lang.org/t/velotype-a-native-rust-markdown-editor-built-for-wysiwyg-writing/140046#post_5",
+      "summary": "素晴らしいですね！数年前にこれがあれば、私がたくさん書いていたときにすべての要件を満たしていたでしょう。開発プロセスにどれくらいLLMが関与していたのか気になります。文章はAI生成のように見えますが、AIの使用を明示的に示すものはありません。",
+      "publishedAt": "2026-05-12T22:25:48.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "291a444d39550109cfe426a63327b0a6aef8c06bb68f40e06b6933c879721d86",
+      "source": "Rust Users Forum",
+      "title": "私の初めてのクレート :D、floop: より便利でエラーが少ないloop `{ select! { .. }}` の代替",
+      "url": "https://users.rust-lang.org/t/my-first-crate-d-floop-a-more-convenient-and-less-error-prone-replacement-for-loop-select/140020#post_4",
+      "summary": "奇妙なことに、コンパイルエラーが出ると思っていましたが、|| async {} の時代の文脈では納得できるものでした",
+      "publishedAt": "2026-05-12T22:57:33.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e659786c03c33f093ab27102c7220865ee5f2fc8155f7fa292bb9efce0801fa",
+      "source": "RustCC (CN)",
+      "title": "高性能非同期Rust実装のKCP - Tokio上に構築された高速で信頼性のあるARQプロトコル",
+      "url": "https://rustcc.cn/article?id=29969d7b-6ba8-4f9e-908c-4004a893fee0",
+      "summary": "https://github.com/leihuxi/rust-kcp\n高性能非同期Rust実装のKCP - Tokio上に構築された高速で信頼性のあるARQプロトコル。\n特徴\n非同期優先設計: Tokioとの統合により非同期/awaitのためにゼロから構築\nゼロコピー: bytesクレートを使用した効率的なバッファ管理\nロックフリーバッファプール: crossbeamを用いた高性能メモリ管理\n接続指向: 高レベルの接続抽象化 (KcpStream, KcpListener)\nプロトコル互換性: オリジナルのCと互換性あり…",
+      "publishedAt": "2026-05-11T07:11:35.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-13T00:22:05.610Z"
+  }
+}

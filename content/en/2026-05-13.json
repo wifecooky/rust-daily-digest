@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-13",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "3f9b52faea92dded0405ffa31b7a3e5118e27d08602adb50c8d812ec4c8d1082",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] target-glibc: Proposal to add native support for GLIBC versions for the -gnu targets",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-target-glibc-proposal-to-add-native-support-for-glibc-versions-for-the-gnu-targets/24225#post_17",
+      "summary": "nikkon-dev:\nDuring the linking process, the final executable will incorporate either cfsetspeed@GLIBC_2.33 or cfsetspeed@GLIBC_2.19. The specific version chosen depends on the build environment.\nIf I read the aforementioned PR correctly, that's  not what happens. Rust projects will always use cfsetspeed@GLIBC_2.2.5 (on x86-64). The version is hard-coded and independent of the glibc version on the build machine.\n\n nikkon-dev:\nI would not even bother reaching out to them. GLIBC position is clear…",
+      "publishedAt": "2026-05-11T07:19:37.000Z",
+      "score": 37,
+      "relatedCount": 6,
+      "candidateNumbers": [
+        2
+      ],
+      "reason": "Impacts Rust's support for GLIBC.",
+      "suggestedTitle": "Proposal for GLIBC Version Support in Rust",
+      "suggestedSummary": "A new pre-RFC proposes adding native support for specifying GLIBC versions in Rust's -gnu targets. This change would allow developers to target specific GLIBC versions during the linking process, potentially improving compatibility and performance for Rust applications on Linux systems. This proposal could streamline building Rust applications that need to integrate with specific system libraries, enhancing Rust's usability in diverse Linux environments.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "fbacbe8f869d26c375f9802150e6b525cebe79087cf617f1d0550d630c996ad4",
+      "source": "Google News Rust",
+      "title": "IBM s390 Is The Latest Architecture Seeing Rust Linux Kernel Support - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xcld2bjFNSkptZDQ4czZNYVpGSEQ1dm5YTWF0RGcyV1U3OWxURndwSFhPYW1pMG1oS256bklHNDlVRkUyYlR2aXg4MHlzUHRsZ0JhLUNhWFJKOEVtNW52bm1qYWJNaEE?oc=5",
+      "summary": "IBM s390 Is The Latest Architecture Seeing Rust Linux Kernel Support  Phoronix",
+      "publishedAt": "2026-05-12T16:55:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        40
+      ],
+      "reason": "Rust Linux kernel support expands.",
+      "suggestedTitle": "Rust Gains Support for IBM s390 Architecture in Linux Kernel",
+      "suggestedSummary": "Rust's integration into the Linux kernel continues to expand with the addition of support for the IBM s390 architecture. This development is part of a broader effort to integrate Rust into kernel development, bringing Rust's safety and concurrency features to more hardware platforms. The support for s390 will enable Rust developers to write kernel modules and other low-level code for this architecture, potentially improving system reliability and performance.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "4aeee46794e39caed403fc3c24a37142d61f60c9ea3966100ad6cfceb2655c36",
+      "source": "Rust Users Forum",
+      "title": "Velotype — a native Rust Markdown editor built for WYSIWYG writing",
+      "url": "https://users.rust-lang.org/t/velotype-a-native-rust-markdown-editor-built-for-wysiwyg-writing/140046#post_5",
+      "summary": "Looks awesome! I wish this had been around a few years ago when I was writing a lot, this would've ticked all the boxes for me.\nI am curious, how much LLM involvement was there in the development process? The prose seems to be AI-generated, but you don't have anything explicitly calling out use of AI.",
+      "publishedAt": "2026-05-12T22:25:48.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "291a444d39550109cfe426a63327b0a6aef8c06bb68f40e06b6933c879721d86",
+      "source": "Rust Users Forum",
+      "title": "My first crate :D, floop: A more convenient and less error prone replacement for loop `{ select! { .. }}`",
+      "url": "https://users.rust-lang.org/t/my-first-crate-d-floop-a-more-convenient-and-less-error-prone-replacement-for-loop-select/140020#post_4",
+      "summary": "Bizarre, I would have expected a compile error, but I guess it made sense in the context of the || async {} days",
+      "publishedAt": "2026-05-12T22:57:33.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e659786c03c33f093ab27102c7220865ee5f2fc8155f7fa292bb9efce0801fa",
+      "source": "RustCC (CN)",
+      "title": "A high-performance async Rust implementation of KCP - A Fast and Reliable ARQ Protocol built on top of Tokio.",
+      "url": "https://rustcc.cn/article?id=29969d7b-6ba8-4f9e-908c-4004a893fee0",
+      "summary": "https://github.com/leihuxi/rust-kcp\nA high-performance async Rust implementation of KCP - A Fast and Reliable ARQ Protocol built on top of Tokio.\nFeatures\nAsync-First Design: Built from ground up for async/await with Tokio integration\nZero-Copy: Efficient buffer management using the bytes crate\nLock-Free Buffer Pool: High-performance memory management with crossbeam\nConnection-Oriented: High-level connection abstractions (KcpStream, KcpListener)\nProtocol Compatible: Compatible with original C…",
+      "publishedAt": "2026-05-11T07:11:35.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-13T00:21:48.809Z"
+  }
+}
