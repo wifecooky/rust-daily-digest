@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-14",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "094ecbdf59d5328d059b1a7642a798f4d224e7d72d8af018cffa46056481ec0f",
+      "source": "Rust Users Forum",
+      "title": "Howcase: Shifting Ghost – eBPF、no_std、NASA P10ルールを使用したカーネルレベルのIDS",
+      "url": "https://users.rust-lang.org/t/howcase-shifting-ghost-a-kernel-level-ids-using-ebpf-no-std-and-nasa-p10-rules/140079#post_1",
+      "summary": "皆さん、こんにちは。\n私はShifting Ghostという主権防衛フレームワークに取り組んでいます。これはRustで構築されたカーネルスペースのIDSで、eBPF/XDPを使用しており、受動的な検出を超えて積極的な敵対的消耗に向けて設計されています。\nアーキテクチャ:\nゼロアロケーション / No-std: カーネルスペースと安全性が重要な基準を満たすために、動的ヒープの問題を避けるためにアリーナアロケータを実装しました。\nNASA P10準拠: 安全性が重要なコードのための「パワーオブテン」ルールに従いました…",
+      "publishedAt": "2026-05-13T18:25:35.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        7
+      ],
+      "reason": "Innovative Rust-based security tool",
+      "suggestedTitle": "Shifting Ghostの紹介: Rustで構築されたカーネルレベルのIDS",
+      "suggestedSummary": "Shifting Ghostは、Rustを使用して構築された新しいカーネルレベルの侵入検知システム（IDS）であり、eBPF、no_std、およびNASA P10ルールを活用してセキュリティを強化しています。このプロジェクトは、Rustの安全性とパフォーマンスの利点を活用して、カーネルレベルで効率的に動作する主権防衛フレームワークを提供することを目的としています。セキュリティとシステムプログラミングに興味のあるRust開発者にとって、Shifting Ghostは高セキュリティアプリケーションにおけるRustの使用における重要な進展を示しており、重要なインフラストラクチャにおける言語の可能性を示しています。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "fbacbe8f869d26c375f9802150e6b525cebe79087cf617f1d0550d630c996ad4",
+      "source": "Google News Rust",
+      "title": "IBM s390はRust Linuxカーネルサポートを受ける最新のアーキテクチャ - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xcld2bjFNSkptZDQ4czZNYVpGSEQ1dm5YTWF0RGcyV1U3OWxURndwSFhPYW1pMG1oS256bklHNDlVRkUyYlR2aXg4MHlzUHRsZ0JhLUNhWFJKOEVtNW52bm1qYWJNaEE?oc=5",
+      "summary": "IBM s390はRust Linuxカーネルサポートを受ける最新のアーキテクチャ  Phoronix",
+      "publishedAt": "2026-05-12T16:55:00.000Z",
+      "score": 26,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        15
+      ],
+      "reason": "Rust support expands in Linux kernel",
+      "suggestedTitle": "LinuxカーネルにおけるIBM s390アーキテクチャのRustサポート",
+      "suggestedSummary": "IBM s390アーキテクチャがLinuxカーネルでRustサポートを受ける最新のものとなりました。この拡張により、開発者はIBMのメインフレームシステム上で動作するアプリケーションにおいてRustの安全性と並行性の機能を利用できるようになります。カーネルにおけるRustの存在感が増す中、この開発はシステムプログラミングにおけるその役割の拡大を示しており、開発者に多様なハードウェアプラットフォーム上で安全で効率的なソフトウェアを構築するためのより堅牢なツールを提供します。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d30be06d70ad993a6746fc9da25df99eeea76e6deb74e9ea806b3cf2e42d0dad",
+      "source": "Lobsters Rust",
+      "title": "Pyrefly v1.0が登場",
+      "url": "https://pyrefly.org/blog/v1.0/",
+      "summary": "コメント",
+      "publishedAt": "2026-05-13T18:51:40.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "80ed65cc3f2e700aabab73d60219dc03b2c5df0c70502b8d31dd7e018708d170",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.1",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.1",
+      "summary": "リリース候補に含まれるすべての差分はここで確認できます: v0.18.1...v0.19.0-rc.1",
+      "publishedAt": "2026-05-13T10:46:30.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1e28cb9a9cbbe3d05b78564657f523b1b940788db628a944944cbd2e6827162a",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-12 iroh 1.0.0-rc.0 - 初のリリース候補版",
+      "url": "https://rustcc.cn/article?id=bb9650e7-fa6d-4b2b-b066-5de61a6a5b53",
+      "summary": "iroh 1.0.0-rc.0 - 初のリリース候補版\n\nirohは、初の1.0バージョンのリリース候補版（rc.0）を発表しました。irohは、Rustで書かれたモジュール式ネットワークプロトコルスタックで、デバイス間の直接接続を確立するために使用されます。4年間の開発と50以上のバージョンの反復を経て、ついに初の1.0候補版を迎えました。\n\n主要な変更点\n\nAPI最適化\n\nAPIの表面を簡素化し、1.0以前のバージョンからのほぼすべての型の再エクスポートを排除しました。\n\nnoq（QUIC実装）も1.0候補版を取得し、irohと共に安定版としてリリースされます。\n\nNATトラバーサル機能が改善され、複数のバグが修正されました。\n\n機能モジュールの移行\n\n独立したバージョン管理とリリースサイクルを実現するため、一部のオプション機能が独立したコードベースに移行されました：\n\nDhtAddressLookupはiroh-mainline-address-lookupパッケージに移行\n\nMdnsAddressLookupはiroh-mdns-address-lookupパッケージに移行\n\nAccessLimitはiroh-utilパッケージに移行\n\nAPI改善のハイライト\n\nパス監視APIの再設計\n\n元のPathWatcherを2つの独立した基本コンポーネントに分割しました：\n\nConnection::paths() -…",
+      "publishedAt": "2026-05-12T01:08:13.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d669f066a60176ed860ab73d5b212d712226a99b044149ae3d13d9c8cb9ed361",
+      "source": "Zenn Rust (JP)",
+      "title": "Rustだけ異常に遅かった本当の理由は「localhost」だった話（0.256s → 0.002s）",
+      "url": "https://zenn.dev/tanadeyu/articles/79c57bb8174e0e",
+      "summary": "Rustだけ異常に遅かった本当の理由は「localhost」だった話（0.256s → 0.002s）",
+      "publishedAt": "2026-05-12T13:11:37.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-14T00:23:04.562Z"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-14",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "094ecbdf59d5328d059b1a7642a798f4d224e7d72d8af018cffa46056481ec0f",
+      "source": "Rust Users Forum",
+      "title": "Howcase: Shifting Ghost – 使用 eBPF、no_std 和 NASA P10 规则的内核级 IDS",
+      "url": "https://users.rust-lang.org/t/howcase-shifting-ghost-a-kernel-level-ids-using-ebpf-no-std-and-nasa-p10-rules/140079#post_1",
+      "summary": "大家好，\n我一直在开发一个名为 Shifting Ghost 的主权防御框架。它是一个用 Rust 构建的内核空间 IDS，使用 eBPF/XDP，旨在超越被动检测，朝着主动对抗性消耗发展。\n架构：\n零分配 / No-std：为了满足内核空间和安全关键标准的严格要求，我实现了一个 Arena Allocator 以避免动态堆问题。\nNASA P10 合规性：我遵循安全关键代码的“十项力量”规则以确保……",
+      "publishedAt": "2026-05-13T18:25:35.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        7
+      ],
+      "reason": "Innovative Rust-based security tool",
+      "suggestedTitle": "介绍 Shifting Ghost：用 Rust 构建的内核级 IDS",
+      "suggestedSummary": "Shifting Ghost 是一个新的内核级入侵检测系统（IDS），使用 Rust 构建，利用 eBPF、no_std 和 NASA P10 规则来增强安全性。该项目旨在提供一个在内核级高效运行的主权防御框架，利用 Rust 的安全性和性能优势。对于对安全和系统编程感兴趣的 Rust 开发人员来说，Shifting Ghost 代表了在高安全性应用中使用 Rust 的重大进步，展示了该语言在关键基础设施中的潜力。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "fbacbe8f869d26c375f9802150e6b525cebe79087cf617f1d0550d630c996ad4",
+      "source": "Google News Rust",
+      "title": "IBM s390 是最新获得 Rust Linux 内核支持的架构 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xcld2bjFNSkptZDQ4czZNYVpGSEQ1dm5YTWF0RGcyV1U3OWxURndwSFhPYW1pMG1oS256bklHNDlVRkUyYlR2aXg4MHlzUHRsZ0JhLUNhWFJKOEVtNW52bm1qYWJNaEE?oc=5",
+      "summary": "IBM s390 是最新获得 Rust Linux 内核支持的架构  Phoronix",
+      "publishedAt": "2026-05-12T16:55:00.000Z",
+      "score": 26,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        15
+      ],
+      "reason": "Rust support expands in Linux kernel",
+      "suggestedTitle": "Linux 内核中对 IBM s390 架构的 Rust 支持",
+      "suggestedSummary": "IBM s390 架构成为最新获得 Linux 内核 Rust 支持的架构。这一扩展意味着开发人员现在可以在 IBM 的大型机系统上运行的应用程序中利用 Rust 的安全性和并发功能。随着 Rust 在内核中的影响力不断增长，这一发展突显了其在系统编程中日益重要的角色，为开发人员提供了在多样化硬件平台上构建安全高效软件的更强大工具。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d30be06d70ad993a6746fc9da25df99eeea76e6deb74e9ea806b3cf2e42d0dad",
+      "source": "Lobsters Rust",
+      "title": "Pyrefly v1.0 已发布",
+      "url": "https://pyrefly.org/blog/v1.0/",
+      "summary": "评论",
+      "publishedAt": "2026-05-13T18:51:40.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "80ed65cc3f2e700aabab73d60219dc03b2c5df0c70502b8d31dd7e018708d170",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.1",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.1",
+      "summary": "在此可以查看发布候选版本中的完整差异：v0.18.1...v0.19.0-rc.1",
+      "publishedAt": "2026-05-13T10:46:30.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1e28cb9a9cbbe3d05b78564657f523b1b940788db628a944944cbd2e6827162a",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-12 iroh 1.0.0-rc.0 - 首个候选发布版本",
+      "url": "https://rustcc.cn/article?id=bb9650e7-fa6d-4b2b-b066-5de61a6a5b53",
+      "summary": "iroh 1.0.0-rc.0 - 首个候选发布版本\n\niroh 发布了首个 1.0 版本的候选版本（rc.0）。iroh 是一个用 Rust 编写的模块化网络协议栈，用于在设备之间建立直接连接。经过四年开发和 50 多个版本迭代后，终于迎来了首个 1.0 候选版本。\n\n主要变更\n\nAPI 优化\n\n精简了 API 表面，消除了几乎所有来自 1.0 之前版本的类型重导出\n\nnoq（QUIC 实现）也获得了 1.0 候选版本，将与 iroh 一起稳定发布\n\n改进了 NAT 穿透功能和修复了多个错误\n\n功能模块迁移\n\n为了实现独立的版本控制和发布周期，部分可选功能已迁移到独立的代码库：\n\nDhtAddressLookup 迁移至 iroh-mainline-address-lookup 包\n\nMdnsAddressLookup 迁移至 iroh-mdns-address-lookup 包\n\nAccessLimit 迁移至 iroh-util 包\n\nAPI 改进亮点\n\n路径观察 API 重新设计\n\n将原来的 PathWatcher 拆分为两个独立的基础组件：\n\nConnection::paths() -…",
+      "publishedAt": "2026-05-12T01:08:13.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d669f066a60176ed860ab73d5b212d712226a99b044149ae3d13d9c8cb9ed361",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust异常缓慢的真正原因是“localhost”的故事（0.256秒 → 0.002秒）",
+      "url": "https://zenn.dev/tanadeyu/articles/79c57bb8174e0e",
+      "summary": "Rust异常缓慢的真正原因是“localhost”的故事（0.256秒 → 0.002秒）",
+      "publishedAt": "2026-05-12T13:11:37.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-14T00:22:56.436Z"
+  }
+}

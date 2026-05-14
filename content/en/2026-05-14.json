@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-14",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "094ecbdf59d5328d059b1a7642a798f4d224e7d72d8af018cffa46056481ec0f",
+      "source": "Rust Users Forum",
+      "title": "Howcase: Shifting Ghost – A kernel-level IDS using eBPF, no_std and NASA P10 rules",
+      "url": "https://users.rust-lang.org/t/howcase-shifting-ghost-a-kernel-level-ids-using-ebpf-no-std-and-nasa-p10-rules/140079#post_1",
+      "summary": "Hi everyone,\nI've been working on a sovereign defense framework called Shifting Ghost. It’s a kernel-space IDS built in Rust using eBPF/XDP, designed to move beyond passive detection toward active adversarial attrition.\nThe Architecture:\nZero-Allocation / No-std: To meet the strict requirements of kernel-space and safety-critical standards, I implemented an Arena Allocator to avoid dynamic heap issues.\nNASA P10 Compliance: I followed the \"Power of Ten\" rules for safety-critical code to ensure…",
+      "publishedAt": "2026-05-13T18:25:35.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        7
+      ],
+      "reason": "Innovative Rust-based security tool",
+      "suggestedTitle": "Introducing Shifting Ghost: A Kernel-Level IDS in Rust",
+      "suggestedSummary": "Shifting Ghost is a new kernel-level intrusion detection system (IDS) built using Rust, leveraging eBPF, no_std, and NASA P10 rules for enhanced security. This project aims to provide a sovereign defense framework that operates efficiently at the kernel level, utilizing Rust's safety and performance benefits. For Rust developers interested in security and systems programming, Shifting Ghost represents a significant advancement in using Rust for high-security applications, showcasing the language's potential in critical infrastructure.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "fbacbe8f869d26c375f9802150e6b525cebe79087cf617f1d0550d630c996ad4",
+      "source": "Google News Rust",
+      "title": "IBM s390 Is The Latest Architecture Seeing Rust Linux Kernel Support - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xcld2bjFNSkptZDQ4czZNYVpGSEQ1dm5YTWF0RGcyV1U3OWxURndwSFhPYW1pMG1oS256bklHNDlVRkUyYlR2aXg4MHlzUHRsZ0JhLUNhWFJKOEVtNW52bm1qYWJNaEE?oc=5",
+      "summary": "IBM s390 Is The Latest Architecture Seeing Rust Linux Kernel Support  Phoronix",
+      "publishedAt": "2026-05-12T16:55:00.000Z",
+      "score": 26,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        15
+      ],
+      "reason": "Rust support expands in Linux kernel",
+      "suggestedTitle": "Rust Support for IBM s390 Architecture in Linux Kernel",
+      "suggestedSummary": "The IBM s390 architecture has become the latest to receive Rust support in the Linux kernel. This expansion means that developers can now utilize Rust's safety and concurrency features in applications running on IBM's mainframe systems. With Rust's growing presence in the kernel, this development highlights its increasing role in systems programming, offering developers more robust tools for building secure and efficient software on diverse hardware platforms.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "d30be06d70ad993a6746fc9da25df99eeea76e6deb74e9ea806b3cf2e42d0dad",
+      "source": "Lobsters Rust",
+      "title": "Pyrefly v1.0 is here",
+      "url": "https://pyrefly.org/blog/v1.0/",
+      "summary": "Comments",
+      "publishedAt": "2026-05-13T18:51:40.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "80ed65cc3f2e700aabab73d60219dc03b2c5df0c70502b8d31dd7e018708d170",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.1",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.1",
+      "summary": "A full diff of what's in the release candidate can be seen here:  v0.18.1...v0.19.0-rc.1",
+      "publishedAt": "2026-05-13T10:46:30.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "1e28cb9a9cbbe3d05b78564657f523b1b940788db628a944944cbd2e6827162a",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-12 iroh 1.0.0-rc.0 - 首个候选发布版本",
+      "url": "https://rustcc.cn/article?id=bb9650e7-fa6d-4b2b-b066-5de61a6a5b53",
+      "summary": "iroh 1.0.0-rc.0 - 首个候选发布版本\niroh 发布了首个 1.0 版本的候选版本（rc.0）。iroh 是一个用 Rust 编写的模块化网络协议栈，用于在设备之间建立直接连接。经过四年开发和 50 多个版本迭代后，终于迎来了首个 1.0 候选版本。\n主要变更\nAPI 优化\n精简了 API 表面，消除了几乎所有来自 1.0 之前版本的类型重导出\nnoq（QUIC 实现）也获得了 1.0 候选版本，将与 iroh 一起稳定发布\n改进了 NAT 穿透功能和修复了多个错误\n功能模块迁移\n为了实现独立的版本控制和发布周期，部分可选功能已迁移到独立的代码库：\nDhtAddressLookup 迁移至 iroh-mainline-address-lookup 包\nMdnsAddressLookup 迁移至 iroh-mdns-address-lookup 包\nAccessLimit 迁移至 iroh-util 包\nAPI 改进亮点\n路径观察 API 重新设计\n将原来的 PathWatcher 拆分为两个独立的基础组件：\n\nConnection::paths() -…",
+      "publishedAt": "2026-05-12T01:08:13.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d669f066a60176ed860ab73d5b212d712226a99b044149ae3d13d9c8cb9ed361",
+      "source": "Zenn Rust (JP)",
+      "title": "Rustだけ異常に遅かった本当の理由は「localhost」だった話（0.256s → 0.002s）",
+      "url": "https://zenn.dev/tanadeyu/articles/79c57bb8174e0e",
+      "summary": "Rustだけ異常に遅かった本当の理由は「localhost」だった話（0.256s → 0.002s）\n\n 結論\nRust（sqlx/rusqlite）で実装したAPIのパフォーマンス測定を行ったところ、他言語（Java / Next.js）より約5倍遅い（0.256s vs 0.05s）という結果が出ました。\n最初は SQLiteのバージョン違いやドライバ実装の差 が原因ではないかと考えましたが、各バックエンドのSQLiteバージョンを確認したところ、いずれも3.46.x系と同じバージョン帯でした。\nさらに調査を進めた結果、これはアプリケーション自体の問題ではなく、測定方法の落とし...",
+      "publishedAt": "2026-05-12T13:11:37.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-14T00:22:50.686Z"
+  }
+}
