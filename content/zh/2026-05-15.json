@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-15",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "3b1246009da526af4cca909cd4eba045019c4f90db623ba4974dc04f6425e3ff",
+      "source": "Rust Internals",
+      "title": "在Rust内存模型中引入`MaybeInvalid<T>`以支持竞争读取",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289#post_19",
+      "summary": "我刚刚有了一个关于操作语义的想法：引入一个竞争读取的原语（从操作语义的角度来看），它简单地记住调用时的“时间”（按照通常的未完全排序的并发方式定义）和调用的地址（将时间/地址存储在一个不透明的对象中），再加上第二个原语，当给定这个不透明对象时，返回在过去那个时间点内存的值（如果当时的读取会发生竞争，则行为未定义）。这个概念类似于……",
+      "publishedAt": "2026-05-15T00:05:51.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Enhances Rust's memory model capabilities",
+      "suggestedTitle": "在Rust中引入`MaybeInvalid<T>`以支持竞争读取",
+      "suggestedSummary": "通过`MaybeInvalid<T>`在Rust的内存模型中引入竞争读取的提案旨在增强Rust处理潜在无效内存状态的能力。这一新的原语将允许开发者明确标记某些读取操作为竞争性的，从而提供对内存操作的更细致控制。这一变化可能会导致在Rust中更安全和更高效地处理并发操作，使开发者能够编写更高性能的代码而不牺牲安全性。通过整合这一特性，Rust可以在系统编程中提供更多灵活性，特别是在涉及低级内存管理的场景中。",
+      "relatedSources": [
+        "Rust Internals",
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e875263a989f1f30ff353f1b5d5f8734a70465a9021c98c59e5ac526e126c210",
+      "source": "Lobsters Rust",
+      "title": "Bun的Rust重写已合并",
+      "url": "https://www.reddit.com/r/rust/comments/1tcrmjs/rewrite_bun_in_rust_has_been_merged/",
+      "summary": "评论",
+      "publishedAt": "2026-05-14T13:16:26.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c047c91288dbd1ba971cdfaf7eea280203019e7bee92d6670106f3c48c164378",
+      "source": "This Week in Rust",
+      "title": "本周 Rust 第 651 期",
+      "url": "https://this-week-in-rust.org/blog/2026/05/13/this-week-in-rust-651/",
+      "summary": "您好，欢迎阅读本周 Rust 的又一期！Rust 是一种编程语言，旨在帮助每个人构建可靠且高效的软件。这是对其进展和社区的每周总结。想提及某些内容？请在 Bluesky 上通过 @thisweekinrust.bsky.social 或在 mastodon.social 上通过 @ThisWeekinRust 标记我们，或者发送拉取请求。想参与其中吗？我们欢迎贡献。本周 Rust 的开发在 GitHub 上是公开的，档案可以在 this-week-in-rust.org 查看。如果您…",
+      "publishedAt": "2026-05-13T04:00:00.000Z",
+      "score": 9,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "80ed65cc3f2e700aabab73d60219dc03b2c5df0c70502b8d31dd7e018708d170",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.1",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.1",
+      "summary": "此候选版本中的完整差异可以在这里查看：v0.18.1...v0.19.0-rc.1",
+      "publishedAt": "2026-05-13T10:46:30.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ac1b360f1e0fda7407d0749d93297e2d12ca967ba4f48f8f3e53b9fecf693af0",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-13 IBM s390 架构获得 Linux 内核 Rust 支持",
+      "url": "https://rustcc.cn/article?id=f9cedbc5-324e-4136-9155-d9cdb8847adc",
+      "summary": "IBM s390 架构获得 Linux 内核 Rust 支持",
+      "publishedAt": "2026-05-13T01:08:47.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-15T00:20:15.233Z"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-15",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "3b1246009da526af4cca909cd4eba045019c4f90db623ba4974dc04f6425e3ff",
+      "source": "Rust Internals",
+      "title": "Include racy reads in Rust memory model with `MaybeInvalid<T>`",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289#post_19",
+      "summary": "I just had an opsem idea about this: have a racy-read primitive that (from the opsem point of view) simply remembers the \"time\" at which it is called (defined in the usual not-fully-ordered concurrent way) and the address on which it was called (storing the time/address in an opaque object), plus a second primitive that (when given the opaque object) returns what the value of the memory was at that past time (with undefined behavior if a read then would have raced). This is similar in concept…",
+      "publishedAt": "2026-05-15T00:05:51.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        1,
+        5
+      ],
+      "reason": "Enhances Rust's memory model capabilities",
+      "suggestedTitle": "Introducing `MaybeInvalid<T>` for Racy Reads in Rust",
+      "suggestedSummary": "The proposal to include racy reads in Rust's memory model through `MaybeInvalid<T>` aims to enhance how Rust handles potentially invalid memory states. This new primitive would allow developers to explicitly mark certain reads as racy, providing more nuanced control over memory operations. This change could lead to safer and more efficient handling of concurrent operations in Rust, allowing developers to write more performant code without sacrificing safety. By integrating this feature, Rust could offer more flexibility in systems programming, particularly in scenarios involving low-level memory management.",
+      "relatedSources": [
+        "Rust Internals",
+        "RustCC (CN)"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "e875263a989f1f30ff353f1b5d5f8734a70465a9021c98c59e5ac526e126c210",
+      "source": "Lobsters Rust",
+      "title": "Bun's Rust rewrite has been merged",
+      "url": "https://www.reddit.com/r/rust/comments/1tcrmjs/rewrite_bun_in_rust_has_been_merged/",
+      "summary": "Comments",
+      "publishedAt": "2026-05-14T13:16:26.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c047c91288dbd1ba971cdfaf7eea280203019e7bee92d6670106f3c48c164378",
+      "source": "This Week in Rust",
+      "title": "This Week in Rust 651",
+      "url": "https://this-week-in-rust.org/blog/2026/05/13/this-week-in-rust-651/",
+      "summary": "Hello and welcome to another issue of This Week in Rust!\nRust is a programming language empowering everyone to build reliable and efficient software.\nThis is a weekly summary of its progress and community.\nWant something mentioned? Tag us at\n@thisweekinrust.bsky.social on Bluesky or\n@ThisWeekinRust on mastodon.social, or\nsend us a pull request.\nWant to get involved? We love contributions.\nThis Week in Rust is openly developed on GitHub and archives can be viewed at this-week-in-rust.org.\nIf you…",
+      "publishedAt": "2026-05-13T04:00:00.000Z",
+      "score": 9,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "80ed65cc3f2e700aabab73d60219dc03b2c5df0c70502b8d31dd7e018708d170",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.1",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.1",
+      "summary": "A full diff of what's in the release candidate can be seen here:  v0.18.1...v0.19.0-rc.1",
+      "publishedAt": "2026-05-13T10:46:30.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ac1b360f1e0fda7407d0749d93297e2d12ca967ba4f48f8f3e53b9fecf693af0",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-13 IBM s390 架构获得 Linux 内核 Rust 支持",
+      "url": "https://rustcc.cn/article?id=f9cedbc5-324e-4136-9155-d9cdb8847adc",
+      "summary": "IBM s390 架构获得 Linux 内核 Rust 支持\nIBM s390 成为最新获得 Linux 内核 Rust 支持的 CPU 架构，排在 x86_64、ARM、ARM64、LoongArch 和 RISC-V 之后，成为第六个进入这一名单的架构。\n关键进展\nIBM 工程师 Jan Polensky 提交了首批补丁系列\n这批改动规模不大，主要是把 s390 配置成支持 Rust 的 64 位架构\n同时补上 Rust 所需的汇编接口，用于 WARN / BUG 报告以及静态分支\n还调整了 bindgen 参数，以避免结构体布局冲突\n当前状态\ns390 目前仍需要 nightly rustc，因为还依赖 -Zpacked-stack\n补丁正在审查中\n由于修改量相对克制，有机会进入接下来的 Linux v7.2 内核开发周期\n原文链接：https://www.phoronix.com/news/IBM-s390-Linux-Kernel-Rust\nALint：代码仓库结构和规范检查工具\nALint 是一个用 Rust…",
+      "publishedAt": "2026-05-13T01:08:47.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-15T00:20:08.961Z"
+  }
+}
