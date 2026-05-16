@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-16",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "61dcc8305c5b89eef4e43f93aefe1abc40610f949fa42bb3f51849605571aed3",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-15 Bun 用 Rust 重写的代码已合并",
+      "url": "https://rustcc.cn/article?id=4ea7ef5e-02b6-4ac9-9cb5-dbd7223409c5",
+      "summary": "Bun 用 Rust 重写的代码已合并",
+      "publishedAt": "2026-05-15T01:07:58.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        25,
+        26
+      ],
+      "reason": "Major Rust adoption",
+      "suggestedTitle": "Bun 向 Rust 的迁移：代码库的重大改造",
+      "suggestedSummary": "Bun，一个 JavaScript 运行时，已成功完成从 Zig 到 Rust 的迁移，仅在六天内合并了大约 960,000 行代码。这一重大转变展示了 Rust 在高效处理大型项目方面的能力。重写旨在利用 Rust 的内存安全和并发处理特性来增强性能和可维护性。这一举措强调了 Rust 在关键基础设施项目中的日益普及，突显了其对希望提高代码可靠性和性能的开发者的好处。",
+      "relatedSources": [
+        "RustCC (CN)",
+        "Zenn Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c9db0536f73c0af56545ffce1f0eb67b87e2f73057a23bf6dbabf28a3e8a493b",
+      "source": "Rust Internals",
+      "title": "减少原始指针陷阱：在编译时防止引用别名违规",
+      "url": "https://internals.rust-lang.org/t/reducing-raw-pointer-footguns-preventing-reference-aliasing-violations-at-compile-time/24301#post_9",
+      "summary": "我认为你的AliasingGuardMut有两种合理的语义。要么它们是唯一的，要么不是。前者实际上与&'a mut T几乎相同（尽管在何时断言唯一性上仍有一定的灵活性……即使是Rust的&'a mut T也尚未决定）。在后者中，保护不是唯一的，因此你不能从AliasingGuardMut<'a, T>获得&'a mut T（这需要断言唯一性）。然而，你仍然可以进行读写操作……",
+      "publishedAt": "2026-05-15T18:03:04.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        4,
+        8
+      ],
+      "reason": "Compiler safety enhancement",
+      "suggestedTitle": "增强安全性：在Rust中防止引用别名违规",
+      "suggestedSummary": "Rust Internals社区的一项新提案专注于通过在编译时防止引用别名违规来减少原始指针陷阱。该设计引入了'AliasingGuardMut'语义，确保了与当前Cell<T>不同的唯一别名语义。此更改旨在开发过程中及早发现潜在的别名问题，从而增强Rust的安全保证。对于开发人员来说，这意味着更强大的编译时检查，减少与不安全代码模式相关的运行时错误。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3f3508f4a8cca3b933b9534c9cbc1977d44b9b10df43fef672e3a3270b1ecd5f",
+      "source": "Lobsters Rust",
+      "title": "在image-rs中快5倍的fast_blur",
+      "url": "https://apas.tel/blog/optimizing-image-rs-blur",
+      "summary": "评论",
+      "publishedAt": "2026-05-15T17:58:21.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cee82a6636d4f5b5e2a3b3fc968a5a3b30d4317f84c36b57d744c03be0496156",
+      "source": "Rust Users Forum",
+      "title": "介绍《铁锈之地》——一本教孩子学习Rust的书",
+      "url": "https://users.rust-lang.org/t/introducing-the-land-of-rust-a-childrens-book-to-teach-rust/139908?page=3#post_55",
+      "summary": "铁锈之地——20个章节已完成，互动演示支持5种语言，并呼吁贡献者\n\nRustaceans，\n\n你们中的一些人可能还记得我一直在创作的面向儿童的故事驱动Rust书籍——《铁锈之地》，主角是太空蟹Ferris。\n\n我很高兴地分享这个项目已经达到了一个重要的里程碑：\n\n20个章节用波斯语完整撰写（所有级别，从初学者到高级）\n\n20个章节用英语完整撰写（翻译和润色）\n\n互动演示（静态MVP）支持5种语言…",
+      "publishedAt": "2026-05-15T15:29:06.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "35f48898268536bd13ec2dd39625ad639fb370fa5bfe1205837a108076b8189f",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-14 Pyrefly v1.0 正式发布：快速的 Python 类型检查器和语言服务器",
+      "url": "https://rustcc.cn/article?id=a99b28b7-c057-41d2-9486-ee5971b27371",
+      "summary": "Pyrefly v1.0 正式发布：快速的 Python 类型检查器和语言服务器 Pyrefly 是一个用 Rust 编写的 Python 类型检查器和语言服务器，如今已经来到稳定的 v1.0，可正式用于生产环境。这个项目自 2025 年中发布 alpha、同年 11 月进入 beta 之后，已经连续迭代了 60 多个小版本。这次 1.0 值得关注的点 已被 Meta 的 Instagram 开发团队采用，也进入了 PyTorch、NumPy、Pandas、JAX 等大型代码库的工作流 相比 beta 阶段，PyTorch 上的完整类型检查速度提升约 34% 编辑器里的增量诊断更新最高可快 125 倍，官方给出的 PyTorch 实测延迟从 2.4 秒降到 19 毫秒 新增 basic / legacy / strict 等预设，降低首次接入门槛，也更方便从 mypy / pyright 迁移 继续扩展对 Pydantic、Django、IDE 场景以及 AI 编码工作流的适配 为什么它会成为今天的头条 一方面，这是一个 Rust 写成、并且真正打进主流 Python…",
+      "publishedAt": "2026-05-14T01:12:47.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "63d639fb613c563b4dcac1fdc9cfeee6bbaaa47cbc49c719d4c0382163f3bdd7",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.4",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.4",
+      "summary": "修复：修复 tauri-build 测试",
+      "publishedAt": "2026-05-14T17:14:32.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a7315840a329a9283aa73e0a1523e5663984a1374f72c64cf887ca2563b38562",
+      "source": "RustCC (CN)",
+      "title": "Ramag — MacOS 数据库 + Redis 客户端",
+      "url": "https://rustcc.cn/article?id=4bf4b53a-3267-4f81-89e2-1128ba3cf5e5",
+      "summary": "不知道大家是不是和我一样：\nDataGrip：好用但开机吃 800MB\nTablePlus：免费版只能开两个连接\nAnother Redis Desktop：能用，但和 DataGrip 一起跑机器就开始喘\nSequel Pro 早就不维护了\n每次开发都要在好几个 Electron 之间切来切去，风扇起飞，键盘发烫\n所以我做了一个：Ramag\n设计理念就两句话：minimal by design · local by default\nGitHub：https://github.com/Linyuqiz/ramag\n它能做什么\n一个 macOS 原生应用，目前装了两个工具：\n数据库客户端（MySQL / PostgreSQL）\n连接管理 + 表结构树\nSQL 编辑器：关键字 + 表名 + 列名补全，语法高亮\n多语句执行，可中断（点查询出去就能 Cancel）\n结果集行内编辑：双击单元格就改，自动生成 INSERT / UPDATE / DELETE\n排序 / 过滤 / 导出 CSV / JSON / Markdown / SQL\n查询历史\nRedis 客户端\n6…",
+      "publishedAt": "2026-05-15T15:37:05.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-16T00:18:23.585Z"
+  }
+}

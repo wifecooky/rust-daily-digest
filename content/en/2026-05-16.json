@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-16",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "61dcc8305c5b89eef4e43f93aefe1abc40610f949fa42bb3f51849605571aed3",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-15 Bun 用 Rust 重写的代码已合并",
+      "url": "https://rustcc.cn/article?id=4ea7ef5e-02b6-4ac9-9cb5-dbd7223409c5",
+      "summary": "Bun 用 Rust 重写的代码已合并\nBun 项目用 Rust 重写的分支已经正式合并进主代码库。这不是一个“概念验证”式的小实验，而是 Bun 主线工程演进的一次明确落地。\n这条消息值得关注的点\nRust 重写分支已经合并，说明相关工作进入了更接近主线交付的阶段\n官方表示后续会发布更详细的技术博客，解释这次重写背后的设计与实现细节\n在进入非 canary 正式版本前，仍然还有一些性能优化工作要完成\n此外还会有一批后续 PR 继续做清理和收尾\n对 Rust 社区来说，这类成熟项目把关键部分逐步迁到 Rust，通常比“新项目发布”更容易形成外溢影响：既能带来工程信号，也更容易让圈外开发者重新关注 Rust 在基础设施里的位置。\n原文链接：https://www.reddit.com/r/rust/comments/1tcrmjs/rewrite_bun_in_rust_has_been_merged/\nZyx v0.153 发布：用 Rust 从零开始构建的机器学习库\n作者分享了他花费数年开发的 Rust 机器学习库…",
+      "publishedAt": "2026-05-15T01:07:58.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        25,
+        26
+      ],
+      "reason": "Major Rust adoption",
+      "suggestedTitle": "Bun's Migration to Rust: A Major Codebase Overhaul",
+      "suggestedSummary": "Bun, a JavaScript runtime, has successfully completed its migration from Zig to Rust, merging approximately 960,000 lines of code in just six days. This significant transition showcases Rust's capability in handling large-scale projects efficiently. The rewrite aims to enhance performance and maintainability, leveraging Rust's memory safety and concurrent processing features. This move underscores Rust's growing adoption in critical infrastructure projects, highlighting its benefits for developers looking to improve code reliability and performance.",
+      "relatedSources": [
+        "RustCC (CN)",
+        "Zenn Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c9db0536f73c0af56545ffce1f0eb67b87e2f73057a23bf6dbabf28a3e8a493b",
+      "source": "Rust Internals",
+      "title": "Reducing Raw Pointer Footguns: Preventing Reference Aliasing Violations at Compile Time",
+      "url": "https://internals.rust-lang.org/t/reducing-raw-pointer-footguns-preventing-reference-aliasing-violations-at-compile-time/24301#post_9",
+      "summary": "I think there are two reasonable possible semantics for your AliasingGuardMut. Either they are unique, or they are not.\nThe former case is practically identical to &'a mut T (though there is still a range of flexibility in exactly when you assert uniqueness… which even Rust’s &'a mut T has not yet decided on).\nIn the latter case, the guards aren’t unique, so you can’t obtain a &'a mut T from an AliasingGuardMut<'a, T> (which requires asserting uniqueness). However, you can still read and write…",
+      "publishedAt": "2026-05-15T18:03:04.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        4,
+        8
+      ],
+      "reason": "Compiler safety enhancement",
+      "suggestedTitle": "Enhancing Safety: Preventing Reference Aliasing Violations in Rust",
+      "suggestedSummary": "A new proposal in the Rust Internals community focuses on reducing raw pointer footguns by preventing reference aliasing violations at compile time. The design introduces the 'AliasingGuardMut' semantics, which ensures unique aliasing semantics, unlike the current Cell<T>. This change aims to catch potential aliasing issues early in the development process, enhancing Rust's safety guarantees. For developers, this means more robust compile-time checks, reducing runtime errors associated with unsafe code patterns.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3f3508f4a8cca3b933b9534c9cbc1977d44b9b10df43fef672e3a3270b1ecd5f",
+      "source": "Lobsters Rust",
+      "title": "5× faster fast_blur in image-rs",
+      "url": "https://apas.tel/blog/optimizing-image-rs-blur",
+      "summary": "Comments",
+      "publishedAt": "2026-05-15T17:58:21.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cee82a6636d4f5b5e2a3b3fc968a5a3b30d4317f84c36b57d744c03be0496156",
+      "source": "Rust Users Forum",
+      "title": "Introducing \"The Land of Rust\" — A Children's Book to Teach Rust",
+      "url": "https://users.rust-lang.org/t/introducing-the-land-of-rust-a-childrens-book-to-teach-rust/139908?page=3#post_55",
+      "summary": "The Land of Rust – 20 chapters complete, interactive demo in 5 languages, and a call for contributors\nHello Rustaceans,\nSome of you may remember the story‑driven Rust book for kids I’ve been working on – “The Land of Rust”, with Ferris the space crab.\nI’m happy to share that the project has reached a major milestone:\n 20 chapters fully written in Persian (all levels, beginner to advanced)\n 20 chapters fully written in English (translated and polished)\n Interactive demo (static MVP) supporting 5…",
+      "publishedAt": "2026-05-15T15:29:06.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "35f48898268536bd13ec2dd39625ad639fb370fa5bfe1205837a108076b8189f",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-14 Pyrefly v1.0 正式发布：快速的 Python 类型检查器和语言服务器",
+      "url": "https://rustcc.cn/article?id=a99b28b7-c057-41d2-9486-ee5971b27371",
+      "summary": "Pyrefly v1.0 正式发布：快速的 Python 类型检查器和语言服务器\nPyrefly 是一个用 Rust 编写的 Python 类型检查器和语言服务器，如今已经来到稳定的 v1.0，可正式用于生产环境。这个项目自 2025 年中发布 alpha、同年 11 月进入 beta 之后，已经连续迭代了 60 多个小版本。\n这次 1.0 值得关注的点\n已被 Meta 的 Instagram 开发团队采用，也进入了 PyTorch、NumPy、Pandas、JAX 等大型代码库的工作流\n相比 beta 阶段，PyTorch 上的完整类型检查速度提升约 34%\n编辑器里的增量诊断更新最高可快 125 倍，官方给出的 PyTorch 实测延迟从 2.4 秒降到 19 毫秒\n新增 basic / legacy / strict 等预设，降低首次接入门槛，也更方便从 mypy / pyright 迁移\n继续扩展对 Pydantic、Django、IDE 场景以及 AI 编码工作流的适配\n为什么它会成为今天的头条\n一方面，这是一个 Rust 写成、并且真正打进主流 Python…",
+      "publishedAt": "2026-05-14T01:12:47.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "63d639fb613c563b4dcac1fdc9cfeee6bbaaa47cbc49c719d4c0382163f3bdd7",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.4",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.4",
+      "summary": "fix: fix tauri-build tests",
+      "publishedAt": "2026-05-14T17:14:32.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a7315840a329a9283aa73e0a1523e5663984a1374f72c64cf887ca2563b38562",
+      "source": "RustCC (CN)",
+      "title": "Ramag —MacOS 数据库 + Redis 客户端",
+      "url": "https://rustcc.cn/article?id=4bf4b53a-3267-4f81-89e2-1128ba3cf5e5",
+      "summary": "不知道大家是不是和我一样：\nDataGrip：好用但开机吃 800MB\nTablePlus：免费版只能开两个连接\nAnother Redis Desktop：能用，但和 DataGrip 一起跑机器就开始喘\nSequel Pro 早就不维护了\n每次开发都要在好几个 Electron 之间切来切去，风扇起飞，键盘发烫\n所以我做了一个：Ramag\n设计理念就两句话：minimal by design · local by default\nGitHub：https://github.com/Linyuqiz/ramag\n它能做什么\n一个 macOS 原生应用，目前装了两个工具：\n数据库客户端（MySQL / PostgreSQL）\n连接管理 + 表结构树\nSQL 编辑器：关键字 + 表名 + 列名补全，语法高亮\n多语句执行，可中断（点查询出去就能 Cancel）\n结果集行内编辑：双击单元格就改，自动生成 INSERT / UPDATE / DELETE\n排序 / 过滤 / 导出 CSV / JSON / Markdown / SQL\n查询历史\nRedis 客户端\n6…",
+      "publishedAt": "2026-05-15T15:37:05.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-16T00:18:17.345Z"
+  }
+}

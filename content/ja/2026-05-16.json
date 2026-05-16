@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-16",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "61dcc8305c5b89eef4e43f93aefe1abc40610f949fa42bb3f51849605571aed3",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-15 Bun の Rust でのコード書き換えがマージされました",
+      "url": "https://rustcc.cn/article?id=4ea7ef5e-02b6-4ac9-9cb5-dbd7223409c5",
+      "summary": "Bun の Rust でのコード書き換えがマージされました",
+      "publishedAt": "2026-05-15T01:07:58.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        25,
+        26
+      ],
+      "reason": "Major Rust adoption",
+      "suggestedTitle": "Bun の Rust への移行：主要なコードベースのオーバーホール",
+      "suggestedSummary": "JavaScript ランタイムである Bun は、Zig から Rust への移行を成功裏に完了し、わずか6日間で約96万行のコードをマージしました。この重要な移行は、大規模プロジェクトを効率的に処理する Rust の能力を示しています。書き換えは、Rust のメモリ安全性と並行処理機能を活用して、パフォーマンスと保守性を向上させることを目的としています。この動きは、重要なインフラプロジェクトにおける Rust の採用が増加していることを強調し、コードの信頼性とパフォーマンスを向上させたい開発者にとっての利点を示しています。",
+      "relatedSources": [
+        "RustCC (CN)",
+        "Zenn Rust (JP)"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "c9db0536f73c0af56545ffce1f0eb67b87e2f73057a23bf6dbabf28a3e8a493b",
+      "source": "Rust Internals",
+      "title": "生ポインタの危険性を減らす: コンパイル時に参照エイリアス違反を防ぐ",
+      "url": "https://internals.rust-lang.org/t/reducing-raw-pointer-footguns-preventing-reference-aliasing-violations-at-compile-time/24301#post_9",
+      "summary": "私は、AliasingGuardMut のセマンティクスには2つの合理的な可能性があると思います。それらがユニークであるか、そうでないかです。前者の場合、実質的に &'a mut T とほぼ同じですが、ユニーク性を主張するタイミングには柔軟性があります（これは Rust の &'a mut T でもまだ決定されていません）。後者の場合、ガードはユニークではないため、AliasingGuardMut<'a, T> から &'a mut T を取得することはできません（ユニーク性を主張する必要があります）。しかし、読み書きは可能です…",
+      "publishedAt": "2026-05-15T18:03:04.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        4,
+        8
+      ],
+      "reason": "Compiler safety enhancement",
+      "suggestedTitle": "安全性の向上: Rustにおける参照エイリアス違反の防止",
+      "suggestedSummary": "Rust Internals コミュニティでの新しい提案は、生ポインタの危険性を減らし、コンパイル時に参照エイリアス違反を防ぐことに焦点を当てています。この設計は、現在の Cell<T> とは異なり、ユニークなエイリアスセマンティクスを保証する 'AliasingGuardMut' セマンティクスを導入しています。この変更は、開発プロセスの早い段階で潜在的なエイリアス問題をキャッチし、Rust の安全性保証を強化することを目的としています。開発者にとって、これはコンパイル時のチェックがより堅牢になり、安全でないコードパターンに関連するランタイムエラーを減らすことを意味します。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "3f3508f4a8cca3b933b9534c9cbc1977d44b9b10df43fef672e3a3270b1ecd5f",
+      "source": "Lobsters Rust",
+      "title": "image-rsにおける5倍速のfast_blur",
+      "url": "https://apas.tel/blog/optimizing-image-rs-blur",
+      "summary": "コメント",
+      "publishedAt": "2026-05-15T17:58:21.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "cee82a6636d4f5b5e2a3b3fc968a5a3b30d4317f84c36b57d744c03be0496156",
+      "source": "Rust Users Forum",
+      "title": "「錆の国」の紹介 — 子供向けのRust学習書",
+      "url": "https://users.rust-lang.org/t/introducing-the-land-of-rust-a-childrens-book-to-teach-rust/139908?page=3#post_55",
+      "summary": "錆の国 – 20章が完成、5言語でのインタラクティブデモ、貢献者募集\nこんにちは、Rustaceansの皆さん、\n私が取り組んできた子供向けの物語ベースのRustの本「錆の国」、宇宙カニのフェリスと共に覚えている方もいるかもしれません。\nこのプロジェクトが大きな節目に達したことをお知らせできて嬉しいです。\n ペルシャ語で20章が完全に執筆されました（初級から上級までの全レベル）\n 英語で20章が完全に翻訳され、磨かれました\n 5言語に対応したインタラクティブデモ（静的MVP）",
+      "publishedAt": "2026-05-15T15:29:06.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "35f48898268536bd13ec2dd39625ad639fb370fa5bfe1205837a108076b8189f",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-14 Pyrefly v1.0 正式リリース：高速なPython型チェッカーと言語サーバー",
+      "url": "https://rustcc.cn/article?id=a99b28b7-c057-41d2-9486-ee5971b27371",
+      "summary": "Pyrefly v1.0 正式リリース：高速なPython型チェッカーと言語サーバー\nPyreflyはRustで書かれたPython型チェッカーと言語サーバーであり、現在安定したv1.0に達し、本番環境での使用が可能になりました。このプロジェクトは2025年中にアルファ版がリリースされ、同年11月にベータ版に移行した後、60以上の小バージョンを連続して繰り返し更新してきました。\n今回の1.0で注目すべき点\nMetaのInstagram開発チームに採用され、PyTorch、NumPy、Pandas、JAXなどの大規模コードベースのワークフローにも組み込まれました\nベータ段階と比べて、PyTorch上での完全な型チェック速度が約34%向上\nエディター内のインクリメンタル診断更新が最大125倍速くなり、公式のPyTorch実測遅延が2.4秒から19ミリ秒に短縮\nbasic / legacy / strictなどのプリセットが追加され、初回導入のハードルが下がり、mypy / pyrightからの移行もより簡単に\nPydantic、Django、IDEシーン、AIコーディングワークフローへの適応を引き続き拡張\nなぜこれが今日のトップニュースになるのか\n一方で、これはRustで書かれ、主流のPython...",
+      "publishedAt": "2026-05-14T01:12:47.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "63d639fb613c563b4dcac1fdc9cfeee6bbaaa47cbc49c719d4c0382163f3bdd7",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.4",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.4",
+      "summary": "修正: tauri-build テストの修正",
+      "publishedAt": "2026-05-14T17:14:32.000Z",
+      "score": 6,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a7315840a329a9283aa73e0a1523e5663984a1374f72c64cf887ca2563b38562",
+      "source": "RustCC (CN)",
+      "title": "Ramag —MacOS データベース + Redis クライアント",
+      "url": "https://rustcc.cn/article?id=4bf4b53a-3267-4f81-89e2-1128ba3cf5e5",
+      "summary": "皆さんも私と同じかどうかわかりませんが：\nDataGrip：便利だが起動時に800MBを消費\nTablePlus：無料版では2つの接続しか開けない\nAnother Redis Desktop：使えるが、DataGripと一緒に動かすとマシンが重くなる\nSequel Proはとっくにメンテナンスされていない\n開発するたびにいくつものElectronを切り替え、ファンが回り、キーボードが熱くなる\nそこで私は作りました：Ramag\n設計理念は2つの言葉で表現できます：minimal by design · local by default\nGitHub：https://github.com/Linyuqiz/ramag\nRamagの機能\nmacOSネイティブアプリで、現在2つのツールを搭載しています：\nデータベースクライアント（MySQL / PostgreSQL）\n接続管理 + テーブル構造ツリー\nSQLエディタ：キーワード + テーブル名 + 列名の補完、構文ハイライト\n複数文の実行、キャンセル可能（クエリをクリックしてキャンセル可能）\n結果セットのインライン編集：セルをダブルクリックして変更、INSERT / UPDATE / DELETEを自動生成\nソート / フィルタリング / CSV / JSON / Markdown / SQLへのエクスポート\nクエリ履歴\nRedisクライアント\n6…",
+      "publishedAt": "2026-05-15T15:37:05.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-16T00:18:36.488Z"
+  }
+}
