@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-17",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "83e39c430a0a7058aea368206b784358644e9acad81e20d2d77875a0426e59aa",
+      "source": "Rust Internals",
+      "title": "Pre-RFC improved ergonomics for `!`",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-improved-ergonomics-for/24336#post_3",
+      "summary": "MusicalNinjaDad:\nOr rather, the implicit conversion will only take effect if it is safe to do so.\nHow is this determined? Imagine that someone had UninhabitedErr<T, E>(Result<T, E>) whose safety invariant is that E is an uninhabited 1-aligned ZST, as enforced by unsafe constructors?\nYes, this is an absurd scenario with a useless type, but it would then be unsound to coerce UninhabitedErr<T, !> to a general Uninhabited<T, E> where E may be a non-ZST or inhabited type.\nI worry that determining…",
+      "publishedAt": "2026-05-16T20:17:08.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4,
+        5
+      ],
+      "reason": "Improves Rust language ergonomics",
+      "suggestedTitle": "Pre-RFC for Improved Ergonomics of `!` in Rust",
+      "suggestedSummary": "A pre-RFC has been proposed to improve the ergonomics of the `!` type in Rust. This proposal suggests implicit conversions where safe, enhancing the usability of `!` in various contexts. The change aims to make code involving `!` more intuitive and less error-prone, potentially simplifying patterns where `!` is currently cumbersome. This could lead to cleaner, more maintainable Rust code, especially in error handling scenarios.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1fc4201bffa7dd25027441e6f1f717ea3d5b763b3117082ddcfd1df2262570c9",
+      "source": "Tauri",
+      "title": "tauri v2.11.2",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.11.2",
+      "summary": "Cargo Audit\n\n\nFetching advisory database from `https://github.com/RustSec/advisory-db.git`\n      Loaded 1090 security advisories (from /home/runner/.cargo/advisory-db)\n    Updating crates.io index\n    Scanning Cargo.lock for vulnerabilities (1088 crate dependencies)\nCrate:     atk\nVersion:   0.18.2\nWarning:   unmaintained\nTitle:     gtk-rs GTK3 bindings - no longer maintained\nDate:      2024-03-04\nID:        RUSTSEC-2024-0413\nURL:       https://rustsec.org/advisories/RUSTSEC-2024-0413…",
+      "publishedAt": "2026-05-16T16:53:28.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        29,
+        36
+      ],
+      "reason": "Major Tauri updates for Rust developers",
+      "suggestedTitle": "Tauri v2.11.2: Enhancements and Security Audits",
+      "suggestedSummary": "Tauri has released version 2.11.2, which includes several enhancements and a comprehensive security audit using Cargo Audit. This update focuses on improving the stability and security of Tauri applications, a popular framework for building desktop apps with Rust. Developers can expect better performance and reliability, making it a crucial update for those building cross-platform applications with Rust.",
+      "relatedSources": [
+        "Tauri"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "46b993a10037a8e68c44c9924988be3d428d24b903cc5465e70eea410ee10b93",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.6",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.6",
+      "summary": "fix: actually setup app delegate",
+      "publishedAt": "2026-05-16T18:20:20.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8a29f18698d5af7b5fbc8c93628f835bdfc4b83de369115b7ecde35c21e86a53",
+      "source": "Rust Users Forum",
+      "title": "Introducing \"The Land of Rust\" — A Children's Book to Teach Rust",
+      "url": "https://users.rust-lang.org/t/introducing-the-land-of-rust-a-childrens-book-to-teach-rust/139908?page=3#post_56",
+      "summary": "I did a quick test. The approach is cool, but I have a few remarks:\nThe language choice isn't registered, even though I disabled any extension that could refuse some cookies. It systematically goes back to Persian, even if I simply repeat a lesson.\nSome animations doesn't give the time to see what's happening; for example, when running Cargo: I see a nice snow effect, I see that something's written, but then it disappears.\nI think it would help someone who learns if it was possible to get back…",
+      "publishedAt": "2026-05-16T11:33:40.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "61dcc8305c5b89eef4e43f93aefe1abc40610f949fa42bb3f51849605571aed3",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-15 Bun 用 Rust 重写的代码已合并",
+      "url": "https://rustcc.cn/article?id=4ea7ef5e-02b6-4ac9-9cb5-dbd7223409c5",
+      "summary": "Bun 用 Rust 重写的代码已合并\nBun 项目用 Rust 重写的分支已经正式合并进主代码库。这不是一个“概念验证”式的小实验，而是 Bun 主线工程演进的一次明确落地。\n这条消息值得关注的点\nRust 重写分支已经合并，说明相关工作进入了更接近主线交付的阶段\n官方表示后续会发布更详细的技术博客，解释这次重写背后的设计与实现细节\n在进入非 canary 正式版本前，仍然还有一些性能优化工作要完成\n此外还会有一批后续 PR 继续做清理和收尾\n对 Rust 社区来说，这类成熟项目把关键部分逐步迁到 Rust，通常比“新项目发布”更容易形成外溢影响：既能带来工程信号，也更容易让圈外开发者重新关注 Rust 在基础设施里的位置。\n原文链接：https://www.reddit.com/r/rust/comments/1tcrmjs/rewrite_bun_in_rust_has_been_merged/\nZyx v0.153 发布：用 Rust 从零开始构建的机器学习库\n作者分享了他花费数年开发的 Rust 机器学习库…",
+      "publishedAt": "2026-05-15T01:07:58.000Z",
+      "score": 15,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-17T00:18:59.889Z"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "date": "2026-05-17",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "83e39c430a0a7058aea368206b784358644e9acad81e20d2d77875a0426e59aa",
+      "source": "Rust Internals",
+      "title": "RFC前提案 `!` のエルゴノミクス改善",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-improved-ergonomics-for/24336#post_3",
+      "summary": "MusicalNinjaDad: あるいは、暗黙の変換は安全である場合にのみ効果を発揮します。これはどのように判断されるのでしょうか？例えば、Eが非占有の1アラインメントZSTであるという安全性不変条件を持つUninhabitedErr<T, E>(Result<T, E>)があると想像してください。これは不適切なコンストラクタによって強制されます。はい、これは無意味な型を持つ不条理なシナリオですが、Eが非ZSTまたは占有型である一般的なUninhabited<T, E>にUninhabitedErr<T, !>を強制することは不適切です。私はそれを判断することが心配です…",
+      "publishedAt": "2026-05-16T20:17:08.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4,
+        5
+      ],
+      "reason": "Improves Rust language ergonomics",
+      "suggestedTitle": "Rustにおける`!`のエルゴノミクス改善のためのRFC前提案",
+      "suggestedSummary": "Rustにおける`!`型のエルゴノミクスを改善するためのRFC前提案が提案されました。この提案は、安全な場合に暗黙の変換を提案し、様々な文脈での`!`の使いやすさを向上させます。この変更は、`!`を含むコードをより直感的でエラーが発生しにくいものにし、現在`!`が扱いにくいパターンを簡素化する可能性があります。特にエラーハンドリングのシナリオにおいて、よりクリーンで保守しやすいRustコードにつながる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "1fc4201bffa7dd25027441e6f1f717ea3d5b763b3117082ddcfd1df2262570c9",
+      "source": "Tauri",
+      "title": "tauri v2.11.2",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-v2.11.2",
+      "summary": "Cargo Audit",
+      "publishedAt": "2026-05-16T16:53:28.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        29,
+        36
+      ],
+      "reason": "Major Tauri updates for Rust developers",
+      "suggestedTitle": "Tauri v2.11.2: 機能強化とセキュリティ監査",
+      "suggestedSummary": "Tauriはバージョン2.11.2をリリースしました。このバージョンには、いくつかの機能強化とCargo Auditを使用した包括的なセキュリティ監査が含まれています。このアップデートは、Rustを使用してデスクトップアプリを構築するための人気のあるフレームワークであるTauriアプリケーションの安定性とセキュリティを向上させることに焦点を当てています。開発者は、パフォーマンスと信頼性の向上を期待でき、Rustでクロスプラットフォームアプリケーションを構築する人々にとって重要なアップデートとなっています。",
+      "relatedSources": [
+        "Tauri"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "46b993a10037a8e68c44c9924988be3d428d24b903cc5465e70eea410ee10b93",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.6",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.6",
+      "summary": "修正: 実際にアプリデリゲートを設定",
+      "publishedAt": "2026-05-16T18:20:20.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8a29f18698d5af7b5fbc8c93628f835bdfc4b83de369115b7ecde35c21e86a53",
+      "source": "Rust Users Forum",
+      "title": "「錆の国」紹介 — 子供向けのRustを教える絵本",
+      "url": "https://users.rust-lang.org/t/introducing-the-land-of-rust-a-childrens-book-to-teach-rust/139908?page=3#post_56",
+      "summary": "簡単なテストを行いました。このアプローチはクールですが、いくつかの意見があります。\n言語選択が登録されていません。いくつかのクッキーを拒否する可能性のある拡張機能を無効にしたにもかかわらず、システム的にペルシャ語に戻ってしまいます。たとえレッスンを繰り返しても同様です。\nアニメーションの中には、何が起こっているのかを見る時間を与えてくれないものがあります。例えば、Cargoを実行するとき：素敵な雪の効果が見え、何かが書かれているのが見えますが、その後すぐに消えてしまいます。\n学習者にとって、戻ることができれば役立つと思います…",
+      "publishedAt": "2026-05-16T11:33:40.000Z",
+      "score": 25,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "61dcc8305c5b89eef4e43f93aefe1abc40610f949fa42bb3f51849605571aed3",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-15 BunがRustで書き直されたコードが統合",
+      "url": "https://rustcc.cn/article?id=4ea7ef5e-02b6-4ac9-9cb5-dbd7223409c5",
+      "summary": "BunがRustで書き直されたコードが統合",
+      "publishedAt": "2026-05-15T01:07:58.000Z",
+      "score": 15,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-17T00:19:11.632Z"
+  }
+}
