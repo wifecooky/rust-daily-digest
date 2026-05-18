@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-18",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "351a8d63489cee6974abf0e6b4de46aeeb9d78b851b9acd92f17bf728c561ba6",
+      "source": "Rust Internals",
+      "title": "生ポインタの危険を減らす: コンパイル時に参照エイリアシング違反を防ぐ",
+      "url": "https://internals.rust-lang.org/t/reducing-raw-pointer-footguns-preventing-reference-aliasing-violations-at-compile-time/24301?page=2#post_37",
+      "summary": "この言葉はRustコミュニティで人気があると思います。「最高のプログラマーでもミスをすることがある」それは私たちがただの人間であることを認めています。それが生ポインタをできるだけ避ける理由でもあります。しかし、それについてどう思うかに関わらず、具体的で一般的でない技術的なフィードバックが必要です。「多くのものがあると思う」というような一般的なものではなく、それらの「多くの」ものは何ですか？なぜなら私はそれが何であるかわからないからです。私が期待するのは、「ああ、これは理由BのためにAが欠けている」、「ああ、これがケースに直面した場合…」というものです。",
+      "publishedAt": "2026-05-17T16:22:17.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        3,
+        6
+      ],
+      "reason": "Pointer safety enhancement",
+      "suggestedTitle": "Rustの生ポインタ安全性の向上",
+      "suggestedSummary": "新しい提案は、コンパイル時に参照エイリアシング違反を防ぐことで、生ポインタの危険を減らすことを目指しています。このアプローチは、適切に処理されないと未定義の動作につながる可能性のあるエイリアシング問題に対するコンパイル時チェックを導入します。これらのチェックを実装することで、Rust開発者はエイリアシングエラーに対する手動の安全策を減らしながら、より安全なコードを書くことができます。この開発は、低レベルのメモリ操作に依存するプロジェクトにとって重要であり、安全性と信頼性の追加層を提供します。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "6bcbecfbe5a8d2f218b17a751db51fbd37d49324f3c8cf151096f43d9a8e848d",
+      "source": "Rust Users Forum",
+      "title": "Yring: ypipeスタイルのバッチフラッシュを備えた境界付きSPSCリング",
+      "url": "https://users.rust-lang.org/t/yring-bounded-spsc-ring-with-ypipe-style-batched-flush/140130#post_2",
+      "summary": "これはbipバッファの興味深い代替案です。私はRustのbipバッファ実装であるbbqueueをプロキシのようなプログラムに使用しました。後でyringを見てみます。投稿されたサンプルスニペットから推測すると、yringはメッセージベースのみで、非構造化データ、つまり任意のバイトストリームをサポートしていないと思います（まあ、u8をメッセージタイプとして使用することはできますが、プロデューサーがインプレースアルゴリズムを実行できるバッファAPIの話をしています）。それでも、このライブラリは持っておくと良いものです。",
+      "publishedAt": "2026-05-18T00:05:35.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11,
+        25
+      ],
+      "reason": "New crate for ring buffers",
+      "suggestedTitle": "Yringの紹介: 新しい境界付きSPSCリングバッファ",
+      "suggestedSummary": "Yringクレートは、ypipeスタイルのバッチフラッシュを使用した境界付きシングルプロデューサーシングルコンシューマー（SPSC）リングバッファの新しい実装を提供します。この設計は、スレッド間のデータ転送を効率的に行い、同期のオーバーヘッドを最小限に抑えます。Yringは、単一のプロデューサーとコンシューマー間での迅速かつ信頼性の高いメッセージパッシングを必要とする高性能アプリケーションに特に有用です。クレートのバッチ処理へのアプローチはスループットを向上させ、並行システムに取り組むRust開発者にとって貴重なツールとなります。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "1c3848aff14de67784842d2437eb6d36058ab0e3275df1a2395dd50e6a0d7c09",
+      "source": "Rust Internals",
+      "title": "RFC前の`!`の改善されたエルゴノミクス",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-improved-ergonomics-for/24336#post_5",
+      "summary": "robofinch:\n誰かがUninhabitedErr<T, E>(Result<T, E>)を持っていて、その安全性の不変条件がEが非居住の1アラインメントZSTであることをunsafeなコンストラクタによって強制されていると想像してください。\nそれは良い例です。後で（もし後があるなら）ブックマークしておきます。\n私が正しく理解しているならば：UninhabitedErr<T, E>を構築することはunsafeであるでしょう。それにより、検証が簡単になります：両方の型がunsafeなしで構築できるかどうか。\n\nrobofinch:\n（注：私は「ライブラリアーサー」の帽子をかぶっていますが、コンパイラ開発者ではありません。だから、私は…",
+      "publishedAt": "2026-05-17T12:20:48.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "2ff3c57e638cec4ab37fba6372d3bcdf7c34e5083ab8369e33294f55b1f74a88",
+      "source": "Rust Users Forum",
+      "title": "借用中に値が失われたことによる生涯の不一致",
+      "url": "https://users.rust-lang.org/t/value-dropped-while-borrowed-as-a-lifetime-mismatch/140120#post_6",
+      "summary": "間違っているかもしれませんし、実際の動作についての修正をいただけるとありがたいのですが、私が読んだ限りでは以下のように理解しています：\nfn main() {\n    let longest: &str;\n\n    let string1 = String::new();\n    // `str1`の最後の使用まで（この借用が生きている間）、`string1`はそのままの状態で残る必要があります。\n    let str1 = &string1;\n\n    {\n        let string2 = String::new();\n\n        // `str2`の最後の使用まで（この借用が生きている間）、`string2`はそのままの状態で残る必要があります。\n        let str2 =…",
+      "publishedAt": "2026-05-17T23:56:21.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "447a715e37a292f8704e97ee2d176a5f07427dadb7634d98291b9830baa4d622",
+      "source": "Zenn Rust (JP)",
+      "title": "Created tchart-rust to Draw Timing Charts of Digital Circuits from Text",
+      "url": "https://zenn.dev/nodamushi/articles/e5b85d48265ca9",
+      "summary": "I have developed a tool called tchart-rust. It renders timing charts of digital circuits (waveform diagrams of clock/data bus/control lines) from short text into SVG/PNG. You can try it immediately in your browser: tchart-rust https://nodamushi.github.io/tchart-rust/ It is also distributed as an offline standalone HTML file and as a CLI binary for Linux/Windows. No Node.js runtime is required.",
+      "publishedAt": "2026-05-17T12:42:02.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "17bacd1022affd1925e6d8152efaeec5d24821997c432c40c034da3807078817",
+      "source": "Lobsters Rust",
+      "title": "Rustを使用してGodotの.tresファイルを解析し、リソースグラフを巡回する",
+      "url": "https://assethoard.com/blog/parsing-godot-tres-files",
+      "summary": "コメント",
+      "publishedAt": "2026-05-16T08:14:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-18T00:20:33.428Z"
+  }
+}

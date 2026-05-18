@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-18",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "351a8d63489cee6974abf0e6b4de46aeeb9d78b851b9acd92f17bf728c561ba6",
+      "source": "Rust Internals",
+      "title": "Reducing Raw Pointer Footguns: Preventing Reference Aliasing Violations at Compile Time",
+      "url": "https://internals.rust-lang.org/t/reducing-raw-pointer-footguns-preventing-reference-aliasing-violations-at-compile-time/24301?page=2#post_37",
+      "summary": "I think this word is popular in the Rust community\n\"Even the best programmers can make mistakes\"\nThat acknowledges we are just human. That is also the reason why raw pointers are avoided as much as possible\nBut regardless of what you think about it, I need some clear technical feedback, which is specific and not generic like \"I think there are many\", what are those \"many\" things? because I don't know what they are\nWhat I expect is : \"Oh this lacks A because of reason B\", \"Oh, if this faces case…",
+      "publishedAt": "2026-05-17T16:22:17.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        3,
+        6
+      ],
+      "reason": "Pointer safety enhancement",
+      "suggestedTitle": "Enhancing Rust's Raw Pointer Safety",
+      "suggestedSummary": "A new proposal aims to reduce raw pointer footguns by preventing reference aliasing violations at compile time. This approach introduces compile-time checks for potential aliasing issues, which can lead to undefined behavior if not handled correctly. By implementing these checks, Rust developers can write safer code with fewer manual safeguards against aliasing errors. This development is crucial for projects that rely on low-level memory manipulation, providing an extra layer of safety and reliability.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "6bcbecfbe5a8d2f218b17a751db51fbd37d49324f3c8cf151096f43d9a8e848d",
+      "source": "Rust Users Forum",
+      "title": "Yring: bounded SPSC ring with ypipe-style batched flush",
+      "url": "https://users.rust-lang.org/t/yring-bounded-spsc-ring-with-ypipe-style-batched-flush/140130#post_2",
+      "summary": "this is an interesting alternative to bip buffer. I've used bbqueue, a rust bip buffer implementation, for a proxy-like program. I'll take a look at yring later.\nguessing from the posted sample snippet, I suppose yring is only message based, it doesn't support unstructured data, i.e. arbitrary byte streams, right? (well, I can use u8 as the message type, but I'm talking about a buffer api that allows the producer to perform in-place algorithms). but still this is a good to have library in the…",
+      "publishedAt": "2026-05-18T00:05:35.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11,
+        25
+      ],
+      "reason": "New crate for ring buffers",
+      "suggestedTitle": "Introducing Yring: A New Bounded SPSC Ring Buffer",
+      "suggestedSummary": "The Yring crate offers a new implementation of a bounded Single Producer Single Consumer (SPSC) ring buffer using ypipe-style batched flushes. This design provides efficient data transfer between threads, minimizing synchronization overhead. Yring is particularly useful for high-performance applications requiring fast and reliable message passing between a single producer and consumer. The crate's approach to batching enhances throughput, making it a valuable tool for Rust developers working on concurrent systems.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "1c3848aff14de67784842d2437eb6d36058ab0e3275df1a2395dd50e6a0d7c09",
+      "source": "Rust Internals",
+      "title": "Pre-RFC improved ergonomics for `!`",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-improved-ergonomics-for/24336#post_5",
+      "summary": "robofinch:\nImagine that someone had UninhabitedErr<T, E>(Result<T, E>) whose safety invariant is that E is an uninhabited 1-aligned ZST, as enforced by unsafe constructors?\nThat's a good example. I've bookmarked for later (if there is a later).\nIf I understand correctly: constructing an UninhabitedErr<T, E> would be unsafe. Which would make the validation simple: can both types be constructed without unsafe.\n\n robofinch:\n(Note: I have my “library author” hat on, I’m not a compiler dev. So, I’m…",
+      "publishedAt": "2026-05-17T12:20:48.000Z",
+      "score": 32,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "2ff3c57e638cec4ab37fba6372d3bcdf7c34e5083ab8369e33294f55b1f74a88",
+      "source": "Rust Users Forum",
+      "title": "\"Value dropped while borrowed\" as a lifetime mismatch",
+      "url": "https://users.rust-lang.org/t/value-dropped-while-borrowed-as-a-lifetime-mismatch/140120#post_6",
+      "summary": "I might be wrong and would appreciate any corrections about how it actually works, but from what I read:\nfn main() {\n    let longest: &str;\n\n    let string1 = String::new();\n    // Until last usage of `str1` (while this borrow lives), `string1`\n    // must remain in place and unchanged.\n    let str1 = &string1;\n\n    {\n        let string2 = String::new();\n\n        // Until last usage of `str2` (while this borrow lives), `string2`\n        // must remain in place and unchanged.\n        let str2 =…",
+      "publishedAt": "2026-05-17T23:56:21.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "447a715e37a292f8704e97ee2d176a5f07427dadb7634d98291b9830baa4d622",
+      "source": "Zenn Rust (JP)",
+      "title": "デジタル回路のタイミングチャートをテキストから描く tchart-rust を作った",
+      "url": "https://zenn.dev/nodamushi/articles/e5b85d48265ca9",
+      "summary": "tchart-rust というツールを作りました。デジタル回路のタイミングチャート (クロック / データバス / 制御線の波形図) を、短いテキストから SVG/PNG にレンダリングします。\nブラウザですぐ試せます: tchart-rust\nhttps://nodamushi.github.io/tchart-rust/\nオフライン HTML 単体ファイルとしても、Linux / Windows の CLI バイナリとしても配ってます。Node.js もランタイムもいりません。\n@title Request / Acknowledge handshake\n@slant 0\n\n@clo...",
+      "publishedAt": "2026-05-17T12:42:02.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "17bacd1022affd1925e6d8152efaeec5d24821997c432c40c034da3807078817",
+      "source": "Lobsters Rust",
+      "title": "Using Rust to parse Godot .tres files and walk the resource graph",
+      "url": "https://assethoard.com/blog/parsing-godot-tres-files",
+      "summary": "Comments",
+      "publishedAt": "2026-05-16T08:14:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-18T00:20:18.913Z"
+  }
+}
