@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-19",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "780d527af3cc59571b00cc3d40225eb3a09e8cae18f56c98c7ec121f462caa83",
+      "source": "Rust Blog",
+      "title": "Project goals update — April 2026 (end of 2025H2)",
+      "url": "https://blog.rust-lang.org/2026/05/18/project-goals-2026-04/",
+      "summary": "The 2025H2 Project Goal period has now concluded. Over these months, the Rust Project pursued 41 Project Goals, 13 of which were designated as Flagship Goals. This post contains curated updates on our progress since the last post and the final status for each of the goals (many of which continue as part of the 2026 period). Full details for any particular goal are available in its tracking issue.\nThanks to everyone who contributed! <3\n\nTable of contents\nFlagship: Beyond the &\n\nContinue…",
+      "publishedAt": "2026-05-18T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        40
+      ],
+      "reason": "Rust project updates crucial for developers",
+      "suggestedTitle": "Rust Project Goals Update for 2025H2",
+      "suggestedSummary": "The Rust Project has concluded its 2025H2 goals, focusing on 41 projects aimed at enhancing the language and its ecosystem. Key achievements include advancements in compiler performance, new language features, and improvements in tooling. This update is vital for developers to understand the direction and priorities of the Rust language, offering insights into upcoming changes that could impact their projects.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ebf522c1b78046e625d7e2be3ba79d9575dab09992db50bc5a99483a1ec9c4bc",
+      "source": "rust-analyzer",
+      "title": "Changelog #328",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/05/18/changelog-328.html",
+      "summary": "Commit: ce81cf6\n2026-05-18 (v0.3.2904)\nVS Code Extension Publishing Issue\nThis release is not available on the VS Code Marketplace and OpenVSX due to an infrastructure issue.\nUntil it’s fixed, you can still download it from the GitHub release page.\nNew Features\n#22347, #22355, #22372, #22379, #22380, #22378 add invalid-range-pat-type, non-exhaustive-record-pat, method-call-illegal-sized-bound, fru-in-destructuring-assignment, cannot-be-dereferenced and explicit-drop-method-use diagnostics.…",
+      "publishedAt": "2026-05-18T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        81
+      ],
+      "reason": "rust-analyzer updates impact IDE tooling",
+      "suggestedTitle": "rust-analyzer Changelog #328 Released",
+      "suggestedSummary": "The latest rust-analyzer update, version 0.3.2904, addresses an issue with VS Code extension publishing. While this release is not available on the marketplace yet, it includes various improvements and bug fixes that enhance the developer experience. Keeping rust-analyzer up-to-date is crucial for Rust developers using IDEs, as it directly affects code analysis and productivity.",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "ccdade6ac3818be8bff95c3f5a1787d91889641981691165db4b3f01d15784ff",
+      "source": "Rust Users Forum",
+      "title": "Rmquickjs - High-level MicroQuickJS bindings for Rust",
+      "url": "https://users.rust-lang.org/t/rmquickjs-high-level-microquickjs-bindings-for-rust/139774#post_2",
+      "summary": "Exciting to see! I've been looking for an embedded solution for game scripting in Bevy and right now I'm looking at QuickJS, but I think MicroQuickJS would also be great once the bindings are mature.",
+      "publishedAt": "2026-05-18T22:07:01.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "a22aaf1ae8f60d6cc392562077233ac38a93cc639d4ca8acc575463c9f6a94ec",
+      "source": "Rust Internals",
+      "title": "Wasm32: Rust should not spill v128 function params into shadow stack",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_1",
+      "summary": "Rust has support for v128 type from WebAssembly spec. It is represented in Rust by core::arch::wasm32::v128 type.\nWeb Assembly treats it as primitive type and you can pass and return it by value, e.g. (func $add7_to_v128 (;0;) (type 0) (param v128) (result v128). This allows backend to generate efficient machine code later that uses, for example, xmm registers for that.\nC & C++\nC does exactly that:\n#include <wasm_simd128.h>\n\nbool exact_eq_128(v128_t a, v128_t b)…",
+      "publishedAt": "2026-05-18T19:27:42.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "412e63bfc20779e8eb48e2ea44fa4649c6cff0a099705ad8fd20a221769bfb06",
+      "source": "Google News Rust",
+      "title": "Top 10 High-paying Web3 Jobs for Rust Developers This Year - FinanceFeeds",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQThhaFJ4b3JhUUFHYWlxd3dzaUtzSDRPUVlvWDJqamtXVWI1Q1FGanRnYUZXNVVsRlpIaE8yWXBkQVhON0pvSmpwN0hCaEtEdUNwbkNXajRWRVlvM2NrUlFLQkt0ejdERl9nQktSLUpmRzg2dm1qYTRvM3VvbHBSSUFDUnBIM01wRFNQSA?oc=5",
+      "summary": "Top 10 High-paying Web3 Jobs for Rust Developers This Year  FinanceFeeds",
+      "publishedAt": "2026-05-18T22:08:41.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-19T00:23:33.530Z"
+  }
+}

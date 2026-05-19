@@ -1,0 +1,86 @@
+{
+  "date": "2026-05-19",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "780d527af3cc59571b00cc3d40225eb3a09e8cae18f56c98c7ec121f462caa83",
+      "source": "Rust Blog",
+      "title": "プロジェクト目標の更新 — 2026年4月（2025年後半終了）",
+      "url": "https://blog.rust-lang.org/2026/05/18/project-goals-2026-04/",
+      "summary": "2025年後半のプロジェクト目標期間が終了しました。この数ヶ月間、Rustプロジェクトは41のプロジェクト目標を追求し、そのうち13はフラッグシップ目標として指定されていました。この投稿には、前回の投稿以降の進捗状況と各目標の最終ステータス（多くは2026年期間の一部として継続中）についての厳選された更新が含まれています。特定の目標に関する詳細は、その追跡イシューで確認できます。貢献してくださった皆さん、ありがとうございます！<3",
+      "publishedAt": "2026-05-18T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        40
+      ],
+      "reason": "Rust project updates crucial for developers",
+      "suggestedTitle": "2025年後半のRustプロジェクト目標の更新",
+      "suggestedSummary": "Rustプロジェクトは2025年後半の目標を終了し、言語とそのエコシステムの強化を目指した41のプロジェクトに焦点を当てました。主な成果には、コンパイラの性能向上、新しい言語機能、ツールの改善が含まれます。この更新は、Rust言語の方向性と優先事項を理解するために開発者にとって重要であり、プロジェクトに影響を与える可能性のある今後の変更についての洞察を提供します。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "ebf522c1b78046e625d7e2be3ba79d9575dab09992db50bc5a99483a1ec9c4bc",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #328",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/05/18/changelog-328.html",
+      "summary": "コミット: ce81cf6\n2026-05-18 (v0.3.2904)\nVS Code 拡張機能の公開問題\nこのリリースはインフラストラクチャの問題により、VS Code Marketplace および OpenVSX で利用できません。\n修正されるまで、GitHub のリリースページからダウンロードできます。\n新機能\n#22347, #22355, #22372, #22379, #22380, #22378 により、invalid-range-pat-type、non-exhaustive-record-pat、method-call-illegal-sized-bound、fru-in-destructuring-assignment、cannot-be-dereferenced および explicit-drop-method-use の診断が追加されました。…",
+      "publishedAt": "2026-05-18T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        81
+      ],
+      "reason": "rust-analyzer updates impact IDE tooling",
+      "suggestedTitle": "rust-analyzer 変更履歴 #328 公開",
+      "suggestedSummary": "最新の rust-analyzer アップデート、バージョン 0.3.2904 は、VS Code 拡張機能の公開に関する問題に対処しています。このリリースはまだマーケットプレイスで利用できませんが、開発者の体験を向上させるさまざまな改善とバグ修正が含まれています。rust-analyzer を最新の状態に保つことは、IDE を使用する Rust 開発者にとって重要であり、コード分析と生産性に直接影響します。",
+      "relatedSources": [
+        "rust-analyzer"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "ccdade6ac3818be8bff95c3f5a1787d91889641981691165db4b3f01d15784ff",
+      "source": "Rust Users Forum",
+      "title": "Rmquickjs - Rust向けの高レベルMicroQuickJSバインディング",
+      "url": "https://users.rust-lang.org/t/rmquickjs-high-level-microquickjs-bindings-for-rust/139774#post_2",
+      "summary": "これは興奮しますね！Bevyでのゲームスクリプト用の組み込みソリューションを探していて、現在はQuickJSを検討していますが、バインディングが成熟すればMicroQuickJSも素晴らしいと思います。",
+      "publishedAt": "2026-05-18T22:07:01.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "a22aaf1ae8f60d6cc392562077233ac38a93cc639d4ca8acc575463c9f6a94ec",
+      "source": "Rust Internals",
+      "title": "Wasm32: Rustはv128関数パラメータをシャドウスタックにスピルすべきではない",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_1",
+      "summary": "RustはWebAssembly仕様のv128型をサポートしています。これはRustではcore::arch::wasm32::v128型で表現されます。WebAssemblyはこれをプリミティブ型として扱い、値として渡したり返したりすることができます。例えば、(func $add7_to_v128 (;0;) (type 0) (param v128) (result v128) のようにです。これにより、バックエンドが後に効率的な機械コードを生成することが可能になり、例えばxmmレジスタを使用することができます。C & C++ Cはまさにそれを行います: #include <wasm_simd128.h> bool exact_eq_128(v128_t a, v128_t b)…",
+      "publishedAt": "2026-05-18T19:27:42.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "412e63bfc20779e8eb48e2ea44fa4649c6cff0a099705ad8fd20a221769bfb06",
+      "source": "Google News Rust",
+      "title": "今年のRust開発者向け高給Web3職トップ10 - FinanceFeeds",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQThhaFJ4b3JhUUFHYWlxd3dzaUtzSDRPUVlvWDJqamtXVWI1Q1FGanRnYUZXNVVsRlpIaE8yWXBkQVhON0pvSmpwN0hCaEtEdUNwbkNXajRWRVlvM2NrUlFLQkt0ejdERl9nQktSLUpmRzg2dm1qYTRvM3VvbHBSSUFDUnBIM01wRFNQSA?oc=5",
+      "summary": "今年のRust開発者向け高給Web3職トップ10  FinanceFeeds",
+      "publishedAt": "2026-05-18T22:08:41.000Z",
+      "score": 26,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-19T00:23:44.781Z"
+  }
+}
