@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-20",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "1a95625f5bab443bab91aef946d0aa9fe81fe76b74cc72dfa49768bb2f2066e0",
+      "source": "Lobsters Rust",
+      "title": "TonicがgRPCプロジェクトに参加",
+      "url": "https://luciofranco.com/blog/tonic-joins-grpc/",
+      "summary": "コメント",
+      "publishedAt": "2026-05-19T22:57:01.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        10
+      ],
+      "reason": "Major integration with gRPC",
+      "suggestedTitle": "TonicがgRPCプロジェクトに参加：Rust開発者にとっての意味",
+      "suggestedSummary": "人気のあるRust実装のgRPCであるTonicが、正式にgRPCプロジェクトの一部となりました。この統合は、RustにおけるgRPCの相互運用性とサポートを強化し、Tonicが公式のgRPC仕様により密接に一致することを目指しています。Rust開発者にとって、これは安定性の向上、より包括的なドキュメント、そしてgRPCの進化する機能に合わせたより迅速な更新を意味します。これは、Tonicを本番環境で使用する人々にとって、より強力なサポートとコミュニティのバックアップを提供する重要なステップです。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "a22aaf1ae8f60d6cc392562077233ac38a93cc639d4ca8acc575463c9f6a94ec",
+      "source": "Rust Internals",
+      "title": "Wasm32: Rustはv128関数パラメータをシャドウスタックにスピルすべきではない",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_1",
+      "summary": "RustはWebAssembly仕様のv128型をサポートしています。これはRustではcore::arch::wasm32::v128型で表されます。WebAssemblyはこれをプリミティブ型として扱い、値として渡したり返したりすることができます。例えば、(func $add7_to_v128 (;0;) (type 0) (param v128) (result v128)) のように。このことにより、バックエンドは後に効率的な機械コードを生成することができ、例えばxmmレジスタを使用します。CとC++ Cはまさにそれを行います: #include <wasm_simd128.h> bool exact_eq_128(v128_t a, v128_t b)…",
+      "publishedAt": "2026-05-18T19:27:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        72
+      ],
+      "reason": "Enhancement for WebAssembly support",
+      "suggestedTitle": "Wasm32の最適化: Rustのv128関数パラメータへのアプローチ",
+      "suggestedSummary": "Rustコミュニティは、wasm32アーキテクチャに関連するパフォーマンス問題、特にv128関数パラメータの処理に取り組んでいます。現在、これらのパラメータは不必要にシャドウスタックにスピルされ、パフォーマンスに影響を与えています。この側面を最適化することで、RustはSIMD操作を活用するwasm32アプリケーションの実行効率を向上させることを目指しています。この改善は、WebAssemblyをターゲットとする開発者にとって重要であり、ブラウザや他のwasm32環境でより効率的でパフォーマンスの高いRustアプリケーションにつながる可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f8fcec9532eaa695e676399470a2e9343774dcc955aec31b7b50875c576372c9",
+      "source": "Rust Internals",
+      "title": "RFC前の`!`のエルゴノミクス改善",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-improved-ergonomics-for/24336#post_10",
+      "summary": "私の意見では、Tryに依存することは実際には複雑さを増すことはありません。それは.map(|x| try { x? })と.map(|x| x)の同等物です。そして、（単純な型変換と比べて）今のところ私にはより安全に感じられます。なぜなら、型の作成者が特定の変換を承認している必要があるからです。自分のコードベース内ではこれをうまく処理できますが、Option<Result<!,E>>などを公開APIに含めるのは気が進みません。その時点で、ほとんどすべての呼び出しにマップを追加する必要がある下流の誰かに「痛み」を押し付けることになります。結果として、私は…",
+      "publishedAt": "2026-05-19T15:46:04.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "a485586d04eef32cdc79538cc6ac278c9d0691a144ca533e29fe89843c085cb5",
+      "source": "Zenn Rust (JP)",
+      "title": "Pure RustでブラウザだけでSMILES→SVG変換できる分子解析ライブラリ「chem-wasm-lens」を作った",
+      "url": "https://zenn.dev/kent_kamome/articles/21817542e6c46d",
+      "summary": "はじめに\n化学系のWeb開発をしていると、こんな壁にぶつかります。\n\nRDKitをブラウザで動かしたい → Python依存で重い、C++バインディングが必要\n\n3D分子ビューアを作りたい → 既存ライブラリは巨大でカスタマイズしにくい\n\nPDBファイルをブラウザで解析したい → サーバーに投げるしかない\n\nこれらを解決するために、Pure Rust + WebAssembly で動く分子解析ライブラリ chem-wasm-lens を開発しました。\nhttps://github.com/kent-tokyo/chem-wasm-lens\n\nデモ\n\nSMILES → SVG\n...",
+      "publishedAt": "2026-05-19T21:00:06.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50ee30d3430d21fc16bea4bd20f448f9c57e8eac38793ce8d0364462855086e7",
+      "source": "Rust Users Forum",
+      "title": "Fontconfigクレートの刷新",
+      "url": "https://users.rust-lang.org/t/fontconfig-crate-revamp/140161#post_1",
+      "summary": "私はfontconfigクレートのメンテナーの一人です。最近、エラーの処理と表示を改善するためにAPIの刷新に取り組みました。多くの関数が以前は行っていなかったResultを返すようになりました。これらの変更は以下のPRで行われました：github.com/yeslogic/fontconfig-rs",
+      "publishedAt": "2026-05-19T04:57:56.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c8f46411efe854202eebb6afcb2fc4ee0a6969c74242293fedb3f5fac46da319",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-19 Needle-rs：純Rust + WebAssemblyのツール呼び出しランタイム",
+      "url": "https://rustcc.cn/article?id=fcd8780b-a36d-4c4f-8a7c-64e56ec6f121",
+      "summary": "Needle-rs：純Rust + WebAssemblyのツール呼び出しランタイム\n\nプロジェクト概要\nneedle-rsは、Cactus Computeが開発したNeedleモデルを実行するための純Rust + WebAssembly実装のランタイム環境です。これは2600万パラメータのトランスフォーマーモデルで、（クエリ文 + ツールリスト）をJSON関数呼び出しに変換し、1回のフォワードプロパゲーションで完了します。\n\nコアの利点\n軽量なデプロイ：エージェント全体で23 MBしかなく、従来のソリューション（例：llama.cppは700+ MB必要）と比べて大幅に小さい\nサーバー不要：APIキーが不要で、完全にローカルで実行可能\nマルチプラットフォーム対応：ブラウザ、エッジコンピューティングノード、CLI、Python、組み込みシステムにデプロイ可能\nプライバシー保護：データはローカルデバイスから離れません\n\nパフォーマンス比較\nOpenAI関数呼び出し、llama.cppなどのソリューションと比較して：\nデプロイサイズ：わずか258 KB + 22 MBモデル\n遅延：約280ミリ秒\nコスト：完全無料\n精度：同じルーティング精度\n\n技術的特徴\nエンコーダー-デコーダーアーキテクチャ：エンコーダーがクエリとツール定義を読み取り、デコーダーがトークンごとにJSON関数呼び出しを生成\nINT4量子化：4ビット量子化を使用してメモリ使用量を削減し、AVX2、NEONなどの加速をサポート…",
+      "publishedAt": "2026-05-19T01:10:11.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-20T00:24:12.134Z"
+  }
+}

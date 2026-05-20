@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-20",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "1a95625f5bab443bab91aef946d0aa9fe81fe76b74cc72dfa49768bb2f2066e0",
+      "source": "Lobsters Rust",
+      "title": "Tonic 加入 gRPC 项目",
+      "url": "https://luciofranco.com/blog/tonic-joins-grpc/",
+      "summary": "评论",
+      "publishedAt": "2026-05-19T22:57:01.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        10
+      ],
+      "reason": "Major integration with gRPC",
+      "suggestedTitle": "Tonic 加入 gRPC 项目：对 Rust 开发者的意义",
+      "suggestedSummary": "Tonic 是一个流行的 Rust 实现的 gRPC，现在正式成为 gRPC 项目的一部分。此次整合旨在增强 Rust 中的 gRPC 互操作性和支持，确保 Tonic 更加贴近官方 gRPC 规范。对于 Rust 开发者来说，这意味着更好的稳定性、更全面的文档，以及可能更快的更新以配合 gRPC 不断发展的功能。这对于在生产环境中使用 Tonic 的用户来说是一个重要的进步，提供了更强大的支持和社区支持。",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "a22aaf1ae8f60d6cc392562077233ac38a93cc639d4ca8acc575463c9f6a94ec",
+      "source": "Rust Internals",
+      "title": "Wasm32：Rust不应将v128函数参数溢出到影子栈中",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_1",
+      "summary": "Rust支持来自WebAssembly规范的v128类型。在Rust中由core::arch::wasm32::v128类型表示。WebAssembly将其视为原始类型，可以通过值传递和返回，例如(func $add7_to_v128 (;0;) (type 0) (param v128) (result v128))。这允许后端生成更高效的机器代码，例如使用xmm寄存器。C语言和C++语言正是这样做的：\n#include <wasm_simd128.h>\n\nbool exact_eq_128(v128_t a, v128_t b)…",
+      "publishedAt": "2026-05-18T19:27:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        72
+      ],
+      "reason": "Enhancement for WebAssembly support",
+      "suggestedTitle": "优化Wasm32：Rust对v128函数参数的处理",
+      "suggestedSummary": "Rust社区正在解决与wasm32架构相关的性能问题，特别是v128函数参数的处理。目前，这些参数不必要地溢出到影子栈中，影响了性能。通过优化这一方面，Rust旨在提高wasm32应用程序的执行效率，特别是那些利用SIMD操作的应用程序。这一改进对于目标WebAssembly的开发者至关重要，因为它可以使Rust应用程序在浏览器和其他wasm32环境中更加高效和具有更好的性能。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f8fcec9532eaa695e676399470a2e9343774dcc955aec31b7b50875c576372c9",
+      "source": "Rust Internals",
+      "title": "改进 `!` 的预RFC人体工程学",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-improved-ergonomics-for/24336#post_10",
+      "summary": "在我看来，依赖 Try 并没有增加任何实际的复杂性。它相当于 .map(|x| try { x? }) 而不是 .map(|x| x)。目前对我来说感觉更安全（相对于简单的强制转换），因为它要求类型作者特别批准转换。是的，在我自己的代码库中，我可以很好地处理这个问题，但我不愿意在公共 API 中包含任何 Option<Result<!,E>> 等。在那时，我将“痛苦”转移给了下游的任何人，他们现在需要在几乎每个调用中添加一个 map。所以我最终会……",
+      "publishedAt": "2026-05-19T15:46:04.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "a485586d04eef32cdc79538cc6ac278c9d0691a144ca533e29fe89843c085cb5",
+      "source": "Zenn Rust (JP)",
+      "title": "用纯Rust开发的分子解析库“chem-wasm-lens”可以在浏览器中进行SMILES到SVG的转换",
+      "url": "https://zenn.dev/kent_kamome/articles/21817542e6c46d",
+      "summary": "简介\n在进行化学相关的Web开发时，会遇到以下难题。\n\n希望在浏览器中运行RDKit → 依赖Python且较重，需要C++绑定\n\n想要创建3D分子查看器 → 现有库庞大且难以定制\n\n希望在浏览器中解析PDB文件 → 只能发送到服务器\n\n为了解决这些问题，我们开发了一个使用纯Rust和WebAssembly的分子解析库chem-wasm-lens。\nhttps://github.com/kent-tokyo/chem-wasm-lens\n\n演示\n\nSMILES → SVG\n...",
+      "publishedAt": "2026-05-19T21:00:06.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50ee30d3430d21fc16bea4bd20f448f9c57e8eac38793ce8d0364462855086e7",
+      "source": "Rust Users Forum",
+      "title": "Fontconfig crate 改造",
+      "url": "https://users.rust-lang.org/t/fontconfig-crate-revamp/140161#post_1",
+      "summary": "我是 fontconfig crate 的维护者之一。我最近对 API 进行了改造，以更好地处理和显示错误。许多函数现在返回 Result，而之前并没有这样做。这些更改已在此 PR 中完成：github.com/yeslogic/fontconfig-rs",
+      "publishedAt": "2026-05-19T04:57:56.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c8f46411efe854202eebb6afcb2fc4ee0a6969c74242293fedb3f5fac46da319",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-19 Needle-rs：纯Rust + WebAssembly的工具调用运行时",
+      "url": "https://rustcc.cn/article?id=fcd8780b-a36d-4c4f-8a7c-64e56ec6f121",
+      "summary": "Needle-rs：纯Rust + WebAssembly的工具调用运行时\n项目概述\nneedle-rs 是一个纯Rust + WebAssembly实现的运行时环境，用于运行Cactus Compute开发的Needle模型。这是一个2600万参数的transformer模型，能够将（查询语句 + 工具列表）转换为JSON函数调用，仅需一次前向传播即可完成。\n核心优势\n轻量级部署：整个agent仅占23 MB，相比传统方案（如llama.cpp需700+ MB）大幅减小\n无需服务器：不需要API密钥，完全本地运行\n多平台支持：可部署到浏览器、边缘计算节点、CLI、Python和嵌入式系统\n隐私保护：数据不离开本地设备\n性能对比\n与OpenAI函数调用、llama.cpp等方案相比：\n部署大小：仅258 KB + 22 MB模型\n延迟：约280毫秒\n成本：完全免费\n准确度：相同的路由准确率\n技术特点\n编码器-解码器架构：编码器读取查询和工具定义，解码器逐token生成JSON函数调用\nINT4量化：使用4位量化降低内存占用，支持AVX2、NEON等加速…",
+      "publishedAt": "2026-05-19T01:10:11.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-20T00:24:06.241Z"
+  }
+}

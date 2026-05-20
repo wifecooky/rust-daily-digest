@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-20",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "1a95625f5bab443bab91aef946d0aa9fe81fe76b74cc72dfa49768bb2f2066e0",
+      "source": "Lobsters Rust",
+      "title": "Tonic is joining the gRPC project",
+      "url": "https://luciofranco.com/blog/tonic-joins-grpc/",
+      "summary": "Comments",
+      "publishedAt": "2026-05-19T22:57:01.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        10
+      ],
+      "reason": "Major integration with gRPC",
+      "suggestedTitle": "Tonic Joins the gRPC Project: What It Means for Rust Developers",
+      "suggestedSummary": "Tonic, a popular Rust implementation of gRPC, is now officially part of the gRPC project. This integration aims to enhance interoperability and support for gRPC in Rust, ensuring that Tonic aligns more closely with the official gRPC specifications. For Rust developers, this means improved stability, more comprehensive documentation, and potentially faster updates to align with gRPC's evolving features. This is a significant step for those using Tonic in production environments, offering more robust support and community backing.",
+      "relatedSources": [
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "a22aaf1ae8f60d6cc392562077233ac38a93cc639d4ca8acc575463c9f6a94ec",
+      "source": "Rust Internals",
+      "title": "Wasm32: Rust should not spill v128 function params into shadow stack",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_1",
+      "summary": "Rust has support for v128 type from WebAssembly spec. It is represented in Rust by core::arch::wasm32::v128 type.\nWeb Assembly treats it as primitive type and you can pass and return it by value, e.g. (func $add7_to_v128 (;0;) (type 0) (param v128) (result v128). This allows backend to generate efficient machine code later that uses, for example, xmm registers for that.\nC & C++\nC does exactly that:\n#include <wasm_simd128.h>\n\nbool exact_eq_128(v128_t a, v128_t b)…",
+      "publishedAt": "2026-05-18T19:27:42.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        72
+      ],
+      "reason": "Enhancement for WebAssembly support",
+      "suggestedTitle": "Optimizing Wasm32: Rust's Approach to v128 Function Parameters",
+      "suggestedSummary": "The Rust community is addressing performance issues related to the wasm32 architecture, specifically the handling of v128 function parameters. Currently, these parameters are unnecessarily spilled into the shadow stack, affecting performance. By optimizing this aspect, Rust aims to enhance execution efficiency for wasm32 applications, particularly those leveraging SIMD operations. This improvement is crucial for developers targeting WebAssembly, as it can lead to more efficient and performant Rust applications in the browser and other wasm32 environments.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f8fcec9532eaa695e676399470a2e9343774dcc955aec31b7b50875c576372c9",
+      "source": "Rust Internals",
+      "title": "Pre-RFC improved ergonomics for `!`",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-improved-ergonomics-for/24336#post_10",
+      "summary": "relying on Try doesn't add any real complexity IMO. It's the equivalent of .map(|x| try { x? }) rather than .map(|x| x). And feels safer to me right now (vs. simple coercion) as it requires the type author to have specifically approved the conversion.\nYes, inside my own codebase I can handle this fine but I'm loathe to include any Option<Result<!,E>> etc. in a public API. At that point I push the \"pain\" onto anyone downstream who now needs to add a map to almost every call. So I end up with…",
+      "publishedAt": "2026-05-19T15:46:04.000Z",
+      "score": 42,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "a485586d04eef32cdc79538cc6ac278c9d0691a144ca533e29fe89843c085cb5",
+      "source": "Zenn Rust (JP)",
+      "title": "Pure RustでブラウザだけでSMILES→SVG変換できる分子解析ライブラリ「chem-wasm-lens」を作った",
+      "url": "https://zenn.dev/kent_kamome/articles/21817542e6c46d",
+      "summary": "はじめに\n化学系のWeb開発をしていると、こんな壁にぶつかります。\n\n\nRDKitをブラウザで動かしたい → Python依存で重い、C++バインディングが必要\n\n3D分子ビューアを作りたい → 既存ライブラリは巨大でカスタマイズしにくい\n\nPDBファイルをブラウザで解析したい → サーバーに投げるしかない\n\nこれらを解決するために、Pure Rust + WebAssembly で動く分子解析ライブラリ chem-wasm-lens を開発しました。\nhttps://github.com/kent-tokyo/chem-wasm-lens\n\n\n デモ\n\n SMILES → SVG\n...",
+      "publishedAt": "2026-05-19T21:00:06.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "50ee30d3430d21fc16bea4bd20f448f9c57e8eac38793ce8d0364462855086e7",
+      "source": "Rust Users Forum",
+      "title": "Fontconfig crate revamp",
+      "url": "https://users.rust-lang.org/t/fontconfig-crate-revamp/140161#post_1",
+      "summary": "I am one of the maintainers of the fontconfig crate. I've recently worked on a revamp of the API to better handle and surface errors. Many of the functions now return Result, which they did not do before. The changes were made in this PR:\ngithub.com/yeslogic/fontconfig-rs\n  \n\n\n    \nfontconfig: Rework API to surface errors and increase safety (#57)\n      \nmaster ← revamp\n    \n04:12AM - 14 May 26 UTC\n        \n+551\n            -221\n          \n        \nCurrently many errors that can be returned by…",
+      "publishedAt": "2026-05-19T04:57:56.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "c8f46411efe854202eebb6afcb2fc4ee0a6969c74242293fedb3f5fac46da319",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-19 Needle-rs：纯Rust + WebAssembly的工具调用运行时",
+      "url": "https://rustcc.cn/article?id=fcd8780b-a36d-4c4f-8a7c-64e56ec6f121",
+      "summary": "Needle-rs：纯Rust + WebAssembly的工具调用运行时\n项目概述\nneedle-rs 是一个纯Rust + WebAssembly实现的运行时环境，用于运行Cactus Compute开发的Needle模型。这是一个2600万参数的transformer模型，能够将（查询语句 + 工具列表）转换为JSON函数调用，仅需一次前向传播即可完成。\n核心优势\n轻量级部署：整个agent仅占23 MB，相比传统方案（如llama.cpp需700+ MB）大幅减小\n无需服务器：不需要API密钥，完全本地运行\n多平台支持：可部署到浏览器、边缘计算节点、CLI、Python和嵌入式系统\n隐私保护：数据不离开本地设备\n性能对比\n与OpenAI函数调用、llama.cpp等方案相比：\n部署大小：仅258 KB + 22 MB模型\n延迟：约280毫秒\n成本：完全免费\n准确度：相同的路由准确率\n技术特点\n编码器-解码器架构：编码器读取查询和工具定义，解码器逐token生成JSON函数调用\nINT4量化：使用4位量化降低内存占用，支持AVX2、NEON等加速…",
+      "publishedAt": "2026-05-19T01:10:11.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-20T00:23:59.419Z"
+  }
+}
