@@ -1,0 +1,100 @@
+{
+  "date": "2026-05-21",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "a9d8c98ac1ca6960a013f7731dc10929b11b4114817f8aae11be69720f37cba4",
+      "source": "Rust Internals",
+      "title": "Wasm32: Rust should not spill v128 function params into shadow stack",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_2",
+      "summary": "You are allowed to pass core::arch::wasm32::v128 around even when the v128 target feature is disabled. In that case we have to pass v128 values by-ref. To prevent ABI mismatches when one crate disables v128 (libcore has it disabled) while other crates have it enabled, we have to unconditionally pass v128 by-ref.\ngithub.com/rust-lang/rust\n  \ncompiler/rustc_target/src/callconv/mod.rs\n1f8e04d34\n\n\n\n\n    \n\n      \nBackendRepr::SimdVector { .. } => {\n    // This is a fun case! The gist of what this is…",
+      "publishedAt": "2026-05-20T08:21:02.000Z",
+      "score": 47,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        10
+      ],
+      "reason": "Important language and compiler updates",
+      "suggestedTitle": "Wasm32 v128 Function Params Handling and BTF Relocations Pre-RFC",
+      "suggestedSummary": "Recent discussions in the Rust Internals forum highlight two significant technical developments. Firstly, there's a proposal to change how wasm32 handles v128 function parameters, aiming to prevent unnecessary spilling into the shadow stack, which can optimize performance in certain scenarios. Secondly, a pre-RFC on BTF relocations suggests a new approach to improve debugging and introspection capabilities in Rust. These changes could impact how developers write and debug Rust code, especially in performance-critical applications.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "bf55592886bd266b62532c4d47d6cd2ff94056171ff77bd7c9fbebc806eabbbe",
+      "source": "Google News Rust",
+      "title": "Greg KH Calls For More Rust Linux Developers - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoRkJ5TzBuVmNleEN4TEVmTmEybHNUT252Vm83dkhQVkFvVjk5N1E2UFN1OC1QekFrbXpWV3lzV0FsUVJWMEFXUnhSLTNlakJ0dXF4WThDbzllZ09wY2l2cXVUVQ?oc=5",
+      "summary": "Greg KH Calls For More Rust Linux Developers  Phoronix",
+      "publishedAt": "2026-05-20T12:29:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        32,
+        20
+      ],
+      "reason": "Rust adoption and performance insights",
+      "suggestedTitle": "Rust's Growing Role in Linux Development and omq.rs Performance Boost",
+      "suggestedSummary": "Greg KH has called for more Rust developers within the Linux community, emphasizing the language's potential for system-level programming. Concurrently, a detailed optimization journal for omq.rs reveals a dramatic increase in message throughput, from 80k to 9M msg/s, showcasing Rust's capability in high-performance applications. These developments highlight Rust's growing influence in both traditional and cutting-edge tech spaces, offering developers new opportunities to leverage Rust's safety and performance.",
+      "relatedSources": [
+        "Google News Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f5d023806f7f53fc3d53078ef55ee195251a4bfe4d59acc7d399f56e994805de",
+      "source": "Rust Users Forum",
+      "title": "Pipa-js: A fast, minimal ES2023 JavaScript runtime built in Rust",
+      "url": "https://users.rust-lang.org/t/pipa-js-a-fast-minimal-es2023-javascript-runtime-built-in-rust/140196#post_1",
+      "summary": "I built pipa-js over the past 3 weeks: a register-based VM that runs ES2023 JavaScript, implemented entirely in Rust with no runtime, no C dependencies. The final binary is ~5.2 MB, scores 1256 on the V8 benchmark suite (beating QuickJS at 1219), and includes zero-external-dependency implementations of regex, JSON, fetch, WebSocket, SSE, BigInt, and Base64.\nRust made this feasible in ways that C or C++ couldn't. The NaN-boxing value system (src/value.rs) uses u64 bit patterns with safe const…",
+      "publishedAt": "2026-05-20T14:42:47.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "0307acab21d618eb5ad239ad5c3884f1351edf9cda45a3869fd6284cd0ef93ac",
+      "source": "Rust Users Forum",
+      "title": "Rust Memory analysis tool",
+      "url": "https://users.rust-lang.org/t/rust-memory-analysis-tool/140195#post_1",
+      "summary": "Hi everyone,\nI previously developed a Rust memory analysis tool, which is now available on crates io . I'm not here to promote the project, but rather to gather your feedback. Below is some data the tool can track:\nAllocation/Release Events\nPointer Address\nAllocation Size\nThread ID\nTimestamp\nRust Variable-Level Information\nVariable Name\nType Name\nSource File\nLine Number\nModule Path\nExplicitly Collected via the track! Macro\nStandard Library Type Semantics\nVec<T> / String / Box<T>: Tracked as the…",
+      "publishedAt": "2026-05-20T12:21:33.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2679269cf22a525b2097d05a154ab260c65252c8d7b890989b7e46dd77dc0261",
+      "source": "Google News Rust",
+      "title": "First look: Mojo 1.0 mixes Python and Rust - InfoWorld",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRUpjdTNWRGRhbVBBVzlVMklOWjJlbTg0MHM1Tmo5NFFIWm1GNEJENGgzZmdQNWZqMTk3Y3o1YkhGcl9uOGJrdjhILUFqVlVxNVA5WVVlVWpUT1JDZkRUUV83dmdTeFdkX1dCeGhick9ycmdIb043bDNRa2xhX183Y3ZWVTZyMXBfaV9qRGZHc0ZMUQ?oc=5",
+      "summary": "First look: Mojo 1.0 mixes Python and Rust  InfoWorld",
+      "publishedAt": "2026-05-20T14:14:15.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e5fb369e64a4825f3bab5c236a79a34dc9064b3bb83f8c0e32e080983604f386",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust のバイナリサイズを 35% 削減するまで",
+      "url": "https://zenn.dev/ar1/articles/sasurahime-v016-min-sized-rust",
+      "summary": "https://armaniacs.github.io/sasurahime/ja/\n\n バイナリが 1.3MB もある\nmacOS のキャッシュクリーナーを Rust で書いています。clap・dialoguer・comfy-table といった UI 系のクレートも使っているので、ある程度のサイズになるのは仕方ないと思っていました。\nとはいえ 1.3MB。キャッシュを掃除するだけの CLI ツールにしてはちょっと大きい。\n何かできることはないかと調べていたところ、johnthagen/min-sized-rust というリポジトリを見つけました。Rust のバイナリサイズを小さくする...",
+      "publishedAt": "2026-05-20T10:51:34.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-21T00:24:21.454Z"
+  }
+}

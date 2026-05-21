@@ -1,0 +1,100 @@
+{
+  "date": "2026-05-21",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "a9d8c98ac1ca6960a013f7731dc10929b11b4114817f8aae11be69720f37cba4",
+      "source": "Rust Internals",
+      "title": "Wasm32: Rustはv128関数パラメータをシャドウスタックにスピルすべきではない",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_2",
+      "summary": "v128ターゲット機能が無効になっている場合でも、core::arch::wasm32::v128を渡すことが許可されています。その場合、v128の値を参照渡しする必要があります。あるクレートがv128を無効にしている（libcoreでは無効になっています）一方で、他のクレートが有効にしている場合にABIの不一致を防ぐため、v128を無条件に参照渡しする必要があります。",
+      "publishedAt": "2026-05-20T08:21:02.000Z",
+      "score": 47,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        10
+      ],
+      "reason": "Important language and compiler updates",
+      "suggestedTitle": "Wasm32 v128関数パラメータの処理とBTFリロケーションの事前RFC",
+      "suggestedSummary": "Rust Internalsフォーラムでの最近の議論は、2つの重要な技術的進展を強調しています。まず、wasm32がv128関数パラメータをどのように処理するかを変更する提案があり、特定のシナリオでパフォーマンスを最適化できるように、シャドウスタックへの不要なスピリングを防ぐことを目指しています。次に、BTFリロケーションに関する事前RFCが、Rustにおけるデバッグとイントロスペクションの能力を向上させる新しいアプローチを提案しています。これらの変更は、特にパフォーマンスが重要なアプリケーションにおいて、開発者がRustコードを記述しデバッグする方法に影響を与える可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "bf55592886bd266b62532c4d47d6cd2ff94056171ff77bd7c9fbebc806eabbbe",
+      "source": "Google News Rust",
+      "title": "Greg KH、より多くのRust Linux開発者を求める - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoRkJ5TzBuVmNleEN4TEVmTmEybHNUT252Vm83dkhQVkFvVjk5N1E2UFN1OC1QekFrbXpWV3lzV0FsUVJWMEFXUnhSLTNlakJ0dXF4WThDbzllZ09wY2l2cXVUVQ?oc=5",
+      "summary": "Greg KH、より多くのRust Linux開発者を求める - Phoronix",
+      "publishedAt": "2026-05-20T12:29:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        32,
+        20
+      ],
+      "reason": "Rust adoption and performance insights",
+      "suggestedTitle": "Linux開発におけるRustの成長する役割とomq.rsのパフォーマンス向上",
+      "suggestedSummary": "Greg KHはLinuxコミュニティ内でのRust開発者の増加を呼びかけ、システムレベルのプログラミングにおける言語の可能性を強調しました。同時に、omq.rsの詳細な最適化ジャーナルは、メッセージスループットが80kから9M msg/sに劇的に増加したことを示し、Rustの高性能アプリケーションにおける能力を示しています。これらの進展は、Rustが伝統的および最先端の技術分野で影響力を増していることを示しており、開発者にRustの安全性とパフォーマンスを活用する新たな機会を提供しています。",
+      "relatedSources": [
+        "Google News Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f5d023806f7f53fc3d53078ef55ee195251a4bfe4d59acc7d399f56e994805de",
+      "source": "Rust Users Forum",
+      "title": "Pipa-js: Rustで構築された高速でミニマルなES2023 JavaScriptランタイム",
+      "url": "https://users.rust-lang.org/t/pipa-js-a-fast-minimal-es2023-javascript-runtime-built-in-rust/140196#post_1",
+      "summary": "私は過去3週間でpipa-jsを構築しました。これは、ES2023 JavaScriptを実行するレジスタベースのVMで、Rustで完全に実装されており、ランタイムやCの依存関係はありません。最終的なバイナリは約5.2 MBで、V8ベンチマークスイートで1256ポイントを獲得し（QuickJSの1219を上回る）、正規表現、JSON、fetch、WebSocket、SSE、BigInt、Base64のゼロ外部依存の実装を含んでいます。Rustは、CやC++では実現できなかった方法でこれを可能にしました。NaNボクシング値システム（src/value.rs）は、安全なconstを使用してu64ビットパターンを使用しています…",
+      "publishedAt": "2026-05-20T14:42:47.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "0307acab21d618eb5ad239ad5c3884f1351edf9cda45a3869fd6284cd0ef93ac",
+      "source": "Rust Users Forum",
+      "title": "Rust メモリ解析ツール",
+      "url": "https://users.rust-lang.org/t/rust-memory-analysis-tool/140195#post_1",
+      "summary": "皆さん、こんにちは。\n以前、Rustのメモリ解析ツールを開発しましたが、現在crates.ioで利用可能です。このプロジェクトを宣伝するためではなく、皆さんのフィードバックを集めるためにここに来ました。以下はツールが追跡できるデータの一部です：\n- アロケーション/リリースイベント\n- ポインタアドレス\n- アロケーションサイズ\n- スレッドID\n- タイムスタンプ\n- Rustの変数レベルの情報\n- 変数名\n- 型名\n- ソースファイル\n- 行番号\n- モジュールパス\n- track! マクロを通じて明示的に収集\n- 標準ライブラリ型のセマンティクス\n- Vec<T> / String / Box<T>: 以下のように追跡されます…",
+      "publishedAt": "2026-05-20T12:21:33.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2679269cf22a525b2097d05a154ab260c65252c8d7b890989b7e46dd77dc0261",
+      "source": "Google News Rust",
+      "title": "初見: Mojo 1.0がPythonとRustを融合 - InfoWorld",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRUpjdTNWRGRhbVBBVzlVMklOWjJlbTg0MHM1Tmo5NFFIWm1GNEJENGgzZmdQNWZqMTk3Y3o1YkhGcl9uOGJrdjhILUFqVlVxNVA5WVVlVWpUT1JDZkRUUV83dmdTeFdkX1dCeGhick9ycmdIb043bDNRa2xhX183Y3ZWVTZyMXBfaV9qRGZHc0ZMUQ?oc=5",
+      "summary": "初見: Mojo 1.0がPythonとRustを融合  InfoWorld",
+      "publishedAt": "2026-05-20T14:14:15.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e5fb369e64a4825f3bab5c236a79a34dc9064b3bb83f8c0e32e080983604f386",
+      "source": "Zenn Rust (JP)",
+      "title": "Rustのバイナリサイズを35%削減するまで",
+      "url": "https://zenn.dev/ar1/articles/sasurahime-v016-min-sized-rust",
+      "summary": "https://armaniacs.github.io/sasurahime/ja/\n\nバイナリが1.3MBもある\nmacOSのキャッシュクリーナーをRustで書いています。clap・dialoguer・comfy-tableといったUI系のクレートも使っているので、ある程度のサイズになるのは仕方ないと思っていました。とはいえ1.3MB。キャッシュを掃除するだけのCLIツールにしてはちょっと大きい。何かできることはないかと調べていたところ、johnthagen/min-sized-rustというリポジトリを見つけました。Rustのバイナリサイズを小さくする...",
+      "publishedAt": "2026-05-20T10:51:34.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-21T00:24:33.379Z"
+  }
+}

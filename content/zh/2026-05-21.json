@@ -1,0 +1,100 @@
+{
+  "date": "2026-05-21",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "a9d8c98ac1ca6960a013f7731dc10929b11b4114817f8aae11be69720f37cba4",
+      "source": "Rust Internals",
+      "title": "Wasm32：Rust 不应将 v128 函数参数溢出到影子栈",
+      "url": "https://internals.rust-lang.org/t/wasm32-rust-should-not-spill-v128-function-params-into-shadow-stack/24344#post_2",
+      "summary": "即使在禁用 v128 目标功能时，您也可以传递 core::arch::wasm32::v128。在这种情况下，我们必须通过引用传递 v128 值。为了防止当一个 crate 禁用 v128（libcore 已禁用）而其他 crate 启用时出现 ABI 不匹配，我们必须无条件地通过引用传递 v128。",
+      "publishedAt": "2026-05-20T08:21:02.000Z",
+      "score": 47,
+      "relatedCount": 3,
+      "candidateNumbers": [
+        1,
+        10
+      ],
+      "reason": "Important language and compiler updates",
+      "suggestedTitle": "Wasm32 v128 函数参数处理和 BTF 重定位的预提案",
+      "suggestedSummary": "Rust Internals 论坛上的近期讨论突出了两个重要的技术发展。首先，有一个提案建议更改 wasm32 处理 v128 函数参数的方式，旨在防止不必要的溢出到影子栈，这可以在某些情况下优化性能。其次，关于 BTF 重定位的预提案提出了一种新方法，以提高 Rust 的调试和自省能力。这些变化可能会影响开发人员编写和调试 Rust 代码的方式，特别是在性能关键的应用程序中。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "bf55592886bd266b62532c4d47d6cd2ff94056171ff77bd7c9fbebc806eabbbe",
+      "source": "Google News Rust",
+      "title": "Greg KH 呼吁更多 Rust Linux 开发者 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBoRkJ5TzBuVmNleEN4TEVmTmEybHNUT252Vm83dkhQVkFvVjk5N1E2UFN1OC1QekFrbXpWV3lzV0FsUVJWMEFXUnhSLTNlakJ0dXF4WThDbzllZ09wY2l2cXVUVQ?oc=5",
+      "summary": "Greg KH 呼吁更多 Rust Linux 开发者  Phoronix",
+      "publishedAt": "2026-05-20T12:29:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        32,
+        20
+      ],
+      "reason": "Rust adoption and performance insights",
+      "suggestedTitle": "Rust 在 Linux 开发中的日益重要性及 omq.rs 性能提升",
+      "suggestedSummary": "Greg KH 呼吁 Linux 社区中需要更多的 Rust 开发者，强调该语言在系统级编程中的潜力。同时，关于 omq.rs 的详细优化报告显示消息吞吐量从 80k 增加到 9M msg/s，展示了 Rust 在高性能应用中的能力。这些发展突显了 Rust 在传统和前沿技术领域中日益增长的影响力，为开发者提供了利用 Rust 的安全性和性能的新机会。",
+      "relatedSources": [
+        "Google News Rust",
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f5d023806f7f53fc3d53078ef55ee195251a4bfe4d59acc7d399f56e994805de",
+      "source": "Rust Users Forum",
+      "title": "Pipa-js：一个用Rust构建的快速、简约的ES2023 JavaScript运行时",
+      "url": "https://users.rust-lang.org/t/pipa-js-a-fast-minimal-es2023-javascript-runtime-built-in-rust/140196#post_1",
+      "summary": "我在过去的3周内构建了pipa-js：一个基于寄存器的虚拟机，能够运行ES2023 JavaScript，完全用Rust实现，没有运行时，也没有C语言依赖。最终的二进制文件大约为5.2 MB，在V8基准测试套件中得分为1256（超过了QuickJS的1219），并且包括正则表达式、JSON、fetch、WebSocket、SSE、BigInt和Base64的零外部依赖实现。Rust使这一切成为可能，而C或C++则无法做到。NaN-boxing值系统（src/value.rs）使用u64位模式与安全常量...",
+      "publishedAt": "2026-05-20T14:42:47.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "0307acab21d618eb5ad239ad5c3884f1351edf9cda45a3869fd6284cd0ef93ac",
+      "source": "Rust Users Forum",
+      "title": "Rust 内存分析工具",
+      "url": "https://users.rust-lang.org/t/rust-memory-analysis-tool/140195#post_1",
+      "summary": "大家好，\n我之前开发了一个 Rust 内存分析工具，现在可以在 crates.io 上使用。我不是来推广这个项目的，而是想收集你们的反馈。以下是该工具可以跟踪的一些数据：\n分配/释放事件\n指针地址\n分配大小\n线程 ID\n时间戳\nRust 变量级信息\n变量名称\n类型名称\n源文件\n行号\n模块路径\n通过 track! 宏显式收集\n标准库类型语义\nVec<T> / String / Box<T>：跟踪为…",
+      "publishedAt": "2026-05-20T12:21:33.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2679269cf22a525b2097d05a154ab260c65252c8d7b890989b7e46dd77dc0261",
+      "source": "Google News Rust",
+      "title": "首次亮相：Mojo 1.0 将 Python 和 Rust 混合 - InfoWorld",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQRUpjdTNWRGRhbVBBVzlVMklOWjJlbTg0MHM1Tmo5NFFIWm1GNEJENGgzZmdQNWZqMTk3Y3o1YkhGcl9uOGJrdjhILUFqVlVxNVA5WVVlVWpUT1JDZkRUUV83dmdTeFdkX1dCeGhick9ycmdIb043bDNRa2xhX183Y3ZWVTZyMXBfaV9qRGZHc0ZMUQ?oc=5",
+      "summary": "首次亮相：Mojo 1.0 将 Python 和 Rust 混合 InfoWorld",
+      "publishedAt": "2026-05-20T14:14:15.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e5fb369e64a4825f3bab5c236a79a34dc9064b3bb83f8c0e32e080983604f386",
+      "source": "Zenn Rust (JP)",
+      "title": "将 Rust 的二进制文件大小减少 35%",
+      "url": "https://zenn.dev/ar1/articles/sasurahime-v016-min-sized-rust",
+      "summary": "https://armaniacs.github.io/sasurahime/ja/\n\n二进制文件有 1.3MB\n我正在用 Rust 编写一个 macOS 的缓存清理工具。由于使用了 clap、dialoguer、comfy-table 等 UI 库，所以文件大小达到一定程度是可以理解的。然而，1.3MB 对于一个仅用于清理缓存的 CLI 工具来说还是有点大了。在寻找解决方案的过程中，我发现了一个名为 johnthagen/min-sized-rust 的仓库，该仓库专注于减少 Rust 二进制文件的大小...",
+      "publishedAt": "2026-05-20T10:51:34.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-21T00:24:26.652Z"
+  }
+}
