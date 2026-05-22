@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-22",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "790a84f3e9f307c4d09f15650d76dd87b72c7cb76038159bb3c13640a7060cfa",
+      "source": "Rust Internals",
+      "title": "每包目标功能统一",
+      "url": "https://internals.rust-lang.org/t/per-package-target-feature-unification/24349#post_1",
+      "summary": "你好，\n对于我们的嵌入式开发工作空间，我一直期待使用每包目标功能……但这个问题仍然存在：每包目标功能统一可能与其他目标发生冲突 · Issue #9521 · rust-lang/cargo · GitHub，这对我们来说是个大问题（因为我们在嵌入式构建中设置了 std 标志……）。\n我尝试过解决这个问题：Issue · GitHub，并想知道前进的正确方法是什么。我的修复似乎并不太离谱，……",
+      "publishedAt": "2026-05-21T11:40:49.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        7,
+        20
+      ],
+      "reason": "Compiler changes directly affect Rust development",
+      "suggestedTitle": "每包目标功能统一提案",
+      "suggestedSummary": "一个关于每包目标功能统一的新提案旨在改善Rust开发体验，特别是针对嵌入式工作空间。此更改将允许开发人员在包级别指定功能，针对特定目标进行定制，从而增强灵活性和组织性。如果实施，这可以简化配置并减少多目标项目的复杂性，使Rust在嵌入式系统和跨平台应用中更高效。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "0f1bc259507dbfe429fb94d3a5bdcda2fd179dc0f43bdafffdd68df04a6755ba",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core：后量子（ML-DSA-65）远程证明，内置SLSA来源用于no_std嵌入式Rust",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_7",
+      "summary": "即使大规模量子系统仍需数年才能实现，像固件签名和基础设施身份这样的长期信任系统已经暴露在“现在存储，后来破解”的攻击中。项目仍处于早期阶段，但我正努力将其推进到实际可部署的阶段，而不仅仅是理论上的。",
+      "publishedAt": "2026-05-21T18:26:39.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        18,
+        23
+      ],
+      "reason": "Post-quantum security is crucial for Rust developers",
+      "suggestedTitle": "PQ-RASCV：嵌入式Rust的后量子安全",
+      "suggestedSummary": "PQ-RASCV-core项目为no_std嵌入式Rust环境引入了后量子（ML-DSA-65）远程证明，并内置SLSA来源。此举通过整合抗量子算法来应对“现在收集，后来解密”的威胁，对于嵌入式系统的长期安全至关重要。通过与Embassy框架的集成，该项目增强了Rust在构建安全、面向未来的嵌入式应用程序方面的能力。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b73c9162f072270bb9c6855525443f06f10cb29bf4922fc6926a4f4ba7863489",
+      "source": "Lobsters Rust",
+      "title": "feloxi：实时Celery任务队列监控 — Rust/Axum后端，Next.js仪表板，ClickHouse分析",
+      "url": "https://github.com/thesaadmirza/feloxi",
+      "summary": "评论",
+      "publishedAt": "2026-05-21T19:54:20.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a029dec6712792366834df54735d10630b61fa07efcc301f79cff0e600758394",
+      "source": "Rust Internals",
+      "title": "希望改善cargo或rustup的错误信息",
+      "url": "https://internals.rust-lang.org/t/hope-to-improve-the-error-messages-of-cargo-or-rustup/24350#post_1",
+      "summary": "当我在安装mdbook时，突然出现了以下错误：\r\n\\rustbook_zhcn-main> cargo install mdbook\n错误：进程未能成功退出：rustc -vV（退出代码：1）\n--- stderr\n错误：工具链 '1.90-aarch64-pc-windows-msvc' 缺少清单\n\n作为一个对rust-lang工具链架构不太熟悉的人，我不知道发生了什么。我询问了AI并在网上搜索，但得到的都是关于如何在Windows上配置MSVC工具链的内容。但我显然已经……",
+      "publishedAt": "2026-05-21T20:48:42.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "00a7373523793b74ddecdb414e0232ffb9482614f50336c3ed3c58a56f8d02fa",
+      "source": "Rust Users Forum",
+      "title": "缓冲通道的想法",
+      "url": "https://users.rust-lang.org/t/idea-for-a-buffered-channel/140192?page=2#post_24",
+      "summary": "paddor：\n你考虑过使用zstd吗\n我正在使用MS_SQL COMPRESS，我认为像zstd这样先进的技术在很长一段时间内都不会可用！它的速度已经足够快了，这些是很少访问的旧电子邮件（和其他文件），负载很低。这是一个可以追溯到大约25年前的数据库。我通过各种压缩技术设法将其减少了大约5倍。",
+      "publishedAt": "2026-05-21T22:52:56.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4203dc0150dd6dd10c183990c7c0320483975f4e36b40d73993ea9779498a611",
+      "source": "This Week in Rust",
+      "title": "本周 Rust 第 652 期",
+      "url": "https://this-week-in-rust.org/blog/2026/05/20/this-week-in-rust-652/",
+      "summary": "您好，欢迎来到本周 Rust 的新一期！Rust 是一种编程语言，旨在帮助每个人构建可靠且高效的软件。这是对其进展和社区的每周总结。想要提及某些内容？请在 Bluesky 上标记我们 @thisweekinrust.bsky.social 或在 mastodon.social 上标记 @ThisWeekinRust，或者向我们发送拉取请求。想要参与其中？我们欢迎贡献。本周 Rust 的开发在 GitHub 上是公开的，档案可以在 this-week-in-rust.org 查看。如果您……",
+      "publishedAt": "2026-05-20T04:00:00.000Z",
+      "score": 9,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-22T00:22:33.161Z"
+  }
+}

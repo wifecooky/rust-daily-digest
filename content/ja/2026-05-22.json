@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-22",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "790a84f3e9f307c4d09f15650d76dd87b72c7cb76038159bb3c13640a7060cfa",
+      "source": "Rust Internals",
+      "title": "パッケージごとのターゲット機能の統合",
+      "url": "https://internals.rust-lang.org/t/per-package-target-feature-unification/24349#post_1",
+      "summary": "こんにちは、\n私たちの組み込み開発ワークスペースでは、パッケージごとのターゲットを使用することを楽しみにしていました。しかし、この問題が残っています：パッケージごとのターゲットが他のターゲットと競合する可能性のある機能を統合すること · Issue #9521 · rust-lang/cargo · GitHub は、私たちにとって大きな問題です（組み込みビルド用にstdフラグが設定されるため...）。\nこの問題を解決しようと試みました：Issue · GitHub そして、これを進めるための適切な方法は何かを考えていました。私の修正はそれほど場違いではないようですが、…",
+      "publishedAt": "2026-05-21T11:40:49.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        7,
+        20
+      ],
+      "reason": "Compiler changes directly affect Rust development",
+      "suggestedTitle": "パッケージごとのターゲット機能統合提案",
+      "suggestedSummary": "パッケージごとのターゲット機能統合の新しい提案は、特に組み込みワークスペース向けにRust開発体験を向上させることを目指しています。この変更により、開発者は特定のターゲットに合わせた機能をパッケージレベルで指定できるようになり、柔軟性と組織化が向上します。実装されれば、マルチターゲットプロジェクトの構成を合理化し、複雑さを軽減し、Rustを組み込みシステムやクロスプラットフォームアプリケーションにとってより効率的にする可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "0f1bc259507dbfe429fb94d3a5bdcda2fd179dc0f43bdafffdd68df04a6755ba",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: ポスト量子（ML-DSA-65）リモート認証と組み込みSLSAプロベナンスを備えたno_std組み込みRust",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_7",
+      "summary": "大規模な量子システムがまだ数年先であっても、ファームウェア署名やインフラストラクチャのアイデンティティのような長期間の信頼システムは、「今保存して、後で破る」攻撃にすでにさらされています。プロジェクトはまだ初期段階ですが、理論的なものだけでなく、実際に展開可能なものに向けて進めようとしています。",
+      "publishedAt": "2026-05-21T18:26:39.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        18,
+        23
+      ],
+      "reason": "Post-quantum security is crucial for Rust developers",
+      "suggestedTitle": "PQ-RASCV: 組み込みRustのためのポスト量子セキュリティ",
+      "suggestedSummary": "PQ-RASCV-coreプロジェクトは、no_std組み込みRust環境向けにポスト量子（ML-DSA-65）リモート認証と組み込みSLSAプロベナンスを導入します。この取り組みは、量子耐性アルゴリズムを組み込むことにより、「今収集して、後で解読する」という脅威に対処し、組み込みシステムの長期的なセキュリティを確保します。Embassyフレームワークと統合することで、このプロジェクトはRustの能力を強化し、安全で将来にわたって有効な組み込みアプリケーションの構築を可能にします。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b73c9162f072270bb9c6855525443f06f10cb29bf4922fc6926a4f4ba7863489",
+      "source": "Lobsters Rust",
+      "title": "feloxi: リアルタイムCeleryタスクキュー監視 — Rust/Axumバックエンド、Next.jsダッシュボード、ClickHouse分析",
+      "url": "https://github.com/thesaadmirza/feloxi",
+      "summary": "コメント",
+      "publishedAt": "2026-05-21T19:54:20.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a029dec6712792366834df54735d10630b61fa07efcc301f79cff0e600758394",
+      "source": "Rust Internals",
+      "title": "cargoまたはrustupのエラーメッセージを改善する希望",
+      "url": "https://internals.rust-lang.org/t/hope-to-improve-the-error-messages-of-cargo-or-rustup/24350#post_1",
+      "summary": "mdbookをインストールしているときに、次のエラーが突然表示されました：\r\n\\rustbook_zhcn-main> cargo install mdbook\nエラー: プロセスが正常に終了しませんでした: rustc -vV (終了コード: 1)\n--- 標準エラー出力\nエラー: ツールチェーン '1.90-aarch64-pc-windows-msvc' にマニフェストがありません\n\nrust-langのツールチェーンアーキテクチャにあまり詳しくない私には、何が起こったのか全く分かりませんでした。AIに尋ねたり、オンラインで検索したりしましたが、得られたのはWindowsでのMSVCツールチェーンの設定方法に関する内容ばかりでした。しかし、私は明らかにすでに…",
+      "publishedAt": "2026-05-21T20:48:42.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "00a7373523793b74ddecdb414e0232ffb9482614f50336c3ed3c58a56f8d02fa",
+      "source": "Rust Users Forum",
+      "title": "バッファ付きチャネルのアイデア",
+      "url": "https://users.rust-lang.org/t/idea-for-a-buffered-channel/140192?page=2#post_24",
+      "summary": "paddor:\nzstdを検討したことはありますか\n私はMS_SQL COMPRESSを使用していますが、zstdのような高度なものが利用可能になるのはまだ先だと思います！十分に高速で、これらは古いメール（およびその他の文書）であり、ほとんどアクセスされず、負荷も低いです。このデータベースは約25年前に遡ります。さまざまな圧縮技術を駆使して、約5倍に削減することができました。",
+      "publishedAt": "2026-05-21T22:52:56.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4203dc0150dd6dd10c183990c7c0320483975f4e36b40d73993ea9779498a611",
+      "source": "This Week in Rust",
+      "title": "今週のRust 652",
+      "url": "https://this-week-in-rust.org/blog/2026/05/20/this-week-in-rust-652/",
+      "summary": "こんにちは、そして「今週のRust」の新しい号へようこそ！\nRustは、誰もが信頼性が高く効率的なソフトウェアを構築できるようにするプログラミング言語です。\nこれは、その進捗とコミュニティの週間要約です。\n何か取り上げてほしいことがありますか？\nBlueskyでは@thisweekinrust.bsky.social、\nまたはmastodon.socialでは@ThisWeekinRustをタグ付けするか、\nプルリクエストを送ってください。\n参加したいですか？私たちは貢献を歓迎します。\n「今週のRust」はGitHubでオープンに開発されており、アーカイブはthis-week-in-rust.orgで閲覧できます。\nもしあなたが…",
+      "publishedAt": "2026-05-20T04:00:00.000Z",
+      "score": 9,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-22T00:22:38.875Z"
+  }
+}

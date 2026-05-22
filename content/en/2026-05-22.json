@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-22",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "790a84f3e9f307c4d09f15650d76dd87b72c7cb76038159bb3c13640a7060cfa",
+      "source": "Rust Internals",
+      "title": "Per-package-target feature unification",
+      "url": "https://internals.rust-lang.org/t/per-package-target-feature-unification/24349#post_1",
+      "summary": "Hi,\nFor our embedded development workspaces, I was looking forward to using per-package-target... But this issue remaining with that: per-package-target unifies features which can conflict with other targets · Issue #9521 · rust-lang/cargo · GitHub is quite the problem for us (since we get std flags set for the embedded build...).\nI've had a stab at fixing the issue: Issue · GitHub and was wondering what the proper way would be to go forward with that. My fix doesn't seem to far out of place,…",
+      "publishedAt": "2026-05-21T11:40:49.000Z",
+      "score": 27,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        7,
+        20
+      ],
+      "reason": "Compiler changes directly affect Rust development",
+      "suggestedTitle": "Per-Package-Target Feature Unification Proposal",
+      "suggestedSummary": "A new proposal for per-package-target feature unification aims to improve the Rust development experience, particularly for embedded workspaces. This change would allow developers to specify features at the package level, tailored to specific targets, enhancing flexibility and organization. If implemented, this could streamline configurations and reduce complexity in multi-target projects, making Rust more efficient for embedded systems and cross-platform applications.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "0f1bc259507dbfe429fb94d3a5bdcda2fd179dc0f43bdafffdd68df04a6755ba",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: Post-quantum (ML-DSA-65) remote attestation with built-in SLSA provenance for no_std embedded Rust",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_7",
+      "summary": "Even if large-scale quantum systems are still years away, long-lived trust systems like firmware signing and infrastructure identity are already exposed to “store now, break later” attacks.\nStill early days for the project, but I’m trying to push it toward something actually deployable, not just theoretical.",
+      "publishedAt": "2026-05-21T18:26:39.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        18,
+        23
+      ],
+      "reason": "Post-quantum security is crucial for Rust developers",
+      "suggestedTitle": "PQ-RASCV: Post-Quantum Security for Embedded Rust",
+      "suggestedSummary": "The PQ-RASCV-core project introduces post-quantum (ML-DSA-65) remote attestation with built-in SLSA provenance for no_std embedded Rust environments. This initiative addresses the 'harvest now, decrypt later' threat by incorporating quantum-resistant algorithms, crucial for long-term security in embedded systems. By integrating with the Embassy framework, this project enhances Rust's capabilities in building secure, future-proof embedded applications.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "b73c9162f072270bb9c6855525443f06f10cb29bf4922fc6926a4f4ba7863489",
+      "source": "Lobsters Rust",
+      "title": "feloxi: Real-time Celery task queue monitoring — Rust/Axum backend, Next.js dashboard, ClickHouse analytics",
+      "url": "https://github.com/thesaadmirza/feloxi",
+      "summary": "Comments",
+      "publishedAt": "2026-05-21T19:54:20.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a029dec6712792366834df54735d10630b61fa07efcc301f79cff0e600758394",
+      "source": "Rust Internals",
+      "title": "Hope to improve the error messages of cargo or rustup",
+      "url": "https://internals.rust-lang.org/t/hope-to-improve-the-error-messages-of-cargo-or-rustup/24350#post_1",
+      "summary": "When I was installing mdbook, the following error suddenly popped up:\n\\rustbook_zhcn-main> cargo install mdbook\nerror: process didn't exit successfully: rustc -vV (exit code: 1)\n--- stderr\nerror: Missing manifest in toolchain '1.90-aarch64-pc-windows-msvc'\n\nAs someone not very familiar with the rust-lang toolchain architecture, I had no idea what happened. I asked AI and searched online, but all I got was content about how to configure the MSVC toolchain on Windows. But I had obviously already…",
+      "publishedAt": "2026-05-21T20:48:42.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "00a7373523793b74ddecdb414e0232ffb9482614f50336c3ed3c58a56f8d02fa",
+      "source": "Rust Users Forum",
+      "title": "Idea for a buffered channel",
+      "url": "https://users.rust-lang.org/t/idea-for-a-buffered-channel/140192?page=2#post_24",
+      "summary": "paddor:\nhave you considered zstd\nI am using MS_SQL COMPRESS, I don't think anything as advanced as zstd will be available for a long time! It is plenty fast enough, these are old emails (and other documents) that are rarely accessed and the load is low. This is a database that goes back about 25 years. I managed (through a variety of compression techniques) to reduce it by a factor of about 5.",
+      "publishedAt": "2026-05-21T22:52:56.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "4203dc0150dd6dd10c183990c7c0320483975f4e36b40d73993ea9779498a611",
+      "source": "This Week in Rust",
+      "title": "This Week in Rust 652",
+      "url": "https://this-week-in-rust.org/blog/2026/05/20/this-week-in-rust-652/",
+      "summary": "Hello and welcome to another issue of This Week in Rust!\nRust is a programming language empowering everyone to build reliable and efficient software.\nThis is a weekly summary of its progress and community.\nWant something mentioned? Tag us at\n@thisweekinrust.bsky.social on Bluesky or\n@ThisWeekinRust on mastodon.social, or\nsend us a pull request.\nWant to get involved? We love contributions.\nThis Week in Rust is openly developed on GitHub and archives can be viewed at this-week-in-rust.org.\nIf you…",
+      "publishedAt": "2026-05-20T04:00:00.000Z",
+      "score": 9,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-22T00:22:25.819Z"
+  }
+}
