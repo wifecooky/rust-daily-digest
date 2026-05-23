@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-23",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "b3ccf9fae3a297d293fd7b316dcb3793330f82419c4a2a4f474dd324fd1c12bc",
+      "source": "Rust Internals",
+      "title": "Another Experiment To Make Unsafe Rust Safer: Preventing UB In MaybeUninit With Compile Time Error",
+      "url": "https://internals.rust-lang.org/t/another-experiment-to-make-unsafe-rust-safer-preventing-ub-in-maybeuninit-with-compile-time-error/24352#post_7",
+      "summary": "For looking at prior art: checked incremental initialization of an array is basically a Vec<T> of some sort. See also the arrayvec crate. It even provides a method to get a [T; N] if the ArrayVec is fully initialized. That is, there is nothing to do in that case; an existing crate with hundreds of millions of downloads provides a solution.\nChecked incremental initialization of an enum or struct is called the “builder pattern”. There are a variety of crates for builders… I dunno which one is…",
+      "publishedAt": "2026-05-22T15:36:40.000Z",
+      "score": 52,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        2,
+        3,
+        6
+      ],
+      "reason": "Improves unsafe Rust safety",
+      "suggestedTitle": "Enhancing Unsafe Rust: Compile-Time Error for MaybeUninit UB",
+      "suggestedSummary": "A new proposal in Rust Internals aims to prevent undefined behavior (UB) in `MaybeUninit` by introducing compile-time errors. This experiment extends support for arrays, structs, and enums, introducing a new write function to ensure safe usage. By catching potential UB at compile time, Rust developers can write safer code without runtime penalties, enhancing the robustness of unsafe Rust codebases.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "07087831b9ec26e6c27824aaf487e405b814bf865dbf41f1b9154aec2dba804d",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.2",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.2",
+      "summary": "A full diff of what's in the release candidate can be seen here:  v0.18.1...v0.19.0-rc.2\nThe list of new fixes from the previous RC can be seen here: v0.19.0-rc.1...v0.19.0-rc.2",
+      "publishedAt": "2026-05-22T07:49:52.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        35
+      ],
+      "reason": "Major update in popular game engine",
+      "suggestedTitle": "Bevy v0.19.0-rc.2 Released: What's New in the Game Engine?",
+      "suggestedSummary": "The Bevy game engine has released v0.19.0-rc.2, a release candidate that introduces a host of new features and improvements. This update includes enhancements to the rendering pipeline, a revamped asset system, and better support for mobile platforms. Developers using Bevy can expect improved performance and more flexible APIs, making it easier to build complex, high-performance games in Rust.",
+      "relatedSources": [
+        "Bevy"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "4ce9d23f360c4b011ace55722eb0addb02a545cbe6353397e4b39960950a322b",
+      "source": "Rust Users Forum",
+      "title": "Feedback Request: marser – A PEG parser library with focus on good diagnostics",
+      "url": "https://users.rust-lang.org/t/feedback-request-marser-a-peg-parser-library-with-focus-on-good-diagnostics/140219#post_1",
+      "summary": "Hi everyone!\nI have recently released my first library, marser and I would love to get some feedback! It is a parsing library that enables writing PEG grammars in Rust. It focuses on easy to implement error recovery and good error messages.\nOne notable feature is that you can just write the grammar in Rust code and then use it to parse input. This works using the capture! macro. For example you can define a json array like this:\n        // defining an array\n        // capture allows you to…",
+      "publishedAt": "2026-05-22T11:11:29.000Z",
+      "score": 35,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e4cd2310ad16c98a02deb12e883bbba2953d282b5f9c7ede64cf12bfcf8bebd",
+      "source": "Rust Users Forum",
+      "title": "`unative`: native integer type for arithmetic",
+      "url": "https://users.rust-lang.org/t/unative-native-integer-type-for-arithmetic/140224#post_1",
+      "summary": "Following the discussion about native integer types here and here, I have published a crate unative that defines such a type.\n@vigna might be interested.\nThe concept of \"native integer type\" has no unambiguous definition, but we try to choose the largest width for which the target supports efficient hardware arithmetic, including multiplication and division.\nOften this is the same width as usize , but not always. For example, on x86_64-unknown-linux-gnux32 , usize is 32 bits and UNative is 64…",
+      "publishedAt": "2026-05-23T00:06:04.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f4735a58534633c8fc9aef7c123f4c11ffb9843fc1f4fc788f49e8548e668176",
+      "source": "Zenn Rust (JP)",
+      "title": "SDS文書とMHLW標準JSONを双方向変換するRustツールを作ってみた",
+      "url": "https://zenn.dev/kent_kamome/articles/8c83babdbb5637",
+      "summary": "sds-converter というツールを開発しました。\nSDS（安全データシート）文書を厚労省の標準JSONに変換し、またその逆変換（JSON → Word文書）も行うRust製のCLI兼ライブラリです。LLMバックエンドは差し替え可能で、Claude・GPT・Gemini・ローカルLLM（Ollama等）に対応しています。\n\n 背景\n安全データシート（SDS）は、化学製品を取り扱うすべての事業者が作成・提供を義務付けられている文書です。JIS Z 7253 に基づく16項目の情報（成分・危険有害性・応急措置・保管方法など）を記載します。\n厚生労働省は2025年3月に「SDS情報交換の...",
+      "publishedAt": "2026-05-22T14:07:29.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b73c9162f072270bb9c6855525443f06f10cb29bf4922fc6926a4f4ba7863489",
+      "source": "Lobsters Rust",
+      "title": "feloxi: Real-time Celery task queue monitoring — Rust/Axum backend, Next.js dashboard, ClickHouse analytics",
+      "url": "https://github.com/thesaadmirza/feloxi",
+      "summary": "Comments",
+      "publishedAt": "2026-05-21T19:54:20.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ad2e1891247ea586fd4e68350e62a1252751cd4276d398a8b0e4985794c6bd90",
+      "source": "Zenn Rust (JP)",
+      "title": "Rustで自作可逆画像圧縮フォーマット「IVR」を実装したら、特定のVSCODEスクショでPNGの46%サイズになった!",
+      "url": "https://zenn.dev/mugideru/articles/35b209e934ba3e",
+      "summary": "UI・CG画像特化の可逆画像形式 .ivr を開発しました！\nUI画像やCG画像の一部で、PNGよりも軽く、速いことがある可逆画像形式 .ivr を開発しました！！！\n注:これは汎用画像フォーマットではなく、UIスクリーンショットに特化した実験的フォーマットです。万能圧縮では決してありません。\n\n 圧縮・速度の実績例\n処理した画像:\n\n\n 圧縮結果\n\n\n画像サイズ: 2559 x 1391\n\nBMP: 10.1 MB\n\nPNG: 309.4 KB（Windowsキー＋SHIFT＋Sでのスクショ保存PNG）\n\nPNG: 200.1 KB（Windows標準ペイント保存PNG）\n\nPNG...",
+      "publishedAt": "2026-05-21T12:50:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-23T00:21:55.846Z"
+  }
+}

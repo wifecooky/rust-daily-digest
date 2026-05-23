@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-23",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "b3ccf9fae3a297d293fd7b316dcb3793330f82419c4a2a4f474dd324fd1c12bc",
+      "source": "Rust Internals",
+      "title": "安全でないRustをより安全にするための別の実験: MaybeUninitの未定義動作をコンパイル時エラーで防ぐ",
+      "url": "https://internals.rust-lang.org/t/another-experiment-to-make-unsafe-rust-safer-preventing-ub-in-maybeuninit-with-compile-time-error/24352#post_7",
+      "summary": "先行技術を調査するために: 配列のチェック付きインクリメンタル初期化は、基本的に何らかの形のVec<T>です。また、arrayvecクレートも参照してください。ArrayVecが完全に初期化されている場合に[T; N]を取得するメソッドも提供しています。つまり、その場合には何もする必要はありません。数億回のダウンロードを誇る既存のクレートが解決策を提供しています。列挙型や構造体のチェック付きインクリメンタル初期化は「ビルダーパターン」と呼ばれます。ビルダー用のさまざまなクレートがありますが、どれが良いのかはわかりません…",
+      "publishedAt": "2026-05-22T15:36:40.000Z",
+      "score": 52,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        2,
+        3,
+        6
+      ],
+      "reason": "Improves unsafe Rust safety",
+      "suggestedTitle": "安全でないRustの強化: MaybeUninitの未定義動作に対するコンパイル時エラー",
+      "suggestedSummary": "Rust Internalsの新しい提案は、`MaybeUninit`における未定義動作（UB）をコンパイル時エラーで防ぐことを目的としています。この実験は、配列、構造体、列挙型へのサポートを拡張し、安全な使用を保証するための新しい書き込み関数を導入します。コンパイル時に潜在的なUBをキャッチすることで、Rust開発者は実行時のペナルティなしにより安全なコードを書くことができ、安全でないRustコードベースの堅牢性を向上させます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "07087831b9ec26e6c27824aaf487e405b814bf865dbf41f1b9154aec2dba804d",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.2",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.2",
+      "summary": "リリース候補に含まれるすべての差分はこちらで確認できます: v0.18.1...v0.19.0-rc.2 前回のRCからの新しい修正のリストはこちらで確認できます: v0.19.0-rc.1...v0.19.0-rc.2",
+      "publishedAt": "2026-05-22T07:49:52.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        35
+      ],
+      "reason": "Major update in popular game engine",
+      "suggestedTitle": "Bevy v0.19.0-rc.2 リリース: ゲームエンジンの新機能は？",
+      "suggestedSummary": "Bevyゲームエンジンがv0.19.0-rc.2をリリースしました。このリリース候補には、多くの新機能と改善が導入されています。このアップデートには、レンダリングパイプラインの強化、アセットシステムの刷新、モバイルプラットフォームのサポート向上が含まれています。Bevyを使用する開発者は、パフォーマンスの向上とより柔軟なAPIを期待でき、Rustで複雑で高性能なゲームを構築しやすくなります。",
+      "relatedSources": [
+        "Bevy"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "4ce9d23f360c4b011ace55722eb0addb02a545cbe6353397e4b39960950a322b",
+      "source": "Rust Users Forum",
+      "title": "フィードバックのお願い: marser – 優れた診断機能に焦点を当てたPEGパーサーライブラリ",
+      "url": "https://users.rust-lang.org/t/feedback-request-marser-a-peg-parser-library-with-focus-on-good-diagnostics/140219#post_1",
+      "summary": "皆さん、こんにちは！\n最近、私の最初のライブラリであるmarserをリリースしました。フィードバックをいただけると嬉しいです！このライブラリは、RustでPEG文法を書くことを可能にするパーシングライブラリです。実装が簡単なエラー回復と優れたエラーメッセージに焦点を当てています。\n注目すべき機能の一つは、Rustコードで文法を書くだけで、それを使って入力を解析できることです。これはcapture!マクロを使用して動作します。例えば、次のようにjson配列を定義できます：\n        // 配列の定義\n        // captureを使用して…",
+      "publishedAt": "2026-05-22T11:11:29.000Z",
+      "score": 35,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e4cd2310ad16c98a02deb12e883bbba2953d282b5f9c7ede64cf12bfcf8bebd",
+      "source": "Rust Users Forum",
+      "title": "unative: 算術用のネイティブ整数型",
+      "url": "https://users.rust-lang.org/t/unative-native-integer-type-for-arithmetic/140224#post_1",
+      "summary": "ここやここでのネイティブ整数型に関する議論に続いて、私はそのような型を定義するクレートunativeを公開しました。@vignaは興味を持つかもしれません。「ネイティブ整数型」の概念には明確な定義はありませんが、ターゲットが効率的なハードウェア算術（乗算や除算を含む）をサポートする最大の幅を選択しようとしています。多くの場合、これはusizeと同じ幅ですが、常にそうとは限りません。例えば、x86_64-unknown-linux-gnux32では、usizeは32ビットであり、UNativeは64ビットです。",
+      "publishedAt": "2026-05-23T00:06:04.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f4735a58534633c8fc9aef7c123f4c11ffb9843fc1f4fc788f49e8548e668176",
+      "source": "Zenn Rust (JP)",
+      "title": "SDS文書とMHLW標準JSONを双方向変換するRustツールを作成",
+      "url": "https://zenn.dev/kent_kamome/articles/8c83babdbb5637",
+      "summary": "sds-converterというツールを開発しました。SDS（安全データシート）文書を厚生労働省の標準JSONに変換し、またその逆変換（JSON → Word文書）も行うRust製のCLI兼ライブラリです。LLMバックエンドは差し替え可能で、Claude・GPT・Gemini・ローカルLLM（Ollama等）に対応しています。\n\n背景\n安全データシート（SDS）は、化学製品を取り扱うすべての事業者が作成・提供を義務付けられている文書です。JIS Z 7253 に基づく16項目の情報（成分・危険有害性・応急措置・保管方法など）を記載します。厚生労働省は2025年3月に「SDS情報交換の...",
+      "publishedAt": "2026-05-22T14:07:29.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b73c9162f072270bb9c6855525443f06f10cb29bf4922fc6926a4f4ba7863489",
+      "source": "Lobsters Rust",
+      "title": "feloxi: リアルタイムのCeleryタスクキュー監視 — Rust/Axumバックエンド、Next.jsダッシュボード、ClickHouse分析",
+      "url": "https://github.com/thesaadmirza/feloxi",
+      "summary": "コメント",
+      "publishedAt": "2026-05-21T19:54:20.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ad2e1891247ea586fd4e68350e62a1252751cd4276d398a8b0e4985794c6bd90",
+      "source": "Zenn Rust (JP)",
+      "title": "Rustで自作可逆画像圧縮フォーマット「IVR」を実装したら、特定のVSCODEスクショでPNGの46%サイズになった!",
+      "url": "https://zenn.dev/mugideru/articles/35b209e934ba3e",
+      "summary": "UI・CG画像特化の可逆画像形式 .ivr を開発しました！\nUI画像やCG画像の一部で、PNGよりも軽く、速いことがある可逆画像形式 .ivr を開発しました！！！\n注:これは汎用画像フォーマットではなく、UIスクリーンショットに特化した実験的フォーマットです。万能圧縮では決してありません。\n\n圧縮・速度の実績例\n処理した画像:\n\n圧縮結果\n\n画像サイズ: 2559 x 1391\n\nBMP: 10.1 MB\n\nPNG: 309.4 KB（Windowsキー＋SHIFT＋Sでのスクショ保存PNG）\n\nPNG: 200.1 KB（Windows標準ペイント保存PNG）\n\nPNG...",
+      "publishedAt": "2026-05-21T12:50:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-23T00:22:14.602Z"
+  }
+}

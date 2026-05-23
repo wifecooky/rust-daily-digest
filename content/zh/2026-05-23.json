@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-23",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "b3ccf9fae3a297d293fd7b316dcb3793330f82419c4a2a4f474dd324fd1c12bc",
+      "source": "Rust Internals",
+      "title": "另一个实验以使不安全的 Rust 更安全：通过编译时错误防止 MaybeUninit 中的未定义行为",
+      "url": "https://internals.rust-lang.org/t/another-experiment-to-make-unsafe-rust-safer-preventing-ub-in-maybeuninit-with-compile-time-error/24352#post_7",
+      "summary": "查看现有技术：数组的检查增量初始化基本上是某种 Vec<T>。另请参阅 arrayvec crate。它甚至提供了一种方法来获取 [T; N]，如果 ArrayVec 完全初始化的话。也就是说，在这种情况下无事可做；一个拥有数亿次下载的现有 crate 提供了解决方案。枚举或结构体的检查增量初始化称为“构建者模式”。有各种各样的构建者 crate……我不知道哪一个是……",
+      "publishedAt": "2026-05-22T15:36:40.000Z",
+      "score": 52,
+      "relatedCount": 7,
+      "candidateNumbers": [
+        2,
+        3,
+        6
+      ],
+      "reason": "Improves unsafe Rust safety",
+      "suggestedTitle": "增强不安全的 Rust：MaybeUninit UB 的编译时错误",
+      "suggestedSummary": "Rust Internals 的一项新提案旨在通过引入编译时错误来防止 `MaybeUninit` 中的未定义行为（UB）。此实验扩展了对数组、结构体和枚举的支持，引入了一个新的写入函数以确保安全使用。通过在编译时捕获潜在的 UB，Rust 开发者可以编写更安全的代码而无需运行时惩罚，从而增强不安全 Rust 代码库的稳健性。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "07087831b9ec26e6c27824aaf487e405b814bf865dbf41f1b9154aec2dba804d",
+      "source": "Bevy",
+      "title": "v0.19.0-rc.2",
+      "url": "https://github.com/bevyengine/bevy/releases/tag/v0.19.0-rc.2",
+      "summary": "可以在这里查看发布候选版本中的完整差异：v0.18.1...v0.19.0-rc.2 从上一个RC版本的新修复列表可以在这里查看：v0.19.0-rc.1...v0.19.0-rc.2",
+      "publishedAt": "2026-05-22T07:49:52.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        35
+      ],
+      "reason": "Major update in popular game engine",
+      "suggestedTitle": "Bevy v0.19.0-rc.2 发布：游戏引擎有哪些新变化？",
+      "suggestedSummary": "Bevy游戏引擎发布了v0.19.0-rc.2，这是一个引入了大量新功能和改进的发布候选版本。此次更新包括对渲染管线的增强、重新设计的资产系统以及对移动平台的更好支持。使用Bevy的开发者可以期待性能的提升和更灵活的API，从而更轻松地在Rust中构建复杂的高性能游戏。",
+      "relatedSources": [
+        "Bevy"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "4ce9d23f360c4b011ace55722eb0addb02a545cbe6353397e4b39960950a322b",
+      "source": "Rust Users Forum",
+      "title": "反馈请求：marser – 专注于良好诊断的PEG解析器库",
+      "url": "https://users.rust-lang.org/t/feedback-request-marser-a-peg-parser-library-with-focus-on-good-diagnostics/140219#post_1",
+      "summary": "大家好！\n我最近发布了我的第一个库，marser，我很想听听大家的反馈！这是一个解析库，可以在Rust中编写PEG语法。它专注于易于实现的错误恢复和良好的错误信息。\n一个显著的特点是你可以直接在Rust代码中编写语法，然后用它来解析输入。这是通过capture!宏实现的。例如，你可以像这样定义一个json数组：\n // 定义一个数组\n // capture允许你…",
+      "publishedAt": "2026-05-22T11:11:29.000Z",
+      "score": 35,
+      "relatedCount": 2,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e4cd2310ad16c98a02deb12e883bbba2953d282b5f9c7ede64cf12bfcf8bebd",
+      "source": "Rust Users Forum",
+      "title": "`unative`: 用于算术运算的本地整数类型",
+      "url": "https://users.rust-lang.org/t/unative-native-integer-type-for-arithmetic/140224#post_1",
+      "summary": "在关于本地整数类型的讨论之后，我发布了一个名为 unative 的 crate，它定义了这样一种类型。@vigna 可能会感兴趣。“本地整数类型”的概念没有明确的定义，但我们尝试选择目标支持高效硬件算术（包括乘法和除法）的最大宽度。这通常与 usize 的宽度相同，但并不总是如此。例如，在 x86_64-unknown-linux-gnux32 上，usize 是 32 位，而 UNative 是 64 位……",
+      "publishedAt": "2026-05-23T00:06:04.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "f4735a58534633c8fc9aef7c123f4c11ffb9843fc1f4fc788f49e8548e668176",
+      "source": "Zenn Rust (JP)",
+      "title": "我尝试制作了一个用于双向转换SDS文档和MHLW标准JSON的Rust工具",
+      "url": "https://zenn.dev/kent_kamome/articles/8c83babdbb5637",
+      "summary": "开发了一款名为sds-converter的工具。它是一个用Rust编写的CLI和库，可以将SDS（安全数据表）文档转换为厚生劳动省的标准JSON格式，并进行逆向转换（JSON → Word文档）。该工具的LLM后端是可替换的，支持Claude、GPT、Gemini和本地LLM（如Ollama等）。\n\n背景\n安全数据表（SDS）是所有处理化学产品的企业必须创建和提供的文件。它根据JIS Z 7253标准列出16项信息（成分、危险性、急救措施、存储方法等）。厚生劳动省计划在2025年3月推出“SDS信息交换的...",
+      "publishedAt": "2026-05-22T14:07:29.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b73c9162f072270bb9c6855525443f06f10cb29bf4922fc6926a4f4ba7863489",
+      "source": "Lobsters Rust",
+      "title": "feloxi：实时 Celery 任务队列监控 — Rust/Axum 后端, Next.js 仪表盘, ClickHouse 分析",
+      "url": "https://github.com/thesaadmirza/feloxi",
+      "summary": "评论",
+      "publishedAt": "2026-05-21T19:54:20.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ad2e1891247ea586fd4e68350e62a1252751cd4276d398a8b0e4985794c6bd90",
+      "source": "Zenn Rust (JP)",
+      "title": "用Rust实现自制可逆图像压缩格式“IVR”，在特定的VSCODE截图中达到PNG的46%大小！",
+      "url": "https://zenn.dev/mugideru/articles/35b209e934ba3e",
+      "summary": "我们开发了一种专注于UI和CG图像的可逆图像格式.ivr！在某些UI图像和CG图像中，这种可逆图像格式.ivr比PNG更轻、更快！！！\n注意：这不是通用图像格式，而是专门针对UI截图的实验性格式。绝不是万能压缩。\n\n压缩和速度的实际例子\n处理的图像：\n\n压缩结果\n\n图像尺寸：2559 x 1391\n\nBMP: 10.1 MB\n\nPNG: 309.4 KB（使用Windows键+SHIFT+S保存的截图PNG）\n\nPNG: 200.1 KB（使用Windows标准画图保存的PNG）\n\nPNG...",
+      "publishedAt": "2026-05-21T12:50:05.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-23T00:22:07.303Z"
+  }
+}
