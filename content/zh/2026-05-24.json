@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-24",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "3b71fbc6ef1220d91840ee7d53fb8e439ac33bcf115b1c3c32a75c8d60f2d4c1",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.7",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.7",
+      "summary": "修复：在传递给 CEF 之前确保数据目录存在",
+      "publishedAt": "2026-05-23T01:30:50.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Tauri update impacts Rust-based apps",
+      "suggestedTitle": "Tauri v3.0.0-alpha.7 增强数据目录处理",
+      "suggestedSummary": "Tauri 发布了 v3.0.0-alpha.7，解决了一个关键问题，即在将数据目录传递给 Chromium 嵌入式框架 (CEF) 之前确保其存在。此更改通过防止与缺失目录相关的潜在运行时错误，提高了使用 Tauri 构建的应用程序的可靠性。对于在 Rust 项目中使用 Tauri 的开发人员来说，此更新对于保持应用程序的稳健性至关重要。",
+      "relatedSources": [
+        "Tauri"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "42e9a75cb3ef35a35c5ba128e71784aa4d97bd5cb71f8c8d026c642fdac05c6c",
+      "source": "Google News Rust",
+      "title": "GNOME Commander 2.0 在 Rust 和 GTK4 重写后发布 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBjNl9nRmFhWmpwLUxGQ3FQc1pjeXhrcmlBY1hkeDdtR052RG5WWmp1VVlMRGtPR0xRNDBoOXFtOGltZndsYk9STE43X0h3eTlQSGdlYVZISVpSbmlMQnc?oc=5",
+      "summary": "GNOME Commander 2.0 在 Rust 和 GTK4 重写后发布  Phoronix",
+      "publishedAt": "2026-05-23T00:24:00.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56
+      ],
+      "reason": "Rust adoption in major applications",
+      "suggestedTitle": "GNOME Commander 2.0：由 Rust 驱动的文件管理器",
+      "suggestedSummary": "GNOME Commander 2.0 已发布，采用 Rust 和 GTK4 完全重写。这一重大更新利用了 Rust 的安全性和性能优势，提供了现代且高效的文件管理体验。对于开发者来说，这突显了 Rust 在大型应用程序中日益增长的采用，强调了其作为构建强大、复杂软件的语言的可行性。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "293f906db2a1b281798d32361dfeef214399cc1bd267032945be9ed1e9131d55",
+      "source": "Rust Users Forum",
+      "title": "Rgx — 一个用于终端的正则表达式调试器（逐步执行，3个引擎，代码生成）",
+      "url": "https://users.rust-lang.org/t/rgx-a-regex-debugger-for-the-terminal-step-through-execution-3-engines-code-generation/140229#post_1",
+      "summary": "我一直在开发rgx，这是一个用Rust编写的终端正则表达式调试器，使用了ratatui和crossterm。刚刚发布了v0.12.3。与其他终端正则表达式工具不同的是：我在其他地方没有见过的主要功能是逐步调试器（Ctrl+D，PCRE2）——它通过双光标可视化（模式光标和文本光标一起移动）、回溯标记和显示模式匹配部分的热图模式来跟踪执行。除此之外：3个引擎——Rust正则表达式（默认）…",
+      "publishedAt": "2026-05-23T13:55:15.000Z",
+      "score": 50,
+      "relatedCount": 5,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b5ab8d1b1cc504c285a90a1c7bf8e0ec7568efd8743fc658cc4c06fea4ed12d",
+      "source": "Rust Users Forum",
+      "title": "Holt 0.3.2：用于路径形状元数据的嵌入式持久ART",
+      "url": "https://users.rust-lang.org/t/holt-0-3-2-an-embedded-persistent-art-for-path-shaped-metadata/140228#post_1",
+      "summary": "嗨，Rustaceans，\n我刚刚发布了 holt v0.3.2：\nGitHub: GitHub - feichai0017/holt: 自适应基数树元数据存储引擎 · GitHub\ncrates.io: crates.io: Rust 包注册表\ndocs.rs: holt - Rust\nholt 是一个嵌入式 Rust 元数据引擎，围绕持久的自适应基数树构建。它专为路径形状的元数据工作负载而设计：S3 对象名称、文件系统路径、命名空间目录、工件索引和类似的分层键空间。\n主要思想是，许多元数据工作负载是……",
+      "publishedAt": "2026-05-23T09:46:27.000Z",
+      "score": 45,
+      "relatedCount": 5,
+      "category": "quickNews"
+    },
+    {
+      "id": "16a421decdd019fce80db6121d5ae976d1c4b4b4239cc668abfb40b49c0cb573",
+      "source": "Rust Users Forum",
+      "title": "Pipa-js：一个用Rust构建的快速、简约的ES2023 JavaScript运行时",
+      "url": "https://users.rust-lang.org/t/pipa-js-a-fast-minimal-es2023-javascript-runtime-built-in-rust/140196#post_2",
+      "summary": "不错！pipa可以使用instantiateStreaming实例化WASM代码吗？",
+      "publishedAt": "2026-05-23T07:18:28.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e4cd2310ad16c98a02deb12e883bbba2953d282b5f9c7ede64cf12bfcf8bebd",
+      "source": "Rust Users Forum",
+      "title": "`unative`: 用于算术运算的本机整数类型",
+      "url": "https://users.rust-lang.org/t/unative-native-integer-type-for-arithmetic/140224#post_1",
+      "summary": "在关于本机整数类型的讨论之后，我发布了一个名为 unative 的 crate，它定义了这种类型。@vigna 可能会感兴趣。“本机整数类型”这个概念没有明确的定义，但我们尝试选择目标支持高效硬件算术运算（包括乘法和除法）的最大宽度。这通常与 usize 的宽度相同，但并不总是如此。例如，在 x86_64-unknown-linux-gnux32 上，usize 是 32 位，而 UNative 是 64 位……",
+      "publishedAt": "2026-05-23T00:06:04.000Z",
+      "score": 15,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-24T00:21:20.860Z"
+  }
+}

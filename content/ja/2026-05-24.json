@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-24",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "3b71fbc6ef1220d91840ee7d53fb8e439ac33bcf115b1c3c32a75c8d60f2d4c1",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.7",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.7",
+      "summary": "修正: CEFに渡す前にデータディレクトリが存在することを確認",
+      "publishedAt": "2026-05-23T01:30:50.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Tauri update impacts Rust-based apps",
+      "suggestedTitle": "Tauri v3.0.0-alpha.7、データディレクトリの処理を強化",
+      "suggestedSummary": "Tauriはv3.0.0-alpha.7をリリースし、Chromium Embedded Framework (CEF) に渡す前にデータディレクトリが存在することを確認することで、重要な問題に対処しました。この変更により、Tauriで構築されたアプリケーションの信頼性が向上し、ディレクトリが存在しないことに関連する潜在的なランタイムエラーを防ぎます。RustプロジェクトでTauriを使用する開発者にとって、このアップデートは堅牢なアプリケーション動作を維持するために重要です。",
+      "relatedSources": [
+        "Tauri"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "42e9a75cb3ef35a35c5ba128e71784aa4d97bd5cb71f8c8d026c642fdac05c6c",
+      "source": "Google News Rust",
+      "title": "GNOME Commander 2.0がRustとGTK4での書き直しを経てリリース - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBjNl9nRmFhWmpwLUxGQ3FQc1pjeXhrcmlBY1hkeDdtR052RG5WWmp1VVlMRGtPR0xRNDBoOXFtOGltZndsYk9STE43X0h3eTlQSGdlYVZISVpSbmlMQnc?oc=5",
+      "summary": "GNOME Commander 2.0がRustとGTK4での書き直しを経てリリースされました - Phoronix",
+      "publishedAt": "2026-05-23T00:24:00.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56
+      ],
+      "reason": "Rust adoption in major applications",
+      "suggestedTitle": "GNOME Commander 2.0: Rustで強化されたファイルマネージャー",
+      "suggestedSummary": "GNOME Commander 2.0がリリースされ、RustとGTK4で完全に書き直されました。この重要なアップデートは、Rustの安全性とパフォーマンスの利点を活用し、現代的で効率的なファイル管理体験を提供します。開発者にとって、これは大規模アプリケーションにおけるRustの採用が進んでいることを示し、堅牢で複雑なソフトウェアを構築するための言語としての有効性を強調しています。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "293f906db2a1b281798d32361dfeef214399cc1bd267032945be9ed1e9131d55",
+      "source": "Rust Users Forum",
+      "title": "Rgx — ターミナル用正規表現デバッガ（ステップスルー実行、3つのエンジン、コード生成）",
+      "url": "https://users.rust-lang.org/t/rgx-a-regex-debugger-for-the-terminal-step-through-execution-3-engines-code-generation/140229#post_1",
+      "summary": "私はrgxというターミナル用の正規表現デバッガを開発してきました。これはRustで書かれており、ratatui + crosstermを使用しています。バージョン0.12.3をリリースしたばかりです。他のターミナル用正規表現ツールと異なる点は、ステップスルーデバッガ（Ctrl+D、PCRE2）を備えていることです。これは、デュアルカーソルのビジュアライゼーション（パターンカーソルとテキストカーソルが一緒に動く）、バックトラッキングマーカー、およびパターンのどの部分が一致しているかを示すヒートマップモードで実行をトレースします。それに加えて、3つのエンジンがあります— Rust正規表現（デフォルト）、…",
+      "publishedAt": "2026-05-23T13:55:15.000Z",
+      "score": 50,
+      "relatedCount": 5,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b5ab8d1b1cc504c285a90a1c7bf8e0ec7568efd8743fc658cc4c06fea4ed12d",
+      "source": "Rust Users Forum",
+      "title": "Holt 0.3.2: パス型メタデータ用の埋め込み型永続ART",
+      "url": "https://users.rust-lang.org/t/holt-0-3-2-an-embedded-persistent-art-for-path-shaped-metadata/140228#post_1",
+      "summary": "こんにちは、Rustaceansの皆さん、\n私はholt v0.3.2をリリースしました：\nGitHub: GitHub - feichai0017/holt: 適応ラジックスツリーのメタデータストレージエンジン · GitHub\ncrates.io: crates.io: Rustパッケージレジストリ\ndocs.rs: holt - Rust\nholtは、永続的な適応ラジックスツリーを中心に構築された埋め込み型Rustメタデータエンジンです。これは、パス型メタデータワークロード、例えばS3オブジェクト名、ファイルシステムパス、ネームスペースカタログ、アーティファクトインデックス、その他の類似の階層的キー空間に設計されています。\n主なアイデアは、多くのメタデータワークロードが…",
+      "publishedAt": "2026-05-23T09:46:27.000Z",
+      "score": 45,
+      "relatedCount": 5,
+      "category": "quickNews"
+    },
+    {
+      "id": "16a421decdd019fce80db6121d5ae976d1c4b4b4239cc668abfb40b49c0cb573",
+      "source": "Rust Users Forum",
+      "title": "Pipa-js: Rustで構築された高速でミニマルなES2023 JavaScriptランタイム",
+      "url": "https://users.rust-lang.org/t/pipa-js-a-fast-minimal-es2023-javascript-runtime-built-in-rust/140196#post_2",
+      "summary": "素晴らしい！pipaはinstantiateStreamingを使用してWASMコードをインスタンス化できますか？",
+      "publishedAt": "2026-05-23T07:18:28.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e4cd2310ad16c98a02deb12e883bbba2953d282b5f9c7ede64cf12bfcf8bebd",
+      "source": "Rust Users Forum",
+      "title": "unative: 算術用ネイティブ整数型",
+      "url": "https://users.rust-lang.org/t/unative-native-integer-type-for-arithmetic/140224#post_1",
+      "summary": "ここやここでのネイティブ整数型に関する議論を受けて、私はそのような型を定義するクレートunativeを公開しました。@vignaは興味を持つかもしれません。「ネイティブ整数型」の概念には明確な定義はありませんが、乗算や除算を含む効率的なハードウェア算術をターゲットがサポートする最大の幅を選ぶようにしています。これはしばしばusizeと同じ幅ですが、常にそうとは限りません。例えば、x86_64-unknown-linux-gnux32では、usizeは32ビットであり、UNativeは64ビットです…",
+      "publishedAt": "2026-05-23T00:06:04.000Z",
+      "score": 15,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-24T00:21:25.529Z"
+  }
+}

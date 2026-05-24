@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-24",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "3b71fbc6ef1220d91840ee7d53fb8e439ac33bcf115b1c3c32a75c8d60f2d4c1",
+      "source": "Tauri",
+      "title": "tauri-cef-v3.0.0-alpha.7",
+      "url": "https://github.com/tauri-apps/tauri/releases/tag/tauri-cef-v3.0.0-alpha.7",
+      "summary": "fix: ensure data directory exists before passing to CEF",
+      "publishedAt": "2026-05-23T01:30:50.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        55
+      ],
+      "reason": "Tauri update impacts Rust-based apps",
+      "suggestedTitle": "Tauri v3.0.0-alpha.7 Enhances Data Directory Handling",
+      "suggestedSummary": "Tauri has released v3.0.0-alpha.7, addressing a critical issue by ensuring the data directory exists before passing it to the Chromium Embedded Framework (CEF). This change enhances the reliability of applications built with Tauri by preventing potential runtime errors related to missing directories. For developers using Tauri in their Rust projects, this update is crucial for maintaining robust application behavior.",
+      "relatedSources": [
+        "Tauri"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "42e9a75cb3ef35a35c5ba128e71784aa4d97bd5cb71f8c8d026c642fdac05c6c",
+      "source": "Google News Rust",
+      "title": "GNOME Commander 2.0 Released Following Rewrite In Rust & GTK4 - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBjNl9nRmFhWmpwLUxGQ3FQc1pjeXhrcmlBY1hkeDdtR052RG5WWmp1VVlMRGtPR0xRNDBoOXFtOGltZndsYk9STE43X0h3eTlQSGdlYVZISVpSbmlMQnc?oc=5",
+      "summary": "GNOME Commander 2.0 Released Following Rewrite In Rust & GTK4  Phoronix",
+      "publishedAt": "2026-05-23T00:24:00.000Z",
+      "score": 16,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        56
+      ],
+      "reason": "Rust adoption in major applications",
+      "suggestedTitle": "GNOME Commander 2.0: A Rust-Powered File Manager",
+      "suggestedSummary": "GNOME Commander 2.0 has been released, featuring a complete rewrite in Rust and GTK4. This significant update leverages Rust's safety and performance benefits, providing a modern and efficient file management experience. For developers, this highlights Rust's growing adoption in large-scale applications, underscoring its viability as a language for building robust, complex software.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "293f906db2a1b281798d32361dfeef214399cc1bd267032945be9ed1e9131d55",
+      "source": "Rust Users Forum",
+      "title": "Rgx — a regex debugger for the terminal (step-through execution, 3 engines, code generation)",
+      "url": "https://users.rust-lang.org/t/rgx-a-regex-debugger-for-the-terminal-step-through-execution-3-engines-code-generation/140229#post_1",
+      "summary": "I've been working on rgx, a terminal regex debugger written in Rust using ratatui + crossterm. Just shipped v0.12.3.\nWhat makes it different from other terminal regex tools:\nThe main thing I haven't seen elsewhere is a step-through debugger (Ctrl+D, PCRE2) — it traces execution with a dual-cursor visualization (pattern cursor + text cursor moving together), backtracking markers, and a heatmap mode that shows which parts of the pattern are matched\nBeyond that:\n3 engines — Rust regex (default),…",
+      "publishedAt": "2026-05-23T13:55:15.000Z",
+      "score": 50,
+      "relatedCount": 5,
+      "category": "quickNews"
+    },
+    {
+      "id": "3b5ab8d1b1cc504c285a90a1c7bf8e0ec7568efd8743fc658cc4c06fea4ed12d",
+      "source": "Rust Users Forum",
+      "title": "Holt 0.3.2: an embedded persistent ART for path-shaped metadata",
+      "url": "https://users.rust-lang.org/t/holt-0-3-2-an-embedded-persistent-art-for-path-shaped-metadata/140228#post_1",
+      "summary": "Hi Rustaceans,\nI just released holt v0.3.2:\nGitHub: GitHub - feichai0017/holt: An adaptive-radix-tree metadata storage engine · GitHub\ncrates.io: crates.io: Rust Package Registry\ndocs.rs: holt - Rust\nholt is an embedded Rust metadata engine built around a persistent Adaptive Radix Tree. It is designed for path-shaped metadata workloads: S3 object names, filesystem paths, namespace catalogs, artifact indexes, and similar hierarchical key spaces.\nThe main idea is that many metadata workloads are…",
+      "publishedAt": "2026-05-23T09:46:27.000Z",
+      "score": 45,
+      "relatedCount": 5,
+      "category": "quickNews"
+    },
+    {
+      "id": "16a421decdd019fce80db6121d5ae976d1c4b4b4239cc668abfb40b49c0cb573",
+      "source": "Rust Users Forum",
+      "title": "Pipa-js: A fast, minimal ES2023 JavaScript runtime built in Rust",
+      "url": "https://users.rust-lang.org/t/pipa-js-a-fast-minimal-es2023-javascript-runtime-built-in-rust/140196#post_2",
+      "summary": "Nice one! pipa can instantiate WASM code with instantiateStreaming?",
+      "publishedAt": "2026-05-23T07:18:28.000Z",
+      "score": 15,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7e4cd2310ad16c98a02deb12e883bbba2953d282b5f9c7ede64cf12bfcf8bebd",
+      "source": "Rust Users Forum",
+      "title": "`unative`: native integer type for arithmetic",
+      "url": "https://users.rust-lang.org/t/unative-native-integer-type-for-arithmetic/140224#post_1",
+      "summary": "Following the discussion about native integer types here and here, I have published a crate unative that defines such a type.\n@vigna might be interested.\nThe concept of \"native integer type\" has no unambiguous definition, but we try to choose the largest width for which the target supports efficient hardware arithmetic, including multiplication and division.\nOften this is the same width as usize , but not always. For example, on x86_64-unknown-linux-gnux32 , usize is 32 bits and UNative is 64…",
+      "publishedAt": "2026-05-23T00:06:04.000Z",
+      "score": 15,
+      "relatedCount": 1,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-24T00:21:04.583Z"
+  }
+}
