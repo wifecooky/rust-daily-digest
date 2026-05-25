@@ -1,0 +1,100 @@
+{
+  "date": "2026-05-25",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "68799b38f13e05738f7f93e4e5701838daddd6c6f4e82c2241a6629b2cf486c0",
+      "source": "Rust Users Forum",
+      "title": "Cloakrs 0.3.0、超高速のRust PIIスキャナーと編集ツールキット",
+      "url": "https://users.rust-lang.org/t/cloakrs-0-3-0-a-blazing-fast-rust-pii-scanner-and-redaction-toolkit/140244#post_1",
+      "summary": "皆さん、こんにちは。\n私はcloakrs 0.3.0をcrates.ioでリリースしました。\nGitHub - kadir/cloakrs: Rustで書かれた超高速のPII検出、マスキング、および匿名化エンジン。ライブラリ＋CLI。· GitHub\ncloakrsは、テキスト、ログ、JSON、CSV、SQLダンプ内の個人を特定できる情報を検出し、マスキングするためのRustライブラリおよびCLIです。実用的なスキャナーとして始まりましたが、このリリースでは日常のプライバシーワークフローでより役立つものになっています。\nバージョン0.3.0では、個人名と住所の認識機能を追加しました、…",
+      "publishedAt": "2026-05-24T21:22:20.000Z",
+      "score": 55,
+      "relatedCount": 6,
+      "candidateNumbers": [
+        1,
+        6
+      ],
+      "reason": "Improves data privacy tools",
+      "suggestedTitle": "Cloakrs 0.3.0: 強化されたRust PIIスキャナーがリリース",
+      "suggestedSummary": "Cloakrs 0.3.0がリリースされ、Rustアプリケーションで個人を特定できる情報（PII）のスキャンと編集のための超高速ソリューションを提供します。このリリースはパフォーマンスの向上に焦点を当て、新機能を導入して機密データのより良い取り扱いを実現しています。Rust開発者は、Cloakrsをプロジェクトに統合することで、最小限のパフォーマンスオーバーヘッドでデータプライバシーとコンプライアンスを強化できます。",
+      "relatedSources": [
+        "Rust Users Forum",
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5a43632ca2ca0ade17c31934497cec8b45c147294316dc9153dc56b85ffb7c7e",
+      "source": "Rust Internals",
+      "title": "Rustのメモリモデルにおける競合読み込みを`MaybeInvalid<T>`で含める",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289?page=2#post_24",
+      "summary": "この論文は、アトミックな読み込みと非アトミックな書き込みの競合が未定義の動作ではなく未定義の値を生成するモデルを、非常に単純な方法で既に証明していることが判明しました。それは、リラックスしたアトミック書き込みと非アトミック書き込みの間に全く区別をしていません（それらは、論文が言及するすべてのシステムで同じコードにコンパイルされ、証明のどれも非アトミック書き込みとリラックスした書き込みを異なるものとして扱っていません）。ただし、非アトミック読み込みとリラックスしたアトミック読み込みの間には区別をしています…",
+      "publishedAt": "2026-05-24T20:52:59.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        17,
+        33
+      ],
+      "reason": "Advances concurrency safety",
+      "suggestedTitle": "Rustのメモリモデルにおける競合読み込みの探求",
+      "suggestedSummary": "`MaybeInvalid<T>`を使用してRustのメモリモデルに競合読み込みを含める提案が議論を呼んでいます。このアプローチは、並行コンテキストでの未定義の動作をより良く処理することを目的としており、新しいプリミティブ操作を導入します。採用されれば、Rustの安全性保証を洗練し、並行プログラミングパターンの堅牢性を向上させ、開発者にマルチスレッドアプリケーションでの微妙なバグを防ぐためのツールを提供する可能性があります。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "7f4e74bfba1630ed5b61cdc3dc5969ba5914a6aa3c3a57584af2d156c8ec53ce",
+      "source": "Zenn Rust (JP)",
+      "title": "Groth16を実装しよう:R1CS と QAP",
+      "url": "https://zenn.dev/nacekimura/articles/0c98948eb9a68c",
+      "summary": "はじめに\n「Groth16を実装しよう」は、Groth16 を実装していくにあたっての学習ログです。\n書いている本人は、暗号も Groth16 も Rust も 学習中 です。なので本シリーズは「分かっている人が教える解説記事」ではなく、 「同じく学んでいる人と一緒に手を動かしていく実装ノート」 という位置づけで読んでいただければと思います。\nそのぶん、教科書的な厳密さよりも「ここで詰まった」「ここがやっと腹落ちした」というナマの学びを残すことを意識しています。誤りや勘違いを見つけられた方は、ぜひコメントで教えてください。\nさて、前回までで、有限体 \\mathbb{F}_p と、その...",
+      "publishedAt": "2026-05-24T23:00:07.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "433fdd51be9adc73baa1dee63b935a996a1988c2362c7a0e841da4d0679f6f19",
+      "source": "Zenn Rust (JP)",
+      "title": "Rustの型システムで暗号処理の誤用を防ぐ",
+      "url": "https://zenn.dev/ebisawa/articles/0357e9c497f0c8",
+      "summary": "本記事は、.envを暗号で守るためのRust製CLI、SecretEnvの内部で動いている暗号処理を解説します。SecretEnvは、.envの各値をメンバーごとの公開鍵で暗号化することで、対応する秘密鍵を持つ本人以外には読めない機密性を実現するツールです。SecretEnvのソースコードはgithub.com/ebisawa/secretenvで公開しています。暗号設計の全体像はセキュリティ設計ドキュメントにまとめています。「署名未検証の暗号ファイルを復号に渡せない」「秘密情報をDebugでログに出せない」「読み込んだ既存のnonceを再使用で...",
+      "publishedAt": "2026-05-24T21:30:05.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a820672ba75304b4f661047b7588333f049b9a43d034858748f69fabd0f47746",
+      "source": "Rust Internals",
+      "title": "Rustメモリモデルにおける`MaybeInvalid<T>`を使用したレイシーリードの導入",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289?page=2#post_23",
+      "summary": "ああ、見つけました。少し隠れていましたが：C/C++11における逐次一貫性の修復です。「付録付きの完全な論文」には証明が含まれています。",
+      "publishedAt": "2026-05-24T15:12:41.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b5d1d0106e7bac61d3b47a7c08da65e8dfe5e37fc8fbb49068884bb2a7db4d0d",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] ZSTトークンタイプを通じて機能検出された関数から関数ポインタへのキャストを安全にする",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-make-some-feature-detected-function-to-fn-pointer-casts-safe-through-zst-token-types/24353#post_5",
+      "summary": "少なくともターゲット機能属性の外部のコンテキストの一部は、その最初のエントリーポイントを作成する能力を持つ必要があります。すでにそのコンテキスト内でキャストを行うことができることを知りませんでした（したがって、これの健全性はすでに保証されています）。これにより、struct-target-feature/3525に関する視点が少し変わります：エントリーポイントはそのシグネチャにターゲットトークンタイプを持つかもしれませんが、それでも単純なシグネチャで他の多くの安全な関数ポインタを構築するために使用できるので、これらのトークンはすでに有用な...",
+      "publishedAt": "2026-05-24T15:09:55.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-25T00:22:23.236Z"
+  }
+}

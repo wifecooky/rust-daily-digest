@@ -1,0 +1,100 @@
+{
+  "date": "2026-05-25",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "68799b38f13e05738f7f93e4e5701838daddd6c6f4e82c2241a6629b2cf486c0",
+      "source": "Rust Users Forum",
+      "title": "Cloakrs 0.3.0, a Blazing Fast Rust PII scanner and redaction toolkit",
+      "url": "https://users.rust-lang.org/t/cloakrs-0-3-0-a-blazing-fast-rust-pii-scanner-and-redaction-toolkit/140244#post_1",
+      "summary": "Hi everyone,\nI just released cloakrs 0.3.0 on crates.io.\nGitHub - kadir/cloakrs: A blazingly fast PII detection, masking, and anonymization engine written in Rust. Library + CLI. · GitHub\ncloakrs is a Rust library and CLI for detecting and masking personally identifiable information in text, logs, JSON, CSV, and SQL dumps. It started as a practical scanner, but this release makes it more useful in day to day privacy workflows.\nIn 0.3.0 I added person name and physical address recognizers,…",
+      "publishedAt": "2026-05-24T21:22:20.000Z",
+      "score": 55,
+      "relatedCount": 6,
+      "candidateNumbers": [
+        1,
+        6
+      ],
+      "reason": "Improves data privacy tools",
+      "suggestedTitle": "Cloakrs 0.3.0: Enhanced Rust PII Scanner Released",
+      "suggestedSummary": "Cloakrs 0.3.0 has been released, offering a blazing-fast solution for scanning and redacting personally identifiable information (PII) in Rust applications. This release focuses on performance improvements and introduces new features for better handling of sensitive data. Rust developers can now integrate Cloakrs into their projects to enhance data privacy and compliance with minimal performance overhead.",
+      "relatedSources": [
+        "Rust Users Forum",
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5a43632ca2ca0ade17c31934497cec8b45c147294316dc9153dc56b85ffb7c7e",
+      "source": "Rust Internals",
+      "title": "Include racy reads in Rust memory model with `MaybeInvalid<T>`",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289?page=2#post_24",
+      "summary": "So it turns out that this paper already proves a model in which racing an atomic read against a non-atomic write produces an undefined value rather than undefined behaviour, in a very trivial way – it makes no distinction between relaxed-atomic writes and non-atomic writes at all (they compile into the same code on every system it mentions, and none of the proofs treat non-atomic writes and relaxed writes any differently). It does make a distinction between non-atomic and relaxed-atomic reads…",
+      "publishedAt": "2026-05-24T20:52:59.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        17,
+        33
+      ],
+      "reason": "Advances concurrency safety",
+      "suggestedTitle": "Exploring Racy Reads in Rust's Memory Model",
+      "suggestedSummary": "A proposal to include racy reads in Rust's memory model using `MaybeInvalid<T>` has sparked discussions. This approach aims to better handle undefined behavior in concurrent contexts by introducing a new primitive operation. If adopted, it could refine Rust's safety guarantees and improve the robustness of concurrent programming patterns, providing developers with more tools to prevent subtle bugs in multi-threaded applications.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "7f4e74bfba1630ed5b61cdc3dc5969ba5914a6aa3c3a57584af2d156c8ec53ce",
+      "source": "Zenn Rust (JP)",
+      "title": "Groth16を実装しよう:R1CS と QAP",
+      "url": "https://zenn.dev/nacekimura/articles/0c98948eb9a68c",
+      "summary": "はじめに\n「Groth16を実装しよう」は、Groth16 を実装していくにあたっての学習ログです。\n書いている本人は、暗号も Groth16 も Rust も 学習中 です。なので本シリーズは「分かっている人が教える解説記事」ではなく、 「同じく学んでいる人と一緒に手を動かしていく実装ノート」 という位置づけで読んでいただければと思います。\nそのぶん、教科書的な厳密さよりも「ここで詰まった」「ここがやっと腹落ちした」というナマの学びを残すことを意識しています。誤りや勘違いを見つけられた方は、ぜひコメントで教えてください。\nさて、前回までで、有限体 \\mathbb{F}_p と、その...",
+      "publishedAt": "2026-05-24T23:00:07.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "433fdd51be9adc73baa1dee63b935a996a1988c2362c7a0e841da4d0679f6f19",
+      "source": "Zenn Rust (JP)",
+      "title": "Rust の型システムで暗号処理の誤用を防ぐ",
+      "url": "https://zenn.dev/ebisawa/articles/0357e9c497f0c8",
+      "summary": "本記事は、.env を暗号で守るための Rust 製 CLI、SecretEnv の内部で動いている暗号処理を解説します。SecretEnv は、.env の各値をメンバーごとの公開鍵で暗号化することで、対応する秘密鍵を持つ本人以外には読めない機密性を実現するツールです。\n!\nSecretEnv のソースコードは github.com/ebisawa/secretenv で公開しています。暗号設計の全体像は セキュリティ設計ドキュメント にまとめています。\n\n「署名未検証の暗号ファイルを復号に渡せない」「秘密情報を Debug でログに出せない」「読み込んだ既存の nonce を再使用で...",
+      "publishedAt": "2026-05-24T21:30:05.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a820672ba75304b4f661047b7588333f049b9a43d034858748f69fabd0f47746",
+      "source": "Rust Internals",
+      "title": "Include racy reads in Rust memory model with `MaybeInvalid<T>`",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289?page=2#post_23",
+      "summary": "Ah I found it, it was just a bit hidden: Repairing Sequential Consistency in C/C++11. The \"full paper with appendix\" has the proofs.",
+      "publishedAt": "2026-05-24T15:12:41.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b5d1d0106e7bac61d3b47a7c08da65e8dfe5e37fc8fbb49068884bb2a7db4d0d",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Make some feature-detected function-to-fn-pointer casts safe through ZST token types",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-make-some-feature-detected-function-to-fn-pointer-casts-safe-through-zst-token-types/24353#post_5",
+      "summary": "At least some context outside the target feature attributes needs to have the ability to create that first entry point. I was not aware you could do that cast inside the context already (so soundness of this is already promised). This does change the perspective on struct-target-feature/3525 a bit: an entry point might have a target token type in its signature but it can still be used to construct many other safe function pointers with a simple signature—so those tokens already provide a useful…",
+      "publishedAt": "2026-05-24T15:09:55.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-25T00:22:11.799Z"
+  }
+}

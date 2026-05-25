@@ -1,0 +1,100 @@
+{
+  "date": "2026-05-25",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "68799b38f13e05738f7f93e4e5701838daddd6c6f4e82c2241a6629b2cf486c0",
+      "source": "Rust Users Forum",
+      "title": "Cloakrs 0.3.0，一个极速的Rust PII扫描和编辑工具包",
+      "url": "https://users.rust-lang.org/t/cloakrs-0-3-0-a-blazing-fast-rust-pii-scanner-and-redaction-toolkit/140244#post_1",
+      "summary": "大家好，\n我刚刚在crates.io上发布了cloakrs 0.3.0。\nGitHub - kadir/cloakrs: 一个极速的PII检测、掩码和匿名化引擎，使用Rust编写。库+CLI。· GitHub\ncloakrs是一个Rust库和CLI，用于检测和掩盖文本、日志、JSON、CSV和SQL转储中的个人身份信息。它最初是一个实用的扫描器，但这个版本使其在日常隐私工作流程中更有用。\n在0.3.0中，我添加了人名和物理地址识别器，…",
+      "publishedAt": "2026-05-24T21:22:20.000Z",
+      "score": 55,
+      "relatedCount": 6,
+      "candidateNumbers": [
+        1,
+        6
+      ],
+      "reason": "Improves data privacy tools",
+      "suggestedTitle": "Cloakrs 0.3.0：增强版Rust PII扫描器发布",
+      "suggestedSummary": "Cloakrs 0.3.0已发布，为Rust应用程序提供了一个极速的个人身份信息（PII）扫描和编辑解决方案。此版本专注于性能改进，并引入了新功能以更好地处理敏感数据。Rust开发者现在可以将Cloakrs集成到他们的项目中，以在不影响性能的情况下增强数据隐私和合规性。",
+      "relatedSources": [
+        "Rust Users Forum",
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5a43632ca2ca0ade17c31934497cec8b45c147294316dc9153dc56b85ffb7c7e",
+      "source": "Rust Internals",
+      "title": "在Rust内存模型中包含竞争读操作，使用`MaybeInvalid<T>`",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289?page=2#post_24",
+      "summary": "事实证明，这篇论文已经证明了一种模型，其中将原子读与非原子写的竞争产生未定义的值，而不是未定义的行为，这是一种非常简单的方式——它完全不区分松弛原子写和非原子写（在它提到的每个系统上，它们编译成相同的代码，并且没有任何证明将非原子写和松弛写区别对待）。它确实区分了非原子和松弛原子读……",
+      "publishedAt": "2026-05-24T20:52:59.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        17,
+        33
+      ],
+      "reason": "Advances concurrency safety",
+      "suggestedTitle": "探索Rust内存模型中的竞争读操作",
+      "suggestedSummary": "一项关于在Rust内存模型中使用`MaybeInvalid<T>`包含竞争读操作的提议引发了讨论。这种方法旨在通过引入新的原始操作来更好地处理并发上下文中的未定义行为。如果被采纳，它可以改进Rust的安全保证，提高并发编程模式的稳健性，为开发人员提供更多工具，以防止多线程应用程序中的细微错误。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "7f4e74bfba1630ed5b61cdc3dc5969ba5914a6aa3c3a57584af2d156c8ec53ce",
+      "source": "Zenn Rust (JP)",
+      "title": "实现Groth16：R1CS和QAP",
+      "url": "https://zenn.dev/nacekimura/articles/0c98948eb9a68c",
+      "summary": "简介\n“实现Groth16”是关于实现Groth16的学习日志。作者本人正在学习密码学、Groth16和Rust。因此，本系列文章并不是“由专家教授的教程”，而是“与同样在学习的人一起动手实践的实现笔记”。因此，与其追求教科书式的严谨，我们更注重记录“在这里卡住了”“这里终于理解了”这样的真实学习体验。如果您发现任何错误或误解，请在评论中告诉我们。那么，到目前为止，我们已经讨论了有限域\\mathbb{F}_p及其...",
+      "publishedAt": "2026-05-24T23:00:07.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "433fdd51be9adc73baa1dee63b935a996a1988c2362c7a0e841da4d0679f6f19",
+      "source": "Zenn Rust (JP)",
+      "title": "利用 Rust 的类型系统防止加密处理误用",
+      "url": "https://zenn.dev/ebisawa/articles/0357e9c497f0c8",
+      "summary": "本文介绍了用于保护 .env 文件的 Rust 制 CLI 工具 SecretEnv 内部的加密处理。SecretEnv 通过使用每个成员的公钥加密 .env 文件中的每个值，实现了只有拥有相应私钥的人员才能读取的机密性。SecretEnv 的源代码可以在 github.com/ebisawa/secretenv 找到。加密设计的整体概况已在安全设计文档中总结。\"不能将未验证签名的加密文件传递给解密\"、\"不能在 Debug 中记录秘密信息\"、\"不能重复使用已读取的现有 nonce\"...",
+      "publishedAt": "2026-05-24T21:30:05.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a820672ba75304b4f661047b7588333f049b9a43d034858748f69fabd0f47746",
+      "source": "Rust Internals",
+      "title": "在Rust内存模型中包含不安全读取，使用`MaybeInvalid<T>`",
+      "url": "https://internals.rust-lang.org/t/include-racy-reads-in-rust-memory-model-with-maybeinvalid-t/24289?page=2#post_23",
+      "summary": "啊，我找到了，只是有点隐藏：修复C/C++11中的顺序一致性。“附录的完整论文”包含了证明。",
+      "publishedAt": "2026-05-24T15:12:41.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "b5d1d0106e7bac61d3b47a7c08da65e8dfe5e37fc8fbb49068884bb2a7db4d0d",
+      "source": "Rust Internals",
+      "title": "[预RFC] 通过ZST令牌类型使某些特性检测的函数到函数指针转换安全",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-make-some-feature-detected-function-to-fn-pointer-casts-safe-through-zst-token-types/24353#post_5",
+      "summary": "至少目标特性属性之外的一些上下文需要具备创建第一个入口点的能力。我之前不知道你可以在上下文中进行这种转换（因此这种转换的健全性已经得到了保证）。这确实稍微改变了对struct-target-feature/3525的看法：一个入口点可能在其签名中具有目标令牌类型，但它仍然可以用于构造许多其他具有简单签名的安全函数指针——因此这些令牌已经提供了有用的功能……",
+      "publishedAt": "2026-05-24T15:09:55.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-25T00:22:16.213Z"
+  }
+}
