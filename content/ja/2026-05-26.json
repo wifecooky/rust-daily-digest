@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-26",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "3b208ec2a96216eadc73bcd1f2e5586241b828d7dbec8d8642bce185bf93b984",
+      "source": "Rust Blog",
+      "title": "貨物に関するセキュリティ勧告 (CVE-2026-5223)",
+      "url": "https://blog.rust-lang.org/2026/05/25/cve-2026-5223/",
+      "summary": "Rustセキュリティ対応チームは、Cargoがサードパーティレジストリからダウンロードされたクレートのtarball内のシンボリックリンクを不適切に処理し、悪意のあるクレートが同じレジストリからの別のクレートのソースコードを上書きできることを通知されました。この脆弱性はCVE-2026-5223として追跡されています。サードパーティレジストリのユーザーにとって、この脆弱性の深刻度は中程度です。crates.ioのユーザーは影響を受けません。crates.ioはシンボリックリンクを含むクレートのアップロードを禁止しているためです。",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        19,
+        20
+      ],
+      "reason": "Critical security advisories for Cargo",
+      "suggestedTitle": "Cargoセキュリティ勧告: CVE-2026-5223とCVE-2026-5222",
+      "suggestedSummary": "Rustセキュリティ対応チームは、Cargoに関する2つの重大な脆弱性に対する勧告を発表しました。CVE-2026-5223はクレート内のシンボリックリンクの誤処理に関するもので、無許可のファイルアクセスにつながる可能性があります。CVE-2026-5222はサードパーティ依存関係のURL正規化の誤りに関するもので、依存関係混乱攻撃のリスクをもたらします。Rust開発者は、これらのリスクを軽減し、プロジェクトの安全なパッケージ管理を確保するために、Cargoを最新バージョンに更新する必要があります。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5402ee437bf1493c934a53e4f2142dfc75141c63ca3b29ad9f437ef6df668fbc",
+      "source": "Rust Users Forum",
+      "title": "RLib — コンパイル時間とディスク使用量を削減するゼロオーバーヘッドの事前コンパイルクレートマネージャー",
+      "url": "https://users.rust-lang.org/t/rlib-a-zero-overhead-precompiled-crate-manager-to-reduce-compile-times-and-disk-usage/140256#post_6",
+      "summary": "このような文字列は常に静的セグメントに表示されますが、強調するためにstaticを追加できます。",
+      "publishedAt": "2026-05-25T22:48:36.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11,
+        15
+      ],
+      "reason": "New tool to optimize Rust compile times",
+      "suggestedTitle": "RLibの紹介: Rustのコンパイル時間を短縮",
+      "suggestedSummary": "RLibは、Rustプロジェクトにおけるコンパイル時間とディスク使用量を削減するために設計された、ゼロオーバーヘッドの事前コンパイルクレートマネージャーです。新しいビルドディレクトリレイアウトを安定化させることで、RLibは開発者が事前コンパイルされたクレートを効率的に管理し、冗長なコンパイルを最小限に抑えることを可能にします。このツールは、コンパイル時間が大きなボトルネックとなる大規模なRustプロジェクトに特に有益です。開発者は今、RLibを活用して開発ワークフローを合理化し、生産性を向上させることができます。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f120aa65bec75afc152dcd95c4ebec4f6206c32fbc0720d555ccc61dfd95567e",
+      "source": "Rust Users Forum",
+      "title": "Cargo.tomlを例にしたTOMLスキーマ提案",
+      "url": "https://users.rust-lang.org/t/toml-schema-proposal-with-cargo-toml-as-an-example/140257#post_1",
+      "summary": "こんにちは、Rustコミュニティの皆さん。\n2020年からTOMLドキュメントを検証するためのスキーマ言語であるTOML Schemaという小さなプロジェクトに取り組んでいます。\ntoml-schema.org\n\nTOML Schema\nTOML Schemaは、TOML構成ドキュメントを検証するためのTOMLネイティブのスキーマ言語です。\n\nRustとCargoは、TOMLの最も目立つ成功したユーザーの一つであるため、このコミュニティはこのアイデアに興味を持つかもしれないと思いました。\nこのプロジェクトは、期待される形状を記述するためにTOMLで書かれた.tosdスキーマ形式を定義しています…",
+      "publishedAt": "2026-05-25T19:16:26.000Z",
+      "score": 55,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "5077f365ea1bf0fa43079c55c21bb9e3c294e70f2985c34cff39360c47252356",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] ZSTトークン型を通じて、機能検出された関数から関数ポインターへのキャストを安全にする",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-make-some-feature-detected-function-to-fn-pointer-casts-safe-through-zst-token-types/24353#post_7",
+      "summary": "そのキャスト方法は、wasmでぜひ見たい命令です。これにより、simd128がモジュール全体に必要とされるのではなく、環境が機能サポートを選択することができます。しかし、言語機能としては柔軟性に欠けます。セットアップ関数呼び出しには適していますが、ほとんどのランタイム呼び出しディスパッチには不適切です。これは、is_*_feature_detectマクロ自体と同じ問題を示すことになります。各評価はアトミックからロードされ（繰り返しのcpuidを避けるため）、これが…",
+      "publishedAt": "2026-05-25T21:59:14.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "37aab17e0d5c0a6a23ba5fedbb6b9822676d9a1d8553db92d07f19bc6b585382",
+      "source": "Rust Users Forum",
+      "title": "KGet 1.7.0 – ダウンロードマネージャークレートのGUI再設計、新しいビルダーAPI、WebDAV、yt-dlp、バグ修正",
+      "url": "https://users.rust-lang.org/t/kget-1-7-0-download-manager-crate-with-redesigned-guis-new-builder-api-webdav-yt-dlp-and-bug-fixes/140255#post_1",
+      "summary": "ダウンロードマネージャーライブラリおよびCLIツールであるKGetのバージョン1.7.0をリリースしました。これまでで最大のリリースであり、変更点が含まれています。ライブラリの公開APIが書き直されました。単一ダウンロード用のエントリーポイントはkget::builder(url)、バッチダウンロード用はkget::batch([...])です。サポートされているプロトコル: HTTP/HTTPS（並列バイトレンジ接続）、FTP、SFTP、WebDAV、BitTorrent（librqbit、GUIの両方のグラフィカルフロントエンドが完全に再設計されました。egui GUI（Linux/Windows）は、カテゴリごとのサイドバーを持つようになりました。バグとセキュリティの修正",
+      "publishedAt": "2026-05-25T15:59:31.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "daaf12898a1102bf877d30520a2de62a0bd7d0b22b08fc3f257bb045f31077c0",
+      "source": "rust-analyzer",
+      "title": "変更履歴 #329",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/05/25/changelog-329.html",
+      "summary": "コミット: de5824b\n2026-05-25 (v0.3.2913)\n新機能\n#22406 (初めての貢献) 可変参照診断を追加。\n#22424 (初めての貢献) 固定長なしの配列パターン診断を追加。\n#22404 インデックス化できない診断を追加。\n#22416 補完からサブアイテムを除外する機能をサポート。\nパフォーマンスの向上\n#22322 モジュールの増分性を改善。\n修正\n#22432 (初めての貢献) flycheckでパッケージスコープの機能をフィルタリング。\n#22430 (初めての貢献) 定数評価でのfloatからuintへのキャストを飽和させる。",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-26T00:22:26.370Z"
+  }
+}

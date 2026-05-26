@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-26",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "3b208ec2a96216eadc73bcd1f2e5586241b828d7dbec8d8642bce185bf93b984",
+      "source": "Rust Blog",
+      "title": "Security Advisory for Cargo (CVE-2026-5223)",
+      "url": "https://blog.rust-lang.org/2026/05/25/cve-2026-5223/",
+      "summary": "The Rust Security Response Team was notified that Cargo incorrectly handled\nsymlinks inside of crate tarballs downloaded from third-party registries,\nallowing a malicious crate to override the source code of another crate from the\nsame registry.\nThis vulnerability is tracked as CVE-2026-5223. The severity of the\nvulnerability is medium for users of third-party registries. Users of\ncrates.io are not affected, as crates.io forbids uploading crates containing\nany symlink.\n\nOverview\nWhen building a…",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        19,
+        20
+      ],
+      "reason": "Critical security advisories for Cargo",
+      "suggestedTitle": "Cargo Security Advisories: CVE-2026-5223 and CVE-2026-5222",
+      "suggestedSummary": "The Rust Security Response Team has issued advisories for Cargo addressing two critical vulnerabilities. CVE-2026-5223 involves mishandling of symlinks within crates, potentially leading to unauthorized file access. CVE-2026-5222 pertains to incorrect URL normalization of third-party dependencies, posing a risk of dependency confusion attacks. Rust developers should update Cargo to the latest version to mitigate these risks and ensure secure package management in their projects.",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5402ee437bf1493c934a53e4f2142dfc75141c63ca3b29ad9f437ef6df668fbc",
+      "source": "Rust Users Forum",
+      "title": "RLib — A zero-overhead precompiled crate manager to reduce compile times and disk usage",
+      "url": "https://users.rust-lang.org/t/rlib-a-zero-overhead-precompiled-crate-manager-to-reduce-compile-times-and-disk-usage/140256#post_6",
+      "summary": "Such string will always appear in the static segment, but you can add static to emphasize.",
+      "publishedAt": "2026-05-25T22:48:36.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11,
+        15
+      ],
+      "reason": "New tool to optimize Rust compile times",
+      "suggestedTitle": "Introducing RLib: Reducing Rust Compile Times",
+      "suggestedSummary": "RLib is a newly introduced zero-overhead precompiled crate manager designed to reduce compile times and disk usage in Rust projects. By stabilizing a new build directory layout, RLib allows developers to manage precompiled crates efficiently, minimizing redundant compilation. This tool is particularly beneficial for large Rust projects, where compile time can be a significant bottleneck. Developers can now leverage RLib to streamline their development workflow and improve productivity.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f120aa65bec75afc152dcd95c4ebec4f6206c32fbc0720d555ccc61dfd95567e",
+      "source": "Rust Users Forum",
+      "title": "TOML Schema proposal, with Cargo.toml as an example",
+      "url": "https://users.rust-lang.org/t/toml-schema-proposal-with-cargo-toml-as-an-example/140257#post_1",
+      "summary": "Hi Rust community,\nI’ve been working on a small project since 2020 called TOML Schema, a schema language for validating TOML documents:\ntoml-schema.org\n  \nTOML Schema\nTOML Schema is a TOML-native schema language for validating TOML configuration documents.\n\n\n\nSince Rust and Cargo are one of the most visible and successful users of TOML, I thought this community might be interested in the idea.\nThe project defines a .tosd schema format, itself written in TOML, for describing the expected shape…",
+      "publishedAt": "2026-05-25T19:16:26.000Z",
+      "score": 55,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "5077f365ea1bf0fa43079c55c21bb9e3c294e70f2985c34cff39360c47252356",
+      "source": "Rust Internals",
+      "title": "[Pre-RFC] Make some feature-detected function-to-fn-pointer casts safe through ZST token types",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-make-some-feature-detected-function-to-fn-pointer-casts-safe-through-zst-token-types/24353#post_7",
+      "summary": "That way of casting is an instruction I'd really like to see in wasm so that the environment has a choice in feature support instead of any mention of simd128 requiring it for the whole module.\nAs a language feature however it would be less flexible. It works for setup function calls but is inappropriate for most runtime call dispatch. This is as would exhibit the same problem as the is_*_feature_detect macro itself, each evaluation loads from an atomic (to avoid the repeated cpuid) and this…",
+      "publishedAt": "2026-05-25T21:59:14.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "37aab17e0d5c0a6a23ba5fedbb6b9822676d9a1d8553db92d07f19bc6b585382",
+      "source": "Rust Users Forum",
+      "title": "KGet 1.7.0 – download manager crate with redesigned GUIs, new builder API, WebDAV, yt-dlp, and bug fixes",
+      "url": "https://users.rust-lang.org/t/kget-1-7-0-download-manager-crate-with-redesigned-guis-new-builder-api-webdav-yt-dlp-and-bug-fixes/140255#post_1",
+      "summary": "Releasing v1.7.0 of KGet, a download manager library and CLI tool. This is the largest release so far, with changes\nLibrary\nThe public API was rewritten. Entry points are kget::builder(url) for single downloads and kget::batch([...]) for\nSupported protocols: HTTP/HTTPS with parallel byte-range connections, FTP, SFTP, WebDAV, BitTorrent (librqbit,\nGUIs\nBoth graphical frontends were fully redesigned. The egui GUI (Linux/Windows) now has a sidebar with per-category\nBug and security fixes\nThe…",
+      "publishedAt": "2026-05-25T15:59:31.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "daaf12898a1102bf877d30520a2de62a0bd7d0b22b08fc3f257bb045f31077c0",
+      "source": "rust-analyzer",
+      "title": "Changelog #329",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/05/25/changelog-329.html",
+      "summary": "Commit: de5824b\n2026-05-25 (v0.3.2913)\nNew Features\n#22406 (first contribution) add mutable-ref diagnostic.\n#22424 (first contribution) add array-pattern-without-fixed-length diagnostic.\n#22404 add cannot-index-into diagnostics.\n#22416 support excluding subitems from completions.\nPerformance Improvements\n#22322 improve incrementality for modules.\nFixes\n#22432 (first contribution) filter package-scoped features in flycheck.\n#22430 (first contribution) saturate float to uint cast in const eval.…",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-26T00:22:15.080Z"
+  }
+}

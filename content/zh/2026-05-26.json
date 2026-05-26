@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-26",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "3b208ec2a96216eadc73bcd1f2e5586241b828d7dbec8d8642bce185bf93b984",
+      "source": "Rust Blog",
+      "title": "货物安全公告 (CVE-2026-5223)",
+      "url": "https://blog.rust-lang.org/2026/05/25/cve-2026-5223/",
+      "summary": "Rust安全响应团队收到通知，Cargo错误地处理了从第三方注册表下载的crate压缩包中的符号链接，允许恶意crate覆盖同一注册表中另一个crate的源代码。此漏洞被跟踪为CVE-2026-5223。对于使用第三方注册表的用户，此漏洞的严重性为中等。crates.io的用户不受影响，因为crates.io禁止上传包含任何符号链接的crate。",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "score": 20,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        19,
+        20
+      ],
+      "reason": "Critical security advisories for Cargo",
+      "suggestedTitle": "Cargo安全公告：CVE-2026-5223和CVE-2026-5222",
+      "suggestedSummary": "Rust安全响应团队已针对Cargo发布公告，解决了两个关键漏洞。CVE-2026-5223涉及crate中符号链接的错误处理，可能导致未经授权的文件访问。CVE-2026-5222涉及第三方依赖项的URL规范化错误，存在依赖混淆攻击的风险。Rust开发者应更新Cargo到最新版本，以减轻这些风险并确保项目中的安全包管理。",
+      "relatedSources": [
+        "Rust Blog"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "5402ee437bf1493c934a53e4f2142dfc75141c63ca3b29ad9f437ef6df668fbc",
+      "source": "Rust Users Forum",
+      "title": "RLib — 零开销的预编译crate管理器，减少编译时间和磁盘使用",
+      "url": "https://users.rust-lang.org/t/rlib-a-zero-overhead-precompiled-crate-manager-to-reduce-compile-times-and-disk-usage/140256#post_6",
+      "summary": "这样的字符串将始终出现在静态段中，但您可以添加static以强调。",
+      "publishedAt": "2026-05-25T22:48:36.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        11,
+        15
+      ],
+      "reason": "New tool to optimize Rust compile times",
+      "suggestedTitle": "介绍RLib：减少Rust编译时间",
+      "suggestedSummary": "RLib是一个新推出的零开销预编译crate管理器，旨在减少Rust项目的编译时间和磁盘使用。通过稳定新的构建目录布局，RLib允许开发者高效管理预编译crate，最大限度地减少冗余编译。对于大型Rust项目，这个工具特别有益，因为编译时间可能是一个显著的瓶颈。开发者现在可以利用RLib来简化他们的开发流程，提高生产力。",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "f120aa65bec75afc152dcd95c4ebec4f6206c32fbc0720d555ccc61dfd95567e",
+      "source": "Rust Users Forum",
+      "title": "TOML Schema 提案，以 Cargo.toml 为例",
+      "url": "https://users.rust-lang.org/t/toml-schema-proposal-with-cargo-toml-as-an-example/140257#post_1",
+      "summary": "嗨，Rust 社区，\n自 2020 年以来，我一直在开发一个名为 TOML Schema 的小项目，这是一种用于验证 TOML 文档的模式语言：\ntoml-schema.org\n\nTOML Schema\nTOML Schema 是一种原生支持 TOML 的模式语言，用于验证 TOML 配置文档。\n\n由于 Rust 和 Cargo 是 TOML 最显著和成功的用户之一，我认为这个社区可能会对这个想法感兴趣。\n该项目定义了一种 .tosd 模式格式，本身也是用 TOML 编写的，用于描述预期的结构…",
+      "publishedAt": "2026-05-25T19:16:26.000Z",
+      "score": 55,
+      "relatedCount": 3,
+      "category": "quickNews"
+    },
+    {
+      "id": "5077f365ea1bf0fa43079c55c21bb9e3c294e70f2985c34cff39360c47252356",
+      "source": "Rust Internals",
+      "title": "[预RFC] 通过ZST令牌类型使一些特征检测的函数到函数指针的转换安全",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-make-some-feature-detected-function-to-fn-pointer-casts-safe-through-zst-token-types/24353#post_7",
+      "summary": "这种转换方式是我非常希望在wasm中看到的一种指令，这样环境可以选择支持哪些特性，而不是任何提到simd128的地方都要求整个模块支持它。然而，作为一种语言特性，它的灵活性较低。它适用于设置函数调用，但不适合大多数运行时调用分派。这与is_*_feature_detect宏本身的问题相同，每次评估都会从一个原子中加载（以避免重复的cpuid），这...",
+      "publishedAt": "2026-05-25T21:59:14.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "37aab17e0d5c0a6a23ba5fedbb6b9822676d9a1d8553db92d07f19bc6b585382",
+      "source": "Rust Users Forum",
+      "title": "KGet 1.7.0 – 下载管理器库，重新设计的GUI、新的构建器API、WebDAV、yt-dlp和错误修复",
+      "url": "https://users.rust-lang.org/t/kget-1-7-0-download-manager-crate-with-redesigned-guis-new-builder-api-webdav-yt-dlp-and-bug-fixes/140255#post_1",
+      "summary": "发布KGet v1.7.0，一个下载管理器库和CLI工具。这是迄今为止最大的版本更新，包含以下更改：\n库\n公共API被重写。入口点为kget::builder(url)用于单个下载，kget::batch([...])用于批量下载。\n支持的协议：HTTP/HTTPS（支持并行字节范围连接）、FTP、SFTP、WebDAV、BitTorrent（使用librqbit）。\nGUI\n两个图形前端均进行了全面重新设计。egui GUI（Linux/Windows）现在有一个带有每个类别的侧边栏。\n错误和安全修复\n...",
+      "publishedAt": "2026-05-25T15:59:31.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "daaf12898a1102bf877d30520a2de62a0bd7d0b22b08fc3f257bb045f31077c0",
+      "source": "rust-analyzer",
+      "title": "变更日志 #329",
+      "url": "https://rust-analyzer.github.io//thisweek/2026/05/25/changelog-329.html",
+      "summary": "提交: de5824b\n2026-05-25 (v0.3.2913)\n新功能\n#22406（首次贡献）添加可变引用诊断。\n#22424（首次贡献）添加无固定长度的数组模式诊断。\n#22404 添加无法索引诊断。\n#22416 支持从补全中排除子项。\n性能改进\n#22322 改进模块的增量性。\n修复\n#22432（首次贡献）在 flycheck 中过滤包作用域的功能。\n#22430（首次贡献）在常量评估中将浮点数转换为无符号整数时进行饱和处理。",
+      "publishedAt": "2026-05-25T00:00:00.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-26T00:22:20.351Z"
+  }
+}
