@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-27",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "df3bef0d67b99d7760431ce07a786ab9b9b813a169be97d4ac7dd420b430ee24",
+      "source": "Rust Internals",
+      "title": "Rust 1.96.0 プレリリーステスト",
+      "url": "https://internals.rust-lang.org/t/rust-1-96-0-pre-release-testing/24357#post_8",
+      "summary": "それは意図的であり、既存のクレートが提供するマクロとのプレリュードの競合を避けるためです。",
+      "publishedAt": "2026-05-26T20:47:17.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4,
+        6,
+        63
+      ],
+      "suggestedTitle": "Rust 1.96.0 プレリリーステスト開始",
+      "suggestedSummary": "RustチームはRust 1.96.0のプレリリーステストフェーズを発表しました。このバージョンではassert_matches!マクロの改良とスコープの問題が解決されています。開発者は、5月28日の公式リリース前に安定性を確保するためにテストに参加することが奨励されています。これは、Rustの進化するエコシステムにおける最新の機能と改善に依存する人々にとって重要なステップです。",
+      "reason": "Rust 1.96.0 testing impacts future stability.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "7ddecc0d49d8733da498a68808e6f06be826c79412c48e5ad4bc663b4f85b603",
+      "source": "Rust Users Forum",
+      "title": "Evcode 1.0.0 – Rustで作られた非同期ターミナルIDE",
+      "url": "https://users.rust-lang.org/t/evcode-1-0-0-async-terminal-ide-in-rust/140284#post_1",
+      "summary": "Rustで構築された軽量なターミナルIDE、Evcode v1.0.0がリリースされました。",
+      "publishedAt": "2026-05-26T19:51:19.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        14
+      ],
+      "suggestedTitle": "Evcode 1.0.0: Rustでの新しい非同期ターミナルIDE",
+      "suggestedSummary": "Evcode 1.0.0は、完全にRustで構築された軽量なターミナルIDEとしてリリースされました。非同期アーキテクチャを特徴とし、ロープバックテキストモデルを使用した効率的なコード編集が可能です。ターミナルベースのワークフローを好む開発者に適しており、このリリースはRustベースの開発ツールの成長するエコシステムを強調し、Rustaceansにとって高性能な代替手段を提供します。",
+      "reason": "New Rust-based IDE enhances developer tooling.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "adfd03e18416e3ccbf94a75af1e9dc9dd439ac6cfdfeb945f25c5d3340e9eae4",
+      "source": "Rust Internals",
+      "title": "事前RFC: `OsStr`へのポインタが`str`/`[u8]`へのポインタと同じレイアウトを持つことを保証する",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-guarantee-that-pointers-to-osstr-has-the-same-layout-as-pointers-to-str-u8/24354#post_4",
+      "summary": "これを推奨するわけではありませんが、仮に、ロケール情報を持つOsStrの最初の1〜4バイトが無効なUTF-8であればロケール情報の存在を示し、有効なUTF-8であればロケール情報が提供されていないことを示すという方法も考えられます（str: AsRef<OsStr>をサポート）。もしかしたら、ロケール情報にポインタを含めることを許可することで何らかの利点があるかもしれません（[u8]の使用を排除）。または、ロケール情報を洗練された[u8]にエンコードすることも可能です。編集: 待って、それはポインタではなくバックデータについてです…",
+      "publishedAt": "2026-05-26T23:58:00.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8cc4e23b9528006e92bebb355f1c1f04246a40c98bc53e077b62ccd75dc1757e",
+      "source": "Rust Users Forum",
+      "title": "WebARKitLib-rs クレート",
+      "url": "https://users.rust-lang.org/t/webarkitlib-rs-crate/138762#post_5",
+      "summary": "興味のある方へ: 近日中に、Rustでの完全なKPMビルドの実装というWebARkitLib-rs開発における重要なマイルストーンに到達します。お楽しみに！",
+      "publishedAt": "2026-05-26T19:03:12.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a197f87ae4caca5098743757261ed8800d81b1c32971f4cf5751ef1ee4d8a84f",
+      "source": "Rust Users Forum",
+      "title": "dtact v0.2.2とrssn-advanced v0.1.0のリリース",
+      "url": "https://users.rust-lang.org/t/releasing-dtact-v0-2-2-and-rssn-advanced-v0-1-0/140278#post_1",
+      "summary": "こんにちは、Rustaceansの皆さん！\n本日、開発中の実験的で高性能なプロジェクトであるdtact v0.2.2とrssn-advanced v0.1.0をリリースします。Dtactは非同期並行エンジンであり、rssn-advancedはrssnの新世代シンボリックコアです。以下でそれぞれの詳細を説明します。\nDtact\nDtactは、最大の作業調整速度と最高のスループットを実現するために設計された協調的で真にロックフリーな非同期ランタイムです。簡単に言えば、主にP2Pネットワークとロックフリーコンテキストアリーナを活用しています…",
+      "publishedAt": "2026-05-26T14:37:15.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bd5490209144a1b57a76bce0ed29ab38848cf06e0c90d21098231f43aa21d03d",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-25 Wild 0.9.0 バージョンリリース",
+      "url": "https://rustcc.cn/article?id=d8fabba9-b39b-473a-a341-21df3b001988",
+      "summary": "Wild 0.9.0 バージョンリリース\nDavid Lattimore は2026年5月24日にWildリンカの0.9.0バージョンをリリースしました。これは1月以来の初めての更新です。\n主な機能更新\nリンカスクリプトのサポート\n複数の開発者がGSoC 2026（Google Summer of Code）の前期にリンカスクリプトのサポートに多くの作業を行いました。\nVishruth Thimmaiah がGSoCを通じてこの機能の開発を続けるために選ばれました。\n目標はLinuxカーネルモジュールやカーネルそのもののリンクサポートを実現することです。\nプラットフォーム移植作業\nMac (Mach-O) 移植：Martin Liška が主導\nWasm 移植：Kei Akiyama がGSoCプロジェクトとして主導（これはKeiがWildプロジェクトのGSoCに参加する2年目です）\nリンカプラグインLTOサポート\n基本的なLTO（リンク時最適化）サポートが追加されました\n主にC、C++、または混合言語プロジェクトで使用されます\nリンク速度は速くならず、むしろ少し遅くなる可能性がありますが、ユーザーがリンカを切り替える必要がなくなります。\nデバッグ情報圧縮\n圧縮されたデバッグ情報の出力をサポートしました\nzlibおよびzstd圧縮形式をサポート…",
+      "publishedAt": "2026-05-25T01:11:25.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-27T00:23:58.221Z"
+  }
+}

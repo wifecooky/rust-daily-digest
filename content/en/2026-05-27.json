@@ -1,0 +1,99 @@
+{
+  "date": "2026-05-27",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "df3bef0d67b99d7760431ce07a786ab9b9b813a169be97d4ac7dd420b430ee24",
+      "source": "Rust Internals",
+      "title": "Rust 1.96.0 pre-release testing",
+      "url": "https://internals.rust-lang.org/t/rust-1-96-0-pre-release-testing/24357#post_8",
+      "summary": "Right, that's intentional to avoid prelude conflicts with existing crates that provide those macros.",
+      "publishedAt": "2026-05-26T20:47:17.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        4,
+        6,
+        63
+      ],
+      "suggestedTitle": "Rust 1.96.0 Pre-release Testing Begins",
+      "suggestedSummary": "The Rust team has announced the pre-release testing phase for Rust 1.96.0. This version introduces refinements to the assert_matches! macro and addresses scoping issues. Developers are encouraged to participate in testing to ensure stability before the official release on May 28. This is a crucial step for those relying on the latest features and improvements in Rust's evolving ecosystem.",
+      "reason": "Rust 1.96.0 testing impacts future stability.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "7ddecc0d49d8733da498a68808e6f06be826c79412c48e5ad4bc663b4f85b603",
+      "source": "Rust Users Forum",
+      "title": "Evcode 1.0.0 – Async Terminal IDE in Rust",
+      "url": "https://users.rust-lang.org/t/evcode-1-0-0-async-terminal-ide-in-rust/140284#post_1",
+      "summary": "Just released Evcode v1.0.0, a lightweight terminal IDE built in Rust.\n\n\n\n\nKey features:\nRope-Backed Storage: Uses ⁠ropey⁠ for zero-latency editing on 1M+ lines.\nAsync LSP: Powered by Tokio to isolate UI from heavy diagnostics.\nMouse Support: Native clicks and scrolling out-of-the-box.\nRAM: 7-10 MB\nGitHub: GitHub - poghdev/Evcode-ide: High-performance Rust IDE with instant snapshots, advanced TUI, memory-safe architecture, and seamless terminal integration. · GitHub\nhttps://www.eeive.com/…",
+      "publishedAt": "2026-05-26T19:51:19.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        14
+      ],
+      "suggestedTitle": "Evcode 1.0.0: A New Async Terminal IDE in Rust",
+      "suggestedSummary": "Evcode 1.0.0 has been released as a lightweight terminal IDE built entirely in Rust, featuring an async architecture. The IDE is designed for efficient code editing with a rope-backed text model, making it suitable for developers who prefer a terminal-based workflow. This release highlights the growing ecosystem of Rust-based development tools, offering a performant alternative for Rustaceans.",
+      "reason": "New Rust-based IDE enhances developer tooling.",
+      "relatedSources": [
+        "Rust Users Forum"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "adfd03e18416e3ccbf94a75af1e9dc9dd439ac6cfdfeb945f25c5d3340e9eae4",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: Guarantee that pointers to `OsStr` has the same layout as pointers to `str`/`[u8]`",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-guarantee-that-pointers-to-osstr-has-the-same-layout-as-pointers-to-str-u8/24354#post_4",
+      "summary": "Not advocating for this, but hypothetically, the first 1-4 bytes of an OsStr-with-locale-info could be invalid UTF-8 to signify the presence of locale information, and valid UTF-8 to signify that no locale information was provided (supporting str: AsRef<OsStr>).\nMaybe there would be some advantage of allowing the locale info to contain a pointer (precluding the use of [u8]). Or the locale info could just be encoded into a fancy [u8].\nEdit: wait, that's about the backing data, not the pointer to…",
+      "publishedAt": "2026-05-26T23:58:00.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8cc4e23b9528006e92bebb355f1c1f04246a40c98bc53e077b62ccd75dc1757e",
+      "source": "Rust Users Forum",
+      "title": "WebARKitLib-rs crate",
+      "url": "https://users.rust-lang.org/t/webarkitlib-rs-crate/138762#post_5",
+      "summary": "For anyone interested: Very soon, we'll reach an important milestone in WebARkitLib-rs development, implementing the full KPM build in Rust. Stay tuned!",
+      "publishedAt": "2026-05-26T19:03:12.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "a197f87ae4caca5098743757261ed8800d81b1c32971f4cf5751ef1ee4d8a84f",
+      "source": "Rust Users Forum",
+      "title": "Releasing dtact v0.2.2 and rssn-advanced v0.1.0",
+      "url": "https://users.rust-lang.org/t/releasing-dtact-v0-2-2-and-rssn-advanced-v0-1-0/140278#post_1",
+      "summary": "Hello Rustaceans!\nToday we are releasing dtact v0.2.2 and rssn-advanced v0.1.0, both of which are experimental, high-performance projects currently under development. Dtact is an async concurrent engine, and rssn-advanced is a new generation symbolic core for rssn. Both will be detailed below.\nDtact\nDtact is a coordinative, truly lockless async runtime designed for maximum work coordination speed and the highest throughput. In short, we mainly utilized a P2P network, a Lock-Free Context Arena,…",
+      "publishedAt": "2026-05-26T14:37:15.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "bd5490209144a1b57a76bce0ed29ab38848cf06e0c90d21098231f43aa21d03d",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-25 Wild 0.9.0 版本发布",
+      "url": "https://rustcc.cn/article?id=d8fabba9-b39b-473a-a341-21df3b001988",
+      "summary": "Wild 0.9.0 版本发布\nDavid Lattimore 于 2026年5月24日发布了 Wild 链接器的 0.9.0 版本。这是自1月以来的首次更新。\n主要功能更新\n链接器脚本支持\n多位开发者在 GSoC 2026（谷歌编程之夏）前期对链接器脚本支持做了大量工作\nVishruth Thimmaiah 被选中通过 GSoC 继续开发此功能\n目标是实现对 Linux 内核模块甚至内核本身的链接支持\n平台移植工作\nMac (Mach-O) 移植：由 Martin Liška 主导\nWasm 移植：由 Kei Akiyama 作为 GSoC 项目主导（这是 Kei 第二年参与 Wild 项目的 GSoC）\n链接器插件 LTO 支持\n新增基本的 LTO（链接时优化）支持\n主要用于 C、C++ 或混合语言项目\n链接速度不会更快，甚至可能稍慢，但方便用户无需切换链接器\n调试信息压缩\n现在支持输出压缩的调试信息\n支持 zlib 和 zstd 压缩格式…",
+      "publishedAt": "2026-05-25T01:11:25.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-27T00:23:45.472Z"
+  }
+}
