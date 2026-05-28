@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-28",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "d2f8645aec330f46c314d9a4865f1145b0cb9e8188e1f4578daf214e13595816",
+      "source": "Rust Internals",
+      "title": "Rust 1.96.0 预发布测试",
+      "url": "https://internals.rust-lang.org/t/rust-1-96-0-pre-release-testing/24357#post_1",
+      "summary": "1.96.0 预发布版本已准备好进行测试。该版本计划于5月28日发布。发布说明可以在这里找到。您可以通过运行以下命令在本地试用：RUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\n索引是 https://dev-static.rust-lang.org/dist/2026-05-26/index.html。发布团队也在考虑对我们的预发布流程进行更改：我们希望您能在这个 GitHub 问题上提供反馈。",
+      "publishedAt": "2026-05-26T06:10:12.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        12,
+        78
+      ],
+      "reason": "Rust 1.96.0 release preparation",
+      "suggestedTitle": "准备迎接 Rust 1.96.0：预发布测试正在进行中",
+      "suggestedSummary": "Rust 团队已宣布 Rust 1.96.0 的预发布测试阶段，该版本计划于5月28日发布。此阶段对于识别和修复任何潜在问题至关重要，以确保正式发布前的稳定性。鼓励开发者参与测试，以确保新版本的稳定性和性能。发布说明强调了变化和改进，开发者需审查并相应调整他们的项目。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9f1acdb2ce621a6d55bd8c5fce2ad2329777c81d9309d2cc6cdc5867bb119d5b",
+      "source": "Rust Internals",
+      "title": "预RFC：保证指向 `OsStr` 的指针与指向 `str`/`[u8]` 的指针具有相同的布局",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-guarantee-that-pointers-to-osstr-has-the-same-layout-as-pointers-to-str-u8/24354#post_6",
+      "summary": "我曾提交过一个PR，旨在指定在 &OsStr 和 &[u8] 之间进行转换是有效的，而libs-api当时决定通过显式函数来实现这一点。参见Allow limited access to `OsStr` bytes by epage · Pull Request #109698 · rust-lang/rust · GitHub",
+      "publishedAt": "2026-05-27T18:19:17.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        36,
+        46
+      ],
+      "reason": "Pre-RFC on OsStr and str/u8 layout",
+      "suggestedTitle": "提议的RFC：对齐OsStr和str/u8指针布局",
+      "suggestedSummary": "一个预RFC讨论正在进行中，旨在保证指向 `OsStr` 的指针与指向 `str` 和 `[u8]` 的指针具有相同的布局。该提案旨在简化这些类型之间的转换和交互，可能提高性能并减少错误。此更改将影响开发人员在不同的Rust API中处理字符串数据的方式，强调在现有项目中需要仔细审查和适应。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2eb9443d0c1ab67d6aa166cc41f3e0ccf9a33749723e973d7e732892a84f036e",
+      "source": "Lobsters Rust",
+      "title": "Creusot 帮助您证明 Rust 代码的正确性",
+      "url": "https://github.com/creusot-rs/creusot/tree/master",
+      "summary": "评论",
+      "publishedAt": "2026-05-28T00:18:18.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d7150abee86f9b6a9216ab5c25ec9b82db4f83481aba47aade6ae7fffe52d013",
+      "source": "Lobsters Rust",
+      "title": "在越狱的Kindle上运行Rust（和Slint）",
+      "url": "https://sverre.me/blog/rust-on-kindle/",
+      "summary": "评论",
+      "publishedAt": "2026-05-27T23:46:37.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8b5a9a5d5f04d25d5f9895062ee7d0809ad5a8a235155b13bcb5eeeaed9a95fe",
+      "source": "Lobsters Rust",
+      "title": "Theseus：将win32翻译为wasm",
+      "url": "https://neugierig.org/software/blog/2026/05/theseus-wasm.html",
+      "summary": "评论",
+      "publishedAt": "2026-05-27T01:45:01.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2255be94d86b3136f6bb6c6e815afcf920b2b5bf93aced6f544074859b3050ef",
+      "source": "Lobsters Rust",
+      "title": "为3DS构建AsyncIO执行器",
+      "url": "https://blog.cat-girl.gay/3ds-async-part-one/",
+      "summary": "评论",
+      "publishedAt": "2026-05-26T15:01:02.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "86f7e2286e9ce28114fea88f3b8abb64e51ffb7424f292684e5b77555f712689",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-26 TrapDoor 跨生态供应链攻击曝光",
+      "url": "https://rustcc.cn/article?id=937572a4-f57d-482c-ad32-aa8bb611e752",
+      "summary": "TrapDoor 跨生态供应链攻击曝光\nSocket 安全研究人员披露了一起名为 TrapDoor 的大规模供应链攻击活动，影响范围横跨 npm、PyPI 和 Crates.io 三大软件包生态。\n事件要点\n波及范围很广：已识别出 34 个以上恶意软件包，以及 384+ 个相关版本与工件\nRust 生态也在范围内：Crates.io 侧的攻击主要借助恶意 build.rs 脚本实施\n主要攻击目标：加密货币、DeFi、Solana、Sui、Move、AI/机器学习相关开发者\n重点窃取内容：SSH 密钥、加密钱包、AWS 凭证、GitHub 令牌、浏览器配置、环境变量与本地开发配置\n传播与持久化方式\nnpm 包通过 postinstall 执行共享恶意载荷\nPyPI 包在导入时拉取并执行远程 JavaScript\n攻击者还会植入 .cursorrules、CLAUDE.md、Git hook、Shell hook、systemd 服务、cron 任务与 SSH 配置等持久化后门\n这次事件再次提醒 Rust 开发者：即便使用的是…",
+      "publishedAt": "2026-05-26T01:07:17.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-28T00:22:14.610Z"
+  }
+}

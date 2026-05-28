@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-28",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "d2f8645aec330f46c314d9a4865f1145b0cb9e8188e1f4578daf214e13595816",
+      "source": "Rust Internals",
+      "title": "Rust 1.96.0 プレリリーステスト",
+      "url": "https://internals.rust-lang.org/t/rust-1-96-0-pre-release-testing/24357#post_1",
+      "summary": "1.96.0のプレリリースがテストの準備が整いました。このリリースは5月28日に予定されています。リリースノートはこちらで確認できます。ローカルで試すには、以下を実行してください：\nRUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\nインデックスは https://dev-static.rust-lang.org/dist/2026-05-26/index.html です。リリースチームはプレリリースプロセスの変更についても考えています。このGitHubのイシューでフィードバックをいただけると幸いです。",
+      "publishedAt": "2026-05-26T06:10:12.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        12,
+        78
+      ],
+      "reason": "Rust 1.96.0 release preparation",
+      "suggestedTitle": "Rust 1.96.0に備えよう：プレリリーステストが進行中",
+      "suggestedSummary": "Rustチームは、5月28日にリリース予定のRust 1.96.0のプレリリーステストフェーズを発表しました。このフェーズは、正式リリース前に潜在的な問題を特定し修正するために重要です。開発者はテストに参加し、新バージョンの安定性とパフォーマンスを確保することが推奨されています。リリースノートには変更点と改善点が強調されており、開発者がプロジェクトを適切にレビューし適応させることが重要です。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9f1acdb2ce621a6d55bd8c5fce2ad2329777c81d9309d2cc6cdc5867bb119d5b",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: `OsStr`へのポインタが`str`/`[u8]`へのポインタと同じレイアウトを持つことを保証する",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-guarantee-that-pointers-to-osstr-has-the-same-layout-as-pointers-to-str-u8/24354#post_6",
+      "summary": "私は、&OsStrと&[u8]の間のtransmuteが有効であることを指定するPRを提出しましたが、その時点でlibs-apiはこれを明示的な関数を通じて行うことを決定しました。詳細は、epageによる`OsStr`バイトへの限定アクセスを許可するPull Request #109698 · rust-lang/rust · GitHubを参照してください。",
+      "publishedAt": "2026-05-27T18:19:17.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        36,
+        46
+      ],
+      "reason": "Pre-RFC on OsStr and str/u8 layout",
+      "suggestedTitle": "提案されたRFC: OsStrとstr/u8ポインタレイアウトの整合",
+      "suggestedSummary": "`OsStr`へのポインタが`str`および`[u8]`へのポインタと同じレイアウトを持つことを保証するためのPre-RFCディスカッションが進行中です。この提案は、これらの型間の変換と相互作用を簡素化し、パフォーマンスの向上とエラーの削減を目指しています。この変更は、異なるRust API間で文字列データを扱う方法に影響を与えるため、既存のプロジェクトにおける慎重なレビューと適応が求められます。",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2eb9443d0c1ab67d6aa166cc41f3e0ccf9a33749723e973d7e732892a84f036e",
+      "source": "Lobsters Rust",
+      "title": "CreusotがあなたのRustコードの正確性を証明するのを助けます",
+      "url": "https://github.com/creusot-rs/creusot/tree/master",
+      "summary": "コメント",
+      "publishedAt": "2026-05-28T00:18:18.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d7150abee86f9b6a9216ab5c25ec9b82db4f83481aba47aade6ae7fffe52d013",
+      "source": "Lobsters Rust",
+      "title": "ジェイルブレイクされたKindleでのRust（とSlint）",
+      "url": "https://sverre.me/blog/rust-on-kindle/",
+      "summary": "コメント",
+      "publishedAt": "2026-05-27T23:46:37.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8b5a9a5d5f04d25d5f9895062ee7d0809ad5a8a235155b13bcb5eeeaed9a95fe",
+      "source": "Lobsters Rust",
+      "title": "Theseus: win32をwasmに翻訳する",
+      "url": "https://neugierig.org/software/blog/2026/05/theseus-wasm.html",
+      "summary": "コメント",
+      "publishedAt": "2026-05-27T01:45:01.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2255be94d86b3136f6bb6c6e815afcf920b2b5bf93aced6f544074859b3050ef",
+      "source": "Lobsters Rust",
+      "title": "3DS向けのAsyncIOエグゼキューターの構築",
+      "url": "https://blog.cat-girl.gay/3ds-async-part-one/",
+      "summary": "コメント",
+      "publishedAt": "2026-05-26T15:01:02.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "86f7e2286e9ce28114fea88f3b8abb64e51ffb7424f292684e5b77555f712689",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-26 TrapDoor クロスエコシステムサプライチェーン攻撃が発覚",
+      "url": "https://rustcc.cn/article?id=937572a4-f57d-482c-ad32-aa8bb611e752",
+      "summary": "TrapDoor クロスエコシステムサプライチェーン攻撃が発覚\nSocketのセキュリティ研究者が、TrapDoorと名付けられた大規模なサプライチェーン攻撃活動を明らかにしました。この攻撃はnpm、PyPI、Crates.ioの3つのソフトウェアパッケージエコシステムにまたがって影響を及ぼしています。\n事件の要点\n広範囲に影響：34以上の悪意のあるソフトウェアパッケージ、および384以上の関連バージョンとアーティファクトが特定されました。\nRustエコシステムも範囲内：Crates.io側の攻撃は主に悪意のあるbuild.rsスクリプトを利用して実施されました。\n主な攻撃対象：暗号通貨、DeFi、Solana、Sui、Move、AI/機械学習関連の開発者\n重点的に窃取される内容：SSHキー、暗号ウォレット、AWS認証情報、GitHubトークン、ブラウザ設定、環境変数およびローカル開発設定\n拡散と持続化の方法\nnpmパッケージはpostinstallを通じて共有された悪意のあるペイロードを実行\nPyPIパッケージはインポート時にリモートJavaScriptを取得して実行\n攻撃者は.cursorrules、CLAUDE.md、Gitフック、シェルフック、systemdサービス、cronタスク、SSH設定などの持続化バックドアも埋め込みます\nこの事件はRust開発者に再び警告を与えています：たとえ使用しているのが…",
+      "publishedAt": "2026-05-26T01:07:17.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-28T00:22:23.415Z"
+  }
+}

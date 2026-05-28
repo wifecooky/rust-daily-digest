@@ -1,0 +1,110 @@
+{
+  "date": "2026-05-28",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "d2f8645aec330f46c314d9a4865f1145b0cb9e8188e1f4578daf214e13595816",
+      "source": "Rust Internals",
+      "title": "Rust 1.96.0 pre-release testing",
+      "url": "https://internals.rust-lang.org/t/rust-1-96-0-pre-release-testing/24357#post_1",
+      "summary": "The 1.96.0 pre-release is ready for testing. The release is scheduled for\nMay 28. Release notes can be found here.\nYou can try it out locally by running:\nRUSTUP_DIST_SERVER=https://dev-static.rust-lang.org rustup update stable\n\nThe index is https://dev-static.rust-lang.org/dist/2026-05-26/index.html.\nThe release team is also thinking about changes to our pre-release process:\nwe'd love your feedback on this GitHub issue.",
+      "publishedAt": "2026-05-26T06:10:12.000Z",
+      "score": 27,
+      "relatedCount": 2,
+      "candidateNumbers": [
+        12,
+        78
+      ],
+      "reason": "Rust 1.96.0 release preparation",
+      "suggestedTitle": "Prepare for Rust 1.96.0: Pre-release Testing Underway",
+      "suggestedSummary": "The Rust team has announced the pre-release testing phase for Rust 1.96.0, scheduled for release on May 28. This phase is crucial for identifying and fixing any potential issues before the official release. Developers are encouraged to participate in testing to ensure the new version's stability and performance. The release notes highlight changes and improvements, making it essential for developers to review and adapt their projects accordingly.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "9f1acdb2ce621a6d55bd8c5fce2ad2329777c81d9309d2cc6cdc5867bb119d5b",
+      "source": "Rust Internals",
+      "title": "Pre-RFC: Guarantee that pointers to `OsStr` has the same layout as pointers to `str`/`[u8]`",
+      "url": "https://internals.rust-lang.org/t/pre-rfc-guarantee-that-pointers-to-osstr-has-the-same-layout-as-pointers-to-str-u8/24354#post_6",
+      "summary": "I had a PR up for specifying that transmute was valid between &OsStr and &[u8] and libs-api, at the time, decided to instead make this done through explicit functions. See Allow limited access to `OsStr` bytes by epage · Pull Request #109698 · rust-lang/rust · GitHub",
+      "publishedAt": "2026-05-27T18:19:17.000Z",
+      "score": 22,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        36,
+        46
+      ],
+      "reason": "Pre-RFC on OsStr and str/u8 layout",
+      "suggestedTitle": "Proposed RFC: Aligning OsStr and str/u8 Pointer Layouts",
+      "suggestedSummary": "A pre-RFC discussion is underway to guarantee that pointers to `OsStr` have the same layout as pointers to `str` and `[u8]`. This proposal aims to simplify conversions and interactions between these types, potentially improving performance and reducing errors. The change would impact how developers handle string data across different Rust APIs, emphasizing the need for careful review and adaptation in existing projects.",
+      "relatedSources": [
+        "Rust Internals"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2eb9443d0c1ab67d6aa166cc41f3e0ccf9a33749723e973d7e732892a84f036e",
+      "source": "Lobsters Rust",
+      "title": "Creusot helps you prove your Rust code is correct",
+      "url": "https://github.com/creusot-rs/creusot/tree/master",
+      "summary": "Comments",
+      "publishedAt": "2026-05-28T00:18:18.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "d7150abee86f9b6a9216ab5c25ec9b82db4f83481aba47aade6ae7fffe52d013",
+      "source": "Lobsters Rust",
+      "title": "Rust (and Slint) on a jailbroken Kindle",
+      "url": "https://sverre.me/blog/rust-on-kindle/",
+      "summary": "Comments",
+      "publishedAt": "2026-05-27T23:46:37.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "8b5a9a5d5f04d25d5f9895062ee7d0809ad5a8a235155b13bcb5eeeaed9a95fe",
+      "source": "Lobsters Rust",
+      "title": "Theseus: translating win32 to wasm",
+      "url": "https://neugierig.org/software/blog/2026/05/theseus-wasm.html",
+      "summary": "Comments",
+      "publishedAt": "2026-05-27T01:45:01.000Z",
+      "score": 17,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2255be94d86b3136f6bb6c6e815afcf920b2b5bf93aced6f544074859b3050ef",
+      "source": "Lobsters Rust",
+      "title": "Building an AsyncIO executor for the 3DS",
+      "url": "https://blog.cat-girl.gay/3ds-async-part-one/",
+      "summary": "Comments",
+      "publishedAt": "2026-05-26T15:01:02.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "86f7e2286e9ce28114fea88f3b8abb64e51ffb7424f292684e5b77555f712689",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-26 TrapDoor 跨生态供应链攻击曝光",
+      "url": "https://rustcc.cn/article?id=937572a4-f57d-482c-ad32-aa8bb611e752",
+      "summary": "TrapDoor 跨生态供应链攻击曝光\nSocket 安全研究人员披露了一起名为 TrapDoor 的大规模供应链攻击活动，影响范围横跨 npm、PyPI 和 Crates.io 三大软件包生态。\n事件要点\n波及范围很广：已识别出 34 个以上恶意软件包，以及 384+ 个相关版本与工件\nRust 生态也在范围内：Crates.io 侧的攻击主要借助恶意 build.rs 脚本实施\n主要攻击目标：加密货币、DeFi、Solana、Sui、Move、AI/机器学习相关开发者\n重点窃取内容：SSH 密钥、加密钱包、AWS 凭证、GitHub 令牌、浏览器配置、环境变量与本地开发配置\n传播与持久化方式\nnpm 包通过 postinstall 执行共享恶意载荷\nPyPI 包在导入时拉取并执行远程 JavaScript\n攻击者还会植入 .cursorrules、CLAUDE.md、Git hook、Shell hook、systemd 服务、cron 任务与 SSH 配置等持久化后门\n这次事件再次提醒 Rust 开发者：即便使用的是…",
+      "publishedAt": "2026-05-26T01:07:17.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-28T00:22:08.489Z"
+  }
+}
