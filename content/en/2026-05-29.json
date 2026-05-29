@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-29",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "959f7199d00c08061f16bf18a9656c7b4cd97f878a51caf3af39928bd66d0045",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "Language\nAllow passing expr metavariable to cfg\nAlways coerce never types in tuple expressions\nAvoid incorrect inference guidance of function arguments in rare cases\nSupport s390x vector registers in inline assembly\nAllow using constants of type ManuallyDrop as patterns (fixing a regression introduced in 1.94.0)\n\nCompiler\nEnable link relaxation feature for LoongArch Linux targets\nUpdate riscv64gc-unknown-fuchsia baseline to RVA22 + vector\n\nLibraries\nSupport iterating over ranges of NonZero…",
+      "publishedAt": "2026-05-28T17:50:42.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        19
+      ],
+      "reason": "Rust 1.96.0 release with new features",
+      "suggestedTitle": "Rust 1.96.0 Released: New Copy-Friendly Range Types and More",
+      "suggestedSummary": "Rust 1.96.0 has been officially released, introducing several new features and improvements. Notably, the release includes new copy-friendly range types that enhance the language's ergonomics and performance. Additionally, the update allows passing expression metavariables to `cfg`, and ensures that never types are always coerced in tuple expressions. These changes aim to streamline development workflows and improve code maintainability, offering Rust developers more flexibility and efficiency in their projects.",
+      "relatedSources": [
+        "Rust Releases",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "6549cd0bd846126bd6136826c657b403132d33078b052a1d6493b7dc0b170afc",
+      "source": "Rust Users Forum",
+      "title": "Building extensions for MySQL in Rust like pgx/pgrx",
+      "url": "https://users.rust-lang.org/t/building-extensions-for-mysql-in-rust-like-pgx-pgrx/140320#post_1",
+      "summary": "Want to add functionality to MySQL via an extension, just like pgx/pgrx in PostgreSQL?\nWrite custom SQL functions (VDFs) for MySQL/VillageSQL in safe Rust. The SDK handles all FFI marshaling so you work entirely in ordinary Rust types.\ngithub.com\n  \nGitHub - villagesql/vsql-rust-sdk\nContribute to villagesql/vsql-rust-sdk development by creating an account on GitHub.\n\n\n\nFeedback welcome!",
+      "publishedAt": "2026-05-28T17:11:05.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "f93b91e59310d115a4f1cf82cc906d0b5c19791e773ccb9f363ad42171001e8d",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: Post-quantum (ML-DSA-65) remote attestation with built-in SLSA provenance for no_std embedded Rust",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_8",
+      "summary": "Great project keep going if you need help don't hésitate i would love to help rust écosystèm , i dont know why so many people hate Rust often c et c++ people so lets make Rust great and safe people deserve safety no More gambling c",
+      "publishedAt": "2026-05-28T19:47:05.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2eb9443d0c1ab67d6aa166cc41f3e0ccf9a33749723e973d7e732892a84f036e",
+      "source": "Lobsters Rust",
+      "title": "Creusot helps you prove your Rust code is correct",
+      "url": "https://github.com/creusot-rs/creusot/tree/master",
+      "summary": "Comments",
+      "publishedAt": "2026-05-28T00:18:18.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-29T00:25:31.997Z"
+  }
+}

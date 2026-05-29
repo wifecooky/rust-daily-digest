@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-29",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "959f7199d00c08061f16bf18a9656c7b4cd97f878a51caf3af39928bd66d0045",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "言語\nexpr メタ変数を cfg に渡すことを許可\nタプル式でネバー型を常に型強制\n稀なケースで関数引数の誤った推論ガイダンスを回避\nインラインアセンブリで s390x ベクトルレジスタをサポート\nManuallyDrop 型の定数をパターンとして使用することを許可 (1.94.0 で導入された回帰を修正)",
+      "publishedAt": "2026-05-28T17:50:42.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        19
+      ],
+      "reason": "Rust 1.96.0 release with new features",
+      "suggestedTitle": "Rust 1.96.0 リリース: コピーに優しい新しい範囲型など",
+      "suggestedSummary": "Rust 1.96.0 が正式にリリースされ、いくつかの新機能と改善が導入されました。特に、リリースには言語の使いやすさとパフォーマンスを向上させるコピーに優しい新しい範囲型が含まれています。さらに、このアップデートでは式メタ変数を `cfg` に渡すことが可能になり、タプル式でネバー型が常に型強制されるようになりました。これらの変更は、開発ワークフローを合理化し、コードの保守性を向上させることを目的としており、Rust 開発者にプロジェクトでの柔軟性と効率性を提供します。",
+      "relatedSources": [
+        "Rust Releases",
+        "Rust Blog"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "6549cd0bd846126bd6136826c657b403132d33078b052a1d6493b7dc0b170afc",
+      "source": "Rust Users Forum",
+      "title": "RustでMySQLの拡張機能を構築する方法：pgx/pgrxのように",
+      "url": "https://users.rust-lang.org/t/building-extensions-for-mysql-in-rust-like-pgx-pgrx/140320#post_1",
+      "summary": "PostgreSQLのpgx/pgrxのように、MySQLに拡張機能を追加したいですか？安全なRustでMySQL/VillageSQL用のカスタムSQL関数（VDF）を作成しましょう。SDKがすべてのFFIマーシャリングを処理するため、通常のRust型で完全に作業できます。github.com\n\nGitHub - villagesql/vsql-rust-sdk\nGitHubでvillagesql/vsql-rust-sdkの開発に貢献しましょう。\n\nフィードバックをお待ちしています！",
+      "publishedAt": "2026-05-28T17:11:05.000Z",
+      "score": 30,
+      "relatedCount": 1,
+      "category": "quickNews"
+    },
+    {
+      "id": "f93b91e59310d115a4f1cf82cc906d0b5c19791e773ccb9f363ad42171001e8d",
+      "source": "Rust Users Forum",
+      "title": "Pqrascv-core: no_std組み込みRust向けのSLSAプロベナンスを備えたポスト量子(ML-DSA-65)リモート認証",
+      "url": "https://users.rust-lang.org/t/pqrascv-core-post-quantum-ml-dsa-65-remote-attestation-with-built-in-slsa-provenance-for-no-std-embedded-rust/139458#post_8",
+      "summary": "素晴らしいプロジェクトです。続けてください。もし助けが必要なら、遠慮せずに声をかけてください。Rustエコシステムを支援したいです。なぜ多くの人がRustを嫌うのか分かりませんが、しばしばCやC++の人たちがそうです。Rustを素晴らしく安全なものにしましょう。人々は安全を求めており、もはやCのようなギャンブルは必要ありません。",
+      "publishedAt": "2026-05-28T19:47:05.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "2eb9443d0c1ab67d6aa166cc41f3e0ccf9a33749723e973d7e732892a84f036e",
+      "source": "Lobsters Rust",
+      "title": "CreusotがRustコードの正確性を証明するのを手助け",
+      "url": "https://github.com/creusot-rs/creusot/tree/master",
+      "summary": "コメント",
+      "publishedAt": "2026-05-28T00:18:18.000Z",
+      "score": 7,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-29T00:25:43.421Z"
+  }
+}
