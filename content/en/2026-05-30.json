@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-30",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "b01e70f9e370cf3095b735ec472717120da21b9f10b9635ec7ebf44e51e92166",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "Language\nAllow passing expr metavariable to cfg\nAlways coerce never types in tuple expressions\nAvoid incorrect inference guidance of function arguments in rare cases\nSupport s390x vector registers in inline assembly\nAllow using constants of type ManuallyDrop as patterns (fixing a regression introduced in 1.94.0)\n\nCompiler\nEnable link relaxation feature for LoongArch Linux targets\nUpdate riscv64gc-unknown-fuchsia baseline to RVA22 + vector\n\nLibraries\nSupport iterating over ranges of NonZero…",
+      "publishedAt": "2026-05-29T13:20:28.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        23
+      ],
+      "reason": "Important language and compiler updates",
+      "suggestedTitle": "Rust 1.96.0 Released: Key Language and Compiler Updates",
+      "suggestedSummary": "Rust 1.96.0 introduces several significant updates including the ability to pass expression metavariables to `cfg`, and always coercing never types in tuple expressions. These changes enhance the language's flexibility and reliability, particularly in complex conditional compilation scenarios. Developers can expect improved ergonomics when working with configuration-specific code paths and more predictable type coercions, making Rust even more robust for systems programming.",
+      "relatedSources": [
+        "Rust Releases",
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "994ed082412c8bf1968b476747372a2f0a70791c2160c05661f808aed8a8e048",
+      "source": "Rust Users Forum",
+      "title": "Evcode 1.0.0 – Async Terminal IDE in Rust",
+      "url": "https://users.rust-lang.org/t/evcode-1-0-0-async-terminal-ide-in-rust/140284#post_5",
+      "summary": "Try it! I wanted you to hear this directly from me. The community has given me a lot of valuable feedback, and some issues were found in the code, but they are already being fixed. Overall, the IDE is working and can already be used. With future updates, I’ll continue improving it and adding useful features. Thank you so much for your comment and feedback!",
+      "publishedAt": "2026-05-29T19:47:32.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "251213727d00eec135540b1d74528a045458a0ee7056b006c7280ce3612a16f9",
+      "source": "RustCC (CN)",
+      "title": "给 Rust 开发者的一个实验：彻底告别手写 JOIN 和 Optional 地狱",
+      "url": "https://rustcc.cn/article?id=6ce4a903-65cc-4c1c-b217-5e31e1bdb632",
+      "summary": "作为 Rust 开发者，我们在享受其极致性能与内存安全的同时，不可避免地要面对一个残酷的现实：用 Rust 写业务逻辑（尤其是复杂的 CRUD 和多表关联）实在太痛苦了。\n每当面对一个复杂的企业级业务，我们往往把 80% 的精力花在了编写枯燥无聊的“数据库胶水代码”上：\n手写大量的 JOIN、字段映射和 Optional 级联加载；\n面对嵌套多层的关系对象，为了防范 None 崩溃，被迫写出无数个丑陋的 match 或 and_then；\n保存一个包含多层级联的实体图时，要小心翼翼地在事务中排好保存顺序，生怕外键约束报错。\nTeaQL-RS 正是为了颠覆这种糟糕的开发体验而生的。它倡导以**领域模型（Domain Model）**为中心，为开发者自动生成极其现代、安全且极具表现力的 Rust API。\n今天，我们完全抛开底层的宏实现或数据库原理，纯粹从“开发者使用体验”的角度，来看看 TeaQL-RS 是如何让 Rust 业务开发变得行云流水的。\n一、 开发者的 TeaQL 极简开发旅程\n使用 TeaQL-RS 开发一个业务服务，体验非常简单自然，只需三步：…",
+      "publishedAt": "2026-05-29T23:41:24.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e8e14ead51ee02292d3de9ac183f2f9457bef637db6783f6383111f6d91e1d81",
+      "source": "RustCC (CN)",
+      "title": "nanobot-rs：Rust 实现的本地 AI Agent 运行时",
+      "url": "https://rustcc.cn/article?id=5703dd2f-1043-4d2c-835b-137cec34b343",
+      "summary": "nanobot 是纯 Rust 编写的轻量级本地 Agent 运行时，主打本地部署、多渠道接入、多模型兼容，适合快速搭建可扩展的 AI 智能体应用。\n参考了知名的 openclaw/nanobot\n主要供自用和学习，平时只占用 10多 MB 内存，适合个人跑几个 bot 玩\n核心能力\n支持 CLI 交互式 / 单轮对话，开箱即用\n原生适配 Anthropic、OpenAI 兼容全系模型，可无缝切换 DeepSeek 等主流大模型\n自带丰富工具集：文件操作、Shell 执行、网页抓取、子代理、定时任务、MCP/ACP 能力\n本地会话持久化、记忆管理、心跳守护，轻量化无依赖\n多渠道接入：CLI、Telegram、飞书\n项目特点\n极简配置，一行命令快速启动本地 AI 对话\n完善 CI/CD 支持，跨 Linux/macOS/Windows 编译打包\n规范版本管理与自动 Changelog，结构清晰易二次开发\n适合 AI Agent 学习研究、私人本地智能体、业务轻量化机器人搭建\n主打轻量化、高性能，欢迎大家 star、提 issue、PR 贡献代码～",
+      "publishedAt": "2026-05-29T13:49:01.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ae9c75c2c81b140754555de5a4715c83fb05fa5d82ffb63adb4deab027ae6442",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-28 SQLx 0.9.0 发布：新增 sqlx.toml 与更严格 SQL 安全机制",
+      "url": "https://rustcc.cn/article?id=e7b83f3b-49eb-4ff4-ac8c-d9c541abc406",
+      "summary": "SQLx 0.9.0 发布：新增 sqlx.toml 与更严格 SQL 安全机制\n重要公告\n新的 GitHub 组织\nSQLx 仓库将转移到新的 GitHub 组织：https://github.com/transact-rs/\n原因：SQLx 已不再由 LaunchBadge, LLC. 拥有和维护，现在由核心作者集体所有\n这一变更使所有权更加明确，并允许邀请外部协作者\n移除 Cargo.lock 跟踪\nGit 不再跟踪 Cargo.lock 文件\nCI 将默认使用所有依赖项的最新版本进行测试\ncargo install --locked sqlx-cli 将不再工作\n需要可重现构建的用户应维护自己的 lockfile\n版本亮点\n新增运行时支持\n支持 smol 和 async-global-executor 运行时，作为已弃用的 async-std 的继任者\nsqlx.toml 配置文件\n新增配置文件支持，便于实现多数据库或多租户设置\n允许全局类型覆盖，简化自定义类型和第三方库的使用\n原文链接：https://github.com/transact-rs/\nEdge…",
+      "publishedAt": "2026-05-28T01:09:40.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-30T00:23:41.584Z"
+  }
+}

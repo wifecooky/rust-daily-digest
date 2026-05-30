@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-30",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "b01e70f9e370cf3095b735ec472717120da21b9f10b9635ec7ebf44e51e92166",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "言語\nexpr メタ変数を cfg に渡すことを許可\nタプル式での never 型を常に強制変換\n稀なケースでの関数引数の誤った推論ガイダンスを回避\nインラインアセンブリで s390x ベクターレジスタをサポート\nManuallyDrop 型の定数をパターンとして使用することを許可（1.94.0 で導入されたリグレッションを修正）",
+      "publishedAt": "2026-05-29T13:20:28.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        23
+      ],
+      "reason": "Important language and compiler updates",
+      "suggestedTitle": "Rust 1.96.0 リリース: 主要な言語とコンパイラの更新",
+      "suggestedSummary": "Rust 1.96.0 は、`cfg` に式メタ変数を渡す機能や、タプル式での never 型を常に強制変換する機能など、いくつかの重要な更新を導入します。これらの変更により、特に複雑な条件付きコンパイルのシナリオにおいて、言語の柔軟性と信頼性が向上します。開発者は、設定固有のコードパスでの作業がより快適になり、型の強制変換がより予測可能になることを期待でき、Rust はシステムプログラミングにおいてさらに堅牢になります。",
+      "relatedSources": [
+        "Rust Releases",
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "994ed082412c8bf1968b476747372a2f0a70791c2160c05661f808aed8a8e048",
+      "source": "Rust Users Forum",
+      "title": "Evcode 1.0.0 – Rustで開発された非同期ターミナルIDE",
+      "url": "https://users.rust-lang.org/t/evcode-1-0-0-async-terminal-ide-in-rust/140284#post_5",
+      "summary": "試してみてください！このことを直接お伝えしたかったのです。コミュニティから多くの貴重なフィードバックをいただき、コード内でいくつかの問題が見つかりましたが、すでに修正が進んでいます。全体として、IDEは機能しており、すでに使用可能です。今後のアップデートで、さらに改善し、有用な機能を追加していきます。コメントやフィードバック、本当にありがとうございます！",
+      "publishedAt": "2026-05-29T19:47:32.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "251213727d00eec135540b1d74528a045458a0ee7056b006c7280ce3612a16f9",
+      "source": "RustCC (CN)",
+      "title": "Rust開発者への実験: 手書きのJOINとOptional地獄からの完全脱却",
+      "url": "https://rustcc.cn/article?id=6ce4a903-65cc-4c1c-b217-5e31e1bdb632",
+      "summary": "Rust開発者として、極限のパフォーマンスとメモリ安全性を享受する一方で、厳しい現実に直面せざるを得ません。それは、Rustでビジネスロジック（特に複雑なCRUDや多テーブルの関連）を書くのが非常に苦痛であるということです。複雑なエンタープライズビジネスに直面するたびに、私たちは80%の労力を退屈な「データベースの接着コード」の記述に費やしています。大量のJOIN、フィールドマッピング、Optionalのカスケードロードを手書きし、ネストされた多層のリレーションオブジェクトに対処する際には、Noneによるクラッシュを防ぐために無数の醜いmatchやand_thenを書くことを余儀なくされます。多層のカスケードを含むエンティティグラフを保存する際には、トランザクション内で保存順序を慎重に整え、外部キー制約のエラーを恐れなければなりません。TeaQL-RSは、このような悪い開発体験を覆すために生まれました。それは、**ドメインモデル**を中心に据え、開発者のために非常にモダンで安全かつ表現力豊かなRust APIを自動生成することを提唱しています。今日は、底層のマクロ実装やデータベースの原理を完全に無視し、「開発者の使用体験」の観点から、TeaQL-RSがどのようにRustのビジネス開発をスムーズにするかを見ていきます。一、開発者のためのTeaQL極簡開発旅程TeaQL-RSを使用してビジネスサービスを開発する体験は非常にシンプルで自然であり、たった三つのステップで済みます:…",
+      "publishedAt": "2026-05-29T23:41:24.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e8e14ead51ee02292d3de9ac183f2f9457bef637db6783f6383111f6d91e1d81",
+      "source": "RustCC (CN)",
+      "title": "nanobot-rs：Rustで実装されたローカルAIエージェントランタイム",
+      "url": "https://rustcc.cn/article?id=5703dd2f-1043-4d2c-835b-137cec34b343",
+      "summary": "nanobotは純粋なRustで書かれた軽量なローカルエージェントランタイムで、ローカルデプロイメント、多チャネル接続、多モデル互換性を主に提供し、拡張可能なAIインテリジェントアプリケーションを迅速に構築するのに適しています。有名なopenclaw/nanobotを参考にしています。主に自己使用と学習のために提供され、通常は10MB以上のメモリを占有せず、個人がいくつかのボットを動かして楽しむのに適しています。\n\nコア機能\n- CLIインタラクティブ/単一ターンの対話をサポートし、すぐに使用可能\n- Anthropic、OpenAI互換の全モデルにネイティブ対応し、DeepSeekなどの主流の大規模モデルにシームレスに切り替え可能\n- 豊富なツールセットを内蔵：ファイル操作、シェル実行、ウェブスクレイピング、サブエージェント、定期タスク、MCP/ACP機能\n- ローカルセッションの永続化、メモリ管理、ハートビート監視、軽量で依存なし\n- 多チャネル接続：CLI、Telegram、Feishu\n\nプロジェクトの特徴\n- 極簡な設定で、一行のコマンドでローカルAI対話を迅速に開始\n- 完全なCI/CDサポート、Linux/macOS/Windowsを跨いでのコンパイルとパッケージ\n- 規範的なバージョン管理と自動Changelog、構造が明確で二次開発が容易\n- AIエージェントの学習研究、個人のローカルインテリジェントエージェント、業務の軽量化ロボット構築に適しています\n- 軽量で高性能を主打とし、皆さんのスター、イシュー、PRでのコード貢献を歓迎します～",
+      "publishedAt": "2026-05-29T13:49:01.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ae9c75c2c81b140754555de5a4715c83fb05fa5d82ffb63adb4deab027ae6442",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-28 SQLx 0.9.0 発表：新しい sqlx.toml とより厳格な SQL セキュリティメカニズム",
+      "url": "https://rustcc.cn/article?id=e7b83f3b-49eb-4ff4-ac8c-d9c541abc406",
+      "summary": "SQLx 0.9.0 発表：新しい sqlx.toml とより厳格な SQL セキュリティメカニズム",
+      "publishedAt": "2026-05-28T01:09:40.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-30T00:23:56.455Z"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "date": "2026-05-30",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "b01e70f9e370cf3095b735ec472717120da21b9f10b9635ec7ebf44e51e92166",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "语言\n允许将表达式元变量传递给cfg\n始终在元组表达式中强制转换never类型\n避免在罕见情况下对函数参数的错误推断指导\n在内联汇编中支持s390x向量寄存器\n允许使用类型为ManuallyDrop的常量作为模式（修复了1.94.0中引入的回归）",
+      "publishedAt": "2026-05-29T13:20:28.000Z",
+      "score": 35,
+      "relatedCount": 1,
+      "candidateNumbers": [
+        1,
+        23
+      ],
+      "reason": "Important language and compiler updates",
+      "suggestedTitle": "Rust 1.96.0发布：关键语言和编译器更新",
+      "suggestedSummary": "Rust 1.96.0引入了几个重要更新，包括允许将表达式元变量传递给`cfg`，以及始终在元组表达式中强制转换never类型。这些变化增强了语言的灵活性和可靠性，特别是在复杂的条件编译场景中。开发人员可以期待在处理特定配置的代码路径时获得更好的易用性和更可预测的类型强制转换，使Rust在系统编程中更加稳健。",
+      "relatedSources": [
+        "Rust Releases",
+        "Lobsters Rust"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "994ed082412c8bf1968b476747372a2f0a70791c2160c05661f808aed8a8e048",
+      "source": "Rust Users Forum",
+      "title": "Evcode 1.0.0 – 用Rust编写的异步终端IDE",
+      "url": "https://users.rust-lang.org/t/evcode-1-0-0-async-terminal-ide-in-rust/140284#post_5",
+      "summary": "试试看！我希望能直接告诉你这个消息。社区给了我很多有价值的反馈，代码中发现了一些问题，但这些问题已经在修复中。总体来说，IDE已经可以使用。随着未来的更新，我会继续改进它并添加实用功能。非常感谢你的评论和反馈！",
+      "publishedAt": "2026-05-29T19:47:32.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "251213727d00eec135540b1d74528a045458a0ee7056b006c7280ce3612a16f9",
+      "source": "RustCC (CN)",
+      "title": "给 Rust 开发者的一个实验：彻底告别手写 JOIN 和 Optional 地狱",
+      "url": "https://rustcc.cn/article?id=6ce4a903-65cc-4c1c-b217-5e31e1bdb632",
+      "summary": "作为 Rust 开发者，我们在享受其极致性能与内存安全的同时，不可避免地要面对一个残酷的现实：用 Rust 写业务逻辑（尤其是复杂的 CRUD 和多表关联）实在太痛苦了。每当面对一个复杂的企业级业务，我们往往把 80% 的精力花在了编写枯燥无聊的“数据库胶水代码”上：手写大量的 JOIN、字段映射和 Optional 级联加载；面对嵌套多层的关系对象，为了防范 None 崩溃，被迫写出无数个丑陋的 match 或 and_then；保存一个包含多层级联的实体图时，要小心翼翼地在事务中排好保存顺序，生怕外键约束报错。TeaQL-RS 正是为了颠覆这种糟糕的开发体验而生的。它倡导以**领域模型（Domain Model）**为中心，为开发者自动生成极其现代、安全且极具表现力的 Rust API。今天，我们完全抛开底层的宏实现或数据库原理，纯粹从“开发者使用体验”的角度，来看看 TeaQL-RS 是如何让 Rust 业务开发变得行云流水的。一、 开发者的 TeaQL 极简开发旅程使用 TeaQL-RS 开发一个业务服务，体验非常简单自然，只需三步：…",
+      "publishedAt": "2026-05-29T23:41:24.000Z",
+      "score": 25,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "e8e14ead51ee02292d3de9ac183f2f9457bef637db6783f6383111f6d91e1d81",
+      "source": "RustCC (CN)",
+      "title": "nanobot-rs：Rust 实现的本地 AI Agent 运行时",
+      "url": "https://rustcc.cn/article?id=5703dd2f-1043-4d2c-835b-137cec34b343",
+      "summary": "nanobot 是纯 Rust 编写的轻量级本地 Agent 运行时，主打本地部署、多渠道接入、多模型兼容，适合快速搭建可扩展的 AI 智能体应用。参考了知名的 openclaw/nanobot。主要供自用和学习，平时只占用 10多 MB 内存，适合个人跑几个 bot 玩。核心能力包括支持 CLI 交互式 / 单轮对话，开箱即用。原生适配 Anthropic、OpenAI 兼容全系模型，可无缝切换 DeepSeek 等主流大模型。自带丰富工具集：文件操作、Shell 执行、网页抓取、子代理、定时任务、MCP/ACP 能力。本地会话持久化、记忆管理、心跳守护，轻量化无依赖。多渠道接入：CLI、Telegram、飞书。项目特点包括极简配置，一行命令快速启动本地 AI 对话。完善 CI/CD 支持，跨 Linux/macOS/Windows 编译打包。规范版本管理与自动 Changelog，结构清晰易二次开发。适合 AI Agent 学习研究、私人本地智能体、业务轻量化机器人搭建。主打轻量化、高性能，欢迎大家 star、提 issue、PR 贡献代码～",
+      "publishedAt": "2026-05-29T13:49:01.000Z",
+      "score": 20,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "ae9c75c2c81b140754555de5a4715c83fb05fa5d82ffb63adb4deab027ae6442",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-28 SQLx 0.9.0 发布：新增 sqlx.toml 与更严格 SQL 安全机制",
+      "url": "https://rustcc.cn/article?id=e7b83f3b-49eb-4ff4-ac8c-d9c541abc406",
+      "summary": "SQLx 0.9.0 发布：新增 sqlx.toml 与更严格 SQL 安全机制",
+      "publishedAt": "2026-05-28T01:09:40.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-30T00:23:46.301Z"
+  }
+}
