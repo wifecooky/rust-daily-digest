@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-31",
+  "lang": "ja",
+  "featured": [
+    {
+      "id": "722eb09b3ed3d85162f7b20791bd1c1b35e309546cedebe433057617faa32d74",
+      "source": "Google News Rust",
+      "title": "Rust Coreutils 0.9が追加のセキュリティ強化とゼロコピーI/Oと共にリリース - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBBVjJfX190OXVLc3dyOVdTTTZDRUtma0lxd2NZalJwWFJyN0ZtMHlZenJDNlhBdlpjbWFxcXJrZzNicWg0RTV0MGQ4WDlrZzNkSW12dUoyWjJIUHhF?oc=5",
+      "summary": "Rust Coreutils 0.9が追加のセキュリティ強化とゼロコピーI/Oと共にリリースされました  Phoronix",
+      "publishedAt": "2026-05-30T17:08:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        30
+      ],
+      "reason": "Significant crate release",
+      "suggestedTitle": "Rust Coreutils 0.9: セキュリティとパフォーマンスの向上",
+      "suggestedSummary": "Rust Coreutils 0.9がリリースされ、追加のセキュリティ強化とゼロコピーI/O機能が導入されました。このアップデートにより、ユーティリティのセキュリティ体制が強化され、潜在的な脆弱性が減少し、データ処理の効率が向上します。ゼロコピーI/O機能はデータ転送に伴うオーバーヘッドを最小限に抑え、パフォーマンスの向上をもたらします。Rust開発者はこれらのアップデートを活用して、特にパフォーマンスとセキュリティが重要な環境で、より安全で効率的なアプリケーションを構築することができます。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "b01e70f9e370cf3095b735ec472717120da21b9f10b9635ec7ebf44e51e92166",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "言語\nexprメタ変数をcfgに渡すことを許可\nタプル式でnever型を常に型変換\nまれなケースでの関数引数の誤った推論ガイダンスを回避\nインラインアセンブリでs390xベクターレジスタをサポート\nManuallyDrop型の定数をパターンとして使用することを許可（1.94.0で導入された回帰を修正）",
+      "publishedAt": "2026-05-29T13:20:28.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        73
+      ],
+      "reason": "Rust language release",
+      "suggestedTitle": "Rust 1.96.0: 新しい言語機能と安定性",
+      "suggestedSummary": "Rust 1.96.0が正式にリリースされ、いくつかの新しい言語機能と安定性の向上がもたらされました。主な更新には、cfgでのexprメタ変数の許可、タプル式でのnever型の型変換、そして新しいcore::range型の安定化が含まれます。これらの変更により、言語の表現力と使いやすさが向上し、開発者にとってパターンマッチングや範囲処理のためのより強力なツールが提供されます。このリリースは、システムプログラミングにおいて魅力的な選択肢となるRustの漸進的な改善の伝統を続けています。",
+      "relatedSources": [
+        "Rust Releases"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2a865ff4aa1215c9b556be694643c04f8063112b16e11ba4287d6e1880e0911c",
+      "source": "Rust Internals",
+      "title": "クラウドソーシングのお願い: 現在進行中のASTに影響を与える構文変更は何ですか？",
+      "url": "https://internals.rust-lang.org/t/crowdsourcing-request-what-syntax-changes-that-will-affect-the-ast-are-currently-in-flight/24361#post_9",
+      "summary": "新しいスレッドを作成しました: プロックマクロを用いたIDEサポート向上のための`syn`におけるパーサーエラー回復",
+      "publishedAt": "2026-05-30T20:36:59.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9a28d6b7ea45dc5724ffba34fb2e468f45e2a03b5bf38050fd4f1e6c26356fcf",
+      "source": "Rust Internals",
+      "title": "プロックマクロにおける`syn`のパーサーエラー回復によるIDEサポートの向上",
+      "url": "https://internals.rust-lang.org/t/parser-error-recovery-in-syn-for-better-ide-support-with-proc-macros/24362#post_2",
+      "summary": "現在、関数に属性プロックマクロを使用する際、synからのパースエラーから合理的な方法で回復することは基本的に不可能であり、IDEサポートのためのパースが完全に失敗します。つまり、プロックマクロの出力全体が一般的にcompile_error!になるか、パニックになります。入力のエラーのない部分に対してプロックマクロの変換をサポートすることで、合理的なコード補完や型ヒント、その他のIDEの便利機能を引き続き利用できるようになると非常に良いでしょう…",
+      "publishedAt": "2026-05-30T20:36:15.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7dceccfc5e02116f3f1f67fa739f72f2a66f7b2dbe29aae8c58fd4c0b9f90245",
+      "source": "Rust Internals",
+      "title": "プロックマクロによるIDEサポート向上のための`syn`におけるパーサーエラー回復",
+      "url": "https://internals.rust-lang.org/t/parser-error-recovery-in-syn-for-better-ide-support-with-proc-macros/24362#post_1",
+      "summary": "クラウドソーシングのリクエスト: 現在進行中のASTに影響を与える構文変更は何ですか？\nもう一つの要望として、IDEでコードを編集している間にコードが不完全な場合に、プロックマクロを大きなコードセクションに使用しても、すべてがcompile_error!()に置き換わるのではなく、より良いパーサーエラー回復があると非常に嬉しいです。\n\nクラウドソーシングのリクエスト: 現在進行中のASTに影響を与える構文変更は何ですか？\nその会話のために別のスレッドを開きましょう。",
+      "publishedAt": "2026-05-30T20:16:40.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "708ed529a6a352a1b32306f02fce19b1b6e0e5c26c1c0acc8d8b8f057aef22d9",
+      "source": "RustCC (CN)",
+      "title": "【Rust日報】2026-05-29 Rust 1.96.0 リリース、core::range の新しい型と assert_matches! を安定化",
+      "url": "https://rustcc.cn/article?id=9765251a-a3f9-4424-be9c-1f2c82338b1b",
+      "summary": "Rust 1.96.0 がリリースされ、core::range の新しい型と assert_matches! が安定化されました。",
+      "publishedAt": "2026-05-29T01:12:15.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分",
+    "generatedAt": "2026-05-31T00:23:06.410Z"
+  }
+}

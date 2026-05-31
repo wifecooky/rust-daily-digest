@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-31",
+  "lang": "zh",
+  "featured": [
+    {
+      "id": "722eb09b3ed3d85162f7b20791bd1c1b35e309546cedebe433057617faa32d74",
+      "source": "Google News Rust",
+      "title": "Rust Coreutils 0.9 发布，附加安全加固和零拷贝 I/O - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBBVjJfX190OXVLc3dyOVdTTTZDRUtma0lxd2NZalJwWFJyN0ZtMHlZenJDNlhBdlpjbWFxcXJrZzNicWg0RTV0MGQ4WDlrZzNkSW12dUoyWjJIUHhF?oc=5",
+      "summary": "Rust Coreutils 0.9 发布，附加安全加固和零拷贝 I/O  Phoronix",
+      "publishedAt": "2026-05-30T17:08:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        30
+      ],
+      "reason": "Significant crate release",
+      "suggestedTitle": "Rust Coreutils 0.9：增强的安全性和性能",
+      "suggestedSummary": "Rust Coreutils 0.9 已发布，引入了额外的安全加固和零拷贝 I/O 功能。此更新通过减少潜在漏洞和提高数据处理效率来增强工具的安全性。零拷贝 I/O 功能减少了与数据传输相关的开销，从而提高了性能。Rust 开发者可以利用这些更新来构建更安全和高效的应用程序，尤其是在性能和安全性至关重要的环境中。",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "b01e70f9e370cf3095b735ec472717120da21b9f10b9635ec7ebf44e51e92166",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "语言\n允许在cfg中传递表达式元变量\n始终在元组表达式中强制转换never类型\n避免在罕见情况下函数参数的错误推断指导\n在内联汇编中支持s390x向量寄存器\n允许使用ManuallyDrop类型的常量作为模式（修复1.94.0中引入的回归）",
+      "publishedAt": "2026-05-29T13:20:28.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        73
+      ],
+      "reason": "Rust language release",
+      "suggestedTitle": "Rust 1.96.0：新的语言特性和稳定性",
+      "suggestedSummary": "Rust 1.96.0已正式发布，带来了多项新的语言特性和稳定性改进。关键更新包括在cfg中允许表达式元变量、元组表达式中never类型的强制转换，以及新的core::range类型的稳定化。这些变化增强了语言的表达能力和可用性，为开发者提供了更强大的模式匹配和范围处理工具。此次发布继续了Rust逐步改进的传统，使其成为系统编程的有吸引力选择。",
+      "relatedSources": [
+        "Rust Releases"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2a865ff4aa1215c9b556be694643c04f8063112b16e11ba4287d6e1880e0911c",
+      "source": "Rust Internals",
+      "title": "众包请求：当前有哪些会影响AST的语法更改正在进行中？",
+      "url": "https://internals.rust-lang.org/t/crowdsourcing-request-what-syntax-changes-that-will-affect-the-ast-are-currently-in-flight/24361#post_9",
+      "summary": "根据请求创建了一个新线程：在`syn`中进行解析器错误恢复，以便更好地支持带有过程宏的IDE",
+      "publishedAt": "2026-05-30T20:36:59.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9a28d6b7ea45dc5724ffba34fb2e468f45e2a03b5bf38050fd4f1e6c26356fcf",
+      "source": "Rust Internals",
+      "title": "在 `syn` 中进行解析器错误恢复以更好地支持带有过程宏的 IDE",
+      "url": "https://internals.rust-lang.org/t/parser-error-recovery-in-syn-for-better-ide-support-with-proc-macros/24362#post_2",
+      "summary": "目前，当在某个函数上使用属性过程宏时，几乎不可能以合理的方式从 syn 的解析错误中恢复以支持 IDE。任何语法错误都会导致解析完全失败，这意味着过程宏的整个输出通常只是 compile_error! 或者它会引发 panic。如果能够在输入中无错误的部分进行过程宏的转换，那将是非常好的，这样您仍然可以获得合理的代码补全、类型提示和其他 IDE 的便利功能……",
+      "publishedAt": "2026-05-30T20:36:15.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7dceccfc5e02116f3f1f67fa739f72f2a66f7b2dbe29aae8c58fd4c0b9f90245",
+      "source": "Rust Internals",
+      "title": "在 `syn` 中实现解析器错误恢复以更好地支持使用过程宏的 IDE",
+      "url": "https://internals.rust-lang.org/t/parser-error-recovery-in-syn-for-better-ide-support-with-proc-macros/24362#post_1",
+      "summary": "众包请求：当前有哪些语法更改会影响 AST？\n另一个非常有用的功能是改进解析器错误恢复，这样在 IDE 中编辑代码时，使用过程宏处理某些大型代码段时，不会因为代码不完整而将所有内容替换为 compile_error!()。\n\n众包请求：当前有哪些语法更改会影响 AST？\n让我们为这次对话开一个新的讨论线程。我会…",
+      "publishedAt": "2026-05-30T20:16:40.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "708ed529a6a352a1b32306f02fce19b1b6e0e5c26c1c0acc8d8b8f057aef22d9",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-29 Rust 1.96.0 发布，稳定 core::range 新类型与 assert_matches!",
+      "url": "https://rustcc.cn/article?id=9765251a-a3f9-4424-be9c-1f2c82338b1b",
+      "summary": "Rust 1.96.0 发布，稳定 core::range 新类型与 assert_matches!",
+      "publishedAt": "2026-05-29T01:12:15.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 分钟",
+    "generatedAt": "2026-05-31T00:23:02.148Z"
+  }
+}

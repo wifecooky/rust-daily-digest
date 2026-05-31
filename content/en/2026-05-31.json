@@ -1,0 +1,97 @@
+{
+  "date": "2026-05-31",
+  "lang": "en",
+  "featured": [
+    {
+      "id": "722eb09b3ed3d85162f7b20791bd1c1b35e309546cedebe433057617faa32d74",
+      "source": "Google News Rust",
+      "title": "Rust Coreutils 0.9 Released With Additional Security Hardening, Zero-Copy I/O - Phoronix",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBBVjJfX190OXVLc3dyOVdTTTZDRUtma0lxd2NZalJwWFJyN0ZtMHlZenJDNlhBdlpjbWFxcXJrZzNicWg0RTV0MGQ4WDlrZzNkSW12dUoyWjJIUHhF?oc=5",
+      "summary": "Rust Coreutils 0.9 Released With Additional Security Hardening, Zero-Copy I/O  Phoronix",
+      "publishedAt": "2026-05-30T17:08:00.000Z",
+      "score": 21,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        30
+      ],
+      "reason": "Significant crate release",
+      "suggestedTitle": "Rust Coreutils 0.9: Enhanced Security and Performance",
+      "suggestedSummary": "Rust Coreutils 0.9 has been released, introducing additional security hardening and zero-copy I/O capabilities. This update enhances the security posture of the utilities by reducing potential vulnerabilities and improving data handling efficiency. The zero-copy I/O feature minimizes the overhead associated with data transfers, leading to performance improvements. Rust developers can leverage these updates to build more secure and efficient applications, particularly in environments where performance and security are critical.",
+      "relatedSources": [
+        "Google News Rust"
+      ],
+      "category": "featured"
+    },
+    {
+      "id": "b01e70f9e370cf3095b735ec472717120da21b9f10b9635ec7ebf44e51e92166",
+      "source": "Rust Releases",
+      "title": "Rust 1.96.0",
+      "url": "https://github.com/rust-lang/rust/releases/tag/1.96.0",
+      "summary": "Language\nAllow passing expr metavariable to cfg\nAlways coerce never types in tuple expressions\nAvoid incorrect inference guidance of function arguments in rare cases\nSupport s390x vector registers in inline assembly\nAllow using constants of type ManuallyDrop as patterns (fixing a regression introduced in 1.94.0)\n\nCompiler\nEnable link relaxation feature for LoongArch Linux targets\nUpdate riscv64gc-unknown-fuchsia baseline to RVA22 + vector\n\nLibraries\nSupport iterating over ranges of NonZero…",
+      "publishedAt": "2026-05-29T13:20:28.000Z",
+      "score": 10,
+      "relatedCount": 0,
+      "candidateNumbers": [
+        73
+      ],
+      "reason": "Rust language release",
+      "suggestedTitle": "Rust 1.96.0: New Language Features and Stability",
+      "suggestedSummary": "Rust 1.96.0 has been officially released, bringing several new language features and stability improvements. Key updates include allowing expr metavariables in cfg, coercion of never types in tuple expressions, and stabilization of new core::range types. These changes enhance the language's expressiveness and usability, providing developers with more robust tools for pattern matching and range handling. This release continues Rust's tradition of incremental improvements, making it an attractive choice for systems programming.",
+      "relatedSources": [
+        "Rust Releases"
+      ],
+      "category": "featured"
+    }
+  ],
+  "quickNews": [
+    {
+      "id": "2a865ff4aa1215c9b556be694643c04f8063112b16e11ba4287d6e1880e0911c",
+      "source": "Rust Internals",
+      "title": "Crowdsourcing request: What syntax changes that will affect the AST are currently in flight?",
+      "url": "https://internals.rust-lang.org/t/crowdsourcing-request-what-syntax-changes-that-will-affect-the-ast-are-currently-in-flight/24361#post_9",
+      "summary": "created a new thread as requested: Parser error recovery in `syn` for better IDE support with proc-macros",
+      "publishedAt": "2026-05-30T20:36:59.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "9a28d6b7ea45dc5724ffba34fb2e468f45e2a03b5bf38050fd4f1e6c26356fcf",
+      "source": "Rust Internals",
+      "title": "Parser error recovery in `syn` for better IDE support with proc-macros",
+      "url": "https://internals.rust-lang.org/t/parser-error-recovery-in-syn-for-better-ide-support-with-proc-macros/24362#post_2",
+      "summary": "Currently when using an attribute proc-macro on some function it is basically impossible to recover from parse errors from syn in a reasonable fashion for IDE support, any syntax error causes parsing to fail entirely meaning the proc-macro's entire output is generally just compile_error! or it panics. It would be very nice to support doing the proc-macro's transformation on the non-erroneous parts of the input so you can still get reasonable code completion and type hints and other IDE niceties…",
+      "publishedAt": "2026-05-30T20:36:15.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "7dceccfc5e02116f3f1f67fa739f72f2a66f7b2dbe29aae8c58fd4c0b9f90245",
+      "source": "Rust Internals",
+      "title": "Parser error recovery in `syn` for better IDE support with proc-macros",
+      "url": "https://internals.rust-lang.org/t/parser-error-recovery-in-syn-for-better-ide-support-with-proc-macros/24362#post_1",
+      "summary": "Crowdsourcing request: What syntax changes that will affect the AST are currently in flight?\none other thing that would be really nice would to have better parser error recovery so using a proc-macro on some large section of code doesn't just replace everything with compile_error!() whenever the code is incomplete while you're editing it in an IDE.\n\nCrowdsourcing request: What syntax changes that will affect the AST are currently in flight?\nLets open another thread for that conversation. I'd…",
+      "publishedAt": "2026-05-30T20:16:40.000Z",
+      "score": 27,
+      "relatedCount": 0,
+      "category": "quickNews"
+    },
+    {
+      "id": "708ed529a6a352a1b32306f02fce19b1b6e0e5c26c1c0acc8d8b8f057aef22d9",
+      "source": "RustCC (CN)",
+      "title": "【Rust日报】2026-05-29 Rust 1.96.0 发布，稳定 core::range 新类型与 assert_matches!",
+      "url": "https://rustcc.cn/article?id=9765251a-a3f9-4424-be9c-1f2c82338b1b",
+      "summary": "Rust 1.96.0 发布，稳定 core::range 新类型与 assert_matches!\nRust 官方团队正式发布 1.96.0 稳定版，包含多项语言和标准库更新。\n新 Range 类型（core::range）\n许多用户期望 Range 及相关 core::ops 类型是 Copy 的，但原来它们直接实现了 Iterator，同时实现 Iterator 和 Copy 是一个 footgun，因此一直回避。RFC 3550 提出了一组替代 Range 类型，这些类型实现 IntoIterator 而非 Iterator，因此也可以是 Copy。相关类型现已稳定：\ncore::range::Range、core::range::RangeFrom、core::range::RangeInclusive 及关联迭代器\n新的 RangeInclusive 将字段公开，避免了旧版本中暴露迭代器耗尽状态的问题\n公共 API 建议使用 impl RangeBounds，同时接受新旧两种 Range 类型\n新断言宏 assert_matches!\n新增 assert_matches!…",
+      "publishedAt": "2026-05-29T01:12:15.000Z",
+      "score": 5,
+      "relatedCount": 0,
+      "category": "quickNews"
+    }
+  ],
+  "metadata": {
+    "totalArticles": 19,
+    "estimatedReadTime": "5 min",
+    "generatedAt": "2026-05-31T00:22:57.584Z"
+  }
+}
